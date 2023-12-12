@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9227659-13B0-4DAB-BA1F-534C7E9D253F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Compras_Cuentas_x_Pagar</RootNamespace>
+    <AssemblyName>Compras Cuentas x Pagar</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_Intermed.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Snk\Compras Cuentas x Pagar.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Snk\Compras Cuentas x Pagar.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SC_Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.CalcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.PluginCalendar.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_CompressLib">
+      <HintPath>..\..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_ControlsCS">
+      <HintPath>..\..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem">
+      <HintPath>..\..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem.QRCode">
+      <HintPath>..\..\..\..\SC_Assemblies\SC_SolutionsSystem.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\DllFarmaciaSoft\Properties\AssemblyInfo_Compilacion.cs">
+      <Link>Properties\AssemblyInfo_Compilacion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DllFarmaciaSoft\Properties\AssemblyInfo_Version.cs">
+      <Link>Properties\AssemblyInfo_Version.cs</Link>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\FrmEstadoDeCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\FrmEstadoDeCuenta.Designer.cs">
+      <DependentUpon>FrmEstadoDeCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\FrmHistoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\FrmHistoriales.Designer.cs">
+      <DependentUpon>FrmHistoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\FrmRegistraDePagos_A_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\FrmRegistraDePagos_A_Proveedores.Designer.cs">
+      <DependentUpon>FrmRegistraDePagos_A_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\FrmEstadoDeCuenta.resx">
+      <DependentUpon>FrmEstadoDeCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\FrmHistoriales.resx">
+      <DependentUpon>FrmHistoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\FrmRegistraDePagos_A_Proveedores.resx">
+      <DependentUpon>FrmRegistraDePagos_A_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Snk\Compras Cuentas x Pagar.manifest" />
+    <None Include="Snk\Compras Cuentas x Pagar.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DllFarmaciaSoft\DllFarmaciaSoft.csproj">
+      <Project>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</Project>
+      <Name>DllFarmaciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DllCompras\DllCompras.csproj">
+      <Project>{831017A5-B62F-41D5-8BB3-F7F9635AC10A}</Project>
+      <Name>DllCompras</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo_Intermed.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

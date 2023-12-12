@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedSol>
+	<Generales>
+		<idPeticion>CMS108</idPeticion>
+		<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+		<idColectivo>123</idColectivo>
+		<fechaHoraElaboracion>2017-05-12 15:05:32.142</fechaHoraElaboracion>
+		<servicio>EMER00101</servicio>
+		<unidadMedica>PLSSA015230</unidadMedica>
+	</Generales>
+	<Detalles>
+		<Medicamentos>
+			<Medicamento expediente="210742006091">
+				<nombrePaciente>ELENA</nombrePaciente>
+				<apPaternoPaciente>ALTAMIRANO</apPaternoPaciente>
+				<apMaternoPaciente>MENDEZ</apMaternoPaciente>
+				<camaPaciente>01</camaPaciente>
+				<fechaNacimientoPaciente>1978-04-19</fechaNacimientoPaciente>
+				<polizaPaciente>1111111111</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-03-01</vigenciaPolizaPaciente>
+				<claveMed>010.000.2302.00</claveMed>
+				<descripcionMed>Acetazolamida</descripcionMed>
+				<dosisMed>2.0</dosisMed>
+				<frecuenciaMed>CADA 6 HORAS</frecuenciaMed>
+				<duracionMed>HASTA TERMINAR</duracionMed>
+				<cantidadSolicitadaMed>1</cantidadSolicitadaMed>
+				<observacionesMed>Texto Libre</observacionesMed>
+			</Medicamento>
+			<Medicamento expediente="210742000002">
+				<nombrePaciente>LUCIA</nombrePaciente>
+				<apPaternoPaciente>VARGAS</apPaternoPaciente>
+				<apMaternoPaciente>ROJAS</apMaternoPaciente>
+				<camaPaciente>02</camaPaciente>
+				<fechaNacimientoPaciente>1980-01-11</fechaNacimientoPaciente>
+				<polizaPaciente>222222222</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-03-01</vigenciaPolizaPaciente>
+				<claveMed>010.000.1700.00</claveMed>
+				<descripcionMed>Ácido fólico</descripcionMed>
+				<dosisMed>1.0</dosisMed>
+				<frecuenciaMed>CADA 24 HORAS</frecuenciaMed>
+				<duracionMed>HASTA TERMINAR</duracionMed>
+				<cantidadSolicitadaMed>2</cantidadSolicitadaMed>
+				<observacionesMed>Texto libre</observacionesMed>
+			</Medicamento>
+			<Medicamento expediente="210742000003">
+				<nombrePaciente>AARON DE JESUS</nombrePaciente>
+				<apPaternoPaciente>TORRES</apPaternoPaciente>
+				<apMaternoPaciente>HERNANDEZ</apMaternoPaciente>
+				<camaPaciente>03</camaPaciente>
+				<fechaNacimientoPaciente>1986-01-11</fechaNacimientoPaciente>
+				<polizaPaciente>3333333333</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-03-01</vigenciaPolizaPaciente>
+				<claveMed>010.000.4263.00</claveMed>
+				<descripcionMed>Aciclovir</descripcionMed>
+				<dosisMed>1.0</dosisMed>
+				<frecuenciaMed>DOSIS ÚNICA</frecuenciaMed>
+				<duracionMed>HASTA TERMINAR</duracionMed>
+				<cantidadSolicitadaMed>6</cantidadSolicitadaMed>
+				<observacionesMed>Texto Libre</observacionesMed>
+			</Medicamento>
+		</Medicamentos>
+		<Soluciones>
+			<Solucion expediente="210742000002">
+				<nombrePaciente>LUCIA</nombrePaciente>
+				<apPaternoPaciente>VARGAS</apPaternoPaciente>
+				<apMaternoPaciente>ROJAS</apMaternoPaciente>
+				<camaPaciente>04</camaPaciente>
+				<fechaNacimientoPaciente>1980-01-11</fechaNacimientoPaciente>
+				<polizaPaciente>4444444444</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-03-01</vigenciaPolizaPaciente>
+				<claveSol>4</claveSol>
+				<descripcionSol>Glucosa, solución inyectable al 5%</descripcionSol>
+				<dosisSol>1.0</dosisSol>
+				<frecuenciaSol>cada 6 horas</frecuenciaSol>
+				<duracionSol>5 HRS</duracionSol>
+				<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+				<observacionesSol>Texto Libre</observacionesSol>
+			</Solucion>
+			<Solucion expediente="210742000003">
+				<nombrePaciente>AARON DE JESUS</nombrePaciente>
+				<apPaternoPaciente>TORRES</apPaternoPaciente>
+				<apMaternoPaciente>HERNANDEZ</apMaternoPaciente>
+				<camaPaciente>05</camaPaciente>
+				<fechaNacimientoPaciente>1990-03-01</fechaNacimientoPaciente>
+				<polizaPaciente>6666666666</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-03-01</vigenciaPolizaPaciente>
+				<claveSol>5</claveSol>
+				<descripcionSol>Glucosa, solución inyectable al 50 %</descripcionSol>
+				<dosisSol>3</dosisSol>
+				<frecuenciaSol>diaria </frecuenciaSol>
+				<duracionSol>6 dias</duracionSol>
+				<cantidadSolicitadaSol>10</cantidadSolicitadaSol>
+				<observacionesSol>Texto Libre</observacionesSol>
+			</Solucion>
+			<Solucion expediente="210742006091">
+				<nombrePaciente>ELENA</nombrePaciente>
+				<apPaternoPaciente>ALTAMIRANO</apPaternoPaciente>
+				<apMaternoPaciente>MENDEZ</apMaternoPaciente>
+				<camaPaciente>11</camaPaciente>
+				<fechaNacimientoPaciente>1978-04-19</fechaNacimientoPaciente>
+				<polizaPaciente>123456789</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-03-01</vigenciaPolizaPaciente>
+				<claveSol>6</claveSol>
+				<descripcionSol>Glucosa anhidra, solución inyectable al 10%</descripcionSol>
+				<dosisSol>10</dosisSol>
+				<frecuenciaSol>diaria</frecuenciaSol>
+				<duracionSol>3 dias</duracionSol>
+				<cantidadSolicitadaSol>20</cantidadSolicitadaSol>
+				<observacionesSol>Texto Libre</observacionesSol>
+			</Solucion>
+		</Soluciones>
+	</Detalles>
+</ColectivoMedSol>

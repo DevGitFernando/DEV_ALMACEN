@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc?xsd=xsd3" filename="WSCFDI33.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc?xsd=xsd0" filename="WSCFDI330.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc?xsd=xsd1" filename="WSCFDI331.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc?xsd=xsd2" filename="WSCFDI332.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc?WSDL" filename="WSCFDI33.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

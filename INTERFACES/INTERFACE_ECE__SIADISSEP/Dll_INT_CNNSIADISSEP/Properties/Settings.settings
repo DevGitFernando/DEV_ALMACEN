@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dll_INT_CNNSIADISSEP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dll_INT_CNNSIADISSEP_ws_Interface_SII_SIADISSEP_wsISIADISSEP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:21734/wsSII_INT_ISIADISSEP/wsISIADISSEP.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_INT_CNNSIADISSEP_wsRecetaElectronica_SSEP_WsPrueba" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ec2-54-188-66-44.us-west-2.compute.amazonaws.com:8090/WsPrueba/WsPrueba</Value>
+    </Setting>
+    <Setting Name="Dll_INT_CNNSIADISSEP_wsRecetaElectronica_SSEP__20_RecieveXMLService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ec2-54-244-200-58.us-west-2.compute.amazonaws.com:8090/Polux/services/RecieveXML</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

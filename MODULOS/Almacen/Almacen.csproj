@@ -1,0 +1,1132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E9872AE-50EE-4D6E-9A4F-74301757990F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Almacen</RootNamespace>
+    <AssemblyName>Almacen</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>capsule.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Almacen.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SC_CompressLib, Version=4.0.4.0, Culture=neutral, PublicKeyToken=fac9ea0d48dbaeab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_ControlsCS, Version=4.0.1.0, Culture=neutral, PublicKeyToken=e7a523b603173679, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem, Version=4.0.5.0, Culture=neutral, PublicKeyToken=a50c66deebb893df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Compilacion.cs">
+      <Link>Properties\AssemblyInfo_Compilacion.cs</Link>
+    </Compile>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Version.cs">
+      <Link>Properties\AssemblyInfo_Version.cs</Link>
+    </Compile>
+    <Compile Include="Cajas\FrmCajasDistribucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajas\FrmCajasDistribucion.Designer.cs">
+      <DependentUpon>FrmCajasDistribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmCatGruposDeUbicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmCatGruposDeUbicaciones.Designer.cs">
+      <DependentUpon>FrmCatGruposDeUbicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmCatRotacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmCatRotacion.Designer.cs">
+      <DependentUpon>FrmCatRotacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmCFGCRutasDistribucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmCFGCRutasDistribucion.Designer.cs">
+      <DependentUpon>FrmCFGCRutasDistribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmGrupos__Ubicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmGrupos__Ubicaciones.Designer.cs">
+      <DependentUpon>FrmGrupos__Ubicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmHuellasPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmHuellasPersonal.Designer.cs">
+      <DependentUpon>FrmHuellasPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmPersonalCEDIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmPersonalCEDIS.Designer.cs">
+      <DependentUpon>FrmPersonalCEDIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmRotacion_Claves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmRotacion_Claves.Designer.cs">
+      <DependentUpon>FrmRotacion_Claves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckVersion.cs" />
+    <Compile Include="clsParametrosCompras.cs" />
+    <Compile Include="Configuracion\FrmCFGUbicacionesEstandar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmCFGUbicacionesEstandar.Designer.cs">
+      <DependentUpon>FrmCFGUbicacionesEstandar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmConfigurarUbicacionDeTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmConfigurarUbicacionDeTrabajo.Designer.cs">
+      <DependentUpon>FrmConfigurarUbicacionDeTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmCartaCanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmCartaCanje.Designer.cs">
+      <DependentUpon>FrmCartaCanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmDocumentosConfirmacionEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmDocumentosConfirmacionEntrega.Designer.cs">
+      <DependentUpon>FrmDocumentosConfirmacionEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmRegistro_RutaDeDistribucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmRegistro_RutaDeDistribucion.Designer.cs">
+      <DependentUpon>FrmRegistro_RutaDeDistribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmRegistro_RutaDeDistribucionDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmRegistro_RutaDeDistribucionDetalles.Designer.cs">
+      <DependentUpon>FrmRegistro_RutaDeDistribucionDetalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmRptDocumentosNoEntregados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmRptDocumentosNoEntregados.Designer.cs">
+      <DependentUpon>FrmRptDocumentosNoEntregados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDistribucion\FrmVehiculos.Designer.cs">
+      <DependentUpon>FrmVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GnCompras.cs" />
+    <Compile Include="OrdenCompraConsigna\FrmEntradasConsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompraConsigna\FrmEntradasConsignacion.Designer.cs">
+      <DependentUpon>FrmEntradasConsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompraConsigna\FrmEntradasConsignacion_Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompraConsigna\FrmEntradasConsignacion_Devoluciones.Designer.cs">
+      <DependentUpon>FrmEntradasConsignacion_Devoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra\clsMotivosSobreCompra.cs" />
+    <Compile Include="OrdenCompra\FrmCambioDePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmCambioDePrecio.Designer.cs" />
+    <Compile Include="OrdenCompra\FrmObservacionesDeSobrePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmObservacionesDeSobrePrecio.Designer.cs" />
+    <Compile Include="OrdenCompra\FrmOrdenCompraCodigoEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmOrdenCompraCodigoEAN.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEANListadoDeExcedentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmOrdenCompraCodigoEAN_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmOrdenCompraCodigoEAN_Base.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEAN_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmValidarRecepcionOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmValidarRecepcionOrdenDeCompra.Designer.cs" />
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspecialesVentaSocioComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspecialesVentaSocioComercial.Designer.cs">
+      <DependentUpon>FrmRegistroPedidosEspecialesVentaSocioComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_InterEstatales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_InterEstatales.Designer.cs">
+      <DependentUpon>FrmRegistroPedidosEspeciales_InterEstatales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_Base.Designer.cs">
+      <DependentUpon>FrmRegistroPedidosEspeciales_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspecialesVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspecialesVenta.Designer.cs">
+      <DependentUpon>FrmRegistroPedidosEspecialesVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_Importacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_Importacion.Designer.cs">
+      <DependentUpon>FrmRegistroPedidosEspeciales_Importacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales.Designer.cs">
+      <DependentUpon>FrmRegistroPedidosEspeciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_ModificarReferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_ModificarReferencia.Designer.cs">
+      <DependentUpon>FrmRegistroPedidosEspeciales_ModificarReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmActualizarSurtidoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmActualizarSurtidoPedidos.Designer.cs">
+      <DependentUpon>FrmActualizarSurtidoPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmActualizarSurtidoPedidosSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmActualizarSurtidoPedidosSegmento.Designer.cs">
+      <DependentUpon>FrmActualizarSurtidoPedidosSegmento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmActulizarSurtidoPedido_CodigoEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmActulizarSurtidoPedido_CodigoEAN.Designer.cs">
+      <DependentUpon>FrmActulizarSurtidoPedido_CodigoEAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmAsignarSurtidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmAsignarSurtidor.Designer.cs">
+      <DependentUpon>FrmAsignarSurtidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCajasSurtidoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCajasSurtidoPedidos.Designer.cs">
+      <DependentUpon>FrmCajasSurtidoPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCEDIS_SurtidoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCEDIS_SurtidoPedidos.Designer.cs">
+      <DependentUpon>FrmCEDIS_SurtidoPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmFoliosSurtidosAProcesar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmFoliosSurtidosAProcesar.Designer.cs">
+      <DependentUpon>FrmFoliosSurtidosAProcesar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmGenerarTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmGenerarTransferencia.Designer.cs">
+      <DependentUpon>FrmGenerarTransferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmGetPedidosCEDIS_DIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmGetPedidosCEDIS_DIST.Designer.cs">
+      <DependentUpon>FrmGetPedidosCEDIS_DIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmListaDeAtencionesSurtido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmListaDeAtencionesSurtido.Designer.cs">
+      <DependentUpon>FrmListaDeAtencionesSurtido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmListaDeSurtidosPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmListaDeSurtidosPedido.Designer.cs">
+      <DependentUpon>FrmListaDeSurtidosPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmAgregarExistenciaClaveDistribuccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmAgregarExistenciaClaveDistribuccion.Designer.cs">
+      <DependentUpon>FrmAgregarExistenciaClaveDistribuccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCapturarCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCapturarCajas.Designer.cs">
+      <DependentUpon>FrmCapturarCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmObtenerConsumosCedis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmObtenerConsumosCedis.Designer.cs">
+      <DependentUpon>FrmObtenerConsumosCedis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmSegmento.Designer.cs">
+      <DependentUpon>FrmSegmento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Incidencias\FrmPedidos_ListadoDeIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Incidencias\FrmPedidos_ListadoDeIncidencias.Designer.cs">
+      <DependentUpon>FrmPedidos_ListadoDeIncidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Incidencias\FrmPedidos_LiberacionDeIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Incidencias\FrmPedidos_LiberacionDeIncidencias.Designer.cs">
+      <DependentUpon>FrmPedidos_LiberacionDeIncidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Incidencias\FrmPedidos_RegistroDeIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Incidencias\FrmPedidos_RegistroDeIncidencias.Designer.cs">
+      <DependentUpon>FrmPedidos_RegistroDeIncidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmRPTPedidosCedisExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmRPTPedidosCedisExistencias.Designer.cs">
+      <DependentUpon>FrmRPTPedidosCedisExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmRptReSurtidoCedis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmRptReSurtidoCedis.Designer.cs">
+      <DependentUpon>FrmRptReSurtidoCedis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmRtp_AtencionesSurtidores_Choferes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmRtp_AtencionesSurtidores_Choferes.Designer.cs">
+      <DependentUpon>FrmRtp_AtencionesSurtidores_Choferes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmRpt_PorcentajeSurtimientoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmRpt_PorcentajeSurtimientoPedidos.Designer.cs">
+      <DependentUpon>FrmRpt_PorcentajeSurtimientoPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmListaPedidosParaSurtido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmListaPedidosParaSurtido.Designer.cs">
+      <DependentUpon>FrmListaPedidosParaSurtido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmModificarCantidadSurtida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmModificarCantidadSurtida.Designer.cs">
+      <DependentUpon>FrmModificarCantidadSurtida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmPCM_Claves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmPCM_Claves.Designer.cs">
+      <DependentUpon>FrmPCM_Claves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmPreparaExistenciaDistribucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmPreparaExistenciaDistribucion.Designer.cs">
+      <DependentUpon>FrmPreparaExistenciaDistribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmRegresarASurtido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmRegresarASurtido.Designer.cs">
+      <DependentUpon>FrmRegresarASurtido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmSurtidoDePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmSurtidoDePedido.Designer.cs">
+      <DependentUpon>FrmSurtidoDePedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmTableroPedidosSurtido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmTableroPedidosSurtido.Designer.cs">
+      <DependentUpon>FrmTableroPedidosSurtido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Embarques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Embarques.Designer.cs">
+      <DependentUpon>FrmMonitorPedidos_Embarques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaEmbarques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaEmbarques.Designer.cs">
+      <DependentUpon>FrmMonitorPedidos_EntregaEmbarques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaDocumentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaDocumentacion.Designer.cs">
+      <DependentUpon>FrmMonitorPedidos_EntregaDocumentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Documentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Documentacion.Designer.cs">
+      <DependentUpon>FrmMonitorPedidos_Documentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Surtido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Surtido.Designer.cs">
+      <DependentUpon>FrmMonitorPedidos_Surtido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Validacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_Validacion.Designer.cs">
+      <DependentUpon>FrmMonitorPedidos_Validacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaValidacion.Designer.cs">
+      <DependentUpon>FrmMonitorPedidos_EntregaValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorSurtimientoDePedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorSurtimientoDePedidos.Designer.cs">
+      <DependentUpon>FrmMonitorSurtimientoDePedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorSurtimientoDePedidos_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Monitor\FrmMonitorSurtimientoDePedidos_Base.Designer.cs">
+      <DependentUpon>FrmMonitorSurtimientoDePedidos_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Validacion\ClsValidarLotes.cs" />
+    <Compile Include="Pedidos\Validacion\FrmPedidosValidacionCiega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Validacion\FrmPedidosValidacionCiega.Designer.cs">
+      <DependentUpon>FrmPedidosValidacionCiega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\Validacion\FrmPedidosValidacionCiegaLotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\Validacion\FrmPedidosValidacionCiegaLotes.Designer.cs">
+      <DependentUpon>FrmPedidosValidacionCiegaLotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmGruposPerfilAtencionDist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmGruposPerfilAtencionDist.Designer.cs">
+      <DependentUpon>FrmGruposPerfilAtencionDist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmGruposPerfilesAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmGruposPerfilesAtencion.Designer.cs">
+      <DependentUpon>FrmGruposPerfilesAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmPerfilesAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmPerfilesAtencion.Designer.cs">
+      <DependentUpon>FrmPerfilesAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmPerfilesAtencionClavesSSADist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilesAtencion\FrmPerfilesAtencionClavesSSADist.Designer.cs">
+      <DependentUpon>FrmPerfilesAtencionClavesSSADist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_RptListadoPorCaducidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_RptListadoPorCaducidades.Designer.cs">
+      <DependentUpon>Frm_RptListadoPorCaducidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_RptListadoPorCosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_RptListadoPorCosto.Designer.cs">
+      <DependentUpon>Frm_RptListadoPorCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_RptRotacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_RptRotacion.Designer.cs">
+      <DependentUpon>Frm_RptRotacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTraspasosSalidas_Controlados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTraspasosSalidas_Controlados.Designer.cs">
+      <DependentUpon>FrmEdoTraspasosSalidas_Controlados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoCambioTraspasosSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoCambioTraspasosSalidas.Designer.cs">
+      <DependentUpon>FrmEdoCambioTraspasosSalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoSeguimientoTraspasoSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoSeguimientoTraspasoSalidas.Designer.cs">
+      <DependentUpon>FrmEdoSeguimientoTraspasoSalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTraspasosEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTraspasosEntradas.Designer.cs">
+      <DependentUpon>FrmEdoTraspasosEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTraspasosSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTraspasosSalidas.Designer.cs">
+      <DependentUpon>FrmEdoTraspasosSalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTransferenciasEnTransito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraspasosEstatales\FrmEdoTransferenciasEnTransito.Designer.cs">
+      <DependentUpon>FrmEdoTransferenciasEnTransito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmListadoUbicacionesEstandar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmListadoUbicacionesEstandar.Designer.cs">
+      <DependentUpon>FrmListadoUbicacionesEstandar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmUbicacionesExcluidasSurtimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmUbicacionesExcluidasSurtimiento.Designer.cs">
+      <DependentUpon>FrmUbicacionesExcluidasSurtimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptUbicacionesClavesDetalleLotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptUbicacionesClavesDetalleLotes.Designer.cs">
+      <DependentUpon>FrmRptUbicacionesClavesDetalleLotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmPasillos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmPasillos.Designer.cs">
+      <DependentUpon>FrmPasillos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmPasillosEstantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmPasillosEstantes.Designer.cs">
+      <DependentUpon>FrmPasillosEstantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmPasillosEstantesBaldas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmPasillosEstantesBaldas.Designer.cs">
+      <DependentUpon>FrmPasillosEstantesBaldas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptClavesSinUbicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptClavesSinUbicaciones.Designer.cs">
+      <DependentUpon>FrmRptClavesSinUbicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptUbicacionesClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptUbicacionesClaves.Designer.cs">
+      <DependentUpon>FrmRptUbicacionesClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptUbicacionesClavesDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmRptUbicacionesClavesDetalle.Designer.cs">
+      <DependentUpon>FrmRptUbicacionesClavesDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cajas\FrmCajasDistribucion.resx">
+      <DependentUpon>FrmCajasDistribucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmCatGruposDeUbicaciones.resx">
+      <DependentUpon>FrmCatGruposDeUbicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmCatRotacion.resx">
+      <DependentUpon>FrmCatRotacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmCFGCRutasDistribucion.resx">
+      <DependentUpon>FrmCFGCRutasDistribucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmGrupos__Ubicaciones.resx">
+      <DependentUpon>FrmGrupos__Ubicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmHuellasPersonal.resx">
+      <DependentUpon>FrmHuellasPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmPersonalCEDIS.resx">
+      <DependentUpon>FrmPersonalCEDIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmRotacion_Claves.resx">
+      <DependentUpon>FrmRotacion_Claves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmCFGUbicacionesEstandar.resx">
+      <DependentUpon>FrmCFGUbicacionesEstandar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmConfigurarUbicacionDeTrabajo.resx">
+      <DependentUpon>FrmConfigurarUbicacionDeTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDistribucion\FrmCartaCanje.resx">
+      <DependentUpon>FrmCartaCanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDistribucion\FrmDocumentosConfirmacionEntrega.resx">
+      <DependentUpon>FrmDocumentosConfirmacionEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDistribucion\FrmRegistro_RutaDeDistribucion.resx">
+      <DependentUpon>FrmRegistro_RutaDeDistribucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDistribucion\FrmRegistro_RutaDeDistribucionDetalles.resx">
+      <DependentUpon>FrmRegistro_RutaDeDistribucionDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDistribucion\FrmRptDocumentosNoEntregados.resx">
+      <DependentUpon>FrmRptDocumentosNoEntregados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDistribucion\FrmVehiculos.resx">
+      <DependentUpon>FrmVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompraConsigna\FrmEntradasConsignacion.resx">
+      <DependentUpon>FrmEntradasConsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompraConsigna\FrmEntradasConsignacion_Devoluciones.resx">
+      <DependentUpon>FrmEntradasConsignacion_Devoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra\FrmCambioDePrecio.resx" />
+    <EmbeddedResource Include="OrdenCompra\FrmObservacionesDeSobrePrecio.resx" />
+    <EmbeddedResource Include="OrdenCompra\FrmOrdenCompraCodigoEAN.resx">
+      <DependentUpon>FrmOrdenCompraCodigoEAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.resx">
+      <DependentUpon>FrmOrdenCompraCodigoEANListadoDeExcedentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra\FrmOrdenCompraCodigoEAN_Base.resx">
+      <DependentUpon>FrmOrdenCompraCodigoEAN_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra\FrmValidarRecepcionOrdenDeCompra.resx" />
+    <EmbeddedResource Include="PedidosEspeciales\FrmRegistroPedidosEspecialesVentaSocioComercial.resx">
+      <DependentUpon>FrmRegistroPedidosEspecialesVentaSocioComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_Base.resx">
+      <DependentUpon>FrmRegistroPedidosEspeciales_Base.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosEspeciales\FrmRegistroPedidosEspecialesVenta.resx">
+      <DependentUpon>FrmRegistroPedidosEspecialesVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_Importacion.resx">
+      <DependentUpon>FrmRegistroPedidosEspeciales_Importacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosEspeciales\FrmRegistroPedidosEspeciales_ModificarReferencia.resx">
+      <DependentUpon>FrmRegistroPedidosEspeciales_ModificarReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmActualizarSurtidoPedidos.resx">
+      <DependentUpon>FrmActualizarSurtidoPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmActualizarSurtidoPedidosSegmento.resx">
+      <DependentUpon>FrmActualizarSurtidoPedidosSegmento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmActulizarSurtidoPedido_CodigoEAN.resx">
+      <DependentUpon>FrmActulizarSurtidoPedido_CodigoEAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmAsignarSurtidor.resx">
+      <DependentUpon>FrmAsignarSurtidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCajasSurtidoPedidos.resx">
+      <DependentUpon>FrmCajasSurtidoPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCEDIS_SurtidoPedidos.resx">
+      <DependentUpon>FrmCEDIS_SurtidoPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmFoliosSurtidosAProcesar.resx">
+      <DependentUpon>FrmFoliosSurtidosAProcesar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmGenerarTransferencia.resx">
+      <DependentUpon>FrmGenerarTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmGetPedidosCEDIS_DIST.resx">
+      <DependentUpon>FrmGetPedidosCEDIS_DIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmListaDeAtencionesSurtido.resx">
+      <DependentUpon>FrmListaDeAtencionesSurtido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmListaDeSurtidosPedido.resx">
+      <DependentUpon>FrmListaDeSurtidosPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmAgregarExistenciaClaveDistribuccion.resx">
+      <DependentUpon>FrmAgregarExistenciaClaveDistribuccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCapturarCajas.resx">
+      <DependentUpon>FrmCapturarCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmObtenerConsumosCedis.resx">
+      <DependentUpon>FrmObtenerConsumosCedis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmSegmento.resx">
+      <DependentUpon>FrmSegmento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Incidencias\FrmPedidos_ListadoDeIncidencias.resx">
+      <DependentUpon>FrmPedidos_ListadoDeIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Incidencias\FrmPedidos_LiberacionDeIncidencias.resx">
+      <DependentUpon>FrmPedidos_LiberacionDeIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Incidencias\FrmPedidos_RegistroDeIncidencias.resx">
+      <DependentUpon>FrmPedidos_RegistroDeIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmRPTPedidosCedisExistencias.resx">
+      <DependentUpon>FrmRPTPedidosCedisExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmRptReSurtidoCedis.resx">
+      <DependentUpon>FrmRptReSurtidoCedis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmRtp_AtencionesSurtidores_Choferes.resx">
+      <DependentUpon>FrmRtp_AtencionesSurtidores_Choferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmRpt_PorcentajeSurtimientoPedidos.resx">
+      <DependentUpon>FrmRpt_PorcentajeSurtimientoPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmListaPedidosParaSurtido.resx">
+      <DependentUpon>FrmListaPedidosParaSurtido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmModificarCantidadSurtida.resx">
+      <DependentUpon>FrmModificarCantidadSurtida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmPCM_Claves.resx">
+      <DependentUpon>FrmPCM_Claves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmPreparaExistenciaDistribucion.resx">
+      <DependentUpon>FrmPreparaExistenciaDistribucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmRegresarASurtido.resx">
+      <DependentUpon>FrmRegresarASurtido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmSurtidoDePedido.resx">
+      <DependentUpon>FrmSurtidoDePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmTableroPedidosSurtido.resx">
+      <DependentUpon>FrmTableroPedidosSurtido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorPedidos_Embarques.resx">
+      <DependentUpon>FrmMonitorPedidos_Embarques.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaEmbarques.resx">
+      <DependentUpon>FrmMonitorPedidos_EntregaEmbarques.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaDocumentacion.resx">
+      <DependentUpon>FrmMonitorPedidos_EntregaDocumentacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorPedidos_Documentacion.resx">
+      <DependentUpon>FrmMonitorPedidos_Documentacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorPedidos_Surtido.resx">
+      <DependentUpon>FrmMonitorPedidos_Surtido.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorPedidos_Validacion.resx">
+      <DependentUpon>FrmMonitorPedidos_Validacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorPedidos_EntregaValidacion.resx">
+      <DependentUpon>FrmMonitorPedidos_EntregaValidacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorSurtimientoDePedidos.resx">
+      <DependentUpon>FrmMonitorSurtimientoDePedidos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Monitor\FrmMonitorSurtimientoDePedidos_Base.resx">
+      <DependentUpon>FrmMonitorSurtimientoDePedidos_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Validacion\FrmPedidosValidacionCiega.resx">
+      <DependentUpon>FrmPedidosValidacionCiega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\Validacion\FrmPedidosValidacionCiegaLotes.resx">
+      <DependentUpon>FrmPedidosValidacionCiegaLotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilesAtencion\FrmGruposPerfilAtencionDist.resx">
+      <DependentUpon>FrmGruposPerfilAtencionDist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilesAtencion\FrmGruposPerfilesAtencion.resx">
+      <DependentUpon>FrmGruposPerfilesAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilesAtencion\FrmPerfilesAtencion.resx">
+      <DependentUpon>FrmPerfilesAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilesAtencion\FrmPerfilesAtencionClavesSSADist.resx">
+      <DependentUpon>FrmPerfilesAtencionClavesSSADist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_RptListadoPorCaducidades.resx">
+      <DependentUpon>Frm_RptListadoPorCaducidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_RptListadoPorCosto.resx">
+      <DependentUpon>Frm_RptListadoPorCosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_RptRotacion.resx">
+      <DependentUpon>Frm_RptRotacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraspasosEstatales\FrmEdoTraspasosSalidas_Controlados.resx">
+      <DependentUpon>FrmEdoTraspasosSalidas_Controlados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraspasosEstatales\FrmEdoCambioTraspasosSalidas.resx">
+      <DependentUpon>FrmEdoCambioTraspasosSalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraspasosEstatales\FrmEdoSeguimientoTraspasoSalidas.resx">
+      <DependentUpon>FrmEdoSeguimientoTraspasoSalidas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraspasosEstatales\FrmEdoTraspasosEntradas.resx">
+      <DependentUpon>FrmEdoTraspasosEntradas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraspasosEstatales\FrmEdoTraspasosSalidas.resx">
+      <DependentUpon>FrmEdoTraspasosSalidas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraspasosEstatales\FrmEdoTransferenciasEnTransito.resx">
+      <DependentUpon>FrmEdoTransferenciasEnTransito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmListadoUbicacionesEstandar.resx">
+      <DependentUpon>FrmListadoUbicacionesEstandar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmUbicacionesExcluidasSurtimiento.resx">
+      <DependentUpon>FrmUbicacionesExcluidasSurtimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmRptUbicacionesClavesDetalleLotes.resx">
+      <DependentUpon>FrmRptUbicacionesClavesDetalleLotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmPasillos.resx">
+      <DependentUpon>FrmPasillos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmPasillosEstantes.resx">
+      <DependentUpon>FrmPasillosEstantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmPasillosEstantesBaldas.resx">
+      <DependentUpon>FrmPasillosEstantesBaldas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmRptClavesSinUbicaciones.resx">
+      <DependentUpon>FrmRptClavesSinUbicaciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmRptUbicacionesClaves.resx">
+      <DependentUpon>FrmRptUbicacionesClaves.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmRptUbicacionesClavesDetalle.resx">
+      <DependentUpon>FrmRptUbicacionesClavesDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vales_Servicio_A_Domicilio\FrmGetVales_Servicio_A_Domicilio.resx">
+      <DependentUpon>FrmGetVales_Servicio_A_Domicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vales_Servicio_A_Domicilio\FrmListadoDeServiciosADomicilio.resx">
+      <DependentUpon>FrmListadoDeServiciosADomicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vales_Servicio_A_Domicilio\FrmRegistroServicioADomicilio.resx">
+      <DependentUpon>FrmRegistroServicioADomicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Almacen.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Snk\Almacen.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsUpdater\wsUpdater.wsdl" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Vales_Servicio_A_Domicilio\FrmGetVales_Servicio_A_Domicilio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales_Servicio_A_Domicilio\FrmGetVales_Servicio_A_Domicilio.Designer.cs">
+      <DependentUpon>FrmGetVales_Servicio_A_Domicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vales_Servicio_A_Domicilio\FrmListadoDeServiciosADomicilio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales_Servicio_A_Domicilio\FrmListadoDeServiciosADomicilio.Designer.cs">
+      <DependentUpon>FrmListadoDeServiciosADomicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vales_Servicio_A_Domicilio\FrmRegistroServicioADomicilio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales_Servicio_A_Domicilio\FrmRegistroServicioADomicilio.Designer.cs">
+      <DependentUpon>FrmRegistroServicioADomicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsAlmacen\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsUpdater\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="capsule.ico" />
+    <Content Include="Logo_Intermed.ico" />
+    <None Include="Resources\BtnSalir.ico" />
+    <None Include="Web References\wsAlmacen\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsAlmacen\wsFarmacia.disco" />
+    <None Include="app.config" />
+    <None Include="Snk\Almacen.snk" />
+    <None Include="Web References\wsAlmacen\wsFarmacia.wsdl" />
+    <None Include="Web References\wsUpdater\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsUpdater\wsUpdater.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsFarmacia.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsAlmacen\</RelPath>
+      <UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsFarmacia.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Almacen_wsAlmacen_wsCnnCliente</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsUpdater\</RelPath>
+      <UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Almacen_wsUpdater_wsUpdater</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataTransfer\DllTransferenciaSoft\DllTransferenciaSoft.csproj">
+      <Project>{6C7D74CB-63A0-4EE2-A858-4CDBEAB6C7AC}</Project>
+      <Name>DllTransferenciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DllFarmaciaSoft.QRCode\DllFarmaciaSoft.QRCode.csproj">
+      <Project>{4DB4659F-36E8-4865-8308-61EDB47716E7}</Project>
+      <Name>DllFarmaciaSoft.QRCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DllFarmaciaSoft\DllFarmaciaSoft.csproj">
+      <Project>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</Project>
+      <Name>DllFarmaciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Farmacia\Farmacia.csproj">
+      <Project>{E10B1D1A-6D48-42FB-AA2F-442762EABCE4}</Project>
+      <Name>Farmacia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SC_SolutionsSystem.FP\SC_SolutionsSystem.FP.csproj">
+      <Project>{A3C3081A-24BD-4E3D-A6F4-4949A7D415CB}</Project>
+      <Name>SC_SolutionsSystem.FP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SC_SolutionsSystem.QRCode\QRCodeLib\SC_SolutionsSystem.QRCode.csproj">
+      <Project>{e98126b2-af17-4783-96b9-856d6744dca3}</Project>
+      <Name>SC_SolutionsSystem.QRCode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

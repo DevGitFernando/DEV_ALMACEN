@@ -1,0 +1,686 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:long" minOccurs="0" />
+                <xs:element name="linea_orden_pk" type="xs:int" minOccurs="0" />
+                <xs:element name="fecha" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="hora" type="xs:string" minOccurs="0" />
+                <xs:element name="cod_cama" type="xs:string" minOccurs="0" />
+                <xs:element name="Unidad_x0020_de_x0020_enfermería" type="xs:int" minOccurs="0" />
+                <xs:element name="Registro" type="xs:string" minOccurs="0" />
+                <xs:element name="Paciente" type="xs:string" minOccurs="0" />
+                <xs:element name="Edad" type="xs:int" minOccurs="0" />
+                <xs:element name="codigo_sexo" type="xs:int" minOccurs="0" />
+                <xs:element name="Codigo_x0020_Articulo" type="xs:string" minOccurs="0" />
+                <xs:element name="Descripción" type="xs:string" minOccurs="0" />
+                <xs:element name="Dosis" type="xs:string" minOccurs="0" />
+                <xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ID>30</ID>
+    <linea_orden_pk>2897377</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>301</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244359         </Registro>
+    <Paciente>ARTURO PEREZ MARTINEZ</Paciente>
+    <Edad>75</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>634</Codigo_x0020_Articulo>
+    <Descripción>ATORVASTATINA 80 MG</Descripción>
+    <Dosis>80.000 mg</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>30</ID>
+    <linea_orden_pk>2897379</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>301</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244359         </Registro>
+    <Paciente>ARTURO PEREZ MARTINEZ</Paciente>
+    <Edad>75</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>494</Codigo_x0020_Articulo>
+    <Descripción>PARACETAMOL 500 MG</Descripción>
+    <Dosis>1.000 g</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>30</ID>
+    <linea_orden_pk>2897384</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>301</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244359         </Registro>
+    <Paciente>ARTURO PEREZ MARTINEZ</Paciente>
+    <Edad>75</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>147</Codigo_x0020_Articulo>
+    <Descripción>CAPTOPRIL 25 MG</Descripción>
+    <Dosis>25.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>30</ID>
+    <linea_orden_pk>2897387</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>301</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244359         </Registro>
+    <Paciente>ARTURO PEREZ MARTINEZ</Paciente>
+    <Edad>75</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>278</Codigo_x0020_Articulo>
+    <Descripción>AMLODIPINO, MALEATO DE 5 MG</Descripción>
+    <Dosis>5.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>30</ID>
+    <linea_orden_pk>2897389</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>301</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244359         </Registro>
+    <Paciente>ARTURO PEREZ MARTINEZ</Paciente>
+    <Edad>75</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>68</Codigo_x0020_Articulo>
+    <Descripción>SOLUCION SALINA 0.9% / 1000 ML (ENVASE)</Descripción>
+    <Dosis>40.000 ml</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>31</ID>
+    <linea_orden_pk>2887144</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>302</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>243873         </Registro>
+    <Paciente>PABLO GONZALEZ VALENCIA</Paciente>
+    <Edad>61</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>699</Codigo_x0020_Articulo>
+    <Descripción>NIFEDIPINO 10 MG</Descripción>
+    <Dosis>30.000 mg</Dosis>
+    <Cantidad>9</Cantidad>
+  </Table>
+  <Table>
+    <ID>31</ID>
+    <linea_orden_pk>2890460</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>302</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>243873         </Registro>
+    <Paciente>PABLO GONZALEZ VALENCIA</Paciente>
+    <Edad>61</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>181</Codigo_x0020_Articulo>
+    <Descripción>OMEPRAZOL O PANTOPRAZOL SODICO 40 MG</Descripción>
+    <Dosis>40.000 mg</Dosis>
+    <Cantidad>3</Cantidad>
+  </Table>
+  <Table>
+    <ID>31</ID>
+    <linea_orden_pk>2892881</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>302</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>243873         </Registro>
+    <Paciente>PABLO GONZALEZ VALENCIA</Paciente>
+    <Edad>61</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>102</Codigo_x0020_Articulo>
+    <Descripción>KETOCONAZOL 2 GR</Descripción>
+    <Dosis>1.000 aplic</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>31</ID>
+    <linea_orden_pk>2897263</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>302</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>243873         </Registro>
+    <Paciente>PABLO GONZALEZ VALENCIA</Paciente>
+    <Edad>61</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>756</Codigo_x0020_Articulo>
+    <Descripción>IPRATROPIO/SALBUTAMOL (0.5 MG/2.5 MG)/2.5 ML</Descripción>
+    <Dosis>1.000 nebul</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>32</ID>
+    <linea_orden_pk>2896603</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>311</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239995         </Registro>
+    <Paciente>JOSE JESUS AGUILAR ROCHA</Paciente>
+    <Edad>47</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>723</Codigo_x0020_Articulo>
+    <Descripción>OMEPRAZOL 20 MG O RABEPRAZOL 20 MG O PANTOPRAZOL 40 MG (14)</Descripción>
+    <Dosis>20.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>32</ID>
+    <linea_orden_pk>2896605</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>311</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239995         </Registro>
+    <Paciente>JOSE JESUS AGUILAR ROCHA</Paciente>
+    <Edad>47</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>TELMISARTAN</Descripción>
+    <Dosis>40.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>32</ID>
+    <linea_orden_pk>2896613</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>311</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239995         </Registro>
+    <Paciente>JOSE JESUS AGUILAR ROCHA</Paciente>
+    <Edad>47</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>244</Codigo_x0020_Articulo>
+    <Descripción>GABAPENTINA 300 MG</Descripción>
+    <Dosis>300.000 mg</Dosis>
+    <Cantidad>3</Cantidad>
+  </Table>
+  <Table>
+    <ID>32</ID>
+    <linea_orden_pk>2896616</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>311</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239995         </Registro>
+    <Paciente>JOSE JESUS AGUILAR ROCHA</Paciente>
+    <Edad>47</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>571</Codigo_x0020_Articulo>
+    <Descripción>SERTRALINA, CLORHIDRATO DE 50 MG</Descripción>
+    <Dosis>50.000 mg</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>32</ID>
+    <linea_orden_pk>2896618</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>311</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239995         </Registro>
+    <Paciente>JOSE JESUS AGUILAR ROCHA</Paciente>
+    <Edad>47</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>298</Codigo_x0020_Articulo>
+    <Descripción>ENOXAPARINA SODICA 60 MG/0.6 ML</Descripción>
+    <Dosis>60.000 mg</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>33</ID>
+    <linea_orden_pk>2893523</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>313</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>240610         </Registro>
+    <Paciente>JOSE LUIS GONZALEZ MARTIN</Paciente>
+    <Edad>45</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>723</Codigo_x0020_Articulo>
+    <Descripción>OMEPRAZOL 20 MG O RABEPRAZOL 20 MG O PANTOPRAZOL 40 MG (14)</Descripción>
+    <Dosis>20.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>33</ID>
+    <linea_orden_pk>2893526</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>313</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>240610         </Registro>
+    <Paciente>JOSE LUIS GONZALEZ MARTIN</Paciente>
+    <Edad>45</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>494</Codigo_x0020_Articulo>
+    <Descripción>PARACETAMOL 500 MG</Descripción>
+    <Dosis>1.000 g</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>34</ID>
+    <linea_orden_pk>2891958</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>321</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244165         </Registro>
+    <Paciente>FILEMON FERNANDEZ BAZAN</Paciente>
+    <Edad>59</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>359</Codigo_x0020_Articulo>
+    <Descripción>LEVETIRACETAM 500 MG</Descripción>
+    <Dosis>1.500 g</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>34</ID>
+    <linea_orden_pk>2891975</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>321</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244165         </Registro>
+    <Paciente>FILEMON FERNANDEZ BAZAN</Paciente>
+    <Edad>59</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>914</Codigo_x0020_Articulo>
+    <Descripción>TOBRAMICINA, SULFATO DE 3 MG/ML</Descripción>
+    <Dosis>1.000 gotas</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>35</ID>
+    <linea_orden_pk>2898669</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>352</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244273         </Registro>
+    <Paciente>JUANITA RAMOS TAPIA</Paciente>
+    <Edad>82</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>986</Codigo_x0020_Articulo>
+    <Descripción>PIPERACILINA SODICA/TAZOBACTAM SODICO 4 G/500 MG</Descripción>
+    <Dosis>2.250 g</Dosis>
+    <Cantidad>3</Cantidad>
+  </Table>
+  <Table>
+    <ID>35</ID>
+    <linea_orden_pk>2898674</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>352</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244273         </Registro>
+    <Paciente>JUANITA RAMOS TAPIA</Paciente>
+    <Edad>82</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>115</Codigo_x0020_Articulo>
+    <Descripción>IPRATROPIO MONOHIDRATADO, BROMURO DE 250MCG/20 ML</Descripción>
+    <Dosis>2.000 ml</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>35</ID>
+    <linea_orden_pk>2898679</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>352</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244273         </Registro>
+    <Paciente>JUANITA RAMOS TAPIA</Paciente>
+    <Edad>82</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>756</Codigo_x0020_Articulo>
+    <Descripción>IPRATROPIO/SALBUTAMOL (0.5 MG/2.5 MG)/2.5 ML</Descripción>
+    <Dosis>1.000 amp</Dosis>
+    <Cantidad>3</Cantidad>
+  </Table>
+  <Table>
+    <ID>35</ID>
+    <linea_orden_pk>2898683</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>352</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244273         </Registro>
+    <Paciente>JUANITA RAMOS TAPIA</Paciente>
+    <Edad>82</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>751</Codigo_x0020_Articulo>
+    <Descripción>HIDROCORTISONA, SUCCINATO SODICO DE 100 MG/2 ML</Descripción>
+    <Dosis>50.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>35</ID>
+    <linea_orden_pk>2898688</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>352</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244273         </Registro>
+    <Paciente>JUANITA RAMOS TAPIA</Paciente>
+    <Edad>82</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>308</Codigo_x0020_Articulo>
+    <Descripción>CEFTRIAXONA SODICA 1 G/10 ML</Descripción>
+    <Dosis>1.000 g</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>35</ID>
+    <linea_orden_pk>2898691</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>352</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244273         </Registro>
+    <Paciente>JUANITA RAMOS TAPIA</Paciente>
+    <Edad>82</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>63</Codigo_x0020_Articulo>
+    <Descripción>SOLUCION HARTMANN, 500 ML</Descripción>
+    <Dosis>40.000 ml</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>36</ID>
+    <linea_orden_pk>2892407</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>361</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>241534         </Registro>
+    <Paciente>RUBI PARRA MENDOZA</Paciente>
+    <Edad>46</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>1020</Codigo_x0020_Articulo>
+    <Descripción>HIPROMELOSA 5 MG/ML</Descripción>
+    <Dosis>1.000 gotas</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>36</ID>
+    <linea_orden_pk>2894776</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>361</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>241534         </Registro>
+    <Paciente>RUBI PARRA MENDOZA</Paciente>
+    <Edad>46</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>68</Codigo_x0020_Articulo>
+    <Descripción>SOLUCION SALINA 0.9% / 1000 ML (ENVASE)</Descripción>
+    <Dosis>20.000 ml</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2880467</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>ACIDO VALPROICO</Descripción>
+    <Dosis>1.500 g</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2880470</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>CLONAZEPAM</Descripción>
+    <Dosis>2.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2880477</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>LEVETIRACETAM</Descripción>
+    <Dosis>1.500 g</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2880480</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>PRIMIDONA</Descripción>
+    <Dosis>250.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2880508</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>LACOSAMIDA</Descripción>
+    <Dosis>200.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2881812</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>6</Codigo_x0020_Articulo>
+    <Descripción>BUPRENORFINA, CLORHIDRATO DE 0.3 MG/ML</Descripción>
+    <Dosis>1.000 amp</Dosis>
+    <Cantidad>4</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2881952</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>SOLUCION SALINO</Descripción>
+    <Dosis>40.000 ml</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>37</ID>
+    <linea_orden_pk>2892298</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>372</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1074</Unidad_x0020_de_x0020_enfermería>
+    <Registro>239399         </Registro>
+    <Paciente>MARICELA SANTIAGO DEL ANGEL</Paciente>
+    <Edad>33</Edad>
+    <codigo_sexo>3</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>PARACETAMOL</Descripción>
+    <Dosis>1.000 g</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>38</ID>
+    <linea_orden_pk>2892038</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>393</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1135</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244206         </Registro>
+    <Paciente>ELIAS OMAR AGATON MENDOZA</Paciente>
+    <Edad>38</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>298</Codigo_x0020_Articulo>
+    <Descripción>ENOXAPARINA SODICA 60 MG/0.6 ML</Descripción>
+    <Dosis>60.000 mg</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>38</ID>
+    <linea_orden_pk>2892045</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>393</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1135</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244206         </Registro>
+    <Paciente>ELIAS OMAR AGATON MENDOZA</Paciente>
+    <Edad>38</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>170</Codigo_x0020_Articulo>
+    <Descripción>SOLUCION SALINA 0.9% / 1000 ML</Descripción>
+    <Dosis>60.000 ml</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>38</ID>
+    <linea_orden_pk>2892075</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>393</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1135</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244206         </Registro>
+    <Paciente>ELIAS OMAR AGATON MENDOZA</Paciente>
+    <Edad>38</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>181</Codigo_x0020_Articulo>
+    <Descripción>OMEPRAZOL O PANTOPRAZOL SODICO 40 MG</Descripción>
+    <Dosis>40.000 mg</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>38</ID>
+    <linea_orden_pk>2892081</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>393</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1135</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244206         </Registro>
+    <Paciente>ELIAS OMAR AGATON MENDOZA</Paciente>
+    <Edad>38</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>205</Codigo_x0020_Articulo>
+    <Descripción>ACIDO FOLICO 5 MG</Descripción>
+    <Dosis>5.000 mg</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+  <Table>
+    <ID>38</ID>
+    <linea_orden_pk>2893788</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>393</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1135</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244206         </Registro>
+    <Paciente>ELIAS OMAR AGATON MENDOZA</Paciente>
+    <Edad>38</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>703</Codigo_x0020_Articulo>
+    <Descripción>SALBUTAMOL, SULFATO DE 0.5 G/100 ML</Descripción>
+    <Dosis>1.000 nebul</Dosis>
+    <Cantidad>6</Cantidad>
+  </Table>
+  <Table>
+    <ID>38</ID>
+    <linea_orden_pk>2896574</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>393</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1135</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244206         </Registro>
+    <Paciente>ELIAS OMAR AGATON MENDOZA</Paciente>
+    <Edad>38</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>CP</Codigo_x0020_Articulo>
+    <Descripción>BACTRIM F</Descripción>
+    <Dosis>1.000 tab</Dosis>
+    <Cantidad>2</Cantidad>
+  </Table>
+  <Table>
+    <ID>39</ID>
+    <linea_orden_pk>2898730</linea_orden_pk>
+    <fecha>2018-01-18T00:00:00-06:00</fecha>
+    <hora>17:56:50</hora>
+    <cod_cama>404</cod_cama>
+    <Unidad_x0020_de_x0020_enfermería>1080</Unidad_x0020_de_x0020_enfermería>
+    <Registro>244298         </Registro>
+    <Paciente>JESUS RAMON LOPEZ VAZQUEZ</Paciente>
+    <Edad>48</Edad>
+    <codigo_sexo>2</codigo_sexo>
+    <Codigo_x0020_Articulo>203</Codigo_x0020_Articulo>
+    <Descripción>PREDNISONA 50 MG</Descripción>
+    <Dosis>20.000 mg</Dosis>
+    <Cantidad>1</Cantidad>
+  </Table>
+</NewDataSet>

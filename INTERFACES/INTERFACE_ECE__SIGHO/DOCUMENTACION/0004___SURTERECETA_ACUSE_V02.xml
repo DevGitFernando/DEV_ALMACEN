@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SurteReceta>
+	<General>
+		<idPeticion>SR0000001</idPeticion>
+		<tipoPeticion>SURTERECETA</tipoPeticion>
+		<folioReceta>1000</folioReceta>
+		<fechaReceta>05/02/2016</fechaReceta>
+		<fechaSurtimiento>2016-02-06</fechaSurtimiento>
+		<expediente>21000100001</expediente>
+		<idPersonaSurte>15648</idPersonaSurte>
+		<nombrePersonaSurte>Lilia</nombrePersonaSurte>
+		<apPatPersonaSurte>Gómez</apPatPersonaSurte>
+		<apMatMedPersonaSurte>Solís</apMatMedPersonaSurte>
+		<observaciones>Se surte 1 caja con vale</observaciones>
+	</General>
+	<Medicamentos>
+		<Medicamento>
+			<clave>010.000.0104.00</clave>
+			<cantidadRecetada>2</cantidadRecetada>
+			<cantidadSurtida>1</cantidadSurtida>
+			<vale>SI</vale>
+			<codigoVale>1234</codigoVale>
+			<piezasVale>10</piezasVale>
+		</Medicamento>
+	</Medicamentos>
+</SurteReceta>

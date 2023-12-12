@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dll_ISIADISSEP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dll_ISIADISSEP_wsAcuseProcesos_RE_ws_Cnn_ISIADISSEP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:6179/wsSII_CNN_ISIADISSEP/wsInterfaceISIADISSEP.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_ISIADISSEP_wsAcuseProcesos_cnnInterna_wsISIADISSEP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:21734/wsSII_INT_ISIADISSEP/wsISIADISSEP.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,12 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\SC_SolutionsSystem.ZXing20.dll
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\SC_SolutionsSystem.ZXing20.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.dll
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\SC_SolutionsSystem.ZXing20.dll
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\SC_SolutionsSystem.ZXing20.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.dll
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\SC_SolutionsSystem.ZXing20\obj\Debug\SC_SolutionsSystem.ZXing20.pdb

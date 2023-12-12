@@ -1,0 +1,12 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\Archivos_Generados\DllRobotDispensador.dll
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\Archivos_Generados\DllRobotDispensador.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.dll
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\Archivos_Generados\DllRobotDispensador.dll
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\Archivos_Generados\DllRobotDispensador.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.dll
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\INTERFACES_ROBOTS\DllRobotDispensador\obj\Debug\DllRobotDispensador.pdb

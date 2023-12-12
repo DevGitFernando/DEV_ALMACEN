@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PutMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Strmessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSourceName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iPriorityLevel" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PutMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PutMessageResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="move_message">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="messtomove" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="move_messageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="move_messageResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="feedback_ospedale" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PutMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:PutMessage" />
+  </wsdl:message>
+  <wsdl:message name="PutMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:PutMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="move_messageSoapIn">
+    <wsdl:part name="parameters" element="tns:move_message" />
+  </wsdl:message>
+  <wsdl:message name="move_messageSoapOut">
+    <wsdl:part name="parameters" element="tns:move_messageResponse" />
+  </wsdl:message>
+  <wsdl:message name="PutMessageHttpGetIn">
+    <wsdl:part name="Strmessage" type="s:string" />
+    <wsdl:part name="strSourceName" type="s:string" />
+    <wsdl:part name="iPriorityLevel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PutMessageHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="PutMessageHttpPostIn">
+    <wsdl:part name="Strmessage" type="s:string" />
+    <wsdl:part name="strSourceName" type="s:string" />
+    <wsdl:part name="iPriorityLevel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PutMessageHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="msmqinwsSoap">
+    <wsdl:operation name="PutMessage">
+      <wsdl:input message="tns:PutMessageSoapIn" />
+      <wsdl:output message="tns:PutMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="move_message">
+      <wsdl:input message="tns:move_messageSoapIn" />
+      <wsdl:output message="tns:move_messageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="msmqinwsHttpGet">
+    <wsdl:operation name="PutMessage">
+      <wsdl:input message="tns:PutMessageHttpGetIn" />
+      <wsdl:output message="tns:PutMessageHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="msmqinwsHttpPost">
+    <wsdl:operation name="PutMessage">
+      <wsdl:input message="tns:PutMessageHttpPostIn" />
+      <wsdl:output message="tns:PutMessageHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="msmqinwsSoap" type="tns:msmqinwsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PutMessage">
+      <soap:operation soapAction="http://tempuri.org/PutMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="move_message">
+      <soap:operation soapAction="http://tempuri.org/move_message" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="msmqinwsSoap12" type="tns:msmqinwsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PutMessage">
+      <soap12:operation soapAction="http://tempuri.org/PutMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="move_message">
+      <soap12:operation soapAction="http://tempuri.org/move_message" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="msmqinwsHttpGet" type="tns:msmqinwsHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="PutMessage">
+      <http:operation location="/PutMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="msmqinwsHttpPost" type="tns:msmqinwsHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="PutMessage">
+      <http:operation location="/PutMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="msmqinws">
+    <wsdl:port name="msmqinwsSoap" binding="tns:msmqinwsSoap">
+      <soap:address location="https://svrimebajio/SintecoWS/SintecoWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="msmqinwsSoap12" binding="tns:msmqinwsSoap12">
+      <soap12:address location="https://svrimebajio/SintecoWS/SintecoWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="msmqinwsHttpGet" binding="tns:msmqinwsHttpGet">
+      <http:address location="https://svrimebajio/SintecoWS/SintecoWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="msmqinwsHttpPost" binding="tns:msmqinwsHttpPost">
+      <http:address location="https://svrimebajio/SintecoWS/SintecoWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

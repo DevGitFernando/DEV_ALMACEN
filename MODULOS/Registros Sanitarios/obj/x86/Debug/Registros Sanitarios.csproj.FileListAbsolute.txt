@@ -1,0 +1,16 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Registros Sanitarios.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Registros Sanitarios.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros_Sanitarios.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Registros Sanitarios.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Registros Sanitarios.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros_Sanitarios.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Registros Sanitarios\obj\x86\Debug\Registros Sanitarios.pdb

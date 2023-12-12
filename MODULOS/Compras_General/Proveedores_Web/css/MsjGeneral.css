@@ -1,0 +1,114 @@
+﻿body 
+{
+    font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+    font-size: 75%;
+    overflow:hidden;
+    margin: 0px;
+    padding: 0px;
+}
+h1 
+{
+    text-align: center;
+}
+
+#title {
+	/*text-align:center;*/
+	text-align:left;
+}
+#Contenedor {
+    position: absolute; 
+    margin-top: -173px; 
+    margin-left: -173px; 
+    padding: 0px; 
+    width: 346px; 
+    height: 346px; 
+    top: 50%; 
+    left: 50%;
+}
+
+a { 
+    text-decoration:none
+}
+a:hover { 
+    text-decoration:none
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+/*Mensajes de css*/
+.info, .exito, .alerta, .error {
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:13px;
+    border: 1px solid;
+	margin: 0px;
+	padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    position:absolute;
+	bottom: 0px;
+	width:100%;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../images/info.png');
+}
+.exito {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../images/exito.png');
+}
+.alerta {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../images/alerta.png');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../images/error.png');
+}
+
+#TituloLogin {
+    padding: 8px 0px 0px 16px;
+    text-indent: 3px;
+    font: bold 14px Arial;
+    background-repeat: repeat-x;
+    color: white;
+    overflow: hidden;
+    width: auto;
+    filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+/* Msj */
+#msj {
+height: 346px;
+width: 346px;
+background-image:url(../images/mensaje.jpg);
+margin:0px;
+padding:0px;
+border-collapse:collapse;
+border: 0px;
+}
+#top {
+	height:145px;
+}
+#txt {
+	height:108px;
+}
+#txtl {
+	width:100px;
+}
+#txtr {
+	width:50px;
+}

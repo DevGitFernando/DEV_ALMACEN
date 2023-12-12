@@ -1,0 +1,20 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente Regional.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente Regional.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\Configuración Servicio Cliente Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\Configuración Servicio Cliente Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente Regional.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\DtConfigurarRCOCR.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\Configuración Servicio Cliente Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRCOCR\obj\Debug\Configuración Servicio Cliente Regional.pdb

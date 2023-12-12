@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="yes"?>
+<Lenguajes>
+  <xs:schema id="Lenguajes" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Lenguajes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ListaLenguajes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdIdioma" type="xs:string" minOccurs="0" />
+                <xs:element name="Idioma" type="xs:string" minOccurs="0" />
+                <xs:element name="IdiomaDescripcion" type="xs:string" minOccurs="0" />
+                <xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+                <xs:element name="Status" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ListaMensajesDefault">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdItem" type="xs:string" minOccurs="0" />
+                <xs:element name="IdModulo" type="xs:string" minOccurs="0" />
+                <xs:element name="IdTipoEtiqueta" type="xs:string" minOccurs="0" />
+                <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+                <xs:element name="Etiqueta" type="xs:string" minOccurs="0" />
+                <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+                <xs:element name="Status" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ListaMensajes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdItem" type="xs:string" minOccurs="0" />
+                <xs:element name="Idioma" type="xs:string" minOccurs="0" />
+                <xs:element name="IdiomaDescripcion" type="xs:string" minOccurs="0" />
+                <xs:element name="Etiqueta" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ListaLenguajes>
+    <IdIdioma>1</IdIdioma>
+    <Idioma>es-mx</Idioma>
+    <IdiomaDescripcion>Español México</IdiomaDescripcion>
+    <Observaciones>Latinoamerica</Observaciones>
+    <Status>A</Status>
+  </ListaLenguajes>
+  <ListaLenguajes>
+    <IdIdioma>2</IdIdioma>
+    <Idioma>en-es</Idioma>
+    <IdiomaDescripcion>Ingles Estadounidense</IdiomaDescripcion>
+    <Observaciones>Gringolandia</Observaciones>
+    <Status>A</Status>
+  </ListaLenguajes>
+  <ListaMensajesDefault>
+    <IdItem>1</IdItem>
+    <IdModulo>1</IdModulo>
+    <IdTipoEtiqueta>1</IdTipoEtiqueta>
+    <Nombre>lblLogin</Nombre>
+    <Etiqueta>Usuario :</Etiqueta>
+    <Descripcion>Login del sistema</Descripcion>
+    <Status>A</Status>
+  </ListaMensajesDefault>
+  <ListaMensajes>
+    <IdItem>1</IdItem>
+    <Idioma>es-mx</Idioma>
+    <IdiomaDescripcion>Español México</IdiomaDescripcion>
+    <Etiqueta>Usuario : </Etiqueta>
+  </ListaMensajes>
+  <ListaMensajes>
+    <IdItem>1</IdItem>
+    <Idioma>en-es</Idioma>
+    <IdiomaDescripcion>Ingles Estadounidense</IdiomaDescripcion>
+    <Etiqueta>Login : </Etiqueta>
+  </ListaMensajes>
+</Lenguajes>

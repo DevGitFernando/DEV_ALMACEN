@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedSol>
+	<Generales>
+		<idPeticion>CMS253</idPeticion>
+		<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+		<idColectivo>285</idColectivo>
+		<fechaHoraElaboracion>2018-05-01 10:50:03.54</fechaHoraElaboracion>
+		<unidadMedica>PLSSA009394</unidadMedica>
+		<episodioSalud>EMER</episodioSalud>
+		<tipoServicio>EMER001</tipoServicio>
+		<servicio>EMER00101</servicio>
+	</Generales>
+	<Detalles>
+		<Pacientes>
+			<Paciente>
+				<folioPaciente>1</folioPaciente>
+				<nombrePaciente>MARIA DE LOS ANGELES</nombrePaciente>
+				<apPaternoPaciente>AYALA</apPaternoPaciente>
+				<apMaternoPaciente>FUENTES</apMaternoPaciente>
+				<camaPaciente>3</camaPaciente>
+				<fechaNacimientoPaciente>1953-03-03</fechaNacimientoPaciente>
+				<polizaPaciente>2114679066-01</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-03-20</vigenciaPolizaPaciente>
+				<Medicamentos>
+					<Medicamento expediente="210930001573">
+						<claveMed>010.000.2128.01</claveMed>
+						<descripcionMed>Amoxicilina trihidratada</descripcionMed>
+						<dosisMed>2</dosisMed>
+						<frecuenciaMed>12</frecuenciaMed>
+						<cantidadSolicitadaMed>1</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+					<Medicamento expediente="210930001573">
+						<claveMed>010.000.1903.00</claveMed>
+						<descripcionMed>Trimetoprima - sulfametoxazol</descripcionMed>
+						<dosisMed>2</dosisMed>
+						<frecuenciaMed>13</frecuenciaMed>
+						<cantidadSolicitadaMed>1</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+				</Medicamentos>
+				<Soluciones>
+					<Solucion expediente="210930001573">
+						<claveSol>010.000.3606.00</claveSol>
+						<descripcionSol>Glucosa</descripcionSol>
+						<dosisSol>2</dosisSol>
+						<duracionSol>2</duracionSol>
+						<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+					<Solucion expediente="210930001573">
+						<claveSol>010.000.3627.00</claveSol>
+						<descripcionSol>sodio Cloruro de</descripcionSol>
+						<dosisSol>2</dosisSol>
+						<duracionSol>2</duracionSol>
+						<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+				</Soluciones>
+			</Paciente>
+			<Paciente>
+				<folioPaciente>2</folioPaciente>
+				<nombrePaciente>JUANA ROCIO</nombrePaciente>
+				<apPaternoPaciente>SANDOVAL</apPaternoPaciente>
+				<apMaternoPaciente>AVELINO</apMaternoPaciente>
+				<camaPaciente>1</camaPaciente>
+				<fechaNacimientoPaciente>1967-03-27</fechaNacimientoPaciente>
+				<polizaPaciente>2115333082-01</polizaPaciente>
+				<vigenciaPolizaPaciente>2018-11-09</vigenciaPolizaPaciente>
+				<Medicamentos>
+					<Medicamento expediente="210930005139">
+						<claveMed>010.000.3417.00</claveMed>
+						<descripcionMed>Diclofenaco sódico</descripcionMed>
+						<dosisMed>2</dosisMed>
+						<frecuenciaMed>13</frecuenciaMed>
+						<cantidadSolicitadaMed>1</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+					<Medicamento expediente="210930005139">
+						<claveMed>010.000.0104.00</claveMed>
+						<descripcionMed>Paracetamol</descripcionMed>
+						<dosisMed>2</dosisMed>
+						<frecuenciaMed>13</frecuenciaMed>
+						<cantidadSolicitadaMed>1</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+				</Medicamentos>
+			</Paciente>
+			<Paciente>
+				<folioPaciente>3</folioPaciente>
+				<nombrePaciente>MA DE LOS SANTOS </nombrePaciente>
+				<apPaternoPaciente>ACA</apPaternoPaciente>
+				<apMaternoPaciente>CANO</apMaternoPaciente>
+				<camaPaciente>11</camaPaciente>
+				<fechaNacimientoPaciente>1949-11-01</fechaNacimientoPaciente>
+				<polizaPaciente>2114679066-05</polizaPaciente>
+				<vigenciaPolizaPaciente>2019-03-20</vigenciaPolizaPaciente>
+				<Soluciones>
+					<Solucion expediente="210930002994">
+						<claveSol>010.000.3601.00</claveSol>
+						<descripcionSol>Glucosa anhidra</descripcionSol>
+						<dosisSol>2</dosisSol>
+						<duracionSol>2</duracionSol>
+						<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+					<Solucion expediente="210930002994">
+						<claveSol>010.000.3612.00</claveSol>
+						<descripcionSol>sodio Cloruro de y Glucosa anhidra</descripcionSol>
+						<dosisSol>2</dosisSol>
+						<duracionSol>3</duracionSol>
+						<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+					<Solucion expediente="210930002994">
+						<claveSol>010.000.3616.00</claveSol>
+						<descripcionSol>solución Hartmann</descripcionSol>
+						<dosisSol>2</dosisSol>
+						<duracionSol>2</duracionSol>
+						<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+				</Soluciones>
+			</Paciente>
+		</Pacientes>
+	</Detalles>
+</ColectivoMedSol>

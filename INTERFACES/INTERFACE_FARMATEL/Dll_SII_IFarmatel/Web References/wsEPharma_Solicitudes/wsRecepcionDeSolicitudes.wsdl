@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo de recepción de solicitudes</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="Conexion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivoIni" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConexionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecibirSolicitud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Solicitud" type="tns:SolicitudDeServicioInformacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SolicitudDeServicioInformacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sucursal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaveSucursalByCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FolioReferencia_Solicitud" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroDeReferencia" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaSolicitud" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beneficiario" type="tns:ItemBeneficiario" />
+          <s:element minOccurs="0" maxOccurs="1" name="Medico" type="tns:ItemMedico" />
+          <s:element minOccurs="0" maxOccurs="1" name="Insumos" type="tns:ArrayOfItemInsumo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemBeneficiario">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ItemPersona" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ItemPersona">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApPaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApMaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Referencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemMedico">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ItemPersona" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfItemInsumo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ItemInsumo" nillable="true" type="tns:ItemInsumo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemInsumo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ClaveInsumo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Piezas" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecibirSolicitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecibirSolicitudResult" type="tns:ResponseSolicitud" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseSolicitud">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Error" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Estatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Identificador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="tns:ResponseLogin" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseLogin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Identificador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sucursal" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Error" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Estatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProbarConexion">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProbarConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProbarConexionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestConection">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestConectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestConectionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:Conexion" />
+  </wsdl:message>
+  <wsdl:message name="ConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecibirSolicitudSoapIn">
+    <wsdl:part name="parameters" element="tns:RecibirSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="RecibirSolicitudSoapOut">
+    <wsdl:part name="parameters" element="tns:RecibirSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProbarConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:ProbarConexion" />
+  </wsdl:message>
+  <wsdl:message name="ProbarConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProbarConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestConectionSoapIn">
+    <wsdl:part name="parameters" element="tns:TestConection" />
+  </wsdl:message>
+  <wsdl:message name="TestConectionSoapOut">
+    <wsdl:part name="parameters" element="tns:TestConectionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsRecepcionDeSolicitudesSoap">
+    <wsdl:operation name="Conexion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información</wsdl:documentation>
+      <wsdl:input message="tns:ConexionSoapIn" />
+      <wsdl:output message="tns:ConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirSolicitud">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recepción de solicitudes de servicio.</wsdl:documentation>
+      <wsdl:input message="tns:RecibirSolicitudSoapIn" />
+      <wsdl:output message="tns:RecibirSolicitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recepción de solicitudes de servicio login</wsdl:documentation>
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Probar conexión.</wsdl:documentation>
+      <wsdl:input message="tns:ProbarConexionSoapIn" />
+      <wsdl:output message="tns:ProbarConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestConection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Probar conexión al servidor, clientes prueban la conexión</wsdl:documentation>
+      <wsdl:input message="tns:TestConectionSoapIn" />
+      <wsdl:output message="tns:TestConectionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsRecepcionDeSolicitudesSoap" type="tns:wsRecepcionDeSolicitudesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Conexion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Conexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirSolicitud">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/RecibirSolicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ProbarConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConection">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/TestConection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsRecepcionDeSolicitudesSoap12" type="tns:wsRecepcionDeSolicitudesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Conexion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Conexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirSolicitud">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/RecibirSolicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ProbarConexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConection">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/TestConection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsRecepcionDeSolicitudes">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo de recepción de solicitudes</wsdl:documentation>
+    <wsdl:port name="wsRecepcionDeSolicitudesSoap" binding="tns:wsRecepcionDeSolicitudesSoap">
+      <soap:address location="http://lapjesus/wsEPharma/ContacCenter/wsRecepcionDeSolicitudes.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsRecepcionDeSolicitudesSoap12" binding="tns:wsRecepcionDeSolicitudesSoap12">
+      <soap12:address location="http://lapjesus/wsEPharma/ContacCenter/wsRecepcionDeSolicitudes.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

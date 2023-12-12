@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedSol>
+	<Generales>
+		<idPeticion>CMS95</idPeticion>
+		<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+		<idColectivo>101</idColectivo>
+		<fechaHoraElaboracion>2017-02-09 18:11:12.084</fechaHoraElaboracion>
+		<servicio>EMER00101</servicio>
+	</Generales>
+	<Detalles>
+		<Medicamentos>
+			<Medicamento expediente="210742000016">
+				<nombrePaciente>ABIGAIL IVONNE</nombrePaciente>
+				<apPaternoPaciente>PEREZ</apPaternoPaciente>
+				<apMaternoPaciente>GARCIA</apMaternoPaciente>
+				<camaPaciente>01</camaPaciente>
+				<fechaNacimientoPaciente>2019-01-06</fechaNacimientoPaciente>
+				<polizaPaciente>2111087264-01</polizaPaciente>
+				<vigenciaPolizaPaciente/>
+				<claveMed>010.000.0101.00</claveMed>
+				<descripcionMed>Ácido acetilsalicílico</descripcionMed>
+				<dosisMed>2.00</dosisMed>
+				<frecuenciaMed>CADA 6 HORAS</frecuenciaMed>
+				<duracionMed>DÍAS</duracionMed>
+				<cantidadSolicitadaMed>1</cantidadSolicitadaMed>
+				<cantidadSurtidaMed>1</cantidadSurtidaMed>
+				<observacionesMed>Texto de Prueba</observacionesMed>>
+			</Medicamento>
+		</Medicamentos>
+		<Soluciones>
+			<Solucion expediente="210742000002">
+				<nombrePaciente>LUCIA</nombrePaciente>
+				<apPaternoPaciente>VARGAS</apPaternoPaciente>
+				<apMaternoPaciente>ROJAS</apMaternoPaciente>
+				<camaPaciente>11</camaPaciente>
+				<fechaNacimientoPaciente>1980-01-11</fechaNacimientoPaciente>
+				<polizaPaciente>2121315165-55</polizaPaciente>
+				<vigenciaPolizaPaciente>2019-02-16</vigenciaPolizaPaciente>
+				<claveSol>4</claveSol>
+				<descripcionSol>Glucosa, solución inyectable al 5%</descripcionSol>
+				<dosisSol>30.0</dosisSol>
+				<frecuenciaSol>CADA 1 HORAS</frecuenciaSol>
+				<duracionSol>5 HRS</duracionSol>
+				<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+				<cantidadSurtidaSol>1</cantidadSurtidaSol>
+				<observacionesMed>Texto de Prueba</observacionesMed>>
+			</Solucion>
+		</Soluciones>
+	</Detalles>
+</ColectivoMedSol>

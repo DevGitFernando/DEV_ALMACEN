@@ -1,0 +1,123 @@
+﻿/******* GENERAL RESET *******/
+ul, li, div {
+border:0pt none;
+font-family:inherit;
+font-size:100%;
+font-style:inherit;
+font-weight:inherit;
+margin:0pt;
+padding:0pt;
+vertical-align:baseline;
+}
+
+ul{
+	list-style: none;
+	list-style-type: none;
+	list-style-position: outside;
+}
+a{
+	cursor: pointer;
+	color: #296ba5;
+	text-decoration: none;
+	outline: none !Important;
+}
+/******* MENU *******/
+#menu{
+	display: none;
+	/*width: 165px;*/
+	width: auto;
+	padding: 6px;
+	/*background: #171717;*/
+	background: #99b7c9;
+	border: 1px solid #3e3e3e;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	position: absolute;
+	/*position: relative;*/
+	z-index: 999;
+}
+#menu ul{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #6d6d6d;
+	background: #fff;
+	border: 1px solid #171717;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+#menu ul li{
+	line-height: 1.5em;
+	padding: 5px 5px 5px 25px;
+	font-size: 11px;
+	border-bottom: 1px solid #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	list-style:none;
+}
+#menu ul li:hover{
+	background-color: #fff8cc;
+	border-bottom: 1px solid #ffe222;
+	color: #000;
+	cursor: pointer;
+}
+#menu ul li a{
+	color: #6d6d6d;
+	display: block;
+}
+#menu ul li.disabled, #menu ul li.disabled a{
+	color: #bbbbbb;
+	cursor: default;
+}
+#menu ul li.disabled:hover{
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+#menu ul li{
+	background-position: 3px 6px;
+	background-repeat: no-repeat;
+}
+#menu ul li#menu_marcarorden
+{   
+    margin-left: 4px;
+    background-position:center left;
+    background-image: url(../images/menu/document_ready.png);
+}
+#menu ul li#menu_download
+{   
+    margin-left: 4px;
+    background-position:center left;
+    background-image: url(../images/menu/download.png);
+}
+.mensaje
+{
+    /*margin-left: 4px;
+    background-position:center left;
+    background-image: url(../images/menu/document_ready.png);
+    background-repeat: no-repeat;*/
+    
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:13px;
+    border: 1px solid;
+	margin: 0px;
+	/*padding: 15px 10px 15px 50px;*/
+	padding: 2px 0px 2px 36px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    /*position:absolute;*/
+    position: relative;
+	/*bottom: 0px;*/
+	top: 0px;
+	/*width:100%;*/
+	width:auto;
+	
+	color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../images/Info_16_x_16.png');
+    font-style: italic;
+}
+/******* /MENU *******/

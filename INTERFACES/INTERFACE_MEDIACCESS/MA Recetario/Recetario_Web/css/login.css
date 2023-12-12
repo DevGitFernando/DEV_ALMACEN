@@ -1,0 +1,345 @@
+*{
+	margin:0px;
+	height:0px;
+}
+
+a
+{ 
+	text-decoration: none;
+	font-family:inherit;
+	color:#bad4fb;
+}
+
+body
+{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	position: absolute;
+	width: 100%;
+	min-width:50%;
+	height: 100%;
+	min-height:50%;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+
+
+header
+{
+	width:100%;
+	height:50px;
+	background-color: #e5f6fd;
+	
+	border-bottom: 2px solid #00aff0;
+}
+
+
+input
+{
+	border:none;
+}
+
+
+/*Contenedor General*/
+#content_general
+{
+	position:relative;
+	background: #fff;/*
+	background-image:url(../images/home_bg.jpg);*/
+	background-image:#deefff;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:660px;
+}
+
+
+#wrapper
+{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    overflow: hidden;
+	/*background-color: rgba(254, 254, 254, 0.7);
+	background-color: rgba(176, 185, 190, 0.02);*/
+	border-radius:3px;
+}
+
+/*header divs*/
+
+.titulo
+{
+    position: relative;
+    width: 50%;
+    height: 80px;
+	margin: 0 auto;
+	font-weight:400;
+    font-size: 2em;
+	color: #00aff0;
+    text-align: center;
+    display: block;
+    line-height: 80px;
+}
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color: #e5f6fd;
+	padding:10px;
+}
+
+
+#logoime
+{
+    position: absolute;
+	background-image: url(../images/logo_phf.png);
+	background-repeat: no-repeat;
+	width: 300px;
+	left:5%;
+	height: 80px;
+	margin:0 auto;
+	display: inline-block;
+}
+
+#logomedia{
+    position: absolute;
+	background-image:url(../images/logo_nuevo2.png);
+	background-repeat: no-repeat;
+	width: 300px;
+	right:0px;
+	top:0px;
+	height: 80px;
+	margin:0 auto;
+	display: block;
+}
+
+/*header divs*/
+
+.input_txt {
+    padding: 0px 60px 0px 10px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 69%;
+	color: #005ece;
+    height: 45px;
+    font-size: 14px;
+    text-align:center;
+    font: inherit;
+    border: 0;
+    
+    margin-bottom: 5px;
+    
+    background-color: #e5f6fd;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    text-transform: uppercase;
+}
+
+
+#input:hover{
+	outline: none;
+	color:red;
+	cursor:pointer;
+}
+
+
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+	color: #fff;}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+	color: #fff;}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+	color: #fff;}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+	color: #fff;
+}
+
+select
+{
+	padding: 0px 0px 0px 10px;
+	position: relative;
+	display:block;
+	margin: 0 auto;
+	color:#8bd3f1 ;
+	width:83%;
+	height:45px;
+   	font-size: 16px;
+	font:inherit;
+   	border: 0;
+   	border-bottom: 1px solid #b0ddf8;
+	
+	overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+		
+	-webkit-appearance: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);*/
+}
+
+/*Class_iconos*/
+.icoempresa
+{
+	background-color: rgba(254, 254, 254, 0.8);
+	background: url(../images/empresa.png);
+	background-position: 380px center;
+    background-repeat: no-repeat;
+}
+
+.icoestado
+{
+	background-color: rgba(254, 254, 254, 0.8);
+	background: url(../images/estado.png);
+	background-position: 380px center;
+    background-repeat: no-repeat;
+}
+
+.icofarmacia
+{
+	background-color: rgba(254, 254, 254, 0.8);
+	background: url(../images/farmacia.png);
+	background-position: 380px center;
+    background-repeat: no-repeat;
+}
+
+.icouser
+{
+	background-color: rgba(254, 254, 254, 0.8);
+	background: url(../images/user.png);
+	background-position: 313px center;
+    background-repeat: no-repeat;
+    background-color: #e5f6fd;
+}
+
+.icopassword
+{
+	background-color: rgba(254, 254, 254, 0.8);
+	background: url(../images/password.png);
+	background-position: 313px center;
+    background-repeat: no-repeat;
+    background-color: #e5f6fd;
+}
+
+
+
+/*Personalizar combo*/
+#select:hover{
+	background: rgba(66, 142, 145, 0.5);
+	background: rgba(255, 255, 255, 0.4);
+	outline: none;
+	color:#00aff0;
+	
+	cursor:pointer;
+}
+
+select:active, select:hover {
+  outline: none;
+}
+
+select option {
+    width:100px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+	
+
+
+/*Plecaholder*/
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color: #8bd3f1;
+	padding: 0px 0px 0px 10px;
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    color: #8bd3f1;
+	padding: 0px 0px 0px 10px;
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    color: #8bd3f1;
+	padding: 0px 0px 0px 10px;
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    color: #8bd3f1;
+	padding: 0px 0px 0px 10px;
+}
+
+/*Personalizar combo*/
+
+.mensaje_pass{
+    position: relative;
+    width: 100%;
+    height: 32px;
+    margin-top: 8px;
+    line-height: 32px;
+    color: #bad4fb;
+    text-align: center;
+    display: block;
+}
+
+#btn_sign{
+	
+	background-color: #005ece;
+	
+    border:2px solid #005ece;
+	border-radius:62px;
+	height:47px;
+	width:27%;
+	bottom:0px;
+	color:#fff;
+	cursor:pointer;
+	display:block;
+	margin: 0 auto;
+	font-size:14px;
+	line-height:47px;	
+	position:relative;
+	text-align:center;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+	
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+	
+}
+
+#btn_sign:hover
+{
+    background-color: transparent;
+    color: #005ece;
+    border:2px solid #005ece;
+}
+
+.title_login
+{
+    position: relative;
+    width: 84%;
+    height: 50px;
+	margin: 0 auto;
+	font-weight:300;
+    font-size: 1.65em;
+	
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    color: #333534;
+	color:#005ece;
+	margin-bottom:13px;
+	
+}

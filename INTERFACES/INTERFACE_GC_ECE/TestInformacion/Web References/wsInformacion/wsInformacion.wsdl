@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo conexión</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="Conectividad">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConectividadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConectividadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CuadroBasico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdFarmacia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CuadroBasicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CuadroBasicoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Existencia_Clave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdFarmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClaveSSA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Existencia_ClaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Existencia_ClaveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Existencia_Clave_Grupo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdFarmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClaveSSA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Existencia_Clave_GrupoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Existencia_Clave_GrupoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConectividadSoapIn">
+    <wsdl:part name="parameters" element="tns:Conectividad" />
+  </wsdl:message>
+  <wsdl:message name="ConectividadSoapOut">
+    <wsdl:part name="parameters" element="tns:ConectividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="CuadroBasicoSoapIn">
+    <wsdl:part name="parameters" element="tns:CuadroBasico" />
+  </wsdl:message>
+  <wsdl:message name="CuadroBasicoSoapOut">
+    <wsdl:part name="parameters" element="tns:CuadroBasicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Existencia_ClaveSoapIn">
+    <wsdl:part name="parameters" element="tns:Existencia_Clave" />
+  </wsdl:message>
+  <wsdl:message name="Existencia_ClaveSoapOut">
+    <wsdl:part name="parameters" element="tns:Existencia_ClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="Existencia_Clave_GrupoSoapIn">
+    <wsdl:part name="parameters" element="tns:Existencia_Clave_Grupo" />
+  </wsdl:message>
+  <wsdl:message name="Existencia_Clave_GrupoSoapOut">
+    <wsdl:part name="parameters" element="tns:Existencia_Clave_GrupoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsInformacionSoap">
+    <wsdl:operation name="Conectividad">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Conectividad.</wsdl:documentation>
+      <wsdl:input message="tns:ConectividadSoapIn" />
+      <wsdl:output message="tns:ConectividadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CuadroBasico">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cuadro Básico de la Unidad.</wsdl:documentation>
+      <wsdl:input message="tns:CuadroBasicoSoapIn" />
+      <wsdl:output message="tns:CuadroBasicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Existencia_Clave">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cuadro Básico de la Unidad.</wsdl:documentation>
+      <wsdl:input message="tns:Existencia_ClaveSoapIn" />
+      <wsdl:output message="tns:Existencia_ClaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Existencia_Clave_Grupo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cuadro Básico de la Unidad.</wsdl:documentation>
+      <wsdl:input message="tns:Existencia_Clave_GrupoSoapIn" />
+      <wsdl:output message="tns:Existencia_Clave_GrupoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsInformacionSoap" type="tns:wsInformacionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Conectividad">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Conectividad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CuadroBasico">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/CuadroBasico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Existencia_Clave">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Existencia_Clave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Existencia_Clave_Grupo">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Existencia_Clave_Grupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsInformacionSoap12" type="tns:wsInformacionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Conectividad">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Conectividad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CuadroBasico">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/CuadroBasico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Existencia_Clave">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Existencia_Clave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Existencia_Clave_Grupo">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Existencia_Clave_Grupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsInformacion">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo conexión</wsdl:documentation>
+    <wsdl:port name="wsInformacionSoap" binding="tns:wsInformacionSoap">
+      <soap:address location="http://intermed.homeip.net/wsEnlaceFarmacia/wsInformacion.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsInformacionSoap12" binding="tns:wsInformacionSoap12">
+      <soap12:address location="http://intermed.homeip.net/wsEnlaceFarmacia/wsInformacion.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

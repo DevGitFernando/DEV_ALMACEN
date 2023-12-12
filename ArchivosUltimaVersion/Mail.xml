@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<SC_Solutions>
+  <Configuracion>
+    <ConexionWeb>SI</ConexionWeb>
+    <Servidor>intermed.homeip.net</Servidor>
+    <WebService>wsMail</WebService>
+    <PaginaAsmx>wsMail</PaginaAsmx>
+    <UltimoUsuarioConectado></UltimoUsuarioConectado>
+  </Configuracion>
+</SC_Solutions>

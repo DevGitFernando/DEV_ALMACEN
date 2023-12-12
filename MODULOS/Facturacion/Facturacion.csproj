@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBC9E3D0-630D-475F-BA18-40AEBB75DDEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Facturacion</RootNamespace>
+    <AssemblyName>Facturacion</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Logo_Intermed.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Snk\Facturacion.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Snk\Facturacion.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\..\SC_Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Build.Conversion.v3.5" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SC_CompressLib, Version=4.0.4.0, Culture=neutral, PublicKeyToken=fac9ea0d48dbaeab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_ControlsCS, Version=4.0.1.0, Culture=neutral, PublicKeyToken=e7a523b603173679, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem, Version=4.0.5.0, Culture=neutral, PublicKeyToken=a50c66deebb893df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Compilacion.cs">
+      <Link>Properties\AssemblyInfo_Compilacion.cs</Link>
+    </Compile>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Version.cs">
+      <Link>Properties\AssemblyInfo_Version.cs</Link>
+    </Compile>
+    <Compile Include="Catalogos\clsFFinaciamiento_Importar.cs" />
+    <Compile Include="Catalogos\FrmBeneficiarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmBeneficiarios.Designer.cs">
+      <DependentUpon>FrmBeneficiarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento_Documentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento_Documentos.Designer.cs">
+      <DependentUpon>FrmFuentesDeFinaciamiento_Documentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento.Designer.cs">
+      <DependentUpon>FrmFuentesDeFinaciamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamientoAdmon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamientoAdmon.Designer.cs">
+      <DependentUpon>FrmFuentesDeFinaciamientoAdmon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamientoAdmon_Claves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamientoAdmon_Claves.Designer.cs">
+      <DependentUpon>FrmFuentesDeFinaciamientoAdmon_Claves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento_Claves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento_Claves.Designer.cs">
+      <DependentUpon>FrmFuentesDeFinaciamiento_Claves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento_ImportarConfiguraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmFuentesDeFinaciamiento_ImportarConfiguraciones.Designer.cs">
+      <DependentUpon>FrmFuentesDeFinaciamiento_ImportarConfiguraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmOperadoresVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmOperadoresVehiculos.Designer.cs">
+      <DependentUpon>FrmOperadoresVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmSucursales.Designer.cs">
+      <DependentUpon>FrmSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmVehiculos.Designer.cs">
+      <DependentUpon>FrmVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckVersion.cs" />
+    <Compile Include="Contrarecibos\FrmContrecibos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrarecibos\FrmContrecibos.Designer.cs">
+      <DependentUpon>FrmContrecibos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrarecibos\FrmListadoFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrarecibos\FrmListadoFacturas.Designer.cs">
+      <DependentUpon>FrmListadoFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmListadoDeCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmListadoDeCheques.Designer.cs">
+      <DependentUpon>FrmListadoDeCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\FrmAcreedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\FrmAcreedores.Designer.cs">
+      <DependentUpon>FrmAcreedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmChequeras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmChequeras.Designer.cs">
+      <DependentUpon>FrmChequeras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmBeneficiariosCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmBeneficiariosCheques.Designer.cs">
+      <DependentUpon>FrmBeneficiariosCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmBancos.Designer.cs">
+      <DependentUpon>FrmBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\FrmCuentasporPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\FrmCuentasporPagar.Designer.cs">
+      <DependentUpon>FrmCuentasporPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmExpedicionCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\Cheques\FrmExpedicionCheques.Designer.cs">
+      <DependentUpon>FrmExpedicionCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasPorPagar\FrmServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagar\FrmServicios.Designer.cs">
+      <DependentUpon>FrmServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmDoctosDocumentos_A_Comprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmDoctosDocumentos_A_Comprobacion.Designer.cs">
+      <DependentUpon>FrmDoctosDocumentos_A_Comprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmDoctosFacturas_A_Comprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmDoctosFacturas_A_Comprobacion.Designer.cs">
+      <DependentUpon>FrmDoctosFacturas_A_Comprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmRPT_DoctosDocumentos_A_Comprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmRPT_DoctosDocumentos_A_Comprobacion.Designer.cs">
+      <DependentUpon>FrmRPT_DoctosDocumentos_A_Comprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmRPT_DoctosFacturas_A_Comprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentosDeComprobacion\FrmRPT_DoctosFacturas_A_Comprobacion.Designer.cs">
+      <DependentUpon>FrmRPT_DoctosFacturas_A_Comprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturar\FrmFacturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturar\FrmFacturar.Designer.cs">
+      <DependentUpon>FrmFacturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturar\FrmFacturar_Refacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturar\FrmFacturar_Refacturacion.Designer.cs">
+      <DependentUpon>FrmFacturar_Refacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturar\FrmFacturar_Concentrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturar\FrmFacturar_Concentrado.Designer.cs">
+      <DependentUpon>FrmFacturar_Concentrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\clsOffice.cs" />
+    <Compile Include="GenerarRemisiones\clsRemision_GenerarDocumentos.cs" />
+    <Compile Include="GenerarRemisiones\clsFacturas_GenerarDocumentos.cs" />
+    <Compile Include="GenerarRemisiones\ClsRemision_Ventas.cs" />
+    <Compile Include="GenerarRemisiones\FrmDescargarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmDescargarVenta.Designer.cs">
+      <DependentUpon>FrmDescargarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales.Designer.cs">
+      <DependentUpon>FrmRemisionesGenerales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesManuales_ImportarInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesManuales_ImportarInformacion.Designer.cs">
+      <DependentUpon>FrmRemisionesManuales_ImportarInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_04_FolioVentaDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_04_FolioVentaDirecta.Designer.cs">
+      <DependentUpon>FrmRemisionesGenerales_04_FolioVentaDirecta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesPrioridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesPrioridad.Designer.cs">
+      <DependentUpon>FrmRemisionesPrioridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemision_Por_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemision_Por_Venta.Designer.cs">
+      <DependentUpon>FrmRemision_Por_Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmReporteador_Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmReporteador_Facturas.Designer.cs">
+      <DependentUpon>FrmReporteador_Facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FormatoCampos.cs" />
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_02_FarmaciasUnidosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_02_FarmaciasUnidosis.Designer.cs">
+      <DependentUpon>FrmRemisionesGenerales_02_FarmaciasUnidosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_03_Almacenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_03_Almacenes.Designer.cs">
+      <DependentUpon>FrmRemisionesGenerales_03_Almacenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_04_AlmacenesUnidosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionesGenerales_04_AlmacenesUnidosis.Designer.cs">
+      <DependentUpon>FrmRemisionesGenerales_04_AlmacenesUnidosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemision_BASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemision_BASE.Designer.cs">
+      <DependentUpon>FrmRemision_BASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmListaClavesFinanciamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmListaClavesFinanciamiento.Designer.cs">
+      <DependentUpon>FrmListaClavesFinanciamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmListadoRemisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmListadoRemisiones.Designer.cs">
+      <DependentUpon>FrmListadoRemisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmPendientesDeRemisionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmPendientesDeRemisionar.Designer.cs">
+      <DependentUpon>FrmPendientesDeRemisionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionAdministracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionAdministracion.Designer.cs">
+      <DependentUpon>FrmRemisionAdministracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemisionInsumos.Designer.cs">
+      <DependentUpon>FrmRemisionInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTabControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabControls.Designer.cs">
+      <DependentUpon>frmTabControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemision_ProgramasDeAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmRemision_ProgramasDeAtencion.Designer.cs">
+      <DependentUpon>FrmRemision_ProgramasDeAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmValidarRemisiones_Masivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmValidarRemisiones_Masivo.Designer.cs">
+      <DependentUpon>FrmValidarRemisiones_Masivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmReporteador_Remisiones_Manuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmReporteador_Remisiones_Manuales.Designer.cs">
+      <DependentUpon>FrmReporteador_Remisiones_Manuales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmReporteador_Remisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmReporteador_Remisiones.Designer.cs">
+      <DependentUpon>FrmReporteador_Remisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmValidarRemisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmValidarRemisiones.Designer.cs">
+      <DependentUpon>FrmValidarRemisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmValidarRemisiones_FoliosInvalidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarRemisiones\FrmValidarRemisiones_FoliosInvalidos.Designer.cs">
+      <DependentUpon>FrmValidarRemisiones_FoliosInvalidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacion_PronosticoFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacion_PronosticoFacturacion.Designer.cs">
+      <DependentUpon>FrmInformacion_PronosticoFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacion_SabanaDispensacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacion_SabanaDispensacion.Designer.cs">
+      <DependentUpon>FrmInformacion_SabanaDispensacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacionRemisionadoPendiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacionRemisionadoPendiente.Designer.cs">
+      <DependentUpon>FrmInformacionRemisionadoPendiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacionReplicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmInformacionReplicacion.Designer.cs">
+      <DependentUpon>FrmInformacionReplicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmActualizarInformacionOperativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmActualizarInformacionOperativa.Designer.cs">
+      <DependentUpon>FrmActualizarInformacionOperativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licitaciones\FrmLCTN_Cotizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licitaciones\FrmLCTN_Cotizador.Designer.cs">
+      <DependentUpon>FrmLCTN_Cotizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licitaciones\FrmLCTN_PreciosClavesSSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licitaciones\FrmLCTN_PreciosClavesSSA.Designer.cs">
+      <DependentUpon>FrmLCTN_PreciosClavesSSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompras\FrmConciliarOrdenesDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompras\FrmConciliarOrdenesDeCompra.Designer.cs">
+      <DependentUpon>FrmConciliarOrdenesDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmConceptosEspeciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmConceptosEspeciales.Designer.cs">
+      <DependentUpon>FrmConceptosEspeciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteador_Operacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteador_Operacion.Designer.cs">
+      <DependentUpon>FrmReporteador_Operacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteMensualDoctosCancelados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteMensualDoctosCancelados.Designer.cs">
+      <DependentUpon>FrmReporteMensualDoctosCancelados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteMensualDoctosEmitidos_Descargar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteMensualDoctosEmitidos_Descargar.Designer.cs">
+      <DependentUpon>FrmReporteMensualDoctosEmitidos_Descargar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\FrmParametrosFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametros\FrmParametrosFacturacion.Designer.cs">
+      <DependentUpon>FrmParametrosFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Catalogos\FrmBeneficiarios.resx">
+      <DependentUpon>FrmBeneficiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmFuentesDeFinaciamiento_Documentos.resx">
+      <DependentUpon>FrmFuentesDeFinaciamiento_Documentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmFuentesDeFinaciamiento.resx">
+      <DependentUpon>FrmFuentesDeFinaciamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmFuentesDeFinaciamientoAdmon.resx">
+      <DependentUpon>FrmFuentesDeFinaciamientoAdmon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmFuentesDeFinaciamientoAdmon_Claves.resx">
+      <DependentUpon>FrmFuentesDeFinaciamientoAdmon_Claves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmFuentesDeFinaciamiento_Claves.resx">
+      <DependentUpon>FrmFuentesDeFinaciamiento_Claves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmFuentesDeFinaciamiento_ImportarConfiguraciones.resx">
+      <DependentUpon>FrmFuentesDeFinaciamiento_ImportarConfiguraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmOperadoresVehiculos.resx">
+      <DependentUpon>FrmOperadoresVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmSucursales.resx">
+      <DependentUpon>FrmSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmVehiculos.resx">
+      <DependentUpon>FrmVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrarecibos\FrmContrecibos.resx">
+      <DependentUpon>FrmContrecibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrarecibos\FrmListadoFacturas.resx">
+      <DependentUpon>FrmListadoFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\Cheques\FrmBancos.resx">
+      <DependentUpon>FrmBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\Cheques\FrmBeneficiariosCheques.resx">
+      <DependentUpon>FrmBeneficiariosCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\Cheques\FrmChequeras.resx">
+      <DependentUpon>FrmChequeras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\Cheques\FrmExpedicionCheques.resx">
+      <DependentUpon>FrmExpedicionCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\Cheques\FrmListadoDeCheques.resx">
+      <DependentUpon>FrmListadoDeCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\FrmAcreedores.resx">
+      <DependentUpon>FrmAcreedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\FrmCuentasporPagar.resx">
+      <DependentUpon>FrmCuentasporPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorPagar\FrmServicios.resx">
+      <DependentUpon>FrmServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentosDeComprobacion\FrmDoctosDocumentos_A_Comprobacion.resx">
+      <DependentUpon>FrmDoctosDocumentos_A_Comprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentosDeComprobacion\FrmDoctosFacturas_A_Comprobacion.resx">
+      <DependentUpon>FrmDoctosFacturas_A_Comprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentosDeComprobacion\FrmRPT_DoctosDocumentos_A_Comprobacion.resx">
+      <DependentUpon>FrmRPT_DoctosDocumentos_A_Comprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentosDeComprobacion\FrmRPT_DoctosFacturas_A_Comprobacion.resx">
+      <DependentUpon>FrmRPT_DoctosFacturas_A_Comprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturar\FrmFacturar.resx">
+      <DependentUpon>FrmFacturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturar\FrmFacturar_Refacturacion.resx">
+      <DependentUpon>FrmFacturar_Refacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturar\FrmFacturar_Concentrado.resx">
+      <DependentUpon>FrmFacturar_Concentrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmDescargarVenta.resx">
+      <DependentUpon>FrmDescargarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemisionesGenerales.resx">
+      <DependentUpon>FrmRemisionesGenerales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemisionesManuales_ImportarInformacion.resx">
+      <DependentUpon>FrmRemisionesManuales_ImportarInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemisionesGenerales_04_FolioVentaDirecta.resx">
+      <DependentUpon>FrmRemisionesGenerales_04_FolioVentaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemisionesPrioridad.resx">
+      <DependentUpon>FrmRemisionesPrioridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemision_Por_Venta.resx">
+      <DependentUpon>FrmRemision_Por_Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmReporteador_Facturas.resx">
+      <DependentUpon>FrmReporteador_Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemision_BASE.resx">
+      <DependentUpon>FrmRemision_BASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmListaClavesFinanciamiento.resx">
+      <DependentUpon>FrmListaClavesFinanciamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmListadoRemisiones.resx">
+      <DependentUpon>FrmListadoRemisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmPendientesDeRemisionar.resx">
+      <DependentUpon>FrmPendientesDeRemisionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemisionAdministracion.resx">
+      <DependentUpon>FrmRemisionAdministracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemisionInsumos.resx">
+      <DependentUpon>FrmRemisionInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTabControls.resx">
+      <DependentUpon>frmTabControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmRemision_ProgramasDeAtencion.resx">
+      <DependentUpon>FrmRemision_ProgramasDeAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmValidarRemisiones_Masivo.resx">
+      <DependentUpon>FrmValidarRemisiones_Masivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmReporteador_Remisiones_Manuales.resx">
+      <DependentUpon>FrmReporteador_Remisiones_Manuales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmReporteador_Remisiones.resx">
+      <DependentUpon>FrmReporteador_Remisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmValidarRemisiones.resx">
+      <DependentUpon>FrmValidarRemisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarRemisiones\FrmValidarRemisiones_FoliosInvalidos.resx">
+      <DependentUpon>FrmValidarRemisiones_FoliosInvalidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmInformacion_PronosticoFacturacion.resx">
+      <DependentUpon>FrmInformacion_PronosticoFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmInformacion_SabanaDispensacion.resx">
+      <DependentUpon>FrmInformacion_SabanaDispensacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmInformacionRemisionadoPendiente.resx">
+      <DependentUpon>FrmInformacionRemisionadoPendiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmInformacionReplicacion.resx">
+      <DependentUpon>FrmInformacionReplicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmActualizarInformacionOperativa.resx">
+      <DependentUpon>FrmActualizarInformacionOperativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licitaciones\FrmLCTN_Cotizador.resx">
+      <DependentUpon>FrmLCTN_Cotizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licitaciones\FrmLCTN_PreciosClavesSSA.resx">
+      <DependentUpon>FrmLCTN_PreciosClavesSSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompras\FrmConciliarOrdenesDeCompra.resx">
+      <DependentUpon>FrmConciliarOrdenesDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmConceptosEspeciales.resx">
+      <DependentUpon>FrmConceptosEspeciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmReporteador_Operacion.resx">
+      <DependentUpon>FrmReporteador_Operacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmReporteMensualDoctosCancelados.resx">
+      <DependentUpon>FrmReporteMensualDoctosCancelados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmReporteMensualDoctosEmitidos_Descargar.resx">
+      <DependentUpon>FrmReporteMensualDoctosEmitidos_Descargar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametros\FrmParametrosFacturacion.resx">
+      <DependentUpon>FrmParametrosFacturacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\FrmReporteMensualDoctosEmitidos.resx">
+      <DependentUpon>FrmReporteMensualDoctosEmitidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteMensualDoctosEmitidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteMensualDoctosEmitidos.Designer.cs">
+      <DependentUpon>FrmReporteMensualDoctosEmitidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\paxsvrRecepcionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsUpdater\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsUpdater\</RelPath>
+      <UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Facturaci�n_wsUpdater_wsUpdater</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\paxsvrRecepcionService\wcfRecepcionASMX.wsdl" />
+    <None Include="Snk\Facturacion.manifest" />
+    <None Include="Snk\Facturacion.snk" />
+    <None Include="Web References\wsUpdater\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsUpdater\wsUpdater.disco" />
+    <None Include="Web References\wsUpdater\wsUpdater.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo_Intermed.ico" />
+    <None Include="Resources\spp_CFG_Script_Integrar_BaseDeDatos.sql" />
+    <None Include="Service References\paxsvrRecepcionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\paxsvrRecepcionService\configuration.svcinfo" />
+    <None Include="Service References\paxsvrRecepcionService\configuration91.svcinfo" />
+    <None Include="Service References\paxsvrRecepcionService\wcfRecepcionASMX.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataTransfer\DllTransferenciaSoft\DllTransferenciaSoft.csproj">
+      <Project>{6c7d74cb-63a0-4ee2-a858-4cdbeab6c7ac}</Project>
+      <Name>DllTransferenciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DllFarmaciaSoft\DllFarmaciaSoft.csproj">
+      <Project>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</Project>
+      <Name>DllFarmaciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dll_IFacturacion\Dll_IFacturacion.csproj">
+      <Project>{0C9D314B-C420-4188-858D-A36540509722}</Project>
+      <Name>Dll_IFacturacion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\paxsvrRecepcionService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

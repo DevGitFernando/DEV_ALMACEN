@@ -1,0 +1,20 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Servicio Oficina Central.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Servicio Oficina Central.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Servicio Oficina Central.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioROC.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioRC.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioRC.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioROC.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\Servicio Oficina Central.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\Servicio Oficina Central.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Servicio Oficina Central.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Servicio Oficina Central.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Servicio Oficina Central.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioROC.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioRC.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioRC.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioROC.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioROC.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\DtDemonioROC.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\Servicio Oficina Central.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtDemonioROC\obj\Debug\Servicio Oficina Central.pdb

@@ -1,0 +1,962 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	background-color:#f0f4ff;
+	font-size:14px;
+	font-weight:200;
+	overflow:auto;
+	zoom: 0.9;
+}
+
+
+/*HeaderEND*/
+
+/*Contenedor_General*/
+#container
+{
+    background: #f0f4ff;
+    width: 100%;
+    height: auto;
+}
+
+/*Contenedor_from*/
+#Content_form
+{
+	width: 1000px;
+	height:auto;
+    background: #ffffff;
+    border-radius: 5px 5px 0px 0px;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+/*Formulario*/
+
+.title_form
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-weight: 400;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	background-color: #005ece;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+
+/*Info paciente*/
+
+.labelGeneral
+{
+	width:100px;
+	height:17px;
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+	font-weight:500;
+    padding: 5px 5px;
+}
+
+/*Separación label y alineacion en linea*/
+.spacelabel
+{
+	margin-left: 10px;
+	margin-top:5px;
+}
+
+.alineado
+{
+	display:inline-block;
+}
+
+
+/*Estilo pregunta*/
+.question
+{
+	position:relative;
+	width:223px;
+	height:26px;
+	font-size:14px;
+	text-align:center;
+	font-weight:600;
+	display:inline-block;
+	color:#005ece;
+	font-weight:400;
+    padding: 0px 0px 0px 5px;
+	
+}
+
+
+/*Contenedor Informacion paciente*/
+.infopaciente
+{
+	position:relative;
+	display:block;
+	height:auto;
+	width:100%;
+	border-bottom:1px solid #FFF;	
+}
+
+/*Pregunta tipo consulta*/
+
+.btnRadio
+{
+	display: inline-block;
+    width: 265px;
+    height: 30px;
+    padding: 0;
+    margin: 0px;
+    vertical-align: middle
+}
+
+.tipoconsulta
+{
+	width:500px;
+	float:right;
+	height:30px;
+}
+
+
+label
+
+{
+  width: 120px;
+  text-align:center;
+  border-radius: 3px;
+  border: 1px solid #e5f6fd;
+  height:auto;
+  text-align:center;
+  display:inline-block;
+  margin-right:10px;
+  
+  color: #005ece;
+  font-weight: 500;
+}
+
+/* hide input */
+input.radio:empty {
+	display: none;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 24px;
+	text-indent: 2.5em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #e5f6fd;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Hover icono */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: 0.1em;
+	color: #00aff0;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #005ece;
+}
+
+/* Estado: check activo */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: 0.1em;
+	color: #e5f6fd;
+    background-color: #00aff0;
+    font-weight: 500;
+}
+
+input.radio:checked ~ label {
+	
+    text-align: center;
+    font-weight: 500;
+}
+
+/* radio focus */
+
+
+
+/*Fin tipo consulta*/
+
+.tituloInfo
+{
+	position:relative;
+	width:auto;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	text-align:left;
+	color:#005ece;
+	font-weight:500;
+    padding: 0px 0px 0px 10px;
+	border-bottom:2px solid #d4f2fe;
+
+}
+
+/*Diagnostico*/
+.contdiag
+{
+	width: 480px;
+    height: auto;
+    display:inline-block;
+    float: left;
+}
+
+.contObservaciones
+{
+    width:332px;
+    height:50px;
+    display:inline-block;
+    float: right;
+    margin-right:10px;
+}
+
+.contCie10
+{
+    width:500px;
+    height:auto;
+    
+    }
+
+
+/*Procedimientos*/
+.contProcedimientos
+{
+	width: 484px;
+    height: auto;
+    margin-left: 10px;
+    display:inline-block;
+    float: right;
+}
+
+.contProcedAdd
+{
+    width:480px;
+    height:auto;
+    margin-right:0;
+    
+}
+
+.claveProced{
+
+    width:60px;
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:400;
+	display:inline-block;
+	margin-left: 10px;
+}
+
+.descripcionProced
+{
+	width:138px;
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:400;
+	display:inline-block;
+	margin-left: 10px;
+	margin-top:10x;
+}
+
+
+
+/*Boton nuevo diagnostico*/
+.btnNuevoDiag
+{
+	width: 194px;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 5px;
+    display: inline-block;
+    background-image: url(../images/diagnostico.png);
+    background-position: 165px center;
+    background-repeat: no-repeat;
+    text-indent: -26px;
+    cursor: pointer;
+    border: 2px solid #e5f6fd;
+    color: #005ece
+	
+	
+}
+
+.btnNuevoDiag:hover
+{
+	background-color:#005ece;
+	cursor:pointer;
+	color:#fff;
+}
+
+strong
+{
+	font-weight:700;
+}
+
+.clavediag
+{
+	width:60px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:400;
+	display:inline-block;
+	
+	margin-left: 10px;
+}
+
+
+.descripcion
+{
+	width:139px;
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:400;
+	display:inline-block;
+	margin-left: 10px;
+	margin-top:10x;
+}
+
+
+.titulodiag
+{
+	position:relative;
+	width:auto;
+	height:auto;
+	font-size:14px;
+	text-align:left;
+	color:#005ece;/*
+	top:10px;*/
+	font-weight:500;
+    padding: 5px 0px 5px 10px;
+	border-bottom:2px solid #d4f2fe;
+
+	
+	/*
+	background-color:#00aff0;*/
+}
+
+
+
+.plan1
+{
+	width:100px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	font-weight:600;
+    padding:5px 5px;
+	border:#e5f6fd;
+ 	display:inline-block;
+	margin-left: 10px;
+	
+}
+.plan2{
+	width:377px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+}
+
+.plan3{
+	width:100px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+}
+
+.plan4
+{
+	width:195px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+	margin-right:10px;
+}
+
+/*Nombre Paciente*/
+
+input {
+    background-color: #e5f6fd;
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+
+/*Consulta*/
+.consultainfo
+{
+	position:relative;/*
+	top:10px;*/
+	display:block;
+	height:96px;
+	width:980px;
+	margin:0 auto;
+	border-bottom:1px solid #FFF;
+}
+
+
+.medicotratante{
+	width:350px;
+	height:auto;
+	text-align:center;
+	color:#005ece;
+	border:none;
+	padding:5px 5px;
+	font-weight:500;
+	display:inline-block;
+	
+	margin-left: 10px;
+}
+
+
+.nmedico
+{
+	width:204px;
+	height:auto;
+	text-align:center;
+	color:#005ece;
+	font-size:12px;
+	font-weight:400;
+    padding:5px 5px;
+ 	display:inline-block;
+	
+	margin-left: 10px;
+	margin-top:10px;
+	background-color:#e5f6fd;
+	
+}
+
+.observaciones
+{
+	width:322px;
+	height:90px;
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	overflow:hidden;
+	font-weight:400;
+	display:inline-block;
+	border:none;
+	background-color: #e5f6fd;
+	vertical-align:middle;
+	overflow:auto;
+	
+	margin-left: 10px;
+	float:right;
+	margin-top:10px;
+	resize:none;
+}
+
+#btnaboratorio
+{
+	width: 195px;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 5px;
+    display: inline-block;
+	background-image:url(../images/laboratorio.png);
+	background-position:  155px center;
+	background-repeat:no-repeat;
+	text-indent: -37px;
+	cursor:pointer;
+	
+	border: 1px solid #e5f6fd;
+    
+    color: #005ece;
+}
+
+#btnaboratorio:hover
+{
+	background-color:#005ece;
+	color:#fff;
+}
+
+select
+{
+	border:none;
+	margin:0px;
+	padding:0px;
+}
+
+/*Nombre paciente*/
+
+.npaciente1{
+	width:377px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;/*
+	margin-top:10px;*/
+}
+
+
+.npaciente2{
+	width:100px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+	margin-top:10x;
+}
+
+
+.npaciente3{
+	width:195px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+}
+
+/*Nombre paciente*/
+
+
+.elegibilidad
+{
+	width:160px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+	margin-top:10x;
+}
+
+
+.folio
+{
+	width:194px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+	margin-top:10x;
+}
+
+/*Numero afiliado*/
+.Nafiliado
+{
+	width:110px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+	margin-top:10x;
+}
+
+
+
+.Nafiliado2
+{
+	width:60px;/*
+	height:auto;*/
+	text-align:center;
+	color:#005ece;
+	padding:5px;
+	font-weight:600;
+	display:inline-block;
+	
+	margin-left: 10px;
+	margin-top:10x;
+}
+
+
+
+/*Botones folio, elegibilidad etc*/
+
+.contBtnPaciente
+{
+	width:352px;
+	height:auto;
+	margin:0 auto;
+}
+
+.btnGeneral
+{
+	width: 150px;
+    text-align: center;
+    border-radius: 3px;
+    border: 2px solid #e5f6fd;
+	color: #005ece;
+    font-weight: 500;
+
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+.btnelegibilidad
+{
+	background-image:url(../images/nuevo.png);
+	background-position:117px center;
+	background-repeat:no-repeat;
+	text-align: center;
+	line-height:30px;
+	cursor:pointer;
+	text-indent: -1.9em;
+}
+
+.btnexpediente
+{
+	background-image:url(../images/expediente.png);
+	background-position:120px center;
+	background-repeat:no-repeat;
+	text-align: center;
+	line-height:30px;
+	cursor:pointer;
+	text-indent: -1.9em;
+}
+
+.btnelegibilidad:hover, .btnexpediente:hover
+{
+	background-color:#005ece;
+	color:#fff;
+	cursor:pointer;
+	border: 2px solid #005ece;
+}
+
+/*Contenedor Claves*/
+
+#contClavesGeneral
+{
+	position:relative;
+	width:980px;
+	height:200px;
+	margin:0 auto;
+	margin-top:10px;
+	overflow:auto;
+	background-color:#e5f6fd; 
+}
+
+#containerTableClave
+{
+	width:944px;
+	height:190px;
+	margin:0;
+	padding:0;
+	float:left;
+	/*background-color:#e5f6fd;*/
+}
+
+.ContBotonesClave
+{
+	width:20px;
+	height:auto;
+	float:right;
+	margin-top: 0px;
+    margin-right:0px;
+	background-color:#e5f6fd;
+	vertical-align:middle;
+	padding:3px;
+}
+/*Botones borrar y agregar clave*/
+
+#btnBorrar
+{
+	width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    background-image: url(../images/remove.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -26px;
+    cursor: pointer;
+	
+    color: #fff;
+}
+
+#btnAgregar
+{
+	width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+	
+    display: block;
+    background-image: url(../images/add.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -26px;
+    cursor: pointer;
+    color: #fff;
+	margin-bottom:5px;
+}
+
+
+
+
+#btnAgregar:hover, #btnBorrar:hover
+{
+	background-color:#fff;
+	border-radius:40px;
+}
+
+.secClave
+{
+	margin-top:10px;
+}
+
+input
+{
+	height:17px;
+}
+
+.contNotamedica
+{
+	position:relative;
+	width:980px;
+	height:62px;
+	margin:0 auto;
+	margin-top:10px;
+	overflow:auto;
+}
+
+.tituloNotamed
+{
+	position:relative;
+	width:auto;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	text-align:left;
+	color:#005ece;
+	font-weight:500;
+    padding: 0px 0px 0px 10px;
+	border-bottom:2px solid #d4f2fe;
+	background-color:#fff;
+}
+
+
+.txtNotamedica
+{
+	width:860px;
+	height:38px;
+	margin:0;
+	padding:0;
+	float:left;
+	background-color:#e5f6fd;
+	resize:none;
+	border:none;
+	color: #005ece;
+	font-weight:400;
+	padding:5px;
+}
+
+
+/*Boton guardar Receta*/
+
+.btnGuardarInactive
+{
+	width:100px;
+	height:48px;
+	margin:0;
+	padding:0;
+	float:right;
+	background-color:#e5e9ea;
+	font-weight:400;
+	font-size:16px;
+	
+	text-align:center;
+	line-height:48px;
+	color:#fff;
+}
+
+
+.btnGuardaractive
+{
+	width:100px;
+	height:48px;
+	margin:0;
+	padding:0;
+	float:right;
+	background-color:#00aff0;
+	font-weight:400;
+	font-size:16px;
+	
+	text-align:center;
+	line-height:48px;
+	color:#fff;
+	cursor:pointer;
+}
+
+.btnGuardaractive:hover
+{
+	background-color:#005ece;
+}
+
+
+
+/*Scrollbar estilos*/
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  background: #f0f4ff;
+}
+::-webkit-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+
+/*Fondo scroll*/
+::-webkit-scrollbar-track{
+  background:#cbe0e9;/*
+  border:thin solid #1a1f25;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(top, #00aff0, #00aff0);
+/*  -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
+                inset 1px 0 0 rgba(255,255,255,.4),
+                inset 0 1px 2px rgba(255,255,255,.3);*/
+ 
+  /*border:thin solid #232c34;*/
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: -webkit-linear-gradient(top, #00aff0, #00aff0);
+}
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(229,246,253,.6);
+}
+
+/*DataTable*/
+table.dataTable {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+table.dataTable input
+{
+    width: 100% !important;
+    min-height: auto !important;
+    height: 100% !important;
+    background-color: #e5f6fd;
+    color: #005ece;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+table.dataTable td
+{
+    text-transform: uppercase;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder
+{
+  font-weight: 400;
+}
+
+/*Table*/
+.thead
+{
+    
+    background-color: #00aff0;
+    color: #fff;
+    font-family:Segoe UI;
+    text-align:center;
+}
+
+/*.cantidad
+{
+    font-weight:500;
+    color:#fb9913;
+}
+ 
+.indicacion
+{
+    font-weight:500;
+    color:#1a97d8;
+}
+
+table.dataTable tbody tr.indicacion.selected,
+table.dataTable tbody th.indicacion.selected,
+table.dataTable tbody td.indicacion.selected {
+    color: #fff !important;
+}*/

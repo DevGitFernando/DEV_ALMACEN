@@ -1,0 +1,22 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Auditor Farmacia.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Auditor Farmacia.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Auditor Farmacia.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\AuditorFarmacia.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\AuditorFarmacia.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.exe.licenses
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Auditor Farmacia.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Auditor Farmacia.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Auditor Farmacia.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\AuditorFarmacia.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\AuditorFarmacia.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.exe.licenses
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Auditor Farmacia\obj\Debug\Auditor Farmacia.pdb

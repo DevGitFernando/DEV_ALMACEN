@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo conexión</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="TestConexion">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestConexionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaDeClavesLicitadas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClaveAcceso" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaDeClavesLicitadasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaDeClavesLicitadasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consumos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClaveAcceso" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaInicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaFinal" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsumosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsumosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TestConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:TestConexion" />
+  </wsdl:message>
+  <wsdl:message name="TestConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:TestConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaDeClavesLicitadasSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaDeClavesLicitadas" />
+  </wsdl:message>
+  <wsdl:message name="ListaDeClavesLicitadasSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaDeClavesLicitadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsumosSoapIn">
+    <wsdl:part name="parameters" element="tns:Consumos" />
+  </wsdl:message>
+  <wsdl:message name="ConsumosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsumosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsInformacionSoap">
+    <wsdl:operation name="TestConexion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Probar conexión.</wsdl:documentation>
+      <wsdl:input message="tns:TestConexionSoapIn" />
+      <wsdl:output message="tns:TestConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaDeClavesLicitadas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Claves con acceso permitido.</wsdl:documentation>
+      <wsdl:input message="tns:ListaDeClavesLicitadasSoapIn" />
+      <wsdl:output message="tns:ListaDeClavesLicitadasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consumos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Listado de Claves con acceso permitido.</wsdl:documentation>
+      <wsdl:input message="tns:ConsumosSoapIn" />
+      <wsdl:output message="tns:ConsumosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsInformacionSoap" type="tns:wsInformacionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestConexion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/TestConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaDeClavesLicitadas">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ListaDeClavesLicitadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consumos">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Consumos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsInformacionSoap12" type="tns:wsInformacionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestConexion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/TestConexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaDeClavesLicitadas">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ListaDeClavesLicitadas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consumos">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Consumos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsInformacion">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo conexión</wsdl:documentation>
+    <wsdl:port name="wsInformacionSoap" binding="tns:wsInformacionSoap">
+      <soap:address location="http://intermedpuebla.dyndns-ip.com/wsInformacion/wsInformacion.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsInformacionSoap12" binding="tns:wsInformacionSoap12">
+      <soap12:address location="http://intermedpuebla.dyndns-ip.com/wsInformacion/wsInformacion.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

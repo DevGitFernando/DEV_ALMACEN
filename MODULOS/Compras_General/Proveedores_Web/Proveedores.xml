@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<SC_Solutions>
+  <Configuracion>
+    <IdSucursal>0001</IdSucursal>
+	<Arbol>PROV</Arbol>
+	<TituloNavegador>Ordenes de compra</TituloNavegador>
+	<MsjCerrarDivVentanas>false</MsjCerrarDivVentanas>
+	<ImagenFondo>images/SII_LOGO_Dual.png</ImagenFondo>
+	<ImagenFondoEmpresa001>images/INT_Logo.JPG</ImagenFondoEmpresa001>
+	<ImagenFondoEmpresa002>images/PHO_Logo.jpg</ImagenFondoEmpresa002>
+  </Configuracion>
+</SC_Solutions>

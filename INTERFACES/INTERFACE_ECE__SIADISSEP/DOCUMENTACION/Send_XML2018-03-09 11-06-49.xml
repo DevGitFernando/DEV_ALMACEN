@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedSol>
+<Generales>
+								<idPeticion>CMS128</idPeticion>
+								<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+								<idColectivo>15</idColectivo>
+								<fechaHoraElaboracion>2018-03-09 11:06:49.286</fechaHoraElaboracion>
+								<servicio>EMER00101</servicio>
+								<unidadMedica>PLSSA009394</unidadMedica>
+							</Generales>
+<Detalles>  
+								<Medicamentos>
+<Medicamento expediente="210930006706">
+<nombrePaciente>HOLANDESA</nombrePaciente>
+<apPaternoPaciente>MARTA</apPaternoPaciente>
+<apMaternoPaciente>CASTAÑEDA</apMaternoPaciente>
+<camaPaciente>3</camaPaciente>
+<fechaNacimientoPaciente>1989-02-20</fechaNacimientoPaciente>
+<polizaPaciente/>
+<vigenciaPolizaPaciente/>
+<claveMed>010.000.2714.00</claveMed>
+<descripcionMed>complejo B</descripcionMed>
+<dosisMed>3</dosisMed>
+<frecuenciaMed>CADA 24 HORAS</frecuenciaMed>
+<duracionMed/>
+<cantidadSolicitadaMed>20</cantidadSolicitadaMed>
+<observacionesMed/>
+</Medicamento>
+<Medicamento expediente="210930006706">
+<nombrePaciente>HOLANDESA</nombrePaciente>
+<apPaternoPaciente>MARTA</apPaternoPaciente>
+<apMaternoPaciente>CASTAÑEDA</apMaternoPaciente>
+<camaPaciente>3</camaPaciente>
+<fechaNacimientoPaciente>1989-02-20</fechaNacimientoPaciente>
+<polizaPaciente/>
+<vigenciaPolizaPaciente/>
+<claveMed>010.000.2130.00</claveMed>
+<descripcionMed>Amoxicilina sódica - Ácido Clavulánico (Clavulanato de potasio)</descripcionMed>
+<dosisMed>3</dosisMed>
+<frecuenciaMed>CADA 8 HORAS</frecuenciaMed>
+<duracionMed/>
+<cantidadSolicitadaMed>20</cantidadSolicitadaMed>
+<observacionesMed/>
+</Medicamento>
+</Medicamentos>
+								<Soluciones>
+<Solucion expediente="210930006706">
+<nombrePaciente>HOLANDESA</nombrePaciente>
+<apPaternoPaciente>MARTA</apPaternoPaciente>
+<apMaternoPaciente>CASTAÑEDA</apMaternoPaciente>
+<camaPaciente>3</camaPaciente>
+<fechaNacimientoPaciente>1989-02-20</fechaNacimientoPaciente>
+<polizaPaciente/>
+<vigenciaPolizaPaciente/>
+<claveSol>010.000.0641.00</claveSol>
+<descripcionSol>Dextrán y Glucosa</descripcionSol>
+<dosisSol/>
+<duracionSol>5</duracionSol>
+<cantidadSolicitadaSol>20</cantidadSolicitadaSol>
+<observacionesSol/>
+</Solucion>
+<Solucion expediente="210930006706">
+<nombrePaciente>HOLANDESA</nombrePaciente>
+<apPaternoPaciente>MARTA</apPaternoPaciente>
+<apMaternoPaciente>CASTAÑEDA</apMaternoPaciente>
+<camaPaciente>3</camaPaciente>
+<fechaNacimientoPaciente>1989-02-20</fechaNacimientoPaciente>
+<polizaPaciente/>
+<vigenciaPolizaPaciente/>
+<claveSol>010.000.3607.00</claveSol>
+<descripcionSol>Glucosa</descripcionSol>
+<dosisSol/>
+<duracionSol>2</duracionSol>
+<cantidadSolicitadaSol>20</cantidadSolicitadaSol>
+<observacionesSol/>
+</Solucion>
+</Soluciones>
+							</Detalles>
+</ColectivoMedSol>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedSol>
+	<Generales>
+		<idPeticion>CMS179</idPeticion>
+		<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+		<idColectivo>11</idColectivo>
+		<fechaHoraElaboracion>2018-03-27 15:18:12.722</fechaHoraElaboracion>
+		<servicio>EMER00101</servicio>
+		<unidadMedica>PLSSA009394</unidadMedica>
+	</Generales>
+	<Detalles>
+		<Medicamentos>
+			<Medicamento expediente="210930017236">
+				<nombrePaciente>JOSE PATRICIO</nombrePaciente>
+				<apPaternoPaciente>HERNANDEZ</apPaternoPaciente>
+				<apMaternoPaciente>DE LIMA</apMaternoPaciente>
+				<camaPaciente>220</camaPaciente>
+				<fechaNacimientoPaciente>1967-03-17</fechaNacimientoPaciente>
+				<polizaPaciente/>
+				<vigenciaPolizaPaciente/>
+				<claveMed>010.000.5187.00</claveMed>
+				<descripcionMed>Omeprazol </descripcionMed>
+				<dosisMed>40 MG</dosisMed>
+				<frecuenciaMed>CADA 24 HORAS</frecuenciaMed>
+				<duracionMed/>
+				<cantidadSolicitadaMed>10</cantidadSolicitadaMed>
+				<observacionesMed/>
+			</Medicamento>
+		</Medicamentos>
+		<Soluciones>
+			<Solucion expediente="210930016547">
+				<nombrePaciente>JUAN</nombrePaciente>
+				<apPaternoPaciente>PONCE</apPaternoPaciente>
+				<apMaternoPaciente>VIVANCO</apMaternoPaciente>
+				<camaPaciente>6</camaPaciente>
+				<fechaNacimientoPaciente>2000-03-08</fechaNacimientoPaciente>
+				<polizaPaciente/>
+				<vigenciaPolizaPaciente/>
+				<claveSol>010.000.3616.00</claveSol>
+				<descripcionSol>solución Hartmann</descripcionSol>
+				<dosisSol/>
+				<duracionSol>2 horas</duracionSol>
+				<cantidadSolicitadaSol>21</cantidadSolicitadaSol>
+				<observacionesSol/>
+			</Solucion>
+		</Soluciones>
+	</Detalles>
+</ColectivoMedSol>

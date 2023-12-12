@@ -1,0 +1,32 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Utilerias BD.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Utilerias BD.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Utilerias BD.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmBackUp.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmConexion.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmExtraerBD.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmGenerarPassword.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmIntegrarBD.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmRestore.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\Utilerias BD.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\Utilerias BD.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Utilerias BD.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Utilerias BD.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Utilerias BD.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmBackUp.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmConexion.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmExtraerBD.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmGenerarPassword.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmIntegrarBD.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.FrmRestore.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\DtUtileriasBD.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\Utilerias BD.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtUtileriasBD\obj\x86\Debug\Utilerias BD.pdb

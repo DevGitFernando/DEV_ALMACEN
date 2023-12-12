@@ -1,0 +1,69 @@
+{
+	"id_receta":47,
+	"id_consulta":115826,
+	"direccion":"",
+	
+	"paciente":
+	{
+		"nombre_paciente":"ESTEFANY",
+		"apaterno_paciente":"GOMEZ","amaterno_paciente":"PEREZ","id_sexo":2,"fecha_nacimiento":"2011-11-29"
+	},
+
+	"id_expediente":53317,
+	"id_usuario":33,
+	"id_estudios_paciente":64975,
+	"indicaciones":"bano diario, abundantes liquidos dieta con vitamina c",
+	"diagnostico":"rinitis alergica con hipertrofia de adenoides",
+	"cie10":"J301",
+	
+	"datos_medicos":
+	{
+		"nombre_usuario":"manuel emiliano",
+		"apaterno_usuario":"aguado",
+		"amaterno_usuario":"meza",
+		"cedula_profesional":"123456789",
+		"licenciatura":"M\u00e9dico cirujano",
+		"firma":"manuelaguado.png",
+		"procedencia":"Universidad de Nuevo Leon"
+	},
+	
+	"medicamentos":
+	[
+		{
+			"id_medicina":66,
+			"id_receta":47,
+			"medicina":"MOMETASONA SUSPENSION 50 \u00b5G \/ D\u00d3SIS PARA INHALACI\u00d3N FRASCO DOSIFICADOR CON 140 D\u00d3SIS (18ML)",
+			"eancode":"7502213049249",
+			"via":"88",
+			"dosis":"1",
+			"cantidad":"1",
+			"unidades":"1",
+			"frecuencia":"34",
+			"inicio":"2018-06-14","fin":"2018-06-30",
+			"presentacion":"FRASCO",
+			"existencia":"4",
+			"clavessa":"010.000.4141.00",
+			"descripciongenerica":"MOMETASONA SUSPENSI\u00d3N 0.050 G\/100 ML NEBULIZADOR CON 18 ML Y V\u00c1LVULA DOSIFICADORA (140 NEBULIZACIONES DE 50 \u00b5G CADA UNA)",
+			"observaciones":"dar dos disparos durante dos semanas",
+			"textoLibre":0
+		},
+		{
+			"id_medicina":67,
+			"id_receta":47,
+			"medicina":"MONTELUKAST 4MG. C\/10 TABS MASTICABLES",
+			"eancode":"7501349024984",
+			"via":"91",
+			"dosis":"10",
+			"cantidad":"1",
+			"unidades":"3",
+			"frecuencia":"51",
+			"inicio":"2018-06-14","fin":"2018-07-14",
+			"presentacion":"CAJA",
+			"existencia":"1",
+			"clavessa":"SC-MED-2550",
+			"descripciongenerica":"MONTELUKAST 4MG. ENVASE CON 10 TABLETAS MASTICABLES",
+			"observaciones":"tomar una cada 24 horas a la misma hora durante un mes",
+			"textoLibre":0
+		}
+	]
+}

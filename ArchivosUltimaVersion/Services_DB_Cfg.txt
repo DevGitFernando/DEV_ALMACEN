@@ -1,0 +1,20 @@
+﻿WinRar=C:\Program Files\WinRAR\Rar.exe 	
+TiposArchivos=bak;sii
+DirBackUp=D:\BaseDeDatos\Respaldos\
+DirBackUp_Alterno=D:\BaseDeDatos\Respaldos\Aux01;D:\BaseDeDatos\Respaldos\Aux02;  
+PK01=x1
+PK02=x2
+TM=1   
+
+
+
+#WinRar# 		Directorio donde se encuentra la utileria de compresion 
+#TiposArchivos# 	Extensiones de archivos a procesar 
+#DirBackUp# 		Directorio donde se encuentran los archivos a procesar 
+#DirBackUp_Alterno# 	Directorios de respaldo a donde se enviaran los archivos procesados 
+#PK01# 			General 
+#PK02# 			General 
+#TM#  			Tiempo en minutos para la ejecución del proceso 
+
+
+

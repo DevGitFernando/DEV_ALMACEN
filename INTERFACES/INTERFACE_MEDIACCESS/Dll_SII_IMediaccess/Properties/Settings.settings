@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dll_SII_IMediaccess.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dll_SII_IMediaccess_wsSrvMediaccess_VerificaElegibilidadConCopago" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.mediaccess.com.mx/wsoperaciones/VerificaElegibilidadConCopago.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_SII_IMediaccess_wsUpdateVersion_wsUpdater" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_SII_IMediaccess_SrvMediaccessGetInfo_SvcSassSi" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mediaccess.dyndns.org:8081/SvcSassSiMACprueba/SvcSassSi.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_SII_IMediaccess_wsEPharmaInformacionDeVales_wsEPharma_RecepcionVales" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10757/wsSII_INT_Mediaccess/wsEPharmaVales.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

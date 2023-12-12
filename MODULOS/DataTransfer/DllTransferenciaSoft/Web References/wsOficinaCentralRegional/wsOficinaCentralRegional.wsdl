@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo información</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="IniciarServicio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Servicio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IniciarServicioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IniciarServicioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Informacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivoCgf" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NombreArchivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Archivo" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InformacionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReplicacionInformacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NombreArchivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Archivo" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReplicacionInformacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReplicacionInformacionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Conexion">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConexionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConexionEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivoIni" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConexionExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConexionExResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Execute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Parametros">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="UsarTransaccion" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Contenedor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sentencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Solicitud" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sentencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteExtResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteExcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NombrePlantilla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Informacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteExcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteExcelResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reporte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionReporteWeb">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProbarConexion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivoIni" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProbarConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProbarConexionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestConection">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestConectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestConectionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wwwDirectorio">
+        <s:complexType />
+      </s:element>
+      <s:element name="wwwDirectorioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wwwDirectorioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteRemoto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Informacion">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteRemotoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteRemotoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteRemoto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Informacion">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionReporteWeb">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteRemotoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteRemotoResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionOrdenCompra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Destino" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Folio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionOrdenCompraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionOrdenCompraResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionPedidos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Farmacia" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoDePedido" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionPedidosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionPedidosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionTransferencias">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FarmaciaOrigen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FarmaciaDestino" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Folio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionTransferenciasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionTransferenciasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionTransferenciasEstatales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstadoOrigen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FarmaciaOrigen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EstadoDestino" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FarmaciaDestino" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Folio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionTransferenciasEstatalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionTransferenciasEstatalesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionRecepcionDiariaOrdenesCompras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EntregarEn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionRecepcionDiariaOrdenesComprasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionRecepcionDiariaOrdenesComprasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IniciarServicioSoapIn">
+    <wsdl:part name="parameters" element="tns:IniciarServicio" />
+  </wsdl:message>
+  <wsdl:message name="IniciarServicioSoapOut">
+    <wsdl:part name="parameters" element="tns:IniciarServicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformacionSoapIn">
+    <wsdl:part name="parameters" element="tns:Informacion" />
+  </wsdl:message>
+  <wsdl:message name="InformacionSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReplicacionInformacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ReplicacionInformacion" />
+  </wsdl:message>
+  <wsdl:message name="ReplicacionInformacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ReplicacionInformacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:Conexion" />
+  </wsdl:message>
+  <wsdl:message name="ConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConexionExSoapIn">
+    <wsdl:part name="parameters" element="tns:ConexionEx" />
+  </wsdl:message>
+  <wsdl:message name="ConexionExSoapOut">
+    <wsdl:part name="parameters" element="tns:ConexionExResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSoapIn">
+    <wsdl:part name="parameters" element="tns:Execute" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteExtSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteExt" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteExtSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteExcelSoapIn">
+    <wsdl:part name="parameters" element="tns:ReporteExcel" />
+  </wsdl:message>
+  <wsdl:message name="ReporteExcelSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteSoapIn">
+    <wsdl:part name="parameters" element="tns:Reporte" />
+  </wsdl:message>
+  <wsdl:message name="ReporteSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProbarConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:ProbarConexion" />
+  </wsdl:message>
+  <wsdl:message name="ProbarConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProbarConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestConectionSoapIn">
+    <wsdl:part name="parameters" element="tns:TestConection" />
+  </wsdl:message>
+  <wsdl:message name="TestConectionSoapOut">
+    <wsdl:part name="parameters" element="tns:TestConectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="wwwDirectorioSoapIn">
+    <wsdl:part name="parameters" element="tns:wwwDirectorio" />
+  </wsdl:message>
+  <wsdl:message name="wwwDirectorioSoapOut">
+    <wsdl:part name="parameters" element="tns:wwwDirectorioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteRemotoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteRemoto" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteRemotoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteRemotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteRemotoSoapIn">
+    <wsdl:part name="parameters" element="tns:ReporteRemoto" />
+  </wsdl:message>
+  <wsdl:message name="ReporteRemotoSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteRemotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformacionOrdenCompraSoapIn">
+    <wsdl:part name="parameters" element="tns:InformacionOrdenCompra" />
+  </wsdl:message>
+  <wsdl:message name="InformacionOrdenCompraSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionOrdenCompraResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformacionPedidosSoapIn">
+    <wsdl:part name="parameters" element="tns:InformacionPedidos" />
+  </wsdl:message>
+  <wsdl:message name="InformacionPedidosSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionPedidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformacionTransferenciasSoapIn">
+    <wsdl:part name="parameters" element="tns:InformacionTransferencias" />
+  </wsdl:message>
+  <wsdl:message name="InformacionTransferenciasSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionTransferenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformacionTransferenciasEstatalesSoapIn">
+    <wsdl:part name="parameters" element="tns:InformacionTransferenciasEstatales" />
+  </wsdl:message>
+  <wsdl:message name="InformacionTransferenciasEstatalesSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionTransferenciasEstatalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformacionRecepcionDiariaOrdenesComprasSoapIn">
+    <wsdl:part name="parameters" element="tns:InformacionRecepcionDiariaOrdenesCompras" />
+  </wsdl:message>
+  <wsdl:message name="InformacionRecepcionDiariaOrdenesComprasSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionRecepcionDiariaOrdenesComprasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsCnnOficinaCentralRegionalSoap">
+    <wsdl:operation name="IniciarServicio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Iniciar el Servicio de Transferencias.</wsdl:documentation>
+      <wsdl:input message="tns:IniciarServicioSoapIn" />
+      <wsdl:output message="tns:IniciarServicioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Informacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recibir información de Farmacias a Oficina Central.</wsdl:documentation>
+      <wsdl:input message="tns:InformacionSoapIn" />
+      <wsdl:output message="tns:InformacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReplicacionInformacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Replicación de informacion.</wsdl:documentation>
+      <wsdl:input message="tns:ReplicacionInformacionSoapIn" />
+      <wsdl:output message="tns:ReplicacionInformacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Conexion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información</wsdl:documentation>
+      <wsdl:input message="tns:ConexionSoapIn" />
+      <wsdl:output message="tns:ConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConexionEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información</wsdl:documentation>
+      <wsdl:input message="tns:ConexionExSoapIn" />
+      <wsdl:output message="tns:ConexionExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información del servidor.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSoapIn" />
+      <wsdl:output message="tns:ExecuteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información del servidor.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteExtSoapIn" />
+      <wsdl:output message="tns:ExecuteExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExcel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Plantilla de reporte excel.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteExcelSoapIn" />
+      <wsdl:output message="tns:ReporteExcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generar reporte.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteSoapIn" />
+      <wsdl:output message="tns:ReporteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Probar conexión.</wsdl:documentation>
+      <wsdl:input message="tns:ProbarConexionSoapIn" />
+      <wsdl:output message="tns:ProbarConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestConection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Probar conexión al servidor, clientes prueban la conexión</wsdl:documentation>
+      <wsdl:input message="tns:TestConectionSoapIn" />
+      <wsdl:output message="tns:TestConectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wwwDirectorio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Directorio de Trabajo wwww</wsdl:documentation>
+      <wsdl:input message="tns:wwwDirectorioSoapIn" />
+      <wsdl:output message="tns:wwwDirectorioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteRemoto">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información del servidor.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteRemotoSoapIn" />
+      <wsdl:output message="tns:ExecuteRemotoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteRemoto">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generar reporte.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteRemotoSoapIn" />
+      <wsdl:output message="tns:ReporteRemotoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformacionOrdenCompra">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información de Orden De Compra.</wsdl:documentation>
+      <wsdl:input message="tns:InformacionOrdenCompraSoapIn" />
+      <wsdl:output message="tns:InformacionOrdenCompraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformacionPedidos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información de Pedidos.</wsdl:documentation>
+      <wsdl:input message="tns:InformacionPedidosSoapIn" />
+      <wsdl:output message="tns:InformacionPedidosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformacionTransferencias">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Envio Informacion de Transferencias</wsdl:documentation>
+      <wsdl:input message="tns:InformacionTransferenciasSoapIn" />
+      <wsdl:output message="tns:InformacionTransferenciasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformacionTransferenciasEstatales">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Envio Informacion de Transferencias</wsdl:documentation>
+      <wsdl:input message="tns:InformacionTransferenciasEstatalesSoapIn" />
+      <wsdl:output message="tns:InformacionTransferenciasEstatalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformacionRecepcionDiariaOrdenesCompras">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener Informacion de Ordenes de Compras a recepcionar diario</wsdl:documentation>
+      <wsdl:input message="tns:InformacionRecepcionDiariaOrdenesComprasSoapIn" />
+      <wsdl:output message="tns:InformacionRecepcionDiariaOrdenesComprasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsCnnOficinaCentralRegionalSoap" type="tns:wsCnnOficinaCentralRegionalSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IniciarServicio">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/IniciarServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Informacion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Informacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReplicacionInformacion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ReplicacionInformacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Conexion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Conexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConexionEx">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ConexionEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Execute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExt">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExcel">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ProbarConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConection">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/TestConection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wwwDirectorio">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/wwwDirectorio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteRemoto">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteRemoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteRemoto">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteRemoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionOrdenCompra">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionOrdenCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionPedidos">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionPedidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionTransferencias">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionTransferencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionTransferenciasEstatales">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionTransferenciasEstatales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionRecepcionDiariaOrdenesCompras">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionRecepcionDiariaOrdenesCompras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsCnnOficinaCentralRegionalSoap12" type="tns:wsCnnOficinaCentralRegionalSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IniciarServicio">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/IniciarServicio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Informacion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Informacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReplicacionInformacion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ReplicacionInformacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Conexion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Conexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConexionEx">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ConexionEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Execute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExt">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExcel">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteExcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Reporte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ProbarConexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConection">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/TestConection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wwwDirectorio">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/wwwDirectorio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteRemoto">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteRemoto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteRemoto">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteRemoto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionOrdenCompra">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionOrdenCompra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionPedidos">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionPedidos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionTransferencias">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionTransferencias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionTransferenciasEstatales">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionTransferenciasEstatales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformacionRecepcionDiariaOrdenesCompras">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/InformacionRecepcionDiariaOrdenesCompras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsCnnOficinaCentralRegional">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo información</wsdl:documentation>
+    <wsdl:port name="wsCnnOficinaCentralRegionalSoap" binding="tns:wsCnnOficinaCentralRegionalSoap">
+      <soap:address location="http://localhost:31905/wsFarmaciaScSoft/wsOficinaCentralRegional.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsCnnOficinaCentralRegionalSoap12" binding="tns:wsCnnOficinaCentralRegionalSoap12">
+      <soap12:address location="http://localhost:31905/wsFarmaciaScSoft/wsOficinaCentralRegional.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

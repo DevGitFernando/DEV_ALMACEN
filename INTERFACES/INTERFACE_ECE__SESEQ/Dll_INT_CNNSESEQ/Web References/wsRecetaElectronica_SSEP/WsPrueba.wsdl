@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://pruebas.ws.itc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WsPrueba" targetNamespace="http://pruebas.ws.itc.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://ec2-54-188-66-44.us-west-2.compute.amazonaws.com:8090/WsPrueba/WsPrueba?xsd=1" namespace="http://pruebas.ws.itc.com/" />
+    </xsd:schema>
+  </types>
+  <message name="reciberespuesta">
+    <part name="parameters" element="tns:reciberespuesta" />
+  </message>
+  <message name="reciberespuestaResponse">
+    <part name="parameters" element="tns:reciberespuestaResponse" />
+  </message>
+  <portType name="WsPrueba">
+    <operation name="reciberespuesta">
+      <input wsam:Action="http://pruebas.ws.itc.com/WsPrueba/reciberespuestaRequest" message="tns:reciberespuesta" />
+      <output wsam:Action="http://pruebas.ws.itc.com/WsPrueba/reciberespuestaResponse" message="tns:reciberespuestaResponse" />
+    </operation>
+  </portType>
+  <binding name="WsPruebaPortBinding" type="tns:WsPrueba">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="reciberespuesta">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WsPrueba">
+    <port name="WsPruebaPort" binding="tns:WsPruebaPortBinding">
+      <soap:address location="http://ec2-54-188-66-44.us-west-2.compute.amazonaws.com:8090/WsPrueba/WsPrueba" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,19 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\Configuración Servicio Cliente.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\Configuración Servicio Cliente.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Cliente.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\DtConfigurarRFC.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\Configuración Servicio Cliente.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarRFC\obj\Debug\Configuración Servicio Cliente.pdb

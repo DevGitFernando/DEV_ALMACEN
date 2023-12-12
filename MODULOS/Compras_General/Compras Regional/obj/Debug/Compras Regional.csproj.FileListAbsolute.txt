@@ -1,0 +1,22 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Regional.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Regional.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\ComprasRegional.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\ComprasRegional.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.exe.licenses
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Regional.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\ComprasRegional.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\ComprasRegional.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.exe.licenses
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Regional\obj\Debug\Compras Regional.pdb

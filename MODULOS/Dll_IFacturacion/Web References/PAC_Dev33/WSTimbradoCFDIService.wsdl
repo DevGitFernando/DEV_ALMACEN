@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://wservicios/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="WSTimbradoCFDIService" targetNamespace="http://wservicios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSTimbradoCFDIPortBinding_MTOM_Policy-WSTimbradoCFDIPortBinding_MTOM_Policy">
+    <ns1:OptimizedMimeSerialization xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+  </wsp:Policy>
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService?xsd=1" namespace="http://www.w3.org/2000/09/xmldsig#" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService?xsd=2" namespace="http://wservicios/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService?xsd=3" namespace="http://cancelacfd.sat.gob.mx" />
+    </xsd:schema>
+  </types>
+  <message name="Cancelacion_2">
+    <part name="parameters" element="tns:Cancelacion_2" />
+  </message>
+  <message name="Cancelacion_2Response">
+    <part name="parameters" element="tns:Cancelacion_2Response" />
+  </message>
+  <message name="Cancelacion_1">
+    <part name="parameters" element="tns:Cancelacion_1" />
+  </message>
+  <message name="Cancelacion_1Response">
+    <part name="parameters" element="tns:Cancelacion_1Response" />
+  </message>
+  <message name="TimbrarCFDIV2">
+    <part name="parameters" element="tns:TimbrarCFDIV2" />
+  </message>
+  <message name="TimbrarCFDIV2Response">
+    <part name="parameters" element="tns:TimbrarCFDIV2Response" />
+  </message>
+  <message name="TimbrarCFDI">
+    <part name="parameters" element="tns:TimbrarCFDI" />
+  </message>
+  <message name="TimbrarCFDIResponse">
+    <part name="parameters" element="tns:TimbrarCFDIResponse" />
+  </message>
+  <message name="TimbrarZip">
+    <part name="parameters" element="tns:TimbrarZip" />
+  </message>
+  <message name="TimbrarZipResponse">
+    <part name="parameters" element="tns:TimbrarZipResponse" />
+  </message>
+  <portType name="WSTimbradoCFDI">
+    <operation name="Cancelacion_2">
+      <input wsam:Action="http://wservicios/WSTimbradoCFDI/Cancelacion_2Request" message="tns:Cancelacion_2" />
+      <output wsam:Action="http://wservicios/WSTimbradoCFDI/Cancelacion_2Response" message="tns:Cancelacion_2Response" />
+    </operation>
+    <operation name="Cancelacion_1">
+      <input wsam:Action="http://wservicios/WSTimbradoCFDI/Cancelacion_1Request" message="tns:Cancelacion_1" />
+      <output wsam:Action="http://wservicios/WSTimbradoCFDI/Cancelacion_1Response" message="tns:Cancelacion_1Response" />
+    </operation>
+    <operation name="TimbrarCFDIV2">
+      <input wsam:Action="http://wservicios/WSTimbradoCFDI/TimbrarCFDIV2Request" message="tns:TimbrarCFDIV2" />
+      <output wsam:Action="http://wservicios/WSTimbradoCFDI/TimbrarCFDIV2Response" message="tns:TimbrarCFDIV2Response" />
+    </operation>
+    <operation name="TimbrarCFDI">
+      <input wsam:Action="http://wservicios/WSTimbradoCFDI/TimbrarCFDIRequest" message="tns:TimbrarCFDI" />
+      <output wsam:Action="http://wservicios/WSTimbradoCFDI/TimbrarCFDIResponse" message="tns:TimbrarCFDIResponse" />
+    </operation>
+    <operation name="TimbrarZip">
+      <input wsam:Action="http://wservicios/WSTimbradoCFDI/TimbrarZipRequest" message="tns:TimbrarZip" />
+      <output wsam:Action="http://wservicios/WSTimbradoCFDI/TimbrarZipResponse" message="tns:TimbrarZipResponse" />
+    </operation>
+  </portType>
+  <binding name="WSTimbradoCFDIPortBinding" type="tns:WSTimbradoCFDI">
+    <wsp:PolicyReference URI="#WSTimbradoCFDIPortBinding_MTOM_Policy-WSTimbradoCFDIPortBinding_MTOM_Policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="Cancelacion_2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Cancelacion_1">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="TimbrarCFDIV2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="TimbrarCFDI">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="TimbrarZip">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSTimbradoCFDIService">
+    <port name="WSTimbradoCFDIPort" binding="tns:WSTimbradoCFDIPortBinding">
+      <soap:address location="http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://efarmacaprepa.cloudapp.net/wsCaprepa/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://efarmacaprepa.cloudapp.net/wsCaprepa/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://efarmacaprepa.cloudapp.net/wsCaprepa/">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idClinica" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="tns:ResponseLogin" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseLogin">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Mensaje">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Mensaje">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HuboError" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MensajeError" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnviaPedido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pedido" type="tns:RequestPedido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RequestPedido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numConsecutivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numPlaca" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="folioReceta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fechaReceta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cedula" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipoServicio" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="folioServicio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="idEstado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="idFarmacia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="idCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="idSubCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="idBeneficiario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="persona" type="tns:Persona" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="tns:Direccion" />
+          <s:element minOccurs="0" maxOccurs="1" name="productos" type="tns:ArrayOfProducto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Persona">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApePaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApeMaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TelefonoCasa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TelefonoMovil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaNacimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Genero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorreoElectronico" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Direccion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoPostal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Calle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroExterior" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroInterior" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntreCalles" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Colonia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Referencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DelegacioMunicipio" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProducto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Producto" nillable="true" type="tns:Producto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Producto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IdProducto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clave" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SKU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Piezas" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Faltante" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PiezasFaltantes" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnviaPedidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnviaPedidoResult" type="tns:ResponsePedido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponsePedido">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Mensaje" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ConsultaPedido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="tns:RequestInvoke" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RequestInvoke">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="folio_consecutivo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsultaPedidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaPedidoResult" type="tns:ResponseInvoke" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseInvoke">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HuboError" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroError" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MensajeError" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="infoPedido" type="tns:ArrayOfInfoPedido" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInfoPedido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InfoPedido" nillable="true" type="tns:InfoPedido" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InfoPedido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Folio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paciente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaveSSA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CantidadRequerida" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CantidadEntregada" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnviaPedidoSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviaPedido" />
+  </wsdl:message>
+  <wsdl:message name="EnviaPedidoSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviaPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaPedidoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaPedido" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaPedidoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaPedidoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsCapretaSoap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviaPedido">
+      <wsdl:input message="tns:EnviaPedidoSoapIn" />
+      <wsdl:output message="tns:EnviaPedidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaPedido">
+      <wsdl:input message="tns:ConsultaPedidoSoapIn" />
+      <wsdl:output message="tns:ConsultaPedidoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsCapretaSoap" type="tns:wsCapretaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://efarmacaprepa.cloudapp.net/wsCaprepa/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviaPedido">
+      <soap:operation soapAction="http://efarmacaprepa.cloudapp.net/wsCaprepa/EnviaPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaPedido">
+      <soap:operation soapAction="http://efarmacaprepa.cloudapp.net/wsCaprepa/ConsultaPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsCapretaSoap12" type="tns:wsCapretaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://efarmacaprepa.cloudapp.net/wsCaprepa/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviaPedido">
+      <soap12:operation soapAction="http://efarmacaprepa.cloudapp.net/wsCaprepa/EnviaPedido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaPedido">
+      <soap12:operation soapAction="http://efarmacaprepa.cloudapp.net/wsCaprepa/ConsultaPedido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsCapreta">
+    <wsdl:port name="wsCapretaSoap" binding="tns:wsCapretaSoap">
+      <soap:address location="http://efarmacaprepa.cloudapp.net/wsCaprepa/wsCapreta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsCapretaSoap12" binding="tns:wsCapretaSoap12">
+      <soap12:address location="http://efarmacaprepa.cloudapp.net/wsCaprepa/wsCapreta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

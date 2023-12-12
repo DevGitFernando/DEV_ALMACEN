@@ -1,0 +1,446 @@
+﻿body{
+    background: #eee;
+    background: #101010;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #333;
+}
+        
+#navBarraFrame {
+    background: #029092;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    padding-left: 87px;
+    z-index: 9999;
+}
+        
+.menu-button {
+    position: absolute;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    speak: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #fff;
+    z-index: 1000;
+    top: 7px;
+    padding: 8px;
+}
+        
+.menu-button:hover {
+    background: #008A18;
+}
+        
+.container {
+    height: auto;
+    margin-right: auto;
+    width: 718px;
+    margin-left: auto;
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px 5px 0px 0px;
+    border:none;
+}
+        
+.Controls {
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    padding: 8px;
+    border: 1px solid #242424;
+    margin-bottom: 4px;
+    height: auto;
+}
+
+.contIUnidad
+{
+    width:783px !important;
+}
+
+.infoUnidad
+{
+    width:511px !important;
+    background-color: #f7f8fb;
+}
+
+.Controls.cont  
+{
+    padding : 0px;
+    border: none;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+.Controls.left{        
+    width: 200px;
+    height: 500px;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.Controls div{
+    float: left;
+}
+        
+.Controls .Groups{
+    margin-right: 8px;
+    padding: 8px;
+    min-width: 150px;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.labelGporight {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    padding: 0px 7px;
+    font-size: 12px;
+    background-color: #00632d;
+    border-radius: 0px 0px 4px 0px;
+    border: 1px solid #242424;
+    color: #fff;
+}
+
+.labelGpoleft {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 0px 7px;
+    font-size: 12px;
+    background-color: #00632d;
+    color: #fff;
+}
+
+.MsjBottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #00632d;
+    left: 0px;
+    height: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+.NoBorderRadius{       
+    border-radius: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.BorderRadius{       
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.Results {
+    width: 700px;
+    height: 300px;
+    padding: 8px;
+    padding-top: 16px;
+    border: 1px solid #242424;
+    position: relative;
+    overflow: hidden;
+}
+        
+.Results.left {
+    width: 474px;
+    height: 500px;
+    float: left;
+}
+
+#Exec {
+    left: 127px;
+}
+        
+#Print, #Exportar {
+    left: 167px;
+}
+        
+.clear {
+    clear: both;
+}
+        
+.Controls .Radio {
+    margin-right: 8px;
+    border-radius: 5px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    min-width: 178px;
+    width: auto;
+}
+
+.Controls .Radio.Center {
+    text-align: center;
+}
+
+.Controls .Radio.Center input[type="radio"].m-wrap{
+    float:none;
+}
+
+.Controls .Textbox .Unique {
+    margin-right: 8px;
+    border-radius: 5px;
+    padding-bottom: 28px;
+    min-width: 150px;
+    width: auto;
+}
+        
+.Controls .Combo {
+    margin-right: 8px;
+    border-radius: 5px;
+    min-width: 150px;
+    width: auto;
+}
+
+.Controls .Combo .Unique {
+    margin-right: 8px;
+    border-radius: 5px;
+    min-width: 150px;
+    width: auto;
+}
+        
+.m-input-prepend .add-on {
+    width: 80px;
+    background: #FFF;
+    border: none;
+    text-align: right;
+}
+
+#ui-datepicker-div {
+    background: #eee;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #333;
+}
+
+.label {
+    background-color: #f5f5f5;
+    padding: 4px;
+    text-align: center;
+    width: 82px;
+    height: 21px;
+}
+
+/*Help*/
+#Caja, .caja {
+    border: 4px solid #BDC1C6 !Important;
+}
+
+#nvahelp {
+    background-color: #00632D !Important;
+}
+
+.Max{
+    position: fixed !Important;
+    width: 100vw !Important;
+    height: 100vh !Important;
+    top: 50% !Important;
+    left: 50% !Important;
+    transform: translate(-50%, -50%) !Important;
+    background-color: #fff !Important;
+    border:none !important;
+    
+}
+
+.return
+{
+    width:20px;
+    height:20px;
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 6px;
+    display:none;
+    
+    background-image:url(../images/icoMaxMin.png);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.titleFrm {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    line-height:20px;
+    font-size: 15px;
+    text-align: center;
+    color: #8c8f9d;
+    font-weight: 500;
+    padding: 5px 0px 5px 0px !important;
+    border-bottom: 1px solid #c0eafc;
+    background-color: #FFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.headResults
+{
+    width:100%;
+    height:25px;
+}
+
+.titleResult
+{
+    position:absolute;
+    width: 100%;
+    height: 20px;
+    line-height:20px;
+    font-weight:500;
+    font-size: 14px;
+    text-align:left;
+    color: #5c698a;
+    padding: 0px 0px 0px 10px !important;
+    /*background-color: #e9ecf3;*/
+    display: block;
+    margin: 0 auto;
+}
+
+.elementCenter {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: block;
+}
+
+
+.titleConfig {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    line-height:20px;
+    font-size: 15px;
+    text-align: center;
+    color: #8c8f9d;
+    padding: 5px 0px 5px 0px !important;
+    border-bottom: 1px solid #c0eafc;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.icon-file
+{
+    width:20px ;
+    height:20px ;
+    background-image:url(../images/icoNuevo.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    border:none;
+}
+
+
+.icon-edit
+{
+    width:20px ;
+    height:20px ;
+    background-image:url(../images/icoEdit.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    border:none;
+}
+
+.icon-share
+{
+    width:20px ;
+    height:20px ;
+    background-image:url(../images/icoEdit.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    border:none;
+}
+
+.icon-play
+{
+    width:20px ;
+    height:20px ;
+    background-image:url(../images/icoEjecutar.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    border:none;
+}
+
+
+.icon-play
+{
+    width:20px ;
+    height:20px ;
+    background-image:url(../images/icoExport.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    border:none;
+}
+
+icon-remove
+{
+    width:20px ;
+    height:20px ;
+    background-image:url(../images/icoHome.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    border:none;
+}
+
+.icon-trash
+{
+    width:20px ;
+    height:20px ;
+    background-image:url(../images/icoDelete.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    border:none;
+}
+
+
+.btn_del_relgpo
+{
+   position: absolute;
+   right: 20px;
+   margin-top: 2px;
+}
+
+
+
+li
+{
+    height: 25px;
+    line-height: 25px;
+    color: #273ea7;
+    color: #5c698a;
+    list-style: none;
+    cursor: pointer;
+    background-color:#e8e6fd;
+}
+
+li
+{
+    width: 99%;
+    margin-top: 10px;
+    padding-left:10px;
+}
+
+
+/*Existencias Detallado*/

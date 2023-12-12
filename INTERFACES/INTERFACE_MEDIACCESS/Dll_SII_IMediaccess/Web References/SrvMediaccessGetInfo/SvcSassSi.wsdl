@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="BuscarAfiliado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codEmpresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codProducto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codAfiliado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="correlativo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numCerti" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codParentesco" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="apellidoPaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="apellidoMaterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codEstatusAfiliado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarAfiliadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarAfiliadoResult" type="tns:ArrayOfAfiliadoCto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAfiliadoCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AfiliadoCto" nillable="true" type="tns:AfiliadoCto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AfiliadoCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodEmpresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreEmpresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodAfiliado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreAfiliado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApellidoPaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApellidoMaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Correlativo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodEstado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodProducto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Producto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sexo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodParentesco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaNacimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodGrupo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Parentesco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vigencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaAntiguedad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodEstatusAfiliado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EstatusAfiliado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cobertura" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombreComercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodPeriodo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaFinServicio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codVip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codPlan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion_Plan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumCerti" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Poliza" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodPymeColectivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descPymeColectivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Codvigencia" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidaProveedor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodCuenta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodEmpresa" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaProveedorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidaProveedorResult" type="tns:ArrayOfProveedorCto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProveedorCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProveedorCto" nillable="true" type="tns:ProveedorCto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProveedorCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NombreCompleto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vigencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodVigencia" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscaMedicamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodProducto" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodPlan" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Busqueda" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cve_prov" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscaMedicamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscaMedicamentoResult" type="tns:ArrayOfMedicamento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMedicamento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Medicamento" nillable="true" type="tns:Medicamento" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Medicamento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreSal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="proceso" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BusquedaMedicamentosxID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProducto" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Plan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idClinica" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BusquedaMedicamentosxIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BusquedaMedicamentosxIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ComprobarExistenciaDisponible">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClinica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Datos_receta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ComprobarExistenciaDisponibleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ComprobarExistenciaDisponibleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublicacionRem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Folio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="idFarmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paciente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Medico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Especialidad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Copago" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Plan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fecha" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Elegibilidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Datos_receta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublicacionRemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PublicacionRemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Autorizar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodAfiliado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Correlativo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodPeriodo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Clinica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UsrInsert" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodtipoCuenta" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Comentario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Diagnostico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Procedimientos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Medicamentos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="laboratorio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Gabinete" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Folio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutorizarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutorizarResult" type="tns:ArrayOfAutorizacionCto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAutorizacionCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AutorizacionCto" nillable="true" type="tns:AutorizacionCto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AutorizacionCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Valida" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ValidaMSG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Autorizacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Medicamentos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Laboratorio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gabinete" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CoberturaAfiliado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodAfiliado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Correlativo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CoberturaAfiliadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CoberturaAfiliadoResult" type="tns:ArrayOfCoberturaAfil" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCoberturaAfil">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CoberturaAfil" nillable="true" type="tns:CoberturaAfil" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CoberturaAfil">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DatosAfil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cobertura" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Html" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CondicionesEspeciales" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BusquedaDiagnostico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CadenaBusqueda" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BusquedaDiagnosticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BusquedaDiagnosticoResult" type="tns:ArrayOfDiagnosticoCto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDiagnosticoCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DiagnosticoCto" nillable="true" type="tns:DiagnosticoCto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DiagnosticoCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="diagnostico" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BusquedaProcedimiento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodClinica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodProducto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CadenaBusqueda" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BusquedaProcedimientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BusquedaProcedimientoResult" type="tns:ArrayOfProcedimientoCto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProcedimientoCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProcedimientoCto" nillable="true" type="tns:ProcedimientoCto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProcedimientoCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Clave" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Importe" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BusquedaLabGab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodClinica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodProducto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CadenaBusqueda" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoBusqueda" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BusquedaLabGabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BusquedaLabGabResult" type="tns:ArrayOfLabGabCto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLabGabCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LabGabCto" nillable="true" type="tns:LabGabCto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LabGabCto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Clave" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Importe" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BuscarAfiliadoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarAfiliado" />
+  </wsdl:message>
+  <wsdl:message name="BuscarAfiliadoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarAfiliadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidaProveedorSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaProveedor" />
+  </wsdl:message>
+  <wsdl:message name="ValidaProveedorSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaProveedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscaMedicamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscaMedicamento" />
+  </wsdl:message>
+  <wsdl:message name="BuscaMedicamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscaMedicamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaMedicamentosxIDSoapIn">
+    <wsdl:part name="parameters" element="tns:BusquedaMedicamentosxID" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaMedicamentosxIDSoapOut">
+    <wsdl:part name="parameters" element="tns:BusquedaMedicamentosxIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ComprobarExistenciaDisponibleSoapIn">
+    <wsdl:part name="parameters" element="tns:ComprobarExistenciaDisponible" />
+  </wsdl:message>
+  <wsdl:message name="ComprobarExistenciaDisponibleSoapOut">
+    <wsdl:part name="parameters" element="tns:ComprobarExistenciaDisponibleResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicacionRemSoapIn">
+    <wsdl:part name="parameters" element="tns:PublicacionRem" />
+  </wsdl:message>
+  <wsdl:message name="PublicacionRemSoapOut">
+    <wsdl:part name="parameters" element="tns:PublicacionRemResponse" />
+  </wsdl:message>
+  <wsdl:message name="AutorizarSoapIn">
+    <wsdl:part name="parameters" element="tns:Autorizar" />
+  </wsdl:message>
+  <wsdl:message name="AutorizarSoapOut">
+    <wsdl:part name="parameters" element="tns:AutorizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="CoberturaAfiliadoSoapIn">
+    <wsdl:part name="parameters" element="tns:CoberturaAfiliado" />
+  </wsdl:message>
+  <wsdl:message name="CoberturaAfiliadoSoapOut">
+    <wsdl:part name="parameters" element="tns:CoberturaAfiliadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaDiagnosticoSoapIn">
+    <wsdl:part name="parameters" element="tns:BusquedaDiagnostico" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaDiagnosticoSoapOut">
+    <wsdl:part name="parameters" element="tns:BusquedaDiagnosticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaProcedimientoSoapIn">
+    <wsdl:part name="parameters" element="tns:BusquedaProcedimiento" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaProcedimientoSoapOut">
+    <wsdl:part name="parameters" element="tns:BusquedaProcedimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaLabGabSoapIn">
+    <wsdl:part name="parameters" element="tns:BusquedaLabGab" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaLabGabSoapOut">
+    <wsdl:part name="parameters" element="tns:BusquedaLabGabResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SvcSassSiSoap">
+    <wsdl:operation name="BuscarAfiliado">
+      <wsdl:input message="tns:BuscarAfiliadoSoapIn" />
+      <wsdl:output message="tns:BuscarAfiliadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaProveedor">
+      <wsdl:input message="tns:ValidaProveedorSoapIn" />
+      <wsdl:output message="tns:ValidaProveedorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscaMedicamento">
+      <wsdl:input message="tns:BuscaMedicamentoSoapIn" />
+      <wsdl:output message="tns:BuscaMedicamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaMedicamentosxID">
+      <wsdl:input message="tns:BusquedaMedicamentosxIDSoapIn" />
+      <wsdl:output message="tns:BusquedaMedicamentosxIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarExistenciaDisponible">
+      <wsdl:input message="tns:ComprobarExistenciaDisponibleSoapIn" />
+      <wsdl:output message="tns:ComprobarExistenciaDisponibleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PublicacionRem">
+      <wsdl:input message="tns:PublicacionRemSoapIn" />
+      <wsdl:output message="tns:PublicacionRemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Autorizar">
+      <wsdl:input message="tns:AutorizarSoapIn" />
+      <wsdl:output message="tns:AutorizarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CoberturaAfiliado">
+      <wsdl:input message="tns:CoberturaAfiliadoSoapIn" />
+      <wsdl:output message="tns:CoberturaAfiliadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaDiagnostico">
+      <wsdl:input message="tns:BusquedaDiagnosticoSoapIn" />
+      <wsdl:output message="tns:BusquedaDiagnosticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaProcedimiento">
+      <wsdl:input message="tns:BusquedaProcedimientoSoapIn" />
+      <wsdl:output message="tns:BusquedaProcedimientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaLabGab">
+      <wsdl:input message="tns:BusquedaLabGabSoapIn" />
+      <wsdl:output message="tns:BusquedaLabGabSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SvcSassSiSoap" type="tns:SvcSassSiSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarAfiliado">
+      <soap:operation soapAction="http://tempuri.org/BuscarAfiliado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaProveedor">
+      <soap:operation soapAction="http://tempuri.org/ValidaProveedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscaMedicamento">
+      <soap:operation soapAction="http://tempuri.org/BuscaMedicamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaMedicamentosxID">
+      <soap:operation soapAction="http://tempuri.org/BusquedaMedicamentosxID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarExistenciaDisponible">
+      <soap:operation soapAction="http://tempuri.org/ComprobarExistenciaDisponible" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublicacionRem">
+      <soap:operation soapAction="http://tempuri.org/PublicacionRem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Autorizar">
+      <soap:operation soapAction="http://tempuri.org/Autorizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CoberturaAfiliado">
+      <soap:operation soapAction="http://tempuri.org/CoberturaAfiliado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaDiagnostico">
+      <soap:operation soapAction="http://tempuri.org/BusquedaDiagnostico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaProcedimiento">
+      <soap:operation soapAction="http://tempuri.org/BusquedaProcedimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaLabGab">
+      <soap:operation soapAction="http://tempuri.org/BusquedaLabGab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SvcSassSiSoap12" type="tns:SvcSassSiSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarAfiliado">
+      <soap12:operation soapAction="http://tempuri.org/BuscarAfiliado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaProveedor">
+      <soap12:operation soapAction="http://tempuri.org/ValidaProveedor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscaMedicamento">
+      <soap12:operation soapAction="http://tempuri.org/BuscaMedicamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaMedicamentosxID">
+      <soap12:operation soapAction="http://tempuri.org/BusquedaMedicamentosxID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarExistenciaDisponible">
+      <soap12:operation soapAction="http://tempuri.org/ComprobarExistenciaDisponible" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublicacionRem">
+      <soap12:operation soapAction="http://tempuri.org/PublicacionRem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Autorizar">
+      <soap12:operation soapAction="http://tempuri.org/Autorizar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CoberturaAfiliado">
+      <soap12:operation soapAction="http://tempuri.org/CoberturaAfiliado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaDiagnostico">
+      <soap12:operation soapAction="http://tempuri.org/BusquedaDiagnostico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaProcedimiento">
+      <soap12:operation soapAction="http://tempuri.org/BusquedaProcedimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusquedaLabGab">
+      <soap12:operation soapAction="http://tempuri.org/BusquedaLabGab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SvcSassSi">
+    <wsdl:port name="SvcSassSiSoap" binding="tns:SvcSassSiSoap">
+      <soap:address location="http://mediaccess.dyndns.org:8081/SvcSassSiMACprueba/SvcSassSi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SvcSassSiSoap12" binding="tns:SvcSassSiSoap12">
+      <soap12:address location="http://mediaccess.dyndns.org:8081/SvcSassSiMACprueba/SvcSassSi.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

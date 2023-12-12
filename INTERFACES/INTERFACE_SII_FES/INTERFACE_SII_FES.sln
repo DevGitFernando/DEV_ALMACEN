@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zDlls", "zDlls", "{54F62489-9599-475A-8179-BD5F49E076AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configurar_FES", "Configurar_FES\Configurar_FES.csproj", "{75371594-8185-438D-B023-B16A1DA7BE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllAcceso_FES", "DllAcceso_FES\DllAcceso_FES.csproj", "{036B61E3-518F-4016-8B54-5CB3F45A13B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{3E5926B4-7F8F-4BFF-B0E3-F272DF427BEC}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "wsAccesoDatos", "wsAccesoDatos", "{04FC07C7-6AD0-4646-962C-B12435D3EB95}"
+	ProjectSection(WebsiteProperties) = preProject
+SccProjectName = ""
+SccAuxPath = ""
+SccLocalPath = ""
+SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{036B61E3-518F-4016-8B54-5CB3F45A13B1}|DllAcceso_FES.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/wsAccesoDatos"
+		Debug.AspNetCompiler.PhysicalPath = "wsAccesoDatos\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\wsAccesoDatos\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/wsAccesoDatos"
+		Release.AspNetCompiler.PhysicalPath = "wsAccesoDatos\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\wsAccesoDatos\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56110"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75371594-8185-438D-B023-B16A1DA7BE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75371594-8185-438D-B023-B16A1DA7BE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75371594-8185-438D-B023-B16A1DA7BE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75371594-8185-438D-B023-B16A1DA7BE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036B61E3-518F-4016-8B54-5CB3F45A13B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036B61E3-518F-4016-8B54-5CB3F45A13B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036B61E3-518F-4016-8B54-5CB3F45A13B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036B61E3-518F-4016-8B54-5CB3F45A13B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5926B4-7F8F-4BFF-B0E3-F272DF427BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5926B4-7F8F-4BFF-B0E3-F272DF427BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5926B4-7F8F-4BFF-B0E3-F272DF427BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5926B4-7F8F-4BFF-B0E3-F272DF427BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FC07C7-6AD0-4646-962C-B12435D3EB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FC07C7-6AD0-4646-962C-B12435D3EB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FC07C7-6AD0-4646-962C-B12435D3EB95}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FC07C7-6AD0-4646-962C-B12435D3EB95}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<surteColectivoMedSol>
+	<Generales>
+		<idPaciente>1</idPaciente>
+		<Expediente>210930003425</Expediente>
+		<idClues>PLSSA009394</idClues>
+		<idEpisodio>EMER</idEpisodio>
+		<idTipoServicio>EMER001</idTipoServicio>
+		<idServicio>EMER00101</idServicio>
+		<idColectivo>340</idColectivo>
+		<idPeticion>CMS179</idPeticion>
+		<tipoPeticion>SURTIMIENTOCOLECTIVOMEDICAMENTOS</tipoPeticion>
+		<fechaHoraElaboracion>2018-05-31 11:38:40.82</fechaHoraElaboracion>
+		<fecha_surtimiento>2018-05-31 13:18:12</fecha_surtimiento>
+	</Generales>
+	<Detalles>
+		<Medicamentos>
+			<Medicamento >
+				<claveMed>010.000.1903.00</claveMed>
+				<lote>2143245321</lote>
+				<caducidad>2020-03-27</caducidad>
+				<cantidadSurtida>3</cantidadSurtida>
+			</Medicamento>
+		</Medicamentos>
+		<Medicamento >
+				<claveMed>010.000.5721.01</claveMed>
+				<lote>2143245321</lote>
+				<caducidad>2020-03-27</caducidad>
+				<cantidadSurtida>3</cantidadSurtida>
+			</Medicamento>
+		</Medicamentos>
+
+		<Soluciones>
+			<Solucion >
+				<claveSol>010.000.3610.00</claveSol>
+				<lote>2143245321</lote>
+				<caducidad>2020-03-27</caducidad>
+				<cantidadSurtida>2</cantidadSurtida>
+			</Solucion>
+		</Soluciones>
+		
+		<Soluciones>
+			<Solucion >
+				<claveSol>010.000.3624.00</claveSol>
+				<lote>2143245321</lote>
+				<caducidad>2020-03-27</caducidad>
+				<cantidadSurtida>2</cantidadSurtida>
+			</Solucion>
+		</Soluciones>
+	</Detalles>
+</surteColectivoMedSol>
+

@@ -1,0 +1,9 @@
+﻿body {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-image:url(../images/PHO_Logo.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center center;
+}

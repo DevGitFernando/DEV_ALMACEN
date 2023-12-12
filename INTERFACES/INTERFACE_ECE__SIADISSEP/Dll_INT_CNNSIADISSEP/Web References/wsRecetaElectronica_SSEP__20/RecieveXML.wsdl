@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:intf="http://webservice.polux.itc.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://webservice.polux.itc.com" targetNamespace="http://webservice.polux.itc.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://webservice.polux.itc.com">
+      <xsd:element name="recieve">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="document" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="recieveResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="recieveReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="recieveRequest">
+    <wsdl:part name="parameters" element="impl:recieve" />
+  </wsdl:message>
+  <wsdl:message name="recieveResponse">
+    <wsdl:part name="parameters" element="impl:recieveResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RecieveXML">
+    <wsdl:operation name="recieve">
+      <wsdl:input name="recieveRequest" message="impl:recieveRequest" />
+      <wsdl:output name="recieveResponse" message="impl:recieveResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RecieveXMLSoapBinding" type="impl:RecieveXML">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="recieve">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="recieveRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="recieveResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RecieveXMLService">
+    <wsdl:port name="RecieveXML" binding="impl:RecieveXMLSoapBinding">
+      <wsdlsoap:address location="http://ec2-54-244-200-58.us-west-2.compute.amazonaws.com:8090/Polux/services/RecieveXML" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:webServiceSESEQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:webServiceSESEQ" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:webServiceSESEQ">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="datos_salida">
+        <xsd:all>
+          <xsd:element name="mensaje" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="recepcionMovInvRequest">
+    <wsdl:part name="datos_entrada" type="tns:datos_entrada" />
+  </wsdl:message>
+  <wsdl:message name="recepcionMovInvResponse">
+    <wsdl:part name="return" type="tns:datos_salida" />
+  </wsdl:message>
+  <wsdl:portType name=" Web Service SESEQPortType">
+    <wsdl:operation name="recepcionMovInv">
+      <documentation>Recibe movimientos para afectacion de inventario</documentation>
+      <wsdl:input message="tns:recepcionMovInvRequest" />
+      <wsdl:output message="tns:recepcionMovInvResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name=" Web Service SESEQBinding" type="tns: Web Service SESEQPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="recepcionMovInv">
+      <soap:operation soapAction="urn:seseq#recepcionMovInv" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webServiceSESEQ" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webServiceSESEQ" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name=" Web Service SESEQ">
+    <wsdl:port name=" Web Service SESEQPort" binding="tns: Web Service SESEQBinding">
+      <soap:address location="http://apps.seseqro.gob.mx:8181/finanzas/webService/recepcionMovInv.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

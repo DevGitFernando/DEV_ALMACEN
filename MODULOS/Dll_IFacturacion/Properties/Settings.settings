@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dll_IFacturacion.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dll_IFacturacion_PAC_fd_svrTFD_WS_FD_TFD" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc</Value>
+    </Setting>
+    <Setting Name="Dll_IFacturacion_PAC_VirtualSoft_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://facturacion.virtualsoft.com.mx:7512/timbradoXML/Service.svc</Value>
+    </Setting>
+    <Setting Name="Dll_IFacturacion_PAC_Dev33_WSTimbradoCFDIService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,20 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Unidad.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Unidad.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Unidad.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\Administracion Unidad.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\Administracion Unidad.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Unidad.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Unidad.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Unidad.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\AdminUnidad.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\Administracion Unidad.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminUnidad\obj\Debug\Administracion Unidad.pdb

@@ -1,0 +1,375 @@
+<?xml version="1.0" standalone="yes"?>
+<ImpresionCFDI>
+	<xs:schema id="ImpresionCFDI" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xs:element name="ImpresionCFDI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+			<xs:complexType>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="Comprobante">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Version" type="xs:double" minOccurs="0" />
+								<xs:element name="TipoDeComprobante" type="xs:string" minOccurs="0" />
+								<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+								<xs:element name="FechaFolioFiscalOrig" type="xs:string" minOccurs="0" />
+								<xs:element name="Serie" type="xs:string" minOccurs="0" />
+								<xs:element name="SerieFolioFiscalOrig" type="xs:string" minOccurs="0" />
+								<xs:element name="Folio" type="xs:string" minOccurs="0" />
+								<xs:element name="FolioFiscalOrig" type="xs:string" minOccurs="0" />
+								<xs:element name="NoCertificado" type="xs:string" minOccurs="0" />
+								<xs:element name="Certificado" type="xs:string" minOccurs="0" />
+								<xs:element name="Sello" type="xs:string" minOccurs="0" />
+								<xs:element name="FormaDePago" type="xs:string" minOccurs="0" />
+								<xs:element name="FormaDePago_Descripcion" type="xs:string" minOccurs="0" />
+								<xs:element name="MetodoDePago" type="xs:string" minOccurs="0" />
+								<xs:element name="MetodoDePagoDescripcion" type="xs:string" minOccurs="0" />
+								<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+								<xs:element name="MontoFolioFiscalOrig" type="xs:double" minOccurs="0" />
+								<xs:element name="MotivoDescuento" type="xs:string" minOccurs="0" />
+								<xs:element name="NumCtaPago" type="xs:string" minOccurs="0" />
+								<xs:element name="CondicionesDePago" type="xs:string" minOccurs="0" />
+								<xs:element name="LugarExpedicion" type="xs:string" minOccurs="0" />
+								<xs:element name="TipoCambio" type="xs:string" minOccurs="0" />
+								<xs:element name="Descuento" type="xs:double" minOccurs="0" />
+								<xs:element name="SubTotal" type="xs:double" minOccurs="0" />
+								<xs:element name="Total" type="xs:double" minOccurs="0" />
+								<xs:element name="TipoDeDocumento" type="xs:string" minOccurs="0" />
+								<xs:element name="EfectoComprobante" type="xs:string" minOccurs="0" />
+								<xs:element name="EfectoComprobante_Descripcion" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Emisor">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RFC" type="xs:string" minOccurs="0" />
+								<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="DomicilioFiscal">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Pais" type="xs:string" minOccurs="0" />
+								<xs:element name="Estado" type="xs:string" minOccurs="0" />
+								<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+								<xs:element name="Municipio" type="xs:string" minOccurs="0" />
+								<xs:element name="Colonia" type="xs:string" minOccurs="0" />
+								<xs:element name="Calle" type="xs:string" minOccurs="0" />
+								<xs:element name="NoExterior" type="xs:string" minOccurs="0" />
+								<xs:element name="NoInterior" type="xs:string" minOccurs="0" />
+								<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ExpedidoEn">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Pais" type="xs:string" minOccurs="0" />
+								<xs:element name="Estado" type="xs:string" minOccurs="0" />
+								<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+								<xs:element name="Municipio" type="xs:string" minOccurs="0" />
+								<xs:element name="Colonia" type="xs:string" minOccurs="0" />
+								<xs:element name="Calle" type="xs:string" minOccurs="0" />
+								<xs:element name="NoExterior" type="xs:string" minOccurs="0" />
+								<xs:element name="NoInterior" type="xs:string" minOccurs="0" />
+								<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Regimen">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Regimen" type="xs:string" minOccurs="0" />
+								<xs:element name="Regimen_Descripcion" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Receptor">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RFC" type="xs:string" minOccurs="0" />
+								<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+								<xs:element name="UsoDeCFDI" type="xs:string" minOccurs="0" />
+								<xs:element name="UsoDeCFDI_Descripcion" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Domicilio">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Pais" type="xs:string" minOccurs="0" />
+								<xs:element name="Estado" type="xs:string" minOccurs="0" />
+								<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+								<xs:element name="Municipio" type="xs:string" minOccurs="0" />
+								<xs:element name="Colonia" type="xs:string" minOccurs="0" />
+								<xs:element name="Calle" type="xs:string" minOccurs="0" />
+								<xs:element name="NoExterior" type="xs:string" minOccurs="0" />
+								<xs:element name="NoInterior" type="xs:string" minOccurs="0" />
+								<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Conceptos">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Orden" type="xs:int" minOccurs="0" />
+								<xs:element name="ClaveProdServ" type="xs:string" minOccurs="0" />
+								<xs:element name="NoIdentificacion" type="xs:string" minOccurs="0" />
+								<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+								<xs:element name="ClaveUnidad" type="xs:string" minOccurs="0" />
+								<xs:element name="Unidad" type="xs:string" minOccurs="0" />
+								<xs:element name="Cantidad" type="xs:double" minOccurs="0" />
+								<xs:element name="ValorUnitario" type="xs:double" minOccurs="0" />
+								<xs:element name="TasaIVA" type="xs:double" minOccurs="0" />
+								<xs:element name="ImporteIva" type="xs:double" minOccurs="0" />
+								<xs:element name="Importe" type="xs:double" minOccurs="0" />
+								<xs:element name="Notas" type="xs:string" minOccurs="0" />
+								<xs:element name="Impuestos_Base" type="xs:double" minOccurs="0" />
+								<xs:element name="Impuesto_ImpuestoClave" type="xs:string" minOccurs="0" />
+								<xs:element name="Impuesto_Impuesto" type="xs:string" minOccurs="0" />
+								<xs:element name="Impuestos_TipoFactor" type="xs:string" minOccurs="0" />
+								<xs:element name="Impuestos_TasaOCuota" type="xs:double" minOccurs="0" />
+								<xs:element name="Impuestos_Importe" type="xs:double" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ConceptosInformacionAduanera">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Orden" type="xs:int" minOccurs="0" />
+								<xs:element name="Id" type="xs:int" minOccurs="0" />
+								<xs:element name="Numero" type="xs:string" minOccurs="0" />
+								<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+								<xs:element name="Aduana" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Impuestos">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="TotalImpuestosRetenidos" type="xs:double" minOccurs="0" />
+								<xs:element name="TotalImpuestosTrasladados" type="xs:double" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Retenciones">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Impuesto" type="xs:string" minOccurs="0" />
+								<xs:element name="Importe" type="xs:double" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Traslados">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Impuesto" type="xs:string" minOccurs="0" />
+								<xs:element name="TipoFactor" type="xs:string" minOccurs="0" />
+								<xs:element name="Tasa" type="xs:int" minOccurs="0" />
+								<xs:element name="Importe" type="xs:double" minOccurs="0" />
+								<xs:element name="ClaveImpuesto" type="xs:string" minOccurs="0" />
+								<xs:element name="TasaOCuota" type="xs:double" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="TimbreFiscal">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="FechaTimbrado" type="xs:string" minOccurs="0" />
+								<xs:element name="UUID" type="xs:string" minOccurs="0" />
+								<xs:element name="NoCertificadoSAT" type="xs:string" minOccurs="0" />
+								<xs:element name="SelloCFD" type="xs:string" minOccurs="0" />
+								<xs:element name="SelloSAT" type="xs:string" minOccurs="0" />
+								<xs:element name="Version" type="xs:string" minOccurs="0" />
+								<xs:element name="RfcProveedorCertificacion" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Logo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="CBB">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="CBB" type="xs:base64Binary" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Extras">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="StatusDocumento" type="xs:string" minOccurs="0" />
+								<xs:element name="Observaciones_01" type="xs:string" minOccurs="0" />
+								<xs:element name="Observaciones_02" type="xs:string" minOccurs="0" />
+								<xs:element name="Observaciones_03" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia_02" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia_03" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia_04" type="xs:string" minOccurs="0" />
+								<xs:element name="Referencia_05" type="xs:string" minOccurs="0" />
+								<xs:element name="TipoDeDocumento" type="xs:string" minOccurs="0" />
+								<xs:element name="TipoDeInsumo" type="xs:string" minOccurs="0" />
+								<xs:element name="RubroFinanciamiento" type="xs:string" minOccurs="0" />
+								<xs:element name="FuenteFinanciamiento" type="xs:string" minOccurs="0" />
+								<xs:element name="CantidadLetra" type="xs:string" minOccurs="0" />
+								<xs:element name="FechaCancelacionCFDI" type="xs:string" minOccurs="0" />
+								<xs:element name="NombreDelEstablecimiento" type="xs:string" minOccurs="0" />
+								<xs:element name="DomicilioDelEstablecimiento" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:complexType>
+		</xs:element>
+	</xs:schema>
+	<Comprobante>
+		<Version>3.3</Version>
+		<TipoDeComprobante>i</TipoDeComprobante>
+		<Fecha>2021-07-14T13:17:02</Fecha>
+		<FechaFolioFiscalOrig>2021-07-14T18:17:11</FechaFolioFiscalOrig>
+		<Serie>PEE</Serie>
+		<SerieFolioFiscalOrig />
+		<Folio>17376</Folio>
+		<FolioFiscalOrig />
+		<NoCertificado>00001000000501899314</NoCertificado>
+		<Certificado>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</Certificado>
+		<Sello>XPa6qUYBFDjt0wDX+sPgjGv93/ruh4gEZLIVXQnjNNJAOpS6p+gpFSQTZpGx0fHFRSAyhSb0oQo5SrQm10p4QTJEd0PYihA0eiTVsbzngGdW7S35oYPy7yO3cYrOJG7ZbZ+Gv62VhhQwtI1YQ0Qr+Y0bHdVoovS7+KgJS6v+oy0stWFOMJPIvFblrraEMQ7yXoifXMy9Z9ILeq8i9KwsWj35mPPsCbxN0XVAxhR7b7UibQ8LEYe3Efeh0nEkJUf2tXfG5f9QFAfZi8PJB/8GafHprKGap+h3t7PJzpKUgUN9gdZcUMFoh5ljfRRtg+TgX97etpV1xfl5eQlulkHADw==</Sello>
+		<FormaDePago>99</FormaDePago>
+		<FormaDePago_Descripcion>Por definir</FormaDePago_Descripcion>
+		<MetodoDePago>PPD</MetodoDePago>
+		<MetodoDePagoDescripcion>Pago en parcialidades o diferido</MetodoDePagoDescripcion>
+		<Moneda>MXN</Moneda>
+		<MontoFolioFiscalOrig>0</MontoFolioFiscalOrig>
+		<MotivoDescuento />
+		<NumCtaPago>****</NumCtaPago>
+		<CondicionesDePago>CRÉDITO</CondicionesDePago>
+		<LugarExpedicion>72110</LugarExpedicion>
+		<TipoCambio>1</TipoCambio>
+		<Descuento>0</Descuento>
+		<SubTotal>23.06</SubTotal>
+		<Total>26.75</Total>
+		<TipoDeDocumento>FACTURA</TipoDeDocumento>
+		<EfectoComprobante>I</EfectoComprobante>
+		<EfectoComprobante_Descripcion>INGRESO</EfectoComprobante_Descripcion>
+	</Comprobante>
+	<Emisor>
+		<RFC>IME970211V92</RFC>
+		<Nombre>Intercontinental de Medicamentos S.A. de C.V.</Nombre>
+	</Emisor>
+	<DomicilioFiscal>
+		<Pais>MÉXICO</Pais>
+		<Estado>JALISCO</Estado>
+		<Localidad />
+		<Municipio>Guadalajara</Municipio>
+		<Colonia>Americana</Colonia>
+		<Calle>Av. Chapultepec Sur</Calle>
+		<NoExterior>284</NoExterior>
+		<NoInterior>408</NoInterior>
+		<CodigoPostal>44160</CodigoPostal>
+		<Referencia />
+	</DomicilioFiscal>
+	<ExpedidoEn>
+		<Pais>México</Pais>
+		<Estado>Puebla</Estado>
+		<Localidad />
+		<Municipio>Puebla</Municipio>
+		<Colonia>Moratilla</Colonia>
+		<Calle>Km.120 Bodega No. 2.</Calle>
+		<NoExterior>286</NoExterior>
+		<NoInterior>2</NoInterior>
+		<CodigoPostal>72110</CodigoPostal>
+		<Referencia>Puente la maría, detrás de agencia Mercedes Benz</Referencia>
+	</ExpedidoEn>
+	<Regimen>
+		<Regimen>601</Regimen>
+		<Regimen_Descripcion>General de Ley Personas Morales</Regimen_Descripcion>
+	</Regimen>
+	<Receptor>
+		<RFC>CFM030617TX4</RFC>
+		<Nombre>CORPORATIVO FARMACIAS MAS S.A. DE C.V.</Nombre>
+		<UsoDeCFDI>G01</UsoDeCFDI>
+		<UsoDeCFDI_Descripcion>Adquisición de mercancias</UsoDeCFDI_Descripcion>
+	</Receptor>
+	<Domicilio>
+		<Pais>MEXICO</Pais>
+		<Estado>HIDALGO</Estado>
+		<Localidad />
+		<Municipio>PACHUCA DE SOTO</Municipio>
+		<Colonia>PERIODISTAS</Colonia>
+		<Calle>AVENIDA REVOLUCIÓN</Calle>
+		<NoExterior>1000</NoExterior>
+		<NoInterior />
+		<CodigoPostal>42060</CodigoPostal>
+		<Referencia>ENTRE CALLE 12 DE OCTUBRE Y MAESTRO SAMUEL CARRO</Referencia>
+	</Domicilio>
+	<Conceptos>
+		<Orden>1</Orden>
+		<ClaveProdServ>42271903</ClaveProdServ>
+		<NoIdentificacion>060.168.5381</NoIdentificacion>
+		<Descripcion>TUBOS ENDOTRAQUEALES, SIN GLOBO DE ELASTOMERO DE SILICON, TRANSPARENTE, GRADUADOS, CON MARCA RADIOPACA, ESTERILES Y DESECHABLES, CALIBRE (FR). 18. &lt;&lt; PIEZA &gt;&gt;  LOTE : 0816035, CADUCIDAD : 2021-08-01</Descripcion>
+		<ClaveUnidad>H87</ClaveUnidad>
+		<Unidad>PIEZA</Unidad>
+		<Cantidad>1</Cantidad>
+		<ValorUnitario>23.06</ValorUnitario>
+		<TasaIVA>16</TasaIVA>
+		<ImporteIva>0</ImporteIva>
+		<Importe>23.06</Importe>
+		<Notas />
+		<Impuestos_Base>23.06</Impuestos_Base>
+		<Impuesto_ImpuestoClave>002</Impuesto_ImpuestoClave>
+		<Impuesto_Impuesto>IVA</Impuesto_Impuesto>
+		<Impuestos_TipoFactor>Tasa</Impuestos_TipoFactor>
+		<Impuestos_TasaOCuota>0.16</Impuestos_TasaOCuota>
+		<Impuestos_Importe>3.69</Impuestos_Importe>
+	</Conceptos>
+	<Impuestos>
+		<TotalImpuestosRetenidos>0</TotalImpuestosRetenidos>
+		<TotalImpuestosTrasladados>3.69</TotalImpuestosTrasladados>
+	</Impuestos>
+	<Traslados>
+		<Impuesto>IVA</Impuesto>
+		<TipoFactor>Tasa</TipoFactor>
+		<Tasa>16</Tasa>
+		<Importe>3.69</Importe>
+		<ClaveImpuesto>IVA</ClaveImpuesto>
+		<TasaOCuota>0.16</TasaOCuota>
+	</Traslados>
+	<TimbreFiscal>
+		<FechaTimbrado>2021-07-14T18:17:18</FechaTimbrado>
+		<UUID>A28DCDE0-C8E2-48B3-86A2-0351B661ACD3</UUID>
+		<NoCertificadoSAT>00001000000504204441</NoCertificadoSAT>
+		<SelloCFD>XPa6qUYBFDjt0wDX+sPgjGv93/ruh4gEZLIVXQnjNNJAOpS6p+gpFSQTZpGx0fHFRSAyhSb0oQo5SrQm10p4QTJEd0PYihA0eiTVsbzngGdW7S35oYPy7yO3cYrOJG7ZbZ+Gv62VhhQwtI1YQ0Qr+Y0bHdVoovS7+KgJS6v+oy0stWFOMJPIvFblrraEMQ7yXoifXMy9Z9ILeq8i9KwsWj35mPPsCbxN0XVAxhR7b7UibQ8LEYe3Efeh0nEkJUf2tXfG5f9QFAfZi8PJB/8GafHprKGap+h3t7PJzpKUgUN9gdZcUMFoh5ljfRRtg+TgX97etpV1xfl5eQlulkHADw==</SelloCFD>
+		<SelloSAT>sTab5u54i8XPhAS3sPGQ58/e/PXpyD0ZwX/WzCEo4mcWralX0+Y7jUbrV7NKbe+yKwMdn7IG3PVy3i43Mtu1RYnKcrLUp+kc+VmtzvWNm5bDMBp6YkiSSKdMeW7W3hLzg/8nJl49aVXd5LPPTUJe7vCw39xqyYnax6ZYVM5JvHe55tBt9YC/FFryF3TVSutI6zrAOng4rVlHOYifpY2wlQuvnqOCHThpV+SMyP5fW27/vbDTeqj9pcIJphC66mtSrTY94/vOiAqSbkFX+Btna7vjmeQasa/mJf7Vp3Xg3YHKiuf6tC6dcN9BRe6kGFOO6WrMUCYycdYsekzCTmf+Eg==</SelloSAT>
+		<Version>1.1</Version>
+		<RfcProveedorCertificacion>CVD110412TF6</RfcProveedorCertificacion>
+	</TimbreFiscal>
+	<CBB>
+		<CBB>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</CBB>
+	</CBB>
+	<Extras>
+		<StatusDocumento>A</StatusDocumento>
+		<Observaciones_01>VENTA</Observaciones_01>
+		<Observaciones_02 />
+		<Observaciones_03 />
+		<Referencia>ENTREGAR A: CORPORATIVO FARMACIAS MAS S.A. DE C.V., AVENIDA REVOLUCION NO. 1000, PACHUCA DE SOTO HIDALGO CP. 42060</Referencia>
+		<Referencia_02 />
+		<Referencia_03 />
+		<Referencia_04 />
+		<Referencia_05 />
+		<TipoDeDocumento>NO ESPECIFICADO</TipoDeDocumento>
+		<TipoDeInsumo />
+		<RubroFinanciamiento />
+		<FuenteFinanciamiento />
+		<CantidadLetra>VEINTISEIS PESOS CON 75/100 M.N</CantidadLetra>
+		<FechaCancelacionCFDI />
+		<NombreDelEstablecimiento>Intercontinental de Medicamentos, S.A. de C.V., Centro de Distribución Puebla</NombreDelEstablecimiento>
+		<DomicilioDelEstablecimiento>Km.120 Bodega No. 2., Moratilla, C.P. 72110, Puebla, Puebla, México</DomicilioDelEstablecimiento>
+	</Extras>
+</ImpresionCFDI>

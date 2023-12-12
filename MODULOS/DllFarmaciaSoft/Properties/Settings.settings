@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DllFarmaciaSoft.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DllFarmaciaSoft_wsFarmacia_wsCnnCliente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:65000/wsFarmaciaScSoft/wsFarmacia.asmx</Value>
+    </Setting>
+    <Setting Name="DllFarmaciaSoft_wsFarmaciaSoftGn_wsConexion" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:65000/wsFarmaciaScSoft/wsFarmaciaSoftGn.asmx</Value>
+    </Setting>
+    <Setting Name="DllFarmaciaSoft_wsOficinaCentral_wsCnnOficinaCentral" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:65000/wsFarmaciaScSoft/wsOficinaCentral.asmx</Value>
+    </Setting>
+    <Setting Name="DllFarmaciaSoft_WsHuellas_wsHuellas" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/wsPersonalFirma/wsHuellas.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+						<SurteReceta>
+							<General>
+								<idPeticion>SR87</idPeticion>
+								<tipoPeticion>ACUSESURTERECETA</tipoPeticion>
+								<folioReceta>63800010116</folioReceta>
+								<fechaReceta>05/022016/09/08 12:18:46</fechaReceta>
+								<fechaSurtimiento>2016/09/08 12:30:46</fechaSurtimiento>
+								<expediente>210930001030</expediente>
+								<idPersonaSurte>15648</idPersonaSurte>
+								<nombrePersonaSurte>Lilia</nombrePersonaSurte>
+								<apPatPersonaSurte>Gómez</apPatPersonaSurte>
+								<apMatMedPersonaSurte>Solís</apMatMedPersonaSurte>
+								<observaciones>Se surte 1 caja con vale</observaciones>
+								<nombreRecibe>Silvia</nombreRecibe>
+								<apPatRecibe>López</apPatRecibe>
+								<apMatRecibe>Flores</apMatRecibe>
+							</General>
+							<Medicamentos>
+								<Medicamento>
+									<lote>4343</lote>
+									<caducidad>2016/09/08</caducidad>
+									<clave>010.000.5223.02</clave>
+									<cantidadRecetada>2</cantidadRecetada>
+									<cantidadSurtida>1</cantidadSurtida>
+									<vale>
+										<surteVale>SI</surteVale>
+										<codigoVale>1234</codigoVale>
+										<piezasVale>1</piezasVale>
+									</vale>
+									<otraUnidad>
+										<surteOtraUnidad>SI</surteOtraUnidad>
+										<codigoUnidad>222</codigoUnidad>
+										<mediamentosSurtiodos>
+											<claveMedicamento>010.000.5223.02</claveMedicamento>
+										</mediamentosSurtiodos>
+									</otraUnidad>
+								</Medicamento>
+							</Medicamentos>
+						</SurteReceta>

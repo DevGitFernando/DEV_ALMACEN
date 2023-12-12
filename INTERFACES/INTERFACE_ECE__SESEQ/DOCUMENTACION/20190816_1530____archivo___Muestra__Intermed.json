@@ -1,0 +1,52 @@
+{
+	"general":
+	{
+		"claveUnidadMedica":"QTSSA001740",
+		"NombreUnidadMedica":"HOSPITAL DE ESPECIALIDADES DEL NINO Y LA MUJER",
+		"FolioDeReceta":"HENM-0001\/2019",
+		"FechaDeReceta":"2019-08-16 09:07:26",
+		"Origen":"1",
+		"servicio":"CIRUG\u00cdA",
+		"cie10":"J301"
+	} 
+	,
+	
+	"datos_paciente":
+	{
+		"FolioDeReferencia":"Seguro_Popular",
+		"Vigencia":"2019-08-23",
+		"NombreDelBeneficiario":"JUAN CARLOS LOPEZ PEREZ",
+		"sexo":"Masculino",
+		"fechaDeNacimiento":"2000-01-01" 
+	},
+	
+	"datos_medico":
+	{
+		"NombreDeQuienPrescribe":"IVAN ALEJANDRO LEO UGALDE",
+		"CedulaDeQuienPrescribe":"10038175"
+	},
+	
+	"insumos":
+	[
+		{
+			"ClaveInsumo":"25331.010-000-0104-00",
+			"CantidadRequerida":"2"
+		},
+		{
+			"ClaveInsumo":"25331.010-000-4176-00",
+			"CantidadRequerida":"1"
+		},
+		{
+			"ClaveInsumo":"25331.010-000-0101-00",
+			"CantidadRequerida":"2"
+		},
+		{
+			"ClaveInsumo":"25331.010-000-1206-00",
+			"CantidadRequerida":"1"
+		},
+		{
+			"ClaveInsumo":"25331.010-000-0402-00",
+			"CantidadRequerida":"3"
+		}
+	]
+}

@@ -1,0 +1,80 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.leftside
+{
+    overflow: hidden;
+}
+
+#cookieCountdown
+{
+    max-width: 200px;
+    width: auto !important;
+    padding: 0px;
+    height: 50px;
+}
+
+#navPermisos
+{
+    overflow: auto;
+}
+
+#loader
+{
+    background-color: #00674e;
+}
+
+#loader .caja
+{
+    background:url(../../images/001/intermed.png) center 39.25px no-repeat #00674e;
+}
+
+#iContent
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-top: 50px;
+    background-image: url(../../images/001/ime_logo_horizontal.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    border-radius: 5px 0px 0px 0px;
+}
+
+#MaskPassword,
+#Config
+{
+    display: none;
+}
+
+#MaskPassword a
+{
+    color: #000;
+}   
+
+#Options
+{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 250px;
+    background-color:#fff;
+    height: 100%;
+    overflow: auto;
+    border-radius: 5px 0px 0px 0px;
+}
+
+#ContenedorOpciones {
+    position: relative;
+    background-image: none;
+    background-color: #e8e6fd;
+    display: inline-block;
+    float: right;
+    width: 700px;
+    height: 100%;
+}

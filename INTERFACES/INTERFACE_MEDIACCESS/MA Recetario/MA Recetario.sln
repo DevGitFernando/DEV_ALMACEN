@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Recetario_Web", "Recetario_Web", "{E2BF147E-D5CD-43D3-B0F7-1F56D2C3B616}"
+	ProjectSection(WebsiteProperties) = preProject
+SccProjectName = ""
+SccAuxPath = ""
+SccLocalPath = ""
+SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{40B92F0B-2019-43F6-990A-0EE18428C200}|DllMediaccess.GetInformacion.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Recetario_Web"
+		Debug.AspNetCompiler.PhysicalPath = "Recetario_Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Recetario_Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Recetario_Web"
+		Release.AspNetCompiler.PhysicalPath = "Recetario_Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Recetario_Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "29826"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllMediaccess.GetInformacion", "DllMediaccess.GetInformacion\DllMediaccess.GetInformacion.csproj", "{40B92F0B-2019-43F6-990A-0EE18428C200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2BF147E-D5CD-43D3-B0F7-1F56D2C3B616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BF147E-D5CD-43D3-B0F7-1F56D2C3B616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BF147E-D5CD-43D3-B0F7-1F56D2C3B616}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BF147E-D5CD-43D3-B0F7-1F56D2C3B616}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{40B92F0B-2019-43F6-990A-0EE18428C200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B92F0B-2019-43F6-990A-0EE18428C200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B92F0B-2019-43F6-990A-0EE18428C200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B92F0B-2019-43F6-990A-0EE18428C200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

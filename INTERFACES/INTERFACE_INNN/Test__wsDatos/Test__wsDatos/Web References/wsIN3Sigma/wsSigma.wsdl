@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/wsSigma.asmx" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost/wsSigma.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/wsSigma.asmx">
+      <s:element name="obtenerMedicamentos_porPaciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fInic" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fFin" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerMedicamentos_porPacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerMedicamentos_porPacienteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="obtenerMedicamentos_porPacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerMedicamentos_porPaciente" />
+  </wsdl:message>
+  <wsdl:message name="obtenerMedicamentos_porPacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerMedicamentos_porPacienteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsSigmaSoap">
+    <wsdl:operation name="obtenerMedicamentos_porPaciente">
+      <wsdl:input message="tns:obtenerMedicamentos_porPacienteSoapIn" />
+      <wsdl:output message="tns:obtenerMedicamentos_porPacienteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsSigmaSoap" type="tns:wsSigmaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="obtenerMedicamentos_porPaciente">
+      <soap:operation soapAction="http://localhost/wsSigma.asmx/obtenerMedicamentos_porPaciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsSigmaSoap12" type="tns:wsSigmaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="obtenerMedicamentos_porPaciente">
+      <soap12:operation soapAction="http://localhost/wsSigma.asmx/obtenerMedicamentos_porPaciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsSigma">
+    <wsdl:port name="wsSigmaSoap" binding="tns:wsSigmaSoap">
+      <soap:address location="http://169.152.1.15/wsSigma.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsSigmaSoap12" binding="tns:wsSigmaSoap12">
+      <soap12:address location="http://169.152.1.15/wsSigma.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

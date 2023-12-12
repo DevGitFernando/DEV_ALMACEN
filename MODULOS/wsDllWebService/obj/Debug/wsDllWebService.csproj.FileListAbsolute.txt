@@ -1,0 +1,12 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\wsDllWebService.dll
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\wsDllWebService.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.dll
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\wsDllWebService.dll
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\wsDllWebService.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.dll
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\wsDllWebService\obj\Debug\wsDllWebService.pdb

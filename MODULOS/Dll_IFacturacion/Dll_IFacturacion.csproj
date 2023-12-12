@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C9D314B-C420-4188-858D-A36540509722}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dll_IFacturacion</RootNamespace>
+    <AssemblyName>Dll_IFacturacion</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Snk\Dll_IFacturacion.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\Dll_IFacturacion.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.4.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SC_CompressLib, Version=4.0.4.0, Culture=neutral, PublicKeyToken=fac9ea0d48dbaeab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_ControlsCS, Version=4.0.1.0, Culture=neutral, PublicKeyToken=e7a523b603173679, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem, Version=4.0.5.0, Culture=neutral, PublicKeyToken=a50c66deebb893df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vintasoft.Barcode">
+      <HintPath>..\..\..\SC_Assemblies\Vintasoft.Barcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Compilacion.cs">
+      <Link>Properties\AssemblyInfo_Compilacion.cs</Link>
+    </Compile>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Version.cs">
+      <Link>Properties\AssemblyInfo_Version.cs</Link>
+    </Compile>
+    <Compile Include="CFDI\CFDFunctionsEx\clsArchivo.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsCFDI.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsComprobante.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsConceptos.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsCuentaPredial.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsDomicilio.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsEmisor.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsEnumeradores.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsInformacionAduanera.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsReceptor.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsRegimenFiscal.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsRetenciones.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsSelloDigital.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\clsTraslados.cs" />
+    <Compile Include="CFDI\CFDFunctionsEx\SC_DllImports.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsFieldValue.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsGenCFD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CFDI\CFDFunctions\clsGenCFDI_33_Pago.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsGenCFDI_Ex.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsInfoEmisor.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsInfoRegimenFiscal.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsInfoVenta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CFDI\CFDFunctions\clsOtrosImpuestosLocales.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsRetencionLocal.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsTrasladoLocal.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsVars.cs" />
+    <Compile Include="CFDI\CFDFunctions\cMain.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsGenCFDI_33_Factura.cs" />
+    <Compile Include="CFDI\CFDFunctions\clsGenCFDI_33_NotaDeCredito.cs" />
+    <Compile Include="CFDI\Configuracion\FrmEmisor_PAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFDI\Configuracion\FrmEmisor_PAC.Designer.cs">
+      <DependentUpon>FrmEmisor_PAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CFDI\EDAS\eField.cs" />
+    <Compile Include="CFDI\EDAS\eTable.cs" />
+    <Compile Include="CFDI\EDOInvoice\BlockDocumentos.cs" />
+    <Compile Include="CFDI\EDOInvoice\Ciudad.cs" />
+    <Compile Include="CFDI\EDOInvoice\Cliente.cs" />
+    <Compile Include="CFDI\EDOInvoice\Comprobante.cs" />
+    <Compile Include="CFDI\EDOInvoice\Configuration.cs" />
+    <Compile Include="CFDI\EDOInvoice\DComprobante.cs" />
+    <Compile Include="CFDI\EDOInvoice\Domicilio.cs" />
+    <Compile Include="CFDI\EDOInvoice\DPlantilla.cs" />
+    <Compile Include="CFDI\EDOInvoice\Emisor.cs" />
+    <Compile Include="CFDI\EDOInvoice\Estado.cs" />
+    <Compile Include="CFDI\EDOInvoice\Impuesto.cs" />
+    <Compile Include="CFDI\EDOInvoice\Pais.cs" />
+    <Compile Include="CFDI\EDOInvoice\Plantilla.cs" />
+    <Compile Include="CFDI\EDOInvoice\Producto.cs" />
+    <Compile Include="CFDI\EDOInvoice\Usuario.cs" />
+    <Compile Include="CFDI\EDOInvoice\ut_CFD.cs" />
+    <Compile Include="CFDI\EDOInvoice\ut_CFDBitacora.cs" />
+    <Compile Include="CFDI\EDOInvoice\ut_CFDFolio.cs" />
+    <Compile Include="CFDI\EDOInvoice\ut_CFDInfo.cs" />
+    <Compile Include="CFDI\EDOInvoice\ut_CFDInforme.cs" />
+    <Compile Include="CFDI\EDOInvoice\ut_FoliosCBB.cs" />
+    <Compile Include="CFDI\FrmVisorCFDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFDI\FrmVisorCFDI.Designer.cs">
+      <DependentUpon>FrmVisorCFDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CFDI\geCBB\clsCBB.cs" />
+    <Compile Include="CFDI\geCFD\clsCFD.cs" />
+    <Compile Include="CFDI\geCFD\clsCFDI.cs" />
+    <Compile Include="CFDI\geCFD\clsComplementoConcepto.cs" />
+    <Compile Include="CFDI\geCFD\clsConcepto.cs" />
+    <Compile Include="CFDI\geCFD\clsCuentaPredial.cs" />
+    <Compile Include="CFDI\geCFD\clsEmisor.cs" />
+    <Compile Include="CFDI\geCFD\clsFromXML.cs" />
+    <Compile Include="CFDI\geCFD\clsImpuestos.cs" />
+    <Compile Include="CFDI\geCFD\clsInformacionAduanera.cs" />
+    <Compile Include="CFDI\geCFD\clsMyAttribute.cs" />
+    <Compile Include="CFDI\geCFD\clsMyElement.cs" />
+    <Compile Include="CFDI\geCFD\clsParte.cs" />
+    <Compile Include="CFDI\geCFD\clsProccess.cs" />
+    <Compile Include="CFDI\geCFD\clsReceptor.cs" />
+    <Compile Include="CFDI\geCFD\clsRegimenFiscal.cs" />
+    <Compile Include="CFDI\geCFD\clsReport.cs" />
+    <Compile Include="CFDI\geCFD\clsRetencion.cs" />
+    <Compile Include="CFDI\geCFD\clsTimbreFDInfo.cs" />
+    <Compile Include="CFDI\geCFD\clsTraslado.cs" />
+    <Compile Include="CFDI\geCFD\clsUbicacion.cs" />
+    <Compile Include="CFDI\geCFD\clsUbicacionFiscal.cs" />
+    <Compile Include="CFDI\geCFD_33\clsCFDI_33.cs" />
+    <Compile Include="CFDI\geCFD_33\clsCFDI_33_Pagos.cs" />
+    <Compile Include="CFDI\geCFD_33\clsCFDI_33_NotasDeCredito.cs" />
+    <Compile Include="CFDI\Timbrar\clsTimbrar.cs" />
+    <Compile Include="CFDI_Tipos.cs" />
+    <Compile Include="Clases\Certificado_Key.cs" />
+    <Compile Include="Clases\LoadLibrary.cs" />
+    <Compile Include="Clases\SelloDigital.cs" />
+    <Compile Include="Configuracion\FrmFactEstablecimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmFactEstablecimientos.Designer.cs">
+      <DependentUpon>FrmFactEstablecimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmFactClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmFactClientes.Designer.cs">
+      <DependentUpon>FrmFactClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmFactSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmFactSucursales.Designer.cs">
+      <DependentUpon>FrmFactSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmCondicionesPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmCondicionesPagos.Designer.cs">
+      <DependentUpon>FrmCondicionesPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmFactEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmFactEmpresas.Designer.cs">
+      <DependentUpon>FrmFactEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmMetodosPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmMetodosPagos.Designer.cs">
+      <DependentUpon>FrmMetodosPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmPAC_CFD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmPAC_CFD.Designer.cs">
+      <DependentUpon>FrmPAC_CFD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\FrmSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmSeries.Designer.cs">
+      <DependentUpon>FrmSeries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryptoSysPKI\Cipher.cs" />
+    <Compile Include="CryptoSysPKI\CipherAlgorithm.cs" />
+    <Compile Include="CryptoSysPKI\Cms.cs" />
+    <Compile Include="CryptoSysPKI\Cnv.cs" />
+    <Compile Include="CryptoSysPKI\Direction.cs" />
+    <Compile Include="CryptoSysPKI\Emsig.cs" />
+    <Compile Include="CryptoSysPKI\EncodingBase.cs" />
+    <Compile Include="CryptoSysPKI\EnumsCryptoSysPKI.cs" />
+    <Compile Include="CryptoSysPKI\General.cs" />
+    <Compile Include="CryptoSysPKI\GeneralPKI.cs" />
+    <Compile Include="CryptoSysPKI\Global.cs" />
+    <Compile Include="CryptoSysPKI\Hash.cs" />
+    <Compile Include="CryptoSysPKI\HashAlgorithm.cs" />
+    <Compile Include="CryptoSysPKI\HashLen.cs" />
+    <Compile Include="CryptoSysPKI\Hmac.cs" />
+    <Compile Include="CryptoSysPKI\Mode.cs" />
+    <Compile Include="CryptoSysPKI\MyInternals.cs" />
+    <Compile Include="CryptoSysPKI\myQuery.cs" />
+    <Compile Include="CryptoSysPKI\Ocsp.cs" />
+    <Compile Include="CryptoSysPKI\Pem.cs" />
+    <Compile Include="CryptoSysPKI\Pfx.cs" />
+    <Compile Include="CryptoSysPKI\Pwd.cs" />
+    <Compile Include="CryptoSysPKI\Rng.cs" />
+    <Compile Include="CryptoSysPKI\Rsa.cs" />
+    <Compile Include="CryptoSysPKI\SignatureType.cs" />
+    <Compile Include="CryptoSysPKI\Tdea.cs" />
+    <Compile Include="CryptoSysPKI\Wipe.cs" />
+    <Compile Include="CryptoSysPKI\X509.cs" />
+    <Compile Include="DtIFacturacion.cs" />
+    <Compile Include="IntegracionBD\FrmIntegrarInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntegracionBD\FrmIntegrarInformacion.Designer.cs">
+      <DependentUpon>FrmIntegrarInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PACs\Developers\devGenerarDocumento.cs" />
+    <Compile Include="PACs\Developers\devWebServices.cs" />
+    <Compile Include="PACs\FD\fdGenerarDocumento.cs" />
+    <Compile Include="PACs\FD\fdWebServices.cs" />
+    <Compile Include="PACs\FD\FrmInterface_FD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PACs\FD\FrmInterface_FD.Designer.cs">
+      <DependentUpon>FrmInterface_FD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PACs\VirtualSoft\vsGenerarDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PACs\VirtualSoft\vsWebServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parametros\clsParametrosFacturacion.cs" />
+    <Compile Include="PACs\PAX\paxGenerarDocumento.cs" />
+    <Compile Include="PACs\PAX\paxWebServices.cs" />
+    <Compile Include="PDF\iTextSharpUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SAT\clsValidarCFDI.cs" />
+    <Compile Include="SAT\FrmValidarCFDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SAT\FrmValidarCFDI.Designer.cs">
+      <DependentUpon>FrmValidarCFDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\paxsvrCancelacionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\paxsvrRecepcionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\xsasvrCancelCFDService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\xsasvrCFDService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\xsasvrFileReceiverService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PAC_Dev33\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PAC_fd_svrTFD\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PAC_VirtualSoft\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\clsFormaMetodoPago.cs" />
+    <Compile Include="XSA\NotasDeCredito\FrmCFDI_NotaDeCredito_A_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\NotasDeCredito\FrmCFDI_NotaDeCredito_A_Detalle.Designer.cs">
+      <DependentUpon>FrmCFDI_NotaDeCredito_A_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\ObservacionesCancelacion\clsObservaciones.cs" />
+    <Compile Include="XSA\ObservacionesCancelacion\FrmObservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\ObservacionesCancelacion\FrmObservaciones.Designer.cs">
+      <DependentUpon>FrmObservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Pagos\FrmBancosCuentas_Receptor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Pagos\FrmBancosCuentas_Receptor.Designer.cs">
+      <DependentUpon>FrmBancosCuentas_Receptor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Facturas\FrmCFDI_Facturas_ImportarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Facturas\FrmCFDI_Facturas_ImportarDatos.Designer.cs">
+      <DependentUpon>FrmCFDI_Facturas_ImportarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Anticipos\FrmCFDI_Anticipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Anticipos\FrmCFDI_Anticipos.Designer.cs">
+      <DependentUpon>FrmCFDI_Anticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Pagos\FrmCFDI_ComplementoDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Pagos\FrmCFDI_ComplementoDePago.Designer.cs">
+      <DependentUpon>FrmCFDI_ComplementoDePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Facturas\FrmCFDI_Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Facturas\FrmCFDI_Facturas.Designer.cs">
+      <DependentUpon>FrmCFDI_Facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\NotasDeCredito\FrmCFDI_NotaDeCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\NotasDeCredito\FrmCFDI_NotaDeCredito.Designer.cs">
+      <DependentUpon>FrmCFDI_NotaDeCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Pagos\FrmBancosCuentas_Emisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Pagos\FrmBancosCuentas_Emisor.Designer.cs">
+      <DependentUpon>FrmBancosCuentas_Emisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Facturas\FrmGenerarCDFIs_Masivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Facturas\FrmGenerarCDFIs_Masivo.Designer.cs">
+      <DependentUpon>FrmGenerarCDFIs_Masivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmCancelarDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmCancelarDocumentos.Designer.cs">
+      <DependentUpon>FrmCancelarDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmGenerarCDFIs_ImportarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmGenerarCDFIs_ImportarDatos.Designer.cs">
+      <DependentUpon>FrmGenerarCDFIs_ImportarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmConceptos.Designer.cs">
+      <DependentUpon>FrmConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmDescripcion_FacturaConcentrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmDescripcion_FacturaConcentrada.Designer.cs">
+      <DependentUpon>FrmDescripcion_FacturaConcentrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmDocumentosGenerados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmDocumentosGenerados.Designer.cs">
+      <DependentUpon>FrmDocumentosGenerados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmGenerarCDFIs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmGenerarCDFIs.Designer.cs">
+      <DependentUpon>FrmGenerarCDFIs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmDescargarDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmDescargarDocumentos.Designer.cs">
+      <DependentUpon>FrmDescargarDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmFormaMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmFormaMetodoPago.Designer.cs">
+      <DependentUpon>FrmFormaMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmFacturarRemision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmFacturarRemision.Designer.cs">
+      <DependentUpon>FrmFacturarRemision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmDetallesDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmDetallesDocumentos.Designer.cs">
+      <DependentUpon>FrmDetallesDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmObservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmObservaciones.Designer.cs">
+      <DependentUpon>FrmObservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\FrmViewDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\FrmViewDocumento.Designer.cs">
+      <DependentUpon>FrmViewDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Traslados\FrmCFDI_CartaPorte__Transferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Traslados\FrmCFDI_CartaPorte__Transferencias.Designer.cs">
+      <DependentUpon>FrmCFDI_CartaPorte__Transferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\Traslados\FrmCFDI_CartaPorte__Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSA\Traslados\FrmCFDI_CartaPorte__Ventas.Designer.cs">
+      <DependentUpon>FrmCFDI_CartaPorte__Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSA\xsaCfdiEnvioDocumentos.cs" />
+    <Compile Include="XSA\xsaCfdiAduana.cs" />
+    <Compile Include="XSA\xsaCfdiImpuestosRetenidos.cs" />
+    <Compile Include="XSA\xsaCfdiImpuestosTrasladados.cs" />
+    <Compile Include="XSA\xsaCfdiConceptos.cs" />
+    <Compile Include="XSA\xsaCfdiEmbarque.cs" />
+    <Compile Include="XSA\xsaCfdiReceptor.cs" />
+    <Compile Include="XSA\xsaCfdiPago.cs" />
+    <Compile Include="XSA\xsaCfdiEncabezadoExt.cs" />
+    <Compile Include="XSA\xsaCFDI.cs" />
+    <Compile Include="XSA\xsaCfdiEncabezado.cs" />
+    <Compile Include="XSA\xsaImprimirDocumento.cs" />
+    <Compile Include="XSA\xsaWebServices.cs" />
+    <Compile Include="XSA\xsawsCancelarDocumento.cs" />
+    <Compile Include="XSA\xsawsDescargarDocumentos.cs" />
+    <Compile Include="XSA\xsawsGenerarDocumento.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DllFarmaciaSoft\DllFarmaciaSoft.csproj">
+      <Project>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</Project>
+      <Name>DllFarmaciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SC_SolutionsSystem.QRCode\QRCodeLib\SC_SolutionsSystem.QRCode.csproj">
+      <Project>{e98126b2-af17-4783-96b9-856d6744dca3}</Project>
+      <Name>SC_SolutionsSystem.QRCode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.config" />
+    <None Include="Librerias\ssleay32.dll" />
+    <None Include="Librerias\openssl.exe" />
+    <None Include="Librerias\libeay32.dll" />
+    <None Include="Web References\PAC_Dev33\acuseCFDI.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_Dev33\acuseRecepcionZip.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_Dev33\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PAC_Dev33\wsCancelacionResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_Dev33\WSTimbradoCFDIService.wsdl" />
+    <None Include="Web References\PAC_Dev33\WSTimbradoCFDIService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_Dev33\WSTimbradoCFDIService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_Dev33\WSTimbradoCFDIService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_Dev33\xmlmime.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaAceptacionRechazo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaCancelacion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaCancelacionAsincrona.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaCreditos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaEstatusCancelacionAsincrona.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaPeticionesPendientes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaRelacionados.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaReporte.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaTFD33.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\RespuestaValidacionRFC.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\WSCFDI33.wsdl" />
+    <None Include="Web References\PAC_fd_svrTFD\WSCFDI33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\WSCFDI330.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\WSCFDI331.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_fd_svrTFD\WSCFDI332.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PAC_VirtualSoft\IService.wsdl" />
+    <None Include="Web References\PAC_VirtualSoft\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Dll_IFacturacion.manifest" />
+    <None Include="Service References\paxsvrRecepcionService\wcfRecepcionASMX1.disco" />
+    <None Include="Service References\paxsvrCancelacionService\wcfCancelaasmx1.disco" />
+    <None Include="Service References\paxsvrCancelacionService\wcfCancelaasmx1.wsdl" />
+    <None Include="Service References\paxsvrCancelacionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\paxsvrCancelacionService\configuration.svcinfo" />
+    <None Include="Service References\paxsvrCancelacionService\configuration91.svcinfo" />
+    <None Include="Service References\paxsvrRecepcionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\paxsvrRecepcionService\configuration.svcinfo" />
+    <None Include="Service References\paxsvrRecepcionService\configuration91.svcinfo" />
+    <None Include="Claves\IME970211V92\00001000000102389694.cer" />
+    <None Include="Claves\IME970211V92\ime970211v92_1012141702s.key" />
+    <None Include="Claves\PFA070614ld5\00001000000102383721.cer" />
+    <None Include="Claves\PFA070614ld5\pfa070614ld5_1012141234s.key" />
+    <None Include="Claves\PFA070614ld5\pfa070614ld5_1012141234s.req" />
+    <None Include="Claves\PFA070614ld5\PFA070614LD5_1012141237.sdg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\paxsvrRecepcionService\wcfRecepcionASMX1.wsdl" />
+    <None Include="Service References\xsasvrCancelCFDService\CancelCFDService.wsdl" />
+    <None Include="Service References\xsasvrCFDService\CFDService.wsdl" />
+    <None Include="Service References\xsasvrCFDService\Dll_IFacturacion.xsasvrCFDService.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\xsasvrFileReceiverService\FileReceiverService.wsdl" />
+    <None Include="Snk\Dll_IFacturacion.snk" />
+    <None Include="Web References\PAC_fd_svrTFD\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CFDI\Configuracion\FrmEmisor_PAC.resx">
+      <DependentUpon>FrmEmisor_PAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFDI\FrmVisorCFDI.resx">
+      <DependentUpon>FrmVisorCFDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmFactEstablecimientos.resx">
+      <DependentUpon>FrmFactEstablecimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmFactClientes.resx">
+      <DependentUpon>FrmFactClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmFactSucursales.resx">
+      <DependentUpon>FrmFactSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmCondicionesPagos.resx">
+      <DependentUpon>FrmCondicionesPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmFactEmpresas.resx">
+      <DependentUpon>FrmFactEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmMetodosPagos.resx">
+      <DependentUpon>FrmMetodosPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmPAC_CFD.resx">
+      <DependentUpon>FrmPAC_CFD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmSeries.resx">
+      <DependentUpon>FrmSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntegracionBD\FrmIntegrarInformacion.resx">
+      <DependentUpon>FrmIntegrarInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PACs\FD\FrmInterface_FD.resx">
+      <DependentUpon>FrmInterface_FD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAT\FrmValidarCFDI.resx">
+      <DependentUpon>FrmValidarCFDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\NotasDeCredito\FrmCFDI_NotaDeCredito_A_Detalle.resx">
+      <DependentUpon>FrmCFDI_NotaDeCredito_A_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\ObservacionesCancelacion\FrmObservaciones.resx">
+      <DependentUpon>FrmObservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\Pagos\FrmBancosCuentas_Receptor.resx">
+      <DependentUpon>FrmBancosCuentas_Receptor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\Facturas\FrmCFDI_Facturas_ImportarDatos.resx">
+      <DependentUpon>FrmCFDI_Facturas_ImportarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\Anticipos\FrmCFDI_Anticipos.resx">
+      <DependentUpon>FrmCFDI_Anticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\Pagos\FrmCFDI_ComplementoDePago.resx">
+      <DependentUpon>FrmCFDI_ComplementoDePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\Facturas\FrmCFDI_Facturas.resx">
+      <DependentUpon>FrmCFDI_Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\NotasDeCredito\FrmCFDI_NotaDeCredito.resx">
+      <DependentUpon>FrmCFDI_NotaDeCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\Pagos\FrmBancosCuentas_Emisor.resx">
+      <DependentUpon>FrmBancosCuentas_Emisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\Facturas\FrmGenerarCDFIs_Masivo.resx">
+      <DependentUpon>FrmGenerarCDFIs_Masivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmCancelarDocumentos.resx">
+      <DependentUpon>FrmCancelarDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmGenerarCDFIs_ImportarDatos.resx">
+      <DependentUpon>FrmGenerarCDFIs_ImportarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmConceptos.resx">
+      <DependentUpon>FrmConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmDescripcion_FacturaConcentrada.resx">
+      <DependentUpon>FrmDescripcion_FacturaConcentrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmDocumentosGenerados.resx">
+      <DependentUpon>FrmDocumentosGenerados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmGenerarCDFIs.resx">
+      <DependentUpon>FrmGenerarCDFIs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmDescargarDocumentos.resx">
+      <DependentUpon>FrmDescargarDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmFormaMetodoPago.resx">
+      <DependentUpon>FrmFormaMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmFacturarRemision.resx">
+      <DependentUpon>FrmFacturarRemision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmDetallesDocumentos.resx">
+      <DependentUpon>FrmDetallesDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmObservaciones.resx">
+      <DependentUpon>FrmObservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSA\FrmViewDocumento.resx">
+      <DependentUpon>FrmViewDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Claves\IME970211V92\Clave.txt" />
+    <None Include="Librerias\cadenaoriginal_3_2.xslt" />
+    <None Include="Librerias\cadenaoriginal_TFD_1_0.xslt" />
+    <Content Include="Librerias\diCrPKI.dll" />
+    <None Include="Service References\xsasvrCancelCFDService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\xsasvrCancelCFDService\configuration.svcinfo" />
+    <None Include="Service References\xsasvrCancelCFDService\configuration91.svcinfo" />
+    <None Include="Service References\xsasvrCFDService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\xsasvrCFDService\configuration.svcinfo" />
+    <None Include="Service References\xsasvrCFDService\configuration91.svcinfo" />
+    <None Include="Service References\xsasvrFileReceiverService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\xsasvrFileReceiverService\configuration.svcinfo" />
+    <None Include="Service References\xsasvrFileReceiverService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CargaDeParametros\" />
+    <Folder Include="CFDI\CFDIPagos\" />
+    <Folder Include="Proteger\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\paxsvrCancelacionService\" />
+    <WCFMetadataStorage Include="Service References\paxsvrRecepcionService\" />
+    <WCFMetadataStorage Include="Service References\xsasvrCancelCFDService\" />
+    <WCFMetadataStorage Include="Service References\xsasvrCFDService\" />
+    <WCFMetadataStorage Include="Service References\xsasvrFileReceiverService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://facturacion.virtualsoft.com.mx:7512/timbradoXML/Service.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PAC_VirtualSoft\</RelPath>
+      <UpdateFromURL>http://facturacion.virtualsoft.com.mx:7512/timbradoXML/Service.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Dll_IFacturacion_PAC_VirtualSoft_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://dev33.facturacfdi.mx/WSTimbradoCFDIService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PAC_Dev33\</RelPath>
+      <UpdateFromURL>https://dev33.facturacfdi.mx/WSTimbradoCFDIService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Dll_IFacturacion_PAC_Dev33_WSTimbradoCFDIService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PAC_fd_svrTFD\</RelPath>
+      <UpdateFromURL>https://www.foliosdigitalespac.com/WSTimbrado33/WSCFDI33.svc%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Dll_IFacturacion_PAC_fd_svrTFD_WS_FD_TFD</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

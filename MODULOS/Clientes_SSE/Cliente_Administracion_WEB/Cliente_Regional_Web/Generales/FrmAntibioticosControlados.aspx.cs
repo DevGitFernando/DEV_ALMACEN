@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Generales_FrmAntibioticosControlados : BasePage
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            Combos.InnerHtml = "<label class=\"m-wrap\">" +
+                                    "<span class=\"add-on\">Tipo de unidad :</span>" +
+                                    "<select id=\"cboTipoUnidad\" class=\"m-wrap\">" +
+                                    "</select>" +
+                                "</label>" +
+                                "<label class=\"m-wrap\">" +
+                                    "<span class=\"add-on\">Jurisdicción :</span>" +
+                                    "<select id=\"cboJurisdiccion\" class=\"m-wrap\">" +
+                                    "</select>" +
+                                "</label>" +
+                                "<label class=\"m-wrap\">" +
+                                    "<span class=\"add-on\">Localidad :</span>" +
+                                    "<select id=\"cboLocalidad\" class=\"m-wrap\">" +
+                                    "</select>" +
+                                "</label>" +
+                                "<label class=\"m-wrap\">" +
+                                    "<span class=\"add-on\">Farmacia :</span>" +
+                                    "<select id=\"cboFarmacia\" class=\"m-wrap\">" +
+                                    "</select>" +
+                                "</label>" +
+                                "<div class=\"clear\"></div>";
+
+        }
+
+    }
+}

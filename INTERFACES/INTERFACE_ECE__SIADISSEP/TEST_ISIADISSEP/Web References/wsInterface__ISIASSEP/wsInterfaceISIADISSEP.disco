@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://intermed.homeip.net:8090/RecetaElectronicaPuebla/wsISIADISSEP_Test/wsInterfaceISIADISSEP.asmx?wsdl" docRef="http://intermed.homeip.net:8090/RecetaElectronicaPuebla/wsISIADISSEP_Test/wsInterfaceISIADISSEP.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://intermed.homeip.net:8090/RecetaElectronicaPuebla/wsISIADISSEP_Test/wsInterfaceISIADISSEP.asmx" xmlns:q1="http://SC-Solutions/ServiciosWeb/" binding="q1:ws_Cnn_ISIADISSEPSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://intermed.homeip.net:8090/RecetaElectronicaPuebla/wsISIADISSEP_Test/wsInterfaceISIADISSEP.asmx" xmlns:q2="http://SC-Solutions/ServiciosWeb/" binding="q2:ws_Cnn_ISIADISSEPSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

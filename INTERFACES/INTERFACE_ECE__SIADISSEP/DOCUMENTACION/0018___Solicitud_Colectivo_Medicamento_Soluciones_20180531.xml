@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedSol>
+	<Generales>
+		<idPeticion>CMS281</idPeticion>
+		<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+		<idColectivo>340</idColectivo>
+		<fechaHoraElaboracion>2018-05-31 11:38:40.82</fechaHoraElaboracion>
+		<idClues>PLSSA009394</idClues>
+		<idEpisodio>EMER</idEpisodio>
+		<idTipoServicio>EMER001</idTipoServicio>
+		<idServicio>EMER00101</idServicio>
+
+	</Generales>
+	<Detalles>  
+		<Pacientes>
+			<Paciente>
+				<Expediente>210930003425</Expediente>
+				<folioPaciente>1</folioPaciente>
+				<nombrePaciente>IRMA DOMITILA</nombrePaciente>
+				<apPaternoPaciente>ALVARADO</apPaternoPaciente>
+				<apMaternoPaciente>MENDEZ</apMaternoPaciente>
+				<camaPaciente>2</camaPaciente>
+				<fechaNacimientoPaciente>1953-05-12</fechaNacimientoPaciente>
+				<polizaPaciente>2110093171-01</polizaPaciente>
+				<vigenciaPolizaPaciente>2019-02-10</vigenciaPolizaPaciente>
+				<Medicamentos>
+					<Medicamento>
+						<claveMed>010.000.1903.00</claveMed>
+						<descripcionMed>Trimetoprima - sulfametoxazol</descripcionMed>
+						<dosisMed>2.00</dosisMed>
+						<frecuenciaMed>13</frecuenciaMed>
+						<cantidadSolicitadaMed>4</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+					<Medicamento>
+						<claveMed>010.000.5721.01</claveMed>
+						<descripcionMed>Paracetamol</descripcionMed>
+						<dosisMed>2.00</dosisMed>
+						<frecuenciaMed>13</frecuenciaMed>
+						<cantidadSolicitadaMed>3</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+				</Medicamentos>
+				<Soluciones>
+					<Solucion>
+						<claveSol>010.000.3610.00</claveSol>
+						<descripcionSol>sodio Cloruro de </descripcionSol>
+						<dosisSol>2.00</dosisSol>
+						<duracionSol>2</duracionSol>
+						<cantidadSolicitadaSol>4</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+					<Solucion>
+						<claveSol>010.000.3624.00</claveSol>
+						<descripcionSol>Glucosa anhidra</descripcionSol>
+						<dosisSol>2.00</dosisSol>
+						<duracionSol>2</duracionSol>
+						<cantidadSolicitadaSol>2</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+				</Soluciones>
+			</Paciente>
+			<Paciente>
+				<Expediente>210930006727</Expediente>
+				<folioPaciente>2</folioPaciente>
+				<nombrePaciente>NISSAN</nombrePaciente>
+				<apPaternoPaciente>ALTIMA </apPaternoPaciente>
+				<apMaternoPaciente>ALTIMA</apMaternoPaciente>
+				<camaPaciente>4</camaPaciente>
+				<fechaNacimientoPaciente>2018-04-08</fechaNacimientoPaciente>
+				<polizaPaciente>2157489632-01</polizaPaciente>
+				<vigenciaPolizaPaciente>2020-04-08</vigenciaPolizaPaciente>
+				<Medicamentos>
+					<Medicamento>
+						<claveMed>010.000.1903.00</claveMed>
+						<descripcionMed>Trimetoprima - sulfametoxazol</descripcionMed>
+						<dosisMed>2.00</dosisMed>
+						<frecuenciaMed>11</frecuenciaMed>
+						<cantidadSolicitadaMed>3</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+					<Medicamento>
+						<claveMed>010.000.0106.00</claveMed>
+						<descripcionMed>Paracetamol</descripcionMed>
+						<dosisMed>2.00</dosisMed>
+						<frecuenciaMed>12</frecuenciaMed>
+						<cantidadSolicitadaMed>3</cantidadSolicitadaMed>
+						<observacionesMed/>
+					</Medicamento>
+				</Medicamentos>
+			</Paciente>
+			<Paciente>
+				<Expediente>210930004023</Expediente>
+				<folioPaciente>3</folioPaciente>
+				<nombrePaciente>SOFIA</nombrePaciente>
+				<apPaternoPaciente>SANCHEZ</apPaternoPaciente>
+				<apMaternoPaciente>YAHUTENTZIN</apMaternoPaciente>
+				<camaPaciente>1</camaPaciente>
+				<fechaNacimientoPaciente>1961-09-09</fechaNacimientoPaciente>
+				<polizaPaciente>2157489632-01</polizaPaciente>
+				<vigenciaPolizaPaciente>2020-04-08</vigenciaPolizaPaciente>
+				<Soluciones>
+					<Solucion>
+						<claveSol>010.000.4551.00</claveSol>
+						<descripcionSol>Dextrán y Sodio Cloruro de</descripcionSol>
+						<dosisSol>3.00</dosisSol>
+						<duracionSol>3</duracionSol>
+						<cantidadSolicitadaSol>2</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+					<Solucion>
+						<claveSol>010.000.3616.00</claveSol>
+						<descripcionSol>solución Hartmann</descripcionSol>
+						<dosisSol>2.00</dosisSol>
+						<duracionSol>2</duracionSol>
+						<cantidadSolicitadaSol>2</cantidadSolicitadaSol>
+						<observacionesSol/>
+					</Solucion>
+				</Soluciones>
+			</Paciente>
+		</Pacientes>
+	</Detalles>
+</ColectivoMedSol>

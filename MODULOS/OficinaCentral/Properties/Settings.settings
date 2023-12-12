@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OficinaCentral.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OficinaCentral_wsCnnOficinaCentral_wsCnnOficinaCentral" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:31905/wsFarmaciaScSoft/wsOficinaCentral.asmx</Value>
+    </Setting>
+    <Setting Name="OficinaCentral_wsUpdater_wsUpdater" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

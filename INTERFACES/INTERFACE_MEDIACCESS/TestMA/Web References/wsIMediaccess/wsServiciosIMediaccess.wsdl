@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo Interface de Comunicación Mediaccess</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="BusquedaMedicamentosxID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Tipo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Plan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdFarmacia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BusquedaMedicamentosxIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BusquedaMedicamentosxIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublicacionReM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Folio" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdFarmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paciente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Medico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Especialidad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Copago" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Plan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fecha" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Eligibilidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ICD4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Datos_Receta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublicacionReMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PublicacionReMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BusquedaMedicamentosxIDSoapIn">
+    <wsdl:part name="parameters" element="tns:BusquedaMedicamentosxID" />
+  </wsdl:message>
+  <wsdl:message name="BusquedaMedicamentosxIDSoapOut">
+    <wsdl:part name="parameters" element="tns:BusquedaMedicamentosxIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublicacionReMSoapIn">
+    <wsdl:part name="parameters" element="tns:PublicacionReM" />
+  </wsdl:message>
+  <wsdl:message name="PublicacionReMSoapOut">
+    <wsdl:part name="parameters" element="tns:PublicacionReMResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsServiciosMediaccessSoap">
+    <wsdl:operation name="BusquedaMedicamentosxID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta de medicamentos en base al ID</wsdl:documentation>
+      <wsdl:input message="tns:BusquedaMedicamentosxIDSoapIn" />
+      <wsdl:output message="tns:BusquedaMedicamentosxIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PublicacionReM">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Información de receta electrónica generada</wsdl:documentation>
+      <wsdl:input message="tns:PublicacionReMSoapIn" />
+      <wsdl:output message="tns:PublicacionReMSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsServiciosMediaccessSoap" type="tns:wsServiciosMediaccessSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BusquedaMedicamentosxID">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/BusquedaMedicamentosxID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublicacionReM">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/PublicacionReM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsServiciosMediaccessSoap12" type="tns:wsServiciosMediaccessSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BusquedaMedicamentosxID">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/BusquedaMedicamentosxID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublicacionReM">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/PublicacionReM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsServiciosMediaccess">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo Interface de Comunicación Mediaccess</wsdl:documentation>
+    <wsdl:port name="wsServiciosMediaccessSoap" binding="tns:wsServiciosMediaccessSoap">
+      <soap:address location="http://localhost:10757/wsSII_INT_Mediaccess/wsServiciosIMediaccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsServiciosMediaccessSoap12" binding="tns:wsServiciosMediaccessSoap12">
+      <soap12:address location="http://localhost:10757/wsSII_INT_Mediaccess/wsServiciosIMediaccess.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

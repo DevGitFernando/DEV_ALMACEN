@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo conexión</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="ConexionEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivoIni" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConexionExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConexionExResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Solicitud" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sentencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteExtResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExecute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Solicitud" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExecuteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExecuteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reporte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionReporteWeb">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProbarConexion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivoIni" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProbarConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProbarConexionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EjecutarSentencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Farmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NombreRpt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TablaFarmacia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EjecutarSentenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EjecutarSentenciaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteExtendidoGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Farmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionReporteWeb">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteExtendidoGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteExtendidoGeneralResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteExtendido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Farmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionReporteWeb">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteExtendidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteExtendidoResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SentenciaClaves">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Farmacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TablaClaves" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtsTablas">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SentenciaClavesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SentenciaClavesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConexionExSoapIn">
+    <wsdl:part name="parameters" element="tns:ConexionEx" />
+  </wsdl:message>
+  <wsdl:message name="ConexionExSoapOut">
+    <wsdl:part name="parameters" element="tns:ConexionExResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteExtSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteExt" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteExtSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExecuteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExecute" />
+  </wsdl:message>
+  <wsdl:message name="GetExecuteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExecuteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteSoapIn">
+    <wsdl:part name="parameters" element="tns:Reporte" />
+  </wsdl:message>
+  <wsdl:message name="ReporteSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProbarConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:ProbarConexion" />
+  </wsdl:message>
+  <wsdl:message name="ProbarConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProbarConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="EjecutarSentenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:EjecutarSentencia" />
+  </wsdl:message>
+  <wsdl:message name="EjecutarSentenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:EjecutarSentenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteExtendidoGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:ReporteExtendidoGeneral" />
+  </wsdl:message>
+  <wsdl:message name="ReporteExtendidoGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteExtendidoGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteExtendidoSoapIn">
+    <wsdl:part name="parameters" element="tns:ReporteExtendido" />
+  </wsdl:message>
+  <wsdl:message name="ReporteExtendidoSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteExtendidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SentenciaClavesSoapIn">
+    <wsdl:part name="parameters" element="tns:SentenciaClaves" />
+  </wsdl:message>
+  <wsdl:message name="SentenciaClavesSoapOut">
+    <wsdl:part name="parameters" element="tns:SentenciaClavesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsCnnClientesAdminSoap">
+    <wsdl:operation name="ConexionEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información</wsdl:documentation>
+      <wsdl:input message="tns:ConexionExSoapIn" />
+      <wsdl:output message="tns:ConexionExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información del servidor.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteExtSoapIn" />
+      <wsdl:output message="tns:ExecuteExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExecute">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información del servidor.</wsdl:documentation>
+      <wsdl:input message="tns:GetExecuteSoapIn" />
+      <wsdl:output message="tns:GetExecuteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generar reporte.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteSoapIn" />
+      <wsdl:output message="tns:ReporteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Probar conexión.</wsdl:documentation>
+      <wsdl:input message="tns:ProbarConexionSoapIn" />
+      <wsdl:output message="tns:ProbarConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EjecutarSentencia">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Ejecutar Sentencia.</wsdl:documentation>
+      <wsdl:input message="tns:EjecutarSentenciaSoapIn" />
+      <wsdl:output message="tns:EjecutarSentenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExtendidoGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generar Reporte Cliente.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteExtendidoGeneralSoapIn" />
+      <wsdl:output message="tns:ReporteExtendidoGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExtendido">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generar Reporte Cliente.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteExtendidoSoapIn" />
+      <wsdl:output message="tns:ReporteExtendidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SentenciaClaves">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Ejecutar Sentencia Claves.</wsdl:documentation>
+      <wsdl:input message="tns:SentenciaClavesSoapIn" />
+      <wsdl:output message="tns:SentenciaClavesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsCnnClientesAdminSoap" type="tns:wsCnnClientesAdminSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConexionEx">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ConexionEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExt">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExecute">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/GetExecute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ProbarConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecutarSentencia">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/EjecutarSentencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExtendidoGeneral">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteExtendidoGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExtendido">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteExtendido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SentenciaClaves">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/SentenciaClaves" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsCnnClientesAdminSoap12" type="tns:wsCnnClientesAdminSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConexionEx">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ConexionEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExt">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExecute">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/GetExecute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Reporte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProbarConexion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ProbarConexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EjecutarSentencia">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/EjecutarSentencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExtendidoGeneral">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteExtendidoGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteExtendido">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ReporteExtendido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SentenciaClaves">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/SentenciaClaves" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsCnnClientesAdmin">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modulo conexión</wsdl:documentation>
+    <wsdl:port name="wsCnnClientesAdminSoap" binding="tns:wsCnnClientesAdminSoap">
+      <soap:address location="http://localhost:31905/wsFarmaciaScSoft/wsClienteRegional.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsCnnClientesAdminSoap12" binding="tns:wsCnnClientesAdminSoap12">
+      <soap12:address location="http://localhost:31905/wsFarmaciaScSoft/wsClienteRegional.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

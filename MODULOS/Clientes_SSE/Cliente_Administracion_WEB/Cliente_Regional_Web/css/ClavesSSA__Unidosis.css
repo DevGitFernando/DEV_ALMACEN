@@ -1,0 +1,14 @@
+﻿.Controls {
+    width: 894px;
+}
+.Results {
+    width: 780px;
+    height: 510px;
+    position: relative;
+    padding: 0px;
+}
+.container {
+    width: 783px;
+    height: 552px;
+    padding-bottom: 0px;
+}

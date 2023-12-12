@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo Interface de Comunicación Mediaccess</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="EnviarInformacionDeVale">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Solicitud" type="tns:ValesRecepcionRegistrarInformacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ValesRecepcionRegistrarInformacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IdSocioComercial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdSucursal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Folio_Vale" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaEmision_Vale" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdEmpresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdFarmacia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdPersonal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdTipoDeDispensacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumReceta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaReceta" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdBeneficio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdDiagnostico" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RefObservaciones" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beneficiario" type="tns:ItemBeneficiario" />
+          <s:element minOccurs="0" maxOccurs="1" name="Medico" type="tns:ItemMedico" />
+          <s:element minOccurs="0" maxOccurs="1" name="Insumos" type="tns:ArrayOfItemInsumo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemBeneficiario">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ItemPersona" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ItemPersona">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApPaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApMaterno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Referencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sexo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaNacimiento" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaFinVigencia" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemMedico">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ItemPersona" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfItemInsumo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ItemInsumo" nillable="true" type="tns:ItemInsumo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemInsumo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ClaveInsumo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Piezas" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnviarInformacionDeValeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnviarInformacionDeValeResult" type="tns:ResponseSolicitud" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseSolicitud">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Error" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Estatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EnviarInformacionDeValeSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviarInformacionDeVale" />
+  </wsdl:message>
+  <wsdl:message name="EnviarInformacionDeValeSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviarInformacionDeValeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsEPharma_RecepcionValesSoap">
+    <wsdl:operation name="EnviarInformacionDeVale">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recepción de atención de vales.</wsdl:documentation>
+      <wsdl:input message="tns:EnviarInformacionDeValeSoapIn" />
+      <wsdl:output message="tns:EnviarInformacionDeValeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsEPharma_RecepcionValesSoap" type="tns:wsEPharma_RecepcionValesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EnviarInformacionDeVale">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/EnviarInformacionDeVale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsEPharma_RecepcionValesSoap12" type="tns:wsEPharma_RecepcionValesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EnviarInformacionDeVale">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/EnviarInformacionDeVale" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsEPharma_RecepcionVales">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo Interface de Comunicación Mediaccess</wsdl:documentation>
+    <wsdl:port name="wsEPharma_RecepcionValesSoap" binding="tns:wsEPharma_RecepcionValesSoap">
+      <soap:address location="http://localhost:10757/wsSII_INT_Mediaccess/wsEPharmaVales.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsEPharma_RecepcionValesSoap12" binding="tns:wsEPharma_RecepcionValesSoap12">
+      <soap12:address location="http://localhost:10757/wsSII_INT_Mediaccess/wsEPharmaVales.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

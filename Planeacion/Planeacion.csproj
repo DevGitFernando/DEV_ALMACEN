@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B12F960C-4161-423A-9518-984E30B331CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Planeacion</RootNamespace>
+    <AssemblyName>Planeacion</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_Intermed.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\SC_Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.CalcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.PluginCalendar.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3505\Bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SC_ControlsCS">
+      <HintPath>..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_Controls_CSW">
+      <HintPath>..\..\SC_Assemblies\SC_Controls_CSW.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem">
+      <HintPath>..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObtenerInformacion\FrmDescargarInformacionOperativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObtenerInformacion\FrmDescargarInformacionOperativa.Designer.cs">
+      <DependentUpon>FrmDescargarInformacionOperativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planeacion\FrmGenerarPlaneacionAutomatica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planeacion\FrmGenerarPlaneacionAutomatica.Designer.cs">
+      <DependentUpon>FrmGenerarPlaneacionAutomatica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planeacion\FrmGenerarPlaneacionManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planeacion\FrmGenerarPlaneacionManual.Designer.cs">
+      <DependentUpon>FrmGenerarPlaneacionManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planeacion\FrmRegistroDePlaneacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planeacion\FrmRegistroDePlaneacion.Designer.cs">
+      <DependentUpon>FrmRegistroDePlaneacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObtenerInformacion\FrmDescargarInformacionOperativa.resx">
+      <DependentUpon>FrmDescargarInformacionOperativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planeacion\FrmGenerarPlaneacionAutomatica.resx">
+      <DependentUpon>FrmGenerarPlaneacionAutomatica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planeacion\FrmGenerarPlaneacionManual.resx">
+      <DependentUpon>FrmGenerarPlaneacionManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planeacion\FrmRegistroDePlaneacion.resx">
+      <DependentUpon>FrmRegistroDePlaneacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Snk\Compras.manifest" />
+    <None Include="Snk\Compras.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo_Intermed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MODULOS\Compras_General\DllCompras\DllCompras.csproj">
+      <Project>{831017a5-b62f-41d5-8bb3-f7f9635ac10a}</Project>
+      <Name>DllCompras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODULOS\DataTransfer\DllTransferenciaSoft\DllTransferenciaSoft.csproj">
+      <Project>{6c7d74cb-63a0-4ee2-a858-4cdbeab6c7ac}</Project>
+      <Name>DllTransferenciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODULOS\DllFarmaciaSoft\DllFarmaciaSoft.csproj">
+      <Project>{6197cf94-ef2d-42e9-a871-6ba7b1407714}</Project>
+      <Name>DllFarmaciaSoft</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

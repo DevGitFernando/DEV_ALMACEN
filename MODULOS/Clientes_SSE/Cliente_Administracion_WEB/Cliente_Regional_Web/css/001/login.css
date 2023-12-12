@@ -1,0 +1,9 @@
+﻿.logo
+{
+	background-image:url(../../images/001/logo_intermed.png);
+}
+
+#loader
+{
+    display: none;
+}

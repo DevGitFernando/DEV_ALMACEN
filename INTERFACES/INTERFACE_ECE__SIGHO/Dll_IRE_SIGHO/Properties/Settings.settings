@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dll_IRE_SIGHO.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dll_IRE_SIGHO_wsIRE_SIGHO_wsIRE_SIGHO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGHO.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_IRE_SIGHO_ws_IRE_SIGHO_wsIRE_SIGHO" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGhO.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

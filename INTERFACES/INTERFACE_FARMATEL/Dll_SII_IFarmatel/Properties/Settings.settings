@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dll_SII_IFarmatel.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dll_SII_IFarmatel_wsFarmatel_Caprepa_wsCapreta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://efarmacaprepa.cloudapp.net/wsCaprepa/wsCapreta.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_SII_IFarmatel_wsEPharma_Solicitudes_wsRecepcionDeSolicitudes" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://lapjesus/wsEPharma/ContacCenter/wsRecepcionDeSolicitudes.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

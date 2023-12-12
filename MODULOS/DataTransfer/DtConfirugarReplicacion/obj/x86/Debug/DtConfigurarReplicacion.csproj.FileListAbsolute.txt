@@ -1,0 +1,20 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración de replicación.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración de replicación.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración de replicación.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\Configuración de replicación.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\Configuración de replicación.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración de replicación.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración de replicación.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración de replicación.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\DtConfigurarReplicacion.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\Configuración de replicación.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfirugarReplicacion\obj\x86\Debug\Configuración de replicación.pdb

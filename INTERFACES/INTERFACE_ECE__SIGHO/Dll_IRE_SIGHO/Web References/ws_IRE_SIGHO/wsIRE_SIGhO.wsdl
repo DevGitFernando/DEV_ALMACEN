@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo Interface de Comunicación</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="GetRecetasElectronicas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CLUES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoDocumento" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecetasElectronicasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecetasElectronicasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecetaElectronica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CLUES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FolioDeReceta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecetaElectronicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecetaElectronicaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendAcuseRecetasElectronicas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CLUES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Informacion">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendAcuseRecetasElectronicasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendAcuseRecetasElectronicasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRecetasElectronicasSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecetasElectronicas" />
+  </wsdl:message>
+  <wsdl:message name="GetRecetasElectronicasSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecetasElectronicasResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecetaElectronicaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecetaElectronica" />
+  </wsdl:message>
+  <wsdl:message name="GetRecetaElectronicaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecetaElectronicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendAcuseRecetasElectronicasSoapIn">
+    <wsdl:part name="parameters" element="tns:SendAcuseRecetasElectronicas" />
+  </wsdl:message>
+  <wsdl:message name="SendAcuseRecetasElectronicasSoapOut">
+    <wsdl:part name="parameters" element="tns:SendAcuseRecetasElectronicasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsIRE_SIGHOSoap">
+    <wsdl:operation name="GetRecetasElectronicas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener recetas electrónicas</wsdl:documentation>
+      <wsdl:input message="tns:GetRecetasElectronicasSoapIn" />
+      <wsdl:output message="tns:GetRecetasElectronicasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecetaElectronica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información de receta electrónica </wsdl:documentation>
+      <wsdl:input message="tns:GetRecetaElectronicaSoapIn" />
+      <wsdl:output message="tns:GetRecetaElectronicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendAcuseRecetasElectronicas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recepción de acuse de atención de recetas electrónicas</wsdl:documentation>
+      <wsdl:input message="tns:SendAcuseRecetasElectronicasSoapIn" />
+      <wsdl:output message="tns:SendAcuseRecetasElectronicasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsIRE_SIGHOSoap" type="tns:wsIRE_SIGHOSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRecetasElectronicas">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/GetRecetasElectronicas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecetaElectronica">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/GetRecetaElectronica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAcuseRecetasElectronicas">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/SendAcuseRecetasElectronicas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsIRE_SIGHOSoap12" type="tns:wsIRE_SIGHOSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRecetasElectronicas">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/GetRecetasElectronicas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecetaElectronica">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/GetRecetaElectronica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAcuseRecetasElectronicas">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/SendAcuseRecetasElectronicas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsIRE_SIGHO">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo Interface de Comunicación</wsdl:documentation>
+    <wsdl:port name="wsIRE_SIGHOSoap" binding="tns:wsIRE_SIGHOSoap">
+      <soap:address location="http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGhO.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsIRE_SIGHOSoap12" binding="tns:wsIRE_SIGHOSoap12">
+      <soap12:address location="http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGhO.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Header*/
+html,
+body
+{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	position: absolute;
+	width: 100%;
+	min-width:50%;
+	height: 100%;
+	min-height:50%;
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+#wrapper
+{
+	position:absolute;
+	background-color:#029a93 !important;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	/*background-image:url(../images/bg_home.jpg);*/
+	background-size:cover;
+}
+
+header
+{
+	position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+	
+	height: 50px;
+	background-color: #0f15d1;/*
+	background-color: #193e9a;*/
+}
+
+
+.top-left-header
+{
+    width: 220px;
+    float: left;
+    background: rgba(0, 0, 0, 0.1);
+	
+    height: 50px;
+	transition: 0.5s ease-out;
+}
+
+
+
+/*Header rigth*/
+.top-right-header
+{
+	position:relative;
+    width: 200px;
+    float: right;
+    background: rgba(0, 0, 0, 0.1);
+	padding:5px 0;	
+    height: 40px;
+	transition: 0.5s ease-out;
+}
+
+/*Estilos Form*/
+.wrapForm
+{
+	width:350px;
+	height:307px;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	background-color:#FFF;
+	
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+}
+
+.logo
+{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:0px;
+	background-color: #f1f5ff;
+	
+    border-radius: 5px 5px 0px 0px;
+    
+    width: 100%;
+    /*min-height: 200px;*/
+    height:150px;
+    background-image: url(../images/Login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.logoimg
+{
+	width:301px;
+	height:190px;
+	background-image:url(../images/logo_intermed.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	margin: 0 auto;
+}
+
+
+
+h1, h2, h3, h4
+{
+	display: block;
+    font-weight:600;
+	text-align:center;
+    margin: 0;
+    padding: 10px;
+}
+
+h4
+{
+	font-size: 1.4em;
+    font-size: 1.4em;/*
+	background-color: #eaf9fd;*/
+    color: #0097e9;
+    border-bottom: 1px solid #e5f6fd;
+    /* border-bottom: 1px solid red; */
+}
+
+input
+{
+	display:block;
+	width:70%;
+	border:none;
+	color:#404862 !important;
+    line-height: 40px;
+	font-size:12px;
+    background-color: #e5f6fd;
+    text-transform: uppercase;
+}
+
+.footerUp
+{
+    position: relative;
+    margin-top: 10px;
+    background-color: #f1f5ff;
+    width: 100%;
+    height: 45px;
+    padding-top: 15px;
+}
+
+.controlInput
+{
+	width:85%;
+	height:30px;
+	margin:0 auto;
+	margin-top:10px;
+	padding: 1px 1px;
+	border: solid 2px #f1f5ff;
+	border-radius:5px;
+	color:#41407e;
+	font-size:12px;
+	text-align:center;
+}
+
+
+.icouser
+{
+	background-color: rgba(254, 254, 254, 0.8);
+	background: url(../images/user.png);
+	background-position:  right;
+    background-repeat: no-repeat;
+	padding:0px;
+}
+
+.icopassword
+{
+	background-color: rgba(254, 254, 254, 0.8);
+	background: url(../images/password.png);
+	background-position:  right;
+    background-repeat: no-repeat;
+	padding: 0px;
+}
+
+.btn-primary
+{
+    background-color: transparent;
+    color: #00aff0;
+    border-color: #00aff0;
+	
+	text-align:center;
+	margin:0 auto;
+	cursor:pointer;
+}
+
+.btn
+{
+	position:relative;
+	width:90px;
+    line-height: 22px;
+    background-color:#00ec7b;
+    color: #fff;
+	padding: 4px 12px;
+    border-radius: 25px;
+    border: 2px solid #00ec7b;
+    font-weight: 500;
+    box-shadow: inset 0 0 0 0 transparent;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+@media (max-width: 768px)
+{
+	.wrapForm
+	{
+	   
+		margin:0 auto;
+		height:307px;
+	    width: 90%;
+	}
+	
+	.logoimg
+	{
+	    background-size:80%;
+	    height: 150px;
+    }
+    
+    .logo
+    {
+        background-size:cover;
+    }
+}
+
+@media (max-height: 300px)
+{
+    .logo,
+    .logoimg
+	{
+	    height:150px !important;
+	    background-size:cover;
+    }
+    
+    .wrapForm
+    {
+        
+        height:307px;
+    }
+    
+    
+ }
+
+.btn-primary:hover
+{
+	
+    background: transparent;
+    color: #00ec7b;
+    border-color: #00ec7b;
+}
+
+/*Placeholder*/
+
+::-webkit-input-placeholder
+{
+	font-size:14px;
+	color:#414b6f;
+}
+:-moz-placeholder
+{ /* Firefox 18- */
+	font-size:14px;
+	color:#414b6f;
+}
+::-moz-placeholder
+{ /* Firefox 19+ */
+	color:#414b6f;
+	font-size:14px;
+}
+:-ms-input-placeholder
+{
+	color:#414b6f;
+	font-size:14px;
+}
+

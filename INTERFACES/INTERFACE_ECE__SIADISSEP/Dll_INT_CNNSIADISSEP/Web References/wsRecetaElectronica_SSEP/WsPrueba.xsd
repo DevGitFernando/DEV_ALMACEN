@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://pruebas.ws.itc.com/" targetNamespace="http://pruebas.ws.itc.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="reciberespuesta" type="tns:reciberespuesta" />
+  <xs:element name="reciberespuestaResponse" type="tns:reciberespuestaResponse" />
+  <xs:complexType name="reciberespuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reciberespuestaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

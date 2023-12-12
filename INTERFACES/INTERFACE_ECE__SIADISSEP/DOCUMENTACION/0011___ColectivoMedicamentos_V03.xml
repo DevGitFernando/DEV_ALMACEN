@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedicamentos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/ITC/Polux/plantillas/ColectivoMedicamentos.xsd">
+	<GeneralesColectivo>
+		<idPeticion>CMS1</idPeticion>
+		<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+		<fechaHoraElaboracion>2016/09/06 12:07:55</fechaHoraElaboracion>
+		<servicio>Hospitalización</servicio>
+	</GeneralesColectivo>
+	<Colectivos>
+		<Paciente expediente="210930001030">
+			<Generales>
+				<nombre>ZOYLA</nombre>
+				<apPaterno>ORTEGA</apPaterno>
+				<apMaterno>OCAÑA</apMaterno>
+				<cama>01</cama>
+				<fechaNacimiento>1985/09/06</fechaNacimiento>
+				<poliza>2110977061-01</poliza>
+				<vigenciaPoliza>2018/01/01</vigenciaPoliza>
+				<observaciones>Cantidad surtida correctamente</observaciones>
+			</Generales>
+			<DetalleMedicamentos>
+				<Medicamento>
+					<clave>010.000.5223.02</clave>
+					<descripcion>Peginterferón alfa-2 a</descripcion>
+					<dosis>1</dosis>
+					<frecuencia>DOSIS ÚNICA</frecuencia>
+					<duracion>HASTA TERMINAR</duracion>
+					<cantidadSolicitada>2</cantidadSolicitada>
+					<cantidadSurtida>2</cantidadSurtida>
+				</Medicamento>
+				<Medicamento>
+					<clave>010.000.5223.02</clave>
+					<descripcion>Peginterferón alfa-2 a</descripcion>
+					<dosis>1</dosis>
+					<frecuencia>DOSIS ÚNICA</frecuencia>
+					<duracion>HASTA TERMINAR</duracion>
+					<cantidadSolicitada>2</cantidadSolicitada>
+					<cantidadSurtida>2</cantidadSurtida>
+				</Medicamento>
+			</DetalleMedicamentos>
+		</Paciente>
+		
+		<Paciente expediente="210930001066">
+			<Generales>
+				<nombre>LUIS</nombre>
+				<apPaterno>FLORES</apPaterno>
+				<apMaterno>LÓPEZ</apMaterno>
+				<cama>01</cama>
+				<fechaNacimiento>1985/09/06</fechaNacimiento>
+				<poliza>2110977061-01</poliza>
+				<vigenciaPoliza>2018/01/01</vigenciaPoliza>
+				<observaciones>Cantidad surtida correctamente</observaciones>
+			</Generales>
+			<DetalleMedicamentos>
+				<Medicamento>
+					<clave>010.000.5223.02</clave>
+					<descripcion>Peginterferón alfa-2 a</descripcion>
+					<dosis>1</dosis>
+					<frecuencia>DOSIS ÚNICA</frecuencia>
+					<duracion>HASTA TERMINAR</duracion>
+					<cantidadSolicitada>2</cantidadSolicitada>
+					<cantidadSurtida>2</cantidadSurtida>
+				</Medicamento>
+			</DetalleMedicamentos>
+		</Paciente>
+	</Colectivos>
+</ColectivoMedicamentos>

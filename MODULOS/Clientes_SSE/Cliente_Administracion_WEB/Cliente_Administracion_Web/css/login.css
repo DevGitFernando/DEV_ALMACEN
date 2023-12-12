@@ -1,0 +1,12 @@
+﻿body 
+{
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+}
+
+#ajaxLoad {
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+}

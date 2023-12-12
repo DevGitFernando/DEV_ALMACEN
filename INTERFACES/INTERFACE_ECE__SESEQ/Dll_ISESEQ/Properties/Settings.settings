@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dll_ISESEQ.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dll_ISESEQ_wsAcuseProcesos_RE_ws_Cnn_ISESEQ" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1060/wsInterfaceISESEQ.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_ISESEQ_wsAcuseProcesos_cnnInterna_wsISESEQ" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:21734/wsSII_INT_ISESEQ/wsISESEQ.asmx</Value>
+    </Setting>
+    <Setting Name="Dll_ISESEQ_wsInformacionOperacion_SESEQ" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://apps.seseqro.gob.mx:8181/finanzas/webService/recepcionMovInv.php</Value>
+    </Setting>
+    <Setting Name="Dll_ISESEQ_wsInformacionOperativa_SESEQ__Web_Service_SESEQ" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://apps.seseqro.gob.mx:8181/finanzas/webService/recepcionMovInv.php</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

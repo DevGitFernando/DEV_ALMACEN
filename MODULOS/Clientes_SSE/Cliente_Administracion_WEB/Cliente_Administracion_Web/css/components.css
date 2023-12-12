@@ -1,0 +1,114 @@
+﻿.submenu
+{
+    position: absolute;
+    display: none;
+    z-index: 9999;
+    background-color: Red;
+    width: 238px;
+    height: 36px;
+    top: 0px;
+    left: 239px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #101010;
+    border-right: 1px solid #101010;
+    border-top: 1px solid #101010;
+    border-left: 1px solid #101010;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+
+
+.box
+{
+    width: 1000px;
+    height: 600px;
+    background-color: #eee;
+    border: none;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Config
+{
+    display: none;
+    z-index: 999999;
+}
+
+#Options
+{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+}
+
+#ContenedorOpciones
+{
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 700px;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#containerPerfiles li:nth-child(odd) {
+    color: #fff;
+    background-color: #488538;
+}
+
+#containerPerfiles li:nth-child(even) {
+    color: #205612;
+    background-color: #91C284;
+}
+
+#containerPerfiles li {
+    height: 25px;
+    padding: 3px 8px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.btn_del_relgpo {
+    float: right;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+#containerPerfiles .h
+{
+    border: 2px #99B7C9 solid !important;
+    z-index:1002;
+}
+
+#containerPerfiles .a
+{
+    background: #FFFBE8 !important;
+}
+
+#containerPerfiles li.ui-draggable.ui-draggable-dragging.ui-draggable-helper
+{
+    z-index: 1002 !important;
+    list-style: none;
+}
+
+#twOpciones .twOpciones_0
+{
+    color: #fff;
+}
+
+#twOpciones .twOpciones_0:hover
+{
+    color: #ccc;
+}

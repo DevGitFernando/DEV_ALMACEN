@@ -1,0 +1,63 @@
+<SurteColectivoMedSol>
+							<Generales>
+								<idPeticion>CMS100</idPeticion>
+								<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+								<idColectivo>115</idColectivo>
+								<fechaSurtido>2017-04-06 13:30:04</fechaSurtido>
+								<fechaRespuesta>2017-04-07 10:26:54</fechaRespuesta>
+							</Generales>
+							<Detalles>
+								<Medicamentos>
+									<Medicamento>
+										<claveMed>010.000.2302.00</claveMed>
+										<descripcionMed>Acetazolamida</descripcionMed>
+										<loteMed>61267</loteMed>
+										<caducidadMed>2019-11-01</caducidadMed>
+										<cantidadSolicitadaMed>932</cantidadSolicitadaMed>
+										<cantidadSurtidaMed>1</cantidadSurtidaMed>
+									</Medicamento>
+									<Medicamento>
+										<claveMed>010.000.2302.00</claveMed>
+										<descripcionMed>Acetazolamida</descripcionMed>
+										<loteMed>897678</loteMed>
+										<caducidadMed>2019-11-01</caducidadMed>
+										<cantidadSolicitadaMed>932</cantidadSolicitadaMed>
+										<cantidadSurtidaMed>1</cantidadSurtidaMed>
+									</Medicamento>
+									<Medicamento>
+										<claveMed>010.000.2302.00</claveMed>
+										<descripcionMed>Acetazolamida</descripcionMed>
+										<loteMed>11111</loteMed>
+										<caducidadMed>2020-11-01</caducidadMed>
+										<cantidadSolicitadaMed>932</cantidadSolicitadaMed>
+										<cantidadSurtidaMed>1</cantidadSurtidaMed>
+									</Medicamento>
+								</Medicamentos>
+								<Soluciones>
+									<Solucion>
+										<claveSol>010.000.0641.00</claveSol>
+										<descripcionSol>Dextrán y Glucosa</descripcionSol>
+										<loteSol>11111</loteSol>
+										<caducidadSol>2019-11-01</caducidadSol>
+										<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+										<cantidadSurtidaSol>1</cantidadSurtidaSol>
+									</Solucion>
+									<Solucion>
+										<claveSol>010.000.3608.00</claveSol>
+										<descripcionSol>Sodio Cloruro</descripcionSol>
+										<loteSol>22222</loteSol>
+										<caducidadSol>2019-11-01</caducidadSol>
+										<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+										<cantidadSurtidaSol>1</cantidadSurtidaSol>
+									</Solucion>
+									<Solucion>
+										<claveSol>010.000.3608.00</claveSol>
+										<descripcionSol>Sodio Cloruro</descripcionSol>
+										<loteSol>33333</loteSol>
+										<caducidadSol>2020-11-01</caducidadSol>
+										<cantidadSolicitadaSol>1</cantidadSolicitadaSol>
+										<cantidadSurtidaSol>1</cantidadSurtidaSol>
+									</Solucion>
+								</Soluciones>
+							</Detalles>
+						</SurteColectivoMedSol>

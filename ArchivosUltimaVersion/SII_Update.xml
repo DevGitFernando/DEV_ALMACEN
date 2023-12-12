@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<SC_Solutions>
+  <Configuracion>
+    <ConexionWeb>SI</ConexionWeb>
+    <Servidor>intermed.homeip.net</Servidor>
+    <WebService>wsVersiones</WebService>
+    <PaginaAsmx>wsUpdater</PaginaAsmx>
+  </Configuracion>
+</SC_Solutions>

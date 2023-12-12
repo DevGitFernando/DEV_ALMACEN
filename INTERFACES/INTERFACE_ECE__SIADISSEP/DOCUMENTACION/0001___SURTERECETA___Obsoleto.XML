@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SurteReceta>
+	<Encabezado>
+		<idPeticion>SR0000001</idPeticion>
+		<tipoPeticion>SURTERECETA</tipoPeticion>
+		<folioReceta>1000</folioReceta>
+		<fechaReceta>05/02/2016</fechaReceta>
+		<fechaEnvio>06/02/2016</fechaEnvio>
+		<unidadMedica>123</unidadMedica>
+		<expediente>21000100001</expediente>
+		<nombre>Luis</nombre>
+		<apPaterno>López</apPaterno> 
+		<apMaterno>Pérez</apMaterno>
+		<idMedico>151456</idMedico>
+		<nombreMedico>Juan</nombreMedico>
+		<apPatMed>Flores</apPatMed>
+		<apMatMed>Aguirre</apMatMed>
+	</Encabezado>
+	<Medicamentos>
+		<Medicamento>
+			<claveMedicamento>010.000.0104.00</claveMedicamento>
+			<descMedicamento>Paracetamol</descMedicamento>
+			<concentracion>500 mg</concentracion>
+			<formaFarmaceutica>Envase con 10 tabletas.</formaFarmaceutica>
+			<noPiezasRecetadas>2</noPiezasRecetadas>
+		</Medicamento>
+	</Medicamentos>
+</SurteReceta>
+

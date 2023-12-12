@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://www.mediaccess.com.mx/wsoperaciones/VerificaElegibilidadConCopago.asmx?wsdl" docRef="http://www.mediaccess.com.mx/wsoperaciones/VerificaElegibilidadConCopago.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://www.mediaccess.com.mx/wsoperaciones/VerificaElegibilidadConCopago.asmx" xmlns:q1="http://tempuri.org/VerficarElegibilidadConCopago" binding="q1:VerificaElegibilidadConCopagoSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://www.mediaccess.com.mx/wsoperaciones/VerificaElegibilidadConCopago.asmx" xmlns:q2="http://tempuri.org/VerficarElegibilidadConCopago" binding="q2:VerificaElegibilidadConCopagoSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

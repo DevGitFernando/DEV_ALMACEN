@@ -1,0 +1,20 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Regional.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Regional.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\Administracion Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\Administracion Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Regional.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Administracion Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\AdminRegional.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\Administracion Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Clientes_SSE\AdminRegional\obj\Debug\Administracion Regional.pdb

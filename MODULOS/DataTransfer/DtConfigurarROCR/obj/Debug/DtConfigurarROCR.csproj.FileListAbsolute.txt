@@ -1,0 +1,20 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Oficina Central Regional.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Oficina Central Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Oficina Central Regional.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\Configuración Servicio Oficina Central Regional.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\Configuración Servicio Oficina Central Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Oficina Central Regional.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Oficina Central Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Configuración Servicio Oficina Central Regional.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\DtConfigurarROCR.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\Configuración Servicio Oficina Central Regional.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\DataTransfer\DtConfigurarROCR\obj\Debug\Configuración Servicio Oficina Central Regional.pdb

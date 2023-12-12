@@ -1,0 +1,163 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zDlls", "zDlls", "{2DBF22AF-118F-4F75-AFF5-761CFEAD684F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Cliente_Administracion_Web", "Cliente_Administracion_Web", "{066ACE84-FB3D-4E62-BB9F-49E5C5C3E962}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Cliente_Administracion_Web"
+		Debug.AspNetCompiler.PhysicalPath = "Cliente_Administracion_Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Cliente_Administracion_Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Cliente_Administracion_Web"
+		Release.AspNetCompiler.PhysicalPath = "Cliente_Administracion_Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Cliente_Administracion_Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "47404"
+		SlnRelativePath = "Cliente_Administracion_Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Cliente_Regional_Web", "Cliente_Regional_Web", "{619DB99E-4B60-4D6A-A0EE-DC3AF91452EE}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Cliente_Regional_Web"
+		Debug.AspNetCompiler.PhysicalPath = "Cliente_Regional_Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Cliente_Regional_Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Cliente_Regional_Web"
+		Release.AspNetCompiler.PhysicalPath = "Cliente_Regional_Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Cliente_Regional_Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "19918"
+		SlnRelativePath = "Cliente_Regional_Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Cliente_Regional_Web_Responsive", "Cliente_Regional_Web_Responsive", "{E46746C3-7A6E-4F09-B9E6-A78478C6394D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Cliente_Regional_Web_Responsive"
+		Debug.AspNetCompiler.PhysicalPath = "Cliente_Regional_Web_Responsive\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Cliente_Regional_Web_Responsive\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Cliente_Regional_Web_Responsive"
+		Release.AspNetCompiler.PhysicalPath = "Cliente_Regional_Web_Responsive\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Cliente_Regional_Web_Responsive\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64340"
+		SlnRelativePath = "Cliente_Regional_Web_Responsive\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Cliente Regional", "Cliente Regional", "{81A3A597-3918-45D5-9A05-F86BA3CCAAAD}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55668"
+		Debug.AspNetCompiler.PhysicalPath = "Cliente Regional\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55668\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55668"
+		Release.AspNetCompiler.PhysicalPath = "Cliente Regional\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55668\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55668"
+		SlnRelativePath = "Cliente Regional\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{066ACE84-FB3D-4E62-BB9F-49E5C5C3E962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066ACE84-FB3D-4E62-BB9F-49E5C5C3E962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066ACE84-FB3D-4E62-BB9F-49E5C5C3E962}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{066ACE84-FB3D-4E62-BB9F-49E5C5C3E962}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{619DB99E-4B60-4D6A-A0EE-DC3AF91452EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619DB99E-4B60-4D6A-A0EE-DC3AF91452EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619DB99E-4B60-4D6A-A0EE-DC3AF91452EE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46746C3-7A6E-4F09-B9E6-A78478C6394D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46746C3-7A6E-4F09-B9E6-A78478C6394D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46746C3-7A6E-4F09-B9E6-A78478C6394D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A3A597-3918-45D5-9A05-F86BA3CCAAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A3A597-3918-45D5-9A05-F86BA3CCAAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A3A597-3918-45D5-9A05-F86BA3CCAAAD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFD2CF82-8410-4116-9B1D-7CB85F28DC27}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://intermed.homeip.net:30000/tfs/sii
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = Cliente_Administracion_Web
+		SccProjectName1 = Cliente_Administracion_Web
+		SccLocalPath1 = Cliente_Administracion_Web
+		SccProjectEnlistmentChoice1 = 2
+		SccWebProject2 = true
+		SccProjectUniqueName2 = Cliente_Regional_Web
+		SccProjectName2 = Cliente_Regional_Web
+		SccLocalPath2 = Cliente_Regional_Web
+		SccProjectEnlistmentChoice2 = 2
+		SccWebProject3 = true
+		SccProjectUniqueName3 = Cliente_Regional_Web_Responsive
+		SccProjectName3 = Cliente_Regional_Web_Responsive
+		SccLocalPath3 = Cliente_Regional_Web_Responsive
+		SccProjectEnlistmentChoice3 = 2
+		SccWebProject4 = true
+		SccProjectUniqueName4 = Cliente\u0020Regional
+		SccProjectName4 = Cliente\u0020Regional
+		SccLocalPath4 = Cliente\u0020Regional
+		SccProjectEnlistmentChoice4 = 2
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:tns="http://ws.cfds.action.manager.xsa.tralix.com" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://ws.cfds.action.manager.xsa.tralix.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.cfds.action.manager.xsa.tralix.com">
+      <xsd:element name="mensaje">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="mensajeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cfdTotalRows">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cfdTotalRowsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cfdsByFilter">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in7" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfArrayOfString">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfString">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="cfdsByFilterResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="tns:ArrayOfArrayOfString" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="mensajeRequest">
+    <wsdl:part name="parameters" element="tns:mensaje" />
+  </wsdl:message>
+  <wsdl:message name="mensajeResponse">
+    <wsdl:part name="parameters" element="tns:mensajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfdTotalRowsResponse">
+    <wsdl:part name="parameters" element="tns:cfdTotalRowsResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfdsByFilterResponse">
+    <wsdl:part name="parameters" element="tns:cfdsByFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="cfdsByFilterRequest">
+    <wsdl:part name="parameters" element="tns:cfdsByFilter" />
+  </wsdl:message>
+  <wsdl:message name="cfdTotalRowsRequest">
+    <wsdl:part name="parameters" element="tns:cfdTotalRows" />
+  </wsdl:message>
+  <wsdl:portType name="CFDServicePortType">
+    <wsdl:operation name="mensaje">
+      <wsdl:input name="mensajeRequest" message="tns:mensajeRequest" />
+      <wsdl:output name="mensajeResponse" message="tns:mensajeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cfdTotalRows">
+      <wsdl:input name="cfdTotalRowsRequest" message="tns:cfdTotalRowsRequest" />
+      <wsdl:output name="cfdTotalRowsResponse" message="tns:cfdTotalRowsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cfdsByFilter">
+      <wsdl:input name="cfdsByFilterRequest" message="tns:cfdsByFilterRequest" />
+      <wsdl:output name="cfdsByFilterResponse" message="tns:cfdsByFilterResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CFDServiceHttpBinding" type="tns:CFDServicePortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="mensaje">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="mensajeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mensajeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfdTotalRows">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cfdTotalRowsRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cfdTotalRowsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cfdsByFilter">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cfdsByFilterRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cfdsByFilterResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CFDService">
+    <wsdl:port name="CFDServiceHttpPort" binding="tns:CFDServiceHttpBinding">
+      <wsdlsoap:address location="http://xsa5.factura-e.biz/xsamanager/services/CFDService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

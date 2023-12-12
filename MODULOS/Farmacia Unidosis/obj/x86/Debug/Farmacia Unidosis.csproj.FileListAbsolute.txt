@@ -1,0 +1,20 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Farmacia Unidosis.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Farmacia Unidosis.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Farmacia Unidosis.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia_Unidosis.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia_Unidosis.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Farmacia Unidosis.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Farmacia Unidosis.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Farmacia Unidosis.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia_Unidosis.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia_Unidosis.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia Unidosis\obj\x86\Debug\Farmacia Unidosis.pdb

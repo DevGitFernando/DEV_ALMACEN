@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SurteReceta>
+	<General>
+		<idPeticion>SR0000011</idPeticion>
+		<tipoPeticion>SURTERECETA</tipoPeticion>
+		<folioReceta>1000</folioReceta>
+		<folioAfiliacionSPSS>7987</folioAfiliacionSPSS>
+		<fechaReceta>05/02/2016</fechaReceta>
+		<fechaEnvio>06/02/2016</fechaEnvio>
+		<unidadMedica>1001</unidadMedica>
+		<idMunicipio>187</idMunicipio>
+		<nombreMunicipio>TLAXCO</nombreMunicipio>
+		<jurisdiccion>001</jurisdiccion>
+		<vigenciaDerechos>06/02/2016-06/02/2018</vigenciaDerechos>
+		<expediente>21000100001</expediente>
+		<nombre>Luis</nombre>
+		<apPaterno>López</apPaterno>
+		<apMaterno>Pérez</apMaterno>
+		<edad>27</edad>
+		<sexo>M</sexo>
+		<oportunidades>2656568</oportunidades>
+		<poblacionAbierta>SI</poblacionAbierta>
+		<indicacionesMedicas>Texto Libre</indicacionesMedicas>
+		<idMedico>151456</idMedico>
+		<nombreMedico>Juan</nombreMedico>
+		<apPatMed>Flores</apPatMed>
+		<apMatMed>Aguirre</apMatMed>
+		<cedulaProfesional>6646912</cedulaProfesional>
+	</General>
+	<Causes>
+		<noIntervCause>123</noIntervCause>
+	</Causes>
+	<Diagnosticos>
+		<diagnostico>
+			<idDiagnostico>1</idDiagnostico>
+			<descDiagnostico>Sobre peso</descDiagnostico>
+		</diagnostico>
+	</Diagnosticos>
+	<Medicamentos>
+		<Medicamento>
+			<clave>010.000.0104.00</clave>
+			<nombreGenerico>Paracetamol</nombreGenerico>
+			<formaFarmaceutica>Envase con 10 tabletas.</formaFarmaceutica>
+			<concentracion>500 mg</concentracion>
+			<presentacion>10 tabletas</presentacion>
+			<viaAdministracion>Oral</viaAdministracion>
+			<dosis>1</dosis>
+			<frecuencia>cada 8 horas</frecuencia>
+			<duracion>3 dias</duracion>
+			<cantidadRecetada>1</cantidadRecetada>
+		</Medicamento>
+	</Medicamentos>
+</SurteReceta>

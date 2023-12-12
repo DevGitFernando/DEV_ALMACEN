@@ -1,0 +1,526 @@
+﻿body
+{
+   font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif !important;
+}
+
+#cookieCountdown
+{
+    max-width: 200px;
+    width: auto !important;
+    padding: 0px;
+    height: 47px;
+    float: left;
+    margin-left: 36px;
+}
+
+#btnCookieExpired
+{
+    color: #fff;
+}
+
+.time_circles > div > span
+{
+    background-color: transparent;
+}
+
+.time_circles > div > h4
+{
+    color: #fff;
+}
+
+.help
+{
+    background-color: rgba(3, 136, 130, 0.84) !important;
+}
+
+#btnAddClave,
+#btnAddCIE,
+#btnAddBeneficios,
+#btnAddPersonal,
+.btnHelp, 
+.btnAdd
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    
+}
+
+#MaskM
+{
+    z-index: 1002;
+}
+
+#MaskClaves,
+.maskHelps
+{
+    z-index: 1001;
+    text-align: left;
+}
+
+#MaskDiagnosticos
+{
+    z-index: 1001;
+    text-align: left;
+}
+
+#MaskBeneficios
+{
+    z-index: 1001;
+    text-align: left;
+}
+
+#MaskPersonal
+{
+    z-index: 1001;
+    text-align: left;
+}
+
+#MaskBeneficiario
+{
+    z-index: 1001;
+    text-align: left;
+}
+
+#MaskPassword
+{
+    z-index: 1001;
+    text-align: left;
+}
+
+#MaskPassword .CajaHelp
+{
+     width:455px;
+    height: 200px;
+    padding:0;
+}
+
+
+#MaskPassword .Help
+{
+    width: 445px;
+    height: 160px;
+    margin: 0 auto;
+    background-color: #f7f8fb;
+    margin-left:5px;
+    margin-top: 5px;
+    overflow:hidden;
+}
+
+#MaskPassword input 
+{
+    height: 32px;
+}
+
+#MaskDiagnosticos_info,
+#MaskBeneficios_info,
+#MaskPersonal_info
+{
+    width: 100%;
+}
+
+#MaskDiagnosticos_filter,
+#MaskBeneficios_filter,
+#MaskPersonal_filter
+{
+    width: 346px;
+}
+
+.dataTables_info 
+{
+    width: 100%;
+}
+
+#MaskBeneficiario .CajaHelp,
+#MaskDiagnosticos .CajaHelp,
+#MaskBeneficios .CajaHelp,
+.MaskM .CajaHelp
+{
+    padding: 8px;
+}
+
+#MaskBeneficiario .Help,
+#MaskDiagnosticos .Help,
+#MaskBeneficios .Help,
+.MaskM .Help
+{    
+    position: relative;
+    height: 379px;
+}
+
+#SearchCont,
+#SearchContCIE,
+#SearchContBeneficio,
+.SearchContHelp
+{
+    position: relative;
+    /*width: 676px;*/
+    width: 100%;
+    height: 63px;
+}
+
+#SearchCont:after,
+#SearchContCIE:after,
+#SearchContBeneficio:after,
+.SearchContHelp:after,
+#SearchContClave:after
+{
+    content: "Datos Beneficiario";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    font-size: 20px;
+    border: none;
+    color: #00704A;
+    font-weight: normal;
+    background-color: transparent;
+    padding: 0px;
+}
+
+#SearchContClave:after
+{
+    content: "Nombre de la Unidad";
+}
+
+#SearchContCIE:after
+{
+    content: "CIE 10";
+}
+
+#SearchContBeneficio:after
+{
+    content: "Beneficios";
+}
+
+#SearchContClave:after
+{
+    content: "Claves";
+}
+
+#SearchContUnidad:after
+{
+    content: "Unidades Médicas";
+}
+
+#SearchElemets,
+#SearchElemetsCIE,
+#SearchElemetsBeneficio,
+.SearchElemets
+{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding-top: 4px;
+}
+
+#SearchElemets label.m-wrap,
+#SearchElemetsCIE label.m-wrap,
+#SearchElemetsBeneficio label.m-wrap,
+.SearchElemets label.m-wrap
+{
+    position: relative;
+    width: 100%;
+}
+
+.add-on
+{
+    
+    /*background-color: #52B796;*/
+    background-color: #029a93;
+    color: #fff;
+    padding: 0px 4px;
+    width: 80px;
+    border: none;
+    margin-bottom: 0px !important;
+    display: inline-block;
+    height: 24px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    /*text-shadow: 0 1px 0 #fff;*/
+}
+
+.bordertop {
+    border: none;
+    border-radius: 0px;
+    /*border-top: 4px solid #2EB78A;*/
+    
+    border-top: 4px solid #dcdcdc;
+}
+
+.HaveLegend {
+    margin-top: 24px;
+}
+
+#txtSearchPoliza,
+#txtSearchDiagnostico,
+#txtSearchBeneficio,
+#txtSearchClave,
+#txtSearchPersonal,
+.txtSearch
+{
+    width: 515px !important;
+    height: 24px !important;
+    border: none !important;
+    border-bottom: 1px solid #2EB78A !important;
+    margin-bottom: 1px !important;
+    margin-left: -2px !important;
+    padding: 0px 0px 3px 0px !important;
+    display: inline-block !important;
+}
+
+#btnSearch,
+#btnSearchCIE,
+#btnSearchBeneficio,
+.btnSearch
+{
+    position: relative;
+    float: right;
+    width: 80px;
+    height: 24px;
+    line-height: 14px;
+    background-color: red;
+    border-radius: 0;
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0px;
+}
+
+#btnSearch i,
+.btnSearch i
+{
+    padding: 8px;
+}
+
+#Beneficiario table.display thead th
+{
+    text-align: center;
+}
+
+#btnAddBeneficiario
+{
+    display: none;
+}
+
+.elementCenter
+{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: block;
+}
+
+/*Titulos secciones*/
+.title
+{
+	position:relative;
+	width:100%;
+	height:auto;
+	font-size:16px;
+	text-align:center;
+	color: #8c8f9d;
+	font-weight:500;
+    padding: 5px 0px 5px 0px !important;
+	border-bottom:1px solid #c0eafc;
+	background-color:#FFF;
+	display:block;
+	margin: 0 auto;
+	border-radius: 5px 5px 0px 0px;
+	
+}
+
+.icoClose
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image:url(../images/closeW.png);
+	background-position:center;
+	background-repeat: no-repeat;
+	
+}
+
+
+.StatusAdd
+{
+    display:none;
+    
+    height: 24px;
+    padding: 0px 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    width: 80px;
+    border-radius: 25px;
+    border: none;
+    text-align:center;
+    background-color: #ebeef0;
+    color:#8c9faa;
+}
+
+.AddActivo
+{
+    
+    background-color: #00adef;
+    color:#fff;
+}
+
+.AddCancel
+{
+    background-color: #f84e52;
+    color:#fff;
+}
+
+.AddPorvalidar
+{
+    background-color: #feae00;
+    color:#fff;
+}
+
+.AddSurtida
+{
+    background-color: #00ec7b;
+    color:#fff;
+}
+
+.labelPass
+{
+    
+    width: 115px;
+    height: 32px;
+    line-height: 25px;
+    color: #7d8191;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 5px;
+    float: left;
+}
+
+.inputPass
+{
+    border: none;
+    height: 25px;
+    font-size: 12px;
+    width: 100px;
+    color: #7d8191;
+    padding-left: 10px;
+    background-color:#fff;
+    float: left;
+    width: 315px;
+    text-align:center;
+    margin-top:5px;
+}
+
+/*Gaps*/
+.mTop
+{
+    margin-top:5px;
+}
+
+.mLeft
+{
+    margin-left:5px;
+}
+
+
+/*Btn*/
+.btnPass
+{
+    background-color: #00ec7b;
+    position: absolute;
+    width: 90px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 500;
+    bottom: 10px;
+    left: 182.5px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 25px;
+    border: 2px solid #00ec7b;
+    box-shadow: inset 0 0 0 0 transparent;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.09);
+}
+
+.btnPass:hover
+{
+    background: transparent;
+    color: #00ec7b;
+    border-color: #00ec7b;
+    font-weight: 700;
+}
+
+
+.icoMenu
+{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    background-image:url(../images/ico_menu.png);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.close 
+{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    line-height: 32px;
+    background-color: gainsboro;
+    width: 37px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1103;
+    
+    
+    
+    background-image:url(../images/closeW.png);
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+
+
+/*Scrollbar estilos*/
+
+::-webkit-scrollbar{
+  width: 7px;
+  height:7px;
+ /*background: #cccccc;*/ /*fondo scroll*/
+}
+
+::-webkit-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+
+/*Fondo scroll*/
+::-webkit-scrollbar-track{
+  background:#fff;/*
+  -webkit-border-radius: 10px;
+  border-radius: 10px;*/
+}
+::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(top, #c1c1c1, #c1c1c1);
+  /*border-radius: 10px;
+  -webkit-border-radius: 10px;*/
+}

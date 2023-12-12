@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllInformacionFarmacia", "DllInformacionFarmacia\DllInformacionFarmacia.csproj", "{C1DC04D0-477C-45F3-BDFC-03AA390C0C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia_Int_Ece", "Farmacia_Int_Ece\Farmacia_Int_Ece.csproj", "{0F218951-6E26-4D8D-994F-769554DD412C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestInformacion", "TestInformacion\TestInformacion.csproj", "{BEDE748A-7A73-42B2-BFD9-7551CE50A47B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "wsInformacionFarmacia", "wsInformacionFarmacia\", "{39336B44-B19D-4975-A61D-C0015B813DCB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/wsInformacionFarmacia"
+		Debug.AspNetCompiler.PhysicalPath = "wsInformacionFarmacia\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\wsInformacionFarmacia\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/wsInformacionFarmacia"
+		Release.AspNetCompiler.PhysicalPath = "wsInformacionFarmacia\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\wsInformacionFarmacia\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "38274"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zDlls", "zDlls", "{21132962-D7C6-43E8-BA97-30162D110987}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\SC_Assemblies\SC_CompressLib.dll = ..\..\..\SC_Assemblies\SC_CompressLib.dll
+		..\..\..\SC_Assemblies\SC_ControlsCS.dll = ..\..\..\SC_Assemblies\SC_ControlsCS.dll
+		..\..\..\SC_Assemblies\SC_SolutionsSystem.dll = ..\..\..\SC_Assemblies\SC_SolutionsSystem.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1DC04D0-477C-45F3-BDFC-03AA390C0C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DC04D0-477C-45F3-BDFC-03AA390C0C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DC04D0-477C-45F3-BDFC-03AA390C0C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DC04D0-477C-45F3-BDFC-03AA390C0C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F218951-6E26-4D8D-994F-769554DD412C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F218951-6E26-4D8D-994F-769554DD412C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F218951-6E26-4D8D-994F-769554DD412C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F218951-6E26-4D8D-994F-769554DD412C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDE748A-7A73-42B2-BFD9-7551CE50A47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDE748A-7A73-42B2-BFD9-7551CE50A47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDE748A-7A73-42B2-BFD9-7551CE50A47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDE748A-7A73-42B2-BFD9-7551CE50A47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39336B44-B19D-4975-A61D-C0015B813DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39336B44-B19D-4975-A61D-C0015B813DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39336B44-B19D-4975-A61D-C0015B813DCB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{39336B44-B19D-4975-A61D-C0015B813DCB}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

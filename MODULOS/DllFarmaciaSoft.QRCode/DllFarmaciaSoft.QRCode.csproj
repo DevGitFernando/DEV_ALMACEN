@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DB4659F-36E8-4865-8308-61EDB47716E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DllFarmaciaSoft.QRCode</RootNamespace>
+    <AssemblyName>DllFarmaciaSoft.QRCode</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Snk\DllFarmaciaSoft.QRCode.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Neodynamic.SDK.ThermalLabel, Version=6.0.3500.0, Culture=neutral, PublicKeyToken=0630b9b3415848af, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\Neodynamic.SDK.ThermalLabel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Neodynamic.Windows.ThermalLabelEditor, Version=6.0.3500.0, Culture=neutral, PublicKeyToken=c57773567150e634, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\Neodynamic.Windows.ThermalLabelEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SC_CompressLib, Version=4.0.4.0, Culture=neutral, PublicKeyToken=fac9ea0d48dbaeab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_ControlsCS, Version=4.0.1.0, Culture=neutral, PublicKeyToken=e7a523b603173679, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem">
+      <HintPath>..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vintasoft.Barcode, Version=5.3.0.5, Culture=neutral, PublicKeyToken=153caf29a10d2e31, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Vintasoft.Barcode\5.3.0.5__153caf29a10d2e31\Vintasoft.Barcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Compilacion.cs">
+      <Link>Properties\AssemblyInfo_Compilacion.cs</Link>
+    </Compile>
+    <Compile Include="..\DllFarmaciaSoft\Properties\AssemblyInfo_Version.cs">
+      <Link>Properties\AssemblyInfo_Version.cs</Link>
+    </Compile>
+    <Compile Include="clsDataMatrix.cs" />
+    <Compile Include="FrmQR_Reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQR_Reader.Designer.cs">
+      <DependentUpon>FrmQR_Reader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\clsET_Tag.cs" />
+    <Compile Include="GenerarEtiquetas\clsEtiquetasPedidosAlmacen.cs" />
+    <Compile Include="GenerarEtiquetas\FrmET_Cajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_Cajas.Designer.cs">
+      <DependentUpon>FrmET_Cajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_Producto.Designer.cs">
+      <DependentUpon>FrmET_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_ProductosLotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_ProductosLotes.Designer.cs">
+      <DependentUpon>FrmET_ProductosLotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_SeleccionarEtiquetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_SeleccionarEtiquetas.Designer.cs">
+      <DependentUpon>FrmET_SeleccionarEtiquetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_Tarima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_Tarima.Designer.cs">
+      <DependentUpon>FrmET_Tarima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmET_Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmET_Tools.Designer.cs">
+      <DependentUpon>FrmET_Tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_Ubicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarEtiquetas\FrmET_Ubicaciones.Designer.cs">
+      <DependentUpon>FrmET_Ubicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unidosis\FrmETU_Unidosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unidosis\FrmETU_Unidosis.Designer.cs">
+      <DependentUpon>FrmETU_Unidosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisorEtiquetas\FrmVisorEtiquetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisorEtiquetas\FrmVisorEtiquetas.Designer.cs">
+      <DependentUpon>FrmVisorEtiquetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisorEtiquetas\ImageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisorEtiquetas\ImageViewer.Designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmQR_Reader.resx">
+      <DependentUpon>FrmQR_Reader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarEtiquetas\FrmET_Cajas.resx">
+      <DependentUpon>FrmET_Cajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarEtiquetas\FrmET_Producto.resx">
+      <DependentUpon>FrmET_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarEtiquetas\FrmET_ProductosLotes.resx">
+      <DependentUpon>FrmET_ProductosLotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarEtiquetas\FrmET_SeleccionarEtiquetas.resx">
+      <DependentUpon>FrmET_SeleccionarEtiquetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarEtiquetas\FrmET_Tarima.resx">
+      <DependentUpon>FrmET_Tarima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmET_Tools.resx">
+      <DependentUpon>FrmET_Tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarEtiquetas\FrmET_Ubicaciones.resx">
+      <DependentUpon>FrmET_Ubicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unidosis\FrmETU_Unidosis.resx">
+      <DependentUpon>FrmETU_Unidosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisorEtiquetas\FrmVisorEtiquetas.resx">
+      <DependentUpon>FrmVisorEtiquetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisorEtiquetas\ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Snk\DllFarmaciaSoft.QRCode.snk" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QR_General.cs" />
+    <Compile Include="QR_Reporte.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataTransfer\DllTransferenciaSoft\DllTransferenciaSoft.csproj">
+      <Project>{6C7D74CB-63A0-4EE2-A858-4CDBEAB6C7AC}</Project>
+      <Name>DllTransferenciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DllFarmaciaSoft\DllFarmaciaSoft.csproj">
+      <Project>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</Project>
+      <Name>DllFarmaciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SC_SolutionsSystem.QRCode\QRCodeLib\SC_SolutionsSystem.QRCode.csproj">
+      <Project>{E98126B2-AF17-4783-96B9-856D6744DCA3}</Project>
+      <Name>SC_SolutionsSystem.QRCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SC_SolutionsSystem.ZXing20\SC_SolutionsSystem.ZXing20.csproj">
+      <Project>{DB866CDE-02C4-4E5B-9C41-C7F0A5F487D6}</Project>
+      <Name>SC_SolutionsSystem.ZXing20</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ImageFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\PDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\samples_header_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ThermalPrinterIcon32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\TOXML.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embarazo__001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embarazo__002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embarazo__003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embarazo__004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embarazo__005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_IME_Unidosis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_IME_Unidosis__002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_IME_Unidosis1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_IME_Unidosis__0021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_PHJ_Unidosis.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

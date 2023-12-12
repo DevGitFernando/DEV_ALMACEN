@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://ec2-54-188-66-44.us-west-2.compute.amazonaws.com:8090/WsPrueba/WsPrueba?wsdl" filename="WsPrueba.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://ec2-54-188-66-44.us-west-2.compute.amazonaws.com:8090/WsPrueba/WsPrueba?xsd=1" filename="WsPrueba.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

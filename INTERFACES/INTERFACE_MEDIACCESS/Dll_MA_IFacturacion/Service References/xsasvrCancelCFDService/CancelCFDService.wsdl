@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:tns="http://ws.cancel.manager.xsa.tralix.com" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://soap.xml.javax" xmlns:ns1="http://lang.java" targetNamespace="http://ws.cancel.manager.xsa.tralix.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.cancel.manager.xsa.tralix.com">
+      <xsd:element name="mensaje">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="mensajeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancelaCFD">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:long" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancelaCFDResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SOAPException" type="ns2:SOAPException" />
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://soap.xml.javax">
+      <xsd:complexType name="SOAPException">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="cause" nillable="true" type="ns1:Throwable" />
+          <xsd:element minOccurs="0" name="message" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://lang.java">
+      <xsd:complexType name="Throwable" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="mensajeRequest">
+    <wsdl:part name="parameters" element="tns:mensaje" />
+  </wsdl:message>
+  <wsdl:message name="mensajeResponse">
+    <wsdl:part name="parameters" element="tns:mensajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SOAPException">
+    <wsdl:part name="SOAPException" element="tns:SOAPException" />
+  </wsdl:message>
+  <wsdl:message name="cancelaCFDRequest">
+    <wsdl:part name="parameters" element="tns:cancelaCFD" />
+  </wsdl:message>
+  <wsdl:message name="cancelaCFDResponse">
+    <wsdl:part name="parameters" element="tns:cancelaCFDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CancelCFDServicePortType">
+    <wsdl:operation name="mensaje">
+      <wsdl:input name="mensajeRequest" message="tns:mensajeRequest" />
+      <wsdl:output name="mensajeResponse" message="tns:mensajeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelaCFD">
+      <wsdl:input name="cancelaCFDRequest" message="tns:cancelaCFDRequest" />
+      <wsdl:output name="cancelaCFDResponse" message="tns:cancelaCFDResponse" />
+      <wsdl:fault name="SOAPException" message="tns:SOAPException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CancelCFDServiceHttpBinding" type="tns:CancelCFDServicePortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="mensaje">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="mensajeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="mensajeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelaCFD">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cancelaCFDRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cancelaCFDResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SOAPException">
+        <wsdlsoap:fault use="literal" name="SOAPException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CancelCFDService">
+    <wsdl:port name="CancelCFDServiceHttpPort" binding="tns:CancelCFDServiceHttpBinding">
+      <wsdlsoap:address location="http://xsa5.factura-e.biz/xsamanager/services/CancelCFDService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,70 @@
+--------
+--------
+------------ Comentariar todo el Script 
+--------Declare 
+--------    @sSql varchar(8000), 
+--------    @sTabla varchar(200), 
+--------    @sTriggerName varchar(250), 
+--------    @iCrearTR bit 
+--------
+--------    Set @sSql = '' 
+--------    Set @sTabla = '' 
+--------    Set @sTriggerName = '' 
+--------    Set @iCrearTR = 1 
+--------
+----------    Select NombreTabla 
+----------    From CFGC_EnvioDetalles (NoLock) 
+----------    Where NombreTabla <> 'Net_Usuarios' 
+----------    Order By IdOrden -    
+--------
+--------
+--------    Declare Tabla_TR Cursor For 
+--------        Select NombreTabla, ('TR_' + NombreTabla) as TriggerName 
+--------        From CFGC_EnvioDetallesTrans E (NoLock)  --- CFGC_EnvioDetalles | CFGC_EnvioDetallesTrans 
+--------        Inner Join Sysobjects S (NoLock) On ( E.NombreTabla = S.Name ) 
+--------        Where NombreTabla <> 'Net_Usuarios' 
+--------        Order By IdOrden 
+--------	open Tabla_TR 
+--------	Fetch From Tabla_TR into @sTabla, @sTriggerName  
+--------	while @@Fetch_status = 0 
+--------		begin 
+--------		    Set @sSql = '' -- '----------------------------------------------------------------------------------------------------' + char(13) 
+--------		    Set @sSql = @sSql + 'If Exists ( Select Name From Sysobjects (NoLock) Where Name = ' + char(39) + @sTriggerName + char(39) + ' and xType = ' + char(39) + 'TR' + char(39) + ' ) ' + char(10) 
+--------            Set @sSql = replicate('-', len(@sSql) + 5 ) + char(10) + @sSql     
+--------		    Set @sSql = @sSql + '   Drop Trigger ' + @sTriggerName + ' ' + char(10) 
+--------		    Set @sSql = @sSql + 'Go--#S#QL ' 
+--------		    
+--------		    If @iCrearTR = 1 
+--------		    Begin 
+--------		        Set @sSql = @sSql + char(10) + char(10) 		    
+--------		        Set @sSql = @sSql + 'If Exists ( Select Name From Sysobjects (NoLock) Where Name = ' + char(39) + @sTabla + char(39) + ' and xType = ' + char(39) + 'U' + char(39) + ' ) ' + char(10) 
+--------		        Set @sSql = @sSql + 'Begin '  
+--------		    
+--------		        Set @sSql = @sSql + char(10) -- + char(10) 
+--------		        Set @sSql = @sSql + space(5) + 'Create Trigger ' + @sTriggerName + ' ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + 'On ' + @sTabla + ' ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + 'With Encryption ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + 'For Delete ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + 'As ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + 'Begin ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + '   --- Deshacer la eliminacion de datos ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + '   Rollback ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + ' ' + char(13) 
+--------		        Set @sSql = @sSql + space(5) + '   --- Enviar el mensaje de error ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + '   Raiserror (' +  char(39) + 'Esta acción no esta permitida' + char(39) +  ', 1, 1) ' + char(10) 
+--------		        Set @sSql = @sSql + space(5) + 'End ' + char(10) 
+--------		        --Set @sSql = @sSql + space(5) + 'Go---#S#QL  ' 
+--------		        
+--------		        Set @sSql = @sSql + 'End '+ char(10) 
+--------		        Set @sSql = @sSql + 'Go--#S#QL ' 		    		        
+--------		    End 
+--------		    
+--------		    Print @sSql 		    
+--------		    Print '' 
+--------		    
+--------		    Fetch next From Tabla_TR into @sTabla, @sTriggerName  
+--------		end 
+--------    close Tabla_TR  
+--------	deallocate Tabla_TR 
+--------
+--------

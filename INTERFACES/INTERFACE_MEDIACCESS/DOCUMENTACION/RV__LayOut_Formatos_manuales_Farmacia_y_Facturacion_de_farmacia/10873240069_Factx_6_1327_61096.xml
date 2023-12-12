@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:implocal="http://www.sat.gob.mx/implocal" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/implocal http://www.sat.gob.mx/sitio_internet/cfd/implocal/implocal.xsd" version="3.2" folio="10873240069" fecha="2015-06-06T10:27:45" sello="IRWNEtMIdTURuISPMOfYpe8//x3YhfrBL4lAw69tdcHcg4RDPBlrPXJV5Koc73q9xjuZOnrPa4yv77hGuUe+HyfkIYa7PFQjJHjX7L3upLr+zeR70L0ZxYTS7C9+139E0ofYYRzgyHlhk6ensZzY729cQ3zIMLdHryYixfNOheI=" formaDePago="Pago en una exhibición" noCertificado="00001000000301407096" certificado="MIIEqDCCA5CgAwIBAgIUMDAwMDEwMDAwMDAzMDE0MDcwOTYwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzExMjUyMTE2MDZaFw0xNzExMjUyMTE2MDZaMIH0MTIwMAYDVQQDEylIRUFMVEggU0VSVklDRSBBTElBTkNFIFNFUlZJQ0lPUyBTQSBERSBDVjEyMDAGA1UEKRMpSEVBTFRIIFNFUlZJQ0UgQUxJQU5DRSBTRVJWSUNJT1MgU0EgREUgQ1YxMjAwBgNVBAoTKUhFQUxUSCBTRVJWSUNFIEFMSUFOQ0UgU0VSVklDSU9TIFNBIERFIENWMSUwIwYDVQQtExxIU0EwMzEwMTZOOTMgLyBTRUZSNjMwMzI1OUIxMR4wHAYDVQQFExUgLyBTRVhGNjMwMzI1SE5FQ1hSMDkxDzANBgNVBAsTBlVOSURBRDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA10SpEoGzZQzTg11ORMnw44IzyShWl5J2uCTBZT4TcWR6RG6u4wO1Tbbb9VgkR2gP9QCfTu95449I0gpnjOkd109Esb7MJQ+6aJPR4XZ/qGPVv43nGD8BELdGk4rBGo1OYjHg5lSXtBL1Ps+zsY+CbpgbkMKSlGwO+JHTlijCNX0CAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAIvMM8s7FGyDtoYkvSHA3nf+ojmdUdQBgafu96/Tf4pfxJPwlQfHzENs3r/ZFncfMhR1RVR/HSixuM5KJnodT+tRc6dWjxVaSRB21HNj9ZF26VbOFT9pfS1qBoWhbdItTWegYVSdWMkTaHQmf9DXMBX9Y/HgaSqayii6y3sB41zZNNvIvCu2x/NSUZ8P6OucAWg0ctyuAnktC68BbhiWnlbpzZtSYyIk/DDiNcXsbqpjyh72yAI8tD/lCnmX4N0oUipislAy6iFn43DtiCOcvUVvtrr3guIiamXpj9mARDTfWPZrovrV1S0FxjhuUaQrp2emK9xePieweLV53P39TzM=" subTotal="10127.66" total="10268.96" tipoDeComprobante="ingreso" metodoDePago="Transferencia Bancaria" LugarExpedicion="Santiago de Querétaro" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor rfc="HSA031016N93" nombre="Health Service Alliance Servicios S.A de C.V.">
+    <cfdi:DomicilioFiscal calle="Av. Paseo Constituyentes Poniente" noExterior="No. 206" colonia="Torre II Local 407, Col. Jardines de la Hacienda" municipio="Querétaro" estado="Querétaro" pais="México" codigoPostal="76180" />
+    <cfdi:RegimenFiscal Regimen="Regimen general de ley personas morales" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="ACM090710RX8" nombre="Administradora Clínicas Metromédica, S.A. De C.V.">
+    <cfdi:Domicilio calle="Calzada de Guadalupe No. 444, Col. Industrial, Delegación Gustavo A. Madero, México D.F C.P. 07800" pais="México" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7800831415782" descripcion="Gelmicin 10mg/g,0.5mg/g,1mg/g 40g Cra" valorUnitario="40.5" importe="40.5" />
+    <cfdi:Concepto cantidad="2" unidad="Pza" noIdentificacion="7501672602958" descripcion="Arlexen 50mg/ml 100ml Jbe" valorUnitario="77.96" importe="155.92" />
+    <cfdi:Concepto cantidad="2" unidad="Pza" noIdentificacion="7501109763733" descripcion="Magaldrato-Dimeticona 80mg/ml,10mg/ml 250ml Jbe" valorUnitario="38.63" importe="77.26" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7502009740916" descripcion="Erispan 4mg 1 Amp" valorUnitario="58.5" importe="58.5" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501299301234" descripcion="Cicloferon 40mg/ml 125ml Jbe" valorUnitario="307.5" importe="307.5" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501299301210" descripcion="Minofen 32mg/ml 120ml Jbe" valorUnitario="52.5" importe="52.5" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7703332003031" descripcion="Ketomed 20mg/ml 100ml Shampoo" valorUnitario="262.48" importe="262.48" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7484991003128" descripcion="Eclipsol Fps 50 1,1 120g Aerosol" valorUnitario="352.86" importe="352.86" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="3433422407268" descripcion="Kerium Ds Intensivo" valorUnitario="267.77" importe="267.77" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501046492314" descripcion="Zyloprim 300mg 30 Tab" valorUnitario="373.3" importe="373.3" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7502001165021" descripcion="Diprodol 400mg 10 Tab" valorUnitario="33" importe="33" />
+    <cfdi:Concepto cantidad="3" unidad="Pza" noIdentificacion="7501101615856" descripcion="Glimetal 1000mg,2mg 16 Tab" valorUnitario="421.22" importe="1263.66" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501298214160" descripcion="Gavindo 100mg,300mg,0.2mg 30 Tab" valorUnitario="735.25" importe="735.25" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="8027950210497" descripcion="Forxiga 10mg 28 Tab" valorUnitario="779.99" importe="779.99" />
+    <cfdi:Concepto cantidad="2" unidad="Pza" noIdentificacion="7501188802408" descripcion="Miseda 1mg/ml 50ml Jbe" valorUnitario="117" importe="234" />
+    <cfdi:Concepto cantidad="2" unidad="Pza" noIdentificacion="7501043114387" descripcion="Cubraxis-M 5mg 20 Tab" valorUnitario="396.22" importe="792.44" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501092743057" descripcion="Ferranina 100mg 3 Amp" valorUnitario="190.18" importe="190.18" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501070635596" descripcion="Ascor 10mg/ml 24ml Gts" valorUnitario="171.81" importe="171.81" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501130713516" descripcion="Eufenil Forte 400mg 10 Tab" valorUnitario="41.38" importe="41.38" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501043111850" descripcion="Dermatovate 0.44mg/g 40g Cra" valorUnitario="377.36" importe="377.36" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501123017300" descripcion="Sinpebac 20mg/g 15g Ung" valorUnitario="151.45" importe="151.45" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501098605755" descripcion="Nexium 10mg 28 Sb" valorUnitario="577.52" importe="577.52" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="8430308010258" descripcion="Eborix 0.06mg/ml 90ml Jbe" valorUnitario="226.04" importe="226.04" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="3393370037408" descripcion="Seretide Evohaler 250mcg/puff,25mcg/puff 120inhal Aerosol" valorUnitario="696.41" importe="696.41" />
+    <cfdi:Concepto cantidad="3" unidad="Pza" noIdentificacion="7501825303039" descripcion="Bramin Flu 4mg/ml,1mg/ml 120ml Jbe" valorUnitario="115.92" importe="347.76" />
+    <cfdi:Concepto cantidad="2" unidad="Pza" noIdentificacion="7501314703562" descripcion="Senovital 4mg 15 Sb" valorUnitario="308.1" importe="616.2" />
+    <cfdi:Concepto cantidad="2" unidad="Pza" noIdentificacion="7501385493850" descripcion="Variton 500mg 20 Tab" valorUnitario="303.75" importe="607.5" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501385420238" descripcion="Hemosin K 25mg,5mg 32 Tab" valorUnitario="118.85" importe="118.85" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501871720774" descripcion="Contumax 17g 15 Sb" valorUnitario="154.57" importe="154.57" />
+    <cfdi:Concepto cantidad="1" unidad="Pza" noIdentificacion="7501299303184" descripcion="Locoid 1mg/g 15g Cra" valorUnitario="63.7" importe="63.7" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos>
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="0" importe="0" />
+      <cfdi:Traslado impuesto="IVA" tasa="16" importe="141.3" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital version="1.0" UUID="2355B21A-B564-462A-A086-27F9B820C24F" FechaTimbrado="2015-06-06T13:27:46" selloCFD="IRWNEtMIdTURuISPMOfYpe8//x3YhfrBL4lAw69tdcHcg4RDPBlrPXJV5Koc73q9xjuZOnrPa4yv77hGuUe+HyfkIYa7PFQjJHjX7L3upLr+zeR70L0ZxYTS7C9+139E0ofYYRzgyHlhk6ensZzY729cQ3zIMLdHryYixfNOheI=" noCertificadoSAT="00001000000203220546" selloSAT="gxnwQa8dc/ZlQJvD8z/cRo+88ztmvWZTgkMStCnwiDwXeyqBOiM1n92P0gE21izMCPsARkHOv3LmG1zQZoJYWUZtT4cSfTjpVKsSm8X9EKUG4ADWhnHQMzI1GYPO8RmavAcpN2sktjeSYXdS4Z/Ewu11mJUxklZ1G8CzYBTU5Lo=" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

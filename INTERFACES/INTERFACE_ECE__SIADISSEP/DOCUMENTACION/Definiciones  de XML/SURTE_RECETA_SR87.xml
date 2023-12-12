@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SurteReceta>
+    <General>
+								<idPeticion>SR87</idPeticion>
+								<tipoPeticion>SURTERECETA</tipoPeticion>
+								<folioReceta>63800010116</folioReceta>
+								<folioAfiliacionSPSS>2110977061-01</folioAfiliacionSPSS>
+								<fechaReceta>2016/09/08 12:18:46</fechaReceta>
+								<fechaEnvio>2016/09/08 12:19:15</fechaEnvio>
+								<unidadMedica>PLSSA008770</unidadMedica>
+								<idMunicipio>114</idMunicipio>
+								<nombreMunicipio>PUEBLA</nombreMunicipio>
+								<jurisdiccion>6</jurisdiccion>
+								<vigenciaDerechos>2018/01/01</vigenciaDerechos>
+								<expediente>210930001030</expediente>
+								<nombre>ZOYLA</nombre>
+								<apPaterno>ORTEGA</apPaterno>
+								<apMaterno>OCAÃ‘A</apMaterno>
+								
+								<edad>30 aÃ±os</edad>
+							
+							
+								<sexo>2</sexo>
+								<oportunidades>11111111111</oportunidades>
+								<poblacionAbierta>SI</poblacionAbierta>
+								<indicacionesMedicas>Prueba 1 WS</indicacionesMedicas>
+								<idMedico>80</idMedico>
+								<nombreMedico>FROYLAN</nombreMedico>
+								<apPatMed>VILLALBA</apPatMed>
+								<apMatMed>GOMEZ</apMatMed>
+								<cedulaProfesional>3430434</cedulaProfesional>
+							</General>
+    <Causes>
+								<noIntervCause/>
+							</Causes>
+    <Diagnosticos>
+								<diagnostico>
+									<idDiagnostico/>
+									<descDiagnostico/>
+								</diagnostico>
+							</Diagnosticos>
+    <Medicamentos>
+        <Medicamento>
+            <clave>010.000.5223.02</clave>
+            <nombreGenerico>PeginterferÃ³n alfa-2 a</nombreGenerico>
+            <formaFarmaceutica>soluciÃ³n inyectable</formaFarmaceutica>
+            <concentracion>180 Î¼g</concentracion>
+            <presentacion>Envase con una pluma precargada de 0.5 ml.</presentacion>
+            <viaAdministracion>Enteral a travÃ©s de sonda</viaAdministracion>
+            <dosis>1</dosis>
+            <frecuencia>DOSIS ÃšNICA</frecuencia>
+            <duracion>HASTA TERMINAR</duracion>
+            <cantidadRecetada>1</cantidadRecetada>
+        </Medicamento>
+    </Medicamentos>
+</SurteReceta>

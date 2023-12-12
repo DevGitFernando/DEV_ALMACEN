@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SurteReceta>
+	<Encabezado>
+		<idPeticion>SR0000001</idPeticion>
+		<tipoPeticion>SURTERECETA</tipoPeticion>
+		<folioReceta>1000</folioReceta>
+		<fechaReceta>05/02/2016</fechaReceta>
+		<fechaSurtimiento>2016-02-06</fechaSurtimiento>
+		<idPS>15648</idPS>
+		<nombrePS>Lilia</nombrePS>
+		<apPatPS>Gómez</apPatPS>
+		<apMatMedPS>Solís </apMatMedPS>
+		<observaciones>Se surte 1 caja con vale</observaciones>
+		
+	</Encabezado>
+	<Medicamentos>
+		<Medicamento>
+			<claveMedicamento>010.000.0104.00</claveMedicamento>
+			<descMedicamento>Paracetamol</descMedicamento>
+			<concentracion>500 mg</concentracion>
+			<formaFarmaceutica>Envase con 10 tabletas.</formaFarmaceutica>
+			<noPiezasRecetadas>2</noPiezasRecetadas>
+			<noPiezasSurtidas>1</noPiezasSurtidas>
+			<vale>SI</vale>
+			<pzasVale>10</pzasVale>
+		</Medicamento>
+	</Medicamentos>
+</SurteReceta>
+
+

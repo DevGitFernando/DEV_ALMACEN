@@ -1,0 +1,28 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Almacen Unidosis.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Almacen Unidosis.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Almacen Unidosis.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.Form1.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.Relacion_Tag_UUID.FrmRFID_Tags_UUIDS.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.RFDI.FrmRFID_ProductosRelacionados.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.exe.licenses
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Almacen Unidosis.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Almacen Unidosis.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Almacen Unidosis.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.Form1.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.Relacion_Tag_UUID.FrmRFID_Tags_UUIDS.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen_Unidosis.RFDI.FrmRFID_ProductosRelacionados.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.exe.licenses
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Almacen Unidosis\obj\x86\Debug\Almacen Unidosis.pdb

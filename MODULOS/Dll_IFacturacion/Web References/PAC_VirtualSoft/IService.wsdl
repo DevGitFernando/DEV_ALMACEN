@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="IService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="GetData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="value" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="GetDataResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="timbrarXML">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="XMLOrigen" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="XMLDestino" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="MensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="timbrarXMLResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="timbrarXMLResult" type="xs:int" />
+            <xs:element minOccurs="1" name="XMLDestino" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="MensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cancelarXML">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="RFC" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="sUUID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="cer" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="key" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="motivo" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="folioSustitucion" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="acuseRecibo" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cancelarXMLResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="cancelarXMLResult" type="xs:int" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="acuseRecibo" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cancelarXMLExterno">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="RFCEmisor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="RFCReceptor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="total" type="xs:double" />
+            <xs:element minOccurs="1" name="sUUID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="cer" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="key" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="motivo" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="folioSustitucion" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="acuseRecibo" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cancelarXMLExternoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="cancelarXMLExternoResult" type="xs:int" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="acuseRecibo" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="verificarVigencia">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="detallesLicencia" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="verificarVigenciaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="verificarVigenciaResult" type="xs:int" />
+            <xs:element minOccurs="1" name="detallesLicencia" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="crearCuentaF">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="nombreEmpresa" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfc" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="razonSocial" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="correoElectronico" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="crearCuentaFResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="crearCuentaFResult" type="xs:int" />
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="crearCuentaF2">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="nombreEmpresa" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfc" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="razonSocial" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="correoElectronico" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="apiKey" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="idDistribuidor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="crearCuentaF2Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="crearCuentaFResult" type="xs:int" />
+            <xs:element minOccurs="1" name="apiKey" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="idDistribuidor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="agregarContribuyenteF">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfc" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="razonSocial" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="agregarContribuyenteFResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="agregarContribuyenteFResult" type="xs:int" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="quitarContribuyenteF">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfc" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="quitarContribuyenteFResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="quitarContribuyenteFResult" type="xs:int" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerXML">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="uuid" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfc" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="XMLDestino" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerXMLResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="obtenerXMLResult" type="xs:int" />
+            <xs:element minOccurs="1" name="XMLDestino" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerEstatus">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="uuid" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfcEmisor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfcReceptor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="total" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerEstatusResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="obtenerEstatusResult" type="xs:int" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerRelacionados">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfcReceptor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfcContribuyente" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="UUID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="cer" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="key" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerRelacionadosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="obtenerRelacionadosResult" type="xs:int" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="uuidsCancelacionPendientes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfcConsultar" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfcContribuyente" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="uuidsCancelacionPendientesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="uuidsCancelacionPendientesResult" type="xs:int" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="aceptarRechazarCancelacion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="idCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="passwordCuenta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="cer" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="key" type="xs:base64Binary" />
+            <xs:element minOccurs="1" name="rfcReceptor" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="rfcContribuyente" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="uuid" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="respuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="aceptarRechazarCancelacionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="aceptarRechazarCancelacionResult" type="xs:int" />
+            <xs:element minOccurs="1" name="xmlRespuesta" nillable="true" type="xs:string" />
+            <xs:element minOccurs="1" name="mensajeError" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_timbrarXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:timbrarXML" />
+  </wsdl:message>
+  <wsdl:message name="IService_timbrarXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:timbrarXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_cancelarXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:cancelarXML" />
+  </wsdl:message>
+  <wsdl:message name="IService_cancelarXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cancelarXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_cancelarXMLExterno_InputMessage">
+    <wsdl:part name="parameters" element="tns:cancelarXMLExterno" />
+  </wsdl:message>
+  <wsdl:message name="IService_cancelarXMLExterno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cancelarXMLExternoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_verificarVigencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:verificarVigencia" />
+  </wsdl:message>
+  <wsdl:message name="IService_verificarVigencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:verificarVigenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_crearCuentaF_InputMessage">
+    <wsdl:part name="parameters" element="tns:crearCuentaF" />
+  </wsdl:message>
+  <wsdl:message name="IService_crearCuentaF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:crearCuentaFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_crearCuentaF2_InputMessage">
+    <wsdl:part name="parameters" element="tns:crearCuentaF2" />
+  </wsdl:message>
+  <wsdl:message name="IService_crearCuentaF2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:crearCuentaF2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService_agregarContribuyenteF_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarContribuyenteF" />
+  </wsdl:message>
+  <wsdl:message name="IService_agregarContribuyenteF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarContribuyenteFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_quitarContribuyenteF_InputMessage">
+    <wsdl:part name="parameters" element="tns:quitarContribuyenteF" />
+  </wsdl:message>
+  <wsdl:message name="IService_quitarContribuyenteF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:quitarContribuyenteFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_obtenerXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerXML" />
+  </wsdl:message>
+  <wsdl:message name="IService_obtenerXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_obtenerEstatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerEstatus" />
+  </wsdl:message>
+  <wsdl:message name="IService_obtenerEstatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerEstatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_obtenerRelacionados_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRelacionados" />
+  </wsdl:message>
+  <wsdl:message name="IService_obtenerRelacionados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRelacionadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_uuidsCancelacionPendientes_InputMessage">
+    <wsdl:part name="parameters" element="tns:uuidsCancelacionPendientes" />
+  </wsdl:message>
+  <wsdl:message name="IService_uuidsCancelacionPendientes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uuidsCancelacionPendientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_aceptarRechazarCancelacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:aceptarRechazarCancelacion" />
+  </wsdl:message>
+  <wsdl:message name="IService_aceptarRechazarCancelacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:aceptarRechazarCancelacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/GetData" message="tns:IService_GetData_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/GetDataResponse" message="tns:IService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="timbrarXML">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/timbrarXML" message="tns:IService_timbrarXML_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/timbrarXMLResponse" message="tns:IService_timbrarXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelarXML">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/cancelarXML" message="tns:IService_cancelarXML_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/cancelarXMLResponse" message="tns:IService_cancelarXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelarXMLExterno">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/cancelarXMLExterno" message="tns:IService_cancelarXMLExterno_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/cancelarXMLExternoResponse" message="tns:IService_cancelarXMLExterno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="verificarVigencia">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/verificarVigencia" message="tns:IService_verificarVigencia_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/verificarVigenciaResponse" message="tns:IService_verificarVigencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="crearCuentaF">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/crearCuentaF" message="tns:IService_crearCuentaF_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/crearCuentaFResponse" message="tns:IService_crearCuentaF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="crearCuentaF2">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/crearCuentaF2" message="tns:IService_crearCuentaF2_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/crearCuentaF2Response" message="tns:IService_crearCuentaF2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarContribuyenteF">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/agregarContribuyenteF" message="tns:IService_agregarContribuyenteF_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/agregarContribuyenteFResponse" message="tns:IService_agregarContribuyenteF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="quitarContribuyenteF">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/quitarContribuyenteF" message="tns:IService_quitarContribuyenteF_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/quitarContribuyenteFResponse" message="tns:IService_quitarContribuyenteF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerXML">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/obtenerXML" message="tns:IService_obtenerXML_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/obtenerXMLResponse" message="tns:IService_obtenerXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEstatus">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/obtenerEstatus" message="tns:IService_obtenerEstatus_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/obtenerEstatusResponse" message="tns:IService_obtenerEstatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRelacionados">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/obtenerRelacionados" message="tns:IService_obtenerRelacionados_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/obtenerRelacionadosResponse" message="tns:IService_obtenerRelacionados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uuidsCancelacionPendientes">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/uuidsCancelacionPendientes" message="tns:IService_uuidsCancelacionPendientes_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/uuidsCancelacionPendientesResponse" message="tns:IService_uuidsCancelacionPendientes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="aceptarRechazarCancelacion">
+      <wsdl:input wsam:Action="http://tempuri.org/IService/aceptarRechazarCancelacion" message="tns:IService_aceptarRechazarCancelacion_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService/aceptarRechazarCancelacionResponse" message="tns:IService_aceptarRechazarCancelacion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="timbrarXML">
+      <soap:operation soapAction="http://tempuri.org/IService/timbrarXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelarXML">
+      <soap:operation soapAction="http://tempuri.org/IService/cancelarXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelarXMLExterno">
+      <soap:operation soapAction="http://tempuri.org/IService/cancelarXMLExterno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificarVigencia">
+      <soap:operation soapAction="http://tempuri.org/IService/verificarVigencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearCuentaF">
+      <soap:operation soapAction="http://tempuri.org/IService/crearCuentaF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearCuentaF2">
+      <soap:operation soapAction="http://tempuri.org/IService/crearCuentaF2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarContribuyenteF">
+      <soap:operation soapAction="http://tempuri.org/IService/agregarContribuyenteF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="quitarContribuyenteF">
+      <soap:operation soapAction="http://tempuri.org/IService/quitarContribuyenteF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerXML">
+      <soap:operation soapAction="http://tempuri.org/IService/obtenerXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEstatus">
+      <soap:operation soapAction="http://tempuri.org/IService/obtenerEstatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRelacionados">
+      <soap:operation soapAction="http://tempuri.org/IService/obtenerRelacionados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uuidsCancelacionPendientes">
+      <soap:operation soapAction="http://tempuri.org/IService/uuidsCancelacionPendientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="aceptarRechazarCancelacion">
+      <soap:operation soapAction="http://tempuri.org/IService/aceptarRechazarCancelacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IService">
+    <wsdl:port name="BasicHttpBinding" binding="tns:BasicHttpBinding">
+      <soap:address location="http://facturacion.virtualsoft.com.mx:7512/timbradoXML/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

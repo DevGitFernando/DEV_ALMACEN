@@ -1,0 +1,28 @@
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Cuentas x Pagar.exe.config
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Cuentas x Pagar.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Cuentas x Pagar.pdb
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.csprojResolveAssemblyReference.cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.FrmMain.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Registros.FrmEstadoDeCuenta.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Registros.FrmHistoriales.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Registros.FrmRegistraDePagos_A_Proveedores.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Properties.Resources.resources
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.csproj.GenerateResource.Cache
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.exe.licenses
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.exe
+C:\PROYECTOS\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Cuentas x Pagar.exe.config
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Cuentas x Pagar.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\Archivos_Generados\Compras Cuentas x Pagar.pdb
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.csproj.AssemblyReference.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.FrmMain.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Registros.FrmEstadoDeCuenta.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Registros.FrmHistoriales.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Registros.FrmRegistraDePagos_A_Proveedores.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras_Cuentas_x_Pagar.Properties.Resources.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.csproj.GenerateResource.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.exe.licenses
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.csproj.CoreCompileInputs.cache
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.csproj.CopyComplete
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.exe
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Compras_General\Compras Cuentas x Pagar\obj\x86\Debug\Compras Cuentas x Pagar.pdb

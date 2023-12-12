@@ -1,0 +1,107 @@
+Para la debida operación del Servicio de administración y dispensación de medicamentos y material de curación en farmacia y el 
+suministro de los mismos en la modalidad de stock, se requiere del acceso a un sistema informático que al menos permita la obtención 
+de los siguientes reportes, exportables a hojas de cálculo editables (Excel, Open Office), entregándose actualizados y con la 
+información en tiempo real.  Además, todos los reportes que se generen deberán contener indistintamente:
+
+Clave SSA
+descripción 
+presentación
+lote
+caducidad
+fuente de financiamiento
+laboratorio fabricante
+procedencia
+así como la fecha de emisión del reporte
+fecha del periodo solicitado.
+
+********************************************************************************************************************************
+
+1.Título del Reporte: “Kardex de movimientos” con semaforización de inventarios de caducidad 
+(de 0 a 6 meses rojo, 6 meses 1 día a 9 meses amarillo y de 9 meses 1 día en adelante verde). 
+Se deberán incluir las claves con nulo movimiento.
+Criterios de búsqueda/filtrado: por clave, a una fecha (día, mes, año), por rango de fechas (día, mes, año), fuente de financiamiento, 
+por entrada, por salida o por entradas y salidas, por estatus de semaforización, por procedencia, por farmacia, por unidad médica, 
+por municipio, por Jurisdicción o por Estado
+Columnas o campos: unidad, clave, nombre genérico, descripción clave ssa, presentación, lote, caducidad, fuente de financiamiento, 
+laboratorio 
+procedencia, cantidad inicial, entradas, salidas, cantidad final, fecha de entrada, fecha de salida
+Totales: Suma de cantidades iniciales, de entrada, de salida y cantidad final.
+
+Se agregó la fecha y hora de emisión de reporte. 
+
+********************************************************************************************************************************
+2.Título del Reporte: “Reporte de beneficiarios”
+Criterios de búsqueda/filtrado: por CURP, INSABI, por nombre de usuario, por rango de fechas, farmacia, unidad médica, 
+municipio, jurisdicción o Estado -  
+
+*En este quitaron por Programa
+
+Columnas o campos: fecha de atención, nombre completo del beneficiario o usuario, CURP, INSABI u otros, folio de receta y/o 
+folio de solicitud colectiva, clave, cantidad recetada y/o solicitada, cantidad dispensada en farmacia, cantidad dispensada en vale, 
+folio de vale emitido, diferencia recetada y/o solicitada menos lo surtido y observaciones.
+Totales: Recuento de beneficiarios o usuarios atendidos, suma de cantidades - 
+
+*La suma de cantidades no parece estar en la columna correspondiente.  [check]
+
+########################################################## Modificación #########################################################
+
+RPT__006__Beneficiario_Atendido__Detalle_phj
+
+Columnas: Fecha de Atención, Nombre de beneficiario, Número de póliza, Folio de venta, Folio de receta, Folio de vale, Observaciones,
+	  Clave SSA, Descripción Clave SSA, Cantidad recetada, Cantidad dispensada, Cantidad en vale, Diferencia. 
+
+Se movió la etiqueta de "Total" de la fila 2 columna 1; a un lado de los totales. 
+
+RPT__006__Beneficiario_Atendido__Detalle
+
+Se movió la etiqueta de "Total" de la fila 2 columna 1; a un lado de los totales. 
+
+############################################################################################################
+
+**********************************************************************************************************************************
+3.Título del Reporte: “Claves de medicamento y material de curación suministradas por stock a la unidad médica conforme a su 
+calendario y programación”. Criterios de búsqueda/filtrado: por unidad médica, jurisdicción y por rango de fechas. - 
+
+*No se desplega el filtro por Unidad solo si se escribe el dato en el cuadro de texto Unidad. 
+En este no pidieron busqueda por clave.
+Columnas o campos: folio de venta, clave, descripción, presentación, cantidad programada, cantidad surtida, fecha surtimiento, 
+jurisdicción, nombre genérico. - 
+
+No presenta nada en nombre generico
+
+Totales: Suma de cantidades suministradas. - * No la tiene
+
+########################################################## Modificación ##########################################################
+
+RPT__008__Claves_Suministradas__Stock____02_Ventas_Pedidos
+
+Se agregó el Total_Cantidad_Surtida (aggregation) que es una sumatoria Integer de Cantidad_Surtida
+
+############################################################################################################
+
+***********************************************************************************************************************************
+4.Título del Reporte: “Claves dispensadas de medicamento y material de curación en la modalidad de farmacia”
+Criterios de búsqueda/filtrado: por rango de fecha, beneficiario o usuario, clave, folio de receta, unidad médica, jurisdicción y 
+Estado. 
+Columnas o campos: nombre del beneficiario o usuario, CURP, INSABI u otros, clave, descripción, presentación, cantidad recetada y 
+cantidad dispensada. - 
+*No piden Folio de Venta ni numero de Receta.
+Totales: Suma de cantidades dispensadas.
+
+########################################################## Modificación ##########################################################
+
+RPT__009__Claves_Suministradas__Farmacia
+
+
+
+
+
+
+
+
+
+
+
+
+
+

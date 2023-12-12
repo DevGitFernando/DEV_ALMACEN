@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CancelaRecetaAcuse>
+	<General>
+		<idPeticion>CR0000001</idPeticion>
+		<tipoPeticion>CANCELARECETA</tipoPeticion>
+		<folioReceta>1000</folioReceta>
+		<fechaReceta>2016-03-30</fechaReceta>
+		<fechaEnvio>2016-03-30</fechaEnvio>
+		<expediente>21000100001</expediente>
+		<estatus>CANCELADA</estatus>
+	</General>
+</CancelaRecetaAcuse>

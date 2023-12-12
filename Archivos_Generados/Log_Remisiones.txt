@@ -1,0 +1,925 @@
+----27/11/2023 08:30:11 p. m.
+----	Cadena: 
+
+
+
+---- Comprobación de documentos 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000001' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000002' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000003' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000004' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000006' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000007' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000010' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000011' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000012' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000013' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000014' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000015' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000016' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000018' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000021' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000022' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000023' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000024' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000025' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000026' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000027' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000028' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000030' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000031' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000032' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '0', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '1', @FolioRelacionDocumento = '000033' 
+
+---- Comprobación de documentos 
+
+
+
+---- Facturas anticipadas 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '0', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '263', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '264', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '0', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '265', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '266', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '0', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '269', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '270', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '0', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '273', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '274', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '0', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '275', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '276', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '0', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '277', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '278', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '0', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '281', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '0', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '0', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '0', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '1', @FacturaPreviaEnCajas = '0', @Serie = 'PHJGTOA', @Folio = '282', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+---- Facturas anticipadas 
+
+
+
+---- Remisiones generales 
+
+Exec  spp_FACT_GenerarRemisiones_x_TipoDeProceso_Principal_Almacen  
+ 	@NivelInformacion_Remision = '1', @Beneficiarios_x_Jurisdiccion = '0', 
+ 	@ProcesarParcialidades = '0', @ProcesarCantidadesExcedentes = '0', @AsignarReferencias = '0', 
+ 	@Procesar_Producto = '1', @Procesar_Servicio = '1', @Procesar_Servicio_Consigna = '1', 
+ 	@Procesar_Medicamento = '1', @Procesar_MaterialDeCuracion = '1', @Procesar_Venta = '1', @Procesar_Consigna = '1', 
+ 
+ 	@IdEmpresa = '004', @IdEstado = '11', @IdFarmaciaGenera = '0001', @TipoDeRemision = '0', @IdFarmacia = '', 
+ 	@IdCliente = '0042', @IdSubCliente = '0004', @IdFuenteFinanciamiento = '0005', @IdFinanciamiento = '0001', @Criterio_ProgramasAtencion = '', 
+ 
+ 	@FechaInicial = '2023-10-01', @FechaFinal = '2023-10-31', @iMontoFacturar = '0', @IdPersonalFactura = '0028', @Observaciones = '', 
+ 	@IdTipoProducto = '0', @EsExcedente = '0', @Identificador = '978027e4-d91f-421e-9506-5c2fb1678365', @TipoDispensacion = '0', 
+ 	@ClaveSSA = '', @FechaDeRevision = '1', @FoliosVenta = '', 
+ 
+ 	@TipoDeBeneficiario = '0', @Aplicar_ImporteDocumentos = '0', @EsProgramasEspeciales = '0', 
+ 	@IdBeneficiario = '', @IdBeneficiario_MayorIgual = '', @IdBeneficiario_MenorIgual = '', 
+ 	@Remision_General = '0', @ClaveSSA_ListaExclusion = '', 
+ 	@EsRelacionFacturaPrevia = '0', @FacturaPreviaEnCajas = '0', @Serie = '', @Folio = '', @EsRelacionMontos = '0', 
+ 	@Procesar_SoloClavesReferenciaRemisiones = '0', @ExcluirCantidadesConDecimales = '0', 
+ 	@Separar__Venta_y_Vales = '0', @TipoDispensacion_Venta = '1', @EsRemision_Complemento = '0', 
+ 	@MostrarResultado = '0', @TipoProcesoRemision = '1', 
+ 	@EsRelacionDocumentoPrevio = '0', @FolioRelacionDocumento = '' 
+
+---- Remisiones generales 
+
+-----------------------------------------
+

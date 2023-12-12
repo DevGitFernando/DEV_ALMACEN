@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGhO.asmx?wsdl" docRef="http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGhO.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGhO.asmx" xmlns:q1="http://SC-Solutions/ServiciosWeb/" binding="q1:wsIRE_SIGHOSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/wsWebDll_SII_IRE_SIGHO/wsIRE_SIGhO.asmx" xmlns:q2="http://SC-Solutions/ServiciosWeb/" binding="q2:wsIRE_SIGHOSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

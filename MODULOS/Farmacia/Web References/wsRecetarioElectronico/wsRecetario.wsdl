@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SC-Solutions/ServiciosWeb/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SC-Solutions/ServiciosWeb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo recetario electrónico</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SC-Solutions/ServiciosWeb/">
+      <s:element name="Informacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Datos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Execute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Parametros">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="UsarTransaccion" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Contenedor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sentencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteExtended">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Solicitud" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sentencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteExtendedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteExtendedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarReporteExcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NombrePlantilla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Informacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarReporteExcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerarReporteExcelResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarReporte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionReporteWeb">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionCliente">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarReporteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerarReporteResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestEnlace">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Datos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestEnlaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestEnlaceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReceta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CLUES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Consecutivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecetaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecetaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecetaInformacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CLUES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Consecutivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecetaInformacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecetaInformacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InformacionSoapIn">
+    <wsdl:part name="parameters" element="tns:Informacion" />
+  </wsdl:message>
+  <wsdl:message name="InformacionSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSoapIn">
+    <wsdl:part name="parameters" element="tns:Execute" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteExtendedSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteExtended" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteExtendedSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteExtendedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarReporteExcelSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarReporteExcel" />
+  </wsdl:message>
+  <wsdl:message name="GenerarReporteExcelSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarReporteExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarReporteSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarReporte" />
+  </wsdl:message>
+  <wsdl:message name="GenerarReporteSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestEnlaceSoapIn">
+    <wsdl:part name="parameters" element="tns:TestEnlace" />
+  </wsdl:message>
+  <wsdl:message name="TestEnlaceSoapOut">
+    <wsdl:part name="parameters" element="tns:TestEnlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecetaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReceta" />
+  </wsdl:message>
+  <wsdl:message name="GetRecetaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecetaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecetaInformacionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecetaInformacion" />
+  </wsdl:message>
+  <wsdl:message name="GetRecetaInformacionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecetaInformacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsRecetarioSoap">
+    <wsdl:operation name="Informacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información.</wsdl:documentation>
+      <wsdl:input message="tns:InformacionSoapIn" />
+      <wsdl:output message="tns:InformacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSoapIn" />
+      <wsdl:output message="tns:ExecuteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExtended">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteExtendedSoapIn" />
+      <wsdl:output message="tns:ExecuteExtendedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporteExcel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Plantilla de reporte excel.</wsdl:documentation>
+      <wsdl:input message="tns:GenerarReporteExcelSoapIn" />
+      <wsdl:output message="tns:GenerarReporteExcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generar reporte.</wsdl:documentation>
+      <wsdl:input message="tns:GenerarReporteSoapIn" />
+      <wsdl:output message="tns:GenerarReporteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestEnlace">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Probar conexión.</wsdl:documentation>
+      <wsdl:input message="tns:TestEnlaceSoapIn" />
+      <wsdl:output message="tns:TestEnlaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información de receta electrónica.</wsdl:documentation>
+      <wsdl:input message="tns:GetRecetaSoapIn" />
+      <wsdl:output message="tns:GetRecetaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecetaInformacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtener información de receta electrónica.</wsdl:documentation>
+      <wsdl:input message="tns:GetRecetaInformacionSoapIn" />
+      <wsdl:output message="tns:GetRecetaInformacionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsRecetarioSoap" type="tns:wsRecetarioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Informacion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Informacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/Execute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExtended">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteExtended" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporteExcel">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/GenerarReporteExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporte">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/GenerarReporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestEnlace">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/TestEnlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceta">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/GetReceta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecetaInformacion">
+      <soap:operation soapAction="http://SC-Solutions/ServiciosWeb/GetRecetaInformacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsRecetarioSoap12" type="tns:wsRecetarioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Informacion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Informacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/Execute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteExtended">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/ExecuteExtended" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporteExcel">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/GenerarReporteExcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarReporte">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/GenerarReporte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestEnlace">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/TestEnlace" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceta">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/GetReceta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecetaInformacion">
+      <soap12:operation soapAction="http://SC-Solutions/ServiciosWeb/GetRecetaInformacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsRecetario">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Módulo recetario electrónico</wsdl:documentation>
+    <wsdl:port name="wsRecetarioSoap" binding="tns:wsRecetarioSoap">
+      <soap:address location="http://intermed.homeip.net/wsRecetario/wsRecetario.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsRecetarioSoap12" binding="tns:wsRecetarioSoap12">
+      <soap12:address location="http://intermed.homeip.net/wsRecetario/wsRecetario.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,218 @@
+* {
+	padding:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+#tableContenido {
+    width:100%;
+	height:100%;
+	padding:0px;
+	margin:auto;
+}
+fieldset {
+    width:95%;
+    height:95%;
+    padding:0px;
+    margin:auto;
+    border:solid 1px black;
+}
+#labelt {
+	font-family:"MS Serif", "New York", serif;
+	font-size:12px;
+	width:120px;
+	height:15px;
+	text-align:right;
+}
+#tdContenedor {
+    background-color:White;
+    margin:auto;
+    padding:0px;
+    }
+#tis {
+	background-image: url(../images/windows_01.png);
+	background-repeat: no-repeat;
+	width:20px;
+	height:41px;	
+}
+#tms {
+	background-image: url(../images/windows_04.png);
+	background-repeat:repeat-x;
+	text-align:center;
+	height:41px;
+}
+#tmsb {
+	background-image: url(../images/windows_05.png);
+	background-repeat: no-repeat;
+	width:43px;
+	height:41px;	
+}
+#tds {
+	background-image: url(../images/windows_07.png);
+	background-repeat: no-repeat;
+	width:20px;
+	height:41px;	
+}
+#tii {
+	background-image: url(../images/windows_16.png);
+	background-repeat: no-repeat;
+	width:20px;
+	height:25px;	
+}
+#tmi {
+	background-image: url(../images/windows_17.png);
+	background-repeat:repeat-x;
+}
+#tdi {
+	background-image: url(../images/windows_18.png);
+	background-repeat: no-repeat;
+	width:20px;
+	height:25px;	
+}
+#tim {
+	background-image:url(../images/windows_12.png);
+	background-repeat:repeat-y;
+}
+#tdm {
+	background-image:url(../images/windows_13.png);
+	background-repeat:repeat-y;
+}
+#title {
+	/*text-align:center;*/
+	text-align:left;
+}
+#Contenedor {
+    position: absolute; 
+    margin-top: -135px; 
+    margin-left: -260px; 
+    padding: 0px; 
+    width: 520px; 
+    height: 270px; 
+    top: 50%; 
+    left: 50%;
+}
+#txtPassword, #txtUsuario, #cboEstados {
+    width:95%;
+    height:21px;
+    margin-left:1px;
+}
+#btnAceptar {
+    width:116px;
+    height:21px;
+    margin-right:5%;
+}
+
+/*Menu*/
+
+/**/
+#tdContenedorb {
+    background-color:ActiveCaption;
+    margin:auto;
+    padding:0px;
+}
+#timb {
+	background-image:url(../images/windows_12.png);
+	background-repeat:repeat-y;
+}
+#tdmb {
+	background-image:url(../images/windows_13.png);
+	background-repeat:repeat-y;
+}
+/*Botones-Menu*/
+#ImgLimpiar {
+    padding:0px;
+    margin-left:5px;
+    margin-top:2px;
+}
+#ImgEjecutar {
+    padding:0px;
+    margin-left:5px;
+    margin-top:2px;
+}
+#ImgExportar {
+    padding:0px;
+    margin-left:5px;
+    margin-top:2px;
+}
+#ImgSeparador1 {
+    padding:0px;
+    margin-left:0px;
+    margin-top:2px;
+}
+#ImgSeparador2 {
+    padding:0px;
+    margin-left:0px;
+    margin-top:2px;
+}
+#ImgSeparador3 {
+    padding:0px;
+    margin-left:0px;
+    margin-top:2px;
+}
+#ImgSeparador4 {
+    padding:0px;
+    margin-left:0px;
+    margin-top:2px;
+}
+
+/*Otros*/
+legend {
+    margin-left:4px;
+    margin-right:4px;
+}
+.Labels {
+    text-align:right;
+    padding-right:5px;
+}
+
+/*Div Modal ejecutar*/
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:White;
+  display:none;
+}
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+#boxes #dialog {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+}
+#dialog .d-login {
+  float:right;
+  width:70px; 
+  height:54px;
+}
+#imageLoad {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+a { 
+    text-decoration:none
+}
+a:hover { 
+    text-decoration:none
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}

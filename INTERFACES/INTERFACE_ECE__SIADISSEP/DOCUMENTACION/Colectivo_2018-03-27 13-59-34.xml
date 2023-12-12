@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColectivoMedSol>
+	<Generales>
+		<idPeticion>CMS174</idPeticion>
+		<tipoPeticion>COLECTIVOMEDICAMENTOS</tipoPeticion>
+		<idColectivo>6</idColectivo>
+		<fechaHoraElaboracion>2018-03-27 13:59:30.315</fechaHoraElaboracion>
+		<servicio>EMER00101</servicio>
+		<unidadMedica>PLSSA009394</unidadMedica>
+	</Generales>
+	<Detalles>
+		<Medicamentos>
+			<Medicamento expediente="210930017307">
+				<nombrePaciente>PEDRO</nombrePaciente>
+				<apPaternoPaciente>DE LA LUZ</apPaternoPaciente>
+				<apMaternoPaciente>LOPEZ</apMaternoPaciente>
+				<camaPaciente>4</camaPaciente>
+				<fechaNacimientoPaciente>1990-01-15</fechaNacimientoPaciente>
+				<polizaPaciente/>
+				<vigenciaPolizaPaciente/>
+				<claveMed>010.000.0104.00</claveMed>
+				<descripcionMed>Paracetamol</descripcionMed>
+				<dosisMed>1 GRAMO</dosisMed>
+				<frecuenciaMed>CADA 8 HORAS</frecuenciaMed>
+				<duracionMed/>
+				<cantidadSolicitadaMed>15</cantidadSolicitadaMed>
+				<observacionesMed/>
+			</Medicamento>
+		</Medicamentos>
+		<Soluciones>
+			<Solucion expediente="210930017305">
+				<nombrePaciente>ROSA</nombrePaciente>
+				<apPaternoPaciente>VEDE</apPaternoPaciente>
+				<apMaternoPaciente>VALENCIA</apMaternoPaciente>
+				<camaPaciente>27</camaPaciente>
+				<fechaNacimientoPaciente>1998-02-05</fechaNacimientoPaciente>
+				<polizaPaciente/>
+				<vigenciaPolizaPaciente/>
+				<claveSol>010.000.3610.00</claveSol>
+				<descripcionSol>sodio Cloruro de </descripcionSol>
+				<dosisSol/>
+				<duracionSol>12 horas </duracionSol>
+				<cantidadSolicitadaSol>30</cantidadSolicitadaSol>
+				<observacionesSol/>
+			</Solucion>
+		</Soluciones>
+	</Detalles>
+</ColectivoMedSol>

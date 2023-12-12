@@ -1,0 +1,267 @@
+﻿body{
+    background: #eee;
+    background: #101010;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #333;
+}
+        
+#navBarraFrame {
+    background: #00632D;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    padding-left: 87px;
+    z-index: 9999;
+}
+        
+.menu-button {
+    position: absolute;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    speak: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #fff;
+    z-index: 1000;
+    top: 7px;
+    padding: 8px;
+}
+        
+.menu-button:hover {
+    background: #008A18;
+}
+        
+.container {
+    margin-top: 60px;
+    height: auto;
+    margin-right: auto;
+    width: 718px;
+    margin-left: auto;
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #242424;
+}
+        
+.Controls {
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    padding: 8px;
+    border: 1px solid #242424;
+    margin-bottom: 4px;
+    height: auto;
+}
+
+.Controls.cont  
+{
+    padding : 0px;
+    border: none;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+.Controls.left{        
+    width: 200px;
+    height: 500px;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.Controls div{
+    float: left;
+}
+        
+.Controls .Groups{
+    margin-right: 8px;
+    padding: 8px;
+    border: 1px solid #242424;
+    min-width: 150px;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.labelGporight {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    padding: 0px 7px;
+    font-size: 12px;
+    background-color: #00632d;
+    border-radius: 0px 0px 4px 0px;
+    border: 1px solid #242424;
+    color: #fff;
+}
+
+.labelGpoleft {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 0px 7px;
+    font-size: 12px;
+    background-color: #00632d;
+    border-radius: 0px 0px 4px 0px;
+    border: 1px solid #242424;
+    color: #fff;
+}
+
+.MsjBottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #00632d;
+    left: 0px;
+    height: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+.NoBorderRadius{       
+    border-radius: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.BorderRadius{       
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.Results {
+    width: 700px;
+    height: 300px;
+    padding: 8px;
+    padding-top: 16px;
+    border: 1px solid #242424;
+    position: relative;
+    overflow: hidden;
+}
+        
+.Results.left {
+    width: 474px;
+    height: 500px;
+    float: left;
+}
+
+#Exec {
+    left: 127px;
+}
+        
+#Print, #Exportar {
+    left: 167px;
+}
+        
+.clear {
+    clear: both;
+}
+        
+.Controls .Radio {
+    margin-right: 8px;
+    border-radius: 5px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    min-width: 178px;
+    width: auto;
+}
+
+.Controls .Radio.Center {
+    text-align: center;
+}
+
+.Controls .Radio.Center input[type="radio"].m-wrap{
+    float:none;
+}
+
+.Controls .Textbox .Unique {
+    margin-right: 8px;
+    border-radius: 5px;
+    padding-bottom: 28px;
+    min-width: 150px;
+    width: auto;
+}
+        
+.Controls .Combo {
+    margin-right: 8px;
+    border-radius: 5px;
+    min-width: 150px;
+    width: auto;
+}
+
+.Controls .Combo .Unique {
+    margin-right: 8px;
+    border-radius: 5px;
+    min-width: 150px;
+    width: auto;
+}
+        
+.m-input-prepend .add-on {
+    width: 80px;
+    background: #FFF;
+    border: none;
+    text-align: right;
+}
+
+#ui-datepicker-div {
+    background: #eee;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #333;
+}
+
+.label {
+    background-color: #f5f5f5;
+    padding: 4px;
+    text-align: center;
+    width: 82px;
+    height: 21px;
+}
+
+/*Help*/
+#Caja, .caja {
+    border: 4px solid #BDC1C6 !Important;
+}
+
+#nvahelp {
+    background-color: #00632D !Important;
+}
+
+.Max{
+    position: fixed !Important;
+    width: 80% !Important;
+    height: 80% !Important;
+    top: 50% !Important;
+    left: 50% !Important;
+    transform: translate(-50%, -50%) !Important;
+    background-color: #fff !Important;
+    border: 4px solid #00632d !Important;
+    box-shadow: 10px 10px 5px #888888 !Important;
+}
+
+.return
+{
+    position: absolute;
+    cursor: pointer;
+    top: -1px;
+    right: -1px;
+    padding: 0px 7px;
+    font-size: 12px;
+    background-color: #00632d;
+    border-radius: 0px 0px 0px 4px;
+    border: 1px solid #242424;
+    color: #fff;
+}

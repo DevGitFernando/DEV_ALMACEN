@@ -1,0 +1,1685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DllFarmaciaSoft</RootNamespace>
+    <AssemblyName>DllFarmaciaSoft</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DllFarmaciaSoft.snk</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>capsule.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.4.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_CompressLib, Version=4.0.4.0, Culture=neutral, PublicKeyToken=fac9ea0d48dbaeab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_ControlsCS, Version=4.0.1.0, Culture=neutral, PublicKeyToken=e7a523b603173679, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem, Version=4.0.5.0, Culture=neutral, PublicKeyToken=a50c66deebb893df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Almacen\clsGeneral.cs" />
+    <Compile Include="App_Almacen\clsLogin.cs" />
+    <Compile Include="Auditoria\clsAuditoria.cs" />
+    <Compile Include="Ayudas\FrmHelpBeneficiarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayudas\FrmHelpBeneficiarios.Designer.cs">
+      <DependentUpon>FrmHelpBeneficiarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CB_Perfiles\FrmCB_Perfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CB_Perfiles\FrmCB_Perfiles.Designer.cs">
+      <DependentUpon>FrmCB_Perfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsInformacionEmpresa.cs" />
+    <Compile Include="Configuracion\clsNodo_CuadroBasico.cs" />
+    <Compile Include="IntercambioCartaCanje\clsDescargarCartaCanje.cs" />
+    <Compile Include="IntercambioCartaCanje\clsGetCartaCanje.cs" />
+    <Compile Include="IntercambioCartaCanje\FrmDescargarCartaCanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntercambioCartaCanje\FrmDescargarCartaCanje.Designer.cs">
+      <DependentUpon>FrmDescargarCartaCanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\clsLotes.cs" />
+    <Compile Include="Lotes\clsSKU.cs" />
+    <Compile Include="OrdenesDeCompra\clsAddListaArchivos.cs" />
+    <Compile Include="OrdenesDeCompra\FrmAddArchivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmAddArchivos.Designer.cs">
+      <DependentUpon>FrmAddArchivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra_PreRecepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra_PreRecepcion.Designer.cs">
+      <DependentUpon>FrmOrdenesDeCompra_PreRecepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra_Documentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra_Documentacion.Designer.cs">
+      <DependentUpon>FrmOrdenesDeCompra_Documentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo_Compilacion.cs" />
+    <Compile Include="Properties\AssemblyInfo_Version.cs" />
+    <Compile Include="ReporteadorGenerico\Frm_RptListaGenerica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteadorGenerico\Frm_RptListaGenerica.Designer.cs">
+      <DependentUpon>Frm_RptListaGenerica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesGerenciales\FrmRptGN_ExistenciasValorizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesGerenciales\FrmRptGN_ExistenciasValorizadas.Designer.cs">
+      <DependentUpon>FrmRptGN_ExistenciasValorizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sesion.cs" />
+    <Compile Include="CodificacionDM\clsCodificacionSNK.cs" />
+    <Compile Include="CodificacionDM\FrmDecodificacionSNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodificacionDM\FrmDecodificacionSNK.Designer.cs">
+      <DependentUpon>FrmDecodificacionSNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodificacionDM\FrmCodificacionSNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodificacionDM\FrmCodificacionSNK.Designer.cs">
+      <DependentUpon>FrmCodificacionSNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodificacionDM\FrmLotesSNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodificacionDM\FrmLotesSNK.Designer.cs">
+      <DependentUpon>FrmLotesSNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodificacionDM\FrmLotesSubFarmacias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodificacionDM\FrmLotesSubFarmacias.Designer.cs">
+      <DependentUpon>FrmLotesSubFarmacias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracionRegional.cs" />
+    <Compile Include="Configuracion\FrmProductosSelectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\FrmProductosSelectos.Designer.cs">
+      <DependentUpon>FrmProductosSelectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\clsConsultas_RFID.cs" />
+    <Compile Include="Consultas\clsRPT_Parametros.cs" />
+    <Compile Include="Consultas\FrmRevisarClaveSSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmRevisarClaveSSA.Designer.cs">
+      <DependentUpon>FrmRevisarClaveSSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FrmRPT_Parametros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmRPT_Parametros.Designer.cs">
+      <DependentUpon>FrmRPT_Parametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CURP\CURP.cs" />
+    <Compile Include="Devoluciones\clsMotivosDevoluciones.cs" />
+    <Compile Include="Devoluciones\FrmListadoMotivosDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devoluciones\FrmListadoMotivosDev.Designer.cs">
+      <DependentUpon>FrmListadoMotivosDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devoluciones\FrmMotivosDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devoluciones\FrmMotivosDevoluciones.Designer.cs">
+      <DependentUpon>FrmMotivosDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Digitalizacion\FrmDigitalizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Digitalizacion\FrmDigitalizar.Designer.cs">
+      <DependentUpon>FrmDigitalizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportarExcel\clsGenerarExcel.cs" />
+    <Compile Include="GetInformacionManual\FrmDescargarImagenesDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetInformacionManual\FrmDescargarImagenesDeProductos.Designer.cs">
+      <DependentUpon>FrmDescargarImagenesDeProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmIntegrarInventario_Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmIntegrarInventario_Inicial.Designer.cs">
+      <DependentUpon>FrmIntegrarInventario_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimitesConsumoClaves\FrmDescargarProgramacionConsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimitesConsumoClaves\FrmDescargarProgramacionConsumos.Designer.cs">
+      <DependentUpon>FrmDescargarProgramacionConsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimitesConsumoClaves\FrmProgramacion_Dispensacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimitesConsumoClaves\FrmProgramacion_Dispensacion.Designer.cs">
+      <DependentUpon>FrmProgramacion_Dispensacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmMensajeCaptura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmMensajeCaptura.Designer.cs">
+      <DependentUpon>FrmMensajeCaptura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\clsCheckListRecepcionProveedor.cs" />
+    <Compile Include="OrdenesDeCompra\FrmCatGruposRecepcionProv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCatGruposRecepcionProv.Designer.cs">
+      <DependentUpon>FrmCatGruposRecepcionProv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCatRechazos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCatRechazos.Designer.cs">
+      <DependentUpon>FrmCatRechazos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCheckListRecepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCheckListRecepcion.Designer.cs">
+      <DependentUpon>FrmCheckListRecepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCheckListRecepcionProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCheckListRecepcionProveedor.Designer.cs">
+      <DependentUpon>FrmCheckListRecepcionProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmRechazosRecepcionOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmRechazosRecepcionOC.Designer.cs">
+      <DependentUpon>FrmRechazosRecepcionOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\iTextSharpUtil.cs" />
+    <Compile Include="Productos\FrmProductos_AgregarImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\FrmProductos_AgregarImagenes.Designer.cs">
+      <DependentUpon>FrmProductos_AgregarImagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\FrmProducto_KarruselImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\FrmProducto_KarruselImagenes.Designer.cs">
+      <DependentUpon>FrmProducto_KarruselImagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\FrmDescargarImagenesDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\FrmDescargarImagenesDeProductos.Designer.cs">
+      <DependentUpon>FrmDescargarImagenesDeProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\FrmZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\FrmZoom.Designer.cs">
+      <DependentUpon>FrmZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexClavesLibres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexClavesLibres.Designer.cs">
+      <DependentUpon>FrmKardexClavesLibres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexControladosAntibioticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexControladosAntibioticos.Designer.cs">
+      <DependentUpon>FrmKardexControladosAntibioticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmRegistrosSanitariosReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmRegistrosSanitariosReporte.Designer.cs">
+      <DependentUpon>FrmRegistrosSanitariosReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devoluciones\FrmDevoluciones_VerificarCantidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devoluciones\FrmDevoluciones_VerificarCantidades.Designer.cs">
+      <DependentUpon>FrmDevoluciones_VerificarCantidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteadorCEDIS_VentasDetalladas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteadorCEDIS_VentasDetalladas.Designer.cs">
+      <DependentUpon>FrmReporteadorCEDIS_VentasDetalladas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteadorCEDIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteadorCEDIS.Designer.cs">
+      <DependentUpon>FrmReporteadorCEDIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmConfigImpresionVentaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmConfigImpresionVentaDetalle.Designer.cs">
+      <DependentUpon>FrmConfigImpresionVentaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteadorValidaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteadorValidaciones.Designer.cs">
+      <DependentUpon>FrmReporteadorValidaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteListadoCteProgramasVenta_Unidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteListadoCteProgramasVenta_Unidad.Designer.cs">
+      <DependentUpon>FrmReporteListadoCteProgramasVenta_Unidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmListadoCierresFacturacionUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmListadoCierresFacturacionUnidad.Designer.cs">
+      <DependentUpon>FrmListadoCierresFacturacionUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmListadoCierresFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmListadoCierresFacturacion.Designer.cs">
+      <DependentUpon>FrmListadoCierresFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmCierrePeriodoCentral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmCierrePeriodoCentral.Designer.cs">
+      <DependentUpon>FrmCierrePeriodoCentral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\clsLeerWeb.cs" />
+    <Compile Include="Clases\clsLeerWebExt.cs" />
+    <Compile Include="DtGeneral.cs" />
+    <Compile Include="Conexiones\clsConexionClienteUnidad.cs" />
+    <Compile Include="Devoluciones\FrmDevolucionesImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devoluciones\FrmDevolucionesImpresion.Designer.cs">
+      <DependentUpon>FrmDevolucionesImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimitesConsumoClaves\clsVerificarCantSubPerfil.cs" />
+    <Compile Include="LimitesConsumoClaves\FrmClavesCantidadesExcedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimitesConsumoClaves\FrmClavesCantidadesExcedidas.Designer.cs">
+      <DependentUpon>FrmClavesCantidadesExcedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\clsSubFarmacias.cs" />
+    <Compile Include="Lotes\FrmMtto_LotesConsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmMtto_LotesConsignacion.Designer.cs">
+      <DependentUpon>FrmMtto_LotesConsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra_PorRecibir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra_PorRecibir.Designer.cs">
+      <DependentUpon>FrmOrdenesDeCompra_PorRecibir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\clsCodigoEAN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Procesos\FrmFechaSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FrmFechaSistema.Designer.cs">
+      <DependentUpon>FrmFechaSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FrmRImpresionCorteDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FrmRImpresionCorteDiario.Designer.cs">
+      <DependentUpon>FrmRImpresionCorteDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FrmRImpresionCorteParcial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FrmRImpresionCorteParcial.Designer.cs">
+      <DependentUpon>FrmRImpresionCorteParcial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_OperacionDelDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_OperacionDelDia.Designer.cs">
+      <DependentUpon>FrmRptOP_OperacionDelDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmExistenciaAUnaFechaControladoAntibiotico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmExistenciaAUnaFechaControladoAntibiotico.Designer.cs">
+      <DependentUpon>FrmExistenciaAUnaFechaControladoAntibiotico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SesionDeUsuarios\FrmCerrarSesionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesionDeUsuarios\FrmCerrarSesionUsuario.Designer.cs">
+      <DependentUpon>FrmCerrarSesionUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosEncabezadoReportesValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosEncabezadoReportesValidacion.Designer.cs">
+      <DependentUpon>FrmTitulosEncabezadoReportesValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosEncabezadosListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosEncabezadosListado.Designer.cs">
+      <DependentUpon>FrmTitulosEncabezadosListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosEncabezados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosEncabezados.Designer.cs">
+      <DependentUpon>FrmTitulosEncabezados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosBeneficiarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosBeneficiarios.Designer.cs">
+      <DependentUpon>FrmTitulosBeneficiarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosBeneficiariosListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitulosValidacion\FrmTitulosBeneficiariosListado.Designer.cs">
+      <DependentUpon>FrmTitulosBeneficiariosListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GnFarmacia.cs" />
+    <Compile Include="GnInventarios.cs" />
+    <Compile Include="GnOficinaCentral.cs" />
+    <Compile Include="Inventario\FrmIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmIncidencias.Designer.cs">
+      <DependentUpon>FrmIncidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmIntegrarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmIntegrarInventario.Designer.cs">
+      <DependentUpon>FrmIntegrarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmIntegrarInventario_Externo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmIntegrarInventario_Externo.Designer.cs">
+      <DependentUpon>FrmIntegrarInventario_Externo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\clsLotesExt.cs" />
+    <Compile Include="Lotes\clsLotesUbicaciones.cs" />
+    <Compile Include="Lotes\clsLotes_Reubicaciones.cs" />
+    <Compile Include="Lotes\clsLotes_Reubicaciones_Destino.cs" />
+    <Compile Include="Lotes\clsValidarLote.cs" />
+    <Compile Include="Lotes\FrmCaptura_LotesUbicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmCaptura_LotesUbicaciones.Designer.cs">
+      <DependentUpon>FrmCaptura_LotesUbicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmLotes_Reubicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmLotes_Reubicaciones.Designer.cs">
+      <DependentUpon>FrmLotes_Reubicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmLotes_Reubicaciones_Destino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmLotes_Reubicaciones_Destino.Designer.cs">
+      <DependentUpon>FrmLotes_Reubicaciones_Destino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmModificarCaducidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmModificarCaducidades.Designer.cs">
+      <DependentUpon>FrmModificarCaducidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmProductosConDiferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmProductosConDiferencias.Designer.cs">
+      <DependentUpon>FrmProductosConDiferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmRevisarCodigosEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmRevisarCodigosEAN.Designer.cs">
+      <DependentUpon>FrmRevisarCodigosEAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\clsVerificarSalidaLotes.cs">
+    </Compile>
+    <Compile Include="Facturacion\FrmCierrePeriodoUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmCierrePeriodoUnidad.Designer.cs">
+      <DependentUpon>FrmCierrePeriodoUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmVerificarSalidaLotes_Farmacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmVerificarSalidaLotes_Farmacia.Designer.cs">
+      <DependentUpon>FrmVerificarSalidaLotes_Farmacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmVerificarSalidaLotes_Almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmVerificarSalidaLotes_Almacen.Designer.cs">
+      <DependentUpon>FrmVerificarSalidaLotes_Almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmVerificarIngresosOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmVerificarIngresosOrdenDeCompra.Designer.cs">
+      <DependentUpon>FrmVerificarIngresosOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\clsGetPedidos.cs" />
+    <Compile Include="ReportesOperacion\FrmRptOP_AuditorMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_AuditorMovimientos.Designer.cs">
+      <DependentUpon>FrmRptOP_AuditorMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_ComprasDirectas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_ComprasDirectas.Designer.cs">
+      <DependentUpon>FrmRptOP_ComprasDirectas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_EntradasConsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_EntradasConsignacion.Designer.cs">
+      <DependentUpon>FrmRptOP_EntradasConsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_MovimientosPorMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_MovimientosPorMes.Designer.cs">
+      <DependentUpon>FrmRptOP_MovimientosPorMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_Ventas.Designer.cs">
+      <DependentUpon>FrmRptOP_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_Transferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_Transferencias.Designer.cs">
+      <DependentUpon>FrmRptOP_Transferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_OrdenesDeCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesOperacion\FrmRptOP_OrdenesDeCompras.Designer.cs">
+      <DependentUpon>FrmRptOP_OrdenesDeCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaOperativo\clsVersionesTeamViewer.cs" />
+    <Compile Include="SistemaOperativo\FrmInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SistemaOperativo\FrmInformacion.Designer.cs">
+      <DependentUpon>FrmInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\clsOperacionesSupervizadasHuellas.cs" />
+    <Compile Include="Usuarios_y_Permisos\FrmRpt_MatrizPermisosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmRpt_MatrizPermisosUsuario.Designer.cs">
+      <DependentUpon>FrmRpt_MatrizPermisosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmRpt_MatrizPermisosGenerales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmRpt_MatrizPermisosGenerales.Designer.cs">
+      <DependentUpon>FrmRpt_MatrizPermisosGenerales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmSeleccionarConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmSeleccionarConexion.Designer.cs">
+      <DependentUpon>FrmSeleccionarConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vales\FrmValesExcepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales\FrmValesExcepcion.Designer.cs">
+      <DependentUpon>FrmValesExcepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\clsImprimirVentas.cs" />
+    <Compile Include="Web References\wsHuellas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ComprasDirectas\FrmListadoComprasDirectas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\ComprasDirectas\FrmListadoComprasDirectas.Designer.cs">
+      <DependentUpon>FrmListadoComprasDirectas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\OrdenesDeCompras\FrmListadoOrdenesCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\OrdenesDeCompras\FrmListadoOrdenesCompras.Designer.cs">
+      <DependentUpon>FrmListadoOrdenesCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\OrdenesDeCompras\FrmListadoOrdenesCompras_ClaveSSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\OrdenesDeCompras\FrmListadoOrdenesCompras_ClaveSSA.Designer.cs">
+      <DependentUpon>FrmListadoOrdenesCompras_ClaveSSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\OrdenesDeCompras\FrmOrdenesDeComprasUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\OrdenesDeCompras\FrmOrdenesDeComprasUnidad.Designer.cs">
+      <DependentUpon>FrmOrdenesDeComprasUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\clsDescargarOrdenDeCompra.cs" />
+    <Compile Include="OrdenesDeCompra\clsVerificarCantidadesOC.cs" />
+    <Compile Include="OrdenesDeCompra\FrmFoliosOrdenesCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmFoliosOrdenesCompras.Designer.cs">
+      <DependentUpon>FrmFoliosOrdenesCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompra.Designer.cs">
+      <DependentUpon>FrmOrdenesDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmDescargarOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmDescargarOC.Designer.cs">
+      <DependentUpon>FrmDescargarOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompraDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeCompraDevoluciones.Designer.cs">
+      <DependentUpon>FrmOrdenesDeCompraDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmProductosCantidadesExcedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmProductosCantidadesExcedidas.Designer.cs">
+      <DependentUpon>FrmProductosCantidadesExcedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\clsParametrosProveedores.cs" />
+    <Compile Include="Proveedores\FrmParametrosProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\FrmParametrosProveedores.Designer.cs">
+      <DependentUpon>FrmParametrosProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporteador\clsReporteador.cs" />
+    <Compile Include="Reporteador\clsReporteadorExcel.cs" />
+    <Compile Include="Reporteador\FrmReporteadorExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporteador\FrmReporteadorExcel.Designer.cs">
+      <DependentUpon>FrmReporteadorExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporteador\FrmReporteador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporteador\FrmReporteador.Designer.cs">
+      <DependentUpon>FrmReporteador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexControladosAntibioticosCentral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexControladosAntibioticosCentral.Designer.cs">
+      <DependentUpon>FrmKardexControladosAntibioticosCentral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmListadoProductosAntibioticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmListadoProductosAntibioticos.Designer.cs">
+      <DependentUpon>FrmListadoProductosAntibioticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmListadoProductosControlados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmListadoProductosControlados.Designer.cs">
+      <DependentUpon>FrmListadoProductosControlados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmReportesMovtosGralControlados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmReportesMovtosGralControlados.Designer.cs">
+      <DependentUpon>FrmReportesMovtosGralControlados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmListaDeSubFarmacias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmListaDeSubFarmacias.Designer.cs">
+      <DependentUpon>FrmListaDeSubFarmacias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexDetallado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesQFB\FrmKardexDetallado.Designer.cs">
+      <DependentUpon>FrmKardexDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmUbicacionesVacias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\FrmUbicacionesVacias.Designer.cs">
+      <DependentUpon>FrmUbicacionesVacias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmUsuariosPasswordsStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmUsuariosPasswordsStandard.Designer.cs">
+      <DependentUpon>FrmUsuariosPasswordsStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_GruposPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_GruposPermisos.Designer.cs">
+      <DependentUpon>Frm_Ctes_GruposPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_GruposUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_GruposUsuarios.Designer.cs">
+      <DependentUpon>Frm_Ctes_GruposUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_Grupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_Grupos.Designer.cs">
+      <DependentUpon>Frm_Ctes_Grupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FrmReporteVentasContado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\FrmReporteVentasContado.Designer.cs">
+      <DependentUpon>FrmReporteVentasContado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsFarmaciaSoftGn\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsOficinaCentral\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Compras\FrmComprasDeFarmacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\Compras\FrmComprasDeFarmacia.Designer.cs">
+      <DependentUpon>FrmComprasDeFarmacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Compras\FrmListadoComprasFarmacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\Compras\FrmListadoComprasFarmacia.Designer.cs">
+      <DependentUpon>FrmListadoComprasFarmacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_UsuariosRegional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_UsuariosRegional.Designer.cs">
+      <DependentUpon>Frm_Ctes_UsuariosRegional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_Usuarios.Designer.cs">
+      <DependentUpon>Frm_Ctes_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\clsAyudas.cs" />
+    <Compile Include="Consultas\clsConsultas.cs" />
+    <Compile Include="Consultas\FrmListaUnidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmListaUnidades.Designer.cs">
+      <DependentUpon>FrmListaUnidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetInformacionManual\FrmGruposDeInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetInformacionManual\FrmGruposDeInformacion.Designer.cs">
+      <DependentUpon>FrmGruposDeInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\FrmMtto_Lotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmMtto_Lotes.Designer.cs">
+      <DependentUpon>FrmMtto_Lotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Transferencias\FrmTransferenciaSalidasFarmacias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\Transferencias\FrmTransferenciaSalidasFarmacias.Designer.cs">
+      <DependentUpon>FrmTransferenciaSalidasFarmacias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wsCnnAlmacenApp.cs" />
+    <Compile Include="wsUpdater.cs" />
+    <Compile Include="Facturacion\FrmReporteListadoCteProgramasVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmReporteListadoCteProgramasVenta.Designer.cs">
+      <DependentUpon>FrmReporteListadoCteProgramasVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FrmReportesFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FrmReportesFacturacion.Designer.cs">
+      <DependentUpon>FrmReportesFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmListadoFarmacias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmListadoFarmacias.Designer.cs">
+      <DependentUpon>FrmListadoFarmacias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\clsGetOrdenDeCompra.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\FrmCfgAccesoProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\FrmCfgAccesoProveedores.Designer.cs">
+      <DependentUpon>FrmCfgAccesoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistenciasCodigoEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistenciasCodigoEAN.Designer.cs">
+      <DependentUpon>FrmConsultarExistenciasCodigoEAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistenciasGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistenciasGeneral.Designer.cs">
+      <DependentUpon>FrmConsultarExistenciasGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsFarmacia\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="wsCnnInformacion.cs" />
+    <Compile Include="wsCnnProveedores.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\clsOperacionesSupervizadas.cs" />
+    <Compile Include="Usuarios_y_Permisos\FrmOperacionSupervizada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmOperacionSupervizada.Designer.cs">
+      <DependentUpon>FrmOperacionSupervizada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes\clsProducto.cs" />
+    <Compile Include="Lotes\FrmCapturaLotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes\FrmCapturaLotes.Designer.cs">
+      <DependentUpon>FrmCapturaLotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\clsParametrosPtoVta.cs" />
+    <Compile Include="Parametros\clsParametrosOficinaCentral.cs" />
+    <Compile Include="Devoluciones\clsDevoluciones.cs" />
+    <Compile Include="Usuarios_y_Permisos\clsEdoFileConfig.cs" />
+    <Compile Include="Usuarios_y_Permisos\clsEdoIniManager.cs" />
+    <Compile Include="Usuarios_y_Permisos\clsEdoLogin.cs" />
+    <Compile Include="Usuarios_y_Permisos\clsInfoUsuario.cs" />
+    <Compile Include="Usuarios_y_Permisos\FrmCambiarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmCambiarPassword.Designer.cs">
+      <DependentUpon>FrmCambiarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmEdoConect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmEdoConect.Designer.cs">
+      <DependentUpon>FrmEdoConect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmEdoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmEdoLogin.Designer.cs">
+      <DependentUpon>FrmEdoLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmFileConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmFileConfig.Designer.cs">
+      <DependentUpon>FrmFileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmFileConfigXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmFileConfigXml.Designer.cs">
+      <DependentUpon>FrmFileConfigXml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmGrupos.Designer.cs">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmGruposPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmGruposPermisos.Designer.cs">
+      <DependentUpon>FrmGruposPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmGruposUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmGruposUsuarios.Designer.cs">
+      <DependentUpon>FrmGruposUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmPersonal.Designer.cs">
+      <DependentUpon>FrmPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_y_Permisos\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistencias.Designer.cs">
+      <DependentUpon>FrmConsultarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistenciasEnFarmacias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\FrmConsultarExistenciasEnFarmacias.Designer.cs">
+      <DependentUpon>FrmConsultarExistenciasEnFarmacias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\FrmExecWebService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\FrmExecWebService.Designer.cs">
+      <DependentUpon>FrmExecWebService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wsCnnCompras.cs" />
+    <Compile Include="wsConexion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\INTERFACES_ROBOTS\DllRobotDispensador\DllRobotDispensador.csproj">
+      <Project>{5f0856e1-f20c-4a5d-ba3c-6069889f216d}</Project>
+      <Name>DllRobotDispensador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SC_SolutionsSystem.FP\SC_SolutionsSystem.FP.csproj">
+      <Project>{A3C3081A-24BD-4E3D-A6F4-4949A7D415CB}</Project>
+      <Name>SC_SolutionsSystem.FP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SC_SolutionsSystem.ZXing20\SC_SolutionsSystem.ZXing20.csproj">
+      <Project>{DB866CDE-02C4-4E5B-9C41-C7F0A5F487D6}</Project>
+      <Name>SC_SolutionsSystem.ZXing20</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ayudas\FrmHelpBeneficiarios.resx">
+      <DependentUpon>FrmHelpBeneficiarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CB_Perfiles\FrmCB_Perfiles.resx">
+      <DependentUpon>FrmCB_Perfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodificacionDM\FrmDecodificacionSNK.resx">
+      <DependentUpon>FrmDecodificacionSNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodificacionDM\FrmCodificacionSNK.resx">
+      <DependentUpon>FrmCodificacionSNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodificacionDM\FrmLotesSNK.resx">
+      <DependentUpon>FrmLotesSNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodificacionDM\FrmLotesSubFarmacias.resx">
+      <DependentUpon>FrmLotesSubFarmacias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\FrmProductosSelectos.resx">
+      <DependentUpon>FrmProductosSelectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmRevisarClaveSSA.resx">
+      <DependentUpon>FrmRevisarClaveSSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmRPT_Parametros.resx">
+      <DependentUpon>FrmRPT_Parametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devoluciones\FrmListadoMotivosDev.resx">
+      <DependentUpon>FrmListadoMotivosDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devoluciones\FrmMotivosDevoluciones.resx">
+      <DependentUpon>FrmMotivosDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Digitalizacion\FrmDigitalizar.resx">
+      <DependentUpon>FrmDigitalizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetInformacionManual\FrmDescargarImagenesDeProductos.resx">
+      <DependentUpon>FrmDescargarImagenesDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntercambioCartaCanje\FrmDescargarCartaCanje.resx">
+      <DependentUpon>FrmDescargarCartaCanje.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmIntegrarInventario_Inicial.resx">
+      <DependentUpon>FrmIntegrarInventario_Inicial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimitesConsumoClaves\FrmDescargarProgramacionConsumos.resx">
+      <DependentUpon>FrmDescargarProgramacionConsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimitesConsumoClaves\FrmProgramacion_Dispensacion.resx">
+      <DependentUpon>FrmProgramacion_Dispensacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmMensajeCaptura.resx">
+      <DependentUpon>FrmMensajeCaptura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmAddArchivos.resx">
+      <DependentUpon>FrmAddArchivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmCatGruposRecepcionProv.resx">
+      <DependentUpon>FrmCatGruposRecepcionProv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmCatRechazos.resx">
+      <DependentUpon>FrmCatRechazos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmCheckListRecepcion.resx">
+      <DependentUpon>FrmCheckListRecepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmCheckListRecepcionProveedor.resx">
+      <DependentUpon>FrmCheckListRecepcionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenesDeCompra_PreRecepcion.resx">
+      <DependentUpon>FrmOrdenesDeCompra_PreRecepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenesDeCompra_Documentacion.resx">
+      <DependentUpon>FrmOrdenesDeCompra_Documentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmRechazosRecepcionOC.resx">
+      <DependentUpon>FrmRechazosRecepcionOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\FrmProductos_AgregarImagenes.resx">
+      <DependentUpon>FrmProductos_AgregarImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\FrmProducto_KarruselImagenes.resx">
+      <DependentUpon>FrmProducto_KarruselImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\FrmDescargarImagenesDeProductos.resx">
+      <DependentUpon>FrmDescargarImagenesDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\FrmZoom.resx">
+      <DependentUpon>FrmZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteadorGenerico\Frm_RptListaGenerica.resx">
+      <DependentUpon>Frm_RptListaGenerica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesGerenciales\FrmRptGN_ExistenciasValorizadas.resx">
+      <DependentUpon>FrmRptGN_ExistenciasValorizadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesQFB\FrmRegistrosSanitariosReporte.resx">
+      <DependentUpon>FrmRegistrosSanitariosReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devoluciones\FrmDevoluciones_VerificarCantidades.resx">
+      <DependentUpon>FrmDevoluciones_VerificarCantidades.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmReporteadorCEDIS_VentasDetalladas.resx">
+      <DependentUpon>FrmReporteadorCEDIS_VentasDetalladas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmReporteadorCEDIS.resx">
+      <DependentUpon>FrmReporteadorCEDIS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmConfigImpresionVentaDetalle.resx">
+      <DependentUpon>FrmConfigImpresionVentaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmReporteadorValidaciones.resx">
+      <DependentUpon>FrmReporteadorValidaciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmReporteListadoCteProgramasVenta_Unidad.resx">
+      <DependentUpon>FrmReporteListadoCteProgramasVenta_Unidad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmListadoCierresFacturacionUnidad.resx">
+      <DependentUpon>FrmListadoCierresFacturacionUnidad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmListadoCierresFacturacion.resx">
+      <DependentUpon>FrmListadoCierresFacturacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmCierrePeriodoCentral.resx">
+      <DependentUpon>FrmCierrePeriodoCentral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devoluciones\FrmDevolucionesImpresion.resx">
+      <DependentUpon>FrmDevolucionesImpresion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimitesConsumoClaves\FrmClavesCantidadesExcedidas.resx">
+      <DependentUpon>FrmClavesCantidadesExcedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmMtto_LotesConsignacion.resx">
+      <DependentUpon>FrmMtto_LotesConsignacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenesDeCompra_PorRecibir.resx">
+      <DependentUpon>FrmOrdenesDeCompra_PorRecibir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FrmFechaSistema.resx">
+      <DependentUpon>FrmFechaSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FrmRImpresionCorteDiario.resx">
+      <DependentUpon>FrmRImpresionCorteDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FrmRImpresionCorteParcial.resx">
+      <DependentUpon>FrmRImpresionCorteParcial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_OperacionDelDia.resx">
+      <DependentUpon>FrmRptOP_OperacionDelDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesQFB\FrmExistenciaAUnaFechaControladoAntibiotico.resx">
+      <DependentUpon>FrmExistenciaAUnaFechaControladoAntibiotico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesionDeUsuarios\FrmCerrarSesionUsuario.resx">
+      <DependentUpon>FrmCerrarSesionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitulosValidacion\FrmTitulosEncabezadoReportesValidacion.resx">
+      <DependentUpon>FrmTitulosEncabezadoReportesValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitulosValidacion\FrmTitulosEncabezadosListado.resx">
+      <DependentUpon>FrmTitulosEncabezadosListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitulosValidacion\FrmTitulosEncabezados.resx">
+      <DependentUpon>FrmTitulosEncabezados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitulosValidacion\FrmTitulosBeneficiarios.resx">
+      <DependentUpon>FrmTitulosBeneficiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitulosValidacion\FrmTitulosBeneficiariosListado.resx">
+      <DependentUpon>FrmTitulosBeneficiariosListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmIncidencias.resx">
+      <DependentUpon>FrmIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmIntegrarInventario.resx">
+      <DependentUpon>FrmIntegrarInventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmIntegrarInventario_Externo.resx">
+      <DependentUpon>FrmIntegrarInventario_Externo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmCaptura_LotesUbicaciones.resx">
+      <DependentUpon>FrmCaptura_LotesUbicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmLotes_Reubicaciones.resx">
+      <DependentUpon>FrmLotes_Reubicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmLotes_Reubicaciones_Destino.resx">
+      <DependentUpon>FrmLotes_Reubicaciones_Destino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmModificarCaducidades.resx">
+      <DependentUpon>FrmModificarCaducidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmProductosConDiferencias.resx">
+      <DependentUpon>FrmProductosConDiferencias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmRevisarCodigosEAN.resx">
+      <DependentUpon>FrmRevisarCodigosEAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmCierrePeriodoUnidad.resx">
+      <DependentUpon>FrmCierrePeriodoUnidad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmVerificarSalidaLotes_Farmacia.resx">
+      <DependentUpon>FrmVerificarSalidaLotes_Farmacia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmVerificarSalidaLotes_Almacen.resx">
+      <DependentUpon>FrmVerificarSalidaLotes_Almacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmVerificarIngresosOrdenDeCompra.resx">
+      <DependentUpon>FrmVerificarIngresosOrdenDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_AuditorMovimientos.resx">
+      <DependentUpon>FrmRptOP_AuditorMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_ComprasDirectas.resx">
+      <DependentUpon>FrmRptOP_ComprasDirectas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_EntradasConsignacion.resx">
+      <DependentUpon>FrmRptOP_EntradasConsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_MovimientosPorMes.resx">
+      <DependentUpon>FrmRptOP_MovimientosPorMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_Ventas.resx">
+      <DependentUpon>FrmRptOP_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_Transferencias.resx">
+      <DependentUpon>FrmRptOP_Transferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesOperacion\FrmRptOP_OrdenesDeCompras.resx">
+      <DependentUpon>FrmRptOP_OrdenesDeCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SistemaOperativo\FrmInformacion.resx">
+      <DependentUpon>FrmInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmRpt_MatrizPermisosUsuario.resx">
+      <DependentUpon>FrmRpt_MatrizPermisosUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmSeleccionarConexion.resx">
+      <DependentUpon>FrmSeleccionarConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vales\FrmValesExcepcion.resx">
+      <DependentUpon>FrmValesExcepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\ComprasDirectas\FrmListadoComprasDirectas.resx">
+      <DependentUpon>FrmListadoComprasDirectas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\OrdenesDeCompras\FrmListadoOrdenesCompras.resx">
+      <DependentUpon>FrmListadoOrdenesCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\OrdenesDeCompras\FrmListadoOrdenesCompras_ClaveSSA.resx">
+      <DependentUpon>FrmListadoOrdenesCompras_ClaveSSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\OrdenesDeCompras\FrmOrdenesDeComprasUnidad.resx">
+      <DependentUpon>FrmOrdenesDeComprasUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmFoliosOrdenesCompras.resx">
+      <DependentUpon>FrmFoliosOrdenesCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenesDeCompra.resx">
+      <DependentUpon>FrmOrdenesDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmDescargarOC.resx">
+      <DependentUpon>FrmDescargarOC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenesDeCompraDevoluciones.resx">
+      <DependentUpon>FrmOrdenesDeCompraDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmProductosCantidadesExcedidas.resx">
+      <DependentUpon>FrmProductosCantidadesExcedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\FrmParametrosProveedores.resx">
+      <DependentUpon>FrmParametrosProveedores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporteador\FrmReporteadorExcel.resx">
+      <DependentUpon>FrmReporteadorExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporteador\FrmReporteador.resx">
+      <DependentUpon>FrmReporteador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesQFB\FrmKardexControladosAntibioticosCentral.resx">
+      <DependentUpon>FrmKardexControladosAntibioticosCentral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesQFB\FrmListadoProductosAntibioticos.resx">
+      <DependentUpon>FrmListadoProductosAntibioticos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesQFB\FrmListadoProductosControlados.resx">
+      <DependentUpon>FrmListadoProductosControlados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesQFB\FrmReportesMovtosGralControlados.resx">
+      <DependentUpon>FrmReportesMovtosGralControlados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmListaDeSubFarmacias.resx">
+      <DependentUpon>FrmListaDeSubFarmacias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesQFB\FrmKardexDetallado.resx">
+      <DependentUpon>FrmKardexDetallado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\FrmUbicacionesVacias.resx">
+      <DependentUpon>FrmUbicacionesVacias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmUsuariosPasswordsStandard.resx">
+      <DependentUpon>FrmUsuariosPasswordsStandard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_GruposPermisos.resx">
+      <DependentUpon>Frm_Ctes_GruposPermisos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_GruposUsuarios.resx">
+      <DependentUpon>Frm_Ctes_GruposUsuarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_Grupos.resx">
+      <DependentUpon>Frm_Ctes_Grupos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\FrmReporteVentasContado.resx">
+      <DependentUpon>FrmReporteVentasContado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\Compras\FrmComprasDeFarmacia.resx">
+      <DependentUpon>FrmComprasDeFarmacia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\Compras\FrmListadoComprasFarmacia.resx">
+      <DependentUpon>FrmListadoComprasFarmacia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_UsuariosRegional.resx">
+      <DependentUpon>Frm_Ctes_UsuariosRegional.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos_Clientes\Frm_Ctes_Usuarios.resx">
+      <DependentUpon>Frm_Ctes_Usuarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmListaUnidades.resx">
+      <DependentUpon>FrmListaUnidades.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmReporteListadoCteProgramasVenta.resx">
+      <DependentUpon>FrmReporteListadoCteProgramasVenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FrmReportesFacturacion.resx">
+      <DependentUpon>FrmReportesFacturacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetInformacionManual\FrmGruposDeInformacion.resx">
+      <DependentUpon>FrmGruposDeInformacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmListadoFarmacias.resx">
+      <DependentUpon>FrmListadoFarmacias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmCapturaLotes.resx">
+      <DependentUpon>FrmCapturaLotes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes\FrmMtto_Lotes.resx">
+      <DependentUpon>FrmMtto_Lotes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\FrmCfgAccesoProveedores.resx">
+      <DependentUpon>FrmCfgAccesoProveedores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmCambiarPassword.resx">
+      <DependentUpon>FrmCambiarPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmEdoConect.resx">
+      <DependentUpon>FrmEdoConect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmEdoLogin.resx">
+      <DependentUpon>FrmEdoLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmFileConfig.resx">
+      <DependentUpon>FrmFileConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmFileConfigXml.resx">
+      <DependentUpon>FrmFileConfigXml.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmGrupos.resx">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmGruposPermisos.resx">
+      <DependentUpon>FrmGruposPermisos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmGruposUsuarios.resx">
+      <DependentUpon>FrmGruposUsuarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmOperacionSupervizada.resx">
+      <DependentUpon>FrmOperacionSupervizada.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmPersonal.resx">
+      <DependentUpon>FrmPersonal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_y_Permisos\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\FrmConsultarExistenciasCodigoEAN.resx">
+      <DependentUpon>FrmConsultarExistenciasCodigoEAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\FrmConsultarExistenciasGeneral.resx">
+      <DependentUpon>FrmConsultarExistenciasGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\FrmConsultarExistencias.resx">
+      <DependentUpon>FrmConsultarExistencias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\FrmConsultarExistenciasEnFarmacias.resx">
+      <DependentUpon>FrmConsultarExistenciasEnFarmacias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\FrmExecWebService.resx">
+      <DependentUpon>FrmExecWebService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\Transferencias\FrmTransferenciaSalidasFarmacias.resx">
+      <DependentUpon>FrmTransferenciaSalidasFarmacias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/wsPersonalFirma/wsHuellas.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsHuellas\</RelPath>
+      <UpdateFromURL>http://localhost/wsPersonalFirma/wsHuellas.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DllFarmaciaSoft_WsHuellas_wsHuellas</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsFarmacia.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsFarmacia\</RelPath>
+      <UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsFarmacia.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DllFarmaciaSoft_wsFarmacia_wsCnnCliente</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsFarmaciaSoftGn.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsFarmaciaSoftGn\</RelPath>
+      <UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsFarmaciaSoftGn.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DllFarmaciaSoft_wsFarmaciaSoftGn_wsConexion</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsOficinaCentral.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsOficinaCentral\</RelPath>
+      <UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsOficinaCentral.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DllFarmaciaSoft_wsOficinaCentral_wsCnnOficinaCentral</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DllFarmaciaSoft.snk" />
+    <None Include="Inventario\Formato_Inventario___Almacenes_Farmacias.xlsx" />
+    <None Include="Inventario\Output__Final__2K121215_1307.xlsx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Snk\DllFarmaciaSoft.snk" />
+    <None Include="Snk\DllFarmaciaSoft.manifest" />
+    <None Include="Web References\wsFarmacia\wsFarmacia.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="capsule.ico" />
+    <Content Include="Inventario\Output__Final__2K121215_1307.txt" />
+    <Content Include="Logo_Intermed.ico" />
+    <None Include="Resources\Neodynamic.Windows.ThermalLabelEditor.dll" />
+    <None Include="Resources\Neodynamic.SDK.ThermalLabel.dll" />
+    <None Include="Web References\wsHuellas\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsHuellas\wsHuellas.disco" />
+    <EmbeddedResource Include="Resources\Lenguajes.xml" />
+    <None Include="Web References\wsHuellas\wsHuellas.wsdl" />
+    <None Include="Web References\wsOficinaCentral\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsOficinaCentral\wsOficinaCentral.disco" />
+    <None Include="Web References\wsFarmaciaSoftGn\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsFarmaciaSoftGn\wsFarmaciaSoftGn.disco" />
+    <None Include="Web References\wsFarmaciaSoftGn\wsFarmaciaSoftGn.wsdl" />
+    <None Include="Web References\wsFarmacia\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsFarmacia\wsFarmacia.disco" />
+    <None Include="Web References\wsOficinaCentral\wsOficinaCentral.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Impresoras\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
