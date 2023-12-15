@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.FrameGrupos = new System.Windows.Forms.GroupBox();
             this.twGrupos = new System.Windows.Forms.TreeView();
+            this.mnGrupos = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Eliminar_toolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.FrameUsuarios = new System.Windows.Forms.GroupBox();
             this.lwUsuarios = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.mnGrupos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Eliminar_toolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.FrameGrupos.SuspendLayout();
-            this.FrameUsuarios.SuspendLayout();
             this.mnGrupos.SuspendLayout();
+            this.FrameUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
             // FrameGrupos
@@ -72,6 +72,21 @@
             this.twGrupos.DragDrop += new System.Windows.Forms.DragEventHandler(this.twGrupos_DragDrop);
             this.twGrupos.DragEnter += new System.Windows.Forms.DragEventHandler(this.twGrupos_DragEnter);
             // 
+            // mnGrupos
+            // 
+            this.mnGrupos.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.mnGrupos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Eliminar_toolStrip});
+            this.mnGrupos.Name = "mnGrupos";
+            this.mnGrupos.Size = new System.Drawing.Size(133, 28);
+            // 
+            // Eliminar_toolStrip
+            // 
+            this.Eliminar_toolStrip.Name = "Eliminar_toolStrip";
+            this.Eliminar_toolStrip.Size = new System.Drawing.Size(132, 24);
+            this.Eliminar_toolStrip.Text = "Eliminar";
+            this.Eliminar_toolStrip.Click += new System.EventHandler(this.Eliminar_toolStrip_Click);
+            // 
             // FrameUsuarios
             // 
             this.FrameUsuarios.Controls.Add(this.lwUsuarios);
@@ -92,6 +107,7 @@
             this.lwUsuarios.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.lwUsuarios.FullRowSelect = true;
+            this.lwUsuarios.HideSelection = false;
             this.lwUsuarios.Location = new System.Drawing.Point(8, 23);
             this.lwUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.lwUsuarios.Name = "lwUsuarios";
@@ -101,20 +117,6 @@
             this.lwUsuarios.UseCompatibleStateImageBehavior = false;
             this.lwUsuarios.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.lwUsuarios_ItemDrag);
             // 
-            // mnGrupos
-            // 
-            this.mnGrupos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Eliminar_toolStrip});
-            this.mnGrupos.Name = "mnGrupos";
-            this.mnGrupos.Size = new System.Drawing.Size(133, 28);
-            // 
-            // Eliminar_toolStrip
-            // 
-            this.Eliminar_toolStrip.Name = "Eliminar_toolStrip";
-            this.Eliminar_toolStrip.Size = new System.Drawing.Size(132, 24);
-            this.Eliminar_toolStrip.Text = "Eliminar";
-            this.Eliminar_toolStrip.Click += new System.EventHandler(this.Eliminar_toolStrip_Click);
-            // 
             // FrmRotacion_Claves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -123,12 +125,13 @@
             this.Controls.Add(this.FrameUsuarios);
             this.Controls.Add(this.FrameGrupos);
             this.Name = "FrmRotacion_Claves";
+            this.ShowIcon = false;
             this.Text = "Configuración de rotación de claves";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmRotacion_Claves_Load);
             this.FrameGrupos.ResumeLayout(false);
-            this.FrameUsuarios.ResumeLayout(false);
             this.mnGrupos.ResumeLayout(false);
+            this.FrameUsuarios.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

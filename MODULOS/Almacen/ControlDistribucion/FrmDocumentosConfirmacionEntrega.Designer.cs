@@ -109,9 +109,9 @@
             this.groupBox1.Controls.Add(this.txtFolio);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 61);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1285, 154);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -138,7 +138,7 @@
             this.cboVehiculo.FormattingEnabled = true;
             this.cboVehiculo.ListaItemsBusqueda = 20;
             this.cboVehiculo.Location = new System.Drawing.Point(756, 65);
-            this.cboVehiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboVehiculo.Margin = new System.Windows.Forms.Padding(4);
             this.cboVehiculo.MostrarToolTip = false;
             this.cboVehiculo.Name = "cboVehiculo";
             this.cboVehiculo.Size = new System.Drawing.Size(511, 24);
@@ -165,7 +165,7 @@
             this.cboChofer.FormattingEnabled = true;
             this.cboChofer.ListaItemsBusqueda = 20;
             this.cboChofer.Location = new System.Drawing.Point(129, 65);
-            this.cboChofer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboChofer.Margin = new System.Windows.Forms.Padding(4);
             this.cboChofer.MostrarToolTip = false;
             this.cboChofer.Name = "cboChofer";
             this.cboChofer.Size = new System.Drawing.Size(511, 24);
@@ -180,7 +180,7 @@
             this.txtObservaciones.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtObservaciones.ForeColor = System.Drawing.Color.Black;
             this.txtObservaciones.Location = new System.Drawing.Point(129, 101);
-            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
             this.txtObservaciones.MaxLength = 100;
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
@@ -207,7 +207,7 @@
             this.dtpFechaRegistro.Enabled = false;
             this.dtpFechaRegistro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaRegistro.Location = new System.Drawing.Point(1165, 32);
-            this.dtpFechaRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaRegistro.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaRegistro.Name = "dtpFechaRegistro";
             this.dtpFechaRegistro.Size = new System.Drawing.Size(101, 22);
             this.dtpFechaRegistro.TabIndex = 1;
@@ -243,7 +243,7 @@
             this.txtFolio.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtFolio.ForeColor = System.Drawing.Color.Black;
             this.txtFolio.Location = new System.Drawing.Point(129, 34);
-            this.txtFolio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFolio.Margin = new System.Windows.Forms.Padding(4);
             this.txtFolio.MaxLength = 8;
             this.txtFolio.Name = "txtFolio";
             this.txtFolio.PermitirApostrofo = false;
@@ -293,7 +293,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -309,7 +309,7 @@
             // 
             this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             this.toolStripSeparator1.Visible = false;
             // 
             // btnImprimir
@@ -332,7 +332,7 @@
             this.tabControl.Controls.Add(this.grdCartasCanje);
             this.tabControl.ItemSize = new System.Drawing.Size(82, 18);
             this.tabControl.Location = new System.Drawing.Point(12, 217);
-            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(1285, 446);
@@ -342,9 +342,9 @@
             // 
             this.tabTransferencias.Controls.Add(this.grdTransferencias);
             this.tabTransferencias.Location = new System.Drawing.Point(4, 22);
-            this.tabTransferencias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabTransferencias.Margin = new System.Windows.Forms.Padding(4);
             this.tabTransferencias.Name = "tabTransferencias";
-            this.tabTransferencias.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabTransferencias.Padding = new System.Windows.Forms.Padding(4);
             this.tabTransferencias.Size = new System.Drawing.Size(1277, 420);
             this.tabTransferencias.TabIndex = 0;
             this.tabTransferencias.Text = "Traspasos";
@@ -373,7 +373,7 @@
             this.grdTransferencias.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer1;
             this.grdTransferencias.HorizontalScrollBar.TabIndex = 2;
             this.grdTransferencias.Location = new System.Drawing.Point(13, 12);
-            this.grdTransferencias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdTransferencias.Margin = new System.Windows.Forms.Padding(4);
             this.grdTransferencias.Name = "grdTransferencias";
             this.grdTransferencias.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdTransferencias.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
@@ -452,9 +452,9 @@
             // 
             this.tabVentasDirectas.Controls.Add(this.grdVentas);
             this.tabVentasDirectas.Location = new System.Drawing.Point(4, 22);
-            this.tabVentasDirectas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabVentasDirectas.Margin = new System.Windows.Forms.Padding(4);
             this.tabVentasDirectas.Name = "tabVentasDirectas";
-            this.tabVentasDirectas.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabVentasDirectas.Padding = new System.Windows.Forms.Padding(4);
             this.tabVentasDirectas.Size = new System.Drawing.Size(1277, 420);
             this.tabVentasDirectas.TabIndex = 1;
             this.tabVentasDirectas.Text = "Dispersiones";
@@ -483,7 +483,7 @@
             this.grdVentas.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer3;
             this.grdVentas.HorizontalScrollBar.TabIndex = 2;
             this.grdVentas.Location = new System.Drawing.Point(13, 12);
-            this.grdVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdVentas.Margin = new System.Windows.Forms.Padding(4);
             this.grdVentas.Name = "grdVentas";
             this.grdVentas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdVentas.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
@@ -563,9 +563,9 @@
             // 
             this.grdCartasCanje.Controls.Add(this.grdCartas);
             this.grdCartasCanje.Location = new System.Drawing.Point(4, 22);
-            this.grdCartasCanje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdCartasCanje.Margin = new System.Windows.Forms.Padding(4);
             this.grdCartasCanje.Name = "grdCartasCanje";
-            this.grdCartasCanje.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdCartasCanje.Padding = new System.Windows.Forms.Padding(4);
             this.grdCartasCanje.Size = new System.Drawing.Size(1277, 420);
             this.grdCartasCanje.TabIndex = 2;
             this.grdCartasCanje.Text = "Cartas Canje";
@@ -594,7 +594,7 @@
             this.grdCartas.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer5;
             this.grdCartas.HorizontalScrollBar.TabIndex = 2;
             this.grdCartas.Location = new System.Drawing.Point(13, 12);
-            this.grdCartas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdCartas.Margin = new System.Windows.Forms.Padding(4);
             this.grdCartas.Name = "grdCartas";
             this.grdCartas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdCartas.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
@@ -686,7 +686,7 @@
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.toolStripBarraMenu);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDocumentosConfirmacionEntrega";
             this.ShowIcon = false;
             this.Text = "Documentos de confirmación de entrega";

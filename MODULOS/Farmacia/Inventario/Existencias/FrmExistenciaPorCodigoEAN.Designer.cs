@@ -322,7 +322,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -339,7 +339,7 @@
             // 
             this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 

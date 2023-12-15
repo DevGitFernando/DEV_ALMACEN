@@ -44,16 +44,18 @@
             FarPoint.Win.Spread.CellType.EnhancedColumnHeaderRenderer enhancedColumnHeaderRenderer6 = new FarPoint.Win.Spread.CellType.EnhancedColumnHeaderRenderer();
             FarPoint.Win.Spread.CellType.EnhancedRowHeaderRenderer enhancedRowHeaderRenderer6 = new FarPoint.Win.Spread.CellType.EnhancedRowHeaderRenderer();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMovimientosPorClave));
-            FarPoint.Win.Spread.NamedStyle namedStyle1 = new FarPoint.Win.Spread.NamedStyle("ColumnHeaderEnhanced");
-            FarPoint.Win.Spread.NamedStyle namedStyle2 = new FarPoint.Win.Spread.NamedStyle("RowHeaderEnhanced");
-            FarPoint.Win.Spread.NamedStyle namedStyle3 = new FarPoint.Win.Spread.NamedStyle("CornerEnhanced");
-            FarPoint.Win.Spread.CellType.EnhancedCornerRenderer enhancedCornerRenderer1 = new FarPoint.Win.Spread.CellType.EnhancedCornerRenderer();
-            FarPoint.Win.Spread.NamedStyle namedStyle4 = new FarPoint.Win.Spread.NamedStyle("DataAreaDefault");
-            FarPoint.Win.Spread.CellType.GeneralCellType generalCellType1 = new FarPoint.Win.Spread.CellType.GeneralCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType2 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType3 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer3 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.NamedStyle namedStyle5 = new FarPoint.Win.Spread.NamedStyle("ColumnHeaderEnhanced");
+            FarPoint.Win.Spread.NamedStyle namedStyle6 = new FarPoint.Win.Spread.NamedStyle("RowHeaderEnhanced");
+            FarPoint.Win.Spread.NamedStyle namedStyle7 = new FarPoint.Win.Spread.NamedStyle("CornerEnhanced");
+            FarPoint.Win.Spread.CellType.EnhancedCornerRenderer enhancedCornerRenderer2 = new FarPoint.Win.Spread.CellType.EnhancedCornerRenderer();
+            FarPoint.Win.Spread.NamedStyle namedStyle8 = new FarPoint.Win.Spread.NamedStyle("DataAreaDefault");
+            FarPoint.Win.Spread.CellType.GeneralCellType generalCellType2 = new FarPoint.Win.Spread.CellType.GeneralCellType();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer4 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType4 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType5 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType6 = new FarPoint.Win.Spread.CellType.NumberCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -175,6 +177,8 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
@@ -185,7 +189,7 @@
             this.btnExportarExcel});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(984, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1312, 58);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -195,14 +199,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -210,15 +215,16 @@
             this.btnEjecutar.Image = ((System.Drawing.Image)(resources.GetObject("btnEjecutar.Image")));
             this.btnEjecutar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(23, 22);
+            this.btnEjecutar.Size = new System.Drawing.Size(54, 55);
             this.btnEjecutar.Text = "Ejecutar";
             this.btnEjecutar.ToolTipText = "Ejecutar";
             this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
             // 
             // toolStripSeparator2
             // 
+            this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -226,13 +232,14 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(23, 22);
+            this.btnImprimir.Size = new System.Drawing.Size(54, 55);
             this.btnImprimir.Text = "&Imprimir";
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnExportarExcel
             // 
@@ -240,7 +247,7 @@
             this.btnExportarExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportarExcel.Image")));
             this.btnExportarExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExportarExcel.Name = "btnExportarExcel";
-            this.btnExportarExcel.Size = new System.Drawing.Size(23, 22);
+            this.btnExportarExcel.Size = new System.Drawing.Size(54, 55);
             this.btnExportarExcel.Text = "toolStripButton1";
             this.btnExportarExcel.ToolTipText = "Exportar a Excel";
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
@@ -253,34 +260,34 @@
             this.groupBox1.Controls.Add(this.lblDescripcion);
             this.groupBox1.Controls.Add(this.txtClaveSSA);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 87);
+            this.groupBox1.Location = new System.Drawing.Point(16, 140);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(964, 77);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1285, 95);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Clave SSA";
             // 
             // lblIdClaveSSA
             // 
-            this.lblIdClaveSSA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblIdClaveSSA.Location = new System.Drawing.Point(250, 19);
+            this.lblIdClaveSSA.Location = new System.Drawing.Point(333, 23);
+            this.lblIdClaveSSA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdClaveSSA.Name = "lblIdClaveSSA";
-            this.lblIdClaveSSA.Size = new System.Drawing.Size(90, 20);
+            this.lblIdClaveSSA.Size = new System.Drawing.Size(120, 25);
             this.lblIdClaveSSA.TabIndex = 7;
-            this.lblIdClaveSSA.Text = "label2";
             this.lblIdClaveSSA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblDescripcion.Location = new System.Drawing.Point(94, 44);
+            this.lblDescripcion.Location = new System.Drawing.Point(43, 54);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.MostrarToolTip = false;
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(861, 23);
+            this.lblDescripcion.Size = new System.Drawing.Size(1230, 28);
             this.lblDescripcion.TabIndex = 6;
-            this.lblDescripcion.Text = "Descripcion";
             this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtClaveSSA
@@ -289,12 +296,13 @@
             this.txtClaveSSA.Decimales = 2;
             this.txtClaveSSA.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtClaveSSA.ForeColor = System.Drawing.Color.Black;
-            this.txtClaveSSA.Location = new System.Drawing.Point(94, 19);
+            this.txtClaveSSA.Location = new System.Drawing.Point(125, 23);
+            this.txtClaveSSA.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveSSA.MaxLength = 15;
             this.txtClaveSSA.Name = "txtClaveSSA";
             this.txtClaveSSA.PermitirApostrofo = false;
             this.txtClaveSSA.PermitirNegativos = false;
-            this.txtClaveSSA.Size = new System.Drawing.Size(150, 20);
+            this.txtClaveSSA.Size = new System.Drawing.Size(199, 22);
             this.txtClaveSSA.TabIndex = 0;
             this.txtClaveSSA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtClaveSSA.TextChanged += new System.EventHandler(this.txtClaveSSA_TextChanged);
@@ -303,9 +311,10 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(14, 19);
+            this.label1.Location = new System.Drawing.Point(19, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.Size = new System.Drawing.Size(101, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Clave SSA :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -316,9 +325,11 @@
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.dtpFechaInicial);
-            this.groupBox4.Location = new System.Drawing.Point(12, 165);
+            this.groupBox4.Location = new System.Drawing.Point(16, 236);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(964, 52);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(1285, 64);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Rango de Fechas";
@@ -329,18 +340,20 @@
             this.dtpFechaFinal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpFechaFinal.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaFinal.Location = new System.Drawing.Point(545, 19);
+            this.dtpFechaFinal.Location = new System.Drawing.Point(727, 23);
+            this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaFinal.MinDate = new System.DateTime(2009, 1, 1, 0, 0, 0, 0);
             this.dtpFechaFinal.Name = "dtpFechaFinal";
-            this.dtpFechaFinal.Size = new System.Drawing.Size(82, 20);
+            this.dtpFechaFinal.Size = new System.Drawing.Size(108, 22);
             this.dtpFechaFinal.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.Location = new System.Drawing.Point(510, 19);
+            this.label2.Location = new System.Drawing.Point(680, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 21);
+            this.label2.Size = new System.Drawing.Size(41, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fin :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -348,9 +361,10 @@
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.Location = new System.Drawing.Point(338, 19);
+            this.label4.Location = new System.Drawing.Point(451, 23);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 20);
+            this.label4.Size = new System.Drawing.Size(55, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Inicio :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -360,10 +374,11 @@
             this.dtpFechaInicial.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpFechaInicial.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaInicial.Location = new System.Drawing.Point(385, 19);
+            this.dtpFechaInicial.Location = new System.Drawing.Point(513, 23);
+            this.dtpFechaInicial.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaInicial.MinDate = new System.DateTime(2009, 1, 1, 0, 0, 0, 0);
             this.dtpFechaInicial.Name = "dtpFechaInicial";
-            this.dtpFechaInicial.Size = new System.Drawing.Size(82, 20);
+            this.dtpFechaInicial.Size = new System.Drawing.Size(108, 22);
             this.dtpFechaInicial.TabIndex = 0;
             this.dtpFechaInicial.Value = new System.DateTime(2009, 5, 12, 0, 0, 0, 0);
             // 
@@ -373,9 +388,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.grdConcentradoPorClave);
-            this.groupBox3.Location = new System.Drawing.Point(12, 218);
+            this.groupBox3.Location = new System.Drawing.Point(16, 301);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(964, 363);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1285, 409);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Movimientos";
@@ -387,37 +404,69 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdConcentradoPorClave.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.grdConcentradoPorClave.Location = new System.Drawing.Point(9, 19);
+            this.grdConcentradoPorClave.HorizontalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdConcentradoPorClave.HorizontalScrollBar.Name = "";
+            enhancedScrollBarRenderer3.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdConcentradoPorClave.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer3;
+            this.grdConcentradoPorClave.HorizontalScrollBar.TabIndex = 2;
+            this.grdConcentradoPorClave.Location = new System.Drawing.Point(12, 23);
+            this.grdConcentradoPorClave.Margin = new System.Windows.Forms.Padding(4);
             this.grdConcentradoPorClave.Name = "grdConcentradoPorClave";
-            namedStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(220)))), ((int)(((byte)(233)))));
-            namedStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            namedStyle1.HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
-            namedStyle1.Renderer = enhancedColumnHeaderRenderer6;
-            namedStyle1.VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            namedStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(236)))), ((int)(((byte)(247)))));
-            namedStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            namedStyle2.HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
-            namedStyle2.Renderer = enhancedRowHeaderRenderer6;
-            namedStyle2.VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            namedStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(196)))), ((int)(((byte)(233)))));
-            namedStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            namedStyle3.HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
-            namedStyle3.Renderer = enhancedCornerRenderer1;
-            namedStyle3.VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            namedStyle4.BackColor = System.Drawing.SystemColors.Window;
-            namedStyle4.CellType = generalCellType1;
-            namedStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            namedStyle4.Renderer = generalCellType1;
+            namedStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(220)))), ((int)(((byte)(233)))));
+            namedStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            namedStyle5.HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
+            namedStyle5.Renderer = enhancedColumnHeaderRenderer6;
+            namedStyle5.VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
+            namedStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(236)))), ((int)(((byte)(247)))));
+            namedStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            namedStyle6.HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
+            namedStyle6.Renderer = enhancedRowHeaderRenderer6;
+            namedStyle6.VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
+            namedStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(196)))), ((int)(((byte)(233)))));
+            namedStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            namedStyle7.HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
+            namedStyle7.Renderer = enhancedCornerRenderer2;
+            namedStyle7.VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
+            namedStyle8.BackColor = System.Drawing.SystemColors.Window;
+            namedStyle8.CellType = generalCellType2;
+            namedStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            namedStyle8.Renderer = generalCellType2;
             this.grdConcentradoPorClave.NamedStyles.AddRange(new FarPoint.Win.Spread.NamedStyle[] {
-            namedStyle1,
-            namedStyle2,
-            namedStyle3,
-            namedStyle4});
+            namedStyle5,
+            namedStyle6,
+            namedStyle7,
+            namedStyle8});
             this.grdConcentradoPorClave.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdConcentradoPorClave.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
             this.grdConcentradoPorClave_Sheet1});
-            this.grdConcentradoPorClave.Size = new System.Drawing.Size(948, 332);
+            this.grdConcentradoPorClave.Size = new System.Drawing.Size(1263, 370);
+            this.grdConcentradoPorClave.Skin = FarPoint.Win.Spread.DefaultSpreadSkins.Seashell;
             this.grdConcentradoPorClave.TabIndex = 0;
+            this.grdConcentradoPorClave.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdConcentradoPorClave.VerticalScrollBar.Name = "";
+            enhancedScrollBarRenderer4.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdConcentradoPorClave.VerticalScrollBar.Renderer = enhancedScrollBarRenderer4;
+            this.grdConcentradoPorClave.VerticalScrollBar.TabIndex = 3;
             this.grdConcentradoPorClave.CellDoubleClick += new FarPoint.Win.Spread.CellClickEventHandler(this.grdConcentradoPorClave_CellDoubleClick);
             // 
             // grdConcentradoPorClave_Sheet1
@@ -428,16 +477,17 @@
             this.grdConcentradoPorClave_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.R1C1;
             this.grdConcentradoPorClave_Sheet1.ColumnCount = 5;
             this.grdConcentradoPorClave_Sheet1.RowCount = 1;
-            numberCellType1.DecimalPlaces = 0;
-            numberCellType1.MaximumValue = 9999999D;
-            numberCellType1.MinimumValue = 0D;
-            numberCellType1.SpinDecimalIncrement = 0F;
-            this.grdConcentradoPorClave_Sheet1.Cells.Get(0, 4).CellType = numberCellType1;
+            numberCellType4.DecimalPlaces = 0;
+            numberCellType4.MaximumValue = 9999999D;
+            numberCellType4.MinimumValue = 0D;
+            numberCellType4.SpinDecimalIncrement = 0F;
+            this.grdConcentradoPorClave_Sheet1.Cells.Get(0, 4).CellType = numberCellType4;
             this.grdConcentradoPorClave_Sheet1.ColumnHeader.Cells.Get(0, 0).Value = "efecto";
             this.grdConcentradoPorClave_Sheet1.ColumnHeader.Cells.Get(0, 1).Value = "Clave";
             this.grdConcentradoPorClave_Sheet1.ColumnHeader.Cells.Get(0, 2).Value = "Descripción";
             this.grdConcentradoPorClave_Sheet1.ColumnHeader.Cells.Get(0, 3).Value = "Folios";
             this.grdConcentradoPorClave_Sheet1.ColumnHeader.Cells.Get(0, 4).Value = "Piezas";
+            this.grdConcentradoPorClave_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdConcentradoPorClave_Sheet1.Columns.Get(0).Label = "efecto";
             this.grdConcentradoPorClave_Sheet1.Columns.Get(0).Locked = true;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(0).Visible = false;
@@ -446,50 +496,53 @@
             this.grdConcentradoPorClave_Sheet1.Columns.Get(1).Label = "Clave";
             this.grdConcentradoPorClave_Sheet1.Columns.Get(1).Locked = true;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(1).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            this.grdConcentradoPorClave_Sheet1.Columns.Get(2).CellType = textCellType1;
+            this.grdConcentradoPorClave_Sheet1.Columns.Get(2).CellType = textCellType2;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(2).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(2).Label = "Descripción";
             this.grdConcentradoPorClave_Sheet1.Columns.Get(2).Locked = true;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(2).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(2).Width = 300F;
-            numberCellType2.DecimalPlaces = 0;
-            numberCellType2.DecimalSeparator = ".";
-            numberCellType2.MaximumValue = 10000000D;
-            numberCellType2.MinimumValue = 0D;
-            numberCellType2.Separator = ",";
-            numberCellType2.ShowSeparator = true;
-            this.grdConcentradoPorClave_Sheet1.Columns.Get(3).CellType = numberCellType2;
+            numberCellType5.DecimalPlaces = 0;
+            numberCellType5.DecimalSeparator = ".";
+            numberCellType5.MaximumValue = 10000000D;
+            numberCellType5.MinimumValue = 0D;
+            numberCellType5.Separator = ",";
+            numberCellType5.ShowSeparator = true;
+            this.grdConcentradoPorClave_Sheet1.Columns.Get(3).CellType = numberCellType5;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(3).Label = "Folios";
             this.grdConcentradoPorClave_Sheet1.Columns.Get(3).Locked = true;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(3).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Bottom;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(3).Width = 100F;
-            numberCellType3.DecimalPlaces = 0;
-            numberCellType3.DecimalSeparator = ".";
-            numberCellType3.MaximumValue = 10000000D;
-            numberCellType3.MinimumValue = 0D;
-            numberCellType3.Separator = ",";
-            numberCellType3.ShowSeparator = true;
-            this.grdConcentradoPorClave_Sheet1.Columns.Get(4).CellType = numberCellType3;
+            numberCellType6.DecimalPlaces = 0;
+            numberCellType6.DecimalSeparator = ".";
+            numberCellType6.MaximumValue = 10000000D;
+            numberCellType6.MinimumValue = 0D;
+            numberCellType6.Separator = ",";
+            numberCellType6.ShowSeparator = true;
+            this.grdConcentradoPorClave_Sheet1.Columns.Get(4).CellType = numberCellType6;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(4).Label = "Piezas";
             this.grdConcentradoPorClave_Sheet1.Columns.Get(4).Locked = true;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(4).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Bottom;
             this.grdConcentradoPorClave_Sheet1.Columns.Get(4).Width = 100F;
             this.grdConcentradoPorClave_Sheet1.RowHeader.Columns.Default.Resizable = true;
+            this.grdConcentradoPorClave_Sheet1.RowHeader.DefaultStyle.Parent = "RowHeaderSeashell";
+            this.grdConcentradoPorClave_Sheet1.SheetCornerStyle.Parent = "CornerSeashell";
             this.grdConcentradoPorClave_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1;
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.BackColor = System.Drawing.Color.SteelBlue;
             this.label11.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(0, 586);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(0, 719);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(984, 25);
+            this.label11.Size = new System.Drawing.Size(1312, 31);
             this.label11.TabIndex = 5;
-            this.label11.Text = " Doble clic para ver Detallado";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Text = " Doble click | Ver Detallado";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
@@ -498,9 +551,11 @@
             this.groupBox2.Controls.Add(this.lblPersonal);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txtPersonal);
-            this.groupBox2.Location = new System.Drawing.Point(12, 31);
+            this.groupBox2.Location = new System.Drawing.Point(16, 71);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(964, 52);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1285, 64);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Personal";
@@ -509,19 +564,19 @@
             // 
             this.lblPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPersonal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPersonal.Location = new System.Drawing.Point(181, 22);
+            this.lblPersonal.Location = new System.Drawing.Point(241, 27);
+            this.lblPersonal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPersonal.Name = "lblPersonal";
-            this.lblPersonal.Size = new System.Drawing.Size(777, 20);
+            this.lblPersonal.Size = new System.Drawing.Size(1036, 25);
             this.lblPersonal.TabIndex = 8;
-            this.lblPersonal.Text = "label2";
             this.lblPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(14, 22);
+            this.label3.Location = new System.Drawing.Point(19, 27);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Personal :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -532,12 +587,13 @@
             this.txtPersonal.Decimales = 2;
             this.txtPersonal.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtPersonal.ForeColor = System.Drawing.Color.Black;
-            this.txtPersonal.Location = new System.Drawing.Point(94, 22);
+            this.txtPersonal.Location = new System.Drawing.Point(125, 27);
+            this.txtPersonal.Margin = new System.Windows.Forms.Padding(4);
             this.txtPersonal.MaxLength = 15;
             this.txtPersonal.Name = "txtPersonal";
             this.txtPersonal.PermitirApostrofo = false;
             this.txtPersonal.PermitirNegativos = false;
-            this.txtPersonal.Size = new System.Drawing.Size(80, 20);
+            this.txtPersonal.Size = new System.Drawing.Size(105, 22);
             this.txtPersonal.TabIndex = 0;
             this.txtPersonal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPersonal.TextChanged += new System.EventHandler(this.txtPersonal_TextChanged);
@@ -546,16 +602,18 @@
             // 
             // FrmMovimientosPorClave
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 611);
+            this.ClientSize = new System.Drawing.Size(1312, 750);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStripBarraMenu);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmMovimientosPorClave";
+            this.ShowIcon = false;
             this.Text = "Movimientos por Usuario por Clave";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.toolStripBarraMenu.ResumeLayout(false);
@@ -569,7 +627,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

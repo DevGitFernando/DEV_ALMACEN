@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPasillosEstantesBaldas));
-            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType2 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType1 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
-            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType2 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
-            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType3 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
-            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType4 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer3 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer4 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType3 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType3 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType4 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType5 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
+            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType6 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
+            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType7 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
+            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType8 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType4 = new FarPoint.Win.Spread.CellType.TextCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -97,7 +97,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -113,7 +113,7 @@
             // 
             this.toolStripSeparator4.AutoSize = false;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -131,7 +131,7 @@
             // 
             this.toolStripSeparator3.AutoSize = false;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -153,18 +153,18 @@
             this.grdBaldas.BackColor = System.Drawing.Color.WhiteSmoke;
             this.grdBaldas.HorizontalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
             this.grdBaldas.HorizontalScrollBar.Name = "";
-            enhancedScrollBarRenderer1.ArrowColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer1.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer1.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer1.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer1.ButtonBorderColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer1.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer1.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer1.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer1.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer1.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer1.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
-            this.grdBaldas.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer1;
+            enhancedScrollBarRenderer3.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdBaldas.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer3;
             this.grdBaldas.HorizontalScrollBar.TabIndex = 2;
             this.grdBaldas.Location = new System.Drawing.Point(12, 23);
             this.grdBaldas.Margin = new System.Windows.Forms.Padding(4);
@@ -177,18 +177,18 @@
             this.grdBaldas.TabIndex = 0;
             this.grdBaldas.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
             this.grdBaldas.VerticalScrollBar.Name = "";
-            enhancedScrollBarRenderer2.ArrowColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer2.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer2.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer2.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer2.ButtonBorderColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer2.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer2.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer2.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer2.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer2.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer2.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
-            this.grdBaldas.VerticalScrollBar.Renderer = enhancedScrollBarRenderer2;
+            enhancedScrollBarRenderer4.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdBaldas.VerticalScrollBar.Renderer = enhancedScrollBarRenderer4;
             this.grdBaldas.VerticalScrollBar.TabIndex = 3;
             this.grdBaldas.EditModeOff += new System.EventHandler(this.grdPasillos_EditModeOff);
             this.grdBaldas.Advance += new FarPoint.Win.Spread.AdvanceEventHandler(this.grdPasillos_Advance);
@@ -209,46 +209,46 @@
             this.grdBaldas_Sheet1.ColumnHeader.Cells.Get(0, 5).Value = "StatusAux";
             this.grdBaldas_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdBaldas_Sheet1.ColumnHeader.Rows.Get(0).Height = 24F;
-            numberCellType1.DecimalPlaces = 0;
-            numberCellType1.MaximumValue = 1000D;
-            numberCellType1.MinimumValue = 0D;
-            this.grdBaldas_Sheet1.Columns.Get(0).CellType = numberCellType1;
+            numberCellType3.DecimalPlaces = 0;
+            numberCellType3.MaximumValue = 1000D;
+            numberCellType3.MinimumValue = 0D;
+            this.grdBaldas_Sheet1.Columns.Get(0).CellType = numberCellType3;
             this.grdBaldas_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(0).Label = "Posición";
             this.grdBaldas_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            textCellType1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.grdBaldas_Sheet1.Columns.Get(1).CellType = textCellType1;
+            textCellType3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.grdBaldas_Sheet1.Columns.Get(1).CellType = textCellType3;
             this.grdBaldas_Sheet1.Columns.Get(1).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
             this.grdBaldas_Sheet1.Columns.Get(1).Label = "Nombre";
             this.grdBaldas_Sheet1.Columns.Get(1).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(1).Width = 304F;
-            numberCellType2.DecimalPlaces = 0;
-            numberCellType2.MaximumValue = 10000D;
-            numberCellType2.MinimumValue = 0D;
-            this.grdBaldas_Sheet1.Columns.Get(2).CellType = numberCellType2;
+            numberCellType4.DecimalPlaces = 0;
+            numberCellType4.MaximumValue = 10000D;
+            numberCellType4.MinimumValue = 0D;
+            this.grdBaldas_Sheet1.Columns.Get(2).CellType = numberCellType4;
             this.grdBaldas_Sheet1.Columns.Get(2).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(2).Label = "Orden";
             this.grdBaldas_Sheet1.Columns.Get(2).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            this.grdBaldas_Sheet1.Columns.Get(3).CellType = checkBoxCellType1;
+            this.grdBaldas_Sheet1.Columns.Get(3).CellType = checkBoxCellType5;
             this.grdBaldas_Sheet1.Columns.Get(3).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(3).Label = "Pickeo";
             this.grdBaldas_Sheet1.Columns.Get(3).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            this.grdBaldas_Sheet1.Columns.Get(4).CellType = checkBoxCellType2;
+            this.grdBaldas_Sheet1.Columns.Get(4).CellType = checkBoxCellType6;
             this.grdBaldas_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(4).Label = "Status";
             this.grdBaldas_Sheet1.Columns.Get(4).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            this.grdBaldas_Sheet1.Columns.Get(5).CellType = checkBoxCellType3;
+            this.grdBaldas_Sheet1.Columns.Get(5).CellType = checkBoxCellType7;
             this.grdBaldas_Sheet1.Columns.Get(5).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(5).Label = "StatusAux";
             this.grdBaldas_Sheet1.Columns.Get(5).Locked = true;
             this.grdBaldas_Sheet1.Columns.Get(5).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(5).Visible = false;
-            this.grdBaldas_Sheet1.Columns.Get(6).CellType = checkBoxCellType4;
+            this.grdBaldas_Sheet1.Columns.Get(6).CellType = checkBoxCellType8;
             this.grdBaldas_Sheet1.Columns.Get(6).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(6).Locked = true;
             this.grdBaldas_Sheet1.Columns.Get(6).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(6).Visible = false;
-            this.grdBaldas_Sheet1.Columns.Get(7).CellType = textCellType2;
+            this.grdBaldas_Sheet1.Columns.Get(7).CellType = textCellType4;
             this.grdBaldas_Sheet1.Columns.Get(7).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdBaldas_Sheet1.Columns.Get(7).Locked = true;
             this.grdBaldas_Sheet1.Columns.Get(7).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
@@ -286,7 +286,6 @@
             this.lblEstante.Name = "lblEstante";
             this.lblEstante.Size = new System.Drawing.Size(803, 25);
             this.lblEstante.TabIndex = 47;
-            this.lblEstante.Text = "label1";
             // 
             // txtEstante
             // 
@@ -324,7 +323,6 @@
             this.lblPasillo.Name = "lblPasillo";
             this.lblPasillo.Size = new System.Drawing.Size(803, 25);
             this.lblPasillo.TabIndex = 44;
-            this.lblPasillo.Text = "label1";
             // 
             // txtPasillo
             // 

@@ -34,7 +34,6 @@
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.btnImprimir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.FrameDatos = new System.Windows.Forms.GroupBox();
             this.scTextBoxExt1 = new SC_ControlsCS.scTextBoxExt();
             this.lblStatus = new SC_ControlsCS.scLabelExt();
@@ -46,14 +45,15 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
-            this.btnImprimir,
-            this.toolStripSeparator1});
+            this.btnImprimir});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(352, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(469, 58);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -63,14 +63,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -78,14 +79,9 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(23, 22);
+            this.btnImprimir.Size = new System.Drawing.Size(54, 55);
             this.btnImprimir.Text = "&Imprimir (CTRL + P)";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // FrameDatos
             // 
@@ -93,9 +89,11 @@
             this.FrameDatos.Controls.Add(this.lblStatus);
             this.FrameDatos.Controls.Add(this.txtIdCaja);
             this.FrameDatos.Controls.Add(this.label4);
-            this.FrameDatos.Location = new System.Drawing.Point(7, 26);
+            this.FrameDatos.Location = new System.Drawing.Point(9, 61);
+            this.FrameDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameDatos.Name = "FrameDatos";
-            this.FrameDatos.Size = new System.Drawing.Size(338, 51);
+            this.FrameDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameDatos.Size = new System.Drawing.Size(451, 75);
             this.FrameDatos.TabIndex = 2;
             this.FrameDatos.TabStop = false;
             this.FrameDatos.Text = "Información";
@@ -106,25 +104,25 @@
             this.scTextBoxExt1.Decimales = 2;
             this.scTextBoxExt1.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.scTextBoxExt1.ForeColor = System.Drawing.Color.Black;
-            this.scTextBoxExt1.Location = new System.Drawing.Point(189, 100);
+            this.scTextBoxExt1.Location = new System.Drawing.Point(252, 123);
+            this.scTextBoxExt1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.scTextBoxExt1.MaxLength = 8;
             this.scTextBoxExt1.Name = "scTextBoxExt1";
             this.scTextBoxExt1.PermitirApostrofo = false;
             this.scTextBoxExt1.PermitirNegativos = false;
-            this.scTextBoxExt1.Size = new System.Drawing.Size(92, 20);
+            this.scTextBoxExt1.Size = new System.Drawing.Size(121, 22);
             this.scTextBoxExt1.TabIndex = 16;
             this.scTextBoxExt1.Text = "01234567";
             this.scTextBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblStatus
             // 
-            this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblStatus.Location = new System.Drawing.Point(190, 17);
+            this.lblStatus.Location = new System.Drawing.Point(224, 28);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.MostrarToolTip = false;
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(134, 20);
+            this.lblStatus.Size = new System.Drawing.Size(194, 25);
             this.lblStatus.TabIndex = 1;
-            this.lblStatus.Text = "scLabelExt1";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtIdCaja
@@ -133,12 +131,13 @@
             this.txtIdCaja.Decimales = 2;
             this.txtIdCaja.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtIdCaja.ForeColor = System.Drawing.Color.Black;
-            this.txtIdCaja.Location = new System.Drawing.Point(92, 17);
+            this.txtIdCaja.Location = new System.Drawing.Point(94, 28);
+            this.txtIdCaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdCaja.MaxLength = 8;
             this.txtIdCaja.Name = "txtIdCaja";
             this.txtIdCaja.PermitirApostrofo = false;
             this.txtIdCaja.PermitirNegativos = false;
-            this.txtIdCaja.Size = new System.Drawing.Size(92, 20);
+            this.txtIdCaja.Size = new System.Drawing.Size(121, 22);
             this.txtIdCaja.TabIndex = 0;
             this.txtIdCaja.Text = "01234567";
             this.txtIdCaja.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -148,22 +147,25 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(16, 18);
+            this.label4.Location = new System.Drawing.Point(16, 29);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 19);
+            this.label4.Size = new System.Drawing.Size(71, 23);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Clave Caja :";
+            this.label4.Text = "Id Caja :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FrmET_Cajas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 85);
+            this.ClientSize = new System.Drawing.Size(469, 147);
             this.Controls.Add(this.FrameDatos);
             this.Controls.Add(this.toolStripBarraMenu);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmET_Cajas";
-            this.Text = "Generar Etiqueta Cajas";
+            this.ShowIcon = false;
+            this.Text = "Etiqueta Cajas";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmET_Cajas_Load);
             this.toolStripBarraMenu.ResumeLayout(false);
@@ -171,7 +173,6 @@
             this.FrameDatos.ResumeLayout(false);
             this.FrameDatos.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -184,7 +185,6 @@
         private SC_ControlsCS.scTextBoxExt txtIdCaja;
         private System.Windows.Forms.Label label4;
         private SC_ControlsCS.scLabelExt lblStatus;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnImprimir;
         private SC_ControlsCS.scTextBoxExt scTextBoxExt1;
     }

@@ -15,7 +15,7 @@
     <StartupObject>
     </StartupObject>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>Snk\DllFarmaciaSoft.QRCode.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>DllFarmaciaSoft.QRCode.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -222,6 +222,7 @@
     <EmbeddedResource Include="VisorEtiquetas\ImageViewer.resx">
       <DependentUpon>ImageViewer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DllFarmaciaSoft.QRCode.snk" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -50,6 +50,8 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
@@ -58,7 +60,7 @@
             this.btnCancelar});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(416, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(555, 58);
             this.toolStripBarraMenu.TabIndex = 5;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -68,14 +70,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -83,14 +86,15 @@
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(23, 22);
+            this.btnGuardar.Size = new System.Drawing.Size(54, 55);
             this.btnGuardar.Text = "&Guardar";
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -98,7 +102,7 @@
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(23, 22);
+            this.btnCancelar.Size = new System.Drawing.Size(54, 55);
             this.btnCancelar.Text = "toolStripButton1";
             this.btnCancelar.ToolTipText = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -112,9 +116,11 @@
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 28);
+            this.groupBox1.Location = new System.Drawing.Point(16, 62);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(393, 102);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(524, 126);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
@@ -125,21 +131,23 @@
             this.txtOrden.Decimales = 0;
             this.txtOrden.EstiloTexto = SC_ControlsCS.EstiloCaptura.Numerico;
             this.txtOrden.ForeColor = System.Drawing.Color.Black;
-            this.txtOrden.Location = new System.Drawing.Point(95, 72);
+            this.txtOrden.Location = new System.Drawing.Point(127, 89);
+            this.txtOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOrden.MaxLength = 4;
             this.txtOrden.Name = "txtOrden";
             this.txtOrden.PermitirApostrofo = false;
             this.txtOrden.PermitirNegativos = false;
-            this.txtOrden.Size = new System.Drawing.Size(64, 20);
+            this.txtOrden.Size = new System.Drawing.Size(84, 22);
             this.txtOrden.TabIndex = 14;
             this.txtOrden.Text = "0";
             this.txtOrden.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(9, 76);
+            this.label6.Location = new System.Drawing.Point(12, 94);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 13);
+            this.label6.Size = new System.Drawing.Size(115, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "Orden :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -149,9 +157,10 @@
             this.lblCancelado.AutoSize = true;
             this.lblCancelado.BackColor = System.Drawing.Color.Transparent;
             this.lblCancelado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancelado.Location = new System.Drawing.Point(165, 24);
+            this.lblCancelado.Location = new System.Drawing.Point(220, 30);
+            this.lblCancelado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCancelado.Name = "lblCancelado";
-            this.lblCancelado.Size = new System.Drawing.Size(81, 13);
+            this.lblCancelado.Size = new System.Drawing.Size(101, 17);
             this.lblCancelado.TabIndex = 9;
             this.lblCancelado.Text = "CANCELADO";
             this.lblCancelado.Visible = false;
@@ -162,12 +171,13 @@
             this.txtId.Decimales = 2;
             this.txtId.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtId.ForeColor = System.Drawing.Color.Black;
-            this.txtId.Location = new System.Drawing.Point(95, 20);
+            this.txtId.Location = new System.Drawing.Point(127, 25);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.MaxLength = 4;
             this.txtId.Name = "txtId";
             this.txtId.PermitirApostrofo = false;
             this.txtId.PermitirNegativos = false;
-            this.txtId.Size = new System.Drawing.Size(64, 20);
+            this.txtId.Size = new System.Drawing.Size(84, 22);
             this.txtId.TabIndex = 0;
             this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown);
@@ -180,41 +190,46 @@
             this.txtNombre.Decimales = 2;
             this.txtNombre.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtNombre.ForeColor = System.Drawing.Color.Black;
-            this.txtNombre.Location = new System.Drawing.Point(95, 47);
+            this.txtNombre.Location = new System.Drawing.Point(127, 58);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PermitirApostrofo = false;
             this.txtNombre.PermitirNegativos = false;
-            this.txtNombre.Size = new System.Drawing.Size(282, 20);
+            this.txtNombre.Size = new System.Drawing.Size(375, 22);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(9, 24);
+            this.label1.Location = new System.Drawing.Point(12, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(115, 16);
             this.label1.TabIndex = 7;
             this.label1.Text = "Clave  :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(9, 51);
+            this.label2.Location = new System.Drawing.Point(12, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Nombre :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FrmCatRotacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 139);
+            this.ClientSize = new System.Drawing.Size(555, 200);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStripBarraMenu);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmCatRotacion";
+            this.ShowIcon = false;
             this.Text = "Catalogo de Rotaciones";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmCatRotacion_Load);
@@ -223,7 +238,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

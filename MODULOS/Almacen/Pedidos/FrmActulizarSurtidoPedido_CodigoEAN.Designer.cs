@@ -83,9 +83,9 @@
             this.GrupoProductos.Controls.Add(this.lblDescripcionSal);
             this.GrupoProductos.Controls.Add(this.grdDetalles);
             this.GrupoProductos.Location = new System.Drawing.Point(11, 126);
-            this.GrupoProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GrupoProductos.Margin = new System.Windows.Forms.Padding(4);
             this.GrupoProductos.Name = "GrupoProductos";
-            this.GrupoProductos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GrupoProductos.Padding = new System.Windows.Forms.Padding(4);
             this.GrupoProductos.Size = new System.Drawing.Size(1552, 402);
             this.GrupoProductos.TabIndex = 1;
             this.GrupoProductos.TabStop = false;
@@ -156,7 +156,7 @@
             this.grdDetalles.HorizontalScrollBar.TabIndex = 2;
             this.grdDetalles.HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded;
             this.grdDetalles.Location = new System.Drawing.Point(11, 22);
-            this.grdDetalles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdDetalles.Margin = new System.Windows.Forms.Padding(4);
             this.grdDetalles.Name = "grdDetalles";
             this.grdDetalles.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdDetalles.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
@@ -437,9 +437,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.txtCodifoEAN);
             this.groupBox1.Location = new System.Drawing.Point(11, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1552, 110);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -455,7 +455,7 @@
             this.txtCodifoEAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodifoEAN.ForeColor = System.Drawing.Color.Black;
             this.txtCodifoEAN.Location = new System.Drawing.Point(224, 23);
-            this.txtCodifoEAN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodifoEAN.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodifoEAN.MaxLength = 15;
             this.txtCodifoEAN.Name = "txtCodifoEAN";
             this.txtCodifoEAN.PermitirApostrofo = false;
@@ -488,6 +488,7 @@
             this.Controls.Add(this.GrupoProductos);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmActulizarSurtidoPedido_CodigoEAN";
+            this.ShowIcon = false;
             this.Text = "Actualizar Surtido por Código EAN";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmActulizarSurtidoPedido_CodigoEAN_Load);

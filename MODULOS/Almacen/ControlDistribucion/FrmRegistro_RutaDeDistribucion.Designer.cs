@@ -415,7 +415,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -431,7 +431,7 @@
             // 
             this.toolStripSeparator8.AutoSize = false;
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -448,7 +448,7 @@
             // 
             this.toolStripSeparator7.AutoSize = false;
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -464,7 +464,7 @@
             // 
             this.toolStripSeparator6.AutoSize = false;
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGenerarDocumentos
             // 
@@ -481,7 +481,7 @@
             // 
             this.toolStripSeparator5.AutoSize = false;
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(12, 4);
             // 
             // btnFirmarDoctos
             // 

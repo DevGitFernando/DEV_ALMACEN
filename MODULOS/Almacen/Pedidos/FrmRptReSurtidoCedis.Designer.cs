@@ -43,13 +43,14 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
             this.btnImprimir});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(285, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(380, 27);
             this.toolStripBarraMenu.TabIndex = 2;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -59,14 +60,14 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(29, 24);
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // btnImprimir
             // 
@@ -74,7 +75,7 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(23, 22);
+            this.btnImprimir.Size = new System.Drawing.Size(29, 24);
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
@@ -82,24 +83,28 @@
             // 
             this.FrameMesesRevision.Controls.Add(this.lblMesesRev);
             this.FrameMesesRevision.Controls.Add(this.nmMesesCad);
-            this.FrameMesesRevision.Location = new System.Drawing.Point(10, 23);
+            this.FrameMesesRevision.Location = new System.Drawing.Point(13, 28);
+            this.FrameMesesRevision.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameMesesRevision.Name = "FrameMesesRevision";
-            this.FrameMesesRevision.Size = new System.Drawing.Size(263, 53);
+            this.FrameMesesRevision.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameMesesRevision.Size = new System.Drawing.Size(351, 65);
             this.FrameMesesRevision.TabIndex = 12;
             this.FrameMesesRevision.TabStop = false;
             // 
             // lblMesesRev
             // 
-            this.lblMesesRev.Location = new System.Drawing.Point(32, 20);
+            this.lblMesesRev.Location = new System.Drawing.Point(43, 25);
+            this.lblMesesRev.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMesesRev.Name = "lblMesesRev";
-            this.lblMesesRev.Size = new System.Drawing.Size(129, 18);
+            this.lblMesesRev.Size = new System.Drawing.Size(172, 22);
             this.lblMesesRev.TabIndex = 4;
             this.lblMesesRev.Text = "Caducidad en meses <=";
             this.lblMesesRev.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // nmMesesCad
             // 
-            this.nmMesesCad.Location = new System.Drawing.Point(167, 20);
+            this.nmMesesCad.Location = new System.Drawing.Point(223, 25);
+            this.nmMesesCad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nmMesesCad.Maximum = new decimal(new int[] {
             48,
             0,
@@ -111,7 +116,7 @@
             0,
             0});
             this.nmMesesCad.Name = "nmMesesCad";
-            this.nmMesesCad.Size = new System.Drawing.Size(64, 20);
+            this.nmMesesCad.Size = new System.Drawing.Size(85, 22);
             this.nmMesesCad.TabIndex = 3;
             this.nmMesesCad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nmMesesCad.Value = new decimal(new int[] {
@@ -122,13 +127,14 @@
             // 
             // FrmRptReSurtidoCedis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 85);
+            this.ClientSize = new System.Drawing.Size(380, 105);
             this.Controls.Add(this.FrameMesesRevision);
             this.Controls.Add(this.toolStripBarraMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmRptReSurtidoCedis";
+            this.ShowIcon = false;
             this.Text = "Reporte para resurtido de ubicaciones";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmRptReSurtidoCedis_Load);

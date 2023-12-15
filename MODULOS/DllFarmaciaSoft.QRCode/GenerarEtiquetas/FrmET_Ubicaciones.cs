@@ -157,7 +157,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                     {
                         if (leer.Campo("Status") == "C")
                         {
-                            General.msjAviso("El rack se encuentra actualmente cancelado, verifique porfavor.");
+                            General.msjAviso("Rack cancelado. Favor de verificar.");
                             txtPasillo.Text = "";
                             txtPasillo.Enabled = true;
                         }
@@ -172,7 +172,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                     }
                     else
                     {
-                        General.msjAviso("El rack no existe, verifique porfavor.");
+                        General.msjAviso("Rack no existe. Favor de verificar.");
                         txtPasillo.Text = "";
                         txtPasillo.Enabled = true;
                         txtPasillo.Focus();
@@ -201,7 +201,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                     {
                         if (leer.Campo("Status") == "C")
                         {
-                            General.msjAviso("El nivel se encuentra actualmente cancelado, verifique porfavor.");
+                            General.msjAviso("Nivel cancelado. Favor de verificar.");
                             txtEstante.Text = "";
                             txtEstante.Enabled = true;
                         }
@@ -216,7 +216,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                     }
                     else
                     {
-                        General.msjAviso("El nivel no existe, verifique porfavor.");
+                        General.msjAviso("Nivel no existe. Favor de verificar.");
                         txtEstante.Text = "";
                         txtEstante.Enabled = true;
                         txtPasillo.Focus();
@@ -244,7 +244,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                     {
                         if (leer.Campo("Status") == "C")
                         {
-                            General.msjAviso("El entrepaño se encuentra actualmente cancelado, verifique porfavor.");
+                            General.msjAviso("Posición cancelada. Favor de verificar.");
                             txtEntrepaño.Text = "";
                             txtEntrepaño.Enabled = true;
                         }
@@ -258,7 +258,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                     }
                     else
                     {
-                        General.msjAviso("El entrepaño no existe, verifique porfavor.");
+                        General.msjAviso("Posición no existe. Favor de verificar.");
                         txtEntrepaño.Text = "";
                         txtEntrepaño.Enabled = true;
                         txtEntrepaño.Focus();
@@ -314,7 +314,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             {
                 if (!leer.Leer())
                 {
-                    General.msjAviso("No se encontro la posición solicitada.");
+                    General.msjAviso("Posición no encontrada.");
                 }
                 else
                 {
@@ -334,17 +334,17 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             if (txtPasillo.Text == "")
             {
                 bDevuelbe = false;
-                General.msjAviso("Debe capturar el rack antes de continuar.");
+                General.msjAviso("Capturar Rack. Favor de verificar.");
             }
             else if (txtEstante.Text == "")
             {
                 bDevuelbe = false;
-                General.msjAviso("Debe capturar el nivel antes de continuar.");
+                General.msjAviso("Capturar Nivel. Favor de verificar.");
             }
             else if (txtEntrepaño.Text == "")
             {
                 bDevuelbe = false;
-                General.msjAviso("Debe capturar el entrepaño antes de continuar.");
+                General.msjAviso("Capturar Posición. Favor de verificar.");
             }
 
             return bDevuelbe;

@@ -236,7 +236,7 @@ namespace Almacen.Pedidos
 
         private bool MarcarFolioParaEntregaValidacion()
         {
-            string message = "Esta operación cambiará el Status del Folio de Surtido como disponible para Documentación (Generar transferencia), ¿ Desea continuar ?";
+            string message = "Esta operación cambiará el Status del Folio de Surtido como disponible para Documentación (Generar Traspaso), ¿ Desea continuar ?";
             string sFolioSurtido = lst.GetValue((int)Cols.Folio);
             string sStatus = lst.GetValue((int)Cols.Status);
             bool bRegresa = false;

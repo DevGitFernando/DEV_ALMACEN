@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKardexClaves));
-            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer3 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer4 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType4 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType5 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType6 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType2 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType3 = new FarPoint.Win.Spread.CellType.NumberCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -99,7 +99,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -115,7 +115,7 @@
             // 
             this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -138,9 +138,9 @@
             this.groupBox1.Controls.Add(this.txtCodigo);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(13, 67);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1036, 86);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -199,7 +199,7 @@
             this.txtCodigo.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtCodigo.ForeColor = System.Drawing.Color.Black;
             this.txtCodigo.Location = new System.Drawing.Point(132, 18);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.MaxLength = 15;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.PermitirApostrofo = false;
@@ -229,9 +229,9 @@
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.grdMovtos);
             this.groupBox2.Location = new System.Drawing.Point(13, 161);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1285, 511);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -242,9 +242,9 @@
             this.groupBox4.Controls.Add(this.rdoDetallado);
             this.groupBox4.Controls.Add(this.rdoConcentrado);
             this.groupBox4.Location = new System.Drawing.Point(193, 210);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(112, 44);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
@@ -254,7 +254,7 @@
             // rdoDetallado
             // 
             this.rdoDetallado.Location = new System.Drawing.Point(25, 55);
-            this.rdoDetallado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoDetallado.Margin = new System.Windows.Forms.Padding(4);
             this.rdoDetallado.Name = "rdoDetallado";
             this.rdoDetallado.Size = new System.Drawing.Size(139, 18);
             this.rdoDetallado.TabIndex = 1;
@@ -266,7 +266,7 @@
             // 
             this.rdoConcentrado.Checked = true;
             this.rdoConcentrado.Location = new System.Drawing.Point(25, 25);
-            this.rdoConcentrado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoConcentrado.Margin = new System.Windows.Forms.Padding(4);
             this.rdoConcentrado.Name = "rdoConcentrado";
             this.rdoConcentrado.Size = new System.Drawing.Size(139, 18);
             this.rdoConcentrado.TabIndex = 0;
@@ -285,21 +285,21 @@
             this.grdMovtos.BackColor = System.Drawing.Color.WhiteSmoke;
             this.grdMovtos.HorizontalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
             this.grdMovtos.HorizontalScrollBar.Name = "";
-            enhancedScrollBarRenderer3.ArrowColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer3.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer3.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer3.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer3.ButtonBorderColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer3.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer3.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer3.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer3.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer3.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer3.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
-            this.grdMovtos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer3;
+            enhancedScrollBarRenderer1.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer1.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer1.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer1.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer1.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer1.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer1.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer1.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer1.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer1.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer1.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdMovtos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer1;
             this.grdMovtos.HorizontalScrollBar.TabIndex = 2;
             this.grdMovtos.Location = new System.Drawing.Point(12, 23);
-            this.grdMovtos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdMovtos.Margin = new System.Windows.Forms.Padding(4);
             this.grdMovtos.Name = "grdMovtos";
             this.grdMovtos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdMovtos.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
@@ -309,18 +309,18 @@
             this.grdMovtos.TabIndex = 4;
             this.grdMovtos.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
             this.grdMovtos.VerticalScrollBar.Name = "";
-            enhancedScrollBarRenderer4.ArrowColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer4.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer4.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer4.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer4.ButtonBorderColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer4.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer4.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer4.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer4.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer4.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer4.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
-            this.grdMovtos.VerticalScrollBar.Renderer = enhancedScrollBarRenderer4;
+            enhancedScrollBarRenderer2.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer2.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer2.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer2.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer2.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer2.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer2.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer2.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer2.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer2.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer2.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdMovtos.VerticalScrollBar.Renderer = enhancedScrollBarRenderer2;
             this.grdMovtos.VerticalScrollBar.TabIndex = 3;
             // 
             // grdMovtos_Sheet1
@@ -336,43 +336,43 @@
             this.grdMovtos_Sheet1.ColumnHeader.Cells.Get(0, 2).Value = "Salida";
             this.grdMovtos_Sheet1.ColumnHeader.Cells.Get(0, 3).Value = "Existencia";
             this.grdMovtos_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
-            this.grdMovtos_Sheet1.Columns.Get(0).CellType = textCellType2;
+            this.grdMovtos_Sheet1.Columns.Get(0).CellType = textCellType1;
             this.grdMovtos_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(0).Label = "Fecha";
             this.grdMovtos_Sheet1.Columns.Get(0).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(0).Width = 190F;
-            numberCellType4.DecimalPlaces = 0;
-            numberCellType4.DecimalSeparator = ".";
-            numberCellType4.MaximumValue = 10000000D;
-            numberCellType4.MinimumValue = 0D;
-            numberCellType4.Separator = ",";
-            numberCellType4.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(1).CellType = numberCellType4;
+            numberCellType1.DecimalPlaces = 0;
+            numberCellType1.DecimalSeparator = ".";
+            numberCellType1.MaximumValue = 10000000D;
+            numberCellType1.MinimumValue = 0D;
+            numberCellType1.Separator = ",";
+            numberCellType1.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(1).CellType = numberCellType1;
             this.grdMovtos_Sheet1.Columns.Get(1).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(1).Label = "Entrada";
             this.grdMovtos_Sheet1.Columns.Get(1).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(1).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(1).Width = 180F;
-            numberCellType5.DecimalPlaces = 0;
-            numberCellType5.DecimalSeparator = ".";
-            numberCellType5.MaximumValue = 10000000D;
-            numberCellType5.MinimumValue = 0D;
-            numberCellType5.Separator = ",";
-            numberCellType5.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(2).CellType = numberCellType5;
+            numberCellType2.DecimalPlaces = 0;
+            numberCellType2.DecimalSeparator = ".";
+            numberCellType2.MaximumValue = 10000000D;
+            numberCellType2.MinimumValue = 0D;
+            numberCellType2.Separator = ",";
+            numberCellType2.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(2).CellType = numberCellType2;
             this.grdMovtos_Sheet1.Columns.Get(2).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(2).Label = "Salida";
             this.grdMovtos_Sheet1.Columns.Get(2).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(2).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(2).Width = 180F;
-            numberCellType6.DecimalPlaces = 0;
-            numberCellType6.DecimalSeparator = ".";
-            numberCellType6.MaximumValue = 10000000D;
-            numberCellType6.MinimumValue = 0D;
-            numberCellType6.Separator = ",";
-            numberCellType6.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(3).CellType = numberCellType6;
+            numberCellType3.DecimalPlaces = 0;
+            numberCellType3.DecimalSeparator = ".";
+            numberCellType3.MaximumValue = 10000000D;
+            numberCellType3.MinimumValue = 0D;
+            numberCellType3.Separator = ",";
+            numberCellType3.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(3).CellType = numberCellType3;
             this.grdMovtos_Sheet1.Columns.Get(3).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(3).Label = "Existencia";
             this.grdMovtos_Sheet1.Columns.Get(3).Locked = true;
@@ -391,9 +391,9 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.dtpFechaInicial);
             this.groupBox3.Location = new System.Drawing.Point(1057, 67);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(241, 86);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -404,7 +404,7 @@
             this.dtpFechaFinal.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaFinal.Location = new System.Drawing.Point(95, 52);
-            this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaFinal.Name = "dtpFechaFinal";
             this.dtpFechaFinal.Size = new System.Drawing.Size(128, 22);
             this.dtpFechaFinal.TabIndex = 1;
@@ -436,7 +436,7 @@
             this.dtpFechaInicial.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaInicial.Location = new System.Drawing.Point(95, 20);
-            this.dtpFechaInicial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaInicial.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaInicial.Name = "dtpFechaInicial";
             this.dtpFechaInicial.Size = new System.Drawing.Size(128, 22);
             this.dtpFechaInicial.TabIndex = 0;
@@ -453,7 +453,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStripBarraMenu);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmKardexClaves";
             this.ShowIcon = false;
             this.Text = "Kardex de Clave";

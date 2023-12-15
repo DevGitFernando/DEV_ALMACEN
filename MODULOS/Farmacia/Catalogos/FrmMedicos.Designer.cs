@@ -106,7 +106,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -122,7 +122,7 @@
             // 
             this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -139,7 +139,7 @@
             // 
             this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -597,7 +597,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStripBarraMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmMedicos";
             this.ShowIcon = false;
             this.Text = "Médicos";

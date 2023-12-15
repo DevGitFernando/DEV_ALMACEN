@@ -72,9 +72,9 @@
             this.groupBox2.Controls.Add(this.lblTotal);
             this.groupBox2.Controls.Add(this.lstEAN);
             this.groupBox2.Location = new System.Drawing.Point(12, 308);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1288, 432);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
@@ -116,7 +116,7 @@
             this.Exist_Total});
             this.lstEAN.HideSelection = false;
             this.lstEAN.Location = new System.Drawing.Point(12, 23);
-            this.lstEAN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstEAN.Margin = new System.Windows.Forms.Padding(4);
             this.lstEAN.Name = "lstEAN";
             this.lstEAN.Size = new System.Drawing.Size(1263, 367);
             this.lstEAN.TabIndex = 0;
@@ -183,7 +183,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -200,7 +200,7 @@
             // 
             this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -234,9 +234,9 @@
             this.groupBox3.Controls.Add(this.rdoRptTodos);
             this.groupBox3.Controls.Add(this.rdoRptConExist);
             this.groupBox3.Location = new System.Drawing.Point(12, 68);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(1288, 43);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -245,7 +245,7 @@
             // rdoRptSinExist
             // 
             this.rdoRptSinExist.Location = new System.Drawing.Point(843, 13);
-            this.rdoRptSinExist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoRptSinExist.Margin = new System.Windows.Forms.Padding(4);
             this.rdoRptSinExist.Name = "rdoRptSinExist";
             this.rdoRptSinExist.Size = new System.Drawing.Size(160, 23);
             this.rdoRptSinExist.TabIndex = 2;
@@ -256,7 +256,7 @@
             // 
             this.rdoRptTodos.Checked = true;
             this.rdoRptTodos.Location = new System.Drawing.Point(285, 13);
-            this.rdoRptTodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoRptTodos.Margin = new System.Windows.Forms.Padding(4);
             this.rdoRptTodos.Name = "rdoRptTodos";
             this.rdoRptTodos.Size = new System.Drawing.Size(160, 23);
             this.rdoRptTodos.TabIndex = 0;
@@ -267,7 +267,7 @@
             // rdoRptConExist
             // 
             this.rdoRptConExist.Location = new System.Drawing.Point(564, 13);
-            this.rdoRptConExist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoRptConExist.Margin = new System.Windows.Forms.Padding(4);
             this.rdoRptConExist.Name = "rdoRptConExist";
             this.rdoRptConExist.Size = new System.Drawing.Size(160, 23);
             this.rdoRptConExist.TabIndex = 1;
@@ -283,9 +283,9 @@
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 114);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1291, 187);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -298,7 +298,7 @@
             this.txtClaveSSA.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtClaveSSA.ForeColor = System.Drawing.Color.Black;
             this.txtClaveSSA.Location = new System.Drawing.Point(129, 23);
-            this.txtClaveSSA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClaveSSA.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveSSA.MaxLength = 20;
             this.txtClaveSSA.Name = "txtClaveSSA";
             this.txtClaveSSA.PermitirApostrofo = false;
@@ -344,7 +344,7 @@
             this.txtId.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtId.ForeColor = System.Drawing.Color.Black;
             this.txtId.Location = new System.Drawing.Point(129, 103);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.MaxLength = 8;
             this.txtId.Name = "txtId";
             this.txtId.PermitirApostrofo = false;
@@ -375,7 +375,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.toolStripBarraMenu);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmExistenciaPorCodigoInterno";
             this.ShowIcon = false;
             this.Text = "Existencia por Código Interno";

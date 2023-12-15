@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.FrameDetalle = new System.Windows.Forms.GroupBox();
             this.scLabelExt2 = new SC_ControlsCS.scLabelExt();
             this.lblTransferencias = new SC_ControlsCS.scLabelExt();
@@ -46,55 +47,57 @@
             this.FrameDetalle.Controls.Add(this.scLabelExt1);
             this.FrameDetalle.Controls.Add(this.lblTotalPiezas);
             this.FrameDetalle.Controls.Add(this.listMovimientos);
-            this.FrameDetalle.Location = new System.Drawing.Point(11, 6);
+            this.FrameDetalle.Location = new System.Drawing.Point(15, 7);
+            this.FrameDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameDetalle.Name = "FrameDetalle";
-            this.FrameDetalle.Size = new System.Drawing.Size(699, 374);
+            this.FrameDetalle.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameDetalle.Size = new System.Drawing.Size(932, 460);
             this.FrameDetalle.TabIndex = 6;
             this.FrameDetalle.TabStop = false;
             this.FrameDetalle.Text = "Detalle";
             // 
             // scLabelExt2
             // 
-            this.scLabelExt2.Location = new System.Drawing.Point(140, 330);
+            this.scLabelExt2.Location = new System.Drawing.Point(187, 406);
+            this.scLabelExt2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.scLabelExt2.MostrarToolTip = false;
             this.scLabelExt2.Name = "scLabelExt2";
-            this.scLabelExt2.Size = new System.Drawing.Size(167, 30);
+            this.scLabelExt2.Size = new System.Drawing.Size(223, 37);
             this.scLabelExt2.TabIndex = 6;
-            this.scLabelExt2.Text = "Número de Transferencias : ";
+            this.scLabelExt2.Text = "Traspasos : ";
             this.scLabelExt2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTransferencias
             // 
-            this.lblTransferencias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTransferencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTransferencias.Location = new System.Drawing.Point(310, 330);
+            this.lblTransferencias.Location = new System.Drawing.Point(413, 406);
+            this.lblTransferencias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransferencias.MostrarToolTip = false;
             this.lblTransferencias.Name = "lblTransferencias";
-            this.lblTransferencias.Size = new System.Drawing.Size(102, 30);
+            this.lblTransferencias.Size = new System.Drawing.Size(136, 37);
             this.lblTransferencias.TabIndex = 5;
-            this.lblTransferencias.Text = "scLabelExt1";
             this.lblTransferencias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // scLabelExt1
             // 
-            this.scLabelExt1.Location = new System.Drawing.Point(418, 330);
-            this.scLabelExt1.MostrarToolTip = false;
+            this.scLabelExt1.Location = new System.Drawing.Point(557, 406);
+            this.scLabelExt1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.scLabelExt1.MostrarToolTip = true;
             this.scLabelExt1.Name = "scLabelExt1";
-            this.scLabelExt1.Size = new System.Drawing.Size(100, 30);
+            this.scLabelExt1.Size = new System.Drawing.Size(133, 37);
             this.scLabelExt1.TabIndex = 4;
             this.scLabelExt1.Text = "Total de Piezas : ";
             this.scLabelExt1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTotalPiezas
             // 
-            this.lblTotalPiezas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTotalPiezas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPiezas.Location = new System.Drawing.Point(524, 330);
+            this.lblTotalPiezas.Location = new System.Drawing.Point(699, 406);
+            this.lblTotalPiezas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalPiezas.MostrarToolTip = false;
             this.lblTotalPiezas.Name = "lblTotalPiezas";
-            this.lblTotalPiezas.Size = new System.Drawing.Size(166, 30);
+            this.lblTotalPiezas.Size = new System.Drawing.Size(221, 37);
             this.lblTotalPiezas.TabIndex = 3;
-            this.lblTotalPiezas.Text = "scLabelExt1";
             this.lblTotalPiezas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // listMovimientos
@@ -102,9 +105,11 @@
             this.listMovimientos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listMovimientos.Location = new System.Drawing.Point(10, 19);
+            this.listMovimientos.HideSelection = false;
+            this.listMovimientos.Location = new System.Drawing.Point(13, 23);
+            this.listMovimientos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listMovimientos.Name = "listMovimientos";
-            this.listMovimientos.Size = new System.Drawing.Size(680, 304);
+            this.listMovimientos.Size = new System.Drawing.Size(905, 373);
             this.listMovimientos.TabIndex = 2;
             this.listMovimientos.UseCompatibleStateImageBehavior = false;
             // 
@@ -114,12 +119,14 @@
             // 
             // FrmKardexProductoTransferenciasEnTransito
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 388);
+            this.ClientSize = new System.Drawing.Size(960, 478);
             this.Controls.Add(this.FrameDetalle);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmKardexProductoTransferenciasEnTransito";
-            this.Text = "Transferencias en Tránsito";
+            this.ShowIcon = false;
+            this.Text = "Traspasos en Tránsito";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.FrameDetalle.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -82,14 +82,14 @@ namespace DllFarmaciaSoft.Reporteador
         private void FrmReporteador_Load(object sender, EventArgs e)
         {
             lblTituloReporte.Visible = false; 
-            this.Height = 130;
-            this.Width = 460;
+            //this.Height = 130;
+            //this.Width = 460;
 
-            FrameProceso.Left = 8;
-            FrameProceso.Top = 25;
-            FrameProceso.Height = 64;
-            FrameProceso.Width = 428;
-            this.Height = 130;
+            //FrameProceso.Left = 8;
+            //FrameProceso.Top = 25;
+            //FrameProceso.Height = 64;
+            //FrameProceso.Width = 428;
+            //this.Height = 130;
 
             if (DtGeneral.EsEquipoDeDesarrollo)
             {
@@ -112,9 +112,9 @@ namespace DllFarmaciaSoft.Reporteador
             }
             else
             {
-                this.FrameProceso.Height -= lblTituloReporte.Height;
-                this.Height -= lblTituloReporte.Height;
-                this.Height += 5;
+                //this.FrameProceso.Height -= lblTituloReporte.Height;
+                //this.Height -= lblTituloReporte.Height;
+                //this.Height += 5;
             }
 
             tmIniciarProceso.Interval = 1500;

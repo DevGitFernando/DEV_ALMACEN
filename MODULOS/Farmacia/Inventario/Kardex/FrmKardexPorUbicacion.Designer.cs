@@ -49,10 +49,10 @@
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.btnEjecutar = new System.Windows.Forms.ToolStripButton();
-            this.btnImprimir = new System.Windows.Forms.ToolStripButton();
-            this.btnExportarExcel = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnImprimir = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnExportarExcel = new System.Windows.Forms.ToolStripButton();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStripBarraMenu.SuspendLayout();
@@ -65,9 +65,9 @@
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.dtpFechaInicial);
             this.groupBox5.Location = new System.Drawing.Point(7, 205);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(575, 66);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
@@ -78,7 +78,7 @@
             this.dtpFechaFinal.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaFinal.Location = new System.Drawing.Point(363, 27);
-            this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaFinal.Name = "dtpFechaFinal";
             this.dtpFechaFinal.Size = new System.Drawing.Size(120, 22);
             this.dtpFechaFinal.TabIndex = 1;
@@ -108,7 +108,7 @@
             this.dtpFechaInicial.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaInicial.Location = new System.Drawing.Point(148, 27);
-            this.dtpFechaInicial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaInicial.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaInicial.Name = "dtpFechaInicial";
             this.dtpFechaInicial.Size = new System.Drawing.Size(120, 22);
             this.dtpFechaInicial.TabIndex = 0;
@@ -126,9 +126,9 @@
             this.groupBox1.Controls.Add(this.txtPasillo);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Location = new System.Drawing.Point(7, 64);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(575, 138);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
@@ -149,7 +149,7 @@
             this.txtEntrepaño.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtEntrepaño.ForeColor = System.Drawing.Color.Black;
             this.txtEntrepaño.Location = new System.Drawing.Point(124, 95);
-            this.txtEntrepaño.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEntrepaño.Margin = new System.Windows.Forms.Padding(4);
             this.txtEntrepaño.MaxLength = 4;
             this.txtEntrepaño.Name = "txtEntrepaño";
             this.txtEntrepaño.PermitirApostrofo = false;
@@ -186,7 +186,7 @@
             this.txtEstante.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtEstante.ForeColor = System.Drawing.Color.Black;
             this.txtEstante.Location = new System.Drawing.Point(124, 64);
-            this.txtEstante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstante.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstante.MaxLength = 4;
             this.txtEstante.Name = "txtEstante";
             this.txtEstante.PermitirApostrofo = false;
@@ -223,7 +223,7 @@
             this.txtPasillo.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtPasillo.ForeColor = System.Drawing.Color.Black;
             this.txtPasillo.Location = new System.Drawing.Point(124, 33);
-            this.txtPasillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPasillo.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasillo.MaxLength = 4;
             this.txtPasillo.Name = "txtPasillo";
             this.txtPasillo.PermitirApostrofo = false;
@@ -277,7 +277,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -291,6 +291,12 @@
             this.btnEjecutar.ToolTipText = "Ejecutar";
             this.btnEjecutar.Visible = false;
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.AutoSize = false;
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 4);
+            // 
             // btnImprimir
             // 
             this.btnImprimir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -301,6 +307,12 @@
             this.btnImprimir.Size = new System.Drawing.Size(54, 55);
             this.btnImprimir.Text = "&Imprimir";
             this.btnImprimir.Visible = false;
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.AutoSize = false;
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 4);
             // 
             // btnExportarExcel
             // 
@@ -313,18 +325,6 @@
             this.btnExportarExcel.ToolTipText = "Exportar a Excel";
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.AutoSize = false;
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 58);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.AutoSize = false;
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 58);
-            // 
             // FrmKardexPorUbicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -333,7 +333,7 @@
             this.Controls.Add(this.toolStripBarraMenu);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox5);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmKardexPorUbicacion";
             this.ShowIcon = false;
             this.Text = "Kardex de Ubicación";

@@ -29,31 +29,57 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdo_01_Default = new System.Windows.Forms.RadioButton();
             this.rdo_02_Personalizado = new System.Windows.Forms.RadioButton();
-            this.nm_02_Hasta = new System.Windows.Forms.NumericUpDown();
-            this.nm_01_Desde = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
+            this.rdo_01_Default = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nm_01_Desde = new System.Windows.Forms.NumericUpDown();
+            this.nm_02_Hasta = new System.Windows.Forms.NumericUpDown();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nm_02_Hasta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nm_01_Desde)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nm_02_Hasta)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rdo_02_Personalizado);
             this.groupBox1.Controls.Add(this.rdo_01_Default);
-            this.groupBox1.Location = new System.Drawing.Point(6, 2);
+            this.groupBox1.Location = new System.Drawing.Point(8, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(377, 66);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(503, 81);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formato";
+            // 
+            // rdo_02_Personalizado
+            // 
+            this.rdo_02_Personalizado.Location = new System.Drawing.Point(277, 31);
+            this.rdo_02_Personalizado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdo_02_Personalizado.Name = "rdo_02_Personalizado";
+            this.rdo_02_Personalizado.Size = new System.Drawing.Size(159, 21);
+            this.rdo_02_Personalizado.TabIndex = 1;
+            this.rdo_02_Personalizado.TabStop = true;
+            this.rdo_02_Personalizado.Text = "Personalizado";
+            this.rdo_02_Personalizado.UseVisualStyleBackColor = true;
+            this.rdo_02_Personalizado.CheckedChanged += new System.EventHandler(this.rdo_02_Personalizado_CheckedChanged);
+            // 
+            // rdo_01_Default
+            // 
+            this.rdo_01_Default.Location = new System.Drawing.Point(65, 31);
+            this.rdo_01_Default.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdo_01_Default.Name = "rdo_01_Default";
+            this.rdo_01_Default.Size = new System.Drawing.Size(184, 21);
+            this.rdo_01_Default.TabIndex = 0;
+            this.rdo_01_Default.TabStop = true;
+            this.rdo_01_Default.Text = "Default";
+            this.rdo_01_Default.UseVisualStyleBackColor = true;
+            this.rdo_01_Default.CheckedChanged += new System.EventHandler(this.rdo_01_Default_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -61,74 +87,59 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.nm_01_Desde);
             this.groupBox2.Controls.Add(this.nm_02_Hasta);
-            this.groupBox2.Location = new System.Drawing.Point(6, 70);
+            this.groupBox2.Location = new System.Drawing.Point(8, 86);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(377, 66);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(503, 81);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Etiquetas";
             // 
-            // rdo_01_Default
-            // 
-            this.rdo_01_Default.Location = new System.Drawing.Point(49, 25);
-            this.rdo_01_Default.Name = "rdo_01_Default";
-            this.rdo_01_Default.Size = new System.Drawing.Size(138, 17);
-            this.rdo_01_Default.TabIndex = 0;
-            this.rdo_01_Default.TabStop = true;
-            this.rdo_01_Default.Text = "Default";
-            this.rdo_01_Default.UseVisualStyleBackColor = true;
-            this.rdo_01_Default.CheckedChanged += new System.EventHandler(this.rdo_01_Default_CheckedChanged);
-            // 
-            // rdo_02_Personalizado
-            // 
-            this.rdo_02_Personalizado.Location = new System.Drawing.Point(208, 25);
-            this.rdo_02_Personalizado.Name = "rdo_02_Personalizado";
-            this.rdo_02_Personalizado.Size = new System.Drawing.Size(119, 17);
-            this.rdo_02_Personalizado.TabIndex = 1;
-            this.rdo_02_Personalizado.TabStop = true;
-            this.rdo_02_Personalizado.Text = "Personalizado";
-            this.rdo_02_Personalizado.UseVisualStyleBackColor = true;
-            this.rdo_02_Personalizado.CheckedChanged += new System.EventHandler(this.rdo_02_Personalizado_CheckedChanged);
-            // 
-            // nm_02_Hasta
-            // 
-            this.nm_02_Hasta.Location = new System.Drawing.Point(255, 29);
-            this.nm_02_Hasta.Name = "nm_02_Hasta";
-            this.nm_02_Hasta.Size = new System.Drawing.Size(101, 20);
-            this.nm_02_Hasta.TabIndex = 0;
-            this.nm_02_Hasta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // nm_01_Desde
-            // 
-            this.nm_01_Desde.Location = new System.Drawing.Point(88, 29);
-            this.nm_01_Desde.Name = "nm_01_Desde";
-            this.nm_01_Desde.Size = new System.Drawing.Size(101, 20);
-            this.nm_01_Desde.TabIndex = 1;
-            this.nm_01_Desde.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(28, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 18);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Desde";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(195, 30);
+            this.label2.Location = new System.Drawing.Point(260, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 18);
+            this.label2.Size = new System.Drawing.Size(72, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Hasta";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(37, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 22);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Desde";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // nm_01_Desde
+            // 
+            this.nm_01_Desde.Location = new System.Drawing.Point(117, 36);
+            this.nm_01_Desde.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nm_01_Desde.Name = "nm_01_Desde";
+            this.nm_01_Desde.Size = new System.Drawing.Size(135, 22);
+            this.nm_01_Desde.TabIndex = 1;
+            this.nm_01_Desde.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // nm_02_Hasta
+            // 
+            this.nm_02_Hasta.Location = new System.Drawing.Point(340, 36);
+            this.nm_02_Hasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nm_02_Hasta.Name = "nm_02_Hasta";
+            this.nm_02_Hasta.Size = new System.Drawing.Size(135, 22);
+            this.nm_02_Hasta.TabIndex = 0;
+            this.nm_02_Hasta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(6, 142);
+            this.btnAceptar.Location = new System.Drawing.Point(8, 175);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(185, 47);
+            this.btnAceptar.Size = new System.Drawing.Size(247, 58);
             this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -136,9 +147,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(198, 142);
+            this.btnCancelar.Location = new System.Drawing.Point(264, 175);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(185, 47);
+            this.btnCancelar.Size = new System.Drawing.Size(247, 58);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -146,20 +158,22 @@
             // 
             // FrmET_SeleccionarEtiquetas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 197);
+            this.ClientSize = new System.Drawing.Size(521, 242);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmET_SeleccionarEtiquetas";
+            this.ShowIcon = false;
             this.Text = "Seleccionar etiquetas";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nm_02_Hasta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nm_01_Desde)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nm_02_Hasta)).EndInit();
             this.ResumeLayout(false);
 
         }

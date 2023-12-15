@@ -338,7 +338,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             {
                 if (!leer.Leer())
                 {
-                    General.msjAviso("No se encontro la posición solicitada."); 
+                    General.msjAviso("Posición no encontrada."); 
                 }
                 else 
                 {
@@ -568,7 +568,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                                     sEmpresa, sEstado, sFarmacia);
             if (!leer.Exec(sSql))
             {
-                General.msjError("Ocurrió Un Error al buscar la Información.");
+                General.msjError("Error al consultar Información.");
             }
             else
             {
@@ -592,7 +592,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
 
             if (!leer.Exec(sSql))
             {
-                General.msjError("Ocurrió Un Error al buscar la Información.");
+                General.msjError("Error al consultar Información.");
             }
             else
             {
@@ -620,7 +620,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
 
             if (!leer.Exec(sSql))
             {
-                General.msjError("Ocurrió Un Error al buscar la Información.");
+                General.msjError("Error al consultar Información.");
             }
             else
             {
@@ -648,21 +648,21 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             if (cboPasillos.SelectedIndex == 0)
             {
                 bRegresa = false;
-                General.msjUser("No ha seleccionado un rack válido, verifique.");
+                General.msjUser("Seleccionar Rack. Favor de verificar.");
                 cboPasillos.Focus(); 
             }
 
             if (bRegresa & cboEstantes.SelectedIndex == 0)
             {
                 bRegresa = false;
-                General.msjUser("No ha seleccionado un nivel válido, verifique.");
+                General.msjUser("Seleccionar Nivel. Favor de verificar.");
                 cboEstantes.Focus();
             }
 
             if (bRegresa & cboEntrepanos.SelectedIndex == 0)
             {
                 bRegresa = false;
-                General.msjUser("No ha seleccionado un entrepaño válido, verifique.");
+                General.msjUser("Seleccionar Posición. Favor de verificar.");
                 cboEntrepanos.Focus();
             }
 
@@ -696,13 +696,13 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             if (!leer.Exec("Informacion", sSql))
             {
                 Error.GrabarError(leer, "ObtenerInformacionDeUbicacion()");
-                General.msjError("Ocurrió un error al obtener la información de la posición."); 
+                General.msjError("Error al consultar información de Ubicación."); 
             }
             else
             {
                 if (!leer.Leer())
                 {
-                    General.msjUser("No se encontro información con los criterios especificados, verifique."); 
+                    General.msjUser("No se encontro información. Favor de verificar."); 
                 }
                 else 
                 {

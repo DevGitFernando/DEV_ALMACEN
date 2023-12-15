@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKardexProducto));
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType4 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType5 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType6 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType4 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType5 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType6 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType3 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType4 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType3 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType2 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType3 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType1 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType2 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -112,7 +112,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -128,7 +128,7 @@
             // 
             this.toolStripSeparator4.AutoSize = false;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -145,7 +145,7 @@
             // 
             this.toolStripSeparator3.AutoSize = false;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -355,89 +355,89 @@
             this.grdMovtos_Sheet1.ColumnHeader.Cells.Get(0, 7).Value = "Importe";
             this.grdMovtos_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdMovtos_Sheet1.ColumnHeader.Rows.Get(0).Height = 26F;
-            this.grdMovtos_Sheet1.Columns.Get(0).CellType = textCellType4;
+            this.grdMovtos_Sheet1.Columns.Get(0).CellType = textCellType1;
             this.grdMovtos_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(0).Label = "Fecha";
             this.grdMovtos_Sheet1.Columns.Get(0).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(0).Width = 79F;
-            this.grdMovtos_Sheet1.Columns.Get(1).CellType = textCellType5;
+            this.grdMovtos_Sheet1.Columns.Get(1).CellType = textCellType2;
             this.grdMovtos_Sheet1.Columns.Get(1).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(1).Label = "Folio";
             this.grdMovtos_Sheet1.Columns.Get(1).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(1).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(1).Width = 111F;
-            this.grdMovtos_Sheet1.Columns.Get(2).CellType = textCellType6;
+            this.grdMovtos_Sheet1.Columns.Get(2).CellType = textCellType3;
             this.grdMovtos_Sheet1.Columns.Get(2).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
             this.grdMovtos_Sheet1.Columns.Get(2).Label = "Descripción";
             this.grdMovtos_Sheet1.Columns.Get(2).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(2).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(2).Width = 325F;
-            numberCellType4.DecimalPlaces = 0;
-            numberCellType4.DecimalSeparator = ".";
-            numberCellType4.MaximumValue = 10000000D;
-            numberCellType4.MinimumValue = -10000000D;
-            numberCellType4.Separator = ",";
-            numberCellType4.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(3).CellType = numberCellType4;
+            numberCellType1.DecimalPlaces = 0;
+            numberCellType1.DecimalSeparator = ".";
+            numberCellType1.MaximumValue = 10000000D;
+            numberCellType1.MinimumValue = -10000000D;
+            numberCellType1.Separator = ",";
+            numberCellType1.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(3).CellType = numberCellType1;
             this.grdMovtos_Sheet1.Columns.Get(3).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(3).Label = "Entrada";
             this.grdMovtos_Sheet1.Columns.Get(3).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(3).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(3).Width = 80F;
-            numberCellType5.DecimalPlaces = 0;
-            numberCellType5.DecimalSeparator = ".";
-            numberCellType5.MaximumValue = 10000000D;
-            numberCellType5.MinimumValue = -10000000D;
-            numberCellType5.Separator = ",";
-            numberCellType5.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(4).CellType = numberCellType5;
+            numberCellType2.DecimalPlaces = 0;
+            numberCellType2.DecimalSeparator = ".";
+            numberCellType2.MaximumValue = 10000000D;
+            numberCellType2.MinimumValue = -10000000D;
+            numberCellType2.Separator = ",";
+            numberCellType2.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(4).CellType = numberCellType2;
             this.grdMovtos_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(4).Label = "Salida";
             this.grdMovtos_Sheet1.Columns.Get(4).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(4).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(4).Width = 80F;
-            numberCellType6.DecimalPlaces = 0;
-            numberCellType6.DecimalSeparator = ".";
-            numberCellType6.MaximumValue = 10000000D;
-            numberCellType6.MinimumValue = -10000000D;
-            numberCellType6.Separator = ",";
-            numberCellType6.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(5).CellType = numberCellType6;
+            numberCellType3.DecimalPlaces = 0;
+            numberCellType3.DecimalSeparator = ".";
+            numberCellType3.MaximumValue = 10000000D;
+            numberCellType3.MinimumValue = -10000000D;
+            numberCellType3.Separator = ",";
+            numberCellType3.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(5).CellType = numberCellType3;
             this.grdMovtos_Sheet1.Columns.Get(5).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(5).Label = "Existencia";
             this.grdMovtos_Sheet1.Columns.Get(5).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(5).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(5).Width = 85F;
-            currencyCellType3.DecimalPlaces = 4;
-            currencyCellType3.DecimalSeparator = ".";
-            currencyCellType3.MinimumValue = new decimal(new int[] {
+            currencyCellType1.DecimalPlaces = 4;
+            currencyCellType1.DecimalSeparator = ".";
+            currencyCellType1.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType3.NegativeRed = true;
-            currencyCellType3.Separator = ",";
-            currencyCellType3.ShowCurrencySymbol = false;
-            currencyCellType3.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(6).CellType = currencyCellType3;
+            currencyCellType1.NegativeRed = true;
+            currencyCellType1.Separator = ",";
+            currencyCellType1.ShowCurrencySymbol = false;
+            currencyCellType1.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(6).CellType = currencyCellType1;
             this.grdMovtos_Sheet1.Columns.Get(6).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(6).Label = "Costo / Precio";
             this.grdMovtos_Sheet1.Columns.Get(6).Locked = true;
             this.grdMovtos_Sheet1.Columns.Get(6).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdMovtos_Sheet1.Columns.Get(6).Width = 85F;
-            currencyCellType4.DecimalPlaces = 4;
-            currencyCellType4.DecimalSeparator = ".";
-            currencyCellType4.MinimumValue = new decimal(new int[] {
+            currencyCellType2.DecimalPlaces = 4;
+            currencyCellType2.DecimalSeparator = ".";
+            currencyCellType2.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType4.NegativeRed = true;
-            currencyCellType4.Separator = ",";
-            currencyCellType4.ShowCurrencySymbol = false;
-            currencyCellType4.ShowSeparator = true;
-            this.grdMovtos_Sheet1.Columns.Get(7).CellType = currencyCellType4;
+            currencyCellType2.NegativeRed = true;
+            currencyCellType2.Separator = ",";
+            currencyCellType2.ShowCurrencySymbol = false;
+            currencyCellType2.ShowSeparator = true;
+            this.grdMovtos_Sheet1.Columns.Get(7).CellType = currencyCellType2;
             this.grdMovtos_Sheet1.Columns.Get(7).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdMovtos_Sheet1.Columns.Get(7).Label = "Importe";
             this.grdMovtos_Sheet1.Columns.Get(7).Locked = true;

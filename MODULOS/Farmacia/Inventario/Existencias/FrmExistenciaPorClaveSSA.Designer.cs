@@ -92,7 +92,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -109,7 +109,7 @@
             // 
             this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -130,9 +130,9 @@
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 122);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1288, 128);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
@@ -163,7 +163,7 @@
             this.txtId.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtId.ForeColor = System.Drawing.Color.Black;
             this.txtId.Location = new System.Drawing.Point(129, 23);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.MaxLength = 20;
             this.txtId.Name = "txtId";
             this.txtId.PermitirApostrofo = false;
@@ -193,9 +193,9 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.lblTotal);
             this.groupBox2.Location = new System.Drawing.Point(12, 251);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1288, 464);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -215,7 +215,7 @@
             this.Exist_Total});
             this.lstProductos.HideSelection = false;
             this.lstProductos.Location = new System.Drawing.Point(12, 23);
-            this.lstProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstProductos.Margin = new System.Windows.Forms.Padding(4);
             this.lstProductos.Name = "lstProductos";
             this.lstProductos.Size = new System.Drawing.Size(1263, 393);
             this.lstProductos.TabIndex = 9;
@@ -288,9 +288,9 @@
             this.groupBox3.Controls.Add(this.rdoRptTodos);
             this.groupBox3.Controls.Add(this.rdoRptConExist);
             this.groupBox3.Location = new System.Drawing.Point(12, 65);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(1288, 54);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
@@ -299,7 +299,7 @@
             // rdoRptSinExist
             // 
             this.rdoRptSinExist.Location = new System.Drawing.Point(843, 18);
-            this.rdoRptSinExist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoRptSinExist.Margin = new System.Windows.Forms.Padding(4);
             this.rdoRptSinExist.Name = "rdoRptSinExist";
             this.rdoRptSinExist.Size = new System.Drawing.Size(160, 23);
             this.rdoRptSinExist.TabIndex = 6;
@@ -310,7 +310,7 @@
             // 
             this.rdoRptTodos.Checked = true;
             this.rdoRptTodos.Location = new System.Drawing.Point(285, 18);
-            this.rdoRptTodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoRptTodos.Margin = new System.Windows.Forms.Padding(4);
             this.rdoRptTodos.Name = "rdoRptTodos";
             this.rdoRptTodos.Size = new System.Drawing.Size(160, 23);
             this.rdoRptTodos.TabIndex = 4;
@@ -321,7 +321,7 @@
             // rdoRptConExist
             // 
             this.rdoRptConExist.Location = new System.Drawing.Point(564, 18);
-            this.rdoRptConExist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoRptConExist.Margin = new System.Windows.Forms.Padding(4);
             this.rdoRptConExist.Name = "rdoRptConExist";
             this.rdoRptConExist.Size = new System.Drawing.Size(160, 23);
             this.rdoRptConExist.TabIndex = 5;
@@ -352,7 +352,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStripBarraMenu);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmExistenciaPorClaveSSA";
             this.ShowIcon = false;
             this.Text = "Existencia por Clave SSA";

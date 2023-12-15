@@ -32,17 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTransferenciaSalidas_Base));
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType19 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType20 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType21 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType19 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType20 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType25 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType26 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType27 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType28 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType21 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType7 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType3 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType2 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType1 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType2 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType3 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType4 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType3 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.CheckBoxCellType checkBoxCellType1 = new FarPoint.Win.Spread.CellType.CheckBoxCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -132,7 +132,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -148,7 +148,7 @@
             // 
             this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -165,7 +165,7 @@
             // 
             this.toolStripSeparator3.AutoSize = false;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -181,7 +181,7 @@
             // 
             this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGenerarPaqueteDeDatos
             // 
@@ -787,101 +787,101 @@
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 10).Value = "EsIMach4";
             this.grdProductos_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdProductos_Sheet1.ColumnHeader.Rows.Get(0).Height = 39F;
-            textCellType19.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
-            textCellType19.MaxLength = 15;
-            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType19;
+            textCellType1.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
+            textCellType1.MaxLength = 15;
+            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType1;
             this.grdProductos_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Label = "Código EAN";
             this.grdProductos_Sheet1.Columns.Get(0).Locked = false;
             this.grdProductos_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Width = 97F;
-            textCellType20.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
-            textCellType20.MaxLength = 15;
-            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType20;
+            textCellType2.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
+            textCellType2.MaxLength = 15;
+            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType2;
             this.grdProductos_Sheet1.Columns.Get(1).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(1).Label = "Código";
             this.grdProductos_Sheet1.Columns.Get(1).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(1).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(1).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(1).Width = 97F;
-            this.grdProductos_Sheet1.Columns.Get(2).CellType = textCellType21;
+            this.grdProductos_Sheet1.Columns.Get(2).CellType = textCellType3;
             this.grdProductos_Sheet1.Columns.Get(2).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
             this.grdProductos_Sheet1.Columns.Get(2).Label = "Descripción";
             this.grdProductos_Sheet1.Columns.Get(2).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(2).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(2).Width = 358F;
-            numberCellType19.DecimalPlaces = 2;
-            numberCellType19.MaximumValue = 100D;
-            numberCellType19.MinimumValue = 0D;
-            this.grdProductos_Sheet1.Columns.Get(3).CellType = numberCellType19;
+            numberCellType1.DecimalPlaces = 2;
+            numberCellType1.MaximumValue = 100D;
+            numberCellType1.MinimumValue = 0D;
+            this.grdProductos_Sheet1.Columns.Get(3).CellType = numberCellType1;
             this.grdProductos_Sheet1.Columns.Get(3).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(3).Label = "TasaIva";
             this.grdProductos_Sheet1.Columns.Get(3).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(3).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(3).Visible = false;
-            numberCellType20.DecimalPlaces = 0;
-            numberCellType20.DecimalSeparator = ".";
-            numberCellType20.MaximumValue = 10000000D;
-            numberCellType20.MinimumValue = 0D;
-            numberCellType20.Separator = ",";
-            numberCellType20.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(4).CellType = numberCellType20;
+            numberCellType2.DecimalPlaces = 0;
+            numberCellType2.DecimalSeparator = ".";
+            numberCellType2.MaximumValue = 10000000D;
+            numberCellType2.MinimumValue = 0D;
+            numberCellType2.Separator = ",";
+            numberCellType2.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(4).CellType = numberCellType2;
             this.grdProductos_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(4).Label = "Cantidad";
             this.grdProductos_Sheet1.Columns.Get(4).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(4).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(4).Width = 70F;
-            currencyCellType25.DecimalPlaces = 4;
-            currencyCellType25.DecimalSeparator = ".";
-            currencyCellType25.MinimumValue = new decimal(new int[] {
+            currencyCellType1.DecimalPlaces = 4;
+            currencyCellType1.DecimalSeparator = ".";
+            currencyCellType1.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType25.Separator = ",";
-            currencyCellType25.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(5).CellType = currencyCellType25;
+            currencyCellType1.Separator = ",";
+            currencyCellType1.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(5).CellType = currencyCellType1;
             this.grdProductos_Sheet1.Columns.Get(5).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(5).Label = "Costo";
             this.grdProductos_Sheet1.Columns.Get(5).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(5).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(5).Width = 80F;
-            currencyCellType26.DecimalPlaces = 4;
-            currencyCellType26.DecimalSeparator = ".";
-            currencyCellType26.MinimumValue = new decimal(new int[] {
+            currencyCellType2.DecimalPlaces = 4;
+            currencyCellType2.DecimalSeparator = ".";
+            currencyCellType2.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType26.Separator = ",";
-            currencyCellType26.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(6).CellType = currencyCellType26;
+            currencyCellType2.Separator = ",";
+            currencyCellType2.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(6).CellType = currencyCellType2;
             this.grdProductos_Sheet1.Columns.Get(6).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Columns.Get(6).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(6).Label = "Importe";
             this.grdProductos_Sheet1.Columns.Get(6).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(6).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(6).Width = 80F;
-            currencyCellType27.DecimalPlaces = 4;
-            currencyCellType27.MinimumValue = new decimal(new int[] {
+            currencyCellType3.DecimalPlaces = 4;
+            currencyCellType3.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            this.grdProductos_Sheet1.Columns.Get(7).CellType = currencyCellType27;
+            this.grdProductos_Sheet1.Columns.Get(7).CellType = currencyCellType3;
             this.grdProductos_Sheet1.Columns.Get(7).Formula = "((1+(RC[-4]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Columns.Get(7).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(7).Label = "ImporteIva";
             this.grdProductos_Sheet1.Columns.Get(7).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(7).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(7).Visible = false;
-            currencyCellType28.DecimalPlaces = 4;
-            currencyCellType28.MinimumValue = new decimal(new int[] {
+            currencyCellType4.DecimalPlaces = 4;
+            currencyCellType4.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            this.grdProductos_Sheet1.Columns.Get(8).CellType = currencyCellType28;
+            this.grdProductos_Sheet1.Columns.Get(8).CellType = currencyCellType4;
             this.grdProductos_Sheet1.Columns.Get(8).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Columns.Get(8).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(8).Label = "ImporteTotal";
@@ -889,16 +889,16 @@
             this.grdProductos_Sheet1.Columns.Get(8).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(8).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(8).Width = 92F;
-            numberCellType21.DecimalPlaces = 0;
-            numberCellType21.MaximumValue = 5D;
-            numberCellType21.MinimumValue = 0D;
-            this.grdProductos_Sheet1.Columns.Get(9).CellType = numberCellType21;
+            numberCellType3.DecimalPlaces = 0;
+            numberCellType3.MaximumValue = 5D;
+            numberCellType3.MinimumValue = 0D;
+            this.grdProductos_Sheet1.Columns.Get(9).CellType = numberCellType3;
             this.grdProductos_Sheet1.Columns.Get(9).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(9).Label = "Captura Por";
             this.grdProductos_Sheet1.Columns.Get(9).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(9).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(9).Visible = false;
-            this.grdProductos_Sheet1.Columns.Get(10).CellType = checkBoxCellType7;
+            this.grdProductos_Sheet1.Columns.Get(10).CellType = checkBoxCellType1;
             this.grdProductos_Sheet1.Columns.Get(10).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(10).Label = "EsIMach4";
             this.grdProductos_Sheet1.Columns.Get(10).Locked = true;
