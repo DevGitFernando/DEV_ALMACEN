@@ -46,7 +46,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pgBar.ForeColor = System.Drawing.Color.Maroon;
             this.pgBar.Location = new System.Drawing.Point(12, 20);
-            this.pgBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pgBar.Margin = new System.Windows.Forms.Padding(4);
             this.pgBar.MarqueeAnimationSpeed = 50;
             this.pgBar.Name = "pgBar";
             this.pgBar.Size = new System.Drawing.Size(547, 20);
@@ -68,9 +68,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameProceso.Controls.Add(this.pgBar);
             this.FrameProceso.Location = new System.Drawing.Point(11, 63);
-            this.FrameProceso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameProceso.Margin = new System.Windows.Forms.Padding(4);
             this.FrameProceso.Name = "FrameProceso";
-            this.FrameProceso.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameProceso.Padding = new System.Windows.Forms.Padding(4);
             this.FrameProceso.Size = new System.Drawing.Size(571, 55);
             this.FrameProceso.TabIndex = 4;
             this.FrameProceso.TabStop = false;
@@ -78,13 +78,14 @@
             // toolStripProceso
             // 
             this.toolStripProceso.AutoSize = false;
+            this.toolStripProceso.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStripProceso.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripProceso.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnDetener});
-            this.toolStripProceso.Location = new System.Drawing.Point(0, 0);
+            this.toolStripProceso.Location = new System.Drawing.Point(502, 0);
             this.toolStripProceso.Name = "toolStripProceso";
             this.toolStripProceso.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripProceso.Size = new System.Drawing.Size(592, 58);
+            this.toolStripProceso.Size = new System.Drawing.Size(90, 58);
             this.toolStripProceso.TabIndex = 5;
             this.toolStripProceso.Text = "Barra de herramientas";
             // 
@@ -107,7 +108,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.toolStripProceso);
             this.Controls.Add(this.FrameProceso);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmReporteadorExcel";
             this.Text = "Impresión en proceso";
             this.TituloMensajeValidarControl = "SC_Solutions";

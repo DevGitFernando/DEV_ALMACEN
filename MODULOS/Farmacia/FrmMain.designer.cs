@@ -61,6 +61,15 @@
             this.toolMach4 = new System.Windows.Forms.ToolTip(this.components);
             this.tmCleanUp = new System.Windows.Forms.Timer(this.components);
             this.tmCheckExistencia = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnInicio = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSalir = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnMenu = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnPassword = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lblMach4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblModulo)).BeginInit();
@@ -69,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblServidor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblBaseDeDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblUsuarioConectado)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // imgNavegacion_2
@@ -97,9 +107,10 @@
             this.btnInformacion});
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(720, 40);
+            this.toolStrip.Size = new System.Drawing.Size(540, 41);
             this.toolStrip.TabIndex = 7;
             this.toolStrip.Text = "toolStrip1";
+            this.toolStrip.Visible = false;
             // 
             // btnNavegador
             // 
@@ -107,7 +118,7 @@
             this.btnNavegador.Image = ((System.Drawing.Image)(resources.GetObject("btnNavegador.Image")));
             this.btnNavegador.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNavegador.Name = "btnNavegador";
-            this.btnNavegador.Size = new System.Drawing.Size(36, 37);
+            this.btnNavegador.Size = new System.Drawing.Size(36, 38);
             this.btnNavegador.Text = "Menú";
             this.btnNavegador.ToolTipText = "Menú";
             this.btnNavegador.Click += new System.EventHandler(this.btnNavegador_Click);
@@ -118,7 +129,7 @@
             this.btnCambiarPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnCambiarPassword.Image")));
             this.btnCambiarPassword.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCambiarPassword.Name = "btnCambiarPassword";
-            this.btnCambiarPassword.Size = new System.Drawing.Size(36, 37);
+            this.btnCambiarPassword.Size = new System.Drawing.Size(36, 38);
             this.btnCambiarPassword.Text = "Cambiar password";
             this.btnCambiarPassword.ToolTipText = "Cambiar password";
             this.btnCambiarPassword.Click += new System.EventHandler(this.btnCambiarPassword_Click);
@@ -129,7 +140,7 @@
             this.bntRegistroErrores.Image = ((System.Drawing.Image)(resources.GetObject("bntRegistroErrores.Image")));
             this.bntRegistroErrores.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bntRegistroErrores.Name = "bntRegistroErrores";
-            this.bntRegistroErrores.Size = new System.Drawing.Size(36, 37);
+            this.bntRegistroErrores.Size = new System.Drawing.Size(36, 38);
             this.bntRegistroErrores.Text = "Registro de Errores";
             this.bntRegistroErrores.ToolTipText = "Registro de Errores";
             this.bntRegistroErrores.Click += new System.EventHandler(this.bntRegistroErrores_Click);
@@ -140,7 +151,7 @@
             this.btnBuscarActualizaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarActualizaciones.Image")));
             this.btnBuscarActualizaciones.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBuscarActualizaciones.Name = "btnBuscarActualizaciones";
-            this.btnBuscarActualizaciones.Size = new System.Drawing.Size(36, 37);
+            this.btnBuscarActualizaciones.Size = new System.Drawing.Size(36, 38);
             this.btnBuscarActualizaciones.Text = "Buscar actualizaciones";
             this.btnBuscarActualizaciones.ToolTipText = "Buscar actualizaciones";
             this.btnBuscarActualizaciones.Click += new System.EventHandler(this.btnBuscarActualizaciones_Click);
@@ -151,7 +162,7 @@
             this.btnGetInformacion.Image = ((System.Drawing.Image)(resources.GetObject("btnGetInformacion.Image")));
             this.btnGetInformacion.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGetInformacion.Name = "btnGetInformacion";
-            this.btnGetInformacion.Size = new System.Drawing.Size(36, 37);
+            this.btnGetInformacion.Size = new System.Drawing.Size(36, 38);
             this.btnGetInformacion.Text = "Solicitar Información de Catalogos";
             this.btnGetInformacion.Click += new System.EventHandler(this.btnGetInformacion_Click);
             // 
@@ -161,7 +172,7 @@
             this.btnExportarInformacion.Image = ((System.Drawing.Image)(resources.GetObject("btnExportarInformacion.Image")));
             this.btnExportarInformacion.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExportarInformacion.Name = "btnExportarInformacion";
-            this.btnExportarInformacion.Size = new System.Drawing.Size(36, 37);
+            this.btnExportarInformacion.Size = new System.Drawing.Size(36, 38);
             this.btnExportarInformacion.Text = "Exportar información";
             this.btnExportarInformacion.ToolTipText = "Exportar información";
             this.btnExportarInformacion.Click += new System.EventHandler(this.btnExportarInformacion_Click);
@@ -172,7 +183,7 @@
             this.btnInformacion.Image = ((System.Drawing.Image)(resources.GetObject("btnInformacion.Image")));
             this.btnInformacion.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInformacion.Name = "btnInformacion";
-            this.btnInformacion.Size = new System.Drawing.Size(36, 37);
+            this.btnInformacion.Size = new System.Drawing.Size(36, 38);
             this.btnInformacion.Text = "Información";
             this.btnInformacion.Click += new System.EventHandler(this.btnInformacion_Click);
             // 
@@ -191,7 +202,8 @@
             // 
             // BarraDeStatus
             // 
-            this.BarraDeStatus.Location = new System.Drawing.Point(0, 359);
+            this.BarraDeStatus.Location = new System.Drawing.Point(0, 274);
+            this.BarraDeStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BarraDeStatus.Name = "BarraDeStatus";
             this.BarraDeStatus.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
             this.lblMach4,
@@ -202,8 +214,9 @@
             this.lblBaseDeDatos,
             this.lblUsuarioConectado});
             this.BarraDeStatus.ShowPanels = true;
-            this.BarraDeStatus.Size = new System.Drawing.Size(720, 26);
+            this.BarraDeStatus.Size = new System.Drawing.Size(540, 20);
             this.BarraDeStatus.TabIndex = 26;
+            this.BarraDeStatus.Visible = false;
             // 
             // lblMach4
             // 
@@ -271,18 +284,24 @@
             // 
             // mnPrincipal
             // 
-            this.mnPrincipal.Location = new System.Drawing.Point(0, 40);
+            this.mnPrincipal.AutoSize = false;
+            this.mnPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mnPrincipal.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.mnPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mnPrincipal.Name = "mnPrincipal";
-            this.mnPrincipal.Size = new System.Drawing.Size(720, 24);
+            this.mnPrincipal.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.mnPrincipal.Size = new System.Drawing.Size(10, 274);
             this.mnPrincipal.TabIndex = 28;
             this.mnPrincipal.Text = "menuStrip1";
+            this.mnPrincipal.Visible = false;
             // 
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(482, 43);
+            this.button1.Location = new System.Drawing.Point(362, 33);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 18);
             this.button1.TabIndex = 30;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -305,6 +324,93 @@
             this.tmCheckExistencia.Interval = 5000;
             this.tmCheckExistencia.Tick += new System.EventHandler(this.tmCheckExistencia_Tick);
             // 
+            // menuStrip
+            // 
+            this.menuStrip.AutoSize = false;
+            this.menuStrip.Font = new System.Drawing.Font("Rockwell", 9F);
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(60, 60);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator12,
+            this.btnInicio,
+            this.btnMenu,
+            this.toolStripSeparator10,
+            this.btnPassword});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(540, 51);
+            this.menuStrip.TabIndex = 50;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 47);
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.btnSalir,
+            this.toolStripSeparator4});
+            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
+            this.btnInicio.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnInicio.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(81, 44);
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.Visible = false;
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(146, 38);
+            this.toolStripMenuItem1.Text = "Ayuda  F1";
+            this.toolStripMenuItem1.Visible = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(146, 38);
+            this.btnSalir.Text = "Salir";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(143, 6);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.AutoSize = false;
+            this.btnMenu.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
+            this.btnMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(160, 60);
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.ToolTipText = "Opciones Menu";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 47);
+            this.toolStripSeparator10.Visible = false;
+            // 
+            // btnPassword
+            // 
+            this.btnPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnPassword.Image")));
+            this.btnPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPassword.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPassword.Name = "btnPassword";
+            this.btnPassword.ShowDropDownArrow = false;
+            this.btnPassword.Size = new System.Drawing.Size(175, 44);
+            this.btnPassword.Text = "Cambiar Password";
+            this.btnPassword.Visible = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,7 +418,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(720, 385);
+            this.ClientSize = new System.Drawing.Size(540, 294);
+            this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.mnPrincipal);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BarraDeStatus);
@@ -322,8 +429,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmMain";
-            this.Text = "Menú principal del sistema";
+            this.ShowIcon = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
@@ -337,8 +445,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblServidor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblBaseDeDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblUsuarioConectado)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -384,6 +493,15 @@
         private System.Windows.Forms.Timer tmCleanUp;
         private System.Windows.Forms.Timer tmCheckExistencia;
         private System.Windows.Forms.ToolStripButton btnInformacion;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripDropDownButton btnInicio;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem btnSalir;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripDropDownButton btnMenu;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripDropDownButton btnPassword;
     }
 }
 

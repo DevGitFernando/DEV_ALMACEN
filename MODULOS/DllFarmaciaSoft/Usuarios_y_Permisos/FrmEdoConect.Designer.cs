@@ -43,6 +43,7 @@
             // 
             // pgBar
             // 
+            this.pgBar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pgBar.ForeColor = System.Drawing.Color.SteelBlue;
             this.pgBar.Location = new System.Drawing.Point(11, 52);
             this.pgBar.MarqueeAnimationSpeed = 50;
@@ -55,12 +56,12 @@
             // lblMensaje
             // 
             this.lblMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensaje.ForeColor = System.Drawing.Color.Green;
+            this.lblMensaje.ForeColor = System.Drawing.Color.Blue;
             this.lblMensaje.Location = new System.Drawing.Point(19, 17);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(346, 28);
             this.lblMensaje.TabIndex = 3;
-            this.lblMensaje.Text = "Accesando";
+            this.lblMensaje.Text = "Conectando ....";
             this.lblMensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer2

@@ -131,7 +131,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 else
                 {
                     //No se encontro CodigoEAN
-                    General.msjAviso("CodigoEAN no encontrado verfirique.");
+                    General.msjAviso("CodigoEAN no encontrado. Favor de verfiricar.");
                 }
             }
         }
@@ -163,7 +163,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 else
                 {
                     //No se encontro CodigoEAN
-                    General.msjAviso("No se encontraron lotes para el CodigoEAN, verfirique.");
+                    General.msjAviso("Lotes no encontrados para el CodigoEAN. Favor de verfiricar.");
                 }
             }
         }
@@ -223,7 +223,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 else
                 {
                     //No se encontro CodigoEAN
-                    General.msjAviso("No se encontraron lotes para el CodigoEAN, verfirique.");
+                    General.msjAviso("Lotes no encontrados para el CodigoEAN. Favor de verfiricar.");
                 }
             }
         }

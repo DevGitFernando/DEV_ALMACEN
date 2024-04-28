@@ -22,10 +22,10 @@ namespace Farmacia.Inventario
 {
     public partial class FrmMovtosInvGrales : FrmBaseExt
     {
-        private enum Cols 
+        private enum Cols
         {
-            Ninguna = 0, 
-            CodEAN = 1, Codigo = 2, Descripcion = 3, TasaIva = 4, Cantidad = 5, 
+            Ninguna = 0,
+            CodEAN = 1, Codigo = 2, Descripcion = 3, TasaIva = 4, Cantidad = 5,
             Costo = 6, Importe = 7, ImporteIva = 8, ImporteTotal = 9, TipoCaptura = 10
         }
 
@@ -67,7 +67,7 @@ namespace Farmacia.Inventario
         bool bModificarCantidades = false;
         bool bPermitirSacarCaducados = false;
         bool bEsConsignacion = false;
-        TiposDeInventario tipoDeInventario = TiposDeInventario.Todos; 
+        TiposDeInventario tipoDeInventario = TiposDeInventario.Todos;
 
         clsLotes Lotes; // = new clsLotes(DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, GnFarmacia.MesesCaducaMedicamento);
         clsSKU SKU; // = new clsSKU(); 
@@ -92,11 +92,11 @@ namespace Farmacia.Inventario
 
 
 
-            myGrid = new clsGrid( ref grdProductos, this);
+            myGrid = new clsGrid(ref grdProductos, this);
             myGrid.EstiloGrid(eModoGrid.ModoRow);
-            myGrid.BackColorColsBlk = Color.White;      
+            myGrid.BackColorColsBlk = Color.White;
             grdProductos.EditModeReplace = true;
-            myGrid.AjustarAnchoColumnasAutomatico = true; 
+            myGrid.AjustarAnchoColumnasAutomatico = true;
 
             leer = new clsLeer(ref cnn);
             leer2 = new clsLeer(ref cnn);
@@ -125,10 +125,10 @@ namespace Farmacia.Inventario
             {
                 bEntradaSalida = false;
                 bCapturaDeLotes = false;
-                bModificarCantidades = false; 
+                bModificarCantidades = false;
                 bPermitirSacarCaducados = false;
                 bEsConsignacion = false;
-                tipoDeInventario = TiposDeInventario.Todos; 
+                tipoDeInventario = TiposDeInventario.Todos;
 
 
                 // Inicializar el manejo de Lotes 
@@ -152,9 +152,9 @@ namespace Farmacia.Inventario
                 myGrid.Limpiar(false);
                 Fg.IniciaControles();
                 Fg.IniciaControles(this, false, FrameValorInventario);
-                lblCancelado.Visible = false; 
+                lblCancelado.Visible = false;
                 chkAplicarInv.Enabled = true;
-                chkAplicarInv.Checked = false; 
+                chkAplicarInv.Checked = false;
                 dtpFechaRegistro.Enabled = false;
 
                 txtIdPersonal.Text = DtGeneral.IdPersonal;
@@ -162,10 +162,10 @@ namespace Farmacia.Inventario
                 txtIdPersonal.Enabled = false;
 
                 btnMotivosDev.Enabled = false;
-                motivodev = new clsMotivosDevoluciones(General.DatosConexion, TipoDevolucion.Ninguna, sEmpresa, sEstado, sFarmacia); 
+                motivodev = new clsMotivosDevoluciones(General.DatosConexion, TipoDevolucion.Ninguna, sEmpresa, sEstado, sFarmacia);
 
-                cboTiposMovtoInventario.Focus(); 
-                cboTiposMovtoInventario.Focus(); 
+                cboTiposMovtoInventario.Focus();
+                cboTiposMovtoInventario.Focus();
             }
         }
 
@@ -192,12 +192,12 @@ namespace Farmacia.Inventario
             bool bExito = false;
             bool bBtnGuardar = btnGuardar.Enabled;
             bool bBtnCancelar = btnCancelar.Enabled;
-            bool bBtnImprimir = btnImprimir.Enabled; 
+            bool bBtnImprimir = btnImprimir.Enabled;
 
 
             if (validarDatos())
             {
-                if(!cnn.Abrir())
+                if (!cnn.Abrir())
                 {
                     Error.LogError(cnn.MensajeError);
                     General.msjErrorAlAbrirConexion();
@@ -205,7 +205,7 @@ namespace Farmacia.Inventario
                 else
                 {
                     // Apagar la barra completa 
-                    IniciarToolBar(); 
+                    IniciarToolBar();
 
                     cnn.IniciarTransaccion();
 
@@ -223,7 +223,7 @@ namespace Farmacia.Inventario
                     {
                         cnn.CompletarTransaccion();
                         txtFolio.Text = SKU.Foliador; // Fg.Right(sFolioMovto, 8); //sFolioMovto.Substring(2); 
-                        IniciarToolBar(false, false, true); 
+                        IniciarToolBar(false, false, true);
                         General.msjUser("Información guardada satisfactoriamente con el folio " + sFolioMovto);
                         ImprimirInventario();
                     }
@@ -233,7 +233,7 @@ namespace Farmacia.Inventario
                         txtFolio.Text = "*";
                         Error.GrabarError(leer, "btnGuardar_Click");
                         General.msjError("Ocurrió un error al grabar la información del inventario.");
-                        IniciarToolBar(bBtnGuardar, bBtnCancelar, bBtnImprimir); 
+                        IniciarToolBar(bBtnGuardar, bBtnCancelar, bBtnImprimir);
                     }
 
                     cnn.Cerrar();
@@ -262,8 +262,8 @@ namespace Farmacia.Inventario
 
                     if (bExito)
                     {
-                        cnn.CompletarTransaccion(); 
-                        txtFolio.Text = sFolioMovto.Substring(2);  
+                        cnn.CompletarTransaccion();
+                        txtFolio.Text = sFolioMovto.Substring(2);
                         General.msjUser("Información cancelada satisfactoriamente con el folio " + sFolioMovto);
                         ImprimirInventario();
                     }
@@ -308,7 +308,7 @@ namespace Farmacia.Inventario
             bool bRegresa = true;
 
             //// Forzar la validación de Surtidos sólo para las SALIDAS 
-            if(sTipoES == "S")
+            if (sTipoES == "S")
             {
                 ////// Se quita esta validación, las Existencias mostradas contemplan Transitos y Surtidos ( Existencia - (Transitos+Surtidos)) 
                 //if(DtGeneral.TieneSurtimientosActivos())
@@ -326,6 +326,37 @@ namespace Farmacia.Inventario
                 txtFolio.Focus();
             }
 
+            if (sTipoES == "E")
+            {
+                if (bRegresa && cboLicitacion.SelectedIndex == 0)
+                {
+                    bRegresa = false;
+                    General.msjUser("Seleccionar Licitación. Favor de verificar.");
+                    cboLicitacion.Focus();
+                }
+
+                if (bRegresa && cboSubFarmacias.SelectedIndex == 0)
+                {
+                    bRegresa = false;
+                    General.msjUser("Seleccionar Fuente. Favor de verificar.");
+                    cboSubFarmacias.Focus();
+                }
+
+                if (bRegresa && txtOrden.Text.Trim() == "")
+                {
+                    bRegresa = false;
+                    General.msjUser("Capturar Orden. Favor de verificar.");
+                    txtOrden.Focus();
+                }
+
+                if (bRegresa && txtFolioPre.Text.Trim() == "")
+                {
+                    bRegresa = false;
+                    General.msjUser("Capturar Folio Presupuesto. Favor de verificar.");
+                    txtFolioPre.Focus();
+                }
+            }
+
             if (bRegresa && txtObservaciones.Text.Trim() == "")
             {
                 bRegresa = false;
@@ -336,7 +367,7 @@ namespace Farmacia.Inventario
             if (bRegresa && bEstaCancelado)
             {
                 bRegresa = false;
-                General.msjUser("El movimiento de Inventario Inicial se encuentra cancelado,\n no es posible guardar la información.");
+                General.msjUser("Ingreso de Insumo esta cancelado.\n No se puede guardar la información.");
             }
 
             if (bRegresa && !chkAplicarInv.Enabled)
@@ -459,7 +490,7 @@ namespace Farmacia.Inventario
                     {
                         for (int i = 1; i <= myGrid.Rows; i++)
                         {
-                            if (myGrid.GetValue(i, (int)Cols.CodEAN) != "" && myGrid.GetValueInt(i, (int)Cols.Cantidad) == 0) 
+                            if (myGrid.GetValue(i, (int)Cols.CodEAN) != "" && myGrid.GetValueInt(i, (int)Cols.Cantidad) == 0)
                             {
                                 bRegresa = false;
                                 break;
@@ -469,7 +500,7 @@ namespace Farmacia.Inventario
                 }
             }
 
-            if ( !bRegresa )
+            if (!bRegresa)
                 General.msjUser("Debe capturar al menos un producto para el inventario\n y/o capturar cantidades para al menos un lote, verifique.");
 
             return bRegresa;
@@ -523,7 +554,7 @@ namespace Farmacia.Inventario
         #region Impresion de informacion 
         private void ImprimirInventario()
         {
-            bool bRegresa = false; 
+            bool bRegresa = false;
             if (validarImpresion())
             {
                 DatosCliente.Funcion = "ImprimirInventario()";
@@ -538,7 +569,7 @@ namespace Farmacia.Inventario
                 myRpt.Add("IdFarmacia", DtGeneral.FarmaciaConectada);
                 myRpt.Add("Folio", cboTiposMovtoInventario.Data + txtFolio.Text);
 
-                bRegresa = DtGeneral.GenerarReporte(General.Url, General.ImpresionViaWeb, myRpt, DatosCliente); 
+                bRegresa = DtGeneral.GenerarReporte(General.Url, General.ImpresionViaWeb, myRpt, DatosCliente);
 
                 //////if (General.ImpresionViaWeb)
                 //////{
@@ -609,7 +640,7 @@ namespace Farmacia.Inventario
 
         private bool GrabarCancelacion()
         {
-            bool bRegresa = false; 
+            bool bRegresa = false;
             ////string sSql = ""; 
             ////string sSqlAux = ""; 
             ////string sFolioMovtoAux = sFolioMovto; 
@@ -649,18 +680,30 @@ namespace Farmacia.Inventario
         {
             bool bRegresa = false;
             string sSql = "";
+            string sLicitacion = "", sFuente = "", sOrden = "", sFolioPre = "";
+
+            if(sTipoES == "E")
+            {
+                sLicitacion = cboLicitacion.Data;
+                sFuente = cboSubFarmacias.Data;
+                sOrden = txtOrden.Text.Trim();
+                sFolioPre = txtFolioPre.Text.Trim();
+            }
 
             ////SKU.Reset(); 
 
             sSql = string.Format("Exec spp_Mtto_MovtoInv_Enc \n" +  // " '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}' ",
                 "\t@IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @FolioMovtoInv = '{3}', \n" +
                 "\t@IdTipoMovto_Inv = '{4}', @TipoES = '{5}', @Referencia = '{6}', @IdPersonal = '{7}', @Observaciones = '{8}', \n" +
-                "\t@SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}' \n",
+                "\t@SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}', \n" +
+                " \t@IdLicitacion = '{14}', @Orden = '{15}', @FolioPresup = '{16}', @IdFuente = '{17}' ",
                 sEmpresa, sEstado, sFarmacia, txtFolio.Text, sIdTipoMovtoInv, sTipoES, "",
                 DtGeneral.IdPersonal, txtObservaciones.Text.Trim(),
                 General.GetFormatoNumerico_Double(txtSubTotal.Text),
                 General.GetFormatoNumerico_Double(txtIva.Text),
-                General.GetFormatoNumerico_Double(txtTotal.Text), 1, SKU.SKU);
+                General.GetFormatoNumerico_Double(txtTotal.Text), 1, SKU.SKU,
+                sLicitacion, sOrden, sFolioPre, sFuente);
+
             if (!leer.Exec(sSql))
             {
                 bRegresa = false;
@@ -668,7 +711,7 @@ namespace Farmacia.Inventario
             else
             {
                 leer.Leer();
-                bRegresa = true; 
+                bRegresa = true;
                 sFolioMovto = leer.Campo("Folio");
                 // txtFolio.Text = sFolioMovto.Substring(2);
                 //  bRegresa = GrabarDetalle(); 
@@ -687,12 +730,12 @@ namespace Farmacia.Inventario
                     bRegresa = GrabarDetalle();
                 }
             }
-            
+
             return bRegresa;
         }
 
         private bool Grabar_Motivos_Movimiento()
-        {            
+        {
             bool bRegresa = true;
             string sTipoMov = "", sMotivo = "";
             int iMarca = 0;
@@ -710,7 +753,7 @@ namespace Farmacia.Inventario
                 if (iMarca == 1)
                 {
 
-                    string sSql = string.Format(" Exec spp_Mtto_MovtosInv_Adt_Devoluciones \n" + 
+                    string sSql = string.Format(" Exec spp_Mtto_MovtosInv_Adt_Devoluciones \n" +
                         "\t@IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @FolioMovtoInv = '{3}', @IdTipoMovto_Inv = '{4}', @IdMotivo = '{5}' \n",
                         sEmpresa, sEstado, sFarmacia, sFolioMovto, sTipoMov, sMotivo);
 
@@ -751,7 +794,7 @@ namespace Farmacia.Inventario
                     sSql = string.Format("Exec spp_Mtto_FarmaciaProductos @IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @IdProducto = '{3}' " +
                                          "Exec spp_Mtto_FarmaciaProductos_CodigoEAN @IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @IdProducto = '{3}', @CodigoEAN = '{4}' ",
                                          sEmpresa, sEstado, sFarmacia, sIdProducto, sCodigoEAN);
-                    if(!leer.Exec(sSql))
+                    if (!leer.Exec(sSql))
                     {
                         bRegresa = false;
                         break;
@@ -764,7 +807,7 @@ namespace Farmacia.Inventario
                             "\t@Costo = '{9}', @Importe = '{10}', @Status = '{11}' \n",
                             sEmpresa, sEstado, sFarmacia, sFolioMovto, sIdProducto, sCodigoEAN, iUnidadDeSalida,
                             nTasaIva, iCantidad, nCosto, nImporte, 'A');
-                        if(!leer.Exec(sSql))
+                        if (!leer.Exec(sSql))
                         {
                             bRegresa = false;
                             break;
@@ -772,7 +815,7 @@ namespace Farmacia.Inventario
                         else
                         {
                             bRegresa = GrabarDetalleLotes(sIdProducto, sCodigoEAN, nCosto);
-                            if(!bRegresa)
+                            if (!bRegresa)
                             {
                                 break;
                             }
@@ -788,13 +831,13 @@ namespace Farmacia.Inventario
         {
             bool bRegresa = false;
             string sSql = "";
-            string sSKU_Local = ""; 
+            string sSKU_Local = "";
 
             clsLotes[] ListaLotes = Lotes.Lotes(IdProducto, CodigoEAN);
 
-            foreach(clsLotes L in ListaLotes)
+            foreach (clsLotes L in ListaLotes)
             {
-                if(L.Cantidad > 0)
+                if (L.Cantidad > 0)
                 {
                     sSKU_Local = bEntradaSalida ? SKU.SKU : L.SKU;
 
@@ -805,7 +848,7 @@ namespace Farmacia.Inventario
                             sEmpresa, sEstado, sFarmacia, L.IdSubFarmacia, IdProducto, CodigoEAN, L.ClaveLote,
                             General.FechaYMD(L.FechaCaducidad, "-"), DtGeneral.IdPersonal, sSKU_Local);
 
-                    if(!leer.Exec(sSql))
+                    if (!leer.Exec(sSql))
                     {
                         bRegresa = false;
                         break;
@@ -817,7 +860,7 @@ namespace Farmacia.Inventario
                             "\t@FolioMovtoInv = '{4}', @IdProducto = '{5}', @CodigoEAN = '{6}', @ClaveLote = '{7}', @Cantidad = '{8}',\n" +
                             "\t@Costo = '{9}', @Importe = '{10}', @Status = '{11}', @SKU = '{12}' \n",
                             sEmpresa, sEstado, sFarmacia, L.IdSubFarmacia, sFolioMovto, IdProducto, CodigoEAN, L.ClaveLote, L.Cantidad, Costo, L.Cantidad * Costo, 'A', sSKU_Local);
-                        if(!leer.Exec(sSql))
+                        if (!leer.Exec(sSql))
                         {
                             bRegresa = false;
                             break;
@@ -825,10 +868,10 @@ namespace Farmacia.Inventario
                         else
                         {
                             bRegresa = true;
-                            if(GnFarmacia.ManejaUbicaciones)
+                            if (GnFarmacia.ManejaUbicaciones)
                             {
                                 bRegresa = GrabarDetalleLotesUbicaciones(L);
-                                if(!bRegresa)
+                                if (!bRegresa)
                                 {
                                     break;
                                 }
@@ -838,7 +881,7 @@ namespace Farmacia.Inventario
                 }
             }
 
-            return bRegresa; 
+            return bRegresa;
         }
 
         private bool GrabarDetalleLotesUbicaciones(clsLotes Lote)
@@ -849,9 +892,9 @@ namespace Farmacia.Inventario
 
             clsLotesUbicacionesItem[] Ubicaciones = Lote.Ubicaciones(Lote.SKU, Lote.Codigo, Lote.CodigoEAN, Lote.ClaveLote, Lote.IdSubFarmacia);
 
-            foreach(clsLotesUbicacionesItem L in Ubicaciones)
+            foreach (clsLotesUbicacionesItem L in Ubicaciones)
             {
-                if(L.Cantidad > 0)
+                if (L.Cantidad > 0)
                 {
                     sSKU_Local = bEntradaSalida ? SKU.SKU : L.SKU;
 
@@ -863,7 +906,7 @@ namespace Farmacia.Inventario
                         sEmpresa, sEstado, sFarmacia, L.IdSubFarmacia, L.IdProducto, L.CodigoEAN, L.ClaveLote,
                         L.Pasillo, L.Estante, L.Entrepano, sSKU_Local);
 
-                    if(!leer.Exec(sSql))
+                    if (!leer.Exec(sSql))
                     {
                         bRegresa = false;
                         break;
@@ -878,7 +921,7 @@ namespace Farmacia.Inventario
                             L.IdProducto, L.CodigoEAN, L.ClaveLote, L.Cantidad, L.Pasillo, L.Estante, L.Entrepano, 'A', sSKU_Local);
 
                         bRegresa = leer.Exec(sSql);
-                        if(!bRegresa)
+                        if (!bRegresa)
                         {
                             break;
                         }
@@ -895,6 +938,8 @@ namespace Farmacia.Inventario
         private void FrmInventarioInicial_Load(object sender, EventArgs e)
         {
             CargarMovimientosInv();
+            CargarSubFarmacias();
+            CargarLicitaciones();
             LimpiarPantalla(false);
         }
 
@@ -925,7 +970,7 @@ namespace Farmacia.Inventario
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (e.Control)
-                TeclasRapidas(e); 
+                TeclasRapidas(e);
 
             switch (e.KeyCode)
             {
@@ -949,17 +994,17 @@ namespace Farmacia.Inventario
             bEstaCancelado = false;
             bEntradaSalida = false;
             bCapturaDeLotes = false;
-            bModificarCantidades = true; 
+            bModificarCantidades = true;
             bPermitirSacarCaducados = false;
             bEsConsignacion = false;
-            tipoDeInventario = TiposDeInventario.Todos; 
+            tipoDeInventario = TiposDeInventario.Todos;
 
             if (cboTiposMovtoInventario.SelectedIndex == 0)
             {
                 General.msjUser("No ha seleccionado el Tipo de Movimiento de Inventario, verifique.");
-                cboTiposMovtoInventario.Focus(); 
+                cboTiposMovtoInventario.Focus();
             }
-            else 
+            else
             {
                 try
                 {
@@ -973,9 +1018,9 @@ namespace Farmacia.Inventario
                         tipoDeInventario = TiposDeInventario.Consignacion;
                     }
                 }
-                catch 
+                catch
                 {
-                    sTipoES = ""; 
+                    sTipoES = "";
                     sIdTipoMovtoInv = ""; // Asegurar que falle si no estan registrados los movimientos para la farmacia 
                 }
 
@@ -983,8 +1028,8 @@ namespace Farmacia.Inventario
                 if (sTipoES == "E")
                 {
                     bEntradaSalida = true;
-                    bCapturaDeLotes = true; 
-                    bModificarCantidades = true; 
+                    bCapturaDeLotes = true;
+                    bModificarCantidades = true;
                 }
 
                 //if (sTipoES == "S")
@@ -1002,7 +1047,7 @@ namespace Farmacia.Inventario
                     txtFolio.Text = "*";
                     cboTiposMovtoInventario.Enabled = false;
 
-                    myGrid.Limpiar(true); 
+                    myGrid.Limpiar(true);
                     myGrid.BloqueaColumna(false, (int)Cols.Costo);
                     IniciarToolBar(true, false, false);
 
@@ -1051,6 +1096,11 @@ namespace Farmacia.Inventario
             }
             chkAplicarInv.Enabled = !chkAplicarInv.Checked;
 
+            cboLicitacion.Data = leer.Campo("IdLicitacion");
+            cboSubFarmacias.Data = leer.Campo("IdFuente");
+            txtOrden.Text = leer.Campo("Orden");
+            txtFolioPre.Text = leer.Campo("FolioPresup");
+
             dtpFechaRegistro.Value = leer.CampoFecha("FechaReg");
             txtObservaciones.Text = leer.Campo("Observaciones");
             txtSubTotal.Text = leer.CampoDouble("SubTotal").ToString(sFormato);
@@ -1076,7 +1126,7 @@ namespace Farmacia.Inventario
                 lblCancelado.Visible = true;
                 General.msjUser("El movimiento de inventario actualmente se encuentra cancelado.");
             }
-            else if( bMovtoAplicado )
+            else if (bMovtoAplicado)
             {
                 lblCancelado.Text = "APLICADO";
                 lblCancelado.Visible = true;
@@ -1117,7 +1167,7 @@ namespace Farmacia.Inventario
             cboTiposMovtoInventario.Add();
             //cboTiposMovtoInventario.Add(query.MovtosTiposInventario_Farmacias(sEstado, sFarmacia, 1, "CargarMovimientosInv"), true, "TipoMovto", "DescripcionMovimiento");
             cboTiposMovtoInventario.Add(query.MovtosTiposInventario_Farmacias(sEstado, sFarmacia, 1, "CargarMovimientosInv"), true, "TipoMovto", "DescMovimiento");
-            cboTiposMovtoInventario.SelectedIndex = 0; 
+            cboTiposMovtoInventario.SelectedIndex = 0;
         }
 
         #region Manejo Grid 
@@ -1136,8 +1186,8 @@ namespace Farmacia.Inventario
 
                             if (bEntradaSalida)
                                 myGrid.BloqueaCelda(false, myGrid.Rows, (int)Cols.Costo);
-                            
-                            myGrid.SetActiveCell(myGrid.Rows, 1); 
+
+                            myGrid.SetActiveCell(myGrid.Rows, 1);
                         }
                     }
                 }
@@ -1160,7 +1210,7 @@ namespace Farmacia.Inventario
                     {
                         if (e.KeyCode == Keys.F1)
                         {
-                            sValorGrid = myGrid.GetValue(myGrid.ActiveRow, (int)Cols.CodEAN); 
+                            sValorGrid = myGrid.GetValue(myGrid.ActiveRow, (int)Cols.CodEAN);
                             leer.DataSetClase = ayuda.ProductosEstado(DtGeneral.EmpresaConectada, sEstado, "grdProductos_KeyDown");
                             if (leer.Leer())
                             {
@@ -1207,7 +1257,7 @@ namespace Farmacia.Inventario
                                 {
                                     if (!bEsEAN_Unico)
                                     {
-                                        leer.GuardarDatos(1, "CodigoEAN", sValor); 
+                                        leer.GuardarDatos(1, "CodigoEAN", sValor);
                                         //leer.DataSetClase = query.ProductosFarmacia(sEmpresa, sEstado, sFarmacia, sValor, "grdProductos_EditModeOff");
                                     }
 
@@ -1275,13 +1325,13 @@ namespace Farmacia.Inventario
                     General.msjUser("El producto ya fue capturado en otro renglon, verifique.");
                     myGrid.LimpiarRenglon(iRow);
                     myGrid.SetActiveCell(iRow, iColEAN);
-                    myGrid.EnviarARepetido(); 
+                    myGrid.EnviarARepetido();
                 }
             }
             else
             {
                 // Asegurar que no cambie el CodigoEAN
-                myGrid.SetValue(iRow, iColEAN, sCodEAN); 
+                myGrid.SetValue(iRow, iColEAN, sCodEAN);
             }
 
             return bRegresa;
@@ -1359,28 +1409,34 @@ namespace Farmacia.Inventario
                     Lotes.CodigoEAN = myGrid.GetValue(iRow, (int)Cols.CodEAN);
                     Lotes.Descripcion = myGrid.GetValue(iRow, (int)Cols.Descripcion);
                     Lotes.EsEntrada = bEntradaSalida;
-                    Lotes.EsConsignacion = bEsConsignacion;
+                    //Lotes.EsConsignacion = bEsConsignacion; FAV -- JALISCO ES CONSIGNA
+                    Lotes.EsConsignacion = true;
+                    if(sTipoES == "E")
+                    {
+                        Lotes.IdSubFarmacia = cboSubFarmacias.Data;
+                    }
+
                     Lotes.TipoCaptura = 1; //Por piezas   // myGrid.GetValueInt(iRow, (int)Cols.TipoCaptura);
 
                     // Si el movimiento ya fue aplicado no es posible agregar lotes 
                     Lotes.CapturarLotes = bCapturaDeLotes;  //  chkAplicarInv.Enabled;
-                    Lotes.ModificarCantidades = bModificarCantidades;  
+                    Lotes.ModificarCantidades = bModificarCantidades;
 
                     // Solo para Movientos Especiales 
-                    Lotes.PermitirSalidaCaducados = bPermitirSacarCaducados; 
-                    
+                    Lotes.PermitirSalidaCaducados = bPermitirSacarCaducados;
+
                     //Configurar Encabezados 
                     Lotes.Encabezados = EncabezadosManejoLotes.Default;
 
                     // Aplica solo para las Entrada por Consignacion    
-                    Lotes.TipoDeInventario = tipoDeInventario; 
+                    Lotes.TipoDeInventario = tipoDeInventario;
 
                     // Mostrar la Pantalla de Lotes 
                     Lotes.FechaDeSistema = GnFarmacia.FechaOperacionSistema;
                     Lotes.Show();
 
                     myGrid.SetValue(iRow, (int)Cols.Cantidad, Lotes.Cantidad);
-                    myGrid.SetValue(iRow, (int)Cols.TipoCaptura, Lotes.TipoCaptura);                    
+                    myGrid.SetValue(iRow, (int)Cols.TipoCaptura, Lotes.TipoCaptura);
                     myGrid.SetActiveCell(iRow, (int)Cols.Costo);
 
                     Totalizar();
@@ -1399,8 +1455,10 @@ namespace Farmacia.Inventario
             bGuardaMotivos = false;
             if (cboTiposMovtoInventario.SelectedIndex != 0)
             {
+                sTipoES = ((DataRow)cboTiposMovtoInventario.ItemActual.Item)["Efecto_Movto"].ToString();
+                MostrarNuevosDatos();
                 if (Verificar_Motivos_Devolucion())
-                {                    
+                {
                     motivodev.Movto_Inv = cboTiposMovtoInventario.Data;
                     motivodev.AsignarTipoMovto();
                 }
@@ -1412,7 +1470,7 @@ namespace Farmacia.Inventario
             bool bRegresa = false;
             string sSql = "";
 
-            sSql = string.Format(" Select * From MovtosInv_Motivos_Dev Where IdTipoMovto_Inv = '{0}' ", cboTiposMovtoInventario.Data );
+            sSql = string.Format(" Select * From MovtosInv_Motivos_Dev Where IdTipoMovto_Inv = '{0}' ", cboTiposMovtoInventario.Data);
 
             if (!leer.Exec(sSql))
             {
@@ -1424,8 +1482,8 @@ namespace Farmacia.Inventario
                 if (leer.Leer())
                 {
                     bRegresa = true;
-                    bGuardaMotivos = true;                    
-                }                
+                    bGuardaMotivos = true;
+                }
             }
 
             return bRegresa;
@@ -1438,5 +1496,77 @@ namespace Farmacia.Inventario
             motivodev.MotivosDevolucion();
         }
         #endregion Boton_Motivos_Devoluciones
+
+        #region NuevosDatos
+        private void CargarSubFarmacias()
+        {
+            leer = new clsLeer(ref cnn);
+            string sSql = "";
+            string sFiltroConsignacion = "";
+            string sFiltroSubFarmacia = "";
+            string sIdEstado = DtGeneral.EstadoConectado;
+            string sIdFarmacia = DtGeneral.FarmaciaConectada;
+            DataSet SubFarmacias = new DataSet();
+
+            sFiltroConsignacion = " and EsConsignacion = 1 ";
+            sFiltroConsignacion += " and EmulaVenta = 0 ";
+
+            sSql = string.Format("Select IdEstado, IdFarmacia, IdSubFarmacia, SubFarmacia, EsConsignacion, EmulaVenta " +
+                    " From vw_Farmacias_SubFarmacias (NoLock) " +
+                    " Where IdEstado = '{0}' and IdFarmacia = '{1}' {2} {3} ",
+                    sIdEstado, sIdFarmacia, sFiltroConsignacion, sFiltroSubFarmacia);
+
+
+            if (leer.Exec(sSql))
+            {
+                SubFarmacias = leer.DataSetClase;
+            }
+
+            cboSubFarmacias.Clear();
+            cboSubFarmacias.Add();
+            cboSubFarmacias.Add(SubFarmacias, true, "IdSubFarmacia", "SubFarmacia");
+        }
+
+        private void CargarLicitaciones()
+        {
+            leer = new clsLeer(ref cnn);
+            string sSql = "";
+            string sIdEstado = DtGeneral.EstadoConectado;
+
+            DataSet Licitaciones = new DataSet();
+
+            sSql = string.Format("SELECT IdEstado, IdLicitacion, Licitacion " +
+                    " FROM Ctrl_Licitaciones (NoLock) " +
+                    " WHERE IdEstado = '{0}' AND Status = 'A' ", sIdEstado);
+
+
+            if (leer.Exec(sSql))
+            {
+                Licitaciones = leer.DataSetClase;
+            }
+
+            cboLicitacion.Clear();
+            cboLicitacion.Add();
+            cboLicitacion.Add(Licitaciones, true, "IdLicitacion", "Licitacion");
+        }
+
+        private void MostrarNuevosDatos()
+        {
+            if(sTipoES == "S")
+            {
+                cboLicitacion.Enabled = false;
+                cboSubFarmacias.Enabled = false;
+                txtOrden.Enabled = false;
+                txtFolioPre.Enabled = false;
+            }
+            else
+            {
+                cboLicitacion.Enabled = true;
+                cboSubFarmacias.Enabled = true;
+                txtOrden.Enabled = true;
+                txtFolioPre.Enabled = true;
+            }
+        }
+        #endregion NuevosDatos
     }
 }

@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroPedidosEspeciales_Base));
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType3 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType4 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType2 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType3 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType4 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType9 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType10 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType11 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType12 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType9 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType10 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType11 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType12 = new FarPoint.Win.Spread.CellType.NumberCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -135,7 +135,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -151,7 +151,7 @@
             // 
             this.toolStripSeparator6.AutoSize = false;
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -168,7 +168,7 @@
             // 
             this.toolStripSeparator5.AutoSize = false;
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -184,7 +184,7 @@
             // 
             this.toolStripSeparator4.AutoSize = false;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImportarPedidoMasivo
             // 
@@ -364,68 +364,68 @@
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 7).Value = "Cantidad cajas";
             this.grdProductos_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdProductos_Sheet1.ColumnHeader.Rows.Get(0).Height = 39F;
-            textCellType1.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
-            textCellType1.MaxLength = 20;
-            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType1;
+            textCellType9.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
+            textCellType9.MaxLength = 20;
+            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType9;
             this.grdProductos_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Label = "Clave SSA";
             this.grdProductos_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Width = 130F;
-            textCellType2.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
-            textCellType2.MaxLength = 15;
-            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType2;
+            textCellType10.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
+            textCellType10.MaxLength = 15;
+            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType10;
             this.grdProductos_Sheet1.Columns.Get(1).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(1).Label = "IdClaveSSA";
             this.grdProductos_Sheet1.Columns.Get(1).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(1).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(1).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(1).Width = 97F;
-            this.grdProductos_Sheet1.Columns.Get(2).CellType = textCellType3;
+            this.grdProductos_Sheet1.Columns.Get(2).CellType = textCellType11;
             this.grdProductos_Sheet1.Columns.Get(2).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
             this.grdProductos_Sheet1.Columns.Get(2).Label = "Descripción";
             this.grdProductos_Sheet1.Columns.Get(2).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(2).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(2).Width = 350F;
-            this.grdProductos_Sheet1.Columns.Get(3).CellType = textCellType4;
+            this.grdProductos_Sheet1.Columns.Get(3).CellType = textCellType12;
             this.grdProductos_Sheet1.Columns.Get(3).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(3).Label = "Presentacion";
             this.grdProductos_Sheet1.Columns.Get(3).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(3).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(3).Width = 126F;
-            numberCellType1.DecimalPlaces = 0;
-            numberCellType1.DecimalSeparator = ".";
-            numberCellType1.MaximumValue = 10000000D;
-            numberCellType1.MinimumValue = -10000000D;
-            numberCellType1.Separator = ",";
-            numberCellType1.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(4).CellType = numberCellType1;
+            numberCellType9.DecimalPlaces = 0;
+            numberCellType9.DecimalSeparator = ".";
+            numberCellType9.MaximumValue = 10000000D;
+            numberCellType9.MinimumValue = -10000000D;
+            numberCellType9.Separator = ",";
+            numberCellType9.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(4).CellType = numberCellType9;
             this.grdProductos_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(4).Label = "Existencia";
             this.grdProductos_Sheet1.Columns.Get(4).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(4).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(4).Width = 70F;
-            numberCellType2.DecimalPlaces = 0;
-            numberCellType2.MaximumValue = 10000000D;
-            numberCellType2.MinimumValue = 0D;
-            this.grdProductos_Sheet1.Columns.Get(5).CellType = numberCellType2;
+            numberCellType10.DecimalPlaces = 0;
+            numberCellType10.MaximumValue = 10000000D;
+            numberCellType10.MinimumValue = 0D;
+            this.grdProductos_Sheet1.Columns.Get(5).CellType = numberCellType10;
             this.grdProductos_Sheet1.Columns.Get(5).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(5).Label = "Cantidad piezas";
             this.grdProductos_Sheet1.Columns.Get(5).Locked = false;
             this.grdProductos_Sheet1.Columns.Get(5).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(5).Width = 70F;
-            numberCellType3.DecimalPlaces = 0;
-            numberCellType3.MaximumValue = 10000000D;
-            numberCellType3.MinimumValue = 0D;
-            this.grdProductos_Sheet1.Columns.Get(6).CellType = numberCellType3;
+            numberCellType11.DecimalPlaces = 0;
+            numberCellType11.MaximumValue = 10000000D;
+            numberCellType11.MinimumValue = 0D;
+            this.grdProductos_Sheet1.Columns.Get(6).CellType = numberCellType11;
             this.grdProductos_Sheet1.Columns.Get(6).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(6).Label = "Contenido paquete";
             this.grdProductos_Sheet1.Columns.Get(6).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(6).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(6).Width = 70F;
-            numberCellType4.DecimalPlaces = 0;
-            numberCellType4.MaximumValue = 10000000D;
-            numberCellType4.MinimumValue = 0D;
-            this.grdProductos_Sheet1.Columns.Get(7).CellType = numberCellType4;
+            numberCellType12.DecimalPlaces = 0;
+            numberCellType12.MaximumValue = 10000000D;
+            numberCellType12.MinimumValue = 0D;
+            this.grdProductos_Sheet1.Columns.Get(7).CellType = numberCellType12;
             this.grdProductos_Sheet1.Columns.Get(7).Formula = "(RC[-2]/RC[-1])";
             this.grdProductos_Sheet1.Columns.Get(7).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(7).Label = "Cantidad cajas";

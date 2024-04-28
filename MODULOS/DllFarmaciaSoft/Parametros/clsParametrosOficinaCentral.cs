@@ -226,7 +226,7 @@ namespace DllFarmaciaSoft
             GrabarParametro("ConfirmacionConHuellas", @"FALSE", "Determina si se usara el firma Biométrica para firmas electrónicas.", false);
             
         } 
-
+        
         #endregion Parametros   
       
         #region Parametros de Compras 

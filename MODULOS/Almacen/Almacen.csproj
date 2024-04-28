@@ -994,9 +994,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Snk\Almacen.manifest">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Web References\wsUpdater\wsUpdater.wsdl" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1042,7 +1039,6 @@
     </None>
     <None Include="Web References\wsAlmacen\wsFarmacia.disco" />
     <None Include="app.config" />
-    <None Include="Snk\Almacen.snk" />
     <None Include="Web References\wsAlmacen\wsFarmacia.wsdl" />
     <None Include="Web References\wsUpdater\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -1103,7 +1099,9 @@
       <Name>SC_SolutionsSystem.QRCode</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Snk\" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>

@@ -133,6 +133,9 @@ namespace Configuracion
                 // Ajustar el Tiempo de Espera para Conexion 
                 General.DatosConexion.ConectionTimeOut = SC_SolutionsSystem.Data.TiempoDeEspera.Limite30;
 
+                string sTitle = "";
+                sTitle = string.Format("----   " + DtGeneral.FarmaciaConectadaNombre + "   Usuario: " + DtGeneral.NombrePersonal + "   ----   " + "  D. B. : " + General.DatosConexion.BaseDeDatos);
+                this.Text = sTitle;
 
                 ////// Checar la version instalada 
                 ////string[] sModulos = { "OficinaCentral", "Compras"};

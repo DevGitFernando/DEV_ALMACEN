@@ -170,19 +170,19 @@ namespace Farmacia
             Login = new DllFarmaciaSoft.Usuarios_y_Permisos.clsEdoLogin("SELECT * FROM ctl_Sucursales (nolock)", "Sucursales");
             Login.Arbol = "PFAR";
 
-            BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + datosDeModulo.Version; //// GnFarmacia.DatosApp.Version;
+            ////BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + datosDeModulo.Version; //// GnFarmacia.DatosApp.Version;
             if (Login.AutenticarUsuario())
             {
                 //////BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + Application.ProductVersion;
-                BarraDeStatus.Panels[lblFarmacia.Name].Text = "Estado : " + DtGeneral.EstadoConectado + " -- " + DtGeneral.EstadoConectadoNombre + "      " + " Farmacia : " + DtGeneral.FarmaciaConectada + " -- " + DtGeneral.FarmaciaConectadaNombre;
-                BarraDeStatus.Panels[lblServidor.Name].Text = "Servidor : " + General.DatosConexion.Servidor;
-                BarraDeStatus.Panels[lblBaseDeDatos.Name].Text = "Base de Datos : " + General.DatosConexion.BaseDeDatos;
-                BarraDeStatus.Panels[lblUsuarioConectado.Name].Text = "Usuario : " + DtGeneral.NombrePersonal; 
+                ////BarraDeStatus.Panels[lblFarmacia.Name].Text = "Estado : " + DtGeneral.EstadoConectado + " -- " + DtGeneral.EstadoConectadoNombre + "      " + " Farmacia : " + DtGeneral.FarmaciaConectada + " -- " + DtGeneral.FarmaciaConectadaNombre;
+                BarraDeStatus.Panels[lblServidor.Name].Text = " Server : " + General.DatosConexion.Servidor;
+                BarraDeStatus.Panels[lblBaseDeDatos.Name].Text = " Data Base : " + General.DatosConexion.BaseDeDatos;
+                ////BarraDeStatus.Panels[lblUsuarioConectado.Name].Text = "Usuario : " + DtGeneral.NombrePersonal; 
 
 
                 //////MessageBox.Show(Login.Sucursal.ToString());
                 bRegresa = true;
-                if(DtGeneral.MenuEnFormaDeArbol)
+                if(!DtGeneral.MenuEnFormaDeArbol)
                 {
                     Navegador = new FrmNavegador();
                     Navegador.MdiParent = this;
@@ -201,14 +201,26 @@ namespace Farmacia
                 {
                     General.ArbolDeNavegacion = Login.Permisos;
 
-                    mnPrincipal.Visible = true;
-                    menuArbol = new clsGenerarMenu(General.ArbolDeNavegacion, mnPrincipal, this);
-                    menuArbol.ListaIconos = imgNavegacion;
-                    menuArbol.MostrarIconos = true;
-                    menuArbol.GenerarMenu();
-                    menuArbol.MostrarMenu = true;
+                    ////mnPrincipal.Visible = true;
+                    ////menuArbol = new clsGenerarMenu(General.ArbolDeNavegacion, mnPrincipal, this);
+                    ////menuArbol.ListaIconos = imgNavegacion;
+                    ////menuArbol.MostrarIconos = true;
+                    ////menuArbol.GenerarMenu();
+                    ////menuArbol.MostrarMenu = true;
 
-                    this.Text = " Módulo : " + mnPrincipal.Items[0].Text + "         " + DtGeneral.EmpresaConectadaNombre;
+                    ////this.Text = " Módulo : " + mnPrincipal.Items[0].Text + "         " + DtGeneral.EmpresaConectadaNombre;
+                    ///
+
+                    string sTitle = "";
+                    sTitle = string.Format("--  " + DtGeneral.FarmaciaConectada + " -- " + DtGeneral.FarmaciaConectadaNombre + "    Usuario:   " + DtGeneral.NombrePersonal + "   ----    " + " Server : " + General.DatosConexion.Servidor + "     Data Base : " + General.DatosConexion.BaseDeDatos);
+                    this.Text = sTitle;
+
+                    clsGenerarMenu menuTool = new clsGenerarMenu(General.ArbolDeNavegacion, menuStrip, this);
+                    menuTool.MostrarMenu = true;
+                    menuTool.MostrarIconos = false;
+                    menuTool.GenerarMenu(btnMenu);
+
+                    Login = null;
                 }
 
 
@@ -233,7 +245,7 @@ namespace Farmacia
                 ////DtGeneral.RutaReportes = @"D:\PROYECTO SC-SOFT\SISTEMA_INTERMED\REPORTES";
                 ////GnFarmacia.RutaReportes = DtGeneral.RutaReportes; 
 
-                BarraDeStatus.Panels[lblFechaSistema.Name].Text = "Fecha de Sistema : " + General.FechaYMD(GnFarmacia.FechaOperacionSistema, "-"); 
+                //BarraDeStatus.Panels[lblFechaSistema.Name].Text = "Fecha de Sistema : " + General.FechaYMD(GnFarmacia.FechaOperacionSistema, "-"); 
                 tmDatosPersonalConectado.Enabled = true;
                 tmDatosPersonalConectado.Start(); 
 
@@ -245,7 +257,7 @@ namespace Farmacia
                 DtGeneral.UnidadConServidorDedicado = GnFarmacia.UnidadConServidorDedicado; 
 
                 //// Revisar que la Unidad maneje Robot Mach4 
-                GnFarmacia.VerificarInterface();                
+                ////GnFarmacia.VerificarInterface();                
 
                 // Revisar si el Equipo es el Servidor de Datos de la Red 
                 GnFarmacia.EsServidorLocal();
@@ -271,13 +283,13 @@ namespace Farmacia
                     tmServicioInformacion.Start();
                 }
 
-                if (RobotDispensador.Robot.EsClienteInterface)
-                {
-                    BarraDeStatus.Panels[lblMach4.Name].Text = "I - " + RobotDispensador.Robot.PuertoDeSalida; 
-                    //BarraDeStatus.Panels[lblMach4.Name].Width = 8; 
-                    BarraDeStatus.Panels[lblMach4.Name].AutoSize = StatusBarPanelAutoSize.Contents; 
-                    BarraDeStatus.Panels[lblMach4.Name].ToolTipText = BarraDeStatus.Panels[lblMach4.Name].Text; 
-                }
+                ////if (RobotDispensador.Robot.EsClienteInterface)
+                ////{
+                ////    BarraDeStatus.Panels[lblMach4.Name].Text = "I - " + RobotDispensador.Robot.PuertoDeSalida;
+                ////    //BarraDeStatus.Panels[lblMach4.Name].Width = 8; 
+                ////    BarraDeStatus.Panels[lblMach4.Name].AutoSize = StatusBarPanelAutoSize.Contents;
+                ////    BarraDeStatus.Panels[lblMach4.Name].ToolTipText = BarraDeStatus.Panels[lblMach4.Name].Text;
+                ////}
 
                 // Revisa si la unida cuenta con la base de datos del padron 
                 DtGeneral.BuscarConfiguracionPadron(); 
@@ -293,10 +305,10 @@ namespace Farmacia
 
                 tmSesionDeUsuario.Interval = (1000 * 60) * 2;
                 tmSesionDeUsuario.Enabled = true;
-                tmSesionDeUsuario.Start(); 
+                tmSesionDeUsuario.Start();
 
                 tmUpdaterModulo = new System.Timers.Timer((1000 * 30) * 2);
-                tmUpdaterModulo.Elapsed += new ElapsedEventHandler(this.tmUpdaterModulo_Elapsed); 
+                tmUpdaterModulo.Elapsed += new ElapsedEventHandler(this.tmUpdaterModulo_Elapsed);
                 tmUpdaterModulo.Enabled = true;
                 tmUpdaterModulo.Start();
                 x_tiempo_actualizacion = new Random(30);
@@ -320,11 +332,11 @@ namespace Farmacia
                 //GnFarmacia.EsServidorDeRedLocal = false; 
 
                 // Mostrar la Solicitud de Catalogos solo en Servidores y a Administradores 
-                if (GnFarmacia.EsServidorDeRedLocal || DtGeneral.EsAdministrador || DtGeneral.EsEquipoDeDesarrollo) 
-                {
-                    btnGetInformacion.Visible = true;
-                    btnExportarInformacion.Visible = GnFarmacia.ExportaInformacion; 
-                }
+                //if (GnFarmacia.EsServidorDeRedLocal || DtGeneral.EsAdministrador || DtGeneral.EsEquipoDeDesarrollo) 
+                //{
+                //    btnGetInformacion.Visible = true;
+                //    btnExportarInformacion.Visible = GnFarmacia.ExportaInformacion; 
+                //}
 
                 // Administradores tienen acceso a toda la información. Ventas  
                 if (DtGeneral.EsAdministrador)
@@ -375,13 +387,13 @@ namespace Farmacia
                     General.msjAviso("El equipo actual es el servidor de la unidad, esta configurado como servidor dedicado, no es posible ingresar al módulo.");
                 }
 
-                ChecarVersion();
-                if (bSeEncontroUpdate)
-                {
-                    tmUpdateEncontrado_Elapsed(null, null);
-                }
-                tmUpdateEncontrado.Enabled = true;
-
+                //ChecarVersion();
+                //if (bSeEncontroUpdate)
+                //{
+                //    tmUpdateEncontrado_Elapsed(null, null);
+                //}
+                //tmUpdateEncontrado.Enabled = true;
+                
                 DtGeneral.ValidaTransferenciasTransito_DiasConfirmacion();
             }
             else

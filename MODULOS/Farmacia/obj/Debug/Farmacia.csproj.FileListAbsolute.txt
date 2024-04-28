@@ -183,6 +183,7 @@ C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Inventario.FrmKardexProductoTransferenciasEnTransito.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Inventario.FrmMovimientosPorClave.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Inventario.FrmMovimientosPorClaveDetalle.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Inventario.FrmFoliosInventarioInicial.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Inventario.FrmInventarioInicialConsignacion.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Inventario.FrmInventarioInicialConsignacion_NoEnCatalogo.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Inventario.FrmMovtosInvGrales.resources
@@ -234,6 +235,7 @@ C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.TiempoAire.FrmVentaTiempoAire.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Transferencias.FrmClavesSolicitadasTransferencias.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Devoluciones_De_Transferencias.FrmDevolucionDeTransferencias_Entrada.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Transferencias.FrmDevolucionTraspasosSalidas.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Transferencias.FrmReporteadorTransferencia.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Transferencias.FrmTransferenciasEnTransito.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Transferencias.FrmCambioTransferenciasSalidas.resources
@@ -241,6 +243,8 @@ C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Transferencias.FrmTransferenciaEntradas_Base.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Transferencias.FrmTransferenciaSalidas_Base.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Traspasos.FrmTraspasosSubFarmacias.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Traspasos_SCALD.FrmTraspasosEntradaScald.resources
+C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Turnos.FrmTurnos.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Vales.FrmCancelacionVales.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Vales.FrmCatParentescos.resources
 C:\PROYECTOS_2022\SII_PROYECT\SII_OPERATIVO\MODULOS\Farmacia\obj\Debug\Farmacia.Vales.FrmGeneracionServicioDomicilio.resources

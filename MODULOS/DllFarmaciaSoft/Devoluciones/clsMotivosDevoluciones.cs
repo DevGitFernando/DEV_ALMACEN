@@ -109,12 +109,14 @@ namespace DllFarmaciaSoft.Devoluciones
 
                 if (value == TipoDevolucion.TransferenciaDeEntrada)
                 {
-                    sIdTipoMovto = "EDT";
+                    //sIdTipoMovto = "EDT";
+                    sIdTipoMovto = "SDT";
                 }
 
                 if (value == TipoDevolucion.TransferenciaDeSalida)
                 {
-                    sIdTipoMovto = "SDT";
+                    //sIdTipoMovto = "SDT";
+                    sIdTipoMovto = "EDT";
                 }
 
                 if (value == TipoDevolucion.Ninguna)

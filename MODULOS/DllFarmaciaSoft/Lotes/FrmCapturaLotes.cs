@@ -189,6 +189,11 @@ namespace DllFarmaciaSoft.Lotes
         string sMsj_Almacen = "";
         string sMsj_Almacen_Auxiliar = "";
 
+        /// <summary>
+        /// Variable global para IdSubFarmacia
+        /// </summary>
+        public string sIdFuenteFin = "";
+
 
         public FrmCapturaLotes(DataRow []Rows, DataSet SubFarmacias)
         {
@@ -384,7 +389,7 @@ namespace DllFarmaciaSoft.Lotes
 
 
             sMsj_Almacen = " ( F8 ) Ver/Ocultar  Agregar LOTE nuevo                             ( F10 ) Ubicaciones                             ( SUPR/DEL ) Quitar LOTES                      ( F12 ) Cerrar/Salir";
-            sMsj_Almacen_Auxiliar = "  ( F10 ) Ubicaciones                                                                                                                                                                                                                  ( F12 ) Cerrar/Salir   ";
+            sMsj_Almacen_Auxiliar = "                                                                                                                                                          ( F12 ) Cerrar/Salir   ";
 
 
             //// Solo almacenes 
@@ -398,6 +403,7 @@ namespace DllFarmaciaSoft.Lotes
 
             if (bManejaUbicaciones)
             {
+                sMsj_Almacen_Auxiliar = "  ( F10 ) Ubicaciones                                                                                                                                                                                  ( F12 ) Cerrar/Salir   ";
                 //lblAyuda.Text = " <F8> Ver / Ocultar   Agregar nuevo lote      <F10> Ubicaciones        <SUPR/DEL> Borrar lotes agregados              <F12> Cerrar";
                 //lblAyudaAux.Text = "  <F10>Ubicaciones                                                                                                                                                              <F12> Cerrar   ";
 
@@ -421,6 +427,12 @@ namespace DllFarmaciaSoft.Lotes
                 //// No permitir ningun tipo de modificación y/o captura de cantidades 
                 myGrid.BloqueaColumna(true, (int)Cols.EsVentaBloqueada, false);
                 General.msjAviso("La Unidad actual no está habilitada para el Manejo de Controlados.");
+            }
+
+            if(sIdFuenteFin != "")
+            {
+                cboSubFarmacias.Data = sIdFuenteFin;
+                cboSubFarmacias.Enabled = false;
             }
 
         }
@@ -722,7 +734,7 @@ namespace DllFarmaciaSoft.Lotes
                 {
                     bAgregar = false;
                     iError = 1;
-                    General.msjAviso("F. Financiamiento no valida, Favor de verificar.");
+                    General.msjAviso("F. Financiamiento no valida. Favor de verificar.");
                 }
             }
 
@@ -787,7 +799,8 @@ namespace DllFarmaciaSoft.Lotes
                     myGrid.SetValue(iActiveRow, (int)Cols.MesesPorCaducar, dMonth);
 
                     // Para evitar error al Manejar el Mes de Febrero 
-                    dtFecha = new DateTime(dtpFechaCaducidad.Value.Year, dtpFechaCaducidad.Value.Month, 1);
+                    //dtFecha = new DateTime(dtpFechaCaducidad.Value.Year, dtpFechaCaducidad.Value.Month, 1);
+                    dtFecha = new DateTime(dtpFechaCaducidad.Value.Year, dtpFechaCaducidad.Value.Month, dtpFechaCaducidad.Value.Day);
                     sFecha = General.FechaYMD(dtFecha).ToString();
 
                     myGrid.SetValue(iActiveRow, (int)Cols.FechaEnt, General.FechaYMD(dtpFechaEntrada.Value));
@@ -828,10 +841,10 @@ namespace DllFarmaciaSoft.Lotes
                     iVeces++;
                 }
 
-                if (iVeces > 1)
+                if (iVeces > 2)
                 {
                     bRegresa = false;
-                    sMsjError = string.Format("El LOTE [ {0} ] contiene mas de un caracter [ * ], formato inválido, Favor de verificar. ", sValor); 
+                    sMsjError = string.Format("El LOTE [ {0} ] contiene mas de 2 caracteres [ * ], formato inválido, Favor de verificar. ", sValor); 
                     break;
                 }
             }

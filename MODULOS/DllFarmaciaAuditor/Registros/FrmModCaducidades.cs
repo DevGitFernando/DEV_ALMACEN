@@ -121,7 +121,7 @@ namespace DllFarmaciaAuditor.Registros
                     {
                         ConexionLocal.DeshacerTransaccion();
                         Error.GrabarError(myLeer, "btnGuardar_Click");
-                        General.msjError("Ocurrió un error al guardar la Información.");
+                        General.msjError("Error al guardar la Información.");
                         IniciarToolBar(true, true, false, false);
                     }
 
@@ -201,7 +201,7 @@ namespace DllFarmaciaAuditor.Registros
             {
                 IniciarToolBar(true, false, false, false);
                 Fg.BloqueaControles(this, false, FrameDatosLotes);
-                General.msjUser("Este Producto se encuentra Cancelado, por lo tanto no puede ser modificado");
+                General.msjUser("Producto Cancelado. No es posible realizar alguna modificación.");
             }
 
             Buscar_Lotes();            
@@ -239,7 +239,7 @@ namespace DllFarmaciaAuditor.Registros
             if (!myLeerLotes.Exec(sSql))
             {
                 Error.GrabarError(myLeerLotes, "Buscar_Lotes()");
-                General.msjError("Ocurrió un error al obtener el listado de lotes del producto."); 
+                General.msjError("Error al consultar Lotes de producto."); 
             }
             else 
             {
@@ -250,7 +250,7 @@ namespace DllFarmaciaAuditor.Registros
                 else
                 {
                     bRegresa = false;
-                    General.msjUser("El Producto ingresado no tiene registrado Lotes, verifique.");
+                    General.msjUser("Producto ingresado no tiene Lotes registrados. Favor de verificar.");
                     btnNuevo_Click(null, null);
                 }
             }
@@ -303,7 +303,7 @@ namespace DllFarmaciaAuditor.Registros
                 }
                 else
                 {
-                    General.msjUser("La Clave de Lote ingresada no existe para este Producto. Verifique");
+                    General.msjUser("LOTE ingresado no existe para este Producto. Favor de verificar.");
                     txtClaveLote.Focus();
                 }
 
@@ -321,7 +321,7 @@ namespace DllFarmaciaAuditor.Registros
             if (!myLeer.Exec(sSql))
             {
                 Error.GrabarError(myLeer, "BuscarDatosLote()");
-                General.msjError("Ocurrió un error al validar la Clave de Lote."); 
+                General.msjError("Error al consultar Lote."); 
             }
             else 
             {
@@ -330,7 +330,7 @@ namespace DllFarmaciaAuditor.Registros
                 if (!myLeer.Leer())
                 {
                     bRegresa = false; 
-                    General.msjUser(" No se encontro la Clave Lote en la Sub-Farmacia solicitada, verifique."); 
+                    General.msjUser(" No existe LOTE en la F. Financiamiento seleccionada. Favor de verificar."); 
                 }
             }
 
@@ -349,16 +349,16 @@ namespace DllFarmaciaAuditor.Registros
                 lblCorregido.Visible = true;
                 lblCorregido.Text = "CORREGIDO";
                 //Si el usuario es administrador, puede hacer cambios a la compra.
-                if (!DtGeneral.EsAdministrador )
-                {
-                    if (!(bPermisoCaducidades || bPermisoCaducidades_Aux))
-                    {
-                        bRegresa = true;
-                        txtClaveLote.Text = "";
-                        txtClaveLote.Focus();
-                        General.msjUser("Este Lote ya ha sido corregido, verifique");
-                    }
-                }
+                //if (!DtGeneral.EsAdministrador )
+                //{
+                //    if (!(bPermisoCaducidades || bPermisoCaducidades_Aux))
+                //    {
+                //        bRegresa = true;
+                //        txtClaveLote.Text = "";
+                //        txtClaveLote.Focus();
+                //        General.msjUser("Este Lote ya ha sido corregido, verifique");
+                //    }
+                //}
             }
 
             return bRegresa;
@@ -396,14 +396,14 @@ namespace DllFarmaciaAuditor.Registros
             if (cboSubFarmacias.SelectedIndex == 0)
             {
                 bRegresa = false;
-                General.msjUser("No ha seleccionado una Sub-Farmacia, verifique.");
+                General.msjUser("Seleccione F. Financiamiento. Favor de verificar.");
                 cboSubFarmacias.Focus();
             }
 
             if (bRegresa && txtClaveLote.Text.Trim() == "")
             {
                 bRegresa = false;
-                General.msjUser("Clave de Lote inválida, verifique.");
+                General.msjUser("LOTE no valido. Favor de verificar.");
                 txtClaveLote.Focus();
             }
 
@@ -418,7 +418,7 @@ namespace DllFarmaciaAuditor.Registros
             if (myGrid.BuscarRepetidosColumnas(sValorBuscar, Columnas) == 0)
             {
                 bRegresa = false;
-                General.msjUser("La Clave de Lote no pertenece a la Sub-Farmacia seleccionada, verifique.");
+                General.msjUser("LOTE no pertenece a F. Financiamiento. Favor de verificar.");
                 cboSubFarmacias.Focus();
             }
             

@@ -214,10 +214,10 @@ namespace Almacen.Pedidos
 
 
             sSql = string.Format(
-                "Select \n\t'Tipo de pedido' = TipoDePedido, 'Núm. Jurisdicción' = IdJurisdiccionPedido, 'Jurisdicción' = JurisdiccionPedido, \n" +
-                "\t'Núm. Farmacia Pedido' = IdFarmaciaSolicita, 'Farmacia Pedido' = FarmaciaSolicita, 'Folio Pedido' = FolioPedido, \n" +
+                "Select \n\t'Tipo de pedido' = TipoDePedido, 'Id Jurisdicción' = IdJurisdiccionPedido, 'Jurisdicción' = JurisdiccionPedido, \n" +
+                "\t'Id Unidad Pedido' = IdFarmaciaSolicita, 'Unidad Pedido' = FarmaciaSolicita, 'Folio Pedido' = FolioPedido, \n" +
                 "\t'Fecha Pedido' = Convert(varchar(10), FechaRegistro, 120), 'Fecha Entrega' = Convert(varchar(10), FechaEntrega, 120), \n" +
-                "\t'Folio Surtido' = FolioSurtido, 'Referencia' = FolioTransferenciaReferencia,'Status Pedido' = StatusPedido, Status \n" +
+                "\t'Folio Surtido' = FolioSurtido, 'Referencia' = FolioTransferenciaReferencia,'Estatus Pedido' = StatusPedido, Status \n" +
                 "From vw_PedidosCedis_Surtimiento (Nolock) " +
                 "Where IdEmpresa = '{0}' and IdEstado = '{1}' {2} {3} " +
                 "\t {4} {5}  {6}  " +

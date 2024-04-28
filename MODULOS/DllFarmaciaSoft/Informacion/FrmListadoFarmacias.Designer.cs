@@ -50,7 +50,8 @@
             // 
             // toolStripBarraMenu
             // 
-            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
@@ -59,7 +60,7 @@
             this.btnImprimir});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(1214, 31);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1214, 58);
             this.toolStripBarraMenu.TabIndex = 1;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -69,14 +70,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(29, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 2);
             // 
             // btnEjecutar
             // 
@@ -84,15 +86,16 @@
             this.btnEjecutar.Image = ((System.Drawing.Image)(resources.GetObject("btnEjecutar.Image")));
             this.btnEjecutar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(29, 28);
+            this.btnEjecutar.Size = new System.Drawing.Size(54, 55);
             this.btnEjecutar.Text = "Ejecutar";
             this.btnEjecutar.ToolTipText = "Ejecutar";
             this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
             // 
             // toolStripSeparator2
             // 
+            this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 2);
             // 
             // btnImprimir
             // 
@@ -100,18 +103,18 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(29, 28);
+            this.btnImprimir.Size = new System.Drawing.Size(54, 55);
             this.btnImprimir.Text = "&Imprimir";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.listFarmacias);
-            this.groupBox1.Location = new System.Drawing.Point(18, 102);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(18, 132);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1180, 452);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1180, 421);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Farmacias -- Cedis";
@@ -120,9 +123,9 @@
             // 
             this.listFarmacias.HideSelection = false;
             this.listFarmacias.Location = new System.Drawing.Point(9, 23);
-            this.listFarmacias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listFarmacias.Margin = new System.Windows.Forms.Padding(4);
             this.listFarmacias.Name = "listFarmacias";
-            this.listFarmacias.Size = new System.Drawing.Size(1156, 419);
+            this.listFarmacias.Size = new System.Drawing.Size(1156, 390);
             this.listFarmacias.TabIndex = 2;
             this.listFarmacias.UseCompatibleStateImageBehavior = false;
             // 
@@ -132,10 +135,10 @@
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Controls.Add(this.cboEstados);
             this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Location = new System.Drawing.Point(18, 34);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Location = new System.Drawing.Point(18, 64);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(1180, 60);
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
@@ -150,7 +153,7 @@
             this.cboEmpresas.FormattingEnabled = true;
             this.cboEmpresas.ListaItemsBusqueda = 20;
             this.cboEmpresas.Location = new System.Drawing.Point(112, 21);
-            this.cboEmpresas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboEmpresas.Margin = new System.Windows.Forms.Padding(4);
             this.cboEmpresas.MostrarToolTip = false;
             this.cboEmpresas.Name = "cboEmpresas";
             this.cboEmpresas.Size = new System.Drawing.Size(562, 24);
@@ -176,7 +179,7 @@
             this.cboEstados.FormattingEnabled = true;
             this.cboEstados.ListaItemsBusqueda = 20;
             this.cboEstados.Location = new System.Drawing.Point(780, 21);
-            this.cboEstados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboEstados.Margin = new System.Windows.Forms.Padding(4);
             this.cboEstados.MostrarToolTip = false;
             this.cboEstados.Name = "cboEstados";
             this.cboEstados.Size = new System.Drawing.Size(385, 24);
@@ -213,7 +216,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

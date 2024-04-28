@@ -1605,8 +1605,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Snk\DllFarmaciaSoft.snk" />
-    <None Include="Snk\DllFarmaciaSoft.manifest" />
     <None Include="Web References\wsFarmacia\wsFarmacia.wsdl" />
   </ItemGroup>
   <ItemGroup>
@@ -1669,6 +1667,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Impresoras\" />
+    <Folder Include="Snk\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -23,10 +23,10 @@ namespace Compras
             Application.SetCompatibleTextRenderingDefault(false); 
 
 
-            General.DatosConexion.Servidor = "localhost";
-            General.DatosConexion.BaseDeDatos = "SII_Regional_Oaxaca";
-            General.DatosConexion.Usuario = "sa";
-            General.DatosConexion.Password = "1234"; 
+            //General.DatosConexion.Servidor = "localhost";
+            //General.DatosConexion.BaseDeDatos = "SII_Regional_Oaxaca";
+            //General.DatosConexion.Usuario = "sa";
+            //General.DatosConexion.Password = "1234"; 
 
 
             //////// Punto de Entrada        

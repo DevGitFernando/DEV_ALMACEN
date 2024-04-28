@@ -435,7 +435,7 @@ namespace DllFarmaciaSoft.Usuarios_y_Permisos
             // btnAceptar.Enabled = false; 
             bAutenticando = true;
             bAutentificacionCancelada = false;
-
+            string sPassword = string.Empty;
             // HabilitarLogin(false); 
             try
             {
@@ -448,6 +448,8 @@ namespace DllFarmaciaSoft.Usuarios_y_Permisos
                 }
                 else
                 {
+                    sPassword = txtPassword.Text.Trim();
+                    sPassword = sPassword.Replace("\r\n", "");
                     LoginUser = new clsEdoLogin();
                     LoginUser.Empresa = cboEmpresas.Data;
                     LoginUser.Estado = cboEstados.Data;
@@ -456,7 +458,7 @@ namespace DllFarmaciaSoft.Usuarios_y_Permisos
                     sSucursal = LoginUser.Sucursal;
                     sEstado = cboEstados.Data;
                     LoginUser.Usuario = txtUsuario.Text;
-                    LoginUser.Password = txtPassword.Text;
+                    LoginUser.Password = sPassword.Trim();
                     LoginUser.Arbol = sArbol;
                     LoginUser.Permisos = dtsPermisos;
 

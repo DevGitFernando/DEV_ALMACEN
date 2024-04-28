@@ -918,7 +918,7 @@ namespace DllFarmaciaSoft
 
         public DataSet Proveedores(string Funcion)
         {
-            return Proveedores(false, Funcion); 
+            return Proveedores(true, Funcion); 
         }
 
         public DataSet Proveedores(bool HabilitarProveedorDeReembolso, string Funcion)

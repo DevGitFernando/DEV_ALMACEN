@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConfigurarUbicacionDeTrabajo));
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
@@ -50,6 +51,8 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
@@ -57,7 +60,7 @@
             this.toolStripSeparator1});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(457, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(609, 58);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -67,14 +70,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo (CTRL + N)";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -82,14 +86,15 @@
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(23, 22);
+            this.btnGuardar.Size = new System.Drawing.Size(54, 55);
             this.btnGuardar.Text = "&Guardar (CTRL + G)";
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // gpoUbicaciones
             // 
@@ -102,9 +107,11 @@
             this.gpoUbicaciones.Controls.Add(this.lblPasillo);
             this.gpoUbicaciones.Controls.Add(this.txtPasillo);
             this.gpoUbicaciones.Controls.Add(this.label6);
-            this.gpoUbicaciones.Location = new System.Drawing.Point(12, 28);
+            this.gpoUbicaciones.Location = new System.Drawing.Point(16, 64);
+            this.gpoUbicaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gpoUbicaciones.Name = "gpoUbicaciones";
-            this.gpoUbicaciones.Size = new System.Drawing.Size(433, 106);
+            this.gpoUbicaciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpoUbicaciones.Size = new System.Drawing.Size(577, 130);
             this.gpoUbicaciones.TabIndex = 1;
             this.gpoUbicaciones.TabStop = false;
             this.gpoUbicaciones.Text = "Datos de ubicacion";
@@ -112,9 +119,10 @@
             // lblEntrepaño
             // 
             this.lblEntrepaño.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblEntrepaño.Location = new System.Drawing.Point(159, 73);
+            this.lblEntrepaño.Location = new System.Drawing.Point(212, 90);
+            this.lblEntrepaño.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEntrepaño.Name = "lblEntrepaño";
-            this.lblEntrepaño.Size = new System.Drawing.Size(260, 20);
+            this.lblEntrepaño.Size = new System.Drawing.Size(347, 25);
             this.lblEntrepaño.TabIndex = 56;
             this.lblEntrepaño.Text = "label1";
             // 
@@ -124,12 +132,13 @@
             this.txtEntrepaño.Decimales = 2;
             this.txtEntrepaño.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtEntrepaño.ForeColor = System.Drawing.Color.Black;
-            this.txtEntrepaño.Location = new System.Drawing.Point(94, 73);
+            this.txtEntrepaño.Location = new System.Drawing.Point(125, 90);
+            this.txtEntrepaño.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEntrepaño.MaxLength = 4;
             this.txtEntrepaño.Name = "txtEntrepaño";
             this.txtEntrepaño.PermitirApostrofo = false;
             this.txtEntrepaño.PermitirNegativos = false;
-            this.txtEntrepaño.Size = new System.Drawing.Size(59, 20);
+            this.txtEntrepaño.Size = new System.Drawing.Size(77, 22);
             this.txtEntrepaño.TabIndex = 2;
             this.txtEntrepaño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtEntrepaño.TextChanged += new System.EventHandler(this.txtEntrepaño_TextChanged);
@@ -137,19 +146,21 @@
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(19, 75);
+            this.label10.Location = new System.Drawing.Point(25, 92);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 16);
+            this.label10.Size = new System.Drawing.Size(97, 20);
             this.label10.TabIndex = 55;
-            this.label10.Text = "Entrepaño :";
+            this.label10.Text = "Posición :";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblEstante
             // 
             this.lblEstante.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblEstante.Location = new System.Drawing.Point(159, 48);
+            this.lblEstante.Location = new System.Drawing.Point(212, 59);
+            this.lblEstante.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstante.Name = "lblEstante";
-            this.lblEstante.Size = new System.Drawing.Size(260, 20);
+            this.lblEstante.Size = new System.Drawing.Size(347, 25);
             this.lblEstante.TabIndex = 53;
             this.lblEstante.Text = "label1";
             // 
@@ -159,12 +170,13 @@
             this.txtEstante.Decimales = 2;
             this.txtEstante.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtEstante.ForeColor = System.Drawing.Color.Black;
-            this.txtEstante.Location = new System.Drawing.Point(94, 48);
+            this.txtEstante.Location = new System.Drawing.Point(125, 59);
+            this.txtEstante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEstante.MaxLength = 4;
             this.txtEstante.Name = "txtEstante";
             this.txtEstante.PermitirApostrofo = false;
             this.txtEstante.PermitirNegativos = false;
-            this.txtEstante.Size = new System.Drawing.Size(59, 20);
+            this.txtEstante.Size = new System.Drawing.Size(77, 22);
             this.txtEstante.TabIndex = 1;
             this.txtEstante.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtEstante.TextChanged += new System.EventHandler(this.txtEstante_TextChanged);
@@ -172,9 +184,10 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(42, 50);
+            this.label3.Location = new System.Drawing.Point(56, 62);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 16);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 52;
             this.label3.Text = "Estante :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -182,9 +195,10 @@
             // lblPasillo
             // 
             this.lblPasillo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPasillo.Location = new System.Drawing.Point(159, 23);
+            this.lblPasillo.Location = new System.Drawing.Point(212, 28);
+            this.lblPasillo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPasillo.Name = "lblPasillo";
-            this.lblPasillo.Size = new System.Drawing.Size(260, 20);
+            this.lblPasillo.Size = new System.Drawing.Size(347, 25);
             this.lblPasillo.TabIndex = 50;
             this.lblPasillo.Text = "label1";
             // 
@@ -194,12 +208,13 @@
             this.txtPasillo.Decimales = 2;
             this.txtPasillo.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtPasillo.ForeColor = System.Drawing.Color.Black;
-            this.txtPasillo.Location = new System.Drawing.Point(94, 23);
+            this.txtPasillo.Location = new System.Drawing.Point(125, 28);
+            this.txtPasillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPasillo.MaxLength = 4;
             this.txtPasillo.Name = "txtPasillo";
             this.txtPasillo.PermitirApostrofo = false;
             this.txtPasillo.PermitirNegativos = false;
-            this.txtPasillo.Size = new System.Drawing.Size(59, 20);
+            this.txtPasillo.Size = new System.Drawing.Size(77, 22);
             this.txtPasillo.TabIndex = 0;
             this.txtPasillo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPasillo.TextChanged += new System.EventHandler(this.txtPasillo_TextChanged);
@@ -207,21 +222,24 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(42, 25);
+            this.label6.Location = new System.Drawing.Point(56, 31);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 16);
+            this.label6.Size = new System.Drawing.Size(67, 20);
             this.label6.TabIndex = 49;
             this.label6.Text = "Pasillo :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FrmConfigurarUbicacionDeTrabajo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 144);
+            this.ClientSize = new System.Drawing.Size(609, 207);
             this.Controls.Add(this.gpoUbicaciones);
             this.Controls.Add(this.toolStripBarraMenu);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmConfigurarUbicacionDeTrabajo";
+            this.ShowIcon = false;
             this.Text = "Configurar ubicación estandar de Trabajo";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmConfigurarUbicacionDeTrabajo_Load);
@@ -230,7 +248,6 @@
             this.gpoUbicaciones.ResumeLayout(false);
             this.gpoUbicaciones.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

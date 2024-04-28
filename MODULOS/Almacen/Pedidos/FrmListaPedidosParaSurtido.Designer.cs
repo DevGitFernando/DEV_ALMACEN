@@ -129,7 +129,7 @@
             this.FrameUnidades.Margin = new System.Windows.Forms.Padding(4);
             this.FrameUnidades.Name = "FrameUnidades";
             this.FrameUnidades.Padding = new System.Windows.Forms.Padding(4);
-            this.FrameUnidades.Size = new System.Drawing.Size(621, 130);
+            this.FrameUnidades.Size = new System.Drawing.Size(538, 130);
             this.FrameUnidades.TabIndex = 1;
             this.FrameUnidades.TabStop = false;
             this.FrameUnidades.Text = "Información de Unidades";
@@ -141,7 +141,7 @@
             this.lblNombre.Location = new System.Drawing.Point(241, 94);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(365, 25);
+            this.lblNombre.Size = new System.Drawing.Size(282, 25);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -159,7 +159,7 @@
             this.cboFarmacias.Margin = new System.Windows.Forms.Padding(4);
             this.cboFarmacias.MostrarToolTip = false;
             this.cboFarmacias.Name = "cboFarmacias";
-            this.cboFarmacias.Size = new System.Drawing.Size(496, 24);
+            this.cboFarmacias.Size = new System.Drawing.Size(413, 24);
             this.cboFarmacias.TabIndex = 1;
             // 
             // txtIdBenificiario
@@ -215,7 +215,7 @@
             this.cboJurisdicciones.Margin = new System.Windows.Forms.Padding(4);
             this.cboJurisdicciones.MostrarToolTip = false;
             this.cboJurisdicciones.Name = "cboJurisdicciones";
-            this.cboJurisdicciones.Size = new System.Drawing.Size(496, 24);
+            this.cboJurisdicciones.Size = new System.Drawing.Size(413, 24);
             this.cboJurisdicciones.TabIndex = 0;
             this.cboJurisdicciones.SelectedIndexChanged += new System.EventHandler(this.cboJurisdicciones_SelectedIndexChanged);
             // 
@@ -241,7 +241,7 @@
             this.btnExportarExcel});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(1712, 58);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1629, 58);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -297,7 +297,7 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.dtpFechaInicial);
-            this.groupBox3.Location = new System.Drawing.Point(1473, 67);
+            this.groupBox3.Location = new System.Drawing.Point(1390, 67);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
@@ -370,7 +370,7 @@
             this.FramePedidos.Margin = new System.Windows.Forms.Padding(4);
             this.FramePedidos.Name = "FramePedidos";
             this.FramePedidos.Padding = new System.Windows.Forms.Padding(4);
-            this.FramePedidos.Size = new System.Drawing.Size(1692, 512);
+            this.FramePedidos.Size = new System.Drawing.Size(1609, 512);
             this.FramePedidos.TabIndex = 6;
             this.FramePedidos.TabStop = false;
             this.FramePedidos.Text = "Listado de pedidos";
@@ -379,7 +379,7 @@
             // 
             this.chkActualizarAlCerrarSurtimientos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkActualizarAlCerrarSurtimientos.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkActualizarAlCerrarSurtimientos.Location = new System.Drawing.Point(1287, 0);
+            this.chkActualizarAlCerrarSurtimientos.Location = new System.Drawing.Point(1204, 0);
             this.chkActualizarAlCerrarSurtimientos.Margin = new System.Windows.Forms.Padding(4);
             this.chkActualizarAlCerrarSurtimientos.Name = "chkActualizarAlCerrarSurtimientos";
             this.chkActualizarAlCerrarSurtimientos.Size = new System.Drawing.Size(393, 21);
@@ -414,7 +414,7 @@
             this.listvwPedidos.Location = new System.Drawing.Point(13, 28);
             this.listvwPedidos.Margin = new System.Windows.Forms.Padding(4);
             this.listvwPedidos.Name = "listvwPedidos";
-            this.listvwPedidos.Size = new System.Drawing.Size(1665, 471);
+            this.listvwPedidos.Size = new System.Drawing.Size(1582, 471);
             this.listvwPedidos.TabIndex = 0;
             this.listvwPedidos.UseCompatibleStateImageBehavior = false;
             this.listvwPedidos.View = System.Windows.Forms.View.Details;
@@ -633,7 +633,7 @@
             this.label11.Location = new System.Drawing.Point(0, 724);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1712, 30);
+            this.label11.Size = new System.Drawing.Size(1629, 30);
             this.label11.TabIndex = 11;
             this.label11.Text = "                                                                                 " +
     "                                       Ver opciones  --- Click secundario ---";
@@ -643,7 +643,7 @@
             // 
             this.FrameStatusPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameStatusPedido.Controls.Add(this.cboStatusPedidos);
-            this.FrameStatusPedido.Location = new System.Drawing.Point(640, 67);
+            this.FrameStatusPedido.Location = new System.Drawing.Point(557, 67);
             this.FrameStatusPedido.Margin = new System.Windows.Forms.Padding(4);
             this.FrameStatusPedido.Name = "FrameStatusPedido";
             this.FrameStatusPedido.Padding = new System.Windows.Forms.Padding(4);
@@ -675,7 +675,7 @@
             this.FrameFolios.Controls.Add(this.txtFolioInicial);
             this.FrameFolios.Controls.Add(this.label5);
             this.FrameFolios.Controls.Add(this.chkFolios);
-            this.FrameFolios.Location = new System.Drawing.Point(972, 67);
+            this.FrameFolios.Location = new System.Drawing.Point(889, 67);
             this.FrameFolios.Margin = new System.Windows.Forms.Padding(4);
             this.FrameFolios.Name = "FrameFolios";
             this.FrameFolios.Padding = new System.Windows.Forms.Padding(4);
@@ -757,7 +757,7 @@
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.dtpFechaInicial_Entrega);
-            this.groupBox4.Location = new System.Drawing.Point(1225, 67);
+            this.groupBox4.Location = new System.Drawing.Point(1142, 67);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
@@ -823,7 +823,7 @@
             // 
             this.frameRutas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.frameRutas.Controls.Add(this.cboRuta);
-            this.frameRutas.Location = new System.Drawing.Point(640, 133);
+            this.frameRutas.Location = new System.Drawing.Point(557, 133);
             this.frameRutas.Margin = new System.Windows.Forms.Padding(4);
             this.frameRutas.Name = "frameRutas";
             this.frameRutas.Padding = new System.Windows.Forms.Padding(4);
@@ -851,7 +851,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1712, 754);
+            this.ClientSize = new System.Drawing.Size(1629, 754);
             this.Controls.Add(this.frameRutas);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.FrameFolios);

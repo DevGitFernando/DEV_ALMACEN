@@ -48,6 +48,7 @@
             this.dtpFechaInicial = new System.Windows.Forms.DateTimePicker();
             this.FramePedidos = new System.Windows.Forms.GroupBox();
             this.listvwPedidos = new System.Windows.Forms.ListView();
+            this.colTipoDePedido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colJurisdiccion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colIdFarmacia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colFarmacia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -69,7 +70,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.scComboBoxExt2 = new SC_ControlsCS.scComboBoxExt();
-            this.colTipoDePedido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.FrameUnidades.SuspendLayout();
             this.toolStripBarraMenu.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -88,9 +88,9 @@
             this.FrameUnidades.Controls.Add(this.label2);
             this.FrameUnidades.Controls.Add(this.cboJurisdicciones);
             this.FrameUnidades.Controls.Add(this.label1);
-            this.FrameUnidades.Location = new System.Drawing.Point(8, 28);
+            this.FrameUnidades.Location = new System.Drawing.Point(8, 59);
             this.FrameUnidades.Name = "FrameUnidades";
-            this.FrameUnidades.Size = new System.Drawing.Size(617, 97);
+            this.FrameUnidades.Size = new System.Drawing.Size(638, 97);
             this.FrameUnidades.TabIndex = 1;
             this.FrameUnidades.TabStop = false;
             this.FrameUnidades.Text = "Información de Unidades";
@@ -108,7 +108,7 @@
             this.cboFarmacias.Location = new System.Drawing.Point(83, 53);
             this.cboFarmacias.MostrarToolTip = false;
             this.cboFarmacias.Name = "cboFarmacias";
-            this.cboFarmacias.Size = new System.Drawing.Size(524, 21);
+            this.cboFarmacias.Size = new System.Drawing.Size(545, 21);
             this.cboFarmacias.TabIndex = 1;
             // 
             // label2
@@ -117,7 +117,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Farmacia :";
+            this.label2.Text = "Unidad :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cboJurisdicciones
@@ -133,7 +133,7 @@
             this.cboJurisdicciones.Location = new System.Drawing.Point(83, 23);
             this.cboJurisdicciones.MostrarToolTip = false;
             this.cboJurisdicciones.Name = "cboJurisdicciones";
-            this.cboJurisdicciones.Size = new System.Drawing.Size(524, 21);
+            this.cboJurisdicciones.Size = new System.Drawing.Size(545, 21);
             this.cboJurisdicciones.TabIndex = 0;
             this.cboJurisdicciones.SelectedIndexChanged += new System.EventHandler(this.cboJurisdicciones_SelectedIndexChanged);
             // 
@@ -148,6 +148,8 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
@@ -156,7 +158,7 @@
             this.btnExportarExcel});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(1184, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1186, 56);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -166,14 +168,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 53);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 2);
             // 
             // btnEjecutar
             // 
@@ -181,15 +184,16 @@
             this.btnEjecutar.Image = ((System.Drawing.Image)(resources.GetObject("btnEjecutar.Image")));
             this.btnEjecutar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(23, 22);
+            this.btnEjecutar.Size = new System.Drawing.Size(54, 53);
             this.btnEjecutar.Text = "Ejecutar";
             this.btnEjecutar.ToolTipText = "Ejecutar";
             this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
             // 
             // toolStripSeparator4
             // 
+            this.toolStripSeparator4.AutoSize = false;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 2);
             // 
             // btnExportarExcel
             // 
@@ -197,7 +201,7 @@
             this.btnExportarExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportarExcel.Image")));
             this.btnExportarExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExportarExcel.Name = "btnExportarExcel";
-            this.btnExportarExcel.Size = new System.Drawing.Size(23, 22);
+            this.btnExportarExcel.Size = new System.Drawing.Size(54, 53);
             this.btnExportarExcel.Text = "toolStripButton1";
             this.btnExportarExcel.ToolTipText = "Exportar a Excel";
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
@@ -209,9 +213,9 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.dtpFechaInicial);
-            this.groupBox3.Location = new System.Drawing.Point(1014, 28);
+            this.groupBox3.Location = new System.Drawing.Point(1006, 59);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(161, 97);
+            this.groupBox3.Size = new System.Drawing.Size(167, 97);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Rango de Fechas";
@@ -259,9 +263,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FramePedidos.Controls.Add(this.listvwPedidos);
-            this.FramePedidos.Location = new System.Drawing.Point(8, 126);
+            this.FramePedidos.Location = new System.Drawing.Point(8, 157);
             this.FramePedidos.Name = "FramePedidos";
-            this.FramePedidos.Size = new System.Drawing.Size(1167, 434);
+            this.FramePedidos.Size = new System.Drawing.Size(1198, 407);
             this.FramePedidos.TabIndex = 6;
             this.FramePedidos.TabStop = false;
             this.FramePedidos.Text = "Listado de Pedidos";
@@ -285,12 +289,18 @@
             this.colClavesAsignadas,
             this.colPorcentajeDeClaves,
             this.colStatus});
+            this.listvwPedidos.HideSelection = false;
             this.listvwPedidos.Location = new System.Drawing.Point(10, 16);
             this.listvwPedidos.Name = "listvwPedidos";
-            this.listvwPedidos.Size = new System.Drawing.Size(1148, 408);
+            this.listvwPedidos.Size = new System.Drawing.Size(1179, 381);
             this.listvwPedidos.TabIndex = 0;
             this.listvwPedidos.UseCompatibleStateImageBehavior = false;
             this.listvwPedidos.View = System.Windows.Forms.View.Details;
+            // 
+            // colTipoDePedido
+            // 
+            this.colTipoDePedido.Text = "Tipo de pedido";
+            this.colTipoDePedido.Width = 150;
             // 
             // colJurisdiccion
             // 
@@ -353,12 +363,12 @@
             this.FrameStatusPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameStatusPedido.Controls.Add(this.groupBox1);
             this.FrameStatusPedido.Controls.Add(this.cboStatusPedidos);
-            this.FrameStatusPedido.Location = new System.Drawing.Point(631, 28);
+            this.FrameStatusPedido.Location = new System.Drawing.Point(652, 59);
             this.FrameStatusPedido.Name = "FrameStatusPedido";
-            this.FrameStatusPedido.Size = new System.Drawing.Size(377, 48);
+            this.FrameStatusPedido.Size = new System.Drawing.Size(348, 48);
             this.FrameStatusPedido.TabIndex = 3;
             this.FrameStatusPedido.TabStop = false;
-            this.FrameStatusPedido.Text = "Status de Pedido";
+            this.FrameStatusPedido.Text = "Estatus Pedido";
             // 
             // groupBox1
             // 
@@ -395,7 +405,7 @@
             this.cboStatusPedidos.Location = new System.Drawing.Point(9, 19);
             this.cboStatusPedidos.MostrarToolTip = false;
             this.cboStatusPedidos.Name = "cboStatusPedidos";
-            this.cboStatusPedidos.Size = new System.Drawing.Size(362, 21);
+            this.cboStatusPedidos.Size = new System.Drawing.Size(329, 21);
             this.cboStatusPedidos.TabIndex = 0;
             // 
             // groupBox2
@@ -404,9 +414,9 @@
             this.groupBox2.Controls.Add(this.txtReferenciaPedido);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Location = new System.Drawing.Point(631, 77);
+            this.groupBox2.Location = new System.Drawing.Point(652, 108);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(377, 48);
+            this.groupBox2.Size = new System.Drawing.Size(348, 48);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Referencia";
@@ -417,7 +427,7 @@
             this.txtReferenciaPedido.Decimales = 2;
             this.txtReferenciaPedido.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtReferenciaPedido.ForeColor = System.Drawing.Color.Black;
-            this.txtReferenciaPedido.Location = new System.Drawing.Point(132, 14);
+            this.txtReferenciaPedido.Location = new System.Drawing.Point(90, 14);
             this.txtReferenciaPedido.MaxLength = 50;
             this.txtReferenciaPedido.Multiline = true;
             this.txtReferenciaPedido.Name = "txtReferenciaPedido";
@@ -425,14 +435,15 @@
             this.txtReferenciaPedido.PermitirNegativos = false;
             this.txtReferenciaPedido.Size = new System.Drawing.Size(239, 20);
             this.txtReferenciaPedido.TabIndex = 49;
+            this.txtReferenciaPedido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(12, 17);
+            this.label5.Location = new System.Drawing.Point(10, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 14);
+            this.label5.Size = new System.Drawing.Size(77, 14);
             this.label5.TabIndex = 50;
-            this.label5.Text = "Referencia de pedido :";
+            this.label5.Text = "Ref. pedido :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox4
@@ -459,24 +470,21 @@
             this.scComboBoxExt2.Size = new System.Drawing.Size(362, 21);
             this.scComboBoxExt2.TabIndex = 0;
             // 
-            // colTipoDePedido
-            // 
-            this.colTipoDePedido.Text = "Tipo de pedido";
-            this.colTipoDePedido.Width = 150;
-            // 
             // FrmRpt_PorcentajeSurtimientoPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 566);
+            this.ClientSize = new System.Drawing.Size(1186, 566);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.FrameStatusPedido);
             this.Controls.Add(this.FramePedidos);
             this.Controls.Add(this.FrameUnidades);
             this.Controls.Add(this.toolStripBarraMenu);
             this.Controls.Add(this.groupBox3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmRpt_PorcentajeSurtimientoPedidos";
-            this.Text = "Porcentaje de Surtimiento de Pedidos";
+            this.ShowIcon = false;
+            this.Text = "Porcentaje Surtimiento Pedidos";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmRpt_PorcentajeSurtimientoPedidos_Load);
             this.FrameUnidades.ResumeLayout(false);
@@ -490,7 +498,6 @@
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

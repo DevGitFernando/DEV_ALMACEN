@@ -577,7 +577,7 @@ namespace Farmacia.Transferencias
                         txtFolio.Text = "*";
                         Error.GrabarError(leer, "btnGuardar_Click");
                         General.msjError(sMensajeErrorGrabar);
-                        IniciarToolBar(bBtnGuardar, bBtnCancelar, bBtnImprimir, bBtnTransferencia);
+                        IniciarToolBar(bBtnGuardar, bBtnCancelar, bBtnImprimir, false);
                     }
                     else
                     {
@@ -588,7 +588,7 @@ namespace Farmacia.Transferencias
 
                         General.msjUser(sMensajeGrabar);
                         // EnvioAutomaticoDeTransferencias(); 
-                        IniciarToolBar(false, false, true, true);
+                        IniciarToolBar(false, false, true, false);
                         ImprimirInformacion();
 
                         if(bEsSurtimientoPedido)
@@ -727,7 +727,7 @@ namespace Farmacia.Transferencias
                             //txtFolio.Text = "*";
                             Error.GrabarError(leer, "btnCancelar_Click");
                             General.msjError("Ocurrió un error al Cancelar la transferencia.");
-                            IniciarToolBar(bBtnGuardar, bBtnCancelar, bBtnImprimir, bBtnTransferencia);
+                            IniciarToolBar(bBtnGuardar, bBtnCancelar, bBtnImprimir, false);
                         }
                         else
                         {
@@ -1873,7 +1873,7 @@ namespace Farmacia.Transferencias
                     else 
                     {
                         bFolioGuardado = true;
-                        IniciarToolBar(false, false, true, true);
+                        IniciarToolBar(false, false, true, false);
                         txtFolio.Enabled = false;
 
                         cboEstados.Enabled = false;
@@ -1906,7 +1906,7 @@ namespace Farmacia.Transferencias
                             //// if (DtGeneral.EsAdministrador)
                             ////if (GnFarmacia.EsServidorDeRedLocal || DtGeneral.EsAdministrador || DtGeneral.EsAlmacen) 
                             {
-                                IniciarToolBar(false, true, true, true);
+                                IniciarToolBar(false, true, true, false);
                                 if (TransferenciaAplicada)
                                 {
                                     lblCancelado.Visible = true;
@@ -3000,14 +3000,14 @@ namespace Farmacia.Transferencias
                     bTieneSurtimientosActivos = true;
                 }
 
-                if(DtGeneral.EsAlmacen)
-                {
-                    if(!DtGeneral.Almacen_PermisoEspecial())
-                    {
-                        General.msjAviso("Opción de Traspasos no esta habilitada para guardar.");
-                        bTienePermitidasTransferenciasNormales = false;
-                    }
-                }
+                ////if(DtGeneral.EsAlmacen)
+                ////{
+                ////    if(!DtGeneral.Almacen_PermisoEspecial())
+                ////    {
+                ////        General.msjAviso("Opción de Traspasos no esta habilitada para guardar.");
+                ////        bTienePermitidasTransferenciasNormales = false;
+                ////    }
+                ////}
 
 
                 if(!GnFarmacia.DispensacionActiva_Verificar())

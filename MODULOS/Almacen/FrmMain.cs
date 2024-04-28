@@ -60,7 +60,7 @@ namespace Almacen
         string sVersionSII_Ext = "0.0.0.0";
         bool bBuscandoUpdate = false;
         bool bSeEncontroUpdate = false;
-        bool bForzarActualizacion = true; 
+        bool bForzarActualizacion = false; 
         Random x_tiempo_actualizacion; // = new Random(30);
 
         int iLimiteAvisos_Actualizacion = 10;
@@ -128,7 +128,7 @@ namespace Almacen
                 } 
             }
 
-            General.ServidorEnRedLocal = true;
+            General.ServidorEnRedLocal = true;  ///FAV15122023
 
             // Quitar 
             // GnFarmacia.MostrarPrecioVentaEnVentaCredito = true;
@@ -197,8 +197,8 @@ namespace Almacen
             {
                 //BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + Application.ProductVersion;
                 //BarraDeStatus.Panels[lblFarmacia.Name].Text = "Estado : " + DtGeneral.EstadoConectado + " -- " + DtGeneral.EstadoConectadoNombre + "      " + " Almacén : " + DtGeneral.FarmaciaConectada + " -- " + DtGeneral.FarmaciaConectadaNombre;
-                //BarraDeStatus.Panels[lblServidor.Name].Text = "Servidor : " + General.DatosConexion.Servidor;
-                //BarraDeStatus.Panels[lblBaseDeDatos.Name].Text = "Base de Datos : " + General.DatosConexion.BaseDeDatos;
+                //BarraDeStatus.Panels[lblServidor.Name].Text = " Server : " + General.DatosConexion.Servidor;
+                BarraDeStatus.Panels[lblBaseDeDatos.Name].Text = " D.B. : " + General.DatosConexion.BaseDeDatos;
                 //BarraDeStatus.Panels[lblUsuarioConectado.Name].Text = "Usuario : " + DtGeneral.NombrePersonal;
 
 
@@ -219,6 +219,10 @@ namespace Almacen
                     ////this.Text = " Módulo " + Navegador.NombreModulo;
                     //this.Text = " Módulo : " + Navegador.NombreModulo + "         " + DtGeneral.EmpresaConectadaNombre;
                     //this.Text = " Centro de Distribución " + "    ----     " + DtGeneral.EmpresaConectadaNombre;
+
+                    string sTitle = "";
+                    sTitle = string.Format("----   " + DtGeneral.FarmaciaConectadaNombre + "   Usuario: " + DtGeneral.NombrePersonal + "   ----   " + "  D. B. : " + General.DatosConexion.BaseDeDatos);
+                    this.Text = sTitle;
                 }
                 else
                 {
@@ -233,13 +237,15 @@ namespace Almacen
 
                     //this.Text = " Cedis : " + mnPrincipal.Items[0].Text + "         " + DtGeneral.EmpresaConectadaNombre;
                     string sTitle = "";
-                    sTitle = string.Format("----                       " + DtGeneral.FarmaciaConectadaNombre + "       Usuario:      " + DtGeneral.NombrePersonal + "        ----");
+                    sTitle = string.Format("----   " + DtGeneral.FarmaciaConectadaNombre + "   Usuario: " + DtGeneral.NombrePersonal + "   ----   " + "  D. B. : " + General.DatosConexion.BaseDeDatos);
                     this.Text = sTitle;                    
                                        
                     clsGenerarMenu menuTool = new clsGenerarMenu(General.ArbolDeNavegacion, menuStrip, this);
                     menuTool.MostrarMenu = true;
                     menuTool.MostrarIconos = false;
                     menuTool.GenerarMenu(btnMenu);
+
+                    Login = null;
                 }
 
                 // Ajustar el Tiempo de Espera para Conexion 
@@ -258,13 +264,13 @@ namespace Almacen
 
                 DtGeneral.ConfirmacionConHuellas = GnFarmacia.ConfirmacionConHuellas;
 
-                Sesion.iniciar(this, ref pcStatusComunicacion, ref toolStrip, ref btnRefrescar, DtGeneral.ArbolModulo);
+                ////Sesion.iniciar(this, ref pcStatusComunicacion, ref toolStrip, ref btnRefrescar, DtGeneral.ArbolModulo); //se quita para pruebas
 
                 ///////// Quitar 
                 ////DtGeneral.RutaReportes = @"D:\PROYECTO SC-SOFT\SISTEMA_INTERMED\REPORTES";
                 ////GnFarmacia.RutaReportes = DtGeneral.RutaReportes; 
 
-                BarraDeStatus.Panels[lblFechaSistema.Name].Text = "Fecha de Sistema : " + General.FechaYMD(GnFarmacia.FechaOperacionSistema, "-"); 
+                //BarraDeStatus.Panels[lblFechaSistema.Name].Text = "F. Sistema : " + General.FechaYMD(GnFarmacia.FechaOperacionSistema, "-"); 
                 tmDatosPersonalConectado.Enabled = true;
                 tmDatosPersonalConectado.Start(); 
 
@@ -298,7 +304,7 @@ namespace Almacen
 
 
                 // Determinar si se activa el Servicio Cliente considerando diversos parametros 
-                if (GnFarmacia.EjecutarServicioCliente)
+                if (GnFarmacia.EjecutarServicioCliente)  //// se comenta para pruebas
                 {
                     tmServicioInformacion.Enabled = true;
                     tmServicioInformacion.Start();
@@ -307,7 +313,8 @@ namespace Almacen
                 if (GnFarmacia.ManejaUbicaciones)
                 {
                     // BarraDeStatus.Panels[lblMach4.Name].Width = 10;
-                    BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + datosDeModulo.Version + "_u "; ; 
+                    //BarraDeStatus.Panels[lblModulo.Name].Text = "Aplicación : " + Application.ProductName + " " + datosDeModulo.Version + "_u ";
+                    BarraDeStatus.Panels[lblModulo.Name].Text = "Aplicativo -- " + Application.ProductName + " -- ";
                 }
 
                 ////// Checar la version instalada 
@@ -320,10 +327,10 @@ namespace Almacen
 
                 tmSesionDeUsuario.Interval = (1000 * 60) * 2;
                 tmSesionDeUsuario.Enabled = true;
-                tmSesionDeUsuario.Start(); 
+                tmSesionDeUsuario.Start();
 
                 tmUpdaterModulo = new System.Timers.Timer((1000 * 30) * 2);
-                tmUpdaterModulo.Elapsed += new ElapsedEventHandler(this.tmUpdaterModulo_Elapsed); 
+                tmUpdaterModulo.Elapsed += new ElapsedEventHandler(this.tmUpdaterModulo_Elapsed);
                 tmUpdaterModulo.Enabled = true;
                 tmUpdaterModulo.Start();
                 x_tiempo_actualizacion = new Random(30);
@@ -331,7 +338,7 @@ namespace Almacen
                 tmUpdateEncontrado = new System.Timers.Timer((1000) * 2);
                 tmUpdateEncontrado.Elapsed += new ElapsedEventHandler(this.tmUpdateEncontrado_Elapsed);
                 tmUpdateEncontrado.Enabled = false; // Habilitar el Timer despues de la primer revisión 
-                ////tmUpdateEncontrado.Start();
+                //tmUpdateEncontrado.Start();
 
                 //// Configurar la ejecución de la depuracion de Logs 
                 HabilitarLimpiezaLogs();
@@ -403,12 +410,12 @@ namespace Almacen
                     General.msjAviso("El equipo actual es el servidor de la unidad, esta configurado como servidor dedicado, no es posible ingresar al módulo.");
                 }
 
-                ChecarVersion();
-                if (bSeEncontroUpdate)
-                {
-                    tmUpdateEncontrado_Elapsed(null, null); 
-                }
-                tmUpdateEncontrado.Enabled = true;
+                //ChecarVersion();
+                //if (bSeEncontroUpdate)
+                //{
+                //    tmUpdateEncontrado_Elapsed(null, null); 
+                //}
+                //tmUpdateEncontrado.Enabled = true;
 
 
                 DtGeneral.ValidaTransferenciasTransito_DiasConfirmacion(); 
@@ -453,6 +460,7 @@ namespace Almacen
         {
             // Checar la version instalada 
             string[] sModulos = { "Almacen", "Farmacia", "Servicio Cliente", "Configuración Servicio Cliente" };
+            //string[] sModulos = { "Almacen", "Farmacia" };
             DtGeneral.RevisarVersion(sModulos, MostrarInterface);
         }
 
@@ -472,7 +480,7 @@ namespace Almacen
         private void tmDatosPersonalConectado_Tick(object sender, EventArgs e)
         {
             BarraDeStatus.Panels[lblUsuarioConectado.Name].Text = "Usuario : " + DtGeneral.NombrePersonal;
-            BarraDeStatus.Panels[lblFechaSistema.Name].Text = "Fecha de Sistema : " + General.FechaYMD(GnFarmacia.FechaOperacionSistema, "-"); 
+            //BarraDeStatus.Panels[lblFechaSistema.Name].Text = "F. Sistema : " + General.FechaYMD(GnFarmacia.FechaOperacionSistema, "-"); 
         }
 
         private void bntRegistroErrores_Click(object sender, EventArgs e)

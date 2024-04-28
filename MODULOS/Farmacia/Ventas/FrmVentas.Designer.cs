@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVentas));
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
@@ -89,9 +90,9 @@
             this.lblCancelado = new System.Windows.Forms.Label();
             this.txtFolio = new SC_ControlsCS.scTextBoxExt();
             this.label1 = new System.Windows.Forms.Label();
-            this.tmSesion = new System.Windows.Forms.Timer();
+            this.tmSesion = new System.Windows.Forms.Timer(this.components);
             this.lblMensajes = new System.Windows.Forms.Label();
-            this.toolTip = new System.Windows.Forms.ToolTip();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.chk_RPT_EtiquetasCajas = new System.Windows.Forms.CheckBox();
             this.toolStripBarraMenu.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -139,7 +140,7 @@
             // 
             this.toolStripSeparator_01.AutoSize = false;
             this.toolStripSeparator_01.Name = "toolStripSeparator_01";
-            this.toolStripSeparator_01.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator_01.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -155,7 +156,7 @@
             // 
             this.toolStripSeparator_02.AutoSize = false;
             this.toolStripSeparator_02.Name = "toolStripSeparator_02";
-            this.toolStripSeparator_02.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator_02.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -174,7 +175,7 @@
             // 
             this.toolStripSeparator_03.AutoSize = false;
             this.toolStripSeparator_03.Name = "toolStripSeparator_03";
-            this.toolStripSeparator_03.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator_03.Size = new System.Drawing.Size(12, 4);
             this.toolStripSeparator_03.Visible = false;
             // 
             // btnImprimir
@@ -191,7 +192,7 @@
             // 
             this.toolStripSeparator_04.AutoSize = false;
             this.toolStripSeparator_04.Name = "toolStripSeparator_04";
-            this.toolStripSeparator_04.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator_04.Size = new System.Drawing.Size(12, 4);
             // 
             // btnRecetasElectronicas
             // 
@@ -217,7 +218,7 @@
             // 
             this.toolStripSeparator_05.AutoSize = false;
             this.toolStripSeparator_05.Name = "toolStripSeparator_05";
-            this.toolStripSeparator_05.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator_05.Size = new System.Drawing.Size(12, 4);
             // 
             // btnInformacionAIE
             // 
@@ -232,7 +233,7 @@
             // 
             this.toolStripSeparator_06.AutoSize = false;
             this.toolStripSeparator_06.Name = "toolStripSeparator_06";
-            this.toolStripSeparator_06.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator_06.Size = new System.Drawing.Size(12, 4);
             // 
             // groupBox3
             // 
@@ -632,6 +633,8 @@
             // chkDesglosado
             // 
             this.chkDesglosado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkDesglosado.Checked = true;
+            this.chkDesglosado.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkDesglosado.Location = new System.Drawing.Point(1056, -1);
             this.chkDesglosado.Margin = new System.Windows.Forms.Padding(4);
             this.chkDesglosado.Name = "chkDesglosado";
@@ -661,6 +664,7 @@
             this.chkMostrarPrecios.TabIndex = 52;
             this.chkMostrarPrecios.Text = "Mostrar precios";
             this.chkMostrarPrecios.UseVisualStyleBackColor = true;
+            this.chkMostrarPrecios.Visible = false;
             // 
             // chkTipoImpresion
             // 
@@ -670,8 +674,9 @@
             this.chkTipoImpresion.Name = "chkTipoImpresion";
             this.chkTipoImpresion.Size = new System.Drawing.Size(225, 25);
             this.chkTipoImpresion.TabIndex = 50;
-            this.chkTipoImpresion.Text = "Imprimir Venta a Detalle";
+            this.chkTipoImpresion.Text = "Imprimir Salida Detallada";
             this.chkTipoImpresion.UseVisualStyleBackColor = true;
+            this.chkTipoImpresion.Visible = false;
             // 
             // dtpFechaDeSistema
             // 
@@ -693,7 +698,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 18);
             this.label4.TabIndex = 49;
-            this.label4.Text = "Fecha de Sistema :";
+            this.label4.Text = "F. Sistema :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // chkMostrarImpresionEnPantalla
@@ -706,6 +711,7 @@
             this.chkMostrarImpresionEnPantalla.TabIndex = 47;
             this.chkMostrarImpresionEnPantalla.Text = "Mostrar Vista Previa Impresión ";
             this.chkMostrarImpresionEnPantalla.UseVisualStyleBackColor = true;
+            this.chkMostrarImpresionEnPantalla.Visible = false;
             // 
             // lblSubPro
             // 
@@ -877,6 +883,7 @@
             this.dtpFechaRegistro.Name = "dtpFechaRegistro";
             this.dtpFechaRegistro.Size = new System.Drawing.Size(111, 22);
             this.dtpFechaRegistro.TabIndex = 1;
+            this.dtpFechaRegistro.Visible = false;
             // 
             // label3
             // 
@@ -888,6 +895,7 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "Fecha de Registro :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Visible = false;
             // 
             // lblCancelado
             // 
@@ -940,7 +948,7 @@
             this.lblMensajes.BackColor = System.Drawing.Color.SteelBlue;
             this.lblMensajes.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblMensajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensajes.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMensajes.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblMensajes.Location = new System.Drawing.Point(0, 690);
             this.lblMensajes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMensajes.Name = "lblMensajes";

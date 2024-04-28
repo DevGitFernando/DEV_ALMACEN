@@ -10,6 +10,7 @@ using SC_SolutionsSystem.Data;
 using SC_SolutionsSystem.Comun;
 
 using DllFarmaciaSoft;
+using SC_SolutionsSystem.OfficeOpenXml.FormulaParsing.LexicalAnalysis;
 
 namespace Farmacia.Catalogos
 {
@@ -26,6 +27,8 @@ namespace Farmacia.Catalogos
         string sEstado = DtGeneral.EstadoConectado;
         string sFarmacia = DtGeneral.FarmaciaConectada;
         bool bEsCurpGenerica = false;
+        bool bEsNuevoId = false;
+        clsLeer leer2;
 
         Size szTamForma;
         string sQuery_Actualizacion_Identificacion = ""; 
@@ -39,14 +42,15 @@ namespace Farmacia.Catalogos
             Ayuda = new clsAyudas(General.DatosConexion, GnFarmacia.Modulo, this.Name, GnFarmacia.Version);
 
             Error = new SC_SolutionsSystem.Errores.clsGrabarError(GnFarmacia.Modulo, GnFarmacia.Version, this.Name);
-
+            leer2 = new clsLeer(ref ConexionLocal);
 
             Cargar_TiposDeIdentificacion(); 
             Cargar_TiposDeBeneficiario();
             Cargar_DerechoHabiencias();
             Cargar_EstadosDeResidencia();
 
-            ConfigurarCaptura();
+            //ConfigurarCaptura();
+            CargarEsNuevoId();
             btnNuevo_Click(this, null);
         }
 
@@ -190,10 +194,78 @@ namespace Farmacia.Catalogos
             this.Height = szTamForma.Height + 5;
         }
 
+        private void CargarEsNuevoId()
+        {
+            string sSql = "";
+
+            bEsNuevoId = false;
+
+            sSql = string.Format(" SELECT * FROM Net_CFGC_Parametros (NOLOCK) \n" +
+                                " WHERE IdEstado = '{0}' AND IdFarmacia = '{1}' AND ArbolModulo = 'PFAR' AND NombreParametro = 'EsNuevoId' \n",
+                                DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada);
+
+            if (!leer.Exec(sSql))
+            {
+                Error.GrabarError(leer, "CargarEsNuevoId()");
+                General.msjError("Error al consultar Parametro.");
+            }
+            else
+            {
+                if(leer.Leer())
+                {
+                    bEsNuevoId = leer.CampoBool("Valor");
+                }
+            }
+        }
+
+        #region CargaCte_SubCte_ProSub_Pro
+        private void CargarDatosDispersion()
+        {
+            string sSql = "", sCliente = "", sSubCliente = "", sPrograma = "", sSubPrograma = "";
+
+            bool bRead = false;
+
+            sSql = string.Format(" SELECT SUBSTRING(Valor, 1, 4) AS Cliente, SUBSTRING(Valor, 5, 4) AS SubCliente, \n" +
+                                " SUBSTRING(Valor, 9, 4) AS Programa, SUBSTRING(Valor, 13, 4) AS SubPrograma \n" +
+                                " FROM Net_CFGC_Parametros (NOLOCK) \n" +
+                                " WHERE IdEstado = '{0}' AND IdFarmacia = '{1}' AND ArbolModulo = 'PFAR' AND NombreParametro = 'DatosDispersion' \n",
+                                DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada);
+
+            if (!leer2.Exec(sSql))
+            {
+                Error.GrabarError(leer2, "CargarDatosDispersion()");
+                General.msjError("Error al consultar Parametro Dispersión.");
+            }
+            else
+            {
+                if (leer2.Leer())
+                {
+                    bRead = true;
+                    sCliente = leer2.Campo("Cliente");
+                    sSubCliente = leer2.Campo("SubCliente");
+                    sPrograma = leer2.Campo("Programa");
+                    sSubPrograma = leer2.Campo("SubPrograma");
+                }
+            }
+
+            if (bRead)
+            {
+                txtCliente.Text = sCliente;
+                txtCliente_Validating(null, null);
+
+                txtSubCliente.Text = sSubCliente;
+                txtSubCliente_Validating(null, null);                
+            }
+        }
+        #endregion CargaCte_SubCte_ProSub_Pro
         private void FrmBeneficiarios_Load( object sender, EventArgs e )
         {
             Inicializa();
             //btnNuevo_Click(null, null);
+            if (bEsNuevoId)
+            {
+                CargarDatosDispersion();
+            }
         }
         private void btnIdentificacion_Click( object sender, EventArgs e )
         {
@@ -226,7 +298,7 @@ namespace Farmacia.Catalogos
 
             lblCancelado.Visible = false;
             lbl_TipoDeCurp.Visible = false;
-            txtBeneficiario.Focus();
+            txtBeneficiario.Focus();            
 
             if(!DtGeneral.EsAlmacen)
             {
@@ -264,7 +336,15 @@ namespace Farmacia.Catalogos
                 }
                 else
                 {
-                    btnNuevo_Click(null, null);
+                    if(!bEsNuevoId)
+                    {
+                        btnNuevo_Click(null, null);
+                    }
+                    else
+                    {
+                        txtBeneficiario.Enabled = false;
+                        btnIdentificacion.Enabled = true;
+                    }
                 }
             }
         }
@@ -727,6 +807,14 @@ namespace Farmacia.Catalogos
                 if (leer.Leer())
                 {
                     CargaDatos();
+                }
+                else
+                {
+                    if (bEsNuevoId)
+                    {
+                        txtBeneficiario.Enabled = false;
+                        btnIdentificacion.Enabled = true;
+                    }
                 }
             }
         }

@@ -1565,7 +1565,7 @@ namespace DllFarmaciaSoft
 
         public static bool ValidaTransferenciasTransito_DiasConfirmacion()
         {
-            return ValidaTransferenciasTransito_DiasConfirmacion("Se encontraron Transferencias en Tránsito por aplicar que excedieron el periodo de confirmación,se deshabilitara la Dispensación y Transferencias de Salida hasta que sean aplicadas dichas transferencias.");
+            return ValidaTransferenciasTransito_DiasConfirmacion("Existen Traspasos en Tránsito; No aplicados que exceden el tiempo de confirmación. Se deshabilitaran las salidas ( Dispersión y Traspasos ) hasta que sean aplicadas.");
         }
 
         public static bool ValidaTransferenciasTransito_DiasConfirmacion( string Mensaje )
@@ -1596,7 +1596,7 @@ namespace DllFarmaciaSoft
                 {
                     bRegresa = false;
                     Error.GrabarError(leer, "ValidaTransferenciasTransito_DiasConfirmacion()");
-                    General.msjError("Ocurrió un error al validar transferencias en tránsito.");
+                    General.msjError("Error al validar traspasos en tránsito.");
                 }
                 else
                 {

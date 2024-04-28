@@ -84,7 +84,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(137, 36);
             this.btnCancelar.TabIndex = 6;
-            this.btnCancelar.Text = "Salir";
+            this.btnCancelar.Text = "[-> Salir";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -105,13 +105,13 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.ForeColor = System.Drawing.Color.Green;
+            this.btnAceptar.ForeColor = System.Drawing.Color.Blue;
             this.btnAceptar.Location = new System.Drawing.Point(45, 128);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(137, 36);
             this.btnAceptar.TabIndex = 5;
-            this.btnAceptar.Text = "Accesar";
+            this.btnAceptar.Text = "->] Entrar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 

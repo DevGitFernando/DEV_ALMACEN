@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEntradasConsignacion_Devoluciones));
-            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType3 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType2 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType3 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType4 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType5 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType1 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType2 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType3 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType4 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType6 = new FarPoint.Win.Spread.CellType.NumberCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType7 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer3 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer4 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType4 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType5 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType6 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType8 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType9 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType10 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType11 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType12 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType5 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType6 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType7 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.CurrencyCellType currencyCellType8 = new FarPoint.Win.Spread.CellType.CurrencyCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType13 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType14 = new FarPoint.Win.Spread.CellType.NumberCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -148,7 +148,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -164,7 +164,7 @@
             // 
             this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -183,7 +183,7 @@
             // 
             this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             this.toolStripSeparator2.Visible = false;
             // 
             // btnImprimir
@@ -200,7 +200,7 @@
             // 
             this.toolStripSeparator3.AutoSize = false;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -216,7 +216,7 @@
             // 
             this.toolStripSeparator4.AutoSize = false;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(10, 58);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 4);
             // 
             // btnMotivosDev
             // 
@@ -252,18 +252,18 @@
             this.grdProductos.BackColor = System.Drawing.Color.WhiteSmoke;
             this.grdProductos.HorizontalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
             this.grdProductos.HorizontalScrollBar.Name = "";
-            enhancedScrollBarRenderer1.ArrowColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer1.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer1.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer1.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer1.ButtonBorderColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer1.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer1.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer1.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer1.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer1.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer1.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
-            this.grdProductos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer1;
+            enhancedScrollBarRenderer3.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer3;
             this.grdProductos.HorizontalScrollBar.TabIndex = 2;
             this.grdProductos.Location = new System.Drawing.Point(10, 23);
             this.grdProductos.Margin = new System.Windows.Forms.Padding(4);
@@ -276,18 +276,18 @@
             this.grdProductos.TabIndex = 1;
             this.grdProductos.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
             this.grdProductos.VerticalScrollBar.Name = "";
-            enhancedScrollBarRenderer2.ArrowColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer2.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer2.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
-            enhancedScrollBarRenderer2.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer2.ButtonBorderColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer2.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
-            enhancedScrollBarRenderer2.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer2.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
-            enhancedScrollBarRenderer2.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer2.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
-            enhancedScrollBarRenderer2.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
-            this.grdProductos.VerticalScrollBar.Renderer = enhancedScrollBarRenderer2;
+            enhancedScrollBarRenderer4.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.VerticalScrollBar.Renderer = enhancedScrollBarRenderer4;
             this.grdProductos.VerticalScrollBar.TabIndex = 3;
             this.grdProductos.EditModeOn += new System.EventHandler(this.grdProductos_EditModeOn);
             this.grdProductos.EditModeOff += new System.EventHandler(this.grdProductos_EditModeOff);
@@ -408,147 +408,147 @@
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 13).Value = "Cantidad Prometida Recibida";
             this.grdProductos_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdProductos_Sheet1.ColumnHeader.Rows.Get(0).Height = 46F;
-            textCellType1.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
-            textCellType1.MaxLength = 15;
-            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType1;
+            textCellType4.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
+            textCellType4.MaxLength = 15;
+            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType4;
             this.grdProductos_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Label = "Código EAN";
             this.grdProductos_Sheet1.Columns.Get(0).Locked = false;
             this.grdProductos_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Width = 97F;
-            textCellType2.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
-            textCellType2.MaxLength = 15;
-            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType2;
+            textCellType5.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
+            textCellType5.MaxLength = 15;
+            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType5;
             this.grdProductos_Sheet1.Columns.Get(1).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(1).Label = "Código";
             this.grdProductos_Sheet1.Columns.Get(1).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(1).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(1).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(1).Width = 97F;
-            this.grdProductos_Sheet1.Columns.Get(2).CellType = textCellType3;
+            this.grdProductos_Sheet1.Columns.Get(2).CellType = textCellType6;
             this.grdProductos_Sheet1.Columns.Get(2).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
             this.grdProductos_Sheet1.Columns.Get(2).Label = "Descripción";
             this.grdProductos_Sheet1.Columns.Get(2).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(2).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(2).Width = 220F;
-            numberCellType1.DecimalPlaces = 2;
-            numberCellType1.MaximumValue = 100D;
-            numberCellType1.MinimumValue = 0D;
-            this.grdProductos_Sheet1.Columns.Get(3).CellType = numberCellType1;
+            numberCellType8.DecimalPlaces = 2;
+            numberCellType8.MaximumValue = 100D;
+            numberCellType8.MinimumValue = 0D;
+            this.grdProductos_Sheet1.Columns.Get(3).CellType = numberCellType8;
             this.grdProductos_Sheet1.Columns.Get(3).Label = "TasaIva";
             this.grdProductos_Sheet1.Columns.Get(3).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(3).Visible = false;
-            numberCellType2.DecimalPlaces = 0;
-            numberCellType2.DecimalSeparator = ".";
-            numberCellType2.MaximumValue = 10000000D;
-            numberCellType2.MinimumValue = 0D;
-            numberCellType2.Separator = ",";
-            numberCellType2.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(4).CellType = numberCellType2;
+            numberCellType9.DecimalPlaces = 0;
+            numberCellType9.DecimalSeparator = ".";
+            numberCellType9.MaximumValue = 10000000D;
+            numberCellType9.MinimumValue = 0D;
+            numberCellType9.Separator = ",";
+            numberCellType9.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(4).CellType = numberCellType9;
             this.grdProductos_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(4).Label = "Cantidad Prometida Cajas";
             this.grdProductos_Sheet1.Columns.Get(4).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(4).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(4).Visible = false;
-            numberCellType3.DecimalPlaces = 0;
-            numberCellType3.DecimalSeparator = ".";
-            numberCellType3.MaximumValue = 10000000D;
-            numberCellType3.MinimumValue = 0D;
-            numberCellType3.Separator = ",";
-            numberCellType3.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(5).CellType = numberCellType3;
+            numberCellType10.DecimalPlaces = 0;
+            numberCellType10.DecimalSeparator = ".";
+            numberCellType10.MaximumValue = 10000000D;
+            numberCellType10.MinimumValue = 0D;
+            numberCellType10.Separator = ",";
+            numberCellType10.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(5).CellType = numberCellType10;
             this.grdProductos_Sheet1.Columns.Get(5).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(5).Label = "Cantidad Prometida Piezas";
             this.grdProductos_Sheet1.Columns.Get(5).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(5).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(5).Visible = false;
-            numberCellType4.DecimalPlaces = 0;
-            numberCellType4.DecimalSeparator = ".";
-            numberCellType4.MaximumValue = 10000000D;
-            numberCellType4.MinimumValue = 0D;
-            numberCellType4.Separator = ",";
-            numberCellType4.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(6).CellType = numberCellType4;
+            numberCellType11.DecimalPlaces = 0;
+            numberCellType11.DecimalSeparator = ".";
+            numberCellType11.MaximumValue = 10000000D;
+            numberCellType11.MinimumValue = 0D;
+            numberCellType11.Separator = ",";
+            numberCellType11.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(6).CellType = numberCellType11;
             this.grdProductos_Sheet1.Columns.Get(6).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(6).Label = "Cantidad Recibida";
             this.grdProductos_Sheet1.Columns.Get(6).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(6).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(6).Width = 85F;
-            numberCellType5.DecimalPlaces = 0;
-            numberCellType5.DecimalSeparator = ".";
-            numberCellType5.MaximumValue = 10000000D;
-            numberCellType5.MinimumValue = -10000000D;
-            numberCellType5.Separator = ",";
-            numberCellType5.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(7).CellType = numberCellType5;
+            numberCellType12.DecimalPlaces = 0;
+            numberCellType12.DecimalSeparator = ".";
+            numberCellType12.MaximumValue = 10000000D;
+            numberCellType12.MinimumValue = -10000000D;
+            numberCellType12.Separator = ",";
+            numberCellType12.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(7).CellType = numberCellType12;
             this.grdProductos_Sheet1.Columns.Get(7).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(7).Label = "Cantidad Devuelta";
             this.grdProductos_Sheet1.Columns.Get(7).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(7).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(7).Width = 85F;
-            currencyCellType1.DecimalPlaces = 4;
-            currencyCellType1.DecimalSeparator = ".";
-            currencyCellType1.MinimumValue = new decimal(new int[] {
+            currencyCellType5.DecimalPlaces = 4;
+            currencyCellType5.DecimalSeparator = ".";
+            currencyCellType5.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType1.Separator = ",";
-            currencyCellType1.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(8).CellType = currencyCellType1;
+            currencyCellType5.Separator = ",";
+            currencyCellType5.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(8).CellType = currencyCellType5;
             this.grdProductos_Sheet1.Columns.Get(8).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(8).Label = "Costo";
             this.grdProductos_Sheet1.Columns.Get(8).Locked = false;
             this.grdProductos_Sheet1.Columns.Get(8).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(8).Width = 90F;
-            currencyCellType2.DecimalPlaces = 4;
-            currencyCellType2.DecimalSeparator = ".";
-            currencyCellType2.MinimumValue = new decimal(new int[] {
+            currencyCellType6.DecimalPlaces = 4;
+            currencyCellType6.DecimalSeparator = ".";
+            currencyCellType6.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType2.Separator = ",";
-            currencyCellType2.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(9).CellType = currencyCellType2;
+            currencyCellType6.Separator = ",";
+            currencyCellType6.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(9).CellType = currencyCellType6;
             this.grdProductos_Sheet1.Columns.Get(9).Formula = "(RC[-3]*RC[-1])";
             this.grdProductos_Sheet1.Columns.Get(9).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(9).Label = "Importe";
             this.grdProductos_Sheet1.Columns.Get(9).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(9).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(9).Width = 110F;
-            currencyCellType3.DecimalPlaces = 4;
-            currencyCellType3.MinimumValue = new decimal(new int[] {
+            currencyCellType7.DecimalPlaces = 4;
+            currencyCellType7.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType3.ShowCurrencySymbol = false;
-            this.grdProductos_Sheet1.Columns.Get(10).CellType = currencyCellType3;
+            currencyCellType7.ShowCurrencySymbol = false;
+            this.grdProductos_Sheet1.Columns.Get(10).CellType = currencyCellType7;
             this.grdProductos_Sheet1.Columns.Get(10).Formula = "((1+(RC[-7]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Columns.Get(10).Label = "ImporteIva";
             this.grdProductos_Sheet1.Columns.Get(10).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(10).Visible = false;
-            currencyCellType4.DecimalPlaces = 4;
-            currencyCellType4.MinimumValue = new decimal(new int[] {
+            currencyCellType8.DecimalPlaces = 4;
+            currencyCellType8.MinimumValue = new decimal(new int[] {
             0,
             0,
             0,
             262144});
-            currencyCellType4.ShowCurrencySymbol = false;
-            this.grdProductos_Sheet1.Columns.Get(11).CellType = currencyCellType4;
+            currencyCellType8.ShowCurrencySymbol = false;
+            this.grdProductos_Sheet1.Columns.Get(11).CellType = currencyCellType8;
             this.grdProductos_Sheet1.Columns.Get(11).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Columns.Get(11).Label = "ImporteTotal";
             this.grdProductos_Sheet1.Columns.Get(11).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(11).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(11).Width = 92F;
-            this.grdProductos_Sheet1.Columns.Get(12).CellType = numberCellType6;
+            this.grdProductos_Sheet1.Columns.Get(12).CellType = numberCellType13;
             this.grdProductos_Sheet1.Columns.Get(12).Formula = "(RC[1]/RC[-8])*100";
             this.grdProductos_Sheet1.Columns.Get(12).Label = "Porcentaje Surtimiento";
             this.grdProductos_Sheet1.Columns.Get(12).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(12).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(12).Width = 86F;
-            this.grdProductos_Sheet1.Columns.Get(13).CellType = numberCellType7;
+            this.grdProductos_Sheet1.Columns.Get(13).CellType = numberCellType14;
             this.grdProductos_Sheet1.Columns.Get(13).Label = "Cantidad Prometida Recibida";
             this.grdProductos_Sheet1.Columns.Get(13).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(13).Width = 84F;

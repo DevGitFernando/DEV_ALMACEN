@@ -201,6 +201,7 @@
             // 
             // BarraDeStatus
             // 
+            this.BarraDeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BarraDeStatus.Location = new System.Drawing.Point(0, 359);
             this.BarraDeStatus.Margin = new System.Windows.Forms.Padding(2);
             this.BarraDeStatus.Name = "BarraDeStatus";
@@ -222,7 +223,7 @@
             this.lblModulo.MinWidth = 15;
             this.lblModulo.Name = "lblModulo";
             this.lblModulo.Text = "Almacén v.1.0.0.0";
-            this.lblModulo.Width = 122;
+            this.lblModulo.Width = 133;
             // 
             // lblFechaSistema
             // 
@@ -337,14 +338,14 @@
             this.btnPassword});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(720, 70);
+            this.menuStrip.Size = new System.Drawing.Size(720, 67);
             this.menuStrip.TabIndex = 49;
             this.menuStrip.Text = "menuStrip1";
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 66);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 63);
             // 
             // btnInicio
             // 
@@ -356,7 +357,7 @@
             this.btnInicio.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnInicio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(95, 63);
+            this.btnInicio.Size = new System.Drawing.Size(95, 60);
             this.btnInicio.Text = "Inicio";
             this.btnInicio.Visible = false;
             // 
@@ -384,19 +385,19 @@
             // btnMenu
             // 
             this.btnMenu.AutoSize = false;
-            this.btnMenu.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
             this.btnMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(160, 65);
-            this.btnMenu.Text = "Opciones";
-            this.btnMenu.ToolTipText = "Pantallas";
+            this.btnMenu.Size = new System.Drawing.Size(160, 60);
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.ToolTipText = "Opciones Menu";
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 66);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 63);
             this.toolStripSeparator10.Visible = false;
             // 
             // btnPassword
@@ -406,7 +407,7 @@
             this.btnPassword.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPassword.Name = "btnPassword";
             this.btnPassword.ShowDropDownArrow = false;
-            this.btnPassword.Size = new System.Drawing.Size(204, 63);
+            this.btnPassword.Size = new System.Drawing.Size(204, 60);
             this.btnPassword.Text = "Cambiar Password";
             this.btnPassword.Visible = false;
             // 

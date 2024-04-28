@@ -147,7 +147,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                     }
                     else
                     {
-                        General.msjAviso("Clave Caja no encontrado verifique.");
+                        General.msjAviso("Id Caja no encontrada. Favor de verificar.");
                     }
                 }
 

@@ -117,14 +117,21 @@ namespace Farmacia.Transferencias
         {
             bool bRegresa = true;
             string sPrefijo = "";
-            string sNameRpt = "PtoVta_Transferencias";
+            string sNameRpt = "PtoVta_Transferencias", sNameRptAux = "";
             clsImprimir myRpt = new clsImprimir(General.DatosConexion);
+
+            sNameRptAux = sNameRpt;
+
+            if (Folio.Substring(0, 3) == "TES")
+            {
+                sNameRptAux = "Traspasos_Entrada_SCALD";
+            }
 
 
             switch (TipoReporte)
             {
                 case TipoReporteTransferencia.Detallado:
-                    sNameRpt = "PtoVta_Transferencias";
+                    sNameRpt = sNameRptAux;
                     break;
                 case TipoReporteTransferencia.Ticket:
                     sNameRpt = "PtoVta_TransferenciasTicket";

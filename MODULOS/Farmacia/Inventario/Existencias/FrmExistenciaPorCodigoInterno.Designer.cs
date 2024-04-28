@@ -223,7 +223,8 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(1312, 30);
             this.label11.TabIndex = 14;
-            this.label11.Text = "( F7 )  -----  Seleccionar Fuentes Financiamiento  -----";
+            this.label11.Text = "( F7 )  -- Seleccionar F. Financiamiento  --    |    -- Doble click - Ver detalle" +
+    "  --     ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox3

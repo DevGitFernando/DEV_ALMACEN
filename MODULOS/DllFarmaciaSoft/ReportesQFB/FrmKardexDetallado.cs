@@ -79,7 +79,7 @@ namespace DllFarmaciaSoft.ReportesQFB
 
             if (tpTipoDeKardex == 1)
             {
-                this.Text = "Kardex de Controlados y Antibióticos";
+                this.Text = "Kardex Controlados y Antibióticos";
             }
 
             if (tpTipoDeKardex == 2)
@@ -87,7 +87,7 @@ namespace DllFarmaciaSoft.ReportesQFB
                 btnImprimir.Visible = false;
                 toolStripSeparator2.Visible = false;
 
-                this.Text = "Kardex general";
+                this.Text = "Kardex General";
                 FrameTipoSales.Left = 2000;
                 FrameTipoReporte.Left = 12;
                 FrameTipoReporte.Size = new Size(478, 51);
@@ -466,6 +466,7 @@ namespace DllFarmaciaSoft.ReportesQFB
                         chkBuscarClave.Checked = true;
                         txtCodigo.Text = leer.Campo("ClaveSSA");
                         lblDescripcion.Text = leer.Campo("DescripcionSal");
+                        //sIdClaveSSA = leer.Campo("ClaveSSA");
                     }
                     if (rdoPorProducto.Checked)
                     {
@@ -473,7 +474,7 @@ namespace DllFarmaciaSoft.ReportesQFB
                         lblDescripcion.Text = leer.Campo("Descripcion");
                     }
 
-                    sIdClaveSSA = leer.Campo("IdClaveSSA_Sal");
+                    sIdClaveSSA = leer.Campo("IdClaveSSA_Sal");                    
                 }
                 //else
                 //{

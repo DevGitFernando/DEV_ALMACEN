@@ -104,7 +104,7 @@
             // 
             this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnAbrir
             // 
@@ -120,7 +120,7 @@
             // 
             this.toolStripSeparator10.AutoSize = false;
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -137,7 +137,7 @@
             // 
             this.toolStripSeparator9.AutoSize = false;
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -153,7 +153,7 @@
             // 
             this.toolStripSeparator8.AutoSize = false;
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(12, 4);
             // 
             // btnValidarDatos
             // 
@@ -169,7 +169,7 @@
             // 
             this.toolStripSeparator7.AutoSize = false;
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(12, 4);
             // 
             // btnProcesarRemisiones
             // 
@@ -185,7 +185,7 @@
             // 
             this.toolStripSeparator6.AutoSize = false;
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(12, 4);
             // 
             // btnSalir
             // 

@@ -301,6 +301,7 @@ namespace DllCompras
             }
             set { bValidarClavesEnPerfilDeComprador = value; }
         }
+        
         #endregion Parametros
     }
 }

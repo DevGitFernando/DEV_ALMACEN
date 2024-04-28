@@ -74,7 +74,7 @@ namespace DllFarmaciaSoft.Informacion
         {
             string sSql = string.Format( " Select IdFarmacia, Farmacia, Telefonos, Email " + 
                 " From vw_Farmacias (NoLock) " + 
-                " Where IdEstado = '{0}' order by IdFarmacia ", cboEstados.Data ); 
+                " Where IdEstado = '{0}' AND Status = 'A'  ORDER BY IdFarmacia ", cboEstados.Data ); 
 
             //grid.Limpiar();
             list.Limpiar(); 
@@ -123,11 +123,12 @@ namespace DllFarmaciaSoft.Informacion
 
                 myRpt.RutaReporte = DtGeneral.RutaReportes;
                 myRpt.NombreReporte = "Central_ListadoDeUnidades.rpt";
+                myRpt.TituloReporte = "Listado de Unidades";
 
                 myRpt.Add("Empresa", DtGeneral.EmpresaConectadaNombre);
                 myRpt.Add("IdEstado", cboEstados.Data);
 
-                bRegresa = DtGeneral.GenerarReporte(General.Url, true, myRpt, DatosCliente); 
+                bRegresa = DtGeneral.GenerarReporte(General.Url, General.ImpresionViaWeb, myRpt, DatosCliente); 
 
                 ////DataSet InfoWeb = myRpt.ObtenerInformacionWeb();
                 ////DataSet datosC = DatosCliente.DatosCliente();
@@ -136,7 +137,7 @@ namespace DllFarmaciaSoft.Informacion
 
                 if (!bRegresa) 
                 {
-                    General.msjError("Ocurrió un error al cargar el reporte.");
+                    General.msjError("Error al cargar Informe.");
                 }
             }
 

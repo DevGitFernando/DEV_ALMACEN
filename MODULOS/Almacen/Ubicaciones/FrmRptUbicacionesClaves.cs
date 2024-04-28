@@ -208,7 +208,7 @@ namespace Almacen.Ubicaciones
                                     sEmpresa, sEstado, sFarmacia); 
             if (!leer.Exec(sSql))
             {
-                General.msjError("Ocurrió Un Error al buscar la Información.");
+                General.msjError("Error al consultar Información.");
             }
             else
             {
@@ -232,7 +232,7 @@ namespace Almacen.Ubicaciones
 
             if (!leer.Exec(sSql))
             {
-                General.msjError("Ocurrió Un Error al buscar la Información.");
+                General.msjError("Error al consultar Información.");
             }
             else
             {
@@ -260,7 +260,7 @@ namespace Almacen.Ubicaciones
 
             if (!leer.Exec(sSql))
             {
-                General.msjError("Ocurrió Un Error al buscar la Información.");
+                General.msjError("Error al consultar Información.");
             }
             else
             {
@@ -343,7 +343,7 @@ namespace Almacen.Ubicaciones
             if (!leer.Exec(sSql))
             {
                 Error.GrabarError(leer.Error, "CargarGrid");  
-                General.msjError("Ocurrió Un Error al buscar la Información.");
+                General.msjError("Error al consultar Información.");
             }
             else
             {
@@ -351,7 +351,7 @@ namespace Almacen.Ubicaciones
                 if (!leer.Leer())
                 {
                     bRegresa = false; 
-                    General.msjUser("No se encontro información con los criterios especificados, verifique."); 
+                    General.msjUser("Información no encontrada con los filtros aplicados. Favor de verificar."); 
                 }
 
                 dtsDetalle = leer.DataSetClase; 
@@ -359,7 +359,7 @@ namespace Almacen.Ubicaciones
 
                 if (leer.Registros >= 1000)
                 {
-                    General.msjAviso("El número de registros encontrados es superior a 1000, es necesario descargar la información a excel.");
+                    General.msjAviso("Se recomienda exportar a formato excel por el numero de registros encontrados.");
                 }
                 else
                 {
@@ -490,7 +490,7 @@ namespace Almacen.Ubicaciones
                 excel.EscribirCeldaEncabezado(sNombreHoja, 2, iColBase, iColsEncabezado, 20, DtGeneral.EmpresaConectadaNombre);
                 excel.EscribirCeldaEncabezado(sNombreHoja, 3, iColBase, iColsEncabezado, 16, sFarmacia);
                 excel.EscribirCeldaEncabezado(sNombreHoja, 4, iColBase, iColsEncabezado, 14, sConcepto);
-                excel.EscribirCeldaEncabezado(sNombreHoja, 6, iColBase, iColsEncabezado, 12, string.Format("Fecha de Impresión: {0} ", General.FechaSistemaObtener()));
+                excel.EscribirCeldaEncabezado(sNombreHoja, 6, iColBase, iColsEncabezado, 12, string.Format("Fecha Impresión: {0} ", General.FechaSistemaObtener()));
 
                 iRenglon = 8;
                 //excel.LlenarDetalleHorizontal(sNombreHoja, iRenglon, iColBase, leer.DataSetClase); 
@@ -583,7 +583,7 @@ namespace Almacen.Ubicaciones
                 clsImprimir myRpt = new clsImprimir(General.DatosConexion);
                 // byte[] btReporte = null;
 
-                myRpt.TituloReporte = "Reporte de Ubicaciones de Claves"; 
+                myRpt.TituloReporte = "Informe Ubicaciones Claves SSA"; 
                 myRpt.RutaReporte = @GnFarmacia.RutaReportes;
 
                 if (rdoRptClave.Checked)
@@ -626,7 +626,7 @@ namespace Almacen.Ubicaciones
 
                 if (!bRegresa)
                 {
-                    General.msjError("Ocurrió un error al cargar el reporte.");
+                    General.msjError("Error al generar Informe.");
                 }
             }
         }

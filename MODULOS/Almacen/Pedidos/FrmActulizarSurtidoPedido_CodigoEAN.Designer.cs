@@ -67,6 +67,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCodifoEAN = new SC_ControlsCS.scTextBoxExt();
             this.lblAyudaAux = new System.Windows.Forms.Label();
+            this.lblCant = new System.Windows.Forms.Label();
+            this.lblLote = new System.Windows.Forms.Label();
             this.GrupoProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalles_Sheet1)).BeginInit();
@@ -82,37 +84,33 @@
             this.GrupoProductos.Controls.Add(this.label7);
             this.GrupoProductos.Controls.Add(this.lblDescripcionSal);
             this.GrupoProductos.Controls.Add(this.grdDetalles);
-            this.GrupoProductos.Location = new System.Drawing.Point(11, 126);
-            this.GrupoProductos.Margin = new System.Windows.Forms.Padding(4);
+            this.GrupoProductos.Location = new System.Drawing.Point(8, 102);
             this.GrupoProductos.Name = "GrupoProductos";
-            this.GrupoProductos.Padding = new System.Windows.Forms.Padding(4);
-            this.GrupoProductos.Size = new System.Drawing.Size(1552, 402);
+            this.GrupoProductos.Size = new System.Drawing.Size(1164, 327);
             this.GrupoProductos.TabIndex = 1;
             this.GrupoProductos.TabStop = false;
             this.GrupoProductos.Text = "Detalle";
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.BackColor = System.Drawing.Color.SteelBlue;
             this.label11.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(4, 368);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(3, 300);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1544, 30);
+            this.label11.Size = new System.Drawing.Size(1158, 24);
             this.label11.TabIndex = 51;
-            this.label11.Text = " << F5 >> Capturar cajas de surtido/embarque";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Text = "( F5 )   Capturar cajas de surtido | embarque";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 314);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(22, 255);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 20);
+            this.label7.Size = new System.Drawing.Size(77, 16);
             this.label7.TabIndex = 50;
             this.label7.Text = "Clave SSA :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -121,14 +119,11 @@
             // 
             this.lblDescripcionSal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDescripcionSal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblDescripcionSal.Location = new System.Drawing.Point(140, 311);
-            this.lblDescripcionSal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescripcionSal.Location = new System.Drawing.Point(105, 253);
             this.lblDescripcionSal.MostrarToolTip = false;
             this.lblDescripcionSal.Name = "lblDescripcionSal";
-            this.lblDescripcionSal.Size = new System.Drawing.Size(1400, 53);
+            this.lblDescripcionSal.Size = new System.Drawing.Size(1050, 43);
             this.lblDescripcionSal.TabIndex = 49;
-            this.lblDescripcionSal.Text = "scLabelExt1";
             this.lblDescripcionSal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // grdDetalles
@@ -155,13 +150,12 @@
             this.grdDetalles.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer1;
             this.grdDetalles.HorizontalScrollBar.TabIndex = 2;
             this.grdDetalles.HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded;
-            this.grdDetalles.Location = new System.Drawing.Point(11, 22);
-            this.grdDetalles.Margin = new System.Windows.Forms.Padding(4);
+            this.grdDetalles.Location = new System.Drawing.Point(8, 18);
             this.grdDetalles.Name = "grdDetalles";
             this.grdDetalles.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdDetalles.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
             this.grdDetalles_Sheet1});
-            this.grdDetalles.Size = new System.Drawing.Size(1528, 285);
+            this.grdDetalles.Size = new System.Drawing.Size(1147, 232);
             this.grdDetalles.Skin = FarPoint.Win.Spread.DefaultSpreadSkins.Seashell;
             this.grdDetalles.TabIndex = 0;
             this.grdDetalles.TabStripRatio = 0.477568740955137D;
@@ -181,6 +175,7 @@
             this.grdDetalles.VerticalScrollBar.Renderer = enhancedScrollBarRenderer2;
             this.grdDetalles.VerticalScrollBar.TabIndex = 3;
             this.grdDetalles.EditModeOff += new System.EventHandler(this.grdDetalles_EditModeOff);
+            this.grdDetalles.LeaveCell += new FarPoint.Win.Spread.LeaveCellEventHandler(this.grdDetalles_LeaveCell);
             this.grdDetalles.ButtonClicked += new FarPoint.Win.Spread.EditorNotifyEventHandler(this.grdDetalles_ButtonClicked);
             this.grdDetalles.KeyDown += new System.Windows.Forms.KeyEventHandler(this.grdDetalles_KeyDown);
             // 
@@ -435,12 +430,12 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.lblLote);
+            this.groupBox1.Controls.Add(this.lblCant);
             this.groupBox1.Controls.Add(this.txtCodifoEAN);
-            this.groupBox1.Location = new System.Drawing.Point(11, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(8, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1552, 110);
+            this.groupBox1.Size = new System.Drawing.Size(1164, 89);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Código EAN";
@@ -454,39 +449,57 @@
             this.txtCodifoEAN.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtCodifoEAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodifoEAN.ForeColor = System.Drawing.Color.Black;
-            this.txtCodifoEAN.Location = new System.Drawing.Point(224, 23);
-            this.txtCodifoEAN.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodifoEAN.Location = new System.Drawing.Point(18, 19);
             this.txtCodifoEAN.MaxLength = 15;
             this.txtCodifoEAN.Name = "txtCodifoEAN";
             this.txtCodifoEAN.PermitirApostrofo = false;
             this.txtCodifoEAN.PermitirNegativos = false;
-            this.txtCodifoEAN.Size = new System.Drawing.Size(1103, 75);
+            this.txtCodifoEAN.Size = new System.Drawing.Size(390, 62);
             this.txtCodifoEAN.TabIndex = 0;
-            this.txtCodifoEAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodifoEAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lblAyudaAux
             // 
-            this.lblAyudaAux.BackColor = System.Drawing.Color.Black;
+            this.lblAyudaAux.BackColor = System.Drawing.Color.SteelBlue;
             this.lblAyudaAux.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblAyudaAux.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAyudaAux.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAyudaAux.Location = new System.Drawing.Point(0, 534);
-            this.lblAyudaAux.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAyudaAux.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblAyudaAux.Location = new System.Drawing.Point(0, 434);
             this.lblAyudaAux.Name = "lblAyudaAux";
-            this.lblAyudaAux.Size = new System.Drawing.Size(1579, 33);
+            this.lblAyudaAux.Size = new System.Drawing.Size(1155, 27);
             this.lblAyudaAux.TabIndex = 12;
-            this.lblAyudaAux.Text = "<F12> Cerrar  y Guardar";
-            this.lblAyudaAux.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblAyudaAux.Text = "( F12 ) Cerrar  y Guardar";
+            this.lblAyudaAux.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCant
+            // 
+            this.lblCant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblCant.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCant.Location = new System.Drawing.Point(816, 19);
+            this.lblCant.Name = "lblCant";
+            this.lblCant.Size = new System.Drawing.Size(266, 62);
+            this.lblCant.TabIndex = 51;
+            this.lblCant.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblLote
+            // 
+            this.lblLote.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblLote.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLote.Location = new System.Drawing.Point(454, 19);
+            this.lblLote.Name = "lblLote";
+            this.lblLote.Size = new System.Drawing.Size(325, 62);
+            this.lblLote.TabIndex = 52;
+            this.lblLote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FrmActulizarSurtidoPedido_CodigoEAN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1579, 567);
+            this.ClientSize = new System.Drawing.Size(1155, 461);
             this.Controls.Add(this.lblAyudaAux);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GrupoProductos);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmActulizarSurtidoPedido_CodigoEAN";
             this.ShowIcon = false;
             this.Text = "Actualizar Surtido por Código EAN";
@@ -512,5 +525,7 @@
         private SC_ControlsCS.scTextBoxExt txtCodifoEAN;
         private System.Windows.Forms.Label lblAyudaAux;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblCant;
+        private System.Windows.Forms.Label lblLote;
     }
 }

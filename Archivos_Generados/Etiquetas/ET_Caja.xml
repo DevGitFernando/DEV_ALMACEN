@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="yes"?>
+<Reporte>
+  <xs:schema id="Reporte" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Reporte" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Encabezado">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdEmpresa" type="xs:string" minOccurs="0" />
+                <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+                <xs:element name="EmpresaNombreCorto" type="xs:string" minOccurs="0" />
+                <xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+                <xs:element name="Colonia" type="xs:string" minOccurs="0" />
+                <xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+                <xs:element name="Ciudad" type="xs:string" minOccurs="0" />
+                <xs:element name="IdEstado" type="xs:string" minOccurs="0" />
+                <xs:element name="Estado" type="xs:string" minOccurs="0" />
+                <xs:element name="IdFarmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="Farmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="IdJurisdiccion" type="xs:string" minOccurs="0" />
+                <xs:element name="Jurisdiccion" type="xs:string" minOccurs="0" />
+                <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Informacion">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdEmpresa" type="xs:string" minOccurs="0" />
+                <xs:element name="IdEstado" type="xs:string" minOccurs="0" />
+                <xs:element name="IdFarmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="IdCaja" type="xs:string" minOccurs="0" />
+                <xs:element name="FechaRegistro" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="status" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Etiquetas">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Encabezado>
+    <IdEmpresa>005</IdEmpresa>
+    <Empresa>FMEDICAL</Empresa>
+    <EmpresaNombreCorto>FMEDICAL</EmpresaNombreCorto>
+    <Domicilio>CARR. CHAPALA</Domicilio>
+    <Colonia>AEROPUERTO</Colonia>
+    <CodigoPostal>45670</CodigoPostal>
+    <Ciudad>EL SALTO, JALISCO</Ciudad>
+    <IdEstado>14</IdEstado>
+    <Estado>JALISCO</Estado>
+    <IdFarmacia>0010</IdFarmacia>
+    <Farmacia>CEDIS METROPOLITANO AEROPUERTO</Farmacia>
+    <IdJurisdiccion>001</IdJurisdiccion>
+    <Jurisdiccion>JURISDICCION CENTRO</Jurisdiccion>
+    <Fecha>2024-01-19T00:00:00-07:00</Fecha>
+  </Encabezado>
+  <Informacion>
+    <IdEmpresa>005</IdEmpresa>
+    <IdEstado>14</IdEstado>
+    <IdFarmacia>0010</IdFarmacia>
+    <IdCaja>00000001</IdCaja>
+    <FechaRegistro>2023-12-13T15:17:52.583-07:00</FechaRegistro>
+    <status>Activo</status>
+  </Informacion>
+  <Etiquetas />
+</Reporte>

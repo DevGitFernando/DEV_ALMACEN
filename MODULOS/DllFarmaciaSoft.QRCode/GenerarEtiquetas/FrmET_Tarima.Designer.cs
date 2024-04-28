@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmET_Tarima));
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer3 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer4 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
             FarPoint.Win.Spread.CellType.TextCellType textCellType11 = new FarPoint.Win.Spread.CellType.TextCellType();
             FarPoint.Win.Spread.CellType.TextCellType textCellType12 = new FarPoint.Win.Spread.CellType.TextCellType();
             FarPoint.Win.Spread.CellType.TextCellType textCellType13 = new FarPoint.Win.Spread.CellType.TextCellType();
@@ -46,13 +48,9 @@
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.btnEjecutar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnGenerarEtiqueta = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnReader = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnImprimir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.FrameUbicacion = new System.Windows.Forms.GroupBox();
             this.txtIdEntrepaño = new SC_ControlsCS.scTextBoxExt();
             this.label3 = new System.Windows.Forms.Label();
@@ -92,6 +90,9 @@
             this.FrameFolioEtiqueta = new System.Windows.Forms.GroupBox();
             this.txtFolioEtiqueta = new SC_ControlsCS.scTextBoxExt();
             this.chkMostrarImpresionEnPantalla = new System.Windows.Forms.CheckBox();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripBarraMenu.SuspendLayout();
             this.FrameUbicacion.SuspendLayout();
             this.FrameDatos.SuspendLayout();
@@ -108,20 +109,21 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
             this.btnEjecutar,
-            this.toolStripSeparator3,
+            this.toolStripSeparator8,
             this.btnGenerarEtiqueta,
-            this.toolStripSeparator4,
+            this.toolStripSeparator7,
             this.btnReader,
-            this.toolStripSeparator2,
-            this.btnImprimir,
-            this.toolStripSeparator1});
+            this.toolStripSeparator6,
+            this.btnImprimir});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(1184, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1579, 58);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -131,14 +133,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -146,15 +149,10 @@
             this.btnEjecutar.Image = ((System.Drawing.Image)(resources.GetObject("btnEjecutar.Image")));
             this.btnEjecutar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(23, 22);
+            this.btnEjecutar.Size = new System.Drawing.Size(54, 55);
             this.btnEjecutar.Text = "Ejecutar";
             this.btnEjecutar.ToolTipText = "Ejecutar";
             this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
             // btnGenerarEtiqueta
             // 
@@ -162,14 +160,9 @@
             this.btnGenerarEtiqueta.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerarEtiqueta.Image")));
             this.btnGenerarEtiqueta.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGenerarEtiqueta.Name = "btnGenerarEtiqueta";
-            this.btnGenerarEtiqueta.Size = new System.Drawing.Size(23, 22);
+            this.btnGenerarEtiqueta.Size = new System.Drawing.Size(54, 55);
             this.btnGenerarEtiqueta.Text = "Generar etiqueta";
             this.btnGenerarEtiqueta.Click += new System.EventHandler(this.btnGenerarEtiqueta_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
             // btnReader
             // 
@@ -177,14 +170,9 @@
             this.btnReader.Image = ((System.Drawing.Image)(resources.GetObject("btnReader.Image")));
             this.btnReader.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReader.Name = "btnReader";
-            this.btnReader.Size = new System.Drawing.Size(23, 22);
+            this.btnReader.Size = new System.Drawing.Size(54, 55);
             this.btnReader.Text = "Activar lector";
             this.btnReader.Click += new System.EventHandler(this.btnReader_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // btnImprimir
             // 
@@ -192,14 +180,9 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(23, 22);
+            this.btnImprimir.Size = new System.Drawing.Size(54, 55);
             this.btnImprimir.Text = "&Imprimir (CTRL + P)";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // FrameUbicacion
             // 
@@ -209,9 +192,11 @@
             this.FrameUbicacion.Controls.Add(this.txtIdEstante);
             this.FrameUbicacion.Controls.Add(this.txtIdPasillo);
             this.FrameUbicacion.Controls.Add(this.label2);
-            this.FrameUbicacion.Location = new System.Drawing.Point(9, 19);
+            this.FrameUbicacion.Location = new System.Drawing.Point(12, 23);
+            this.FrameUbicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameUbicacion.Name = "FrameUbicacion";
-            this.FrameUbicacion.Size = new System.Drawing.Size(73, 27);
+            this.FrameUbicacion.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameUbicacion.Size = new System.Drawing.Size(97, 33);
             this.FrameUbicacion.TabIndex = 1;
             this.FrameUbicacion.TabStop = false;
             this.FrameUbicacion.Text = "Ubicación";
@@ -222,29 +207,32 @@
             this.txtIdEntrepaño.Decimales = 0;
             this.txtIdEntrepaño.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtIdEntrepaño.ForeColor = System.Drawing.Color.Black;
-            this.txtIdEntrepaño.Location = new System.Drawing.Point(455, 19);
+            this.txtIdEntrepaño.Location = new System.Drawing.Point(607, 23);
+            this.txtIdEntrepaño.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdEntrepaño.MaxLength = 4;
             this.txtIdEntrepaño.Name = "txtIdEntrepaño";
             this.txtIdEntrepaño.PermitirApostrofo = false;
             this.txtIdEntrepaño.PermitirNegativos = false;
-            this.txtIdEntrepaño.Size = new System.Drawing.Size(76, 20);
+            this.txtIdEntrepaño.Size = new System.Drawing.Size(100, 22);
             this.txtIdEntrepaño.TabIndex = 2;
             this.txtIdEntrepaño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(393, 19);
+            this.label3.Location = new System.Drawing.Point(524, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 20);
+            this.label3.Size = new System.Drawing.Size(83, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "Entrepaño :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(39, 19);
+            this.label1.Location = new System.Drawing.Point(52, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
+            this.label1.Size = new System.Drawing.Size(83, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Pasillo :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -255,12 +243,13 @@
             this.txtIdEstante.Decimales = 0;
             this.txtIdEstante.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtIdEstante.ForeColor = System.Drawing.Color.Black;
-            this.txtIdEstante.Location = new System.Drawing.Point(278, 20);
+            this.txtIdEstante.Location = new System.Drawing.Point(371, 25);
+            this.txtIdEstante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdEstante.MaxLength = 4;
             this.txtIdEstante.Name = "txtIdEstante";
             this.txtIdEstante.PermitirApostrofo = false;
             this.txtIdEstante.PermitirNegativos = false;
-            this.txtIdEstante.Size = new System.Drawing.Size(76, 20);
+            this.txtIdEstante.Size = new System.Drawing.Size(100, 22);
             this.txtIdEstante.TabIndex = 1;
             this.txtIdEstante.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -270,20 +259,22 @@
             this.txtIdPasillo.Decimales = 0;
             this.txtIdPasillo.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtIdPasillo.ForeColor = System.Drawing.Color.Black;
-            this.txtIdPasillo.Location = new System.Drawing.Point(101, 19);
+            this.txtIdPasillo.Location = new System.Drawing.Point(135, 23);
+            this.txtIdPasillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdPasillo.MaxLength = 4;
             this.txtIdPasillo.Name = "txtIdPasillo";
             this.txtIdPasillo.PermitirApostrofo = false;
             this.txtIdPasillo.PermitirNegativos = false;
-            this.txtIdPasillo.Size = new System.Drawing.Size(76, 20);
+            this.txtIdPasillo.Size = new System.Drawing.Size(100, 22);
             this.txtIdPasillo.TabIndex = 0;
             this.txtIdPasillo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(213, 20);
+            this.label2.Location = new System.Drawing.Point(284, 25);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 20);
+            this.label2.Size = new System.Drawing.Size(83, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Estante :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -301,18 +292,21 @@
             this.FrameDatos.Controls.Add(this.label5);
             this.FrameDatos.Controls.Add(this.lblProducto);
             this.FrameDatos.Controls.Add(this.label4);
-            this.FrameDatos.Location = new System.Drawing.Point(110, 14);
+            this.FrameDatos.Location = new System.Drawing.Point(147, 18);
+            this.FrameDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameDatos.Name = "FrameDatos";
-            this.FrameDatos.Size = new System.Drawing.Size(558, 158);
+            this.FrameDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameDatos.Size = new System.Drawing.Size(744, 194);
             this.FrameDatos.TabIndex = 2;
             this.FrameDatos.TabStop = false;
             this.FrameDatos.Text = "Información";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(431, 121);
+            this.button1.Location = new System.Drawing.Point(575, 149);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.Size = new System.Drawing.Size(133, 28);
             this.button1.TabIndex = 24;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -322,9 +316,10 @@
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(350, 95);
+            this.label8.Location = new System.Drawing.Point(467, 117);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 18);
+            this.label8.Size = new System.Drawing.Size(100, 22);
             this.label8.TabIndex = 23;
             this.label8.Text = "Caducidad :";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -333,16 +328,18 @@
             // 
             this.dtpFechaCaducidad.CustomFormat = "yyyy-MM-dd";
             this.dtpFechaCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaCaducidad.Location = new System.Drawing.Point(431, 95);
+            this.dtpFechaCaducidad.Location = new System.Drawing.Point(575, 117);
+            this.dtpFechaCaducidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaCaducidad.Name = "dtpFechaCaducidad";
-            this.dtpFechaCaducidad.Size = new System.Drawing.Size(101, 20);
+            this.dtpFechaCaducidad.Size = new System.Drawing.Size(133, 22);
             this.dtpFechaCaducidad.TabIndex = 4;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(15, 118);
+            this.label7.Location = new System.Drawing.Point(20, 145);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 20);
+            this.label7.Size = new System.Drawing.Size(108, 25);
             this.label7.TabIndex = 21;
             this.label7.Text = "Piezas :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -353,12 +350,13 @@
             this.txtPiezas.Decimales = 0;
             this.txtPiezas.EstiloTexto = SC_ControlsCS.EstiloCaptura.Numerico;
             this.txtPiezas.ForeColor = System.Drawing.Color.Black;
-            this.txtPiezas.Location = new System.Drawing.Point(101, 118);
+            this.txtPiezas.Location = new System.Drawing.Point(135, 145);
+            this.txtPiezas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPiezas.MaxLength = 10;
             this.txtPiezas.Name = "txtPiezas";
             this.txtPiezas.PermitirApostrofo = false;
             this.txtPiezas.PermitirNegativos = false;
-            this.txtPiezas.Size = new System.Drawing.Size(174, 20);
+            this.txtPiezas.Size = new System.Drawing.Size(231, 22);
             this.txtPiezas.TabIndex = 5;
             this.txtPiezas.Text = "0";
             this.txtPiezas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -370,59 +368,62 @@
             this.txtClaveLote.Decimales = 2;
             this.txtClaveLote.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtClaveLote.ForeColor = System.Drawing.Color.Black;
-            this.txtClaveLote.Location = new System.Drawing.Point(101, 94);
+            this.txtClaveLote.Location = new System.Drawing.Point(135, 116);
+            this.txtClaveLote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClaveLote.MaxLength = 20;
             this.txtClaveLote.Name = "txtClaveLote";
             this.txtClaveLote.PermitirApostrofo = false;
             this.txtClaveLote.PermitirNegativos = false;
-            this.txtClaveLote.Size = new System.Drawing.Size(176, 20);
+            this.txtClaveLote.Size = new System.Drawing.Size(233, 22);
             this.txtClaveLote.TabIndex = 3;
+            this.txtClaveLote.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(25, 95);
+            this.label6.Location = new System.Drawing.Point(33, 117);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 19);
+            this.label6.Size = new System.Drawing.Size(95, 23);
             this.label6.TabIndex = 20;
-            this.label6.Text = "Clave Lote :";
+            this.label6.Text = "Lote :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblLaboratorio
             // 
-            this.lblLaboratorio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblLaboratorio.Location = new System.Drawing.Point(101, 66);
+            this.lblLaboratorio.Location = new System.Drawing.Point(135, 81);
+            this.lblLaboratorio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLaboratorio.MostrarToolTip = false;
             this.lblLaboratorio.Name = "lblLaboratorio";
-            this.lblLaboratorio.Size = new System.Drawing.Size(431, 23);
+            this.lblLaboratorio.Size = new System.Drawing.Size(575, 28);
             this.lblLaboratorio.TabIndex = 2;
-            this.lblLaboratorio.Text = "scLabelExt1";
             this.lblLaboratorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(25, 68);
+            this.label5.Location = new System.Drawing.Point(33, 84);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 19);
+            this.label5.Size = new System.Drawing.Size(95, 23);
             this.label5.TabIndex = 17;
             this.label5.Text = "Laboratorio :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblProducto
             // 
-            this.lblProducto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblProducto.Location = new System.Drawing.Point(101, 42);
+            this.lblProducto.Location = new System.Drawing.Point(135, 52);
+            this.lblProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProducto.MostrarToolTip = false;
             this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(431, 23);
+            this.lblProducto.Size = new System.Drawing.Size(575, 28);
             this.lblProducto.TabIndex = 1;
-            this.lblProducto.Text = "scLabelExt1";
             this.lblProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(25, 20);
+            this.label4.Location = new System.Drawing.Point(33, 25);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 19);
+            this.label4.Size = new System.Drawing.Size(95, 23);
             this.label4.TabIndex = 15;
             this.label4.Text = "Codigo EAN :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -433,12 +434,13 @@
             this.txtCodigoEAN.Decimales = 2;
             this.txtCodigoEAN.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtCodigoEAN.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoEAN.Location = new System.Drawing.Point(15, 28);
+            this.txtCodigoEAN.Location = new System.Drawing.Point(20, 34);
+            this.txtCodigoEAN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigoEAN.MaxLength = 20;
             this.txtCodigoEAN.Name = "txtCodigoEAN";
             this.txtCodigoEAN.PermitirApostrofo = false;
             this.txtCodigoEAN.PermitirNegativos = false;
-            this.txtCodigoEAN.Size = new System.Drawing.Size(188, 20);
+            this.txtCodigoEAN.Size = new System.Drawing.Size(249, 22);
             this.txtCodigoEAN.TabIndex = 1;
             this.txtCodigoEAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCodigoEAN.TextChanged += new System.EventHandler(this.txtCodigoEAN_TextChanged);
@@ -449,9 +451,11 @@
             // 
             this.FrameCopias.Controls.Add(this.FrameDatos);
             this.FrameCopias.Controls.Add(this.FrameUbicacion);
-            this.FrameCopias.Location = new System.Drawing.Point(141, 138);
+            this.FrameCopias.Location = new System.Drawing.Point(188, 170);
+            this.FrameCopias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameCopias.Name = "FrameCopias";
-            this.FrameCopias.Size = new System.Drawing.Size(687, 179);
+            this.FrameCopias.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameCopias.Size = new System.Drawing.Size(916, 220);
             this.FrameCopias.TabIndex = 3;
             this.FrameCopias.TabStop = false;
             this.FrameCopias.Text = "Etiquetas a Imprimir";
@@ -460,9 +464,10 @@
             // lblCopias
             // 
             this.lblCopias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCopias.Location = new System.Drawing.Point(1018, 3);
+            this.lblCopias.Location = new System.Drawing.Point(1294, 19);
+            this.lblCopias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCopias.Name = "lblCopias";
-            this.lblCopias.Size = new System.Drawing.Size(62, 20);
+            this.lblCopias.Size = new System.Drawing.Size(83, 25);
             this.lblCopias.TabIndex = 5;
             this.lblCopias.Text = "Copias :";
             this.lblCopias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -470,7 +475,8 @@
             // nmCopias
             // 
             this.nmCopias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nmCopias.Location = new System.Drawing.Point(1080, 3);
+            this.nmCopias.Location = new System.Drawing.Point(1377, 19);
+            this.nmCopias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nmCopias.Maximum = new decimal(new int[] {
             10,
             0,
@@ -482,7 +488,7 @@
             0,
             0});
             this.nmCopias.Name = "nmCopias";
-            this.nmCopias.Size = new System.Drawing.Size(85, 20);
+            this.nmCopias.Size = new System.Drawing.Size(113, 22);
             this.nmCopias.TabIndex = 5;
             this.nmCopias.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nmCopias.Value = new decimal(new int[] {
@@ -498,9 +504,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameUbicaciones.Controls.Add(this.FrameCopias);
             this.FrameUbicaciones.Controls.Add(this.grdProductos);
-            this.FrameUbicaciones.Location = new System.Drawing.Point(8, 84);
+            this.FrameUbicaciones.Location = new System.Drawing.Point(11, 128);
+            this.FrameUbicaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameUbicaciones.Name = "FrameUbicaciones";
-            this.FrameUbicaciones.Size = new System.Drawing.Size(1167, 422);
+            this.FrameUbicaciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameUbicaciones.Size = new System.Drawing.Size(1556, 488);
             this.FrameUbicaciones.TabIndex = 4;
             this.FrameUbicaciones.TabStop = false;
             this.FrameUbicaciones.Text = "Ubicaciones de Producto";
@@ -512,13 +520,45 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdProductos.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.grdProductos.Location = new System.Drawing.Point(14, 19);
+            this.grdProductos.HorizontalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdProductos.HorizontalScrollBar.Name = "";
+            enhancedScrollBarRenderer3.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer3;
+            this.grdProductos.HorizontalScrollBar.TabIndex = 2;
+            this.grdProductos.Location = new System.Drawing.Point(19, 23);
+            this.grdProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdProductos.Name = "grdProductos";
             this.grdProductos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdProductos.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
             this.sheetView1});
-            this.grdProductos.Size = new System.Drawing.Size(1143, 396);
+            this.grdProductos.Size = new System.Drawing.Size(1523, 455);
+            this.grdProductos.Skin = FarPoint.Win.Spread.DefaultSpreadSkins.Seashell;
             this.grdProductos.TabIndex = 4;
+            this.grdProductos.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdProductos.VerticalScrollBar.Name = "";
+            enhancedScrollBarRenderer4.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.VerticalScrollBar.Renderer = enhancedScrollBarRenderer4;
+            this.grdProductos.VerticalScrollBar.TabIndex = 3;
             // 
             // sheetView1
             // 
@@ -540,11 +580,12 @@
             this.sheetView1.ColumnHeader.Cells.Get(0, 5).Value = "Producto";
             this.sheetView1.ColumnHeader.Cells.Get(0, 6).Value = "IdLaboratorio";
             this.sheetView1.ColumnHeader.Cells.Get(0, 7).Value = "Laboratorio";
-            this.sheetView1.ColumnHeader.Cells.Get(0, 8).Value = "Sub-Farmacia";
+            this.sheetView1.ColumnHeader.Cells.Get(0, 8).Value = "Fuente Fin.";
             this.sheetView1.ColumnHeader.Cells.Get(0, 9).Value = "Lote";
             this.sheetView1.ColumnHeader.Cells.Get(0, 10).Value = "Caducidad";
             this.sheetView1.ColumnHeader.Cells.Get(0, 11).Value = "Existencia";
             this.sheetView1.ColumnHeader.Cells.Get(0, 12).Value = "Etiquetar";
+            this.sheetView1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.sheetView1.ColumnHeader.Rows.Get(0).Height = 39F;
             this.sheetView1.Columns.Get(0).CellType = textCellType11;
             this.sheetView1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
@@ -596,10 +637,10 @@
             this.sheetView1.Columns.Get(7).Width = 120F;
             this.sheetView1.Columns.Get(8).CellType = textCellType18;
             this.sheetView1.Columns.Get(8).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
-            this.sheetView1.Columns.Get(8).Label = "Sub-Farmacia";
+            this.sheetView1.Columns.Get(8).Label = "Fuente Fin.";
             this.sheetView1.Columns.Get(8).Locked = true;
             this.sheetView1.Columns.Get(8).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
-            this.sheetView1.Columns.Get(8).Width = 80F;
+            this.sheetView1.Columns.Get(8).Width = 90F;
             this.sheetView1.Columns.Get(9).CellType = textCellType19;
             this.sheetView1.Columns.Get(9).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
             this.sheetView1.Columns.Get(9).Label = "Lote";
@@ -629,6 +670,8 @@
             this.sheetView1.Columns.Get(12).Label = "Etiquetar";
             this.sheetView1.Columns.Get(12).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.sheetView1.RowHeader.Columns.Default.Resizable = true;
+            this.sheetView1.RowHeader.DefaultStyle.Parent = "RowHeaderSeashell";
+            this.sheetView1.SheetCornerStyle.Parent = "CornerSeashell";
             this.sheetView1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1;
             // 
             // grdProductos_Sheet1
@@ -646,9 +689,11 @@
             this.FrameLocalizaciones.Controls.Add(this.cboEstantes);
             this.FrameLocalizaciones.Controls.Add(this.label11);
             this.FrameLocalizaciones.Controls.Add(this.label12);
-            this.FrameLocalizaciones.Location = new System.Drawing.Point(199, 29);
+            this.FrameLocalizaciones.Location = new System.Drawing.Point(265, 61);
+            this.FrameLocalizaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameLocalizaciones.Name = "FrameLocalizaciones";
-            this.FrameLocalizaciones.Size = new System.Drawing.Size(753, 54);
+            this.FrameLocalizaciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameLocalizaciones.Size = new System.Drawing.Size(1004, 66);
             this.FrameLocalizaciones.TabIndex = 2;
             this.FrameLocalizaciones.TabStop = false;
             this.FrameLocalizaciones.Text = "Ubicación";
@@ -662,19 +707,21 @@
             this.cboPasillos.Filtro = " 1 = 1";
             this.cboPasillos.FormattingEnabled = true;
             this.cboPasillos.ListaItemsBusqueda = 20;
-            this.cboPasillos.Location = new System.Drawing.Point(62, 19);
+            this.cboPasillos.Location = new System.Drawing.Point(83, 23);
+            this.cboPasillos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboPasillos.MostrarToolTip = false;
             this.cboPasillos.Name = "cboPasillos";
-            this.cboPasillos.Size = new System.Drawing.Size(170, 21);
+            this.cboPasillos.Size = new System.Drawing.Size(225, 24);
             this.cboPasillos.TabIndex = 0;
             this.cboPasillos.SelectedIndexChanged += new System.EventHandler(this.cboPasillos_SelectedIndexChanged);
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.Location = new System.Drawing.Point(14, 21);
+            this.label10.Location = new System.Drawing.Point(19, 26);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 16);
+            this.label10.Size = new System.Drawing.Size(61, 20);
             this.label10.TabIndex = 48;
             this.label10.Text = "Rack :";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -688,10 +735,11 @@
             this.cboEntrepanos.Filtro = " 1 = 1";
             this.cboEntrepanos.FormattingEnabled = true;
             this.cboEntrepanos.ListaItemsBusqueda = 20;
-            this.cboEntrepanos.Location = new System.Drawing.Point(569, 19);
+            this.cboEntrepanos.Location = new System.Drawing.Point(759, 23);
+            this.cboEntrepanos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboEntrepanos.MostrarToolTip = false;
             this.cboEntrepanos.Name = "cboEntrepanos";
-            this.cboEntrepanos.Size = new System.Drawing.Size(170, 21);
+            this.cboEntrepanos.Size = new System.Drawing.Size(225, 24);
             this.cboEntrepanos.TabIndex = 2;
             this.cboEntrepanos.SelectedIndexChanged += new System.EventHandler(this.cboEntrepanos_SelectedIndexChanged);
             // 
@@ -704,19 +752,21 @@
             this.cboEstantes.Filtro = " 1 = 1";
             this.cboEstantes.FormattingEnabled = true;
             this.cboEstantes.ListaItemsBusqueda = 20;
-            this.cboEstantes.Location = new System.Drawing.Point(304, 19);
+            this.cboEstantes.Location = new System.Drawing.Point(405, 23);
+            this.cboEstantes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboEstantes.MostrarToolTip = false;
             this.cboEstantes.Name = "cboEstantes";
-            this.cboEstantes.Size = new System.Drawing.Size(170, 21);
+            this.cboEstantes.Size = new System.Drawing.Size(225, 24);
             this.cboEstantes.TabIndex = 1;
             this.cboEstantes.SelectedIndexChanged += new System.EventHandler(this.cboEstantes_SelectedIndexChanged);
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label11.Location = new System.Drawing.Point(239, 21);
+            this.label11.Location = new System.Drawing.Point(319, 26);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 16);
+            this.label11.Size = new System.Drawing.Size(85, 20);
             this.label11.TabIndex = 43;
             this.label11.Text = "Nivel :";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -724,11 +774,12 @@
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label12.Location = new System.Drawing.Point(503, 21);
+            this.label12.Location = new System.Drawing.Point(671, 26);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 16);
+            this.label12.Size = new System.Drawing.Size(85, 20);
             this.label12.TabIndex = 45;
-            this.label12.Text = "Entrepaño :";
+            this.label12.Text = "Posición :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FrameCodigoEAN
@@ -736,9 +787,11 @@
             this.FrameCodigoEAN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameCodigoEAN.Controls.Add(this.chkMultiplesDatos);
             this.FrameCodigoEAN.Controls.Add(this.txtCodigoEAN);
-            this.FrameCodigoEAN.Location = new System.Drawing.Point(958, 29);
+            this.FrameCodigoEAN.Location = new System.Drawing.Point(1277, 61);
+            this.FrameCodigoEAN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameCodigoEAN.Name = "FrameCodigoEAN";
-            this.FrameCodigoEAN.Size = new System.Drawing.Size(214, 54);
+            this.FrameCodigoEAN.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameCodigoEAN.Size = new System.Drawing.Size(285, 66);
             this.FrameCodigoEAN.TabIndex = 3;
             this.FrameCodigoEAN.TabStop = false;
             this.FrameCodigoEAN.Text = "Código EAN";
@@ -746,9 +799,10 @@
             // chkMultiplesDatos
             // 
             this.chkMultiplesDatos.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkMultiplesDatos.Location = new System.Drawing.Point(87, 8);
+            this.chkMultiplesDatos.Location = new System.Drawing.Point(116, 10);
+            this.chkMultiplesDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkMultiplesDatos.Name = "chkMultiplesDatos";
-            this.chkMultiplesDatos.Size = new System.Drawing.Size(116, 17);
+            this.chkMultiplesDatos.Size = new System.Drawing.Size(155, 21);
             this.chkMultiplesDatos.TabIndex = 0;
             this.chkMultiplesDatos.Text = "Etiquetado Múltiple";
             this.chkMultiplesDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -758,9 +812,11 @@
             // FrameFolioEtiqueta
             // 
             this.FrameFolioEtiqueta.Controls.Add(this.txtFolioEtiqueta);
-            this.FrameFolioEtiqueta.Location = new System.Drawing.Point(8, 28);
+            this.FrameFolioEtiqueta.Location = new System.Drawing.Point(11, 59);
+            this.FrameFolioEtiqueta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameFolioEtiqueta.Name = "FrameFolioEtiqueta";
-            this.FrameFolioEtiqueta.Size = new System.Drawing.Size(185, 55);
+            this.FrameFolioEtiqueta.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameFolioEtiqueta.Size = new System.Drawing.Size(247, 68);
             this.FrameFolioEtiqueta.TabIndex = 1;
             this.FrameFolioEtiqueta.TabStop = false;
             this.FrameFolioEtiqueta.Text = "Folio de etiqueta";
@@ -771,30 +827,50 @@
             this.txtFolioEtiqueta.Decimales = 2;
             this.txtFolioEtiqueta.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtFolioEtiqueta.ForeColor = System.Drawing.Color.Black;
-            this.txtFolioEtiqueta.Location = new System.Drawing.Point(14, 22);
+            this.txtFolioEtiqueta.Location = new System.Drawing.Point(19, 27);
+            this.txtFolioEtiqueta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFolioEtiqueta.MaxLength = 8;
             this.txtFolioEtiqueta.Name = "txtFolioEtiqueta";
             this.txtFolioEtiqueta.PermitirApostrofo = false;
             this.txtFolioEtiqueta.PermitirNegativos = false;
-            this.txtFolioEtiqueta.Size = new System.Drawing.Size(155, 20);
+            this.txtFolioEtiqueta.Size = new System.Drawing.Size(205, 22);
             this.txtFolioEtiqueta.TabIndex = 0;
             this.txtFolioEtiqueta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtFolioEtiqueta.Validating += new System.ComponentModel.CancelEventHandler(this.txtFolioEtiqueta_Validating);
             // 
             // chkMostrarImpresionEnPantalla
             // 
-            this.chkMostrarImpresionEnPantalla.Location = new System.Drawing.Point(158, 6);
+            this.chkMostrarImpresionEnPantalla.Location = new System.Drawing.Point(477, 19);
+            this.chkMostrarImpresionEnPantalla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkMostrarImpresionEnPantalla.Name = "chkMostrarImpresionEnPantalla";
-            this.chkMostrarImpresionEnPantalla.Size = new System.Drawing.Size(124, 17);
+            this.chkMostrarImpresionEnPantalla.Size = new System.Drawing.Size(165, 21);
             this.chkMostrarImpresionEnPantalla.TabIndex = 48;
             this.chkMostrarImpresionEnPantalla.Text = "Mostrar vista previa";
             this.chkMostrarImpresionEnPantalla.UseVisualStyleBackColor = true;
             // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.AutoSize = false;
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(12, 4);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.AutoSize = false;
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(12, 4);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.AutoSize = false;
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(12, 4);
+            // 
             // FrmET_Tarima
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 511);
+            this.ClientSize = new System.Drawing.Size(1579, 629);
             this.Controls.Add(this.chkMostrarImpresionEnPantalla);
             this.Controls.Add(this.FrameFolioEtiqueta);
             this.Controls.Add(this.FrameCodigoEAN);
@@ -803,8 +879,10 @@
             this.Controls.Add(this.FrameLocalizaciones);
             this.Controls.Add(this.nmCopias);
             this.Controls.Add(this.toolStripBarraMenu);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmET_Tarima";
-            this.Text = "Generar Etiqueta Tarima";
+            this.ShowIcon = false;
+            this.Text = "Etiqueta Tarima";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmET_Tarima_Load);
             this.toolStripBarraMenu.ResumeLayout(false);
@@ -825,7 +903,6 @@
             this.FrameFolioEtiqueta.ResumeLayout(false);
             this.FrameFolioEtiqueta.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -835,7 +912,6 @@
         private System.Windows.Forms.ToolStripButton btnNuevo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripButton btnGenerarEtiqueta;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.GroupBox FrameUbicacion;
         private System.Windows.Forms.GroupBox FrameDatos;
         private System.Windows.Forms.Label label1;
@@ -857,8 +933,6 @@
         private System.Windows.Forms.DateTimePicker dtpFechaCaducidad;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripButton btnReader;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btnImprimir;
         private System.Windows.Forms.GroupBox FrameCopias;
         private System.Windows.Forms.NumericUpDown nmCopias;
@@ -874,12 +948,14 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox FrameCodigoEAN;
         private System.Windows.Forms.ToolStripButton btnEjecutar;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private FarPoint.Win.Spread.FpSpread grdProductos;
         private FarPoint.Win.Spread.SheetView sheetView1;
         private System.Windows.Forms.CheckBox chkMultiplesDatos;
         private System.Windows.Forms.GroupBox FrameFolioEtiqueta;
         private SC_ControlsCS.scTextBoxExt txtFolioEtiqueta;
         private System.Windows.Forms.CheckBox chkMostrarImpresionEnPantalla;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
     }
 }

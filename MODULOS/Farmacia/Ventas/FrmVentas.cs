@@ -162,8 +162,10 @@ namespace Farmacia.Ventas
         string sNumReceta = "", sFolioEDM;
 
         #region Vales 
-        bool bEsIdProducto_Ctrl = false; 
+        bool bEsIdProducto_Ctrl = false;
         #endregion Vales
+
+        bool bEsNuevoId = false;
 
         #endregion variables
 
@@ -214,7 +216,9 @@ namespace Farmacia.Ventas
             btnInformacionAIE.Visible = btnInformacionAIE.Enabled;
             toolStripSeparator_06.Visible = btnInformacionAIE.Enabled;
 
-            chk_RPT_EtiquetasCajas.BackColor = Color.Transparent; 
+            chk_RPT_EtiquetasCajas.BackColor = Color.Transparent;
+
+            CargarEsNuevoId();
         }
 
         public void VentaEDM(string NumReceta, string FolioEDM)
@@ -331,12 +335,14 @@ namespace Farmacia.Ventas
             sFarmacia = DtGeneral.FarmaciaConectada;
 
             // Determinar si se muestra la Captura de Claves Solicitadas 
-            lblMensajes.Text = "( F5 ) Información Beneficiario Visualizar                                                                                       ( F7 ) Lotes. Visualizar";
+            lblMensajes.Text = "( F5 ) Datos Adicionales | Visualizar                                      ( F7 ) LOTES | Visualizar.";
             //if (GnFarmacia.CapturaDeClavesSolicitadasHabilitada)
             if(bCapturaDeClavesSolicitadasHabilitada)
             {
-                lblMensajes.Text = "( F5 ) Información Beneficiario Visualizar          ( F9 ) Captura Claves Solicitadas Visualizar            ( F7 ) Lotes. Visualizar";
-                lblMensajes.Text = "( F5 ) Información Beneficiario Visualizar                      ( F9 ) Captura Claves Solicitadas Visualizar                          ( F7 ) Lotes. Visualizar "; 
+                //lblMensajes.Text = "( F5 ) Información Beneficiario Visualizar          ( F9 ) Captura Claves Solicitadas Visualizar            ( F7 ) Lotes. Visualizar";
+                //lblMensajes.Text = "( F5 ) Información Beneficiario Visualizar          ( F9 ) Captura Claves Solicitadas Visualizar            ( F7 ) Lotes. Visualizar";
+                lblMensajes.Text = "( F5 ) Datos Adicionales | Visualizar                      ( F7 ) LOTES | Visualizar.";
+                lblMensajes.Text = "( F5 ) Datos Adicionales | Visualizar                      ( F7 ) LOTES | Visualizar.";
             }
 
             tmSesion.Enabled = true;
@@ -553,6 +559,32 @@ namespace Farmacia.Ventas
         //    }
         //}
 
+        #region CargaParametroNewId
+        private void CargarEsNuevoId()
+        {
+            string sSql = "";
+
+            bEsNuevoId = false;
+
+            sSql = string.Format(" SELECT * FROM Net_CFGC_Parametros (NOLOCK) \n" +
+                                " WHERE IdEstado = '{0}' AND IdFarmacia = '{1}' AND ArbolModulo = 'PFAR' AND NombreParametro = 'EsNuevoId' \n",
+                                DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada);
+
+            if (!leer.Exec(sSql))
+            {
+                Error.GrabarError(leer, "CargarEsNuevoId()");
+                General.msjError("Error al consultar Parametro.");
+            }
+            else
+            {
+                if (leer.Leer())
+                {
+                    bEsNuevoId = leer.CampoBool("Valor");
+                }
+            }
+        }
+        #endregion CargaParametroNewId
+
         #region Botones 
         private void IniciarToolBar()
         {
@@ -617,6 +649,12 @@ namespace Farmacia.Ventas
             toolTip.SetToolTip(lblPro, "");
             toolTip.SetToolTip(lblSubPro, "");
 
+            lblCte.Text = "";
+            lblSubCte.Text = "";
+            lblPro.Text = "";
+            lblSubPro.Text = "";
+
+
             bEsSeguroPopular = false; 
             bFolioGuardado = false;
             Fg.IniciaControles(this, true);
@@ -676,7 +714,7 @@ namespace Farmacia.Ventas
                 chkTipoImpresion.Visible = true;
                 chkTipoImpresion.Checked = true;
                 chkMostrarImpresionEnPantalla.Checked = true;
-                chkMostrarPrecios.Visible = true; 
+                //chkMostrarPrecios.Visible = true; 
             }
 
 
@@ -1455,37 +1493,61 @@ namespace Farmacia.Ventas
         {
             bool bContinua = false;
 
-            sFolioVenta = Fg.PonCeros(txtFolio.Text, 8); 
-            VtasImprimir.MostrarVistaPrevia = chkMostrarImpresionEnPantalla.Checked;
-            VtasImprimir.NumeroDeCopias = iNumeroDeCopias; 
-            //VtasImprimir.MostrarImpresionDetalle = GnFarmacia.ImpresionDetalladaTicket; 
+            sFolioVenta = Fg.PonCeros(txtFolio.Text, 8);
+            //VtasImprimir.MostrarVistaPrevia = false;//chkMostrarImpresionEnPantalla.Checked;
+            //VtasImprimir.NumeroDeCopias = iNumeroDeCopias; 
+            ////VtasImprimir.MostrarImpresionDetalle = GnFarmacia.ImpresionDetalladaTicket; 
 
-            if (DtGeneral.EsAlmacen)
-            {
-                VtasImprimir.MostrarImpresionDetalle = chkTipoImpresion.Checked;
-                VtasImprimir.MostrarPrecios = chkMostrarPrecios.Checked; 
-            }
+            //if (DtGeneral.EsAlmacen)
+            //{
+            //    VtasImprimir.MostrarImpresionDetalle = chkTipoImpresion.Checked;
+            //    VtasImprimir.MostrarPrecios = chkMostrarPrecios.Checked; 
+            //}
 
-            if (VtasImprimir.Imprimir(sFolioVenta, "", 0.0000, chkDesglosado.Checked))
-            {
-                bContinua = true;
-                if (bGeneroVale)
-                {
-                    bContinua = VtasImprimir.ImprimirVale(sFolioVale); 
-                }
+            //if (VtasImprimir.Imprimir(sFolioVenta, "", 0.0000, true))////chkDesglosado.Checked))
+            //{
+            //    bContinua = true;
+            //    ////if (bGeneroVale)
+            //    ////{
+            //    ////    bContinua = VtasImprimir.ImprimirVale(sFolioVale); 
+            //    ////}
+            //}
+
+            DatosCliente.Funcion = "ImprimirInformacion()";
+            clsImprimir myRpt = new clsImprimir(General.DatosConexion);
+            // byte[] btReporte = null;
+
+            myRpt.RutaReporte = GnFarmacia.RutaReportes;
+
+            if(DtGeneral.EsAlmacen) 
+            { 
+                myRpt.NombreReporte = "PtoVta_TicketCredito_Detallado.rpt"; 
             }
+            else
+            {
+                myRpt.NombreReporte = "PtoVta_TicketCredito.rpt";
+            }
+            
+            myRpt.TituloReporte = "Informe Dispersion de Insumos";
+
+            myRpt.Add("IdEmpresa", sEmpresa);
+            myRpt.Add("IdEstado", sEstado);
+            myRpt.Add("IdFarmacia", sFarmacia);
+            myRpt.Add("Folio", sFolioVenta);
+
+            bContinua = DtGeneral.GenerarReporte(General.Url, General.ImpresionViaWeb, myRpt, DatosCliente);
 
             if (bContinua)
             {
-                if (chk_RPT_Cajas.Checked)
-                {
-                    ImprimirRptCajas();
-                }
+                ////if (chk_RPT_Cajas.Checked)
+                ////{
+                ////    ImprimirRptCajas();
+                ////}
 
-                if (chk_RPT_EtiquetasCajas.Checked && sFolioSurtido != "")
-                {
-                    ImprimirEtiquetas_Pedido(); 
-                }
+                ////if (chk_RPT_EtiquetasCajas.Checked && sFolioSurtido != "")
+                ////{
+                ////    ImprimirEtiquetas_Pedido(); 
+                ////}
 
                 if(!bEsSurtimientoPedido)
                 {
@@ -1536,7 +1598,16 @@ namespace Farmacia.Ventas
                 IniciarToolBar(true, false, false);
                 txtFolio.Text = "*";
                 txtFolio.Enabled = false;
-                txtCte.Focus();
+
+                if(bEsNuevoId)
+                {
+                    //Cargar datos Cte, SubCte, Pro, SubPro
+                    CargarDatosDispersion();
+                }
+                else
+                {
+                    txtCte.Focus();
+                }                
             }
             else
             {
@@ -1593,12 +1664,59 @@ namespace Farmacia.Ventas
 
                         if (DtGeneral.EsAlmacen)
                         {
-                            ActivarRptCaja();
+                            //ActivarRptCaja();
                         }
                     }
                 }
             }
         }
+
+        #region CargaCte_SubCte_ProSub_Pro
+        private void CargarDatosDispersion()
+        {
+            string sSql = "", sCliente = "", sSubCliente = "", sPrograma = "", sSubPrograma = "";
+
+            bool bRead = false;
+
+            sSql = string.Format(" SELECT SUBSTRING(Valor, 1, 4) AS Cliente, SUBSTRING(Valor, 5, 4) AS SubCliente, \n" +
+                                " SUBSTRING(Valor, 9, 4) AS Programa, SUBSTRING(Valor, 13, 4) AS SubPrograma \n" +
+                                " FROM Net_CFGC_Parametros (NOLOCK) \n" +
+                                " WHERE IdEstado = '{0}' AND IdFarmacia = '{1}' AND ArbolModulo = 'PFAR' AND NombreParametro = 'DatosDispersion' \n",
+                                DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada);
+
+            if (!leer2.Exec(sSql))
+            {
+                Error.GrabarError(leer2, "CargarDatosDispersion()");
+                General.msjError("Error al consultar Parametro Dispersión.");
+            }
+            else
+            {
+                if (leer2.Leer())
+                {
+                    bRead = true;
+                    sCliente = leer2.Campo("Cliente");
+                    sSubCliente = leer2.Campo("SubCliente");
+                    sPrograma = leer2.Campo("Programa");
+                    sSubPrograma = leer2.Campo("SubPrograma");
+                }
+            }
+
+            if(bRead)
+            {
+                txtCte.Text = sCliente;
+                txtCte_Validating(null, null);
+
+                txtSubCte.Text = sSubCliente;
+                txtSubCte_Validating(null , null);
+
+                txtPro.Text = sPrograma;
+                txtPro_Validating(null , null);
+
+                txtSubPro.Text = sSubPrograma;
+                txtSubPro_Validating(null, null);
+            }
+        }
+        #endregion CargaCte_SubCte_ProSub_Pro
 
         private void txtCte_Validating(object sender, CancelEventArgs e)
         {

@@ -186,8 +186,8 @@ namespace DllFarmaciaSoft.ReportesOperacion
                 sSelect = "FolioTransferenciaRef As 'Folio origen', ";
             }
 
-            sWhere = string.Format(" T.Status <> 'C' And TipoTransferencia = '{0}' And Convert(Varchar(10), T.FechaRegistro, 120) between '{1}' And '{2}'",
-                        sEntradaSalida, dtpFechaInicial.Text, dtpFechaFinal.Text);
+            sWhere = string.Format(" T.Status <> 'C' And TipoTransferencia = '{0}' And Convert(Varchar(10), T.FechaRegistro, 120) between '{1}' And '{2}' AND T.IdEstado = '{3}' AND T.IdFarmacia = '{4}' ",
+                        sEntradaSalida, dtpFechaInicial.Text, dtpFechaFinal.Text, DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada);
 
             if (cboJurisdicciones.Data != "*")
             {
@@ -297,8 +297,8 @@ namespace DllFarmaciaSoft.ReportesOperacion
             int EsNoSurtido = rdoNoSurtido.Checked ? 1:0;
 
             string sSql = string.Format("Exec spp_Rpt_OP_Transferencias \n"+
-                "\t@sEntradaSalida = '{0}', @FechaIncial = '{1}', @FechaFinal = '{2}', @IdJurisdiccion = '{3}', @IdFarmacia = '{4}', @EsNoSurtido = '{5}' \n",
-                sEntradaSalida, dtpFechaInicial.Text,dtpFechaFinal.Text, cboJurisdicciones.Data, cboFarmacias.Data, EsNoSurtido);
+                "\t@sEntradaSalida = '{0}', @FechaIncial = '{1}', @FechaFinal = '{2}', @IdJurisdiccion = '{3}', @IdFarmaciaRecibe = '{4}', @EsNoSurtido = '{5}', @IdEstado = '{6}', @IdFarmacia = '{7}'  \n",
+                sEntradaSalida, dtpFechaInicial.Text,dtpFechaFinal.Text, cboJurisdicciones.Data, cboFarmacias.Data, EsNoSurtido, DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada);
 
             if (!leer.Exec(sSql)) 
             {

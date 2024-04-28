@@ -32,6 +32,7 @@ namespace Farmacia.Inventario
         #region variables 
         clsConexionSQL cnn = new clsConexionSQL(General.DatosConexion);
         clsLeer leer;
+        clsLeer leer2;
         clsGrid myGrid;
         clsCodigoEAN EAN = new clsCodigoEAN();
         // string sMsjEanInvalido = "";
@@ -65,6 +66,13 @@ namespace Farmacia.Inventario
         clsLotes Lotes; // = new clsLotes(DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, GnFarmacia.MesesCaducaMedicamento);
         clsSKU SKU; // = new clsSKU(); 
 
+        #region Variables SKU
+        string sIdLicitacion = "";
+        string sIdFuente = "";
+        string sOrden = "OC1";
+        string sFolioPresup = "F1";
+        #endregion Variables SKU
+
         #endregion variables
 
         public FrmInventarioInicial()
@@ -87,6 +95,7 @@ namespace Farmacia.Inventario
             myGrid.AjustarAnchoColumnasAutomatico = true; 
 
             leer = new clsLeer(ref cnn);
+            leer2 = new clsLeer(ref cnn);
             query = new clsConsultas(General.DatosConexion, GnFarmacia.Modulo, this.Name, GnFarmacia.Version, true);
             ayuda = new clsAyudas(General.DatosConexion, GnFarmacia.Modulo, this.Name, GnFarmacia.Version, true);
 
@@ -182,6 +191,56 @@ namespace Farmacia.Inventario
         }
         #endregion Redimensionar Form 
 
+        #region CargaDatosSKU
+        private void CargaFuente()
+        {
+            leer2 = new clsLeer(ref cnn);
+            string sSql = "";
+            string sFiltroConsignacion = "";
+            string sFiltroSubFarmacia = "";
+            string sIdEstado = DtGeneral.EstadoConectado;
+            string sIdFarmacia = DtGeneral.FarmaciaConectada;
+           
+            sFiltroConsignacion = " and EsConsignacion = 0 AND SubFarmacia = 'DISPERSION' ";
+            sFiltroConsignacion += " and EmulaVenta = 0 ";
+
+            sSql = string.Format("Select IdEstado, IdFarmacia, IdSubFarmacia, SubFarmacia, EsConsignacion, EmulaVenta " +
+                    " From vw_Farmacias_SubFarmacias (NoLock) " +
+                    " Where IdEstado = '{0}' and IdFarmacia = '{1}' {2} {3} ",
+                    sIdEstado, sIdFarmacia, sFiltroConsignacion, sFiltroSubFarmacia);
+
+
+            if (leer2.Exec(sSql))
+            {
+                if(leer2.Leer())
+                {
+                    sIdFuente = leer2.Campo("IdSubFarmacia");
+                }                
+            }            
+        }
+
+        private void CargaLicitacion()
+        {
+            leer2 = new clsLeer(ref cnn);
+            string sSql = "";
+            string sIdEstado = DtGeneral.EstadoConectado;
+            
+
+            sSql = string.Format("SELECT IdEstado, IdLicitacion " +
+                    " FROM Ctrl_Licitaciones (NoLock) " +
+                    " Where IdEstado = '{0}' AND Status = 'A' ", sIdEstado);
+
+
+            if (leer2.Exec(sSql))
+            {
+                if (leer2.Leer())
+                {
+                    sIdLicitacion = leer2.Campo("IdLicitacion");
+                }
+            }
+        }
+        #endregion CargaDatosSKU
+
         #region Botones
         private void LimpiarPantalla(bool Confirmar)
         {
@@ -200,7 +259,7 @@ namespace Farmacia.Inventario
                 // Inicializar el manejo de Lotes 
                 Lotes = new clsLotes(DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, GnFarmacia.MesesCaducaMedicamento, TiposDeInventario.Venta);
                 Lotes.ManejoLotes = OrigenManejoLotes.Inventarios;
-
+                Lotes.IdSubFarmacia = sIdFuente;
                 SKU = new clsSKU();
                 SKU.IdEmpresa = sEmpresa;
                 SKU.IdEstado = sEstado;
@@ -802,12 +861,14 @@ namespace Farmacia.Inventario
             sSql = string.Format("Exec spp_Mtto_MovtoInv_Enc \n" +  // " '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}' ",
                 "\t@IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @FolioMovtoInv = '{3}', \n" +
                 "\t@IdTipoMovto_Inv = '{4}', @TipoES = '{5}', @Referencia = '{6}', @IdPersonal = '{7}', @Observaciones = '{8}', \n" +
-                "\t@SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}' \n", 
+                "\t@SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}', \n" +
+                " \t@IdLicitacion = '{14}', @Orden = '{15}', @FolioPresup = '{16}', @IdFuente = '{17}' ",
                 sEmpresa, sEstado, sFarmacia, txtFolio.Text, sIdTipoMovtoInv, sTipoES, "", 
                 DtGeneral.IdPersonal, txtObservaciones.Text.Trim(),
                 General.GetFormatoNumerico_Double(txtSubTotal.Text),
                 General.GetFormatoNumerico_Double(txtIva.Text),
-                General.GetFormatoNumerico_Double(txtTotal.Text), 1, SKU.SKU);
+                General.GetFormatoNumerico_Double(txtTotal.Text), 1, SKU.SKU,
+                sIdLicitacion, sOrden, sFolioPresup, sIdFuente);
             if (!leer.Exec(sSql))
             {
                 bRegresa = false;
@@ -1000,6 +1061,8 @@ namespace Farmacia.Inventario
         private void FrmInventarioInicial_Load(object sender, EventArgs e)
         {
             PermiteCaducados(); 
+            CargaLicitacion();
+            CargaFuente();
             LimpiarPantalla(false);
         }
 
@@ -1409,8 +1472,8 @@ namespace Farmacia.Inventario
                     Lotes.TipoCaptura = 1; //Por piezas   // myGrid.GetValueInt(iRow, (int)Cols.TipoCaptura);
 
                     Lotes.PermitirLotesNuevosConsignacion = false;
-                    Lotes.EsConsignacion = false; 
-
+                    Lotes.EsConsignacion = false;
+                    Lotes.IdSubFarmacia = sIdFuente;
                     // Si el movimiento ya fue aplicado no es posible agregar lotes 
                     Lotes.CapturarLotes = chkAplicarInv.Enabled;
                     Lotes.ModificarCantidades = chkAplicarInv.Enabled;

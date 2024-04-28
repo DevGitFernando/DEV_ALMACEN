@@ -756,6 +756,8 @@ namespace DllFarmaciaSoft.Lotes
 
             f.sPosicionEstandar = sPosicionEstandar;
 
+            f.sIdFuenteFin = this.IdSubFarmacia;
+
             f.ShowDialog(); 
             this.iCantidad = f.iTotalCantidad;
             this.IntegrarInformacion(f.dtsLotes);

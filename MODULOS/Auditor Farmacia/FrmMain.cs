@@ -109,32 +109,46 @@ namespace AuditorFarmacia
             Login = new DllFarmaciaSoft.Usuarios_y_Permisos.clsEdoLogin("SELECT * FROM ctl_Sucursales (nolock)", "Sucursales");
             Login.Arbol = "AFAR";
 
-            BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + datosDeModulo.Version;
+            ////BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + datosDeModulo.Version;
             if (Login.AutenticarUsuario()) 
             {
                 //BarraDeStatus.Panels[lblModulo.Name].Text = "Modulo : " + Application.ProductName + " " + Application.ProductVersion;
-                BarraDeStatus.Panels[lblFarmacia.Name].Text = "Estado : " + DtGeneral.EstadoConectado + " -- " + DtGeneral.EstadoConectadoNombre + "      " + " Farmacia : " + DtGeneral.FarmaciaConectada + " -- " + DtGeneral.FarmaciaConectadaNombre;
-                BarraDeStatus.Panels[lblServidor.Name].Text = "Servidor : " + General.DatosConexion.Servidor;
-                BarraDeStatus.Panels[lblBaseDeDatos.Name].Text = "Base de Datos : " + General.DatosConexion.BaseDeDatos;
-                BarraDeStatus.Panels[lblUsuarioConectado.Name].Text = "Usuario : " + DtGeneral.NombrePersonal; 
+                ////BarraDeStatus.Panels[lblFarmacia.Name].Text = "Estado : " + DtGeneral.EstadoConectado + " -- " + DtGeneral.EstadoConectadoNombre + "      " + " Farmacia : " + DtGeneral.FarmaciaConectada + " -- " + DtGeneral.FarmaciaConectadaNombre;
+                ////BarraDeStatus.Panels[lblServidor.Name].Text = "Servidor : " + General.DatosConexion.Servidor;
+                ////BarraDeStatus.Panels[lblBaseDeDatos.Name].Text = "Base de Datos : " + General.DatosConexion.BaseDeDatos;
+                ////BarraDeStatus.Panels[lblUsuarioConectado.Name].Text = "Usuario : " + DtGeneral.NombrePersonal; 
 
 
                 //MessageBox.Show(Login.Sucursal.ToString());
                 bRegresa = true;
-                Navegador = new FrmNavegador();
-                Navegador.MdiParent = this;
-                Navegador.Permisos = Login.Permisos;
-                //Navegador.ListaIconos = imgNavegacion_2;
-                Navegador.ListaIconos = imgNavegacion;
-                Navegador.Posicion = ePosicion.Izquierda;
+                ///FAV_1 INICIO
+                ////Navegador = new FrmNavegador();
+                ////Navegador.MdiParent = this;
+                ////Navegador.Permisos = Login.Permisos;
+                //////Navegador.ListaIconos = imgNavegacion_2;
+                ////Navegador.ListaIconos = imgNavegacion;
+                ////Navegador.Posicion = ePosicion.Izquierda;
+                ////Login = null;
+                ////Navegador.Show();
+                ////Navegador.Activate();
+
+                ////// this.Text = " Módulo " + Navegador.NombreModulo;
+                ////this.Text = " Módulo : " + Navegador.NombreModulo + "         " + DtGeneral.EmpresaConectadaNombre;
+                ///FAV_1 FIN
+                ///
+                //NUEVA FORMA DE MENU FAV
+                General.ArbolDeNavegacion = Login.Permisos;
+                string sTitle = "";
+                sTitle = string.Format("----   " + DtGeneral.FarmaciaConectadaNombre + "   Usuario: " + DtGeneral.NombrePersonal + "   ----   " + "  D. B. : " + General.DatosConexion.BaseDeDatos);
+                this.Text = sTitle;
+
+                clsGenerarMenu menuTool = new clsGenerarMenu(General.ArbolDeNavegacion, menuStrip, this);
+                menuTool.MostrarMenu = true;
+                menuTool.MostrarIconos = false;
+                menuTool.GenerarMenu(btnMenu);
+
                 Login = null;
-                Navegador.Show();
-                Navegador.Activate();
-
-                // this.Text = " Módulo " + Navegador.NombreModulo;
-                this.Text = " Módulo : " + Navegador.NombreModulo + "         " + DtGeneral.EmpresaConectadaNombre;
-
-
+                //NUEVA FORMA DE MENU FAV
                 // Ajustar el Tiempo de Espera para Conexion 
                 General.DatosConexion.ConectionTimeOut = SC_SolutionsSystem.Data.TiempoDeEspera.Limite30;
 

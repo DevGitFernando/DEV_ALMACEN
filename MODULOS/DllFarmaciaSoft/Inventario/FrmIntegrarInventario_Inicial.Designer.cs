@@ -34,11 +34,17 @@
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.btnExportarExcel = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAbrir = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.btnEjecutar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.btnGuardar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.btnValidarDatos = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.btnProcesarRemisiones = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboHojas = new SC_ControlsCS.scComboBoxExt();
@@ -49,12 +55,6 @@
             this.pgBar = new System.Windows.Forms.ProgressBar();
             this.tmValidacion = new System.Windows.Forms.Timer(this.components);
             this.tmPantalla = new System.Windows.Forms.Timer(this.components);
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripBarraMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.FrameResultado.SuspendLayout();
@@ -114,6 +114,12 @@
             this.btnExportarExcel.ToolTipText = "Descargar plantilla";
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
             // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.AutoSize = false;
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(12, 58);
+            // 
             // btnAbrir
             // 
             this.btnAbrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -123,6 +129,12 @@
             this.btnAbrir.Size = new System.Drawing.Size(54, 55);
             this.btnAbrir.Text = "&Abrir";
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.AutoSize = false;
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(12, 58);
             // 
             // btnEjecutar
             // 
@@ -137,6 +149,12 @@
             this.btnEjecutar.Visible = false;
             this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
             // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.AutoSize = false;
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(12, 58);
+            // 
             // btnGuardar
             // 
             this.btnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -146,6 +164,12 @@
             this.btnGuardar.Size = new System.Drawing.Size(54, 55);
             this.btnGuardar.Text = "Cargar inventario";
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.AutoSize = false;
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(12, 58);
             // 
             // btnValidarDatos
             // 
@@ -159,6 +183,12 @@
             this.btnValidarDatos.Visible = false;
             this.btnValidarDatos.Click += new System.EventHandler(this.btnValidarDatos_Click);
             // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.AutoSize = false;
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(12, 58);
+            // 
             // btnProcesarRemisiones
             // 
             this.btnProcesarRemisiones.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -168,6 +198,12 @@
             this.btnProcesarRemisiones.Size = new System.Drawing.Size(54, 55);
             this.btnProcesarRemisiones.Text = "Integrar información";
             this.btnProcesarRemisiones.Click += new System.EventHandler(this.btnProcesarRemisiones_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.AutoSize = false;
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(12, 58);
             // 
             // btnSalir
             // 
@@ -280,42 +316,6 @@
             // tmPantalla
             // 
             this.tmPantalla.Tick += new System.EventHandler(this.tmPantalla_Tick);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.AutoSize = false;
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(12, 58);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.AutoSize = false;
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(12, 58);
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.AutoSize = false;
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(12, 58);
-            // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.AutoSize = false;
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(12, 58);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.AutoSize = false;
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(12, 58);
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.AutoSize = false;
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(12, 58);
             // 
             // FrmIntegrarInventario_Inicial
             // 

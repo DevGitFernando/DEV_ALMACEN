@@ -527,7 +527,8 @@ namespace Almacen.OrdenCompraConsigna
                 // byte[] btReporte = null;
 
                 myRpt.RutaReporte = GnFarmacia.RutaReportes;
-                myRpt.NombreReporte = "PtoVta_Entradas_Consignacion.rpt";
+                myRpt.NombreReporte = "PtoVta_Recepcion_Orden_Compras.rpt";
+                myRpt.TituloReporte = "Informe Recepción Orden Compra";
 
                 myRpt.Add("IdEmpresa", sEmpresa);
                 myRpt.Add("IdEstado", sEstado);
@@ -539,7 +540,7 @@ namespace Almacen.OrdenCompraConsigna
 
                 if (!bRegresa && !DtGeneral.CanceladoPorUsuario)
                 {
-                    General.msjError("Ocurrió un error al cargar el reporte.");
+                    General.msjError("Error al cargar Informe.");
                 }
             }
         }

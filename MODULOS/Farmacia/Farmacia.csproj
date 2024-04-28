@@ -14,7 +14,7 @@
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>capsule.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>Farmacia.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Snk\Farmacia.snk</AssemblyOriginatorKeyFile>
     <StartupObject>
     </StartupObject>
     <SignManifests>false</SignManifests>
@@ -65,8 +65,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup />
   <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
+    <ApplicationManifest>Snk\Farmacia.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
@@ -355,6 +356,12 @@
     </Compile>
     <Compile Include="Inventario\Kardex\FrmMovimientosPorClaveDetalle.Designer.cs">
       <DependentUpon>FrmMovimientosPorClaveDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\MovtosInventario\FrmFoliosInventarioInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\MovtosInventario\FrmFoliosInventarioInicial.Designer.cs">
+      <DependentUpon>FrmFoliosInventarioInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventario\MovtosInventario\FrmInventarioInicialConsignacion_NoEnCatalogo.cs">
       <SubType>Form</SubType>
@@ -756,6 +763,9 @@
     <EmbeddedResource Include="Inventario\Kardex\FrmMovimientosPorClaveDetalle.resx">
       <DependentUpon>FrmMovimientosPorClaveDetalle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\MovtosInventario\FrmFoliosInventarioInicial.resx">
+      <DependentUpon>FrmFoliosInventarioInicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventario\MovtosInventario\FrmInventarioInicialConsignacion.resx">
       <DependentUpon>FrmInventarioInicialConsignacion.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -937,6 +947,9 @@
     <EmbeddedResource Include="Devoluciones_De_Transferencias\FrmDevolucionDeTransferencias_Entrada.resx">
       <DependentUpon>FrmDevolucionDeTransferencias_Entrada.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Transferencias\FrmDevolucionTraspasosSalidas.resx">
+      <DependentUpon>FrmDevolucionTraspasosSalidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transferencias\FrmReporteadorTransferencia.resx">
       <DependentUpon>FrmReporteadorTransferencia.cs</DependentUpon>
     </EmbeddedResource>
@@ -961,6 +974,12 @@
     <EmbeddedResource Include="Traspasos\FrmTraspasosSubFarmacias.resx">
       <DependentUpon>FrmTraspasosSubFarmacias.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traspasos_SCALD\FrmTraspasosEntradaScald.resx">
+      <DependentUpon>FrmTraspasosEntradaScald.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Turnos\FrmTurnos.resx">
+      <DependentUpon>FrmTurnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vales\FrmCancelacionVales.resx">
       <DependentUpon>FrmCancelacionVales.cs</DependentUpon>
@@ -1136,6 +1155,12 @@
       <DependentUpon>FrmVentaTiempoAire.cs</DependentUpon>
     </Compile>
     <Compile Include="Transferencias\ClsImprimirTransferencias.cs" />
+    <Compile Include="Transferencias\FrmDevolucionTraspasosSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transferencias\FrmDevolucionTraspasosSalidas.Designer.cs">
+      <DependentUpon>FrmDevolucionTraspasosSalidas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transferencias\FrmReporteadorTransferencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1207,6 +1232,18 @@
     </Compile>
     <Compile Include="Traspasos\FrmTraspasosSubFarmacias.Designer.cs">
       <DependentUpon>FrmTraspasosSubFarmacias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Traspasos_SCALD\FrmTraspasosEntradaScald.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traspasos_SCALD\FrmTraspasosEntradaScald.Designer.cs">
+      <DependentUpon>FrmTraspasosEntradaScald.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Turnos\FrmTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Turnos\FrmTurnos.Designer.cs">
+      <DependentUpon>FrmTurnos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vales\FrmCancelacionVales.cs">
       <SubType>Form</SubType>
@@ -1505,6 +1542,8 @@
     <Content Include="Logo_Intermed.ico" />
     <None Include="Resources\camera_edit.png" />
     <None Include="Resources\camera.png" />
+    <None Include="Snk\Farmacia.manifest" />
+    <None Include="Snk\Farmacia.snk" />
     <None Include="Web References\wsRecetarioElectronico\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -1519,8 +1558,6 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Snk\Farmacia.manifest" />
-    <None Include="Snk\Farmacia.snk" />
     <None Include="Web References\wsFarmacia\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -1587,6 +1624,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

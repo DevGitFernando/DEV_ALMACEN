@@ -65,7 +65,17 @@ namespace Farmacia.Inventario
         clsLotes Lotes; // = new clsLotes(DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, GnFarmacia.MesesCaducaMedicamento);
         clsSKU SKU; // = new clsSKU(); 
 
+        string sFolioInventario = "";
+
         #endregion variables
+
+        #region Propiedades
+        public string FolioInventario
+        {
+            get { return sFolioInventario; }
+            set { sFolioInventario = value; }
+        }
+        #endregion Propiedades
 
         public FrmInventarioInicialConsignacion()
         {
@@ -127,7 +137,8 @@ namespace Farmacia.Inventario
             if (bExito)
             {
                 // Inicializar el manejo de Lotes 
-                Lotes = new clsLotes(DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, GnFarmacia.MesesCaducaMedicamento, TiposDeInventario.Consignacion);
+                //Lotes = new clsLotes(DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, GnFarmacia.MesesCaducaMedicamento, TiposDeInventario.Consignacion);
+                Lotes = new clsLotes(DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, GnFarmacia.MesesCaducaMedicamento, TiposDeInventario.Consignacion, TiposDeSubFarmacia.Consignacion, cboSubFarmacias.Data);
                 Lotes.ManejoLotes = OrigenManejoLotes.Inventarios;
 
                 SKU = new clsSKU();
@@ -138,6 +149,12 @@ namespace Farmacia.Inventario
 
                 // Acitvar barra de menu 
                 IniciarToolBar(false, false, false);
+
+                cboLicitacion.SelectedIndex = 0;
+                cboLicitacion.Enabled = true;
+
+                cboSubFarmacias.SelectedIndex = 0;
+                cboSubFarmacias.Enabled = true;
 
                 myGrid.Limpiar(false);
                 myGrid.BloqueaColumna(false, (int)Cols.CodEAN);
@@ -160,10 +177,21 @@ namespace Farmacia.Inventario
                 lblPersonal.Text = DtGeneral.NombrePersonal;
                 txtIdPersonal.Enabled = false;
 
-                txtFolio.Focus();
+                txtFolio.Focus(); 
+                
+                if(FolioInventario != "" )
+                {
+                    txtFolio.Text = FolioInventario;
+                    txtFolio_Validating(null, null);
+                }
             }
 
             lblTituloInventario.Text = "INVENTARIO DE CONSIGNACIÓN"; 
+        }
+
+        public void CargarFolio()
+        {            
+            this.ShowDialog();            
         }
 
         private void IniciarToolBar()
@@ -328,8 +356,11 @@ namespace Farmacia.Inventario
 
             if (inventario.InformacionIntegrada)
             {
-                txtFolio.Text = inventario.FolioGenerado;
-                txtFolio_Validating(null, null);
+                //txtFolio.Text = inventario.FolioGenerado;
+                //txtFolio_Validating(null, null);
+                //FrmFoliosInventarioInicial frmfolios = new FrmFoliosInventarioInicial();
+                //frmfolios.CargarFolios(inventario.dsFoliosInvIni);
+                this.Close();
             }
         }
         #endregion Botones
@@ -342,27 +373,55 @@ namespace Farmacia.Inventario
             if (bRegresa && txtFolio.Text.Trim() == "")
             {
                 bRegresa = false;
-                General.msjUser("Folio de movimiento inválido, verifique.");
+                General.msjUser("Folio no válido. Favor de verificar.");
                 txtFolio.Focus();
+            }
+
+            if(bRegresa && cboLicitacion.SelectedIndex == 0)
+            {
+                bRegresa = false;
+                General.msjUser("Seleccionar Licitación. Favor de verificar.");
+                cboLicitacion.Focus();
+            }
+
+            if (bRegresa && cboSubFarmacias.SelectedIndex == 0)
+            {
+                bRegresa = false;
+                General.msjUser("Seleccionar Fuente. Favor de verificar.");
+                cboSubFarmacias.Focus();
+            }
+
+            if (bRegresa && txtOrden.Text.Trim() == "")
+            {
+                bRegresa = false;
+                General.msjUser("Capturar Orden. Favor de verificar.");
+                txtOrden.Focus();
+            }
+
+            if (bRegresa && txtFolioPre.Text.Trim() == "")
+            {
+                bRegresa = false;
+                General.msjUser("Capturar Folio Presupuesto. Favor de verificar.");
+                txtFolioPre.Focus();
             }
 
             if (bRegresa && txtObservaciones.Text.Trim() == "")
             {
                 bRegresa = false;
-                General.msjUser("No ha capturado las observaciones para el movimiento de inventario, verifique.");
+                General.msjUser("Capturar observaciones. Favor de verificar.");
                 txtObservaciones.Focus();
             }
 
             if (bRegresa && bEstaCancelado)
             {
                 bRegresa = false;
-                General.msjUser("El movimiento de Inventario Inicial se encuentra cancelado,\n no es posible guardar la información.");
+                General.msjUser("Inventario Inicial cancelado.\n No se puede realizar cambios!");
             }
 
             if (bRegresa && !chkAplicarInv.Enabled)
             {
                 bRegresa = false;
-                General.msjUser("El movimiento de Inventario Inicial ya fue aplicado a la existencia,\n no es posible guardar la información.");
+                General.msjUser("Inventario Inicial aplicado.\n No se puede realizar cambios.");
             }
 
             if (bRegresa)
@@ -382,7 +441,7 @@ namespace Farmacia.Inventario
 
             if (bRegresa && DtGeneral.ConfirmacionConHuellas)
             {
-                sMsjNoEncontrado = "El usuario no tiene permiso para aplicar un inventario inicial, verifique por favor.";
+                sMsjNoEncontrado = "Usuario sin permisos para aplicar Inventario. Favor de verificar.";
                 ////bRegresa = opPermisosEspeciales.VerificarPermisos("INVENTARIO_INICIAL", sMsjNoEncontrado);
                 bRegresa = DtGeneral.PermisosEspeciales_Biometricos.VerificarPermisos("INVENTARIO_INICIAL", sMsjNoEncontrado);
             }
@@ -412,8 +471,8 @@ namespace Farmacia.Inventario
 
             if (!bRegresa)
             {
-                General.msjUser("Alguno de los Productos registrados tienen Costo 0.\n\n" + 
-                    "'NO ES POSIBLE APLICAR EL INVENTARIO'"); 
+                General.msjUser("Productos con Costo $ 0.00\n\n" + 
+                    "NO ES POSIBLE CONFIRMAR EL INVENTARIO!"); 
             }
 
             return bRegresa;
@@ -426,16 +485,16 @@ namespace Farmacia.Inventario
             if (bRegresa && (txtFolio.Text.Trim() == "*" || txtFolio.Text.Trim() == ""))
             {
                 bRegresa = false;
-                General.msjUser("Folio de Inventario inválido, verifique.");
+                General.msjUser("Folio no valido. Favor de verificar.");
             }
 
             if (bRegresa && bEstaCancelado)
             {
                 bRegresa = false;
-                General.msjUser("El folio de Inventario ya se encuentra cancelado,\n no es posible cancelarlo de nuevo");
+                General.msjUser("Folio de Inventario cancelado.\n No se puede realizar cambios.");
             }
 
-            if (bRegresa && General.msjCancelar("¿ Desea cancelar el folio de Inventario Inicial ?") == DialogResult.No)
+            if (bRegresa && General.msjCancelar("¿ Desea cancelar Folio de Inventario ?") == DialogResult.No)
             {
                 bRegresa = false;
             }
@@ -478,7 +537,7 @@ namespace Farmacia.Inventario
             }
 
             if ( !bRegresa )
-                General.msjUser("Debe capturar al menos un producto para el inventario\n y/o capturar cantidades para al menos un lote, verifique.");
+                General.msjUser("Debe capturar algun producto para el inventario\n o capturar cantidades mayor a cero (0). Favor de verificar.");
 
             return bRegresa;
         }
@@ -519,7 +578,7 @@ namespace Farmacia.Inventario
             // Se encontraron diferencias 
             if (!bRegresa)
             {
-                General.msjAviso("Se detecto una ó mas diferencias en la captura de productos, el Inventario no puede ser completado.");
+                General.msjAviso("Se encontraron diferencias en captura de productos. Inventario no puede ser completado.");
                 FrmProductosConDiferencias f = new FrmProductosConDiferencias(dtsProductosDiferencias);
                 f.ShowDialog();
             }
@@ -540,6 +599,7 @@ namespace Farmacia.Inventario
 
                 myRpt.RutaReporte = GnFarmacia.RutaReportes;
                 myRpt.NombreReporte = "PtoVta_InventarioInicial.rpt";
+                myRpt.TituloReporte = "Informe Inventario Inicial Licitado";
 
                 myRpt.Add("IdEmpresa", DtGeneral.EmpresaConectada);
                 myRpt.Add("IdEstado", DtGeneral.EstadoConectado);
@@ -930,10 +990,10 @@ namespace Farmacia.Inventario
         #region Eventos de Formulario 
         private void FrmInventarioInicialConsignacion_Load(object sender, EventArgs e)
         {
-            PermiteCaducados(); 
-            LimpiarPantalla(false);
+            PermiteCaducados();
             CargarSubFarmacias();
             CargarLicitaciones();
+            LimpiarPantalla(false);            
         }
 
         private void TeclasRapidas(KeyEventArgs e)
@@ -1000,11 +1060,12 @@ namespace Farmacia.Inventario
                     sIdTipoMovtoInv + Fg.PonCeros(txtFolio.Text, 8), "txtFolio_Validating");
                 if (leer.Leer())
                 {
-                    e.Cancel = !CargarDatosMovimiento();
+                    //e.Cancel = !CargarDatosMovimiento();
+                    CargarDatosMovimiento();
                 }
                 else
                 {
-                    e.Cancel = true;
+                    //e.Cancel = true;
                 }
             }
         }
@@ -1062,13 +1123,13 @@ namespace Farmacia.Inventario
             {
                 lblCancelado.Text = "CANCELADO";
                 lblCancelado.Visible = true;
-                General.msjUser("Estatus de Folio cancelado.");
+                //General.msjUser("Estatus de Folio cancelado.");
             }
             else if( bMovtoAplicado )
             {
                 lblCancelado.Text = "CONFIRMADO";
                 lblCancelado.Visible = true;
-                General.msjUser("Estatus de Folio confirmado; No se pueden realizar cambios.");
+                //General.msjUser("Estatus de Folio confirmado; No se pueden realizar cambios.");
 
                 cboLicitacion.Enabled = false;
                 cboSubFarmacias.Enabled = false;
@@ -1345,8 +1406,8 @@ namespace Farmacia.Inventario
                     Lotes.TipoCaptura = 1; //Por piezas   // myGrid.GetValueInt(iRow, (int)Cols.TipoCaptura);
 
                     Lotes.PermitirLotesNuevosConsignacion = true;
-                    Lotes.EsConsignacion = true; 
-
+                    Lotes.EsConsignacion = true;
+                    Lotes.IdSubFarmacia = cboSubFarmacias.Data;
                     // Si el movimiento ya fue aplicado no es posible agregar lotes 
                     Lotes.CapturarLotes = chkAplicarInv.Enabled;
                     Lotes.ModificarCantidades = chkAplicarInv.Enabled;
@@ -1414,7 +1475,7 @@ namespace Farmacia.Inventario
 
             sSql = string.Format("SELECT IdEstado, IdLicitacion, Licitacion " +
                     " FROM Ctrl_Licitaciones (NoLock) " +
-                    " WHERE IdEstado = '{0}'  ", sIdEstado);
+                    " WHERE IdEstado = '{0}' AND Status = 'A' ", sIdEstado);
 
 
             if (leer.Exec(sSql))
@@ -1427,5 +1488,10 @@ namespace Farmacia.Inventario
             cboLicitacion.Add(Licitaciones, true, "IdLicitacion", "Licitacion");
         }
 
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            FrmFoliosInventarioInicial fInv = new FrmFoliosInventarioInicial();
+            fInv.ShowDialog();
+        }
     }
 }

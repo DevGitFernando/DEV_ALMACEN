@@ -66,6 +66,7 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(581, 24);
@@ -121,6 +122,7 @@
             // 
             // mnOpciones
             // 
+            this.mnOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator5,
             this.btnAbrir,
@@ -132,60 +134,60 @@
             this.btnSalir,
             this.toolStripSeparator4});
             this.mnOpciones.Name = "mnOpciones";
-            this.mnOpciones.Size = new System.Drawing.Size(138, 122);
+            this.mnOpciones.Size = new System.Drawing.Size(159, 130);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(155, 6);
             // 
             // btnAbrir
             // 
             this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(137, 22);
+            this.btnAbrir.Size = new System.Drawing.Size(158, 24);
             this.btnAbrir.Text = "Mostrar";
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(155, 6);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(137, 22);
+            this.btnMinimizar.Size = new System.Drawing.Size(158, 24);
             this.btnMinimizar.Text = "Ocultar";
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(155, 6);
             // 
             // btnBitacora
             // 
             this.btnBitacora.Name = "btnBitacora";
-            this.btnBitacora.Size = new System.Drawing.Size(137, 22);
+            this.btnBitacora.Size = new System.Drawing.Size(158, 24);
             this.btnBitacora.Text = "Ver Bitacora";
             this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(155, 6);
             // 
             // btnSalir
             // 
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(137, 22);
+            this.btnSalir.Size = new System.Drawing.Size(158, 24);
             this.btnSalir.Text = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(155, 6);
             // 
             // icoSystray
             // 
@@ -215,7 +217,7 @@
             this.lblModulo.MinWidth = 15;
             this.lblModulo.Name = "lblModulo";
             this.lblModulo.Text = "Servicio Cliente v.1.0.0.0";
-            this.lblModulo.Width = 139;
+            this.lblModulo.Width = 163;
             // 
             // lblFarmacia
             // 
@@ -243,7 +245,7 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -260,8 +262,8 @@
             this.Name = "FrmMain";
             this.Text = "Servicio Cliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.Resize += new System.EventHandler(this.FrmMain_Resize);
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();

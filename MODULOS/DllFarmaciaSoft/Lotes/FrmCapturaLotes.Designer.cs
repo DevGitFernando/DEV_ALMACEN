@@ -500,7 +500,7 @@
             this.grdLotes_Sheet1.Columns.Get(7).Locked = true;
             this.grdLotes_Sheet1.Columns.Get(7).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdLotes_Sheet1.Columns.Get(7).Width = 70F;
-            textCellType8.MaxLength = 7;
+            textCellType8.MaxLength = 10;
             this.grdLotes_Sheet1.Columns.Get(8).CellType = textCellType8;
             this.grdLotes_Sheet1.Columns.Get(8).Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.grdLotes_Sheet1.Columns.Get(8).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;

@@ -86,6 +86,8 @@ namespace DllFarmaciaSoft.Inventario
         private bool bEsModuloValido = false;
         private bool bEsModulo_Almacen = false;
 
+        DataSet dsFoliosInv = new DataSet();
+
         //clsExportarExcelPlantilla xpExcel;
 
         public string IdProveedor = "";
@@ -174,6 +176,11 @@ namespace DllFarmaciaSoft.Inventario
         public string FolioGenerado
         {
             get { return Fg.PonCeros(Fg.Right(sFolio_InventarioInicial, 8), 8); }
+        }
+
+        public DataSet dsFoliosInvIni
+        {
+            get { return dsFoliosInv; }
         }
         #endregion Propiedades 
 
@@ -572,7 +579,8 @@ namespace DllFarmaciaSoft.Inventario
             leer.RenombrarTabla(6, "EAN no registrados");
             leer.RenombrarTabla(7, "EAN sin costo");
             leer.RenombrarTabla(8, "EAN multiples costos");
-            leer.RenombrarTabla(9, "Fuentes erroneas");
+            leer.RenombrarTabla(9, "Fuentes Erroneas");
+            leer.RenombrarTabla(10, "Farmacias Diferentes");
 
             leerValidacion.DataTableClase = leer.Tabla(1);   // Racks  
             bActivarProceso = leerValidacion.Registros > 0;
@@ -624,6 +632,12 @@ namespace DllFarmaciaSoft.Inventario
                 leerValidacion.DataTableClase = leer.Tabla(9);   // Fuentes Erroneas 
                 bActivarProceso = leerValidacion.Registros > 0;
             }
+
+            if (!bActivarProceso)
+            {
+                leerValidacion.DataTableClase = leer.Tabla(10);   // Farmacias Diferentes 
+                bActivarProceso = leerValidacion.Registros > 0;
+            }
         }
 
         private void ValidarInformacion__Farmacias()
@@ -634,7 +648,7 @@ namespace DllFarmaciaSoft.Inventario
             leer.RenombrarTabla(3, "EAN no registrados");
             leer.RenombrarTabla(4, "EAN sin costo");
             leer.RenombrarTabla(5, "EAN multiples costos");
-            leer.RenombrarTabla(6, "SubFarmacias incorrectas");
+            leer.RenombrarTabla(6, "F. Financiamiento Erroneas");
             leer.RenombrarTabla(7, "Lotes con formato incorrecto");
             leer.RenombrarTabla(8, "Lotes con cajas incompletas");
             leer.RenombrarTabla(9, "Inventario incorrecto");
@@ -835,9 +849,11 @@ namespace DllFarmaciaSoft.Inventario
                 {
                     sSql = string.Format("Insert Into INV__InventarioInterno_CargaMasiva " +
                         " ( IdEmpresa, IdEstado, IdFarmacia, IdSubFarmacia, " +
-                        " IdPasillo, IdEstante, IdEntrepaño, CodigoEAN, Costo, ClaveLote, Caducidad, Cantidad, TipoDeInventario ) \n");
-                    sSql += string.Format("Select '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}'  ",
-                        DtGeneral.EmpresaConectada, DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada,
+                        " IdPasillo, IdEstante, IdEntrepaño, CodigoEAN, Costo, ClaveLote, Caducidad, Cantidad, TipoDeInventario, IdLicitacion, Orden, FolioPresup ) \n");
+                    sSql += string.Format("Select '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}'  ",
+                        DtGeneral.EmpresaConectada, DtGeneral.EstadoConectado,
+                        //DtGeneral.FarmaciaConectada,
+                        Fg.PonCeros(DarFormato(excel.Campo("Unidad")), 4),
 
                         tpTipoCarga == TiposDeCargaMasiva.EntradaDeConsignacion ? SubFarmacia : Fg.PonCeros(DarFormato(excel.Campo("IdFuente")), 3),
 
@@ -848,7 +864,8 @@ namespace DllFarmaciaSoft.Inventario
                         excel.Campo("Costo") == "" ? "0" : excel.Campo("Costo"),
                         DarFormato(excel.Campo("Lote")),
                         DarFormato(Formatear_Caducidad(excel)),
-                        excel.CampoInt("Cantidad"), (int)tpInventario
+                        excel.CampoInt("Cantidad"), (int)tpInventario,
+                        Fg.PonCeros(DarFormato(excel.Campo("IdLicitacion")), 2), DarFormato(excel.Campo("Orden")), DarFormato(excel.Campo("FolioPresup"))
                         );
 
                     ////BloqueaHojas(true);
@@ -1180,7 +1197,7 @@ namespace DllFarmaciaSoft.Inventario
 
             if (tpTipoCarga == TiposDeCargaMasiva.CompraDirecta)
             {
-                sMsj = "Este proceso integrará la información de la plantilla como Compra Directa,\n\n¿ Desea continuar ?";
+                sMsj = "Se integrará la información como Compra Directa.\n\n¿ Desea continuar ?";
             }
 
 
@@ -1204,7 +1221,7 @@ namespace DllFarmaciaSoft.Inventario
 
             if (DtGeneral.ConfirmacionConHuellas)
             {
-                sMsjNoEncontrado = "El usuario no tiene permiso para aplicar un inventario, verifique por favor.";
+                sMsjNoEncontrado = "Usuario sin permisos para aplicar Movimiento. Favor de verificar.";
                 ////bContinua = opPermisosEspeciales.VerificarPermisos("INTEGRARINVENTARIO", sMsjNoEncontrado);
                 bContinua = DtGeneral.PermisosEspeciales_Biometricos.VerificarPermisos("INTEGRARINVENTARIO", sMsjNoEncontrado);
             } 
@@ -1265,7 +1282,7 @@ namespace DllFarmaciaSoft.Inventario
                         if (tpTipoCarga == TiposDeCargaMasiva.CompraDirecta)
                         {
                             sFolio_InventarioInicial = leer.Campo("Clave");
-                            sMensaje = string.Format("Se cargo la Compra Directa con el folio {0} ", sFolio_InventarioInicial);
+                            sMensaje = string.Format("Folio: {0} , Generado satisfactoriamente. ", sFolio_InventarioInicial);
                         }
 
                         if (tpTipoCarga == TiposDeCargaMasiva.EntradaDeConsignacion)
@@ -1276,8 +1293,9 @@ namespace DllFarmaciaSoft.Inventario
 
                         if (tpTipoCarga == TiposDeCargaMasiva.InventarioInicial)
                         {
-                            sFolio_InventarioInicial = leer.Campo("FolioInventario");
-                            sMensaje = string.Format("Se cargo el inventario inicial con el folio {0} ", sFolio_InventarioInicial);
+                            //sFolio_InventarioInicial = leer.Campo("FolioInventario");
+                            dsFoliosInv = leer.DataSetClase;
+                            sMensaje = "Folios Inventario Inicial generados correctamente.\n" + "\t  Ver Menu: Folios Inv. Inicial Licitado";
                         }
                     }
 
@@ -1296,7 +1314,7 @@ namespace DllFarmaciaSoft.Inventario
                         cnn.CompletarTransaccion();
                         General.msjUser(sMensaje); //Este mensaje lo genera el SP
 
-                        ImprimirInventario();
+                        //ImprimirInventario();
                         IniciaToolBar(true, true, true, false, false, false, true);
                     }
                     else

@@ -57,6 +57,7 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(581, 24);
@@ -166,7 +167,7 @@
             this.lblModulo.MinWidth = 15;
             this.lblModulo.Name = "lblModulo";
             this.lblModulo.Text = "Oficina Central v.1.0.0.0";
-            this.lblModulo.Width = 136;
+            this.lblModulo.Width = 158;
             // 
             // lblFarmacia
             // 
@@ -194,7 +195,7 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -208,6 +209,7 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FrmMain";
+            this.ShowIcon = false;
             this.Text = "Menú principal del sistema";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);

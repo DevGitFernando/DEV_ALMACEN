@@ -143,7 +143,7 @@ namespace Farmacia.IntercambioCartaCanje
         {
             cboEmpresas.Clear();
             cboEmpresas.Add("0", "<< Seleccione >>");
-            cboEmpresas.Add(myQuery.CambiosCartaCanje_EmpresasRelacionados(sEmpresa, sEstado, sFarmacia, "CargarAlmacenesRelacionados"), true, "IdEmpresa_Relacionada", "Empresa_Relacionada");
+            cboEmpresas.Add(myQuery.CambiosCartaCanje_EmpresasRelacionados(sEmpresa, sEstado, sFarmacia, "CargarAlmacenesRelacionados"), true, "IdEmpresa", "Empresa_Relacionada");
 
             dtsEstadosRelacionados = myQuery.CambiosCartaCanje_EstadosRelacionados(sEmpresa, sEstado, sFarmacia, "CargarAlmacenesRelacionados"); 
             dtsAlmacenesRelacionados = myQuery.CambiosCartaCanje_AlmacenesRelacionados(sEmpresa, sEstado, sFarmacia, "CargarAlmacenesRelacionados");

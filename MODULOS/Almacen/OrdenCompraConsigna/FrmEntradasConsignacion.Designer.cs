@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEntradasConsignacion));
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
             FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
@@ -96,19 +95,19 @@
             this.txtFolio = new SC_ControlsCS.scTextBoxExt();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.grdProductos = new FarPoint.Win.Spread.FpSpread();
-            this.grdProductos_Sheet1 = new FarPoint.Win.Spread.SheetView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblPersonal = new System.Windows.Forms.Label();
             this.txtIdPersonal = new SC_ControlsCS.scTextBoxExt();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.grdProductos = new FarPoint.Win.Spread.FpSpread();
+            this.grdProductos_Sheet1 = new FarPoint.Win.Spread.SheetView();
             this.toolStripBarraMenu.SuspendLayout();
             this.FrameEncabezado.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos_Sheet1)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripBarraMenu
@@ -146,7 +145,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(10, 60);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnGuardar
             // 
@@ -162,7 +161,7 @@
             // 
             this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(10, 60);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 4);
             // 
             // btnCancelar
             // 
@@ -181,7 +180,7 @@
             // 
             this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(10, 60);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 4);
             this.toolStripSeparator2.Visible = false;
             // 
             // btnImprimir
@@ -198,7 +197,7 @@
             // 
             this.toolStripSeparator3.AutoSize = false;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(10, 60);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 4);
             // 
             // btnAbrir
             // 
@@ -831,10 +830,79 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1423, 443);
+            this.groupBox2.Size = new System.Drawing.Size(1423, 380);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Captura de datos";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.lblPersonal);
+            this.groupBox3.Controls.Add(this.txtIdPersonal);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Location = new System.Drawing.Point(12, 770);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1420, 60);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Datos";
+            this.groupBox3.Visible = false;
+            // 
+            // lblPersonal
+            // 
+            this.lblPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPersonal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPersonal.Location = new System.Drawing.Point(255, 22);
+            this.lblPersonal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPersonal.Name = "lblPersonal";
+            this.lblPersonal.Size = new System.Drawing.Size(1157, 26);
+            this.lblPersonal.TabIndex = 9;
+            this.lblPersonal.Text = "Proveedor :";
+            this.lblPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtIdPersonal
+            // 
+            this.txtIdPersonal.ColorFuenteNegativos = System.Drawing.Color.Red;
+            this.txtIdPersonal.Decimales = 2;
+            this.txtIdPersonal.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
+            this.txtIdPersonal.ForeColor = System.Drawing.Color.Black;
+            this.txtIdPersonal.Location = new System.Drawing.Point(113, 22);
+            this.txtIdPersonal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdPersonal.Name = "txtIdPersonal";
+            this.txtIdPersonal.PermitirApostrofo = false;
+            this.txtIdPersonal.PermitirNegativos = false;
+            this.txtIdPersonal.Size = new System.Drawing.Size(132, 22);
+            this.txtIdPersonal.TabIndex = 0;
+            this.txtIdPersonal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(20, 27);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 15);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Usuario :";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.SteelBlue;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label11.Location = new System.Drawing.Point(0, 742);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(1445, 30);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "( F7 ) LOTES  ------    Agregar | Visualizar    ------";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grdProductos
             // 
@@ -858,13 +926,13 @@
             enhancedScrollBarRenderer1.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
             this.grdProductos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer1;
             this.grdProductos.HorizontalScrollBar.TabIndex = 2;
-            this.grdProductos.Location = new System.Drawing.Point(14, 23);
+            this.grdProductos.Location = new System.Drawing.Point(10, 22);
             this.grdProductos.Margin = new System.Windows.Forms.Padding(4);
             this.grdProductos.Name = "grdProductos";
             this.grdProductos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdProductos.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
             this.grdProductos_Sheet1});
-            this.grdProductos.Size = new System.Drawing.Size(1398, 412);
+            this.grdProductos.Size = new System.Drawing.Size(1402, 350);
             this.grdProductos.Skin = FarPoint.Win.Spread.DefaultSpreadSkins.Seashell;
             this.grdProductos.TabIndex = 1;
             this.grdProductos.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
@@ -884,7 +952,7 @@
             this.grdProductos.VerticalScrollBar.TabIndex = 3;
             this.grdProductos.EditModeOn += new System.EventHandler(this.grdProductos_EditModeOn);
             this.grdProductos.EditModeOff += new System.EventHandler(this.grdProductos_EditModeOff);
-            this.grdProductos.Advance += new FarPoint.Win.Spread.AdvanceEventHandler(this.grdProductos_Advance);
+            this.grdProductos.Advance += new FarPoint.Win.Spread.AdvanceEventHandler(this.grdProductos_Advance_1);
             this.grdProductos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.grdProductos_KeyDown);
             // 
             // grdProductos_Sheet1
@@ -895,50 +963,94 @@
             this.grdProductos_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.R1C1;
             this.grdProductos_Sheet1.ColumnCount = 14;
             this.grdProductos_Sheet1.RowCount = 11;
+            this.grdProductos_Sheet1.Cells.Get(0, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(0, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(0, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(0, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(0, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(0, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(0, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(0, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
             this.grdProductos_Sheet1.Cells.Get(1, 2).Locked = false;
+            this.grdProductos_Sheet1.Cells.Get(1, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(1, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(1, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(1, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(1, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(1, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(1, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(1, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(2, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(2, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(2, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(2, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(2, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(2, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(2, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(2, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(3, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(3, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(3, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(3, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(3, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(3, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(3, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(3, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(4, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(4, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(4, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(4, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(4, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(4, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(4, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(4, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(5, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(5, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(5, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(5, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(5, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(5, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(5, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(5, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(6, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(6, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(6, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(6, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(6, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(6, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(6, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(6, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(7, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(7, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(7, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(7, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(7, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(7, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(7, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(7, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(8, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(8, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(8, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(8, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(8, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(8, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(8, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(8, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(9, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(9, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(9, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(9, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(9, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(9, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(9, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(9, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
+            this.grdProductos_Sheet1.Cells.Get(10, 8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Cells.Get(10, 8).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(10, 9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(10, 9).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(10, 10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Cells.Get(10, 10).Value = 0D;
+            this.grdProductos_Sheet1.Cells.Get(10, 11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Cells.Get(10, 11).Value = FarPoint.CalcEngine.CalcError.DivideByZero;
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 0).Value = "Código Int / EAN";
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 1).Value = "Código";
@@ -1047,6 +1159,7 @@
             currencyCellType2.Separator = ",";
             currencyCellType2.ShowSeparator = true;
             this.grdProductos_Sheet1.Columns.Get(8).CellType = currencyCellType2;
+            this.grdProductos_Sheet1.Columns.Get(8).Formula = "(RC[-2]*RC[-1])";
             this.grdProductos_Sheet1.Columns.Get(8).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(8).Label = "Importe";
             this.grdProductos_Sheet1.Columns.Get(8).Locked = true;
@@ -1060,6 +1173,7 @@
             262144});
             currencyCellType3.ShowCurrencySymbol = false;
             this.grdProductos_Sheet1.Columns.Get(9).CellType = currencyCellType3;
+            this.grdProductos_Sheet1.Columns.Get(9).Formula = "((1+(RC[-6]/100))*RC[-1])-RC[-1]";
             this.grdProductos_Sheet1.Columns.Get(9).Label = "ImporteIva";
             this.grdProductos_Sheet1.Columns.Get(9).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(9).Visible = false;
@@ -1071,11 +1185,13 @@
             262144});
             currencyCellType4.ShowCurrencySymbol = false;
             this.grdProductos_Sheet1.Columns.Get(10).CellType = currencyCellType4;
+            this.grdProductos_Sheet1.Columns.Get(10).Formula = "RC[-2]+RC[-1]";
             this.grdProductos_Sheet1.Columns.Get(10).Label = "ImporteTotal";
             this.grdProductos_Sheet1.Columns.Get(10).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(10).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(10).Width = 92F;
             this.grdProductos_Sheet1.Columns.Get(11).CellType = numberCellType5;
+            this.grdProductos_Sheet1.Columns.Get(11).Formula = "(RC[1]/RC[-7])*100";
             this.grdProductos_Sheet1.Columns.Get(11).Label = "Porcentaje Surtimiento";
             this.grdProductos_Sheet1.Columns.Get(11).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(11).Visible = false;
@@ -1095,80 +1211,11 @@
             this.grdProductos_Sheet1.SheetCornerStyle.Parent = "CornerSeashell";
             this.grdProductos_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.lblPersonal);
-            this.groupBox3.Controls.Add(this.txtIdPersonal);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Location = new System.Drawing.Point(12, 833);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(1420, 60);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Datos";
-            this.groupBox3.Visible = false;
-            // 
-            // lblPersonal
-            // 
-            this.lblPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPersonal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPersonal.Location = new System.Drawing.Point(255, 22);
-            this.lblPersonal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPersonal.Name = "lblPersonal";
-            this.lblPersonal.Size = new System.Drawing.Size(1157, 26);
-            this.lblPersonal.TabIndex = 9;
-            this.lblPersonal.Text = "Proveedor :";
-            this.lblPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtIdPersonal
-            // 
-            this.txtIdPersonal.ColorFuenteNegativos = System.Drawing.Color.Red;
-            this.txtIdPersonal.Decimales = 2;
-            this.txtIdPersonal.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
-            this.txtIdPersonal.ForeColor = System.Drawing.Color.Black;
-            this.txtIdPersonal.Location = new System.Drawing.Point(113, 22);
-            this.txtIdPersonal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIdPersonal.Name = "txtIdPersonal";
-            this.txtIdPersonal.PermitirApostrofo = false;
-            this.txtIdPersonal.PermitirNegativos = false;
-            this.txtIdPersonal.Size = new System.Drawing.Size(132, 22);
-            this.txtIdPersonal.TabIndex = 0;
-            this.txtIdPersonal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label12
-            // 
-            this.label12.Location = new System.Drawing.Point(20, 27);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 15);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Usuario :";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.SteelBlue;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label11.Location = new System.Drawing.Point(0, 805);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1445, 30);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "( F7 ) LOTES  ------    Agregar | Visualizar    ------";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FrmEntradasConsignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1445, 835);
+            this.ClientSize = new System.Drawing.Size(1445, 772);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -1185,10 +1232,10 @@
             this.FrameEncabezado.ResumeLayout(false);
             this.FrameEncabezado.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grdProductos_Sheet1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdProductos_Sheet1)).EndInit();
             this.ResumeLayout(false);
 
         }

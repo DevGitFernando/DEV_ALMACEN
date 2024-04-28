@@ -136,18 +136,21 @@
             this.FrameProcesosManual.Controls.Add(this.btnRespaldarBD);
             this.FrameProcesosManual.Controls.Add(this.btnIntegracion);
             this.FrameProcesosManual.Controls.Add(this.btnObtencion);
-            this.FrameProcesosManual.Location = new System.Drawing.Point(10, 152);
+            this.FrameProcesosManual.Location = new System.Drawing.Point(13, 187);
+            this.FrameProcesosManual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameProcesosManual.Name = "FrameProcesosManual";
-            this.FrameProcesosManual.Size = new System.Drawing.Size(196, 109);
+            this.FrameProcesosManual.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameProcesosManual.Size = new System.Drawing.Size(261, 134);
             this.FrameProcesosManual.TabIndex = 34;
             this.FrameProcesosManual.TabStop = false;
             this.FrameProcesosManual.Text = "Ejecutar proceso manualmente";
             // 
             // btnRespaldarBD
             // 
-            this.btnRespaldarBD.Location = new System.Drawing.Point(9, 77);
+            this.btnRespaldarBD.Location = new System.Drawing.Point(12, 95);
+            this.btnRespaldarBD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRespaldarBD.Name = "btnRespaldarBD";
-            this.btnRespaldarBD.Size = new System.Drawing.Size(180, 23);
+            this.btnRespaldarBD.Size = new System.Drawing.Size(240, 28);
             this.btnRespaldarBD.TabIndex = 19;
             this.btnRespaldarBD.Text = "Generar respaldo";
             this.btnRespaldarBD.UseVisualStyleBackColor = true;
@@ -155,9 +158,10 @@
             // 
             // btnIntegracion
             // 
-            this.btnIntegracion.Location = new System.Drawing.Point(9, 48);
+            this.btnIntegracion.Location = new System.Drawing.Point(12, 59);
+            this.btnIntegracion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIntegracion.Name = "btnIntegracion";
-            this.btnIntegracion.Size = new System.Drawing.Size(180, 23);
+            this.btnIntegracion.Size = new System.Drawing.Size(240, 28);
             this.btnIntegracion.TabIndex = 18;
             this.btnIntegracion.Text = "Integración de información";
             this.btnIntegracion.UseVisualStyleBackColor = true;
@@ -165,9 +169,10 @@
             // 
             // btnObtencion
             // 
-            this.btnObtencion.Location = new System.Drawing.Point(9, 19);
+            this.btnObtencion.Location = new System.Drawing.Point(12, 23);
+            this.btnObtencion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnObtencion.Name = "btnObtencion";
-            this.btnObtencion.Size = new System.Drawing.Size(180, 23);
+            this.btnObtencion.Size = new System.Drawing.Size(240, 28);
             this.btnObtencion.TabIndex = 16;
             this.btnObtencion.Text = "Obtención de información";
             this.btnObtencion.UseVisualStyleBackColor = true;
@@ -176,28 +181,32 @@
             // FrameEnEjecucion
             // 
             this.FrameEnEjecucion.Controls.Add(this.progressBar);
-            this.FrameEnEjecucion.Location = new System.Drawing.Point(239, 152);
+            this.FrameEnEjecucion.Location = new System.Drawing.Point(319, 187);
+            this.FrameEnEjecucion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameEnEjecucion.Name = "FrameEnEjecucion";
-            this.FrameEnEjecucion.Size = new System.Drawing.Size(183, 109);
+            this.FrameEnEjecucion.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameEnEjecucion.Size = new System.Drawing.Size(244, 134);
             this.FrameEnEjecucion.TabIndex = 41;
             this.FrameEnEjecucion.TabStop = false;
             this.FrameEnEjecucion.Text = "Ejecutando : ";
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(15, 34);
+            this.progressBar.Location = new System.Drawing.Point(20, 42);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar.MarqueeAnimationSpeed = 50;
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(152, 40);
+            this.progressBar.Size = new System.Drawing.Size(203, 49);
             this.progressBar.Step = 50;
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar.TabIndex = 0;
             // 
             // chkInicioSO
             // 
-            this.chkInicioSO.Location = new System.Drawing.Point(18, 359);
+            this.chkInicioSO.Location = new System.Drawing.Point(24, 442);
+            this.chkInicioSO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkInicioSO.Name = "chkInicioSO";
-            this.chkInicioSO.Size = new System.Drawing.Size(181, 17);
+            this.chkInicioSO.Size = new System.Drawing.Size(241, 21);
             this.chkInicioSO.TabIndex = 33;
             this.chkInicioSO.Text = "Iniciar con sistema operativo";
             this.chkInicioSO.UseVisualStyleBackColor = true;
@@ -208,26 +217,29 @@
             this.pcServer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcServer.Image = ((System.Drawing.Image)(resources.GetObject("pcServer.Image")));
             this.pcServer.InitialImage = ((System.Drawing.Image)(resources.GetObject("pcServer.InitialImage")));
-            this.pcServer.Location = new System.Drawing.Point(28, 45);
+            this.pcServer.Location = new System.Drawing.Point(37, 55);
+            this.pcServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcServer.Name = "pcServer";
-            this.pcServer.Size = new System.Drawing.Size(62, 81);
+            this.pcServer.Size = new System.Drawing.Size(82, 99);
             this.pcServer.TabIndex = 32;
             this.pcServer.TabStop = false;
             // 
             // btnDetener
             // 
-            this.btnDetener.Location = new System.Drawing.Point(97, 92);
+            this.btnDetener.Location = new System.Drawing.Point(129, 113);
+            this.btnDetener.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDetener.Name = "btnDetener";
-            this.btnDetener.Size = new System.Drawing.Size(24, 24);
+            this.btnDetener.Size = new System.Drawing.Size(32, 30);
             this.btnDetener.TabIndex = 29;
             this.btnDetener.UseVisualStyleBackColor = true;
             this.btnDetener.Click += new System.EventHandler(this.btnDetener_Click);
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(97, 62);
+            this.btnIniciar.Location = new System.Drawing.Point(129, 76);
+            this.btnIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(24, 24);
+            this.btnIniciar.Size = new System.Drawing.Size(32, 30);
             this.btnIniciar.TabIndex = 27;
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
@@ -235,18 +247,20 @@
             // lblDetener
             // 
             this.lblDetener.AutoSize = true;
-            this.lblDetener.Location = new System.Drawing.Point(123, 98);
+            this.lblDetener.Location = new System.Drawing.Point(164, 121);
+            this.lblDetener.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDetener.Name = "lblDetener";
-            this.lblDetener.Size = new System.Drawing.Size(45, 13);
+            this.lblDetener.Size = new System.Drawing.Size(55, 16);
             this.lblDetener.TabIndex = 31;
             this.lblDetener.Text = "Detener";
             // 
             // lblIniciar
             // 
             this.lblIniciar.AutoSize = true;
-            this.lblIniciar.Location = new System.Drawing.Point(123, 68);
+            this.lblIniciar.Location = new System.Drawing.Point(164, 84);
+            this.lblIniciar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIniciar.Name = "lblIniciar";
-            this.lblIniciar.Size = new System.Drawing.Size(35, 13);
+            this.lblIniciar.Size = new System.Drawing.Size(42, 16);
             this.lblIniciar.TabIndex = 30;
             this.lblIniciar.Text = "Iniciar";
             // 
@@ -260,9 +274,11 @@
             this.FramePrincipal.Controls.Add(this.pcServerStar);
             this.FramePrincipal.Controls.Add(this.chkInicioSO);
             this.FramePrincipal.Controls.Add(this.FrameProcesosManual);
-            this.FramePrincipal.Location = new System.Drawing.Point(12, 0);
+            this.FramePrincipal.Location = new System.Drawing.Point(16, 0);
+            this.FramePrincipal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FramePrincipal.Name = "FramePrincipal";
-            this.FramePrincipal.Size = new System.Drawing.Size(448, 385);
+            this.FramePrincipal.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FramePrincipal.Size = new System.Drawing.Size(597, 474);
             this.FramePrincipal.TabIndex = 35;
             this.FramePrincipal.TabStop = false;
             // 
@@ -274,9 +290,11 @@
             this.FrameProcesos.Controls.Add(this.btnIniciar);
             this.FrameProcesos.Controls.Add(this.lblDetener);
             this.FrameProcesos.Controls.Add(this.lblIniciar);
-            this.FrameProcesos.Location = new System.Drawing.Point(10, 12);
+            this.FrameProcesos.Location = new System.Drawing.Point(13, 15);
+            this.FrameProcesos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameProcesos.Name = "FrameProcesos";
-            this.FrameProcesos.Size = new System.Drawing.Size(196, 136);
+            this.FrameProcesos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameProcesos.Size = new System.Drawing.Size(261, 167);
             this.FrameProcesos.TabIndex = 40;
             this.FrameProcesos.TabStop = false;
             this.FrameProcesos.Text = "Procesos";
@@ -289,10 +307,11 @@
             this.cboProcesos.Filtro = " 1 = 1";
             this.cboProcesos.FormattingEnabled = true;
             this.cboProcesos.ListaItemsBusqueda = 20;
-            this.cboProcesos.Location = new System.Drawing.Point(9, 18);
+            this.cboProcesos.Location = new System.Drawing.Point(12, 22);
+            this.cboProcesos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboProcesos.MostrarToolTip = false;
             this.cboProcesos.Name = "cboProcesos";
-            this.cboProcesos.Size = new System.Drawing.Size(180, 21);
+            this.cboProcesos.Size = new System.Drawing.Size(239, 24);
             this.cboProcesos.TabIndex = 35;
             this.cboProcesos.SelectedIndexChanged += new System.EventHandler(this.cboProcesos_SelectedIndexChanged);
             // 
@@ -301,9 +320,11 @@
             this.FrameTiempoEjecucion.Controls.Add(this.lblRespaldo);
             this.FrameTiempoEjecucion.Controls.Add(this.lblIntegracion);
             this.FrameTiempoEjecucion.Controls.Add(this.lblObtencion);
-            this.FrameTiempoEjecucion.Location = new System.Drawing.Point(10, 263);
+            this.FrameTiempoEjecucion.Location = new System.Drawing.Point(13, 324);
+            this.FrameTiempoEjecucion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameTiempoEjecucion.Name = "FrameTiempoEjecucion";
-            this.FrameTiempoEjecucion.Size = new System.Drawing.Size(196, 90);
+            this.FrameTiempoEjecucion.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameTiempoEjecucion.Size = new System.Drawing.Size(261, 111);
             this.FrameTiempoEjecucion.TabIndex = 39;
             this.FrameTiempoEjecucion.TabStop = false;
             this.FrameTiempoEjecucion.Text = "Inicio de procesos";
@@ -311,9 +332,10 @@
             // lblRespaldo
             // 
             this.lblRespaldo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblRespaldo.Location = new System.Drawing.Point(8, 62);
+            this.lblRespaldo.Location = new System.Drawing.Point(11, 76);
+            this.lblRespaldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRespaldo.Name = "lblRespaldo";
-            this.lblRespaldo.Size = new System.Drawing.Size(181, 19);
+            this.lblRespaldo.Size = new System.Drawing.Size(241, 23);
             this.lblRespaldo.TabIndex = 2;
             this.lblRespaldo.Text = "Respaldo :";
             this.lblRespaldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,9 +343,10 @@
             // lblIntegracion
             // 
             this.lblIntegracion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblIntegracion.Location = new System.Drawing.Point(8, 40);
+            this.lblIntegracion.Location = new System.Drawing.Point(11, 49);
+            this.lblIntegracion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIntegracion.Name = "lblIntegracion";
-            this.lblIntegracion.Size = new System.Drawing.Size(181, 19);
+            this.lblIntegracion.Size = new System.Drawing.Size(241, 23);
             this.lblIntegracion.TabIndex = 1;
             this.lblIntegracion.Text = "Integración :";
             this.lblIntegracion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,9 +354,10 @@
             // lblObtencion
             // 
             this.lblObtencion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblObtencion.Location = new System.Drawing.Point(8, 18);
+            this.lblObtencion.Location = new System.Drawing.Point(11, 22);
+            this.lblObtencion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblObtencion.Name = "lblObtencion";
-            this.lblObtencion.Size = new System.Drawing.Size(181, 19);
+            this.lblObtencion.Size = new System.Drawing.Size(241, 23);
             this.lblObtencion.TabIndex = 0;
             this.lblObtencion.Text = "Obtención :";
             this.lblObtencion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -343,9 +367,10 @@
             this.pcServerInactivo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcServerInactivo.Image = ((System.Drawing.Image)(resources.GetObject("pcServerInactivo.Image")));
             this.pcServerInactivo.InitialImage = ((System.Drawing.Image)(resources.GetObject("pcServerInactivo.InitialImage")));
-            this.pcServerInactivo.Location = new System.Drawing.Point(239, 47);
+            this.pcServerInactivo.Location = new System.Drawing.Point(319, 58);
+            this.pcServerInactivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcServerInactivo.Name = "pcServerInactivo";
-            this.pcServerInactivo.Size = new System.Drawing.Size(62, 81);
+            this.pcServerInactivo.Size = new System.Drawing.Size(82, 99);
             this.pcServerInactivo.TabIndex = 38;
             this.pcServerInactivo.TabStop = false;
             this.pcServerInactivo.Visible = false;
@@ -355,9 +380,10 @@
             this.pcServerStop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcServerStop.Image = ((System.Drawing.Image)(resources.GetObject("pcServerStop.Image")));
             this.pcServerStop.InitialImage = ((System.Drawing.Image)(resources.GetObject("pcServerStop.InitialImage")));
-            this.pcServerStop.Location = new System.Drawing.Point(375, 47);
+            this.pcServerStop.Location = new System.Drawing.Point(500, 58);
+            this.pcServerStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcServerStop.Name = "pcServerStop";
-            this.pcServerStop.Size = new System.Drawing.Size(62, 81);
+            this.pcServerStop.Size = new System.Drawing.Size(82, 99);
             this.pcServerStop.TabIndex = 37;
             this.pcServerStop.TabStop = false;
             this.pcServerStop.Visible = false;
@@ -367,9 +393,10 @@
             this.pcServerStar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcServerStar.Image = ((System.Drawing.Image)(resources.GetObject("pcServerStar.Image")));
             this.pcServerStar.InitialImage = ((System.Drawing.Image)(resources.GetObject("pcServerStar.InitialImage")));
-            this.pcServerStar.Location = new System.Drawing.Point(307, 47);
+            this.pcServerStar.Location = new System.Drawing.Point(409, 58);
+            this.pcServerStar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcServerStar.Name = "pcServerStar";
-            this.pcServerStar.Size = new System.Drawing.Size(62, 81);
+            this.pcServerStar.Size = new System.Drawing.Size(82, 99);
             this.pcServerStar.TabIndex = 36;
             this.pcServerStar.TabStop = false;
             this.pcServerStar.Visible = false;
@@ -389,70 +416,73 @@
             // 
             // menuObtencion
             // 
+            this.menuObtencion.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuObtencion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnObtencion__Habilitar,
             this.btnObtencion__Deshabilitar});
             this.menuObtencion.Name = "menuServicios";
             this.menuObtencion.ShowImageMargin = false;
-            this.menuObtencion.Size = new System.Drawing.Size(112, 48);
+            this.menuObtencion.Size = new System.Drawing.Size(134, 52);
             // 
             // btnObtencion__Habilitar
             // 
             this.btnObtencion__Habilitar.Name = "btnObtencion__Habilitar";
-            this.btnObtencion__Habilitar.Size = new System.Drawing.Size(111, 22);
+            this.btnObtencion__Habilitar.Size = new System.Drawing.Size(133, 24);
             this.btnObtencion__Habilitar.Text = "Habilitar";
             this.btnObtencion__Habilitar.Click += new System.EventHandler(this.btnHabilitar_Click);
             // 
             // btnObtencion__Deshabilitar
             // 
             this.btnObtencion__Deshabilitar.Name = "btnObtencion__Deshabilitar";
-            this.btnObtencion__Deshabilitar.Size = new System.Drawing.Size(111, 22);
+            this.btnObtencion__Deshabilitar.Size = new System.Drawing.Size(133, 24);
             this.btnObtencion__Deshabilitar.Text = "Deshabilitar";
             this.btnObtencion__Deshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // menuIntegracion
             // 
+            this.menuIntegracion.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuIntegracion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnIntegracion__Habilitar,
             this.btnIntegracion__Deshabilitar});
             this.menuIntegracion.Name = "menuServicios";
             this.menuIntegracion.ShowImageMargin = false;
-            this.menuIntegracion.Size = new System.Drawing.Size(112, 48);
+            this.menuIntegracion.Size = new System.Drawing.Size(134, 52);
             // 
             // btnIntegracion__Habilitar
             // 
             this.btnIntegracion__Habilitar.Name = "btnIntegracion__Habilitar";
-            this.btnIntegracion__Habilitar.Size = new System.Drawing.Size(111, 22);
+            this.btnIntegracion__Habilitar.Size = new System.Drawing.Size(133, 24);
             this.btnIntegracion__Habilitar.Text = "Habilitar";
             this.btnIntegracion__Habilitar.Click += new System.EventHandler(this.btnHabilitar_Click);
             // 
             // btnIntegracion__Deshabilitar
             // 
             this.btnIntegracion__Deshabilitar.Name = "btnIntegracion__Deshabilitar";
-            this.btnIntegracion__Deshabilitar.Size = new System.Drawing.Size(111, 22);
+            this.btnIntegracion__Deshabilitar.Size = new System.Drawing.Size(133, 24);
             this.btnIntegracion__Deshabilitar.Text = "Deshabilitar";
             this.btnIntegracion__Deshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // menuRespaldos
             // 
+            this.menuRespaldos.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuRespaldos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnRespaldos__Habilitar,
             this.btnRespaldos__Deshabilitar});
             this.menuRespaldos.Name = "menuServicios";
             this.menuRespaldos.ShowImageMargin = false;
-            this.menuRespaldos.Size = new System.Drawing.Size(112, 48);
+            this.menuRespaldos.Size = new System.Drawing.Size(134, 52);
             // 
             // btnRespaldos__Habilitar
             // 
             this.btnRespaldos__Habilitar.Name = "btnRespaldos__Habilitar";
-            this.btnRespaldos__Habilitar.Size = new System.Drawing.Size(111, 22);
+            this.btnRespaldos__Habilitar.Size = new System.Drawing.Size(133, 24);
             this.btnRespaldos__Habilitar.Text = "Habilitar";
             this.btnRespaldos__Habilitar.Click += new System.EventHandler(this.btnHabilitar_Click);
             // 
             // btnRespaldos__Deshabilitar
             // 
             this.btnRespaldos__Deshabilitar.Name = "btnRespaldos__Deshabilitar";
-            this.btnRespaldos__Deshabilitar.Size = new System.Drawing.Size(111, 22);
+            this.btnRespaldos__Deshabilitar.Size = new System.Drawing.Size(133, 24);
             this.btnRespaldos__Deshabilitar.Text = "Deshabilitar";
             this.btnRespaldos__Deshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
@@ -460,9 +490,10 @@
             // 
             this.lblMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.Location = new System.Drawing.Point(0, 384);
+            this.lblMenu.Location = new System.Drawing.Point(0, 473);
+            this.lblMenu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(477, 23);
+            this.lblMenu.Size = new System.Drawing.Size(636, 28);
             this.lblMenu.TabIndex = 36;
             this.lblMenu.Text = "Clic derecho en botones para ver menú";
             this.lblMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -474,13 +505,15 @@
             // 
             // FrmServicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 407);
+            this.ClientSize = new System.Drawing.Size(636, 501);
             this.ControlBox = false;
             this.Controls.Add(this.lblMenu);
             this.Controls.Add(this.FramePrincipal);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmServicio";
+            this.ShowIcon = false;
             this.ShowInTaskbar = true;
             this.Text = "Servicio";
             this.TituloMensajeValidarControl = "SC_Solutions";

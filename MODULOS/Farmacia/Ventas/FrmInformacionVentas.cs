@@ -147,6 +147,14 @@ namespace Farmacia.Ventas
             validarHuella = new DllFarmaciaSoft.wsFarmacia.wsCnnCliente();
             validarHuella.Url = General.Url;
             ////opPermisosEspeciales = new clsOperacionesSupervizadasHuellas(ref cnn, DtGeneral.EmpresaConectada, IdEstado, IdFarmacia, sPersonal);
+            ///
+
+            if (DtGeneral.EsAlmacen)
+            {
+                label8.Text = "No. Documento : ";
+                label9.Text = "Fecha Envío : ";
+                label22.Text = "CLUES : ";
+            }
 
         }
 

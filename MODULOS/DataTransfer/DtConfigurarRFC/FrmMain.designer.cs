@@ -31,16 +31,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.imgNavegacion_2 = new System.Windows.Forms.ImageList(this.components);
+            this.imgNavegacion_2 = new System.Windows.Forms.ImageList();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.btnNavegador = new System.Windows.Forms.ToolStripButton();
             this.btnCambiarPassword = new System.Windows.Forms.ToolStripButton();
             this.bntRegistroErrores = new System.Windows.Forms.ToolStripButton();
             this.btnGetInformacion = new System.Windows.Forms.ToolStripButton();
-            this.imgNavegacion = new System.Windows.Forms.ImageList(this.components);
+            this.imgNavegacion = new System.Windows.Forms.ImageList();
             this.BarraDeStatus = new System.Windows.Forms.StatusBar();
             this.lblModulo = new System.Windows.Forms.StatusBarPanel();
             this.lblFarmacia = new System.Windows.Forms.StatusBarPanel();
@@ -57,6 +56,7 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(581, 24);
@@ -165,7 +165,7 @@
             this.lblModulo.MinWidth = 15;
             this.lblModulo.Name = "lblModulo";
             this.lblModulo.Text = "Configuración Repositorio Central v.1.0.0.0";
-            this.lblModulo.Width = 231;
+            this.lblModulo.Width = 271;
             // 
             // lblFarmacia
             // 
@@ -193,7 +193,7 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

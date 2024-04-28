@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="yes"?>
+<Reporte>
+  <xs:schema id="Reporte" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Reporte" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Encabezado">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdEmpresa" type="xs:string" minOccurs="0" />
+                <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+                <xs:element name="EmpresaNombreCorto" type="xs:string" minOccurs="0" />
+                <xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+                <xs:element name="Colonia" type="xs:string" minOccurs="0" />
+                <xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+                <xs:element name="Ciudad" type="xs:string" minOccurs="0" />
+                <xs:element name="IdEstado" type="xs:string" minOccurs="0" />
+                <xs:element name="Estado" type="xs:string" minOccurs="0" />
+                <xs:element name="IdFarmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="Farmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="IdJurisdiccion" type="xs:string" minOccurs="0" />
+                <xs:element name="Jurisdiccion" type="xs:string" minOccurs="0" />
+                <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Posicion">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdEmpresa" type="xs:string" minOccurs="0" />
+                <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+                <xs:element name="IdEstado" type="xs:string" minOccurs="0" />
+                <xs:element name="Estado" type="xs:string" minOccurs="0" />
+                <xs:element name="IdFarmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="Farmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="IdPasillo" type="xs:string" minOccurs="0" />
+                <xs:element name="DescripcionPasillo" type="xs:string" minOccurs="0" />
+                <xs:element name="IdEstante" type="xs:string" minOccurs="0" />
+                <xs:element name="DescripcionEstante" type="xs:string" minOccurs="0" />
+                <xs:element name="IdEntrepaño" type="xs:string" minOccurs="0" />
+                <xs:element name="DescripcionEntrepaño" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Etiquetas">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Etiqueta_0001" type="xs:base64Binary" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Encabezado>
+    <IdEmpresa>005</IdEmpresa>
+    <Empresa>FMEDICAL</Empresa>
+    <EmpresaNombreCorto>FMEDICAL</EmpresaNombreCorto>
+    <Domicilio>CARR. CHAPALA</Domicilio>
+    <Colonia>AEROPUERTO</Colonia>
+    <CodigoPostal>45670</CodigoPostal>
+    <Ciudad>EL SALTO, JALISCO</Ciudad>
+    <IdEstado>14</IdEstado>
+    <Estado>JALISCO</Estado>
+    <IdFarmacia>0010</IdFarmacia>
+    <Farmacia>CEDIS FMEDICAL</Farmacia>
+    <IdJurisdiccion>001</IdJurisdiccion>
+    <Jurisdiccion>JURISDICCION CENTRO</Jurisdiccion>
+    <Fecha>2023-12-13T00:00:00-07:00</Fecha>
+  </Encabezado>
+  <Posicion>
+    <IdEmpresa>005</IdEmpresa>
+    <Empresa>005</Empresa>
+    <IdEstado>14</IdEstado>
+    <Estado>14</Estado>
+    <IdFarmacia>0010</IdFarmacia>
+    <Farmacia>0010</Farmacia>
+    <IdPasillo>4</IdPasillo>
+    <DescripcionPasillo>RACK #4</DescripcionPasillo>
+    <IdEstante>1</IdEstante>
+    <DescripcionEstante>NIVEL #1</DescripcionEstante>
+    <IdEntrepaño>1</IdEntrepaño>
+    <DescripcionEntrepaño>ENTREPAÑO #1</DescripcionEntrepaño>
+  </Posicion>
+  <Etiquetas>
+    <Etiqueta_0001>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</Etiqueta_0001>
+  </Etiquetas>
+</Reporte>

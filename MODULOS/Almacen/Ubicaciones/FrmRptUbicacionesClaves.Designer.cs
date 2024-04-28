@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRptUbicacionesClaves));
-            FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
-            FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer3 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer4 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType7 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.TextCellType textCellType8 = new FarPoint.Win.Spread.CellType.TextCellType();
+            FarPoint.Win.Spread.CellType.NumberCellType numberCellType4 = new FarPoint.Win.Spread.CellType.NumberCellType();
             this.toolStripBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -85,6 +87,8 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator1,
@@ -95,7 +99,7 @@
             this.btnExportarExcel});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(1190, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1587, 58);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -105,14 +109,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 2);
             // 
             // btnEjecutar
             // 
@@ -120,15 +125,16 @@
             this.btnEjecutar.Image = ((System.Drawing.Image)(resources.GetObject("btnEjecutar.Image")));
             this.btnEjecutar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(23, 22);
+            this.btnEjecutar.Size = new System.Drawing.Size(54, 55);
             this.btnEjecutar.Text = "Ejecutar";
             this.btnEjecutar.ToolTipText = "Ejecutar";
             this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 2);
             // 
             // btnImprimir
             // 
@@ -136,14 +142,15 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(23, 22);
+            this.btnImprimir.Size = new System.Drawing.Size(54, 55);
             this.btnImprimir.Text = "&Imprimir";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // toolStripSeparator2
             // 
+            this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 2);
             // 
             // btnExportarExcel
             // 
@@ -151,7 +158,7 @@
             this.btnExportarExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportarExcel.Image")));
             this.btnExportarExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExportarExcel.Name = "btnExportarExcel";
-            this.btnExportarExcel.Size = new System.Drawing.Size(23, 22);
+            this.btnExportarExcel.Size = new System.Drawing.Size(54, 55);
             this.btnExportarExcel.Text = "Exportar a Excel";
             this.btnExportarExcel.ToolTipText = "Exportar a Excel";
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
@@ -164,34 +171,34 @@
             this.groupBox1.Controls.Add(this.lblIdClaveSSA);
             this.groupBox1.Controls.Add(this.txtIdClaveSSA);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(9, 73);
+            this.groupBox1.Location = new System.Drawing.Point(12, 121);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1171, 77);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1561, 95);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos de Clave SSA";
+            this.groupBox1.Text = "Información Claves SSA";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblDescripcion.Location = new System.Drawing.Point(110, 46);
+            this.lblDescripcion.Location = new System.Drawing.Point(64, 57);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.MostrarToolTip = false;
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(1049, 21);
+            this.lblDescripcion.Size = new System.Drawing.Size(1482, 26);
             this.lblDescripcion.TabIndex = 6;
-            this.lblDescripcion.Text = "Descripcion";
             this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblIdClaveSSA
             // 
-            this.lblIdClaveSSA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblIdClaveSSA.Location = new System.Drawing.Point(266, 19);
+            this.lblIdClaveSSA.Location = new System.Drawing.Point(355, 23);
+            this.lblIdClaveSSA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdClaveSSA.Name = "lblIdClaveSSA";
-            this.lblIdClaveSSA.Size = new System.Drawing.Size(90, 20);
+            this.lblIdClaveSSA.Size = new System.Drawing.Size(120, 25);
             this.lblIdClaveSSA.TabIndex = 5;
-            this.lblIdClaveSSA.Text = "label2";
             this.lblIdClaveSSA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblIdClaveSSA.Visible = false;
             // 
@@ -201,12 +208,13 @@
             this.txtIdClaveSSA.Decimales = 2;
             this.txtIdClaveSSA.EstiloTexto = SC_ControlsCS.EstiloCaptura.Texto;
             this.txtIdClaveSSA.ForeColor = System.Drawing.Color.Black;
-            this.txtIdClaveSSA.Location = new System.Drawing.Point(110, 19);
+            this.txtIdClaveSSA.Location = new System.Drawing.Point(147, 23);
+            this.txtIdClaveSSA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdClaveSSA.MaxLength = 15;
             this.txtIdClaveSSA.Name = "txtIdClaveSSA";
             this.txtIdClaveSSA.PermitirApostrofo = false;
             this.txtIdClaveSSA.PermitirNegativos = false;
-            this.txtIdClaveSSA.Size = new System.Drawing.Size(150, 20);
+            this.txtIdClaveSSA.Size = new System.Drawing.Size(199, 22);
             this.txtIdClaveSSA.TabIndex = 0;
             this.txtIdClaveSSA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtIdClaveSSA.TextChanged += new System.EventHandler(this.txtIdClaveSSA_TextChanged);
@@ -215,9 +223,10 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(30, 21);
+            this.label1.Location = new System.Drawing.Point(40, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(101, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Clave SSA :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -225,11 +234,12 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 18);
+            this.label4.Location = new System.Drawing.Point(33, 22);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 15);
+            this.label4.Size = new System.Drawing.Size(137, 18);
             this.label4.TabIndex = 45;
-            this.label4.Text = "Sub-Farmacia :";
+            this.label4.Text = "Fuente Financ. :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cboSubFarmacias
@@ -240,10 +250,11 @@
             this.cboSubFarmacias.Filtro = " 1 = 1";
             this.cboSubFarmacias.FormattingEnabled = true;
             this.cboSubFarmacias.ListaItemsBusqueda = 20;
-            this.cboSubFarmacias.Location = new System.Drawing.Point(133, 15);
+            this.cboSubFarmacias.Location = new System.Drawing.Point(177, 18);
+            this.cboSubFarmacias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboSubFarmacias.MostrarToolTip = false;
             this.cboSubFarmacias.Name = "cboSubFarmacias";
-            this.cboSubFarmacias.Size = new System.Drawing.Size(210, 21);
+            this.cboSubFarmacias.Size = new System.Drawing.Size(279, 24);
             this.cboSubFarmacias.TabIndex = 0;
             // 
             // FrameLocalizaciones
@@ -254,9 +265,11 @@
             this.FrameLocalizaciones.Controls.Add(this.cboEstantes);
             this.FrameLocalizaciones.Controls.Add(this.label3);
             this.FrameLocalizaciones.Controls.Add(this.label5);
-            this.FrameLocalizaciones.Location = new System.Drawing.Point(9, 151);
+            this.FrameLocalizaciones.Location = new System.Drawing.Point(12, 217);
+            this.FrameLocalizaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameLocalizaciones.Name = "FrameLocalizaciones";
-            this.FrameLocalizaciones.Size = new System.Drawing.Size(804, 54);
+            this.FrameLocalizaciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameLocalizaciones.Size = new System.Drawing.Size(1072, 66);
             this.FrameLocalizaciones.TabIndex = 3;
             this.FrameLocalizaciones.TabStop = false;
             this.FrameLocalizaciones.Text = "Ubicación";
@@ -269,18 +282,20 @@
             this.cboPasillos.Filtro = " 1 = 1";
             this.cboPasillos.FormattingEnabled = true;
             this.cboPasillos.ListaItemsBusqueda = 20;
-            this.cboPasillos.Location = new System.Drawing.Point(81, 20);
+            this.cboPasillos.Location = new System.Drawing.Point(108, 25);
+            this.cboPasillos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboPasillos.MostrarToolTip = false;
             this.cboPasillos.Name = "cboPasillos";
-            this.cboPasillos.Size = new System.Drawing.Size(175, 21);
+            this.cboPasillos.Size = new System.Drawing.Size(232, 24);
             this.cboPasillos.TabIndex = 0;
             this.cboPasillos.SelectedIndexChanged += new System.EventHandler(this.cboPasillos_SelectedIndexChanged_1);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(30, 22);
+            this.label2.Location = new System.Drawing.Point(40, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 16);
+            this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 48;
             this.label2.Text = "Rack :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -293,10 +308,11 @@
             this.cboEntrepanos.Filtro = " 1 = 1";
             this.cboEntrepanos.FormattingEnabled = true;
             this.cboEntrepanos.ListaItemsBusqueda = 20;
-            this.cboEntrepanos.Location = new System.Drawing.Point(600, 20);
+            this.cboEntrepanos.Location = new System.Drawing.Point(800, 25);
+            this.cboEntrepanos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboEntrepanos.MostrarToolTip = false;
             this.cboEntrepanos.Name = "cboEntrepanos";
-            this.cboEntrepanos.Size = new System.Drawing.Size(175, 21);
+            this.cboEntrepanos.Size = new System.Drawing.Size(232, 24);
             this.cboEntrepanos.TabIndex = 2;
             this.cboEntrepanos.SelectedIndexChanged += new System.EventHandler(this.cboEntrepanos_SelectedIndexChanged_1);
             // 
@@ -308,29 +324,32 @@
             this.cboEstantes.Filtro = " 1 = 1";
             this.cboEstantes.FormattingEnabled = true;
             this.cboEstantes.ListaItemsBusqueda = 20;
-            this.cboEstantes.Location = new System.Drawing.Point(330, 20);
+            this.cboEstantes.Location = new System.Drawing.Point(440, 25);
+            this.cboEstantes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboEstantes.MostrarToolTip = false;
             this.cboEstantes.Name = "cboEstantes";
-            this.cboEstantes.Size = new System.Drawing.Size(175, 21);
+            this.cboEstantes.Size = new System.Drawing.Size(232, 24);
             this.cboEstantes.TabIndex = 1;
             this.cboEstantes.SelectedIndexChanged += new System.EventHandler(this.cboEstantes_SelectedIndexChanged_1);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(268, 22);
+            this.label3.Location = new System.Drawing.Point(357, 27);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 43;
             this.label3.Text = "Nivel :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(530, 22);
+            this.label5.Location = new System.Drawing.Point(707, 27);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.Size = new System.Drawing.Size(89, 20);
             this.label5.TabIndex = 45;
-            this.label5.Text = "Entrepaño :";
+            this.label5.Text = "Posición :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox3
@@ -339,20 +358,23 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.rdoRptClave);
             this.groupBox3.Controls.Add(this.rdoRptUbicacion);
-            this.groupBox3.Location = new System.Drawing.Point(9, 28);
+            this.groupBox3.Location = new System.Drawing.Point(12, 65);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(424, 44);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(565, 54);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tipo de Reporte";
+            this.groupBox3.Text = "Filtro";
             // 
             // rdoRptClave
             // 
             this.rdoRptClave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdoRptClave.Checked = true;
-            this.rdoRptClave.Location = new System.Drawing.Point(106, 17);
+            this.rdoRptClave.Location = new System.Drawing.Point(141, 21);
+            this.rdoRptClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptClave.Name = "rdoRptClave";
-            this.rdoRptClave.Size = new System.Drawing.Size(71, 17);
+            this.rdoRptClave.Size = new System.Drawing.Size(95, 21);
             this.rdoRptClave.TabIndex = 0;
             this.rdoRptClave.TabStop = true;
             this.rdoRptClave.Text = "Por Clave";
@@ -361,9 +383,10 @@
             // rdoRptUbicacion
             // 
             this.rdoRptUbicacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rdoRptUbicacion.Location = new System.Drawing.Point(227, 17);
+            this.rdoRptUbicacion.Location = new System.Drawing.Point(303, 21);
+            this.rdoRptUbicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptUbicacion.Name = "rdoRptUbicacion";
-            this.rdoRptUbicacion.Size = new System.Drawing.Size(92, 17);
+            this.rdoRptUbicacion.Size = new System.Drawing.Size(123, 21);
             this.rdoRptUbicacion.TabIndex = 1;
             this.rdoRptUbicacion.Text = "Por Ubicación";
             this.rdoRptUbicacion.UseVisualStyleBackColor = true;
@@ -374,12 +397,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameUbicaciones.Controls.Add(this.grdProductos);
-            this.FrameUbicaciones.Location = new System.Drawing.Point(9, 206);
+            this.FrameUbicaciones.Location = new System.Drawing.Point(12, 285);
+            this.FrameUbicaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FrameUbicaciones.Name = "FrameUbicaciones";
-            this.FrameUbicaciones.Size = new System.Drawing.Size(1171, 376);
+            this.FrameUbicaciones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameUbicaciones.Size = new System.Drawing.Size(1561, 431);
             this.FrameUbicaciones.TabIndex = 4;
             this.FrameUbicaciones.TabStop = false;
-            this.FrameUbicaciones.Text = "Ubicaciones de Producto";
+            this.FrameUbicaciones.Text = "Detalles";
             // 
             // grdProductos
             // 
@@ -388,13 +413,45 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdProductos.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.grdProductos.Location = new System.Drawing.Point(11, 19);
+            this.grdProductos.HorizontalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdProductos.HorizontalScrollBar.Name = "";
+            enhancedScrollBarRenderer3.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer3.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer3.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer3.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer3.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer3;
+            this.grdProductos.HorizontalScrollBar.TabIndex = 2;
+            this.grdProductos.Location = new System.Drawing.Point(15, 23);
+            this.grdProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdProductos.Name = "grdProductos";
             this.grdProductos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdProductos.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
             this.grdProductos_Sheet1});
-            this.grdProductos.Size = new System.Drawing.Size(1149, 348);
+            this.grdProductos.Size = new System.Drawing.Size(1531, 400);
+            this.grdProductos.Skin = FarPoint.Win.Spread.DefaultSpreadSkins.Seashell;
             this.grdProductos.TabIndex = 0;
+            this.grdProductos.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdProductos.VerticalScrollBar.Name = "";
+            enhancedScrollBarRenderer4.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer4.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer4.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer4.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer4.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.VerticalScrollBar.Renderer = enhancedScrollBarRenderer4;
+            this.grdProductos.VerticalScrollBar.TabIndex = 3;
             this.grdProductos.CellDoubleClick += new FarPoint.Win.Spread.CellClickEventHandler(this.grdProductos_CellDoubleClick);
             // 
             // grdProductos_Sheet1
@@ -412,20 +469,21 @@
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 4).Value = "Rack";
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 5).Value = "# Nivel";
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 6).Value = "Nivel";
-            this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 7).Value = "# Entrepaño";
-            this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 8).Value = "Entrepaño";
+            this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 7).Value = "# Posición";
+            this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 8).Value = "Posición";
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 9).Value = "Existencia";
+            this.grdProductos_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdProductos_Sheet1.ColumnHeader.Rows.Get(0).Height = 39F;
-            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType1;
+            this.grdProductos_Sheet1.Columns.Get(0).CellType = textCellType7;
             this.grdProductos_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Label = "IdClaveSSA_Sal";
             this.grdProductos_Sheet1.Columns.Get(0).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(0).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(0).Width = 91F;
-            textCellType2.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
-            textCellType2.MaxLength = 20;
-            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType2;
+            textCellType8.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
+            textCellType8.MaxLength = 20;
+            this.grdProductos_Sheet1.Columns.Get(1).CellType = textCellType8;
             this.grdProductos_Sheet1.Columns.Get(1).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(1).Label = "ClaveSSA";
             this.grdProductos_Sheet1.Columns.Get(1).Locked = true;
@@ -457,27 +515,29 @@
             this.grdProductos_Sheet1.Columns.Get(6).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(6).Width = 95F;
             this.grdProductos_Sheet1.Columns.Get(7).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
-            this.grdProductos_Sheet1.Columns.Get(7).Label = "# Entrepaño";
+            this.grdProductos_Sheet1.Columns.Get(7).Label = "# Posición";
             this.grdProductos_Sheet1.Columns.Get(7).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(7).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(8).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
-            this.grdProductos_Sheet1.Columns.Get(8).Label = "Entrepaño";
+            this.grdProductos_Sheet1.Columns.Get(8).Label = "Posición";
             this.grdProductos_Sheet1.Columns.Get(8).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(8).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(8).Width = 95F;
-            numberCellType1.DecimalPlaces = 0;
-            numberCellType1.DecimalSeparator = ".";
-            numberCellType1.MaximumValue = 10000000D;
-            numberCellType1.MinimumValue = 0D;
-            numberCellType1.Separator = ",";
-            numberCellType1.ShowSeparator = true;
-            this.grdProductos_Sheet1.Columns.Get(9).CellType = numberCellType1;
+            numberCellType4.DecimalPlaces = 0;
+            numberCellType4.DecimalSeparator = ".";
+            numberCellType4.MaximumValue = 10000000D;
+            numberCellType4.MinimumValue = 0D;
+            numberCellType4.Separator = ",";
+            numberCellType4.ShowSeparator = true;
+            this.grdProductos_Sheet1.Columns.Get(9).CellType = numberCellType4;
             this.grdProductos_Sheet1.Columns.Get(9).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Right;
             this.grdProductos_Sheet1.Columns.Get(9).Label = "Existencia";
             this.grdProductos_Sheet1.Columns.Get(9).Locked = true;
             this.grdProductos_Sheet1.Columns.Get(9).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
             this.grdProductos_Sheet1.Columns.Get(9).Width = 100F;
             this.grdProductos_Sheet1.RowHeader.Columns.Default.Resizable = true;
+            this.grdProductos_Sheet1.RowHeader.DefaultStyle.Parent = "RowHeaderSeashell";
+            this.grdProductos_Sheet1.SheetCornerStyle.Parent = "CornerSeashell";
             this.grdProductos_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1;
             // 
             // groupBox2
@@ -485,24 +545,29 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.cboSubFarmacias);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(794, 28);
+            this.groupBox2.Location = new System.Drawing.Point(1059, 65);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(386, 44);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(515, 54);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.BackColor = System.Drawing.Color.SteelBlue;
             this.label11.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(0, 587);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(0, 722);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1190, 24);
+            this.label11.Size = new System.Drawing.Size(1587, 30);
             this.label11.TabIndex = 12;
-            this.label11.Text = resources.GetString("label11.Text");
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Text = "( F5 ) | LOTES Visualizar                                                        " +
+    "             ---- Ver detalles doble click ----                                 " +
+    "                              ";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox4
             // 
@@ -510,28 +575,32 @@
             this.groupBox4.Controls.Add(this.rdoRptSinExistencia);
             this.groupBox4.Controls.Add(this.rdoRptTodos);
             this.groupBox4.Controls.Add(this.rdoRptConExistencia);
-            this.groupBox4.Location = new System.Drawing.Point(439, 28);
+            this.groupBox4.Location = new System.Drawing.Point(585, 65);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(349, 44);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(465, 54);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Tipo de Existencia";
+            this.groupBox4.Text = "Filtro Existencia";
             // 
             // rdoRptSinExistencia
             // 
-            this.rdoRptSinExistencia.Location = new System.Drawing.Point(227, 17);
+            this.rdoRptSinExistencia.Location = new System.Drawing.Point(303, 21);
+            this.rdoRptSinExistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptSinExistencia.Name = "rdoRptSinExistencia";
-            this.rdoRptSinExistencia.Size = new System.Drawing.Size(91, 17);
+            this.rdoRptSinExistencia.Size = new System.Drawing.Size(121, 21);
             this.rdoRptSinExistencia.TabIndex = 2;
-            this.rdoRptSinExistencia.Text = "Sin Existencia";
+            this.rdoRptSinExistencia.Text = "Igual a cero (0)";
             this.rdoRptSinExistencia.UseVisualStyleBackColor = true;
             // 
             // rdoRptTodos
             // 
             this.rdoRptTodos.Checked = true;
-            this.rdoRptTodos.Location = new System.Drawing.Point(30, 17);
+            this.rdoRptTodos.Location = new System.Drawing.Point(40, 21);
+            this.rdoRptTodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptTodos.Name = "rdoRptTodos";
-            this.rdoRptTodos.Size = new System.Drawing.Size(55, 17);
+            this.rdoRptTodos.Size = new System.Drawing.Size(73, 21);
             this.rdoRptTodos.TabIndex = 0;
             this.rdoRptTodos.TabStop = true;
             this.rdoRptTodos.Text = "Todos";
@@ -539,11 +608,12 @@
             // 
             // rdoRptConExistencia
             // 
-            this.rdoRptConExistencia.Location = new System.Drawing.Point(115, 17);
+            this.rdoRptConExistencia.Location = new System.Drawing.Point(153, 21);
+            this.rdoRptConExistencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptConExistencia.Name = "rdoRptConExistencia";
-            this.rdoRptConExistencia.Size = new System.Drawing.Size(95, 17);
+            this.rdoRptConExistencia.Size = new System.Drawing.Size(127, 21);
             this.rdoRptConExistencia.TabIndex = 1;
-            this.rdoRptConExistencia.Text = "Con Existencia";
+            this.rdoRptConExistencia.Text = "Mayor a cero (0)";
             this.rdoRptConExistencia.UseVisualStyleBackColor = true;
             // 
             // groupBox5
@@ -553,28 +623,32 @@
             this.groupBox5.Controls.Add(this.rdoRptAlmacenamiento);
             this.groupBox5.Controls.Add(this.rdoRptAmbos);
             this.groupBox5.Controls.Add(this.rdoRptPickeo);
-            this.groupBox5.Location = new System.Drawing.Point(819, 151);
+            this.groupBox5.Location = new System.Drawing.Point(1092, 217);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(361, 54);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(481, 66);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Tipo de Ubicación";
+            this.groupBox5.Text = "Filtro Ubicación";
             // 
             // rdoRptAlmacenamiento
             // 
-            this.rdoRptAlmacenamiento.Location = new System.Drawing.Point(215, 22);
+            this.rdoRptAlmacenamiento.Location = new System.Drawing.Point(287, 27);
+            this.rdoRptAlmacenamiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptAlmacenamiento.Name = "rdoRptAlmacenamiento";
-            this.rdoRptAlmacenamiento.Size = new System.Drawing.Size(103, 17);
+            this.rdoRptAlmacenamiento.Size = new System.Drawing.Size(137, 21);
             this.rdoRptAlmacenamiento.TabIndex = 2;
-            this.rdoRptAlmacenamiento.Text = "Almacenamiento";
+            this.rdoRptAlmacenamiento.Text = "Altura";
             this.rdoRptAlmacenamiento.UseVisualStyleBackColor = true;
             // 
             // rdoRptAmbos
             // 
             this.rdoRptAmbos.Checked = true;
-            this.rdoRptAmbos.Location = new System.Drawing.Point(37, 22);
+            this.rdoRptAmbos.Location = new System.Drawing.Point(49, 27);
+            this.rdoRptAmbos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptAmbos.Name = "rdoRptAmbos";
-            this.rdoRptAmbos.Size = new System.Drawing.Size(58, 17);
+            this.rdoRptAmbos.Size = new System.Drawing.Size(77, 21);
             this.rdoRptAmbos.TabIndex = 0;
             this.rdoRptAmbos.TabStop = true;
             this.rdoRptAmbos.Text = "Ambos";
@@ -582,18 +656,19 @@
             // 
             // rdoRptPickeo
             // 
-            this.rdoRptPickeo.Location = new System.Drawing.Point(122, 22);
+            this.rdoRptPickeo.Location = new System.Drawing.Point(163, 27);
+            this.rdoRptPickeo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoRptPickeo.Name = "rdoRptPickeo";
-            this.rdoRptPickeo.Size = new System.Drawing.Size(62, 17);
+            this.rdoRptPickeo.Size = new System.Drawing.Size(83, 21);
             this.rdoRptPickeo.TabIndex = 1;
-            this.rdoRptPickeo.Text = "Pickeo";
+            this.rdoRptPickeo.Text = "Picking";
             this.rdoRptPickeo.UseVisualStyleBackColor = true;
             // 
             // FrmRptUbicacionesClaves
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1190, 611);
+            this.ClientSize = new System.Drawing.Size(1587, 752);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label11);
@@ -603,8 +678,10 @@
             this.Controls.Add(this.FrameLocalizaciones);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStripBarraMenu);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmRptUbicacionesClaves";
-            this.Text = "Localización de Claves";
+            this.ShowIcon = false;
+            this.Text = "Ubicaciones -- Existencia Claves";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmRptUbicacionesClaves_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmRptUbicacionesClaves_KeyDown);
@@ -621,7 +698,6 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

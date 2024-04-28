@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SC_SolutionsSystem;
 using SC_SolutionsSystem.FuncionesGrid;
 using SC_SolutionsSystem.Data;
+using FarPoint.PDF.Drawing.EMF;
 
 namespace Almacen.Pedidos
 {
@@ -276,6 +277,14 @@ namespace Almacen.Pedidos
 
                 //f = null;
             }
+        }
+        
+        private void grdDetalles_LeaveCell(object sender, FarPoint.Win.Spread.LeaveCellEventArgs e)
+        {
+            //int iRenglon = 0;
+            //iRenglon = GridDetalles.ActiveRow;
+            lblLote.Text = GridDetalles.GetValue(e.NewRow + 1, (int)ColsDetalles.Lote);
+            lblCant.Text = GridDetalles.GetValueInt(e.NewRow + 1, (int)ColsDetalles.Cant_Asignada).ToString();
         }
     }
 }

@@ -125,7 +125,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             if (txtCodigoEAN.Text.Trim() == "")
             {
                 bRegresa = false;
-                General.msjUser("No ha capturado el Código EAN a etiquetar."); 
+                General.msjUser("Capturar Código EAN a etiquetar. Favor de verificar."); 
                 txtCodigoEAN.Focus(); 
             }
 
@@ -184,7 +184,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             {
                 if (!leer.Leer())
                 {
-                    General.msjAviso("No se encontro la posición solicitada."); 
+                    General.msjAviso("Posición no encontrada."); 
                 }
                 else 
                 {
@@ -229,7 +229,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 else
                 { 
                     //No se encontro CodigoEAN
-                    General.msjAviso("CodigoEAN no encontrado verfirique.");
+                    General.msjAviso("CodigoEAN no encontrado. Favor de verfiricar.");
                 }
             } 
         } 

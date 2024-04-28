@@ -87,8 +87,8 @@ namespace Farmacia.Inventario
                     txtClaveSSA.Enabled = false;
                     txtId.Text = leer.Campo("IdProducto");
                     lblDescripcion.Text = leer.Campo("Descripcion");
-                    txtClaveSSA.Text = leer.Campo("IdClaveSSA_Sal");
-                    lblDescripcionClave.Text = leer.Campo("ClaveSSA") + " -- " + leer.Campo("DescripcionSal"); 
+                    txtClaveSSA.Text = leer.Campo("ClaveSSA");
+                    lblDescripcionClave.Text = leer.Campo("DescripcionSal"); 
                     txtCodEAN.Focus();
                 }
             }
@@ -133,8 +133,8 @@ namespace Farmacia.Inventario
                         txtId.Enabled = false; 
                         txtId.Text = leer.Campo("IdProducto");
                         lblDescripcion.Text = leer.Campo("DescripcionProducto");
-                        txtClaveSSA.Text = leer.Campo("IdClaveSSA_Sal");
-                        lblDescripcionClave.Text = leer.Campo("ClaveSSA") + " -- " + leer.Campo("DescripcionSal"); 
+                        txtClaveSSA.Text = leer.Campo("ClaveSSA");
+                        lblDescripcionClave.Text = leer.Campo("DescripcionSal"); 
 
 
                         txtCodEAN.Enabled = false;

@@ -79,7 +79,7 @@
             this.btnExportarExcel});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(1445, 58);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1408, 58);
             this.toolStripBarraMenu.TabIndex = 7;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -97,7 +97,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEjecutar
             // 
@@ -114,7 +114,7 @@
             // 
             this.toolStripSeparator4.AutoSize = false;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(12, 4);
             // 
             // btnImprimir
             // 
@@ -130,7 +130,7 @@
             // 
             this.toolStripSeparator3.AutoSize = false;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(12, 4);
             // 
             // btnExportarExcel
             // 
@@ -159,7 +159,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1421, 650);
+            this.groupBox2.Size = new System.Drawing.Size(1384, 650);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
@@ -167,7 +167,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1076, 609);
+            this.label3.Location = new System.Drawing.Point(1039, 609);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 28);
@@ -179,7 +179,7 @@
             // 
             this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(1225, 609);
+            this.lblTotal.Location = new System.Drawing.Point(1188, 609);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(184, 28);
@@ -194,7 +194,7 @@
             this.lblDescripcionSal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcionSal.MostrarToolTip = false;
             this.lblDescripcionSal.Name = "lblDescripcionSal";
-            this.lblDescripcionSal.Size = new System.Drawing.Size(1035, 28);
+            this.lblDescripcionSal.Size = new System.Drawing.Size(998, 28);
             this.lblDescripcionSal.TabIndex = 44;
             this.lblDescripcionSal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -215,7 +215,7 @@
             this.lstClaves.Location = new System.Drawing.Point(12, 78);
             this.lstClaves.Margin = new System.Windows.Forms.Padding(4);
             this.lstClaves.Name = "lstClaves";
-            this.lstClaves.Size = new System.Drawing.Size(1396, 523);
+            this.lstClaves.Size = new System.Drawing.Size(1359, 523);
             this.lstClaves.TabIndex = 8;
             this.lstClaves.UseCompatibleStateImageBehavior = false;
             this.lstClaves.View = System.Windows.Forms.View.Details;
@@ -283,7 +283,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(820, 54);
+            this.groupBox3.Size = new System.Drawing.Size(782, 54);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tipo de Existencias";
@@ -364,16 +364,17 @@
             this.label11.Location = new System.Drawing.Point(0, 722);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1445, 30);
+            this.label11.Size = new System.Drawing.Size(1408, 30);
             this.label11.TabIndex = 10;
-            this.label11.Text = " ( F7 )      -----  Seleccionar Fuentes Financiamiento  -----";
+            this.label11.Text = " ( F7 )  -- Seleccionar F. Financiamiento  --    |    -- Doble click - Ver detall" +
+    "e  --     ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmExistenciaGralClaveSSA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1445, 752);
+            this.ClientSize = new System.Drawing.Size(1408, 752);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.toolStripBarraMenu);

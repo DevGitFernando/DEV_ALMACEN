@@ -232,6 +232,8 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             TextItem txtET_15_Programa_Leyenda;
             TextItem txtET_16_Referencia;
             TextItem txtET_16_Referencia_Leyenda;
+            TextItem txtET_16_ReferenciaFF;
+            TextItem txtET_16_Referencia_LeyendaFF;
 
             LineShapeItem lineItem_Division_01;
             LineShapeItem lineItem_Division_02;
@@ -246,8 +248,8 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
             LineShapeItem lineItem_Division_09_Programa;
             LineShapeItem lineItem_Division_10_Referencia;
             LineShapeItem lineItem_Division_11_Referencia;
-
-
+            LineShapeItem lineItem_Division_12_Referencia;
+            LineShapeItem lineItem_Division_13_Referencia;
 
 
             double dFactor = 2.50;
@@ -835,6 +837,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 lineItem_Division_10_Referencia = new LineShapeItem();
                 lineItem_Division_10_Referencia.Orientation = LineOrientation.Horizontal;
                 lineItem_Division_10_Referencia.X = lineItem_Division_09_Programa.X;
+                //lineItem_Division_10_Referencia.Y = lineItem_Division_09_Programa.Y + 1.0;
                 lineItem_Division_10_Referencia.Y = lineItem_Division_09_Programa.Y + 1.0;
                 lineItem_Division_10_Referencia.Width = lineItem_Division_09_Programa.Width;
                 lineItem_Division_10_Referencia.Height = 0.01;
@@ -862,6 +865,38 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 lineItem_Division_11_Referencia.Width = lineItem_Division_09_Programa.Width;
                 lineItem_Division_11_Referencia.Height = 0.01;
 
+                //FAV
+                lineItem_Division_12_Referencia = new LineShapeItem();
+                lineItem_Division_12_Referencia.Orientation = LineOrientation.Horizontal;
+                lineItem_Division_12_Referencia.X = lineItem_Division_11_Referencia.X;
+                lineItem_Division_12_Referencia.Y = lineItem_Division_11_Referencia.Y + .50;
+                lineItem_Division_12_Referencia.Width = lineItem_Division_11_Referencia.Width;
+                lineItem_Division_12_Referencia.Height = 0.01;
+
+
+                txtET_16_ReferenciaFF = new TextItem();
+                txtET_16_ReferenciaFF.Font.Name = fuente.Name;
+                txtET_16_ReferenciaFF.Font.Unit = fuente.Unit;
+                txtET_16_ReferenciaFF.Font.Size = 7;
+                txtET_16_ReferenciaFF.Font.Bold = true;
+                txtET_16_ReferenciaFF.TextAlignment = TextAlignment.Center;
+                txtET_16_ReferenciaFF.TextPadding = new FrameThickness(dPadding);
+                txtET_16_ReferenciaFF.X = txtET_16_Referencia.X;
+                txtET_16_ReferenciaFF.Y = lineItem_Division_12_Referencia.Y + (dMargen * .5);
+                txtET_16_ReferenciaFF.BorderThickness = new FrameThickness(0.0);  //dBorde
+                txtET_16_ReferenciaFF.Width = txtET_16_Referencia.Width;
+                txtET_16_ReferenciaFF.Height = txtET_16_Referencia.Height;
+                txtET_16_ReferenciaFF.Text = info.Campo("TituloFuente");
+
+
+                lineItem_Division_13_Referencia = new LineShapeItem();
+                lineItem_Division_13_Referencia.Orientation = LineOrientation.Horizontal;
+                lineItem_Division_13_Referencia.X = lineItem_Division_12_Referencia.X;
+                lineItem_Division_13_Referencia.Y = lineItem_Division_12_Referencia.Y + txtET_16_ReferenciaFF.Height + (dMargen * .5);
+                lineItem_Division_13_Referencia.Width = lineItem_Division_12_Referencia.Width;
+                lineItem_Division_13_Referencia.Height = 0.01;
+                //FAV
+
 
 
                 txtET_15_Programa_Leyenda = new TextItem();
@@ -882,7 +917,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 txtET_16_Referencia_Leyenda = new TextItem();
                 txtET_16_Referencia_Leyenda.Font.Name = fuente.Name;
                 txtET_16_Referencia_Leyenda.Font.Unit = fuente.Unit;
-                txtET_16_Referencia_Leyenda.Font.Size = 6;
+                txtET_16_Referencia_Leyenda.Font.Size = 12;
                 txtET_16_Referencia_Leyenda.Font.Bold = true;
                 txtET_16_Referencia_Leyenda.TextAlignment = TextAlignment.Center;
                 txtET_16_Referencia_Leyenda.TextPadding = new FrameThickness(dPadding);
@@ -891,7 +926,22 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 txtET_16_Referencia_Leyenda.BorderThickness = new FrameThickness(0.00);  //dBorde
                 txtET_16_Referencia_Leyenda.Width = txtET_15_Programa.Width;
                 txtET_16_Referencia_Leyenda.Height = 1.0 - (dMargen * 1);
-                txtET_16_Referencia_Leyenda.Text = info.Campo("LeyendaReferencia");
+                //txtET_16_Referencia_Leyenda.Text = info.Campo("LeyendaReferencia");
+                txtET_16_Referencia_Leyenda.Text = info.Campo("ReferenciaInterna");
+
+                txtET_16_Referencia_LeyendaFF = new TextItem();
+                txtET_16_Referencia_LeyendaFF.Font.Name = fuente.Name;
+                txtET_16_Referencia_LeyendaFF.Font.Unit = fuente.Unit;
+                txtET_16_Referencia_LeyendaFF.Font.Size = 6;
+                txtET_16_Referencia_LeyendaFF.Font.Bold = true;
+                txtET_16_Referencia_LeyendaFF.TextAlignment = TextAlignment.Center;
+                txtET_16_Referencia_LeyendaFF.TextPadding = new FrameThickness(dPadding);
+                txtET_16_Referencia_LeyendaFF.X = txtET_16_Referencia.X;
+                txtET_16_Referencia_LeyendaFF.Y = lineItem_Division_12_Referencia.Y + (dMargen * .5);
+                txtET_16_Referencia_LeyendaFF.BorderThickness = new FrameThickness(0.00);  //dBorde
+                txtET_16_Referencia_LeyendaFF.Width = txtET_16_Referencia.Width;
+                txtET_16_Referencia_LeyendaFF.Height = 1.0 - (dMargen * 1);
+                txtET_16_Referencia_LeyendaFF.Text = info.Campo("Fuente");
 
                 //////////////////////////////////////////////////////////////////////////////////  
 
@@ -941,7 +991,7 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
 
                 tLabel.Items.Add(txtET_15_Programa);
                 tLabel.Items.Add(lineItem_Division_09_Programa);
-                tLabel.Items.Add(txtET_15_Programa_Leyenda);
+                tLabel.Items.Add(txtET_15_Programa_Leyenda); 
 
                 tLabel.Items.Add(lineItem_Division_10_Referencia);
                 tLabel.Items.Add(txtET_16_Referencia);
@@ -949,10 +999,16 @@ namespace DllFarmaciaSoft.QRCode.GenerarEtiquetas
                 tLabel.Items.Add(txtET_16_Referencia_Leyenda);
 
 
+                ////tLabel.Items.Add(lineItem_Division_12_Referencia);
+                ////tLabel.Items.Add(txtET_16_ReferenciaFF);
+                ////tLabel.Items.Add(lineItem_Division_13_Referencia);
+                //tLabel.Items.Add(txtET_16_Referencia_LeyendaFF); //FAV 19/02/2024
+
+
                 ////////////////Add items to ThermalLabel object... 
 
 
-                if(info.CampoBool("EtiquetadoManual"))
+                if (info.CampoBool("EtiquetadoManual"))
                 {
                     //// Multiples etiquetas 
                     string sTextoEtiqueta = "";

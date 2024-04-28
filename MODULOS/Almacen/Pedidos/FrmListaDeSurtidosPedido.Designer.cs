@@ -91,7 +91,6 @@
             this.btnTerminarEdicion = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.FramePedidos.SuspendLayout();
             this.menuPedidos.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -518,8 +517,7 @@
             this.toolStripSeparator17,
             this.btnTerminarEdicion,
             this.toolStripSeparator18,
-            this.btnSalir,
-            this.toolStripSeparator19});
+            this.btnSalir});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
             this.toolStripBarraMenu.Size = new System.Drawing.Size(1085, 58);
@@ -540,7 +538,7 @@
             // 
             this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 4);
             // 
             // btnEdicion
             // 
@@ -556,7 +554,7 @@
             // 
             this.toolStripSeparator17.AutoSize = false;
             this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator17.Size = new System.Drawing.Size(12, 4);
             // 
             // btnTerminarEdicion
             // 
@@ -572,7 +570,7 @@
             // 
             this.toolStripSeparator18.AutoSize = false;
             this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(12, 58);
+            this.toolStripSeparator18.Size = new System.Drawing.Size(12, 4);
             // 
             // btnSalir
             // 
@@ -584,11 +582,6 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.ToolTipText = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // toolStripSeparator19
-            // 
-            this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(6, 58);
             // 
             // FrmListaDeSurtidosPedido
             // 
@@ -670,7 +663,6 @@
         private System.Windows.Forms.ToolStripButton btnTerminarEdicion;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
         private System.Windows.Forms.ToolStripButton btnSalir;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
         private System.Windows.Forms.ColumnHeader colEnEdición;
         private System.Windows.Forms.ColumnHeader colEditadoPor;
         private System.Windows.Forms.ColumnHeader colTerminal;

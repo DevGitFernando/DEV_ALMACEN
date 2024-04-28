@@ -185,9 +185,9 @@ namespace Farmacia.Transferencias
                 " Select * \n" +
                 " From \n" + 
                 " ( \n" +
-                "       Select 'Folio Transferencia' = Folio, {3} as Recepcionada, 'Fecha Registro' = FechaReg, \n" +
-                "       'Núm. Farmacia Destino' = IdFarmaciaRecibe, \n" +
-                "       'Farmacia Destino' = FarmaciaRecibe \n" +
+                "       Select 'Folio Traspaso' = Folio, {3} as Recepcionada, 'Fecha Registro' = FechaReg, \n" +
+                "       'Id Unidad Destino' = IdFarmaciaRecibe, \n" +
+                "       'Unidad Destino' = FarmaciaRecibe \n" +
                 "       From vw_TransferenciasEnc T (Nolock) \n" +
                 "       Inner Join CatFarmacias F (NoLock) On (T.IdEstadoRecibe = F.IdEstado And T.IdFarmaciaRecibe = F.IdFarmacia) \n" +
                 "       Where TipoTransferencia = 'TS' and T.IdEmpresa = '{0}' and T.IdEstado = '{1}' {5}\n" +
@@ -204,13 +204,13 @@ namespace Farmacia.Transferencias
             if (!leer.Exec(sSql))
             {
                 Error.GrabarError(leer, "BuscarTransferencias()");
-                General.msjError("Error en consulta de Traslados.");
+                General.msjError("Error en consulta de Traspasos.");
             }
             else
             {
                 if (!leer.Leer())
                 {
-                    General.msjAviso("Sin Información de Traslados.");
+                    General.msjAviso("Sin Información de Traspasos.");
                 }
                 else
                 {
@@ -266,7 +266,7 @@ namespace Farmacia.Transferencias
         private void btnAplicarTransf_Click(object sender, EventArgs e)
         {
             bool bRegresa = true; 
-            string sConfirmaMsj = "Se Aplicara el movimiento del Traslado, No habra reversa una vez aplicado !";
+            string sConfirmaMsj = "Se aplicara el Traspaso. No habra reversa una vez aplicado!";
             int iRenglon = lst.RenglonActivo;
             bool bEsProcesoMasivo = false;
 
@@ -278,7 +278,7 @@ namespace Farmacia.Transferencias
                     {
                         if (DtGeneral.ConfirmacionConHuellas)
                         {
-                            sMsjNoEncontrado = "Usuario sin permisos para aplicar Traslados, Favor de verificar.";
+                            sMsjNoEncontrado = "Usuario sin permisos para aplicar Traspasos. Favor de verificar.";
                             ////bRegresa = opPermisosEspeciales.VerificarPermisos("APLICAR_TRANSFERENCIA", sMsjNoEncontrado);
                             bRegresa = DtGeneral.PermisosEspeciales_Biometricos.VerificarPermisos("APLICAR_TRANSFERENCIA", sMsjNoEncontrado);
                         }
@@ -295,7 +295,7 @@ namespace Farmacia.Transferencias
         private void btnAplicarTransfMasivo_Click( object sender, EventArgs e )
         {
             bool bRegresa = true;
-            string sConfirmaMsj = "Se Aplicara el movimiento del Traslado, No habra reversa una vez aplicado !";
+            string sConfirmaMsj = "Se aplicara el Traspaso. No habra reversa una vez aplicado!";
             bool bEsProcesoMasivo = true;
 
             for(int i = 1; i <= lst.Registros; i++)
@@ -531,7 +531,7 @@ namespace Farmacia.Transferencias
                     {
                         if(!EsProcesoMasivo)
                         {
-                            General.msjAviso(" El Traslado no ha sido recepcionado en el destino, No se puede aplicar el Traslado. ");
+                            General.msjAviso("Traspaso no recepcionado en el destino. No se puede aplicar Traspaso.");
                         }
                     }
                 }
@@ -562,7 +562,7 @@ namespace Farmacia.Transferencias
                 Error.GrabarError(leer, "ValidaTransferenciaInterEstatal()");
                 if(!EsProcesoMasivo)
                 {
-                    General.msjError("Error al validar el tipo de Traslado.");
+                    General.msjError("Error al validar el tipo de Traspaso.");
                 }
             }
             else
@@ -579,7 +579,7 @@ namespace Farmacia.Transferencias
                             bRegresa = false;
                             if(!EsProcesoMasivo)
                             {
-                                General.msjAviso(" Traslado Inter-Estatal, Favor de consultarlo en la pantalla correspondiente.");
+                                General.msjAviso(" Traspaso Inter-Estatal. Favor de consultarlo en la pantalla correspondiente.");
                             }
                         }
                     }
@@ -652,7 +652,7 @@ namespace Farmacia.Transferencias
             int iColBase = 2;
             int iRow = 0;
             string sNombreHoja = "";
-            string sNombre = "Reporte: Traslados en transito.";
+            string sNombre = "Reporte: Traspasos en transito.";
 
             leer.RegistroActual = 1;
 
@@ -673,7 +673,7 @@ namespace Farmacia.Transferencias
                 generarExcel.EscribirCeldaEncabezado(sNombreHoja, 2, iColBase, iColsEncabezado, 20, DtGeneral.EmpresaConectadaNombre);
                 generarExcel.EscribirCeldaEncabezado(sNombreHoja, 3, iColBase, iColsEncabezado, 16, DtGeneral.FarmaciaConectadaNombre);
                 generarExcel.EscribirCeldaEncabezado(sNombreHoja, 4, iColBase, iColsEncabezado, 16, sNombre);
-                generarExcel.EscribirCeldaEncabezado(sNombreHoja, 6, iColBase, iColsEncabezado, 14, string.Format("Fecha de generación: {0} ", General.FechaSistema), XLAlignmentHorizontalValues.Left);
+                generarExcel.EscribirCeldaEncabezado(sNombreHoja, 6, iColBase, iColsEncabezado, 14, string.Format("Fecha generación: {0} ", General.FechaSistema), XLAlignmentHorizontalValues.Left);
 
 
                 iRow = 8;

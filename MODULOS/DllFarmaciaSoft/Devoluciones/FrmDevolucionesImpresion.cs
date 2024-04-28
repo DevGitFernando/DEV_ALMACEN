@@ -207,14 +207,14 @@ namespace DllFarmaciaSoft.Devoluciones
         {
             string sQuery = "";
 
-            if (tpDevolucion == TipoDevolucion.TransferenciaDeEntrada || tpDevolucion == TipoDevolucion.TransferenciaDeSalida)
-            {
-                sQuery = string.Format("Select FolioDevolucion, Convert( varchar(10), FechaRegistro, 120 ) as FechaSistema, Total, FolioTransferencia as Referencia \n" +
-                   "From DevolucionTransferenciasEnc (NoLock) \n" +
-                   "Where IdEmpresa = '{0}' And IdEstado = '{1}' And IdFarmacia = '{2}' And FolioTransferencia = '{3}' \n",
-                   DtGeneral.EmpresaConectada, sEstado, sFarmacia, txtFolio.Text.Trim() );
-            }
-            else
+            //if (tpDevolucion == TipoDevolucion.TransferenciaDeEntrada || tpDevolucion == TipoDevolucion.TransferenciaDeSalida)
+            //{
+            //    sQuery = string.Format("Select FolioDevolucion, Convert( varchar(10), FechaRegistro, 120 ) as FechaSistema, Total, FolioTransferencia as Referencia \n" +
+            //       "From DevolucionTransferenciasEnc (NoLock) \n" +
+            //       "Where IdEmpresa = '{0}' And IdEstado = '{1}' And IdFarmacia = '{2}' And FolioTransferencia = '{3}' \n",
+            //       DtGeneral.EmpresaConectada, sEstado, sFarmacia, txtFolio.Text.Trim() );
+            //}
+            //else
             {
                 sQuery = string.Format("Select FolioDevolucion, Convert( varchar(10), FechaSistema, 120 ) as FechaSistema, Total, Referencia \n" +
                    "From DevolucionesEnc (NoLock) \n" +
@@ -265,7 +265,15 @@ namespace DllFarmaciaSoft.Devoluciones
                     }
                     else
                     {
-                        myRpt.NombreReporte = "PtoVta_TicketCredito_Devolucion.rpt"; 
+                        if (DtGeneral.EsAlmacen)
+                        {
+                            myRpt.NombreReporte = "PtoVta_TicketCredito_Devolucion_Detallado.rpt";
+                        }
+                        else
+                        { 
+                            myRpt.NombreReporte = "PtoVta_TicketCredito_Devolucion.rpt";                         
+                        }
+                         
                     }
                 }
 

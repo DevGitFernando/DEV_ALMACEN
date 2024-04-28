@@ -53,7 +53,7 @@ namespace DllFarmaciaSoft
         private static bool bEsServidorLocal = false;
         private static bool bExisteMAC_Servidor = false;
         private static bool bExisteServicio = File.Exists(sRutaServicio);
-        private static bool bEsEquipoDeDesarrollo = File.Exists(General.UnidadSO + @":\\Dev.xml");
+        private static bool bEsEquipoDeDesarrollo = File.Exists(General.UnidadSO + @":\\Dev.xml"); ///Se modifica pruebas FAV15122023
         private static Color colorProductosIMach = Color.Yellow;
         private static bool bValidarSesionUsuario = false;
         private static bool bUnidadConServidorDedicado = false;
@@ -788,7 +788,7 @@ namespace DllFarmaciaSoft
             {
                 if(!bPermiteManejoUbicacionesAsignado)
                 {
-                    bPermiteManejoUbicacionesAsignado = true;
+                    bPermiteManejoUbicacionesAsignado = true;                    
                     bPermiteManejoUbicaciones = value;
                 }
             }
@@ -3076,25 +3076,25 @@ namespace DllFarmaciaSoft
             }
             else
             {
-                // bExisteMAC_Servidor = leer.Leer();
-                while (leer.Leer())
-                {
-                    clsPing ping = new clsPing();
-                    if (ping.Ping(General.DatosConexion.ServidorPing))
-                    {
-                        bExisteMAC_Servidor = true;
-                        break;
-                    }
-                    else
-                    {
-                        ping = new clsPing(); 
-                        if (ping.Ping(leer.Campo("Nombre"))) 
-                        {
-                            bExisteMAC_Servidor = true;
-                            break;
-                        }
-                    }
-                }
+                bExisteMAC_Servidor = leer.Leer();
+                ////while (leer.Leer()) //// se comenta para pruebas FAV15122023
+                ////{
+                ////    clsPing ping = new clsPing();
+                ////    if (ping.Ping(General.DatosConexion.ServidorPing))
+                ////    {
+                ////        bExisteMAC_Servidor = true;
+                ////        break;
+                ////    }
+                ////    else
+                ////    {
+                ////        ping = new clsPing(); 
+                ////        if (ping.Ping(leer.Campo("Nombre"))) 
+                ////        {
+                ////            bExisteMAC_Servidor = true;
+                ////            break;
+                ////        }
+                ////    }
+                ////}
             }
 
             return bExisteMAC_Servidor;

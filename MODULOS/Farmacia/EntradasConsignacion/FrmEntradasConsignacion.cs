@@ -200,6 +200,7 @@ namespace Farmacia.EntradasConsignacion
             Carga_UbicacionEstandar();
             PermiteCaducados();
             CargarSubFarmacias();
+            CargarLicitaciones();
             LimpiarPantalla();
         }
 
@@ -289,6 +290,7 @@ namespace Farmacia.EntradasConsignacion
 
             cboSubFarmacias.SelectedIndex = 0;
             cboSubFarmacias.Enabled = true;
+            cboLicitacion.SelectedIndex = 0;
 
             SKU = new clsSKU();
             SKU.IdEmpresa = sEmpresa;
@@ -427,6 +429,10 @@ namespace Farmacia.EntradasConsignacion
             txtReferenciaDocto.Text = myLeer.Campo("ReferenciaPedido");
             txtReferenciaDocto_Auxiliar.Text = myLeer.Campo("ReferenciaDePedidoOC");
 
+            cboLicitacion.Data = myLeer.Campo("IdLicitacion");
+            cboSubFarmacias.Data = myLeer.Campo("IdFuente");
+            txtOrden.Text = myLeer.Campo("Orden");
+            txtFolioPre.Text = myLeer.Campo("FolioPresup");
 
             if (bEsReferenciaDePedido)
             {
@@ -530,6 +536,29 @@ namespace Farmacia.EntradasConsignacion
             cboSubFarmacias.Add();
             cboSubFarmacias.Add(SubFarmacias, true, "IdSubFarmacia", "SubFarmacia");
         }
+
+        private void CargarLicitaciones()
+        {
+            leer = new clsLeer(ref ConexionLocal);
+            string sSql = "";
+            string sIdEstado = DtGeneral.EstadoConectado;
+
+            DataSet Licitaciones = new DataSet();
+
+            sSql = string.Format("SELECT IdEstado, IdLicitacion, Licitacion " +
+                    " FROM Ctrl_Licitaciones (NoLock) " +
+                    " WHERE IdEstado = '{0}' AND Status = 'A' ", sIdEstado);
+
+
+            if (leer.Exec(sSql))
+            {
+                Licitaciones = leer.DataSetClase;
+            }
+
+            cboLicitacion.Clear();
+            cboLicitacion.Add();
+            cboLicitacion.Add(Licitaciones, true, "IdLicitacion", "Licitacion");
+        }
         #endregion Manejo de Caducados
 
         #region Grabar informacion
@@ -537,18 +566,26 @@ namespace Farmacia.EntradasConsignacion
         {
             bool bRegresa = false;
             string sSql = "";
+            string sLicitacion = "", sFuente = "", sOrden = "", sFolioPre = "";
+            
+            sLicitacion = cboLicitacion.Data;
+            sFuente = cboSubFarmacias.Data;
+            sOrden = txtOrden.Text.Trim();
+            sFolioPre = txtFolioPre.Text.Trim();            
 
             SKU.Reset();
             
             sSql = string.Format("Exec spp_Mtto_MovtoInv_Enc  \n" + 
                 " \t@IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @FolioMovtoInv = '{3}', @IdTipoMovto_Inv = '{4}', @TipoES = '{5}', @Referencia = '{6}', \n" +
-                " \t@IdPersonal = '{7}', @Observaciones = '{8}', @SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}' \n", 
+                " \t@IdPersonal = '{7}', @Observaciones = '{8}', @SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}', \n" +
+                " \t@IdLicitacion = '{14}', @Orden = '{15}', @FolioPresup = '{16}', @IdFuente = '{17}' ",
                 sEmpresa, sEstado, sFarmacia, txtFolio.Text, sIdTipoMovtoInv, sTipoES, "",
                 DtGeneral.IdPersonal, txtObservaciones.Text.Trim(),
                 General.GetFormatoNumerico_Double(txtSubTotal.Text),
                 General.GetFormatoNumerico_Double(txtIva.Text),
                 General.GetFormatoNumerico_Double(txtTotal.Text),
-                1, SKU.SKU);
+                1, SKU.SKU,
+                sLicitacion, sOrden, sFolioPre, sFuente);
             
             
             if (!myLeer.Exec(sSql))
@@ -1143,10 +1180,37 @@ namespace Farmacia.EntradasConsignacion
             if (txtFolio.Text == "")
             {
                 bRegresa = false;
-                General.msjUser("Id Ingreso no valido, Favor de verificar.");
+                General.msjUser("Id Ingreso no valido. Favor de verificar.");
                 txtFolio.Focus();                
             }
 
+            if (bRegresa && cboLicitacion.SelectedIndex == 0)
+            {
+                bRegresa = false;
+                General.msjUser("Seleccionar Licitación. Favor de verificar.");
+                cboLicitacion.Focus();
+            }
+
+            if (bRegresa && cboSubFarmacias.SelectedIndex == 0)
+            {
+                bRegresa = false;
+                General.msjUser("Seleccionar Fuente. Favor de verificar.");
+                cboSubFarmacias.Focus();
+            }
+
+            if (bRegresa && txtOrden.Text.Trim() == "")
+            {
+                bRegresa = false;
+                General.msjUser("Capturar Orden. Favor de verificar.");
+                txtOrden.Focus();
+            }
+
+            if (bRegresa && txtFolioPre.Text.Trim() == "")
+            {
+                bRegresa = false;
+                General.msjUser("Capturar Factura. Favor de verificar.");
+                txtFolioPre.Focus();
+            }
             ////if (bRegresa && txtIdProveedor.Text == "")
             ////{
             ////    bRegresa = false;
@@ -1664,7 +1728,7 @@ namespace Farmacia.EntradasConsignacion
 
                     Lotes.PermitirLotesNuevosConsignacion = true;
                     Lotes.EsConsignacion = true;
-
+                    Lotes.IdSubFarmacia = cboSubFarmacias.Data;
                     // Si el movimiento ya fue aplicado no es posible agregar lotes 
                     Lotes.CapturarLotes = bModificarCaptura; //true; //chkAplicarInv.Enabled;
                     Lotes.ModificarCantidades = bModificarCaptura; //true; //chkAplicarInv.Enabled;
@@ -1719,9 +1783,9 @@ namespace Farmacia.EntradasConsignacion
                 myGrid.BloqueaColumna(false, (int)Cols.Costo);
                 myGrid.BloqueaGrid(false);
 
-                cboSubFarmacias.Enabled = false;
+                //cboSubFarmacias.Enabled = false;
             }
-        }
+        }        
 
         private void txtReferenciaDocto_Validating(object sender, CancelEventArgs e)
         {
@@ -1845,7 +1909,7 @@ namespace Farmacia.EntradasConsignacion
             }
             else
             {
-                General.msjUser("El Proveedor " + myLlenaDatos.Campo("Nombre") + " actualmente se encuentra cancelado, verifique. ");
+                General.msjUser("Proveedor : " + myLlenaDatos.Campo("Nombre") + " esta cancelado. Favor de verificar. ");
                 txtIdProveedor.Text = "";
                 lblProveedor.Text = "";
                 txtIdProveedor.Focus();

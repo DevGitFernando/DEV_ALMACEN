@@ -334,7 +334,7 @@ namespace Almacen.OrdenCompraConsigna
                 myGrid.BackColorColsBlk = Color.White;
                 grdProductos.EditModeReplace = true;
                 myGrid.BloqueaColumna(false, (int)Cols.Costo);
-                myGrid.BloqueaGrid(true);
+                //myGrid.BloqueaGrid(true);
 
 
                 // myGrid.Limpiar(true);
@@ -572,7 +572,7 @@ namespace Almacen.OrdenCompraConsigna
 
             sSql = string.Format("SELECT IdEstado, IdLicitacion, Licitacion " +
                     " FROM Ctrl_Licitaciones (NoLock) " +
-                    " WHERE IdEstado = '{0}'  ", sIdEstado );
+                    " WHERE IdEstado = '{0}' AND Status = 'A' ", sIdEstado );
 
 
             if (leer.Exec(sSql))
@@ -1805,7 +1805,7 @@ namespace Almacen.OrdenCompraConsigna
 
                     Lotes.PermitirLotesNuevosConsignacion = true;
                     Lotes.EsConsignacion = true;
-
+                    Lotes.IdSubFarmacia = cboSubFarmacias.Data;
                     // Si el movimiento ya fue aplicado no es posible agregar lotes 
                     Lotes.CapturarLotes = bModificarCaptura; //true; //chkAplicarInv.Enabled;
                     Lotes.ModificarCantidades = bModificarCaptura; //true; //chkAplicarInv.Enabled;
@@ -1951,6 +1951,30 @@ namespace Almacen.OrdenCompraConsigna
                 if(myLlenaDatos.Leer())
                 {
                     CargaDatosProveedor();
+                }
+            }
+        }
+
+        private void grdProductos_Advance_1(object sender, FarPoint.Win.Spread.AdvanceEventArgs e)
+        {
+            if (!bFolioGuardado)
+            {
+                if (lblCancelado.Visible == false)
+                {
+                    if ((myGrid.ActiveRow == myGrid.Rows) && e.AdvanceNext)
+                    {
+                        if (myGrid.GetValue(myGrid.ActiveRow, (int)Cols.CodEAN) != "")
+                        {
+                            myGrid.Rows = myGrid.Rows + 1;
+                            myGrid.ActiveRow = myGrid.Rows;
+
+                            // Bloquear la celda de Costo cuando se Promocion - Regalo 
+                            //if (chkEsCompraPromocion.Checked)
+                            //myGrid.BloqueaCelda(true, myGrid.ActiveRow, (int)Cols.Costo);
+
+                            myGrid.SetActiveCell(myGrid.Rows, (int)Cols.CodEAN);
+                        }
+                    }
                 }
             }
         }

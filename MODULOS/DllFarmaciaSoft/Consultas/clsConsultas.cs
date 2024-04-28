@@ -926,14 +926,14 @@ namespace DllFarmaciaSoft
 
         public DataSet Proveedores(string IdProveedor, string Funcion)
         {
-            return Proveedores(IdProveedor, false, Funcion); 
+            return Proveedores(IdProveedor, true, Funcion); 
         }
 
         public DataSet Proveedores(string IdProveedor, bool HabilitarProveedorDeReembolso, string Funcion)
         {
             myDataset = new DataSet();
-            string sMsjError = "Ocurrió un error al obtener los datos del Proveedor";
-            string sMsjNoEncontrado = "Clave de Proveedor no encontrada, verifique.";
+            string sMsjError = "Error al consultar Proveedor";
+            string sMsjNoEncontrado = "Proveedor no encontrado. Favor de verificar.";
             string sFiltroProveedorReembolso = "";
 
             sFiltroProveedorReembolso = string.Format(" and IdProveedor >= '0001' "); 
@@ -2564,8 +2564,8 @@ namespace DllFarmaciaSoft
             myDataset = new DataSet();
             // string sFolio = Fg.PonCeros(IdEstado, 2) + Fg.PonCeros(IdFarmacia, 4) + ClaveRenapo + TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
             string sFolio = TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
-            string sMsjError = "Ocurrió un error al obtener el folio de transferencia";
-            string sMsjNoEncontrado = "No se encontró el folio de transferencia, verifique.";
+            string sMsjError = "Error al consultar Folio Traspaso.";
+            string sMsjNoEncontrado = "Folio Traspaso no encontrado. Favor de verificar.";
             string sFiltro_Origen = ""; 
             int iEsAlmacen = EsAlmacen ? 1 : 0;
 
@@ -2591,8 +2591,8 @@ namespace DllFarmaciaSoft
             myDataset = new DataSet();
             // string sFolio = Fg.PonCeros(IdEstado, 2) + Fg.PonCeros(IdFarmacia, 4) + ClaveRenapo + TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
             string sFolio = TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
-            string sMsjError = "Ocurrió un error al obtener el folio de transferencia";
-            string sMsjNoEncontrado = "No se encontró el folio de transferencia, verifique.";
+            string sMsjError = "Error al consultar detalles Folio Traspaso.";
+            string sMsjNoEncontrado = "Detalles Folio Traspaso no encontrados. Favor de verificar.";
 
             sQuery = sInicio + string.Format("Select T.CodigoEAN, T.IdProducto, T.DescProducto, T.TasaIva, T.Cantidad, " +
                 "T.Costo, T.Importe, 0, 0, T.UnidadDeSalida, R.ContenidoPiezasUnitario As Factor" + 
@@ -2609,8 +2609,8 @@ namespace DllFarmaciaSoft
             myDataset = new DataSet();
             // string sFolio = Fg.PonCeros(IdEstado, 2) + Fg.PonCeros(IdFarmacia, 4) + ClaveRenapo + TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
             string sFolio = TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
-            string sMsjError = "Ocurrió un error al obtener el folio de transferencia";
-            string sMsjNoEncontrado = "No se encontró el folio de transferencia, verifique.";
+            string sMsjError = "Error al consultar lotes Folio Traspaso.";
+            string sMsjNoEncontrado = "Lotes Folio Traspaso no encontrados. Favor de verificar.";
 
             sQuery = sInicio + string.Format(
                 "Select \n" + 
@@ -2714,6 +2714,24 @@ namespace DllFarmaciaSoft
             return myDataset;
         }
 
+        public DataSet TraspasosDetallesDev(string IdEmpresa, string IdEstado, string ClaveRenapo, string IdFarmacia, string Folio, string TipoTrans, string Funcion)
+        {
+            myDataset = new DataSet();
+            // string sFolio = Fg.PonCeros(IdEstado, 2) + Fg.PonCeros(IdFarmacia, 4) + ClaveRenapo + TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
+            string sFolio = TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
+            string sMsjError = "Error al consultar detalles Folio Traspaso.";
+            string sMsjNoEncontrado = "Detalles Folio Traspaso no encontrados. Favor de verificar.";
+
+            sQuery = sInicio + string.Format("Select T.CodigoEAN, T.IdProducto, T.DescProducto, T.TasaIva, T.Cantidad, 0 AS CantDev, " +
+                "T.Costo, T.Importe, 0, 0, T.UnidadDeSalida " +
+                " From vw_TransferenciasDet_CodigosEAN T(NoLock) " +
+                "Inner Join CatProductos_CodigosRelacionados R (NoLock) On (T.IdProducto = R.IdProducto ANd T.CodigoEAN = R.CodigoEAN)" +
+                " Where IdEmpresa = '{0}' and IdEstado = '{1}' and IdFarmacia = '{2}' and Folio = '{3}' ", IdEmpresa, IdEstado, Fg.PonCeros(IdFarmacia, 4), sFolio);
+            myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
+
+            return myDataset;
+        }
+
         public DataSet FolioTransferenciaDetallesLotesDev(
             string IdEmpresa,
             string IdEstado, string IdFarmacia,
@@ -2760,6 +2778,29 @@ namespace DllFarmaciaSoft
                                 "Exec spp_DevolucionTransferenciasDet_Lotes_Carga @IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @IdEstadoRecibe = '{3}', @IdFarmaciaRecibe = '{4}', @Folio = '{5}', @FolioDevolucion = '{6}'",
                 IdEmpresa, IdEstado, Fg.PonCeros(IdFarmacia, 4), IdEstadoRecibe, Fg.PonCeros(IdFarmaciaRecibe, 4), sFolio, sFolioDevolucion);
 
+            myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
+
+            return myDataset;
+        }
+
+        public DataSet TraspasosLotesDev(string IdEmpresa, string IdEstado, string ClaveRenapo, string IdFarmacia, string Folio, string TipoTrans, string Funcion)
+        {
+            myDataset = new DataSet();
+            // string sFolio = Fg.PonCeros(IdEstado, 2) + Fg.PonCeros(IdFarmacia, 4) + ClaveRenapo + TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
+            string sFolio = TipoTrans + Fg.PonCeros(Folio, 8); // 250001SLTS
+            string sMsjError = "Error al consultar lotes Folio Traspaso.";
+            string sMsjNoEncontrado = "Lotes Folio Traspaso no encontrados. Favor de verificar.";
+
+            sQuery = sInicio + string.Format(
+                "Select \n" +
+                "\tIdSubFarmaciaEnvia as IdSubFarmacia, SubFarmaciaEnvia as SubFarmacia, \n" +
+                "\tIdProducto, CodigoEAN, SKU, ClaveLote, \n" +
+                "\tdatediff(mm, getdate(), FechaCad) as MesesCad, \n" +
+                "\tFechaReg, FechaCad, Status, Cantidad AS Existencia,  \n" +
+                "\tdbo.fg_ALMN_DisponibleDevolucion_Lotes(IdEmpresa, IdEstado, IdFarmacia, SKU, IdSubFarmaciaEnvia, IdProducto, CodigoEAN, ClaveLote, Cantidad) as ExistenciaDisponible, \n" +
+                "\t0 AS Cantidad \n" +
+                "From vw_TransferenciaDet_CodigosEAN_Lotes (NoLock) \n" +
+                "Where IdEmpresa = '{0}' and IdEstado = '{1}' and IdFarmacia = '{2}' and Folio = '{3}' \n", IdEmpresa, IdEstado, Fg.PonCeros(IdFarmacia, 4), sFolio);
             myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
 
             return myDataset;
@@ -3279,7 +3320,8 @@ namespace DllFarmaciaSoft
                 "   On ( L.IdEstado = F.IdEstado and L.IdFarmacia = F.IdFarmacia and L.IdSubFarmacia = F.IdSubFarmacia ) \n" +
                 "Where L.Status = 'A' and L.IdEmpresa = '{0}' and L.IdEstado =  '{1}' and L.IdFarmacia = '{2}' {6}  \n" +
                 "   and L.IdProducto = '{3}' and CodigoEAN = '{4}' {5}  \n" +
-                "Order by L.SKU, L.IdSubFarmacia, L.IdProducto, L.CodigoEAN, L.ClaveLote \n",
+                "   AND CAST((L.Existencia - (L.ExistenciaEnTransito + L.ExistenciaSurtidos)) AS INT) > 0 \n" +
+                "Order by L.FechaCaducidad, L.SKU, L.IdSubFarmacia, L.IdProducto, L.CodigoEAN, L.ClaveLote \n",
                 IdEmpresa, IdEstado, IdFarmacia, IdCodigo, IdCodEAN, sFiltroConsignacion, sFiltroSubFarmacia);
 
             if(EsEntrada)
@@ -3796,7 +3838,8 @@ namespace DllFarmaciaSoft
                    "\t\t\tL.IdEstado = F.IdEstado and L.IdFarmacia = F.IdFarmacia and L.IdSubFarmacia = F.IdSubFarmacia )" +
                    "Where L.Status = 'A' and L.IdEmpresa = '{0}' and L.IdEstado =  '{1}' and L.IdFarmacia = '{2}' {6}  \n" +
                    "\tand L.IdProducto = '{3}' and CodigoEAN = '{4}' {5} {7} {8}\n" +
-                   "Order by L.SKU, L.IdSubFarmacia, L.IdProducto, L.CodigoEAN, L.ClaveLote \n",
+                   "\t AND CAST((L.Existencia - (L.ExistenciaEnTransito + L.ExistenciaSurtidos)) AS INT) > 0 \n" +
+                   "Order by L.IdPasillo, L.IdEstante, L.IdEntrepaño ---- L.SKU, L.IdSubFarmacia, L.IdProducto, L.CodigoEAN, L.ClaveLote \n",
                    IdEmpresa, IdEstado, IdFarmacia, IdCodigo, IdCodEAN, sFiltroConsignacion, sFiltroSubFarmacia, sFiltroTipoDeUbicaciones, sFiltroUbicacionesEstandar);
 
             if( EsEntrada )
@@ -3937,8 +3980,8 @@ namespace DllFarmaciaSoft
             (string IdEmpresa, string IdEstado, string IdFarmacia, string FolioTransferencia, string Funcion)
         {
             myDataset = new DataSet();
-            string sMsjError = "Ocurrió un error al obtener los lotes del Producto";
-            string sMsjNoEncontrado = "Clave de Producto no encontrada, verifique.";
+            string sMsjError = "Error al consultar Lotes-Ubicaciones de Folio Traspaso.";
+            string sMsjNoEncontrado = " Lotes-Ubicaciones Folio Traspaso no encontrados. Favor de verificar.";
             // string sFiltroConsignacion = " ";
             // string sFiltroSubFarmacia = " ";
 
@@ -3948,6 +3991,42 @@ namespace DllFarmaciaSoft
                    "\tF.IdPasillo, F.IdEstante, F.IdEntrepaño as IdEntrepano, \n" +
                    "\t(Case When F.Status = 'A' Then 'Activo' Else 'Cancelado' End) as Status, \n" +
                    "\tcast(F.Existencia as Int) as Existencia, cast(L.CantidadEnviada as int) as Cantidad \n" +
+                   "From TransferenciasDet_Lotes_Ubicaciones L (NoLock) \n" +
+                   "Inner join FarmaciaProductos_CodigoEAN_Lotes_Ubicaciones F (NoLock) \n" +
+                   "\tOn ( " +
+                   "\t\tL.IdEstado = F.IdEstado and L.IdFarmacia = F.IdFarmacia and L.SKU = F.SKU and L.IdSubFarmaciaEnvia = F.IdSubFarmacia \n" +
+                   "\t\tand L.IdProducto = F.IdProducto and L.CodigoEAN = F.CodigoEAN and L.ClaveLote = F.ClaveLote \n" +
+                   "\t\tand L.IdPasillo = F.IdPasillo and L.IdEstante = F.IdEstante and L.IdEntrepaño = F.IdEntrepaño  \n" +
+                   "\t) \n" +
+                   "Where L.IdEmpresa = '{0}' and L.IdEstado =  '{1}' and L.IdFarmacia = '{2}' and L.FolioTransferencia = '{3}' \n" +
+                   "Order by L.IdSubFarmaciaEnvia, L.IdProducto, L.CodigoEAN, L.ClaveLote \n",
+                   IdEmpresa, IdEstado, IdFarmacia, FolioTransferencia);
+
+            // No mostrar el Mensaje de vacio, los lotes se registran en el momento 
+            bMostrarMsjLeerVacio = false;
+            myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
+            bMostrarMsjLeerVacio = true;
+
+            return myDataset;
+        }
+
+        public DataSet Lotes_Ubicaciones_TraspasosDev
+            (string IdEmpresa, string IdEstado, string IdFarmacia, string FolioTransferencia, string Funcion)
+        {
+            myDataset = new DataSet();
+            string sMsjError = "Error al consultar Lotes-Ubicaciones Folio Traspaso.";
+            string sMsjNoEncontrado = " Lotes-Ubicaciones Folio Traspaso no encontrados. Favor de verificar.";
+            // string sFiltroConsignacion = " ";
+            // string sFiltroSubFarmacia = " ";
+
+            sQuery = sInicio + string.Format("" +
+                   "Select \n" +
+                   "\tL.IdSubFarmaciaEnvia as IdSubFarmacia, F.IdProducto, F.CodigoEAN, L.SKU, F.ClaveLote, \n" +
+                   "\tF.IdPasillo, F.IdEstante, F.IdEntrepaño as IdEntrepano, \n" +
+                   "\t(Case When F.Status = 'A' Then 'Activo' Else 'Cancelado' End) as Status, \n" +
+                   "\tcast(L.CantidadEnviada as Int) as Existencia, \n" +
+                   "\tdbo.fg_ALMN_DisponibleDevolucion_Ubicaciones(L.IdEmpresa, L.IdEstado, L.IdFarmacia, L.SKU, L.IdSubFarmaciaEnvia, L.IdProducto, L.CodigoEAN, L.ClaveLote, L.IdPasillo, L.IdEstante, L.IdEntrepaño, L.CantidadEnviada) as ExistenciaDisponible, \n" +
+                   "\t0 as Cantidad \n" +
                    "From TransferenciasDet_Lotes_Ubicaciones L (NoLock) \n" +
                    "Inner join FarmaciaProductos_CodigoEAN_Lotes_Ubicaciones F (NoLock) \n" +
                    "\tOn ( " +
@@ -4176,12 +4255,12 @@ namespace DllFarmaciaSoft
             string sMsjNoEncontrado = "Folio no encontrado, verifique.";
 
             sQuery = string.Format(sInicio +
-                "Select C.IdEmpresa_Relacionada, ( C.IdEmpresa_Relacionada + ' -- ' + E.Nombre ) as Empresa_Relacionada \n" +
+                "Select C.IdEmpresa, ( C.IdEmpresa + ' -- ' + E.Nombre ) as Empresa_Relacionada \n" +
                 "From CambiosCartasCanje_AlmacenesRelacionados C (NoLock) \n" +
                 "Inner Join vw_Farmacias F (NoLock) On ( C.IdEstado = F.IdEstado and C.IdFarmacia = F.IdFarmacia ) \n" +
-                "Inner Join CatEmpresas E (NoLock) On ( C.IdEmpresa_Relacionada = E.IdEmpresa ) \n" + 
+                "Inner Join CatEmpresas E (NoLock) On ( C.IdEmpresa = E.IdEmpresa ) \n" + 
                 "Where C.IdEmpresa = '{0}' and C.IdEstado = '{1}' and C.IdFarmacia = '{2}' and C.Status = 'A' \n" +
-                "Group by C.IdEmpresa_Relacionada, ( C.IdEmpresa_Relacionada + ' -- ' + E.Nombre ) \n",
+                "Group by C.IdEmpresa, ( C.IdEmpresa + ' -- ' + E.Nombre ) \n",
                 IdEmpresa, IdEstado, IdFarmacia);
             myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
 
@@ -4195,12 +4274,12 @@ namespace DllFarmaciaSoft
             string sMsjNoEncontrado = "Folio no encontrado, verifique.";
 
             sQuery = string.Format(sInicio +
-                "Select C.IdEstado_Relacionado, F.Estado, C.IdEmpresa_Relacionada, ( C.IdEstado_Relacionado  + ' -- ' + F.Estado ) as Estado_Relacionado \n" +
+                "Select C.IdEstado, F.Estado, C.IdEmpresa, ( C.IdEstado  + ' -- ' + F.Estado ) as Estado_Relacionado \n" +
                 "From CambiosCartasCanje_AlmacenesRelacionados C (NoLock) \n" +
                 "Inner Join vw_Farmacias F (NoLock) On ( C.IdEstado = F.IdEstado and C.IdFarmacia = F.IdFarmacia ) \n" +
-                "Inner Join CatEmpresas E (NoLock) On ( C.IdEmpresa_Relacionada = E.IdEmpresa ) \n" + 
+                "Inner Join CatEmpresas E (NoLock) On ( C.IdEmpresa = E.IdEmpresa ) \n" + 
                 "Where C.IdEmpresa = '{0}' and C.IdEstado = '{1}' and C.IdFarmacia = '{2}' and C.Status = 'A' \n" +
-                "Group by C.IdEstado_Relacionado, F.Estado, C.IdEmpresa_Relacionada, ( C.IdEstado_Relacionado  + ' -- ' + F.Estado ) \n",
+                "Group by C.IdEstado, F.Estado, C.IdEmpresa, ( C.IdEstado  + ' -- ' + F.Estado ) \n",
                 IdEmpresa, IdEstado, IdFarmacia);
             myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
 
@@ -4216,7 +4295,7 @@ namespace DllFarmaciaSoft
             sQuery = string.Format(sInicio +
                 "Select C.*, ( C.IdFarmacia_Relacionada + ' -- ' + F.Farmacia ) as AlmacenRelacionado \n" + 
                 "From CambiosCartasCanje_AlmacenesRelacionados C (NoLock) \n" +
-                "Inner Join vw_Farmacias F (NoLock) On ( C.IdEstado_Relacionado = F.IdEstado and C.IdFarmacia_Relacionada = F.IdFarmacia ) \n" +
+                "Inner Join vw_Farmacias F (NoLock) On ( C.IdEstado = F.IdEstado and C.IdFarmacia_Relacionada = F.IdFarmacia ) \n" +
                 "Where C.IdEmpresa = '{0}' and C.IdEstado = '{1}' and C.IdFarmacia = '{2}' and C.Status = 'A' \n",
                 IdEmpresa, IdEstado, IdFarmacia);
                 myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
@@ -7415,8 +7494,8 @@ namespace DllFarmaciaSoft
         public DataSet OrdenesCompras_Det_Devolucion(string IdEmpresa, string IdEstado, string IdFarmacia, string Folio, string Funcion)
         {
             myDataset = new DataSet();
-            string sMsjError = "Ocurrió un error al obtener los datos de los Detalles del Folio";
-            string sMsjNoEncontrado = "Detalles del Folio de Orden de Compra no encontrado, verifique.";
+            string sMsjError = "Error al consultar Detalles Orden Compra.";
+            string sMsjNoEncontrado = "Detalles Orden Compra no encontrados. Favor de verificar.";
 
             sQuery = sInicio + string.Format(
                 "Select \n" +
@@ -7455,8 +7534,8 @@ namespace DllFarmaciaSoft
         public DataSet OrdenesCompras_Det_Lotes_Ubicaciones_Devolucion(string IdEmpresa, string IdEstado, string IdFarmacia, string FolioPedido, string Funcion)
         {
             myDataset = new DataSet();
-            string sMsjError = "Ocurrió un error al obtener la información de ventas.";
-            string sMsjNoEncontrado = "Folio de Orden de Compra no encontrado, verifique.";
+            string sMsjError = "Error al consultar Lotes-Ubicaciones OC.";
+            string sMsjNoEncontrado = "Lotes-Ubicaciones Orden Compra no encontrados. Favor de verificar.";
 
             sQuery = sInicio + string.Format("" +
                    "Select \n" +
@@ -9251,6 +9330,23 @@ namespace DllFarmaciaSoft
             return myDataset;
         }
         #endregion Ubicaciones_Estandar
-        
+
+        #region Turnos
+        public DataSet Turnos_Consultas(string IdEmpresa, string IdEstado, string Funcion)
+        {
+            myDataset = new DataSet();
+            string sMsjError = "Error al consultar Tipos de Consultas.";
+            string sMsjNoEncontrado = "Tipos de Consultas no encontradas. Favor de verificar.";
+
+            sQuery = sInicio + string.Format(" SELECT DISTINCT IdTipo, Descripcion AS Consulta, ( IdTipo + ' -- ' + Descripcion) As NombreConsulta " +
+                    " FROM Cat_TipoConsulta (NOLOCK) " +
+                    " WHERE IdEmpresa = '{0}' AND IdEstado = '{1}' " +
+                    " ORDER BY IdTipo ", IdEmpresa, IdEstado);
+            myDataset = EjecutarQuery(Funcion, sQuery, sMsjError, sMsjNoEncontrado);
+
+            return myDataset;
+        }
+        #endregion Turnos
+
     }
 }

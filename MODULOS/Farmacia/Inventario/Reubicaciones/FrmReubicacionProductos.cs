@@ -1490,11 +1490,11 @@ namespace Farmacia.Inventario
                     Lotes.Codigo = myGrid.GetValue(iRow, (int)Cols.Codigo);
                     Lotes.CodigoEAN = myGrid.GetValue(iRow, (int)Cols.CodEAN);
                     Lotes.Descripcion = myGrid.GetValue(iRow, (int)Cols.Descripcion);
-                    Lotes.EsEntrada = true;
+                    Lotes.EsEntrada = false;
                     Lotes.TipoCaptura = 1; //Por piezas   // myGrid.GetValueInt(iRow, (int)Cols.TipoCaptura);
 
                     Lotes.PermitirLotesNuevosConsignacion = false;
-                    Lotes.EsConsignacion = false; 
+                    Lotes.EsConsignacion = true; 
 
                     // Si el movimiento ya fue aplicado no es posible agregar lotes 
                     Lotes.CapturarLotes = btnGuardar.Enabled;

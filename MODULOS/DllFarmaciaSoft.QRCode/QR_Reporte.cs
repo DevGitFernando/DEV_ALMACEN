@@ -26,7 +26,8 @@ namespace DllFarmaciaSoft.QRCode
 
         clsImprimir reporte; 
         string sNombreReporte = "Reporte"; 
-        string sRutaReporte = Application.StartupPath + @"\Etiquetas\"; 
+        //string sRutaReporte = Application.StartupPath + @"\Etiquetas\";
+        string sRutaReporte = DtGeneral.RutaReportes + @"\Etiquetas\";
 
         string sIdEmpresa = DtGeneral.EmpresaConectada;
         string sEmpresa = DtGeneral.EmpresaConectadaNombre;

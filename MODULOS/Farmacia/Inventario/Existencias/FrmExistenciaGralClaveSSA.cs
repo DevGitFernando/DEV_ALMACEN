@@ -113,6 +113,8 @@ namespace Farmacia.Inventario
             //    " and Existencia {3} ", DtGeneral.EmpresaConectada, DtGeneral.EstadoConectado,
             //    DtGeneral.FarmaciaConectada, sCondicion);
 
+            // "Where IdEmpresa = '{0}' and IdEstado = '{1}' and IdFarmacia = '{2}' {3} and Existencia {4} and MesesParaCaducar > 0 \t" +
+
             sSql = string.Format(
                 "Select \t" +
                 "\tS.IdClaveSSA_Sal, S.ClaveSSA, S.DescripcionSal as DescripcionSal, \t" +
@@ -122,7 +124,7 @@ namespace Farmacia.Inventario
                 "\tCast((sum(IsNull(V.ExistenciaAux, 0))) as int) as ExistenciaTotal \t" +
                 "From vw_ClavesSSA_Sales S (NoLock) \t" +
                 "Left Join vw_ExistenciaPorCodigoEAN_Lotes V (NoLock) On ( S.IdClaveSSA_Sal = V.IdClaveSSA_Sal ) \t" +
-                "Where IdEmpresa = '{0}' and IdEstado = '{1}' and IdFarmacia = '{2}' {3} and Existencia {4} and MesesParaCaducar > 0 \t" +
+                "Where IdEmpresa = '{0}' and IdEstado = '{1}' and IdFarmacia = '{2}' {3} and Existencia {4} and MesesParaCaducar > 0  \t" +
                 "Group by S.IdClaveSSA_Sal, S.ClaveSSA, S.DescripcionSal \t",
                 DtGeneral.EmpresaConectada, DtGeneral.EstadoConectado, DtGeneral.FarmaciaConectada, sSubFarmacias, sCondicion);  
 

@@ -23,6 +23,7 @@ using DllRobotDispensador;
 
 using DllFarmaciaSoft.Reporteador;
 using DllFarmaciaSoft.Usuarios_y_Permisos;
+using SC_SolutionsSystem.OfficeOpenXml.FormulaParsing.LexicalAnalysis;
 
 namespace Farmacia.Compras
 {
@@ -77,6 +78,14 @@ namespace Farmacia.Compras
         string sNombrePosicion = "COMPRAS_DIRECTAS";
         clsLeer leerUBI;
 
+        #region Variables SKU
+        clsLeer leer2;
+        string sIdLicitacion = "";
+        string sIdFuente = "";
+        string sOrden = "OC1";
+        string sFolioPresup = "F1";
+        #endregion Variables SKU
+
         public FrmComprasFarmacia()
         {
             InitializeComponent();
@@ -91,6 +100,7 @@ namespace Farmacia.Compras
             myLeerLotes = new clsLeer(ref cnn);
             leer = new clsLeer(ref cnn);
             leerUBI = new clsLeer(ref cnn);
+            leer2 = new clsLeer(ref cnn);
 
             Consultas = new DllFarmaciaSoft.clsConsultas(General.DatosConexion, GnFarmacia.Modulo, this.Name, GnFarmacia.Version);
             Ayuda = new DllFarmaciaSoft.clsAyudas(General.DatosConexion, GnFarmacia.Modulo, this.Name, GnFarmacia.Version);
@@ -113,6 +123,9 @@ namespace Farmacia.Compras
         private void FrmComprasFarmacia_Load(object sender, EventArgs e)
         {
             Carga_UbicacionEstandar();
+
+            CargaFuente();
+            CargaLicitacion();
 
             InicializarPantalla(); 
         }
@@ -165,6 +178,56 @@ namespace Farmacia.Compras
                     break;
             }
         }
+
+        #region CargaDatosSKU
+        private void CargaFuente()
+        {
+            leer2 = new clsLeer(ref cnn);
+            string sSql = "";
+            string sFiltroConsignacion = "";
+            string sFiltroSubFarmacia = "";
+            string sIdEstado = DtGeneral.EstadoConectado;
+            string sIdFarmacia = DtGeneral.FarmaciaConectada;
+
+            sFiltroConsignacion = " and EsConsignacion = 0 AND SubFarmacia = 'DISPERSION' ";
+            sFiltroConsignacion += " and EmulaVenta = 0 ";
+
+            sSql = string.Format("Select IdEstado, IdFarmacia, IdSubFarmacia, SubFarmacia, EsConsignacion, EmulaVenta " +
+                    " From vw_Farmacias_SubFarmacias (NoLock) " +
+                    " Where IdEstado = '{0}' and IdFarmacia = '{1}' {2} {3}  ",
+                    sIdEstado, sIdFarmacia, sFiltroConsignacion, sFiltroSubFarmacia);
+
+
+            if (leer2.Exec(sSql))
+            {
+                if (leer2.Leer())
+                {
+                    sIdFuente = leer2.Campo("IdSubFarmacia");
+                }
+            }
+        }
+
+        private void CargaLicitacion()
+        {
+            leer2 = new clsLeer(ref cnn);
+            string sSql = "";
+            string sIdEstado = DtGeneral.EstadoConectado;
+
+
+            sSql = string.Format("SELECT IdEstado, IdLicitacion " +
+                    " FROM Ctrl_Licitaciones (NoLock) " +
+                    " Where IdEstado = '{0}' AND Status = 'A' ", sIdEstado);
+
+
+            if (leer2.Exec(sSql))
+            {
+                if (leer2.Leer())
+                {
+                    sIdLicitacion = leer2.Campo("IdLicitacion");
+                }
+            }
+        }
+        #endregion CargaDatosSKU
 
         #region Limpiar 
         private void IniciarToolBar()
@@ -425,12 +488,14 @@ namespace Farmacia.Compras
             sSql = string.Format("Exec spp_Mtto_MovtoInv_Enc \n" + 
                 "\t@IdEmpresa = '{0}', @IdEstado = '{1}', @IdFarmacia = '{2}', @FolioMovtoInv = '{3}', \n" +
                 "\t@IdTipoMovto_Inv = '{4}', @TipoES = '{5}', @Referencia = '{6}', @IdPersonal = '{7}', @Observaciones = '{8}', \n" +
-                "\t@SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}' \n",
+                "\t@SubTotal = '{9}', @Iva = '{10}', @Total = '{11}', @iOpcion = '{12}', @SKU = '{13}', \n" +
+                " \t@IdLicitacion = '{14}', @Orden = '{15}', @FolioPresup = '{16}', @IdFuente = '{17}' ",
                 sEmpresa, sEstado, sFarmacia, txtFolio.Text, sIdTipoMovtoInv, sTipoES, "",
                 DtGeneral.IdPersonal, txtObservaciones.Text.Trim(),
                 General.GetFormatoNumerico_Double(txtSubTotal.Text),
                 General.GetFormatoNumerico_Double(txtIva.Text),
-                General.GetFormatoNumerico_Double(txtTotal.Text), 1, SKU.SKU);
+                General.GetFormatoNumerico_Double(txtTotal.Text), 1, SKU.SKU,
+                sIdLicitacion, sOrden, sFolioPresup, sIdFuente);
 
             if (!myLeer.Exec(sSql))
             {
@@ -1543,8 +1608,9 @@ namespace Farmacia.Compras
                     Lotes.EsEntrada = true;
                     Lotes.TipoCaptura = 1; //Por piezas   // myGrid.GetValueInt(iRow, (int)Cols.TipoCaptura);
 
-                    Lotes.PermitirLotesNuevosConsignacion = false; 
-
+                    Lotes.PermitirLotesNuevosConsignacion = false;
+                    //Lotes.EsConsignacion = false;
+                    Lotes.IdSubFarmacia = sIdFuente;
                     // Si el movimiento ya fue aplicado no es posible agregar lotes 
                     Lotes.CapturarLotes = bModificarCaptura; //true; //chkAplicarInv.Enabled;
                     Lotes.ModificarCantidades = bModificarCaptura; //true; //chkAplicarInv.Enabled;

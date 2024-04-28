@@ -1,7 +1,832 @@
-<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>9.0.30729</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{831017A5-B62F-41D5-8BB3-F7F9635AC10A}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>DllCompras</RootNamespace><AssemblyName>DllCompras</AssemblyName><TargetFrameworkVersion>v3.5</TargetFrameworkVersion><FileAlignment>512</FileAlignment><SignAssembly>true</SignAssembly><AssemblyOriginatorKeyFile>Snk\DllCompras.snk</AssemblyOriginatorKeyFile><FileUpgradeFlags></FileUpgradeFlags><OldToolsVersion>3.5</OldToolsVersion><UpgradeBackupLocation /><PublishUrl>publish\</PublishUrl><Install>true</Install><InstallFrom>Disk</InstallFrom><UpdateEnabled>false</UpdateEnabled><UpdateMode>Foreground</UpdateMode><UpdateInterval>7</UpdateInterval><UpdateIntervalUnits>Days</UpdateIntervalUnits><UpdatePeriodically>false</UpdatePeriodically><UpdateRequired>false</UpdateRequired><MapFileExtensions>true</MapFileExtensions><ApplicationRevision>0</ApplicationRevision><ApplicationVersion>1.0.0.%2a</ApplicationVersion><IsWebBootstrapper>false</IsWebBootstrapper><UseApplicationTrust>false</UseApplicationTrust><BootstrapperEnabled>true</BootstrapperEnabled><SccProjectName>SAK</SccProjectName><SccLocalPath>SAK</SccLocalPath><SccAuxPath>SAK</SccAuxPath><SccProvider>SAK</SccProvider><TargetFrameworkProfile /></PropertyGroup><PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>..\..\..\Archivos_Generados\</OutputPath><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel><CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet></PropertyGroup><PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "><DebugType>pdbonly</DebugType><Optimize>true</Optimize><OutputPath>..\..\..\Archivos_Generados\</OutputPath><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel><CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet></PropertyGroup><ItemGroup><Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL"><SpecificVersion>False</SpecificVersion><HintPath>..\..\..\..\SC_Assemblies\ClosedXML.dll</HintPath></Reference><Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" /><Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" /><Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" /><Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" /><Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" /><Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" /><Reference Include="Microsoft.VisualBasic" /><Reference Include="SC_CompressLib, Version=4.0.4.0, Culture=neutral, PublicKeyToken=fac9ea0d48dbaeab, processorArchitecture=MSIL"><SpecificVersion>False</SpecificVersion><HintPath>..\..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath></Reference><Reference Include="SC_ControlsCS, Version=4.0.1.0, Culture=neutral, PublicKeyToken=e7a523b603173679, processorArchitecture=MSIL"><SpecificVersion>False</SpecificVersion><HintPath>..\..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath></Reference><Reference Include="SC_SolutionsSystem, Version=4.0.5.0, Culture=neutral, PublicKeyToken=a50c66deebb893df, processorArchitecture=MSIL"><SpecificVersion>False</SpecificVersion><HintPath>..\..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath></Reference><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Design" /><Reference Include="System.Drawing" /><Reference Include="System.Drawing.Design" /><Reference Include="System.EnterpriseServices" /><Reference Include="System.Web" /><Reference Include="System.Web.Services" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /></ItemGroup><ItemGroup><Compile Include="..\..\DllFarmaciaSoft\Properties\AssemblyInfo_Compilacion.cs"><Link>Properties\AssemblyInfo_Compilacion.cs</Link></Compile><Compile Include="..\..\DllFarmaciaSoft\Properties\AssemblyInfo_Version.cs"><Link>Properties\AssemblyInfo_Version.cs</Link></Compile><Compile Include="CartasFaltantes\FrmCartasFaltantesClaves.cs"><SubType>Form</SubType></Compile><Compile Include="CartasFaltantes\FrmCartasFaltantesClaves.Designer.cs"><DependentUpon>FrmCartasFaltantesClaves.cs</DependentUpon></Compile><Compile Include="CheckVersion.cs" /><Compile Include="Consultas\FrmDetallesCodigosEAN.cs"><SubType>Form</SubType></Compile><Compile Include="Consultas\FrmDetallesCodigosEAN.Designer.cs"><DependentUpon>FrmDetallesCodigosEAN.cs</DependentUpon></Compile><Compile Include="Consultas\FrmDetallesPedidos.cs"><SubType>Form</SubType></Compile><Compile Include="Consultas\FrmDetallesPedidos.Designer.cs"><DependentUpon>FrmDetallesPedidos.cs</DependentUpon></Compile><Compile Include="Consultas\FrmListadoOCProductos.cs"><SubType>Form</SubType></Compile><Compile Include="Consultas\FrmListadoOCProductos.Designer.cs"><DependentUpon>FrmListadoOCProductos.cs</DependentUpon></Compile><Compile Include="Consultas\FrmListadoPorClaves.cs"><SubType>Form</SubType></Compile><Compile Include="Consultas\FrmListadoPorClaves.Designer.cs"><DependentUpon>FrmListadoPorClaves.cs</DependentUpon></Compile><Compile Include="Consultas\FrmStatusDePedidos.cs"><SubType>Form</SubType></Compile><Compile Include="Consultas\FrmStatusDePedidos.Designer.cs"><DependentUpon>FrmStatusDePedidos.cs</DependentUpon></Compile><Compile Include="Form1.cs"><SubType>Form</SubType></Compile><Compile Include="Form1.Designer.cs"><DependentUpon>Form1.cs</DependentUpon></Compile><Compile Include="GnCompras.cs" /><Compile Include="Informacion\FrmConsumosEstadosClaves.cs"><SubType>Form</SubType></Compile><Compile Include="Informacion\FrmConsumosEstadosClaves.Designer.cs"><DependentUpon>FrmConsumosEstadosClaves.cs</DependentUpon></Compile><Compile Include="Informacion\FrmDesplazamientosEdosLaboratorios.cs"><SubType>Form</SubType></Compile><Compile Include="Informacion\FrmDesplazamientosEdosLaboratorios.Designer.cs"><DependentUpon>FrmDesplazamientosEdosLaboratorios.cs</DependentUpon></Compile><Compile Include="Informacion\FrmDispensacionClaves.cs"><SubType>Form</SubType></Compile><Compile Include="Informacion\FrmDispensacionClaves.Designer.cs"><DependentUpon>FrmDispensacionClaves.cs</DependentUpon></Compile><Compile Include="Informacion\FrmListaClavesReporte.cs"><SubType>Form</SubType></Compile><Compile Include="Informacion\FrmListaClavesReporte.Designer.cs"><DependentUpon>FrmListaClavesReporte.cs</DependentUpon></Compile><Compile Include="Informacion\FrmListadoPreciosComprasEstados.cs"><SubType>Form</SubType></Compile><Compile Include="Informacion\FrmListadoPreciosComprasEstados.Designer.cs"><DependentUpon>FrmListadoPreciosComprasEstados.cs</DependentUpon></Compile><Compile Include="Informacion\FrmListadoPreciosProductos.cs"><SubType>Form</SubType></Compile><Compile Include="Informacion\FrmListadoPreciosProductos.Designer.cs"><DependentUpon>FrmListadoPreciosProductos.cs</DependentUpon></Compile><Compile Include="Informacion\FrmTransferenciasDeSalida_Almacenes.cs"><SubType>Form</SubType></Compile><Compile Include="Informacion\FrmTransferenciasDeSalida_Almacenes.Designer.cs"><DependentUpon>FrmTransferenciasDeSalida_Almacenes.cs</DependentUpon></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaPreciosNegociado.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaPreciosNegociado.Designer.cs"><DependentUpon>FrmComClaveSSA_CapturaPreciosNegociado.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\clsMotivosSobreCompra.cs" /><Compile Include="OrdenesDeCompra\FrmCambioDePrecio.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmCambioDePrecio.Designer.cs"><DependentUpon>FrmCambioDePrecio.cs</DependentUpon></Compile><Compile Include="ListasDePrecioClaves\FrmCodigosEAN_ListaPrecios.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecioClaves\FrmCodigosEAN_ListaPrecios.Designer.cs"><DependentUpon>FrmCodigosEAN_ListaPrecios.cs</DependentUpon></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_OfertadasLista.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_OfertadasLista.Designer.cs"><DependentUpon>FrmComClaveSSA_OfertadasLista.cs</DependentUpon></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ListaPrecios.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ListaPrecios.Designer.cs"><DependentUpon>FrmComClaveSSA_ListaPrecios.cs</DependentUpon></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaListaPrecios.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaListaPrecios.Designer.cs"><DependentUpon>FrmComClaveSSA_CapturaListaPrecios.cs</DependentUpon></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ProveedoresListaPrecios.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ProveedoresListaPrecios.Designer.cs"><DependentUpon>FrmComClaveSSA_ProveedoresListaPrecios.cs</DependentUpon></Compile><Compile Include="ListasDePrecio\FrmCom_ListaPrecioClaves.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecio\FrmCom_ListaPrecioClaves.Designer.cs"><DependentUpon>FrmCom_ListaPrecioClaves.cs</DependentUpon></Compile><Compile Include="ListasDePrecio\FrmCom_ListaPreciosProveedorClaves.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecio\FrmCom_ListaPreciosProveedorClaves.Designer.cs"><DependentUpon>FrmCom_ListaPreciosProveedorClaves.cs</DependentUpon></Compile><Compile Include="ListasDePrecio\FrmListaClavesOfertadas.cs"><SubType>Form</SubType></Compile><Compile Include="ListasDePrecio\FrmListaClavesOfertadas.Designer.cs"><DependentUpon>FrmListaClavesOfertadas.cs</DependentUpon></Compile><Compile Include="OrdenCompra\FrmCom_GenerarOrdenDeCompraProveedor.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenCompra\FrmCom_GenerarOrdenDeCompraProveedor.Designer.cs"><DependentUpon>FrmCom_GenerarOrdenDeCompraProveedor.cs</DependentUpon></Compile><Compile Include="OrdenCompra\FrmListadoDePrePedidosProveedores.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenCompra\FrmListadoDePrePedidosProveedores.Designer.cs"><DependentUpon>FrmListadoDePrePedidosProveedores.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmCfgNotasOrdenCompra.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmCfgNotasOrdenCompra.Designer.cs"><DependentUpon>FrmCfgNotasOrdenCompra.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmListadoOrdenesComprasCodigoEAN.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmListadoOrdenesComprasCodigoEAN.Designer.cs"><DependentUpon>FrmListadoOrdenesComprasCodigoEAN.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompras.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompras.Designer.cs"><DependentUpon>FrmListadoOrdenesDeCompras.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompraStatus.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompraStatus.Designer.cs"><DependentUpon>FrmListadoOrdenesDeCompraStatus.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmMotivosSobrePrecio.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmMotivosSobrePrecio.Designer.cs"><DependentUpon>FrmMotivosSobrePrecio.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmObservacionesDeSobrePrecio.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmObservacionesDeSobrePrecio.Designer.cs"><DependentUpon>FrmObservacionesDeSobrePrecio.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Base.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Base.Designer.cs"><DependentUpon>FrmOrdenCompraCodigoEAN_Base.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN.Designer.cs"><DependentUpon>FrmOrdenCompraCodigoEAN.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.Designer.cs"><DependentUpon>FrmOrdenCompraCodigoEANListadoDeExcedentes.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Bloqueo.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Bloqueo.Designer.cs"><DependentUpon>FrmOrdenCompraCodigoEAN_Bloqueo.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Consulta.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Consulta.Designer.cs"><DependentUpon>FrmOrdenCompraCodigoEAN_Consulta.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraManual.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmOrdenCompraManual.Designer.cs"><DependentUpon>FrmOrdenCompraManual.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmOrdenesDeComprasColocadasProveedor.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmOrdenesDeComprasColocadasProveedor.Designer.cs"><DependentUpon>FrmOrdenesDeComprasColocadasProveedor.cs</DependentUpon></Compile><Compile Include="OrdenesDeCompra\FrmValidarRecepcionOrdenDeCompra.cs"><SubType>Form</SubType></Compile><Compile Include="OrdenesDeCompra\FrmValidarRecepcionOrdenDeCompra.Designer.cs"><DependentUpon>FrmValidarRecepcionOrdenDeCompra.cs</DependentUpon></Compile><Compile Include="Parametros\clsParametrosCompras.cs" /><Compile Include="PedidosCentral\FrmGeneraPedidoACentral.cs"><SubType>Form</SubType></Compile><Compile Include="PedidosCentral\FrmGeneraPedidoACentral.Designer.cs"><DependentUpon>FrmGeneraPedidoACentral.cs</DependentUpon></Compile><Compile Include="PedidosCentral\FrmGenerarPedidosCentral.cs"><SubType>Form</SubType></Compile><Compile Include="PedidosCentral\FrmGenerarPedidosCentral.Designer.cs"><DependentUpon>FrmGenerarPedidosCentral.cs</DependentUpon></Compile><Compile Include="Pedidos\clsGenerarPedidosProveedores.cs" /><Compile Include="Pedidos\FrmCom_ConfirmarPedidoRegional.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmCom_ConfirmarPedidoRegional.Designer.cs"><DependentUpon>FrmCom_ConfirmarPedidoRegional.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmCom_ConcentradoPedidos.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmCom_ConcentradoPedidos.Designer.cs"><DependentUpon>FrmCom_ConcentradoPedidos.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmCom_ConfirmarPedido.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmCom_ConfirmarPedido.Designer.cs"><DependentUpon>FrmCom_ConfirmarPedido.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmCom_CriteriosParaPedidos.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmCom_CriteriosParaPedidos.Designer.cs"><DependentUpon>FrmCom_CriteriosParaPedidos.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmCom_GenerarPedidoProveedor.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmCom_GenerarPedidoProveedor.Designer.cs"><DependentUpon>FrmCom_GenerarPedidoProveedor.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmCom_ProveedoresConPedidos.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmCom_ProveedoresConPedidos.Designer.cs"><DependentUpon>FrmCom_ProveedoresConPedidos.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmConcentradoPedidosOCEN.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmConcentradoPedidosOCEN.Designer.cs"><DependentUpon>FrmConcentradoPedidosOCEN.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmConfirmaPedidoRegClaves.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmConfirmaPedidoRegClaves.Designer.cs"><DependentUpon>FrmConfirmaPedidoRegClaves.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmConfirmarPedidoOCEN.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmConfirmarPedidoOCEN.Designer.cs"><DependentUpon>FrmConfirmarPedidoOCEN.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmObservacionesPrecios.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmObservacionesPrecios.Designer.cs"><DependentUpon>FrmObservacionesPrecios.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmPedidosAProcesar.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmPedidosAProcesar.Designer.cs"><DependentUpon>FrmPedidosAProcesar.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmProcesarPedidosComprador.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmProcesarPedidosComprador.Designer.cs"><DependentUpon>FrmProcesarPedidosComprador.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmSeleccionarPedidosComprador.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmSeleccionarPedidosComprador.Designer.cs"><DependentUpon>FrmSeleccionarPedidosComprador.cs</DependentUpon></Compile><Compile Include="Pedidos\FrmSeleccionProveedorProductos.cs"><SubType>Form</SubType></Compile><Compile Include="Pedidos\FrmSeleccionProveedorProductos.Designer.cs"><DependentUpon>FrmSeleccionProveedorProductos.cs</DependentUpon></Compile><Compile Include="PerfilesPersonal\FrmCOM_ProductosParaCompra.cs"><SubType>Form</SubType></Compile><Compile Include="PerfilesPersonal\FrmCOM_ProductosParaCompra.Designer.cs"><DependentUpon>FrmCOM_ProductosParaCompra.cs</DependentUpon></Compile><Compile Include="PerfilesPersonal\FrmPerfilesPersonalClavesSSA.cs"><SubType>Form</SubType></Compile><Compile Include="PerfilesPersonal\FrmPerfilesPersonalClavesSSA.Designer.cs"><DependentUpon>FrmPerfilesPersonalClavesSSA.cs</DependentUpon></Compile><Compile Include="PerfilesPersonal\FrmPersonalCompras.cs"><SubType>Form</SubType></Compile><Compile Include="PerfilesPersonal\FrmPersonalCompras.Designer.cs"><DependentUpon>FrmPersonalCompras.cs</DependentUpon></Compile><Compile Include="Planeacion\FrmObtenerConsumos.cs"><SubType>Form</SubType></Compile><Compile Include="Planeacion\FrmObtenerConsumos.Designer.cs"><DependentUpon>FrmObtenerConsumos.cs</DependentUpon></Compile><Compile Include="Planeacion\FrmPlaneacionEstado.cs"><SubType>Form</SubType></Compile><Compile Include="Planeacion\FrmPlaneacionEstado.Designer.cs"><DependentUpon>FrmPlaneacionEstado.cs</DependentUpon></Compile><Compile Include="Properties\AssemblyInfo.cs" /><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DesignTime>True</DesignTime><DependentUpon>Resources.resx</DependentUpon></Compile><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DesignTimeSharedInput>True</DesignTimeSharedInput><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ProveedoresSancionados\FrmActivarProveedores.cs"><SubType>Form</SubType></Compile><Compile Include="ProveedoresSancionados\FrmActivarProveedores.Designer.cs"><DependentUpon>FrmActivarProveedores.cs</DependentUpon></Compile><Compile Include="ProveedoresSancionados\FrmSancionarProveedores.cs"><SubType>Form</SubType></Compile><Compile Include="ProveedoresSancionados\FrmSancionarProveedores.Designer.cs"><DependentUpon>FrmSancionarProveedores.cs</DependentUpon></Compile><Compile Include="Seguimiento\FrmSeguimientoOrdenesCompras.cs"><SubType>Form</SubType></Compile><Compile Include="Seguimiento\FrmSeguimientoOrdenesCompras.Designer.cs"><DependentUpon>FrmSeguimientoOrdenesCompras.cs</DependentUpon></Compile><Compile Include="Seguimiento\FrmVerificarOrdenesCompras.cs"><SubType>Form</SubType></Compile><Compile Include="Seguimiento\FrmVerificarOrdenesCompras.Designer.cs"><DependentUpon>FrmVerificarOrdenesCompras.cs</DependentUpon></Compile><Compile Include="Vales\FrmInformacionVales.cs"><SubType>Form</SubType></Compile><Compile Include="Vales\FrmInformacionVales.Designer.cs"><DependentUpon>FrmInformacionVales.cs</DependentUpon></Compile><Compile Include="Web References\wsUpdater\Reference.cs"><AutoGen>True</AutoGen><DesignTime>True</DesignTime><DependentUpon>Reference.map</DependentUpon></Compile></ItemGroup><ItemGroup><EmbeddedResource Include="CartasFaltantes\FrmCartasFaltantesClaves.resx"><DependentUpon>FrmCartasFaltantesClaves.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Consultas\FrmDetallesCodigosEAN.resx"><DependentUpon>FrmDetallesCodigosEAN.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Consultas\FrmDetallesPedidos.resx"><DependentUpon>FrmDetallesPedidos.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Consultas\FrmListadoOCProductos.resx"><DependentUpon>FrmListadoOCProductos.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Consultas\FrmListadoPorClaves.resx"><DependentUpon>FrmListadoPorClaves.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Consultas\FrmStatusDePedidos.resx"><DependentUpon>FrmStatusDePedidos.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Form1.resx"><DependentUpon>Form1.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Informacion\FrmConsumosEstadosClaves.resx"><DependentUpon>FrmConsumosEstadosClaves.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Informacion\FrmDesplazamientosEdosLaboratorios.resx"><DependentUpon>FrmDesplazamientosEdosLaboratorios.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Informacion\FrmDispensacionClaves.resx"><DependentUpon>FrmDispensacionClaves.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Informacion\FrmListaClavesReporte.resx"><DependentUpon>FrmListaClavesReporte.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Informacion\FrmListadoPreciosComprasEstados.resx"><DependentUpon>FrmListadoPreciosComprasEstados.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Informacion\FrmListadoPreciosProductos.resx"><DependentUpon>FrmListadoPreciosProductos.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Informacion\FrmTransferenciasDeSalida_Almacenes.resx"><DependentUpon>FrmTransferenciasDeSalida_Almacenes.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaPreciosNegociado.resx"><DependentUpon>FrmComClaveSSA_CapturaPreciosNegociado.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmCambioDePrecio.resx"><DependentUpon>FrmCambioDePrecio.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ListasDePrecioClaves\FrmCodigosEAN_ListaPrecios.resx"><DependentUpon>FrmCodigosEAN_ListaPrecios.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_OfertadasLista.resx"><DependentUpon>FrmComClaveSSA_OfertadasLista.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_ListaPrecios.resx"><DependentUpon>FrmComClaveSSA_ListaPrecios.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaListaPrecios.resx"><DependentUpon>FrmComClaveSSA_CapturaListaPrecios.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_ProveedoresListaPrecios.resx"><DependentUpon>FrmComClaveSSA_ProveedoresListaPrecios.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ListasDePrecio\FrmCom_ListaPrecioClaves.resx"><DependentUpon>FrmCom_ListaPrecioClaves.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="ListasDePrecio\FrmCom_ListaPreciosProveedorClaves.resx"><DependentUpon>FrmCom_ListaPreciosProveedorClaves.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="ListasDePrecio\FrmListaClavesOfertadas.resx"><DependentUpon>FrmListaClavesOfertadas.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="OrdenCompra\FrmCom_GenerarOrdenDeCompraProveedor.resx"><DependentUpon>FrmCom_GenerarOrdenDeCompraProveedor.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="OrdenCompra\FrmListadoDePrePedidosProveedores.resx"><DependentUpon>FrmListadoDePrePedidosProveedores.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmCfgNotasOrdenCompra.resx"><DependentUpon>FrmCfgNotasOrdenCompra.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmListadoOrdenesComprasCodigoEAN.resx"><DependentUpon>FrmListadoOrdenesComprasCodigoEAN.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmListadoOrdenesDeCompras.resx"><DependentUpon>FrmListadoOrdenesDeCompras.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmListadoOrdenesDeCompraStatus.resx"><DependentUpon>FrmListadoOrdenesDeCompraStatus.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmMotivosSobrePrecio.resx"><DependentUpon>FrmMotivosSobrePrecio.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmObservacionesDeSobrePrecio.resx"><DependentUpon>FrmObservacionesDeSobrePrecio.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Base.resx"><DependentUpon>FrmOrdenCompraCodigoEAN_Base.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN.resx"><DependentUpon>FrmOrdenCompraCodigoEAN.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.resx"><DependentUpon>FrmOrdenCompraCodigoEANListadoDeExcedentes.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Bloqueo.resx"><DependentUpon>FrmOrdenCompraCodigoEAN_Bloqueo.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraManual.resx"><DependentUpon>FrmOrdenCompraManual.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmOrdenesDeComprasColocadasProveedor.resx"><DependentUpon>FrmOrdenesDeComprasColocadasProveedor.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="OrdenesDeCompra\FrmValidarRecepcionOrdenDeCompra.resx"><DependentUpon>FrmValidarRecepcionOrdenDeCompra.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="PedidosCentral\FrmGeneraPedidoACentral.resx"><DependentUpon>FrmGeneraPedidoACentral.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="PedidosCentral\FrmGenerarPedidosCentral.resx"><DependentUpon>FrmGenerarPedidosCentral.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmCom_ConfirmarPedidoRegional.resx"><DependentUpon>FrmCom_ConfirmarPedidoRegional.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmCom_ConcentradoPedidos.resx"><DependentUpon>FrmCom_ConcentradoPedidos.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmCom_ConfirmarPedido.resx"><DependentUpon>FrmCom_ConfirmarPedido.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmCom_CriteriosParaPedidos.resx"><DependentUpon>FrmCom_CriteriosParaPedidos.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmCom_GenerarPedidoProveedor.resx"><DependentUpon>FrmCom_GenerarPedidoProveedor.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmCom_ProveedoresConPedidos.resx"><DependentUpon>FrmCom_ProveedoresConPedidos.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmConcentradoPedidosOCEN.resx"><DependentUpon>FrmConcentradoPedidosOCEN.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmConfirmaPedidoRegClaves.resx"><DependentUpon>FrmConfirmaPedidoRegClaves.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmConfirmarPedidoOCEN.resx"><DependentUpon>FrmConfirmarPedidoOCEN.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmObservacionesPrecios.resx"><DependentUpon>FrmObservacionesPrecios.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmPedidosAProcesar.resx"><DependentUpon>FrmPedidosAProcesar.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmProcesarPedidosComprador.resx"><DependentUpon>FrmProcesarPedidosComprador.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmSeleccionarPedidosComprador.resx"><DependentUpon>FrmSeleccionarPedidosComprador.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="Pedidos\FrmSeleccionProveedorProductos.resx"><DependentUpon>FrmSeleccionProveedorProductos.cs</DependentUpon><SubType>Designer</SubType></EmbeddedResource><EmbeddedResource Include="PerfilesPersonal\FrmCOM_ProductosParaCompra.resx"><DependentUpon>FrmCOM_ProductosParaCompra.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="PerfilesPersonal\FrmPerfilesPersonalClavesSSA.resx"><DependentUpon>FrmPerfilesPersonalClavesSSA.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="PerfilesPersonal\FrmPersonalCompras.resx"><DependentUpon>FrmPersonalCompras.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Planeacion\FrmObtenerConsumos.resx"><DependentUpon>FrmObtenerConsumos.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Planeacion\FrmPlaneacionEstado.resx"><DependentUpon>FrmPlaneacionEstado.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Properties\licenses.licx" /><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><EmbeddedResource Include="ProveedoresSancionados\FrmActivarProveedores.resx"><DependentUpon>FrmActivarProveedores.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="ProveedoresSancionados\FrmSancionarProveedores.resx"><DependentUpon>FrmSancionarProveedores.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Seguimiento\FrmSeguimientoOrdenesCompras.resx"><DependentUpon>FrmSeguimientoOrdenesCompras.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Seguimiento\FrmVerificarOrdenesCompras.resx"><DependentUpon>FrmVerificarOrdenesCompras.cs</DependentUpon></EmbeddedResource><EmbeddedResource Include="Vales\FrmInformacionVales.resx"><DependentUpon>FrmInformacionVales.cs</DependentUpon></EmbeddedResource></ItemGroup><ItemGroup><None Include="Snk\DllCompras.snk" /></ItemGroup><ItemGroup><WebReferences Include="Web References\" /></ItemGroup><ItemGroup><WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx"><UrlBehavior>Dynamic</UrlBehavior><RelPath>Web References\wsUpdater\</RelPath><UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx</UpdateFromURL><ServiceLocationURL></ServiceLocationURL><CachedDynamicPropName></CachedDynamicPropName><CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName><CachedSettingsPropName>DllCompras_wsUpdater_wsUpdater</CachedSettingsPropName></WebReferenceUrl></ItemGroup><ItemGroup><None Include="app.config" /><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><None Include="Web References\wsUpdater\Reference.map"><Generator>MSDiscoCodeGenerator</Generator><LastGenOutput>Reference.cs</LastGenOutput></None><None Include="Web References\wsUpdater\wsUpdater.disco" /><None Include="Web References\wsUpdater\wsUpdater.wsdl" /></ItemGroup><ItemGroup><ProjectReference Include="..\..\DllFarmaciaSoft\DllFarmaciaSoft.csproj"><Project>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</Project><Name>DllFarmaciaSoft</Name></ProjectReference><ProjectReference Include="..\..\SC_SolutionsSystem.FP\SC_SolutionsSystem.FP.csproj"><Project>{A3C3081A-24BD-4E3D-A6F4-4949A7D415CB}</Project><Name>SC_SolutionsSystem.FP</Name></ProjectReference></ItemGroup><ItemGroup><BootstrapperPackage Include="Microsoft.Net.Client.3.5"><Visible>False</Visible><ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName><Install>false</Install></BootstrapperPackage><BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1"><Visible>False</Visible><ProductName>.NET Framework 3.5 SP1</ProductName><Install>true</Install></BootstrapperPackage><BootstrapperPackage Include="Microsoft.Windows.Installer.3.1"><Visible>False</Visible><ProductName>Windows Installer 3.1</ProductName><Install>true</Install></BootstrapperPackage></ItemGroup><ItemGroup><None Include="Resources\document_import.png" /></ItemGroup><ItemGroup><None Include="Resources\document_export.png" /></ItemGroup><ItemGroup><None Include="Resources\document_import1.png" /></ItemGroup><ItemGroup><None Include="Resources\document_export1.png" /></ItemGroup><ItemGroup /><Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /><!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{831017A5-B62F-41D5-8BB3-F7F9635AC10A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DllCompras</RootNamespace>
+    <AssemblyName>DllCompras</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DllCompras.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Archivos_Generados\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SC_Assemblies\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=4.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PDF, Version=1.0.3506.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3505.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SC_CompressLib, Version=4.0.4.0, Culture=neutral, PublicKeyToken=fac9ea0d48dbaeab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SC_Assemblies\SC_CompressLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_ControlsCS, Version=4.0.1.0, Culture=neutral, PublicKeyToken=e7a523b603173679, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SC_Assemblies\SC_ControlsCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SC_SolutionsSystem, Version=4.0.5.0, Culture=neutral, PublicKeyToken=a50c66deebb893df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SC_Assemblies\SC_SolutionsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\DllFarmaciaSoft\Properties\AssemblyInfo_Compilacion.cs">
+      <Link>Properties\AssemblyInfo_Compilacion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DllFarmaciaSoft\Properties\AssemblyInfo_Version.cs">
+      <Link>Properties\AssemblyInfo_Version.cs</Link>
+    </Compile>
+    <Compile Include="CartasFaltantes\FrmCartasFaltantesClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartasFaltantes\FrmCartasFaltantesClaves.Designer.cs">
+      <DependentUpon>FrmCartasFaltantesClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckVersion.cs" />
+    <Compile Include="Consultas\FrmDetallesCodigosEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmDetallesCodigosEAN.Designer.cs">
+      <DependentUpon>FrmDetallesCodigosEAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FrmDetallesPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmDetallesPedidos.Designer.cs">
+      <DependentUpon>FrmDetallesPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FrmListadoOCProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmListadoOCProductos.Designer.cs">
+      <DependentUpon>FrmListadoOCProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FrmListadoPorClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmListadoPorClaves.Designer.cs">
+      <DependentUpon>FrmListadoPorClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FrmStatusDePedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmStatusDePedidos.Designer.cs">
+      <DependentUpon>FrmStatusDePedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GnCompras.cs" />
+    <Compile Include="Informacion\FrmConsumosEstadosClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmConsumosEstadosClaves.Designer.cs">
+      <DependentUpon>FrmConsumosEstadosClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmDesplazamientosEdosLaboratorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmDesplazamientosEdosLaboratorios.Designer.cs">
+      <DependentUpon>FrmDesplazamientosEdosLaboratorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmDispensacionClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmDispensacionClaves.Designer.cs">
+      <DependentUpon>FrmDispensacionClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmListaClavesReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmListaClavesReporte.Designer.cs">
+      <DependentUpon>FrmListaClavesReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmListadoPreciosComprasEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmListadoPreciosComprasEstados.Designer.cs">
+      <DependentUpon>FrmListadoPreciosComprasEstados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmListadoPreciosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmListadoPreciosProductos.Designer.cs">
+      <DependentUpon>FrmListadoPreciosProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion\FrmTransferenciasDeSalida_Almacenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion\FrmTransferenciasDeSalida_Almacenes.Designer.cs">
+      <DependentUpon>FrmTransferenciasDeSalida_Almacenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaPreciosNegociado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaPreciosNegociado.Designer.cs">
+      <DependentUpon>FrmComClaveSSA_CapturaPreciosNegociado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\clsMotivosSobreCompra.cs" />
+    <Compile Include="OrdenesDeCompra\FrmCambioDePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCambioDePrecio.Designer.cs">
+      <DependentUpon>FrmCambioDePrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmCodigosEAN_ListaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmCodigosEAN_ListaPrecios.Designer.cs">
+      <DependentUpon>FrmCodigosEAN_ListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_OfertadasLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_OfertadasLista.Designer.cs">
+      <DependentUpon>FrmComClaveSSA_OfertadasLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ListaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ListaPrecios.Designer.cs">
+      <DependentUpon>FrmComClaveSSA_ListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaListaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaListaPrecios.Designer.cs">
+      <DependentUpon>FrmComClaveSSA_CapturaListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ProveedoresListaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecioClaves\FrmComClaveSSA_ProveedoresListaPrecios.Designer.cs">
+      <DependentUpon>FrmComClaveSSA_ProveedoresListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecio\FrmCom_ListaPrecioClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecio\FrmCom_ListaPrecioClaves.Designer.cs">
+      <DependentUpon>FrmCom_ListaPrecioClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecio\FrmCom_ListaPreciosProveedorClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecio\FrmCom_ListaPreciosProveedorClaves.Designer.cs">
+      <DependentUpon>FrmCom_ListaPreciosProveedorClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListasDePrecio\FrmListaClavesOfertadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasDePrecio\FrmListaClavesOfertadas.Designer.cs">
+      <DependentUpon>FrmListaClavesOfertadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmCom_GenerarOrdenDeCompraProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmCom_GenerarOrdenDeCompraProveedor.Designer.cs">
+      <DependentUpon>FrmCom_GenerarOrdenDeCompraProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmListadoDePrePedidosProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra\FrmListadoDePrePedidosProveedores.Designer.cs">
+      <DependentUpon>FrmListadoDePrePedidosProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCfgNotasOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmCfgNotasOrdenCompra.Designer.cs">
+      <DependentUpon>FrmCfgNotasOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmListadoOrdenesComprasCodigoEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmListadoOrdenesComprasCodigoEAN.Designer.cs">
+      <DependentUpon>FrmListadoOrdenesComprasCodigoEAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompras.Designer.cs">
+      <DependentUpon>FrmListadoOrdenesDeCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompraStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmListadoOrdenesDeCompraStatus.Designer.cs">
+      <DependentUpon>FrmListadoOrdenesDeCompraStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmMotivosSobrePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmMotivosSobrePrecio.Designer.cs">
+      <DependentUpon>FrmMotivosSobrePrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmObservacionesDeSobrePrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmObservacionesDeSobrePrecio.Designer.cs">
+      <DependentUpon>FrmObservacionesDeSobrePrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Base.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEAN_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEANListadoDeExcedentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Bloqueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Bloqueo.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEAN_Bloqueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Consulta.Designer.cs">
+      <DependentUpon>FrmOrdenCompraCodigoEAN_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenCompraManual.Designer.cs">
+      <DependentUpon>FrmOrdenCompraManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeComprasColocadasProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmOrdenesDeComprasColocadasProveedor.Designer.cs">
+      <DependentUpon>FrmOrdenesDeComprasColocadasProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmValidarRecepcionOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeCompra\FrmValidarRecepcionOrdenDeCompra.Designer.cs">
+      <DependentUpon>FrmValidarRecepcionOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\clsParametrosCompras.cs" />
+    <Compile Include="PedidosCentral\FrmGeneraPedidoACentral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosCentral\FrmGeneraPedidoACentral.Designer.cs">
+      <DependentUpon>FrmGeneraPedidoACentral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosCentral\FrmGenerarPedidosCentral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosCentral\FrmGenerarPedidosCentral.Designer.cs">
+      <DependentUpon>FrmGenerarPedidosCentral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\clsGenerarPedidosProveedores.cs" />
+    <Compile Include="Pedidos\FrmCom_ConfirmarPedidoRegional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_ConfirmarPedidoRegional.Designer.cs">
+      <DependentUpon>FrmCom_ConfirmarPedidoRegional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_ConcentradoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_ConcentradoPedidos.Designer.cs">
+      <DependentUpon>FrmCom_ConcentradoPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_ConfirmarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_ConfirmarPedido.Designer.cs">
+      <DependentUpon>FrmCom_ConfirmarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_CriteriosParaPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_CriteriosParaPedidos.Designer.cs">
+      <DependentUpon>FrmCom_CriteriosParaPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_GenerarPedidoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_GenerarPedidoProveedor.Designer.cs">
+      <DependentUpon>FrmCom_GenerarPedidoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_ProveedoresConPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmCom_ProveedoresConPedidos.Designer.cs">
+      <DependentUpon>FrmCom_ProveedoresConPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmConcentradoPedidosOCEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmConcentradoPedidosOCEN.Designer.cs">
+      <DependentUpon>FrmConcentradoPedidosOCEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmConfirmaPedidoRegClaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmConfirmaPedidoRegClaves.Designer.cs">
+      <DependentUpon>FrmConfirmaPedidoRegClaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmConfirmarPedidoOCEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmConfirmarPedidoOCEN.Designer.cs">
+      <DependentUpon>FrmConfirmarPedidoOCEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmObservacionesPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmObservacionesPrecios.Designer.cs">
+      <DependentUpon>FrmObservacionesPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmPedidosAProcesar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmPedidosAProcesar.Designer.cs">
+      <DependentUpon>FrmPedidosAProcesar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmProcesarPedidosComprador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmProcesarPedidosComprador.Designer.cs">
+      <DependentUpon>FrmProcesarPedidosComprador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmSeleccionarPedidosComprador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmSeleccionarPedidosComprador.Designer.cs">
+      <DependentUpon>FrmSeleccionarPedidosComprador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\FrmSeleccionProveedorProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\FrmSeleccionProveedorProductos.Designer.cs">
+      <DependentUpon>FrmSeleccionProveedorProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesPersonal\FrmCOM_ProductosParaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilesPersonal\FrmCOM_ProductosParaCompra.Designer.cs">
+      <DependentUpon>FrmCOM_ProductosParaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesPersonal\FrmPerfilesPersonalClavesSSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilesPersonal\FrmPerfilesPersonalClavesSSA.Designer.cs">
+      <DependentUpon>FrmPerfilesPersonalClavesSSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesPersonal\FrmPersonalCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilesPersonal\FrmPersonalCompras.Designer.cs">
+      <DependentUpon>FrmPersonalCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planeacion\FrmObtenerConsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planeacion\FrmObtenerConsumos.Designer.cs">
+      <DependentUpon>FrmObtenerConsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planeacion\FrmPlaneacionEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planeacion\FrmPlaneacionEstado.Designer.cs">
+      <DependentUpon>FrmPlaneacionEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresSancionados\FrmActivarProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedoresSancionados\FrmActivarProveedores.Designer.cs">
+      <DependentUpon>FrmActivarProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresSancionados\FrmSancionarProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedoresSancionados\FrmSancionarProveedores.Designer.cs">
+      <DependentUpon>FrmSancionarProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguimiento\FrmSeguimientoOrdenesCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguimiento\FrmSeguimientoOrdenesCompras.Designer.cs">
+      <DependentUpon>FrmSeguimientoOrdenesCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguimiento\FrmVerificarOrdenesCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguimiento\FrmVerificarOrdenesCompras.Designer.cs">
+      <DependentUpon>FrmVerificarOrdenesCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vales\FrmInformacionVales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales\FrmInformacionVales.Designer.cs">
+      <DependentUpon>FrmInformacionVales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsUpdater\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CartasFaltantes\FrmCartasFaltantesClaves.resx">
+      <DependentUpon>FrmCartasFaltantesClaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmDetallesCodigosEAN.resx">
+      <DependentUpon>FrmDetallesCodigosEAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmDetallesPedidos.resx">
+      <DependentUpon>FrmDetallesPedidos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmListadoOCProductos.resx">
+      <DependentUpon>FrmListadoOCProductos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmListadoPorClaves.resx">
+      <DependentUpon>FrmListadoPorClaves.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FrmStatusDePedidos.resx">
+      <DependentUpon>FrmStatusDePedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmConsumosEstadosClaves.resx">
+      <DependentUpon>FrmConsumosEstadosClaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmDesplazamientosEdosLaboratorios.resx">
+      <DependentUpon>FrmDesplazamientosEdosLaboratorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmDispensacionClaves.resx">
+      <DependentUpon>FrmDispensacionClaves.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmListaClavesReporte.resx">
+      <DependentUpon>FrmListaClavesReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmListadoPreciosComprasEstados.resx">
+      <DependentUpon>FrmListadoPreciosComprasEstados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmListadoPreciosProductos.resx">
+      <DependentUpon>FrmListadoPreciosProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion\FrmTransferenciasDeSalida_Almacenes.resx">
+      <DependentUpon>FrmTransferenciasDeSalida_Almacenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaPreciosNegociado.resx">
+      <DependentUpon>FrmComClaveSSA_CapturaPreciosNegociado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmCambioDePrecio.resx">
+      <DependentUpon>FrmCambioDePrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecioClaves\FrmCodigosEAN_ListaPrecios.resx">
+      <DependentUpon>FrmCodigosEAN_ListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_OfertadasLista.resx">
+      <DependentUpon>FrmComClaveSSA_OfertadasLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_ListaPrecios.resx">
+      <DependentUpon>FrmComClaveSSA_ListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_CapturaListaPrecios.resx">
+      <DependentUpon>FrmComClaveSSA_CapturaListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecioClaves\FrmComClaveSSA_ProveedoresListaPrecios.resx">
+      <DependentUpon>FrmComClaveSSA_ProveedoresListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecio\FrmCom_ListaPrecioClaves.resx">
+      <DependentUpon>FrmCom_ListaPrecioClaves.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecio\FrmCom_ListaPreciosProveedorClaves.resx">
+      <DependentUpon>FrmCom_ListaPreciosProveedorClaves.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasDePrecio\FrmListaClavesOfertadas.resx">
+      <DependentUpon>FrmListaClavesOfertadas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra\FrmCom_GenerarOrdenDeCompraProveedor.resx">
+      <DependentUpon>FrmCom_GenerarOrdenDeCompraProveedor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra\FrmListadoDePrePedidosProveedores.resx">
+      <DependentUpon>FrmListadoDePrePedidosProveedores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmCfgNotasOrdenCompra.resx">
+      <DependentUpon>FrmCfgNotasOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmListadoOrdenesComprasCodigoEAN.resx">
+      <DependentUpon>FrmListadoOrdenesComprasCodigoEAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmListadoOrdenesDeCompras.resx">
+      <DependentUpon>FrmListadoOrdenesDeCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmListadoOrdenesDeCompraStatus.resx">
+      <DependentUpon>FrmListadoOrdenesDeCompraStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmMotivosSobrePrecio.resx">
+      <DependentUpon>FrmMotivosSobrePrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmObservacionesDeSobrePrecio.resx">
+      <DependentUpon>FrmObservacionesDeSobrePrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Base.resx">
+      <DependentUpon>FrmOrdenCompraCodigoEAN_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN.resx">
+      <DependentUpon>FrmOrdenCompraCodigoEAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEANListadoDeExcedentes.resx">
+      <DependentUpon>FrmOrdenCompraCodigoEANListadoDeExcedentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraCodigoEAN_Bloqueo.resx">
+      <DependentUpon>FrmOrdenCompraCodigoEAN_Bloqueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenCompraManual.resx">
+      <DependentUpon>FrmOrdenCompraManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmOrdenesDeComprasColocadasProveedor.resx">
+      <DependentUpon>FrmOrdenesDeComprasColocadasProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenesDeCompra\FrmValidarRecepcionOrdenDeCompra.resx">
+      <DependentUpon>FrmValidarRecepcionOrdenDeCompra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosCentral\FrmGeneraPedidoACentral.resx">
+      <DependentUpon>FrmGeneraPedidoACentral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosCentral\FrmGenerarPedidosCentral.resx">
+      <DependentUpon>FrmGenerarPedidosCentral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCom_ConfirmarPedidoRegional.resx">
+      <DependentUpon>FrmCom_ConfirmarPedidoRegional.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCom_ConcentradoPedidos.resx">
+      <DependentUpon>FrmCom_ConcentradoPedidos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCom_ConfirmarPedido.resx">
+      <DependentUpon>FrmCom_ConfirmarPedido.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCom_CriteriosParaPedidos.resx">
+      <DependentUpon>FrmCom_CriteriosParaPedidos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCom_GenerarPedidoProveedor.resx">
+      <DependentUpon>FrmCom_GenerarPedidoProveedor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmCom_ProveedoresConPedidos.resx">
+      <DependentUpon>FrmCom_ProveedoresConPedidos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmConcentradoPedidosOCEN.resx">
+      <DependentUpon>FrmConcentradoPedidosOCEN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmConfirmaPedidoRegClaves.resx">
+      <DependentUpon>FrmConfirmaPedidoRegClaves.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmConfirmarPedidoOCEN.resx">
+      <DependentUpon>FrmConfirmarPedidoOCEN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmObservacionesPrecios.resx">
+      <DependentUpon>FrmObservacionesPrecios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmPedidosAProcesar.resx">
+      <DependentUpon>FrmPedidosAProcesar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmProcesarPedidosComprador.resx">
+      <DependentUpon>FrmProcesarPedidosComprador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmSeleccionarPedidosComprador.resx">
+      <DependentUpon>FrmSeleccionarPedidosComprador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\FrmSeleccionProveedorProductos.resx">
+      <DependentUpon>FrmSeleccionProveedorProductos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilesPersonal\FrmCOM_ProductosParaCompra.resx">
+      <DependentUpon>FrmCOM_ProductosParaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilesPersonal\FrmPerfilesPersonalClavesSSA.resx">
+      <DependentUpon>FrmPerfilesPersonalClavesSSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilesPersonal\FrmPersonalCompras.resx">
+      <DependentUpon>FrmPersonalCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planeacion\FrmObtenerConsumos.resx">
+      <DependentUpon>FrmObtenerConsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planeacion\FrmPlaneacionEstado.resx">
+      <DependentUpon>FrmPlaneacionEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedoresSancionados\FrmActivarProveedores.resx">
+      <DependentUpon>FrmActivarProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedoresSancionados\FrmSancionarProveedores.resx">
+      <DependentUpon>FrmSancionarProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguimiento\FrmSeguimientoOrdenesCompras.resx">
+      <DependentUpon>FrmSeguimientoOrdenesCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguimiento\FrmVerificarOrdenesCompras.resx">
+      <DependentUpon>FrmVerificarOrdenesCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vales\FrmInformacionVales.resx">
+      <DependentUpon>FrmInformacionVales.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DllCompras.snk" />
+    <None Include="Snk\DllCompras.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsUpdater\</RelPath>
+      <UpdateFromURL>http://localhost:31905/wsFarmaciaScSoft/wsUpdater.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DllCompras_wsUpdater_wsUpdater</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsUpdater\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsUpdater\wsUpdater.disco" />
+    <None Include="Web References\wsUpdater\wsUpdater.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DllFarmaciaSoft\DllFarmaciaSoft.csproj">
+      <Project>{6197CF94-EF2D-42E9-A871-6BA7B1407714}</Project>
+      <Name>DllFarmaciaSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SC_SolutionsSystem.FP\SC_SolutionsSystem.FP.csproj">
+      <Project>{A3C3081A-24BD-4E3D-A6F4-4949A7D415CB}</Project>
+      <Name>SC_SolutionsSystem.FP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_import1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_export1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
   </Target>
-  --></Project>
+  -->
+</Project>

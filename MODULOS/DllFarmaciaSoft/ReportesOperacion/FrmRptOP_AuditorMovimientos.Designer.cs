@@ -38,7 +38,6 @@
             this.btnImprimir = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnExportarExcel = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.FrameDatos = new System.Windows.Forms.GroupBox();
             this.listResultado = new System.Windows.Forms.ListView();
             this.FrameParametros = new System.Windows.Forms.GroupBox();
@@ -57,6 +56,8 @@
             // 
             // toolStripBarraMenu
             // 
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator,
@@ -64,11 +65,10 @@
             this.toolStripSeparator1,
             this.btnImprimir,
             this.toolStripSeparator2,
-            this.btnExportarExcel,
-            this.toolStripSeparator4});
+            this.btnExportarExcel});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(1184, 25);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(1184, 54);
             this.toolStripBarraMenu.TabIndex = 0;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -78,14 +78,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(23, 22);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 51);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.AutoSize = false;
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(12, 2);
             // 
             // btnEjecutar
             // 
@@ -93,15 +94,16 @@
             this.btnEjecutar.Image = ((System.Drawing.Image)(resources.GetObject("btnEjecutar.Image")));
             this.btnEjecutar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(23, 22);
+            this.btnEjecutar.Size = new System.Drawing.Size(54, 51);
             this.btnEjecutar.Text = "Ejecutar";
             this.btnEjecutar.ToolTipText = "Ejecutar";
             this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 2);
             // 
             // btnImprimir
             // 
@@ -109,14 +111,15 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(23, 22);
+            this.btnImprimir.Size = new System.Drawing.Size(54, 51);
             this.btnImprimir.Text = "&Imprimir (CTRL + P)";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // toolStripSeparator2
             // 
+            this.toolStripSeparator2.AutoSize = false;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(12, 2);
             this.toolStripSeparator2.Visible = false;
             // 
             // btnExportarExcel
@@ -126,17 +129,11 @@
             this.btnExportarExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportarExcel.Image")));
             this.btnExportarExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExportarExcel.Name = "btnExportarExcel";
-            this.btnExportarExcel.Size = new System.Drawing.Size(23, 22);
+            this.btnExportarExcel.Size = new System.Drawing.Size(54, 51);
             this.btnExportarExcel.Text = "Exportar a Excel";
             this.btnExportarExcel.ToolTipText = "Exportar a Excel";
             this.btnExportarExcel.Visible = false;
             this.btnExportarExcel.Click += new System.EventHandler(this.btnExportarExcel_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            this.toolStripSeparator4.Visible = false;
             // 
             // FrameDatos
             // 
@@ -144,21 +141,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameDatos.Controls.Add(this.listResultado);
-            this.FrameDatos.Location = new System.Drawing.Point(8, 78);
+            this.FrameDatos.Location = new System.Drawing.Point(8, 107);
             this.FrameDatos.Name = "FrameDatos";
-            this.FrameDatos.Size = new System.Drawing.Size(1168, 475);
+            this.FrameDatos.Size = new System.Drawing.Size(1168, 445);
             this.FrameDatos.TabIndex = 3;
             this.FrameDatos.TabStop = false;
-            this.FrameDatos.Text = "Resultado";
+            this.FrameDatos.Text = "Datos";
             // 
             // listResultado
             // 
             this.listResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listResultado.Location = new System.Drawing.Point(10, 16);
+            this.listResultado.HideSelection = false;
+            this.listResultado.Location = new System.Drawing.Point(10, 19);
             this.listResultado.Name = "listResultado";
-            this.listResultado.Size = new System.Drawing.Size(1149, 448);
+            this.listResultado.Size = new System.Drawing.Size(1149, 412);
             this.listResultado.TabIndex = 0;
             this.listResultado.UseCompatibleStateImageBehavior = false;
             // 
@@ -168,23 +166,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FrameParametros.Controls.Add(this.lblPersonal);
             this.FrameParametros.Controls.Add(this.txtIdPersonal);
-            this.FrameParametros.Location = new System.Drawing.Point(8, 28);
+            this.FrameParametros.Location = new System.Drawing.Point(8, 57);
             this.FrameParametros.Name = "FrameParametros";
             this.FrameParametros.Size = new System.Drawing.Size(873, 50);
             this.FrameParametros.TabIndex = 1;
             this.FrameParametros.TabStop = false;
-            this.FrameParametros.Text = "Personal";
+            this.FrameParametros.Text = "Usuario";
             // 
             // lblPersonal
             // 
             this.lblPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPersonal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPersonal.Location = new System.Drawing.Point(119, 18);
             this.lblPersonal.Name = "lblPersonal";
             this.lblPersonal.Size = new System.Drawing.Size(748, 21);
             this.lblPersonal.TabIndex = 12;
-            this.lblPersonal.Text = "Proveedor :";
             this.lblPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtIdPersonal
@@ -211,12 +207,12 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.dtpFechaInicial);
-            this.groupBox3.Location = new System.Drawing.Point(887, 28);
+            this.groupBox3.Location = new System.Drawing.Point(887, 57);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(289, 50);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Rango de Fechas";
+            this.groupBox3.Text = "Periodo";
             // 
             // dtpFechaFinal
             // 
@@ -265,7 +261,8 @@
             this.Controls.Add(this.FrameDatos);
             this.Controls.Add(this.toolStripBarraMenu);
             this.Name = "FrmRptOP_AuditorMovimientos";
-            this.Text = "Auditor de Movimientos por Personal";
+            this.ShowIcon = false;
+            this.Text = "Movimientos por Usuario";
             this.TituloMensajeValidarControl = "SC_Solutions";
             this.Load += new System.EventHandler(this.FrmRptOP_AuditorMovimientos_Load);
             this.toolStripBarraMenu.ResumeLayout(false);
@@ -275,7 +272,6 @@
             this.FrameParametros.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -286,7 +282,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripButton btnEjecutar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton btnImprimir;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btnExportarExcel;

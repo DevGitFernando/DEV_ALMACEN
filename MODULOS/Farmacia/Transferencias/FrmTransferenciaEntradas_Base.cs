@@ -216,7 +216,7 @@ namespace Farmacia.Transferencias
             if (!leer.Exec(sSql))
             {
                 Error.GrabarError(leer, "CargarEstadosFiliales()");
-                General.msjError("Ocurrió un error al obtener la lista de Estados filiales.");
+                General.msjError("Error al obtener la lista de Estados filiales.");
             }
             else
             {
@@ -273,7 +273,7 @@ namespace Farmacia.Transferencias
 
                 lblTitulo__Estado.Location = e;
                 cboEstados.Location = c;
-                cboEstados.Width = iAnchoCombo;
+                cboEstados.Width = (iAnchoCombo / 3);
                 lblTitulo__Estado.Visible = true;
                 cboEstados.Visible = true; 
 
@@ -449,7 +449,7 @@ namespace Farmacia.Transferencias
                                 cnn.DeshacerTransaccion();
                                 txtFolio.Text = "*";
                                 Error.GrabarError(leer, "btnGuardar_Click");
-                                General.msjError("Ocurrió un error al grabar la transferencia.");
+                                General.msjError("Error al guardar traspaso.");
                                 IniciarToolBar(bBtnGuardar, bBtnCancelar, bBtnImprimir, false);
                             }
                             else
@@ -466,7 +466,7 @@ namespace Farmacia.Transferencias
                     }
                     else
                     {
-                        General.msjAviso("Los productos de la transferencia no concuerdan con los escaneados.");
+                        General.msjAviso("Los productos del Traspaso no coinciden con los escaneados.");
                     }
                 }
             }
@@ -483,7 +483,7 @@ namespace Farmacia.Transferencias
 
         private void btnObtenerTransferencias_Click(object sender, EventArgs e)
         {
-            string sMsj = "¿ Desea Realizar La Busqueda en el Origen de la Transferencia ?";
+            string sMsj = "¿ Desea Realizar La Busqueda en Origen del Traspaso ?";
             ////FolioOrigen = "TS" + Fg.PonCeros(txtFolioOrigen.Text, 8);
             ////FarmaciaOrigen = Fg.PonCeros(txtFarmaciaOrigen.Text, 4);
 
@@ -569,7 +569,7 @@ namespace Farmacia.Transferencias
                 {
                     if(!DtGeneral.CanceladoPorUsuario)
                     {
-                        General.msjError("Ocurrió un error al cargar el reporte.");
+                        General.msjError("Error al cargar el Informe.");
                     }
                 }
             }
@@ -584,26 +584,26 @@ namespace Farmacia.Transferencias
             if (bRegresa && bEstaCanceladoTrans)
             {
                 bRegresa = false;
-                General.msjUser("El folio de transferencia de entrada se encuentra cancelado, no es posible generar la transferencia de entrada.");
+                General.msjUser("Folio de Traspaso cancelado. No se pueden realizar cambios.");
             }
 
             if (bRegresa && bEstaRegistrado)
             {
                 bRegresa = false;
-                General.msjUser("El folio de transferencia ya fue registrado, no es posible generar la transferencia de entrada.");
+                General.msjUser("Folio de Traspaso applicado. No se pueden realizar cambios.");
             }
 
             if (bRegresa && txtFolio.Text.Trim() == "")
             {
                 bRegresa = false;
-                General.msjUser("Folio de transferencia inválido, verifique.");
+                General.msjUser("Folio de Traspaso no valido. Favor de verificar.");
                 txtFolio.Focus();
             }
 
             if (bRegresa && txtFarmaciaOrigen.Text.Trim() == "")
             {
                 bRegresa = false;
-                General.msjUser("No ha capturado la Farmacia origen de la transferencia, verifique.");
+                General.msjUser("Capturar Farmacia Origen. Favor de verificar.");
                 txtFarmaciaOrigen.Focus();
             }
 
@@ -636,7 +636,7 @@ namespace Farmacia.Transferencias
             if (bRegresa && txtObservaciones.Text.Trim() == "")
             {
                 bRegresa = false;
-                General.msjUser("No ha capturado las observaciones para la transferencia, verifique.");
+                General.msjUser("Capturar observaciones. Favor de verificar.");
                 txtObservaciones.Focus();
             }
 
@@ -652,7 +652,7 @@ namespace Farmacia.Transferencias
 
             if (bRegresa && DtGeneral.ConfirmacionConHuellas)
             {
-                sMsjNoEncontrado = "El usuario no tiene permiso para realizar una transferencia de entrada, verifique por favor.";
+                sMsjNoEncontrado = "Usuario sin permisos para realizar Traspaso. Favor de verificar.";
                 ////bRegresa = opPermisosEspeciales.VerificarPermisos("TRANSFERENCIA_ENTRADA", sMsjNoEncontrado);
                 bRegresa = DtGeneral.PermisosEspeciales_Biometricos.VerificarPermisos("TRANSFERENCIA_ENTRADA", sMsjNoEncontrado);
             }
@@ -723,7 +723,7 @@ namespace Farmacia.Transferencias
             leer.DataSetClase = query.FolioTransferenciaEntrada(sEmpresa, cboEstados.Data, sCveRenapo, txtFarmaciaOrigen.Text, txtFolioOrigen.Text, "txtFolio_Validating");
             if (!leer.Leer())
             {
-                sMsj = "No fue posible validar la Transferencia de Entrada, verifique.";
+                sMsj = "No fue posible validar el Traspaso. Favor de verificar.";
                 bRegresa = false;
             }
             else
@@ -734,7 +734,7 @@ namespace Farmacia.Transferencias
                     if (leer.Campo("FolioReferencia") != "*")
                     {
                         bRegresa = false;
-                        sMsj = "El folio de transferencia ya fue registrado, no es posible generar la entrada de nuevo.";
+                        sMsj = "Folio Traspaso aplicado. No se pueden realizar cambios.";
                     }
                 }
             }
@@ -790,7 +790,7 @@ namespace Farmacia.Transferencias
 
             if (!bRegresa)
             {
-                General.msjUser("Debe capturar al menos un producto para la transferencia\n y/o capturar cantidades para al menos un lote, verifique.");
+                General.msjUser("Capture un producto para el Traspaso o cantidades para el Producto(s). Favor de verificar.");
             }
 
             return bRegresa;
@@ -1559,9 +1559,9 @@ namespace Farmacia.Transferencias
                 {
                     bEstaRegistrado = true;
                     lblFolioOrigen.Visible = true;
-                    lblFolioOrigen.Text = "REGISTRADO";
+                    lblFolioOrigen.Text = "APLICADO";
                     btnGenerarPaqueteDatos.Enabled = true;
-                    General.msjUser("El folio de transferencia ya fue registrado, no es posible generar la entrada de nuevo.");
+                    General.msjUser("Folio Traspaso Aplicado. No se pueden realizar cambios.");
                 }
             }
 
@@ -1850,7 +1850,7 @@ namespace Farmacia.Transferencias
                 {
                     if (sFarmacia != leer.Campo("IdFarmaciaRecibe")) 
                     {
-                        General.msjUser("El folio de transferencia no pertenece a esta farmacia, verifique.");
+                        General.msjUser("Folio Traspaso no pertenece a esta farmacia. Favor de verificar.");
 
                         if (e != null)
                         {
@@ -1891,7 +1891,7 @@ namespace Farmacia.Transferencias
                             bEstaCanceladoTrans = true;
                             lblFolioOrigen.Visible = true;
                             lblFolioOrigen.Text = "CANCELADO";
-                            General.msjUser("El folio de transferencia se encuentra cancelado, no es posible generar la entrada.");
+                            General.msjUser("Folio Traspaso cancelado. No se pueden realizar cambios.");
                             txtFolioOrigen.Text = "";
 
                             if (e != null)
@@ -1911,7 +1911,7 @@ namespace Farmacia.Transferencias
                             lblFolioOrigen.Visible = true;
                             lblFolioOrigen.Text = "REGISTRADO";
                             btnGenerarPaqueteDatos.Enabled = true; 
-                            General.msjUser("El folio de transferencia ya fue registrado, no es posible generar la entrada de nuevo.");
+                            General.msjUser("Folio Traspaso aplicado. No se pueden realizar cambios.");
                             //txtFolioOrigen.Text = "";
 
                             if (e != null)
@@ -1923,7 +1923,7 @@ namespace Farmacia.Transferencias
                 }
                 else
                 {
-                    string sMsj = "¿ Desea Realizar La Busqueda en el Origen de la Transferencia ?";
+                    string sMsj = "¿ Desea Realizar La Busqueda en el Origen de Traspaso ?";
                     ////FolioOrigen = "TS" + Fg.PonCeros(txtFolioOrigen.Text, 8);
                     ////FarmaciaOrigen = Fg.PonCeros(txtFarmaciaOrigen.Text, 4);
 
@@ -2022,7 +2022,7 @@ namespace Farmacia.Transferencias
                 catch (Exception ex2)
                 {
                     Error.GrabarError(ex2.Message, "BuscarTransferenciaEnOrigen");
-                    General.msjError("Ocurrió un error al Obtener información de Transferencia.");
+                    General.msjError("Error al Obtener información de Traspaso.");
                 }
             }
             catch (Exception ex1)
@@ -2054,7 +2054,7 @@ namespace Farmacia.Transferencias
                             if (!leer.CampoBool("Correcto"))
                             {
                                 bContinua = false;
-                                General.msjAviso(string.Format(" El folio de Transferencia {0} no pertenece a esta Unidad.\n\n" +
+                                General.msjAviso(string.Format(" Folio Traspaso {0} no pertenece a esta Unidad.\n\n" +
                                     "Pertenece a la Unidad {1}-{2}, favor de reportarlo a la Unidad Origen.",
                                     FolioOrigen, leer.Campo("IdFarmaciaRecibe"), leer.Campo("FarmaciaRecibe")));
 
@@ -2112,7 +2112,7 @@ namespace Farmacia.Transferencias
                     {
                         cnn.DeshacerTransaccion();
                         Error.GrabarError(leerTransf, "BuscarTransferenciaEnOrigen");
-                        General.msjError("Ocurrió un error al Integrar la información de Transferencia.");
+                        General.msjError("Error al Integrar información de Traspaso.");
                     }
                 }
             }
@@ -2229,7 +2229,7 @@ namespace Farmacia.Transferencias
             {
                 bRegresa = false;
                 Error.GrabarError(leer, "ValidaTransferencia()");
-                General.msjError("Ocurrió un error al validar la Transferencia.");
+                General.msjError("Error al validar Traspaso.");
             }
             else
             {
@@ -2240,7 +2240,7 @@ namespace Farmacia.Transferencias
                     if (bExisteError)
                     {
                         bRegresa = false;
-                        General.msjError("Existe un error en la Transferencia, Favor de reportarlo a soporte..");
+                        General.msjError("Existe error en el Traspaso. Favor de reportar al area de TI.");
                     }
                 }
                 else

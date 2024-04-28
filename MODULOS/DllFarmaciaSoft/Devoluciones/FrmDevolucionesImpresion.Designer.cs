@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDevolucionesImpresion));
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer1 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
+            FarPoint.Win.Spread.EnhancedScrollBarRenderer enhancedScrollBarRenderer2 = new FarPoint.Win.Spread.EnhancedScrollBarRenderer();
             FarPoint.Win.Spread.CellType.TextCellType textCellType1 = new FarPoint.Win.Spread.CellType.TextCellType();
             FarPoint.Win.Spread.CellType.TextCellType textCellType2 = new FarPoint.Win.Spread.CellType.TextCellType();
             FarPoint.Win.Spread.CellType.NumberCellType numberCellType1 = new FarPoint.Win.Spread.CellType.NumberCellType();
@@ -52,14 +54,15 @@
             // 
             // toolStripBarraMenu
             // 
-            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStripBarraMenu.AutoSize = false;
+            this.toolStripBarraMenu.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.toolStripBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNuevo,
             this.toolStripSeparator1,
             this.btnImprimir});
             this.toolStripBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripBarraMenu.Name = "toolStripBarraMenu";
-            this.toolStripBarraMenu.Size = new System.Drawing.Size(471, 31);
+            this.toolStripBarraMenu.Size = new System.Drawing.Size(471, 58);
             this.toolStripBarraMenu.TabIndex = 5;
             this.toolStripBarraMenu.Text = "toolStrip1";
             // 
@@ -69,14 +72,15 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(29, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(54, 55);
             this.btnNuevo.Text = "&Nuevo (CTRL + N)";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.AutoSize = false;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(12, 2);
             // 
             // btnImprimir
             // 
@@ -84,7 +88,7 @@
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(29, 28);
+            this.btnImprimir.Size = new System.Drawing.Size(54, 55);
             this.btnImprimir.Text = "&Imprimir (CTRL + P)";
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
@@ -92,11 +96,11 @@
             // 
             this.FrameEncabezado.Controls.Add(this.txtFolio);
             this.FrameEncabezado.Controls.Add(this.label1);
-            this.FrameEncabezado.Location = new System.Drawing.Point(12, 34);
-            this.FrameEncabezado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameEncabezado.Location = new System.Drawing.Point(12, 58);
+            this.FrameEncabezado.Margin = new System.Windows.Forms.Padding(4);
             this.FrameEncabezado.Name = "FrameEncabezado";
-            this.FrameEncabezado.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.FrameEncabezado.Size = new System.Drawing.Size(449, 65);
+            this.FrameEncabezado.Padding = new System.Windows.Forms.Padding(4);
+            this.FrameEncabezado.Size = new System.Drawing.Size(449, 61);
             this.FrameEncabezado.TabIndex = 0;
             this.FrameEncabezado.TabStop = false;
             this.FrameEncabezado.Text = "Información";
@@ -107,8 +111,8 @@
             this.txtFolio.Decimales = 2;
             this.txtFolio.EstiloTexto = SC_ControlsCS.EstiloCaptura.FolioNumerico;
             this.txtFolio.ForeColor = System.Drawing.Color.Black;
-            this.txtFolio.Location = new System.Drawing.Point(179, 27);
-            this.txtFolio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFolio.Location = new System.Drawing.Point(155, 19);
+            this.txtFolio.Margin = new System.Windows.Forms.Padding(4);
             this.txtFolio.MaxLength = 8;
             this.txtFolio.Name = "txtFolio";
             this.txtFolio.PermitirApostrofo = false;
@@ -121,7 +125,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(118, 31);
+            this.label1.Location = new System.Drawing.Point(94, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 15);
@@ -132,10 +136,10 @@
             // FrameDetalle
             // 
             this.FrameDetalle.Controls.Add(this.grdProductos);
-            this.FrameDetalle.Location = new System.Drawing.Point(12, 103);
-            this.FrameDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameDetalle.Location = new System.Drawing.Point(12, 123);
+            this.FrameDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.FrameDetalle.Name = "FrameDetalle";
-            this.FrameDetalle.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FrameDetalle.Padding = new System.Windows.Forms.Padding(4);
             this.FrameDetalle.Size = new System.Drawing.Size(449, 284);
             this.FrameDetalle.TabIndex = 1;
             this.FrameDetalle.TabStop = false;
@@ -145,14 +149,45 @@
             // 
             this.grdProductos.AccessibleDescription = "grdProductos, Sheet1, Row 0, Column 0, ";
             this.grdProductos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grdProductos.HorizontalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdProductos.HorizontalScrollBar.Name = "";
+            enhancedScrollBarRenderer1.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer1.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer1.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer1.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer1.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer1.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer1.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer1.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer1.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer1.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer1.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.HorizontalScrollBar.Renderer = enhancedScrollBarRenderer1;
+            this.grdProductos.HorizontalScrollBar.TabIndex = 2;
             this.grdProductos.Location = new System.Drawing.Point(15, 20);
-            this.grdProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdProductos.Margin = new System.Windows.Forms.Padding(4);
             this.grdProductos.Name = "grdProductos";
             this.grdProductos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdProductos.Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] {
             this.grdProductos_Sheet1});
             this.grdProductos.Size = new System.Drawing.Size(418, 250);
+            this.grdProductos.Skin = FarPoint.Win.Spread.DefaultSpreadSkins.Seashell;
             this.grdProductos.TabIndex = 0;
+            this.grdProductos.VerticalScrollBar.Buttons = new FarPoint.Win.Spread.FpScrollBarButtonCollection("BackwardLineButton,ThumbTrack,ForwardLineButton");
+            this.grdProductos.VerticalScrollBar.Name = "";
+            enhancedScrollBarRenderer2.ArrowColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer2.ArrowHoveredColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer2.ArrowSelectedColor = System.Drawing.Color.DarkSlateGray;
+            enhancedScrollBarRenderer2.ButtonBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer2.ButtonBorderColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer2.ButtonHoveredBackgroundColor = System.Drawing.Color.SlateGray;
+            enhancedScrollBarRenderer2.ButtonHoveredBorderColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer2.ButtonSelectedBackgroundColor = System.Drawing.Color.DarkGray;
+            enhancedScrollBarRenderer2.ButtonSelectedBorderColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer2.TrackBarBackgroundColor = System.Drawing.Color.CadetBlue;
+            enhancedScrollBarRenderer2.TrackBarSelectedBackgroundColor = System.Drawing.Color.SlateGray;
+            this.grdProductos.VerticalScrollBar.Renderer = enhancedScrollBarRenderer2;
+            this.grdProductos.VerticalScrollBar.TabIndex = 3;
             // 
             // grdProductos_Sheet1
             // 
@@ -166,6 +201,7 @@
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 0).Value = "Folio";
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 1).Value = "Fecha Devolucion";
             this.grdProductos_Sheet1.ColumnHeader.Cells.Get(0, 2).Value = "Total";
+            this.grdProductos_Sheet1.ColumnHeader.DefaultStyle.Parent = "ColumnHeaderSeashell";
             this.grdProductos_Sheet1.ColumnHeader.Rows.Get(0).Height = 23F;
             textCellType1.CharacterSet = FarPoint.Win.Spread.CellType.CharacterSet.AlphaNumeric;
             textCellType1.MaxLength = 15;
@@ -187,13 +223,15 @@
             this.grdProductos_Sheet1.Columns.Get(2).Visible = false;
             this.grdProductos_Sheet1.Columns.Get(2).Width = 98F;
             this.grdProductos_Sheet1.RowHeader.Columns.Default.Resizable = true;
+            this.grdProductos_Sheet1.RowHeader.DefaultStyle.Parent = "RowHeaderSeashell";
+            this.grdProductos_Sheet1.SheetCornerStyle.Parent = "CornerSeashell";
             this.grdProductos_Sheet1.ReferenceStyle = FarPoint.Win.Spread.Model.ReferenceStyle.A1;
             // 
             // FrmDevolucionesImpresion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 398);
+            this.ClientSize = new System.Drawing.Size(471, 417);
             this.Controls.Add(this.FrameDetalle);
             this.Controls.Add(this.FrameEncabezado);
             this.Controls.Add(this.toolStripBarraMenu);
@@ -212,7 +250,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos_Sheet1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

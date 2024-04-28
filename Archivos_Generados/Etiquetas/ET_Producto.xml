@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="yes"?>
+<Reporte>
+  <xs:schema id="Reporte" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Reporte" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Encabezado">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdEmpresa" type="xs:string" minOccurs="0" />
+                <xs:element name="Empresa" type="xs:string" minOccurs="0" />
+                <xs:element name="EmpresaNombreCorto" type="xs:string" minOccurs="0" />
+                <xs:element name="Domicilio" type="xs:string" minOccurs="0" />
+                <xs:element name="Colonia" type="xs:string" minOccurs="0" />
+                <xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+                <xs:element name="Ciudad" type="xs:string" minOccurs="0" />
+                <xs:element name="IdEstado" type="xs:string" minOccurs="0" />
+                <xs:element name="Estado" type="xs:string" minOccurs="0" />
+                <xs:element name="IdFarmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="Farmacia" type="xs:string" minOccurs="0" />
+                <xs:element name="IdJurisdiccion" type="xs:string" minOccurs="0" />
+                <xs:element name="Jurisdiccion" type="xs:string" minOccurs="0" />
+                <xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Informacion">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IdProducto" type="xs:string" minOccurs="0" />
+                <xs:element name="CodigoEAN" type="xs:string" minOccurs="0" />
+                <xs:element name="CodigoEAN_Interno" type="xs:string" minOccurs="0" />
+                <xs:element name="NombreComercial" type="xs:string" minOccurs="0" />
+                <xs:element name="ClaveSSA" type="xs:string" minOccurs="0" />
+                <xs:element name="DescripcionCortaClave" type="xs:string" minOccurs="0" />
+                <xs:element name="IdLaboratorio" type="xs:string" minOccurs="0" />
+                <xs:element name="Laboratorio" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Etiquetas">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Encabezado>
+    <IdEmpresa>005</IdEmpresa>
+    <Empresa>FMEDICAL</Empresa>
+    <EmpresaNombreCorto>FMEDICAL</EmpresaNombreCorto>
+    <Domicilio>CARR. CHAPALA</Domicilio>
+    <Colonia>AEROPUERTO</Colonia>
+    <CodigoPostal>45670</CodigoPostal>
+    <Ciudad>EL SALTO, JALISCO</Ciudad>
+    <IdEstado>14</IdEstado>
+    <Estado>JALISCO</Estado>
+    <IdFarmacia>0010</IdFarmacia>
+    <Farmacia>CEDIS FMEDICAL</Farmacia>
+    <IdJurisdiccion>001</IdJurisdiccion>
+    <Jurisdiccion>JURISDICCION CENTRO</Jurisdiccion>
+    <Fecha>2023-12-13T00:00:00-07:00</Fecha>
+  </Encabezado>
+  <Informacion>
+    <IdProducto>00000376</IdProducto>
+    <CodigoEAN>7503004908646</CodigoEAN>
+    <CodigoEAN_Interno>0000000000376</CodigoEAN_Interno>
+    <NombreComercial>ALBENDAZOL SUSP 40MG FCO20ML</NombreComercial>
+    <ClaveSSA>010.000.1345.00</ClaveSSA>
+    <DescripcionCortaClave>ALBENDAZOL SUSPENSIÓN 400 MG</DescripcionCortaClave>
+    <IdLaboratorio>0001</IdLaboratorio>
+    <Laboratorio>NO ESPECIFICADO</Laboratorio>
+  </Informacion>
+  <Etiquetas />
+</Reporte>

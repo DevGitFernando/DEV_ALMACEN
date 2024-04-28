@@ -208,6 +208,16 @@ namespace DllFarmaciaSoft.Devoluciones
                     sMovtoEREU = "ERDSC";
                 }
 
+                if (value == TipoDevolucion.TransferenciaDeSalida)
+                {
+                    sIdTipoMovtoInv = "EDT";
+                    sTipoES = "E";
+                    sStoreDEV = " spp_DEV_AfectarTraspasoSalida ";
+                    sNombrePosicion = "TS_DEVOLUCION";
+                    sMovtoSREU = "SRDT";
+                    sMovtoEREU = "ERDT";
+                }
+
                 tpDevolucion = value; 
             }
         }
@@ -282,6 +292,18 @@ namespace DllFarmaciaSoft.Devoluciones
         {
             get { return dtsMotivosDev; }
             set { dtsMotivosDev = value; }
+        }
+
+        public string FolioREUSalida
+        {
+            get { return sFolioREUSalida; }
+            set { sFolioREUSalida = value; }
+        }
+
+        public string FolioREUEntrada
+        {
+            get { return sFolioREUEntrada; }
+            set { sFolioREUEntrada = value; }
         }
         #endregion Propiedades publicas
 

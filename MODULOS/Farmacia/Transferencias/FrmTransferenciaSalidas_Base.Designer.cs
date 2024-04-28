@@ -914,7 +914,7 @@
             this.lblMensajes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblMensajes.BackColor = System.Drawing.Color.SteelBlue;
             this.lblMensajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensajes.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMensajes.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblMensajes.Location = new System.Drawing.Point(0, 666);
             this.lblMensajes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMensajes.Name = "lblMensajes";
@@ -928,7 +928,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.SteelBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(759, 666);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -943,7 +943,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMensaje_03.BackColor = System.Drawing.Color.White;
             this.lblMensaje_03.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensaje_03.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMensaje_03.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblMensaje_03.Location = new System.Drawing.Point(143, 666);
             this.lblMensaje_03.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMensaje_03.Name = "lblMensaje_03";
